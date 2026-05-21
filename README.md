@@ -17,6 +17,7 @@
 </p>
 
 <p align="center">
+  <a href="https://borghei.github.io/AI-Skills-German-Law"><b>Docs site</b></a> ·
   <a href="#install-in-60-seconds"><b>Install</b></a> ·
   <a href="#whats-inside"><b>Areas</b></a> ·
   <a href="#how-much-you-can-rely-on-it"><b>Trust</b></a> ·
@@ -226,6 +227,7 @@ Built-in helpers: [`references/compliance-checklist.md`](./references/compliance
 
 | Document | What's in it |
 |---|---|
+| **[Docs site](https://borghei.github.io/AI-Skills-German-Law)** | Full searchable docs (hero, area browser, trust matrix, methodology) |
 | [`QUICKSTART.md`](./QUICKSTART.md) | 60-second install + use guide for Claude / Gemini / GPT |
 | [`CONVENTIONS.md`](./CONVENTIONS.md) | Provider-neutral conventions: language, methodology, citation, skill format |
 | [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) | Contributor Covenant 2.1 |
