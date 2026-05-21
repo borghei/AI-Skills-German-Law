@@ -1,0 +1,11 @@
+{
+  "name": "vertragsrecht",
+  "version": "0.1.0",
+  "description": "Vertragsrecht – AGB-Kontrolle §§ 305–310 BGB, Klauselgestaltung B2B/B2C, c.i.c. §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB, Leistungsstörungsrecht §§ 280 ff., Anfechtung §§ 119 ff., Rücktritt und Schadensersatz.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/ai-skills-german-law"
+}

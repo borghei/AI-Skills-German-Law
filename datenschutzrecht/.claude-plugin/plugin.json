@@ -1,0 +1,11 @@
+{
+  "name": "datenschutzrecht",
+  "version": "0.1.0",
+  "description": "Datenschutzrecht – DSGVO / BDSG / TTDSG. AVV-Review (Art. 28), Auskunftsersuchen Art. 15, Datenpannenmeldung Art. 33/34, DPIA Art. 35, Drittlandtransfer Kap. V + Schrems II, Beschäftigtendatenschutz § 26 BDSG.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/ai-skills-german-law"
+}

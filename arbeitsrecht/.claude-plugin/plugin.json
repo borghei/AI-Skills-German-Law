@@ -1,0 +1,11 @@
+{
+  "name": "arbeitsrecht",
+  "version": "0.1.0",
+  "description": "Arbeitsrecht – KSchG-Kündigungsprüfung (allgemeiner & besonderer Schutz), § 102 BetrVG Anhörung, Aufhebungsvertrag inkl. Sperrzeit § 159 SGB III, Abmahnung nach BAG-Standard, Sozialauswahl § 1 Abs. 3 KSchG, Massenentlassung §§ 17–18 KSchG. Mit Researcher/Drafter/Reviewer-Subagenten und Eval-Tests.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/ai-skills-german-law"
+}

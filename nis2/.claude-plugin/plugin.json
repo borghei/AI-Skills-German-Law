@@ -1,0 +1,8 @@
+{
+  "name": "nis2",
+  "version": "0.1.0",
+  "description": "NIS2-Richtlinie (EU 2022/2555) / NIS2UmsuCG – Risikomanagement Art. 21, 24-Stunden-Frühwarnung und 72h-Bericht Art. 23, Geschäftsleitungs-Haftung, KRITIS-Schnittstelle, BSI-Meldepflichten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {"name": "Borghei", "url": "https://github.com/borghei"},
+  "homepage": "https://github.com/borghei/ai-skills-german-law"
+}

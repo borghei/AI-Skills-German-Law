@@ -1,0 +1,11 @@
+{
+  "name": "mietrecht",
+  "version": "0.1.0",
+  "description": "Mietrecht – Wohnraummiete, Mieterhöhung § 558 BGB, Modernisierung § 559, Eigenbedarfs- und Verwertungskündigung §§ 573 ff. BGB, Betriebskostenabrechnung BetrKV/HeizkostenV, WEG-Grundzüge.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/ai-skills-german-law"
+}

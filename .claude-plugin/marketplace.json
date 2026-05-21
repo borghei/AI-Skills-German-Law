@@ -1,0 +1,77 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ai-skills-german-law",
+  "description": "Production-grade AI skills for German legal practice and EU compliance. Provider-agnostic core with adapters for Claude, Gemini, and GPT. Researcher/Drafter/Reviewer sub-agents, primary-source citations, eval test suite, and DSGVO / § 203 StGB / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / DMA / CSRD compliance scaffolding.",
+  "owner": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/ai-skills-german-law",
+  "plugins": [
+    {
+      "name": "arbeitsrecht",
+      "source": "./arbeitsrecht",
+      "description": "Arbeitsrecht – KSchG-Kündigungsprüfung (allgemeiner & besonderer Schutz), § 102 BetrVG Anhörung, Aufhebungsvertrag inkl. Sperrzeit § 159 SGB III, Abmahnung nach BAG-Standard, Sozialauswahl, Massenentlassung §§ 17–18 KSchG."
+    },
+    {
+      "name": "datenschutzrecht",
+      "source": "./datenschutzrecht",
+      "description": "Datenschutzrecht / GDPR – DSGVO, BDSG, TTDSG. AVV-Review (Art. 28), Auskunftsersuchen Art. 15, Datenpannenmeldung Art. 33/34, DPIA Art. 35, Drittlandtransfer Kap. V + Schrems II, Beschäftigtendatenschutz § 26 BDSG."
+    },
+    {
+      "name": "vertragsrecht",
+      "source": "./vertragsrecht",
+      "description": "Vertragsrecht – AGB-Kontrolle §§ 305–310 BGB, Klauselgestaltung B2B/B2C, c.i.c., Leistungsstörungsrecht §§ 280 ff., Anfechtung §§ 119 ff., Rücktritt und Schadensersatz."
+    },
+    {
+      "name": "mietrecht",
+      "source": "./mietrecht",
+      "description": "Mietrecht – Wohnraummiete, Mieterhöhung § 558 BGB, Modernisierung § 559, Eigenbedarfs- und Verwertungskündigung §§ 573 ff. BGB, Betriebskostenabrechnung, WEG-Grundzüge."
+    },
+    {
+      "name": "gesellschaftsrecht",
+      "source": "./gesellschaftsrecht",
+      "description": "Gesellschaftsrecht – GmbH-Recht (GmbHG), Geschäftsführerhaftung §§ 43, 64, Gesellschafterbeschlüsse und Anfechtungsklage, Stammkapital, AG-Grundzüge, Umwandlungsrecht-Einstieg."
+    },
+    {
+      "name": "strafrecht",
+      "source": "./strafrecht",
+      "description": "Strafrecht – Strafbefehl-Verteidigung (§§ 407 ff. StPO), Akteneinsicht und -aufbereitung, OWi-Verkehrsrecht, Beschuldigtenbelehrung § 136 StPO, Beweisverwertungsverbote."
+    },
+    {
+      "name": "ki-vo-compliance",
+      "source": "./ki-vo-compliance",
+      "description": "EU KI-VO / EU AI Act (VO (EU) 2024/1689) – Hochrisiko-Klassifizierung Art. 6 + Anhang III, Betreiberpflichten Art. 26, Transparenzpflichten Art. 50, GPAI-Anbieterpflichten Art. 51 ff., Konformitätsbewertung, Sanktionen Art. 99."
+    },
+    {
+      "name": "nis2",
+      "source": "./nis2",
+      "description": "NIS2-Richtlinie (EU 2022/2555) / NIS2UmsuCG – Risikomanagement Art. 21, 24-Stunden-Frühwarnung & 72h-Bericht Art. 23, Geschäftsleitungs-Haftung, KRITIS-Schnittstelle, BSI-Meldepflichten."
+    },
+    {
+      "name": "hinweisgeberschutz",
+      "source": "./hinweisgeberschutz",
+      "description": "HinSchG (Hinweisgeberschutzgesetz) – Einrichtung interne Meldestelle § 12, Vertraulichkeitsschutz § 8, Anonymität § 16, Repressalienverbot § 36, externe Meldestelle, Pflicht ab 50 EE."
+    },
+    {
+      "name": "lieferkettengesetz",
+      "source": "./lieferkettengesetz",
+      "description": "LkSG (Lieferkettensorgfaltspflichtengesetz) – Risikomanagement § 4, Risikoanalyse § 5, Präventionsmaßnahmen § 6, Abhilfemaßnahmen § 7, Beschwerdeverfahren § 8, Berichterstattung an BAFA § 10. Erweiterung durch CSDDD (EU)."
+    },
+    {
+      "name": "dora",
+      "source": "./dora",
+      "description": "DORA (Digital Operational Resilience Act, VO (EU) 2022/2554) – IKT-Risikomanagement Art. 5 ff., Meldung schwerwiegender IKT-Vorfälle Art. 19, Threat-Led Penetration Testing Art. 26, Drittparteienrisiko Art. 28 ff., für Finanzunternehmen."
+    },
+    {
+      "name": "dsa-dma",
+      "source": "./dsa-dma",
+      "description": "DSA / DMA – Digital Services Act (VO (EU) 2022/2065) und Digital Markets Act (VO (EU) 2022/1925). Pflichten von Hosting-Anbietern, Online-Plattformen, VLOPs, Gatekeepern; Notice-and-Action Art. 16 DSA, Statement of Reasons Art. 17, Risikobewertung Art. 34."
+    },
+    {
+      "name": "csrd",
+      "source": "./csrd",
+      "description": "CSRD (Corporate Sustainability Reporting Directive, RL (EU) 2022/2464) und ESRS – Doppelte Wesentlichkeitsanalyse, Berichtspflichten, Prüfungspflichten, phasierte Anwendung 2024–2028, Vorbereitung für CSDDD."
+    }
+  ]
+}

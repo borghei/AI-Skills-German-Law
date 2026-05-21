@@ -1,0 +1,4 @@
+PyYAML>=6.0
+# eval harness (optional but recommended)
+jsonschema>=4.0
+# no other runtime deps — scripts are intentionally vanilla Python 3.10+

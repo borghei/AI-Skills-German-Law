@@ -1,0 +1,8 @@
+{
+  "name": "hinweisgeberschutz",
+  "version": "0.1.0",
+  "description": "HinSchG (Hinweisgeberschutzgesetz) – Einrichtung interne Meldestelle § 12, Vertraulichkeitsschutz § 8, Anonymität § 16, Repressalienverbot § 36, externe Meldestelle, Pflicht ab 50 EE.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {"name": "Borghei", "url": "https://github.com/borghei"},
+  "homepage": "https://github.com/borghei/ai-skills-german-law"
+}

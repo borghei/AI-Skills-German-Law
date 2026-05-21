@@ -1,0 +1,58 @@
+# Build artifacts
+dist/
+build/
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Provider-specific assistant state — should never be committed
+.claude/
+.cursor/
+.aider*
+.windsurfrules.local
+CLAUDE.md
+GEMINI.md
+AGENTS.md
+
+# Planning / scratch / drafts
+PLAN.md
+TODO.md
+NOTES.md
+*.draft.md
+.scratch/
+
+# Local secrets (never commit)
+.env
+.env.local
+*.key
+*.pem
+
+# Generated provider bundles
+adapters/claude/dist/
+adapters/gemini/dist/
+adapters/openai/dist/
+
+# Eval outputs
+tests/results/
+*.eval.json
+
+# Local Mandats-Daten (never commit)
+mandate/
+testakten/local/
