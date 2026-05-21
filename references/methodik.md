@@ -1,6 +1,6 @@
 # Methodik – Bürgerliches Recht und allgemeine juristische Methodenlehre
 
-Verbindlich für alle Skills in `ai-skills-german-law`. Kürzere Fassung des Quasi-Lehrbuchs der `references/methodik-buergerliches-recht.md` aus verwandten Repositories.
+Verbindlich für alle Skills in `AI-Skills-German-Law`. Kürzere Fassung des Quasi-Lehrbuchs der `references/methodik-buergerliches-recht.md` aus verwandten Repositories.
 
 ## Stil
 

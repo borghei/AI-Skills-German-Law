@@ -21,7 +21,7 @@
 ### Claude Code
 ```bash
 # Über Marketplace (empfohlen)
-/plugin marketplace add borghei/ai-skills-german-law
+/plugin marketplace add borghei/AI-Skills-German-Law
 /plugin install arbeitsrecht
 
 # Oder als ZIP

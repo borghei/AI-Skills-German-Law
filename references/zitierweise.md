@@ -1,4 +1,4 @@
-# Zitierweise – BGH/Beck-Standard für `ai-skills-german-law`
+# Zitierweise, BGH/Beck-Standard für `AI-Skills-German-Law`
 
 This is the **binding** citation style for all skills in this repository. Outputs that violate it should be flagged by the Reviewer sub-agent.
 

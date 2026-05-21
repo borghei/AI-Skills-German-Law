@@ -1,6 +1,6 @@
-# Contributing to ai-skills-german-law
+# Contributing to AI-Skills-German-Law
 
-Welcome, and thank you for considering a contribution. **ai-skills-german-law** is a provider-agnostic skill collection for German legal practice. It works with Claude Code, Gemini Gems, and OpenAI custom GPTs.
+Welcome, and thank you for considering a contribution. **AI-Skills-German-Law** is a provider-agnostic skill collection for German legal practice. It works with Claude Code, Gemini Gems, and OpenAI custom GPTs.
 
 We value contributions of all kinds:
 
@@ -20,8 +20,8 @@ We value contributions of all kinds:
 ### 1. Fork and Clone
 
 ```bash
-gh repo fork borghei/ai-skills-german-law --clone
-cd ai-skills-german-law
+gh repo fork borghei/AI-Skills-German-Law --clone
+cd AI-Skills-German-Law
 ```
 
 ### 2. Branch from `main`
