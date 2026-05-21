@@ -217,6 +217,29 @@ a:hover { color: var(--accent-deep); }
   margin-bottom: 12px;
   letter-spacing: -0.01em;
 }
+/* ── Disclaimer callout ─────────────────────────────────────── */
+.disclaimer-section {
+  padding: 0 0 24px;
+}
+.disclaimer {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 28px;
+  background: rgba(217, 119, 87, 0.06);
+  border: 1px solid rgba(217, 119, 87, 0.25);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+}
+.disclaimer p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+.disclaimer strong {
+  color: var(--text);
+}
+
 .section-subtitle {
   text-align: center;
   color: var(--text-muted);
