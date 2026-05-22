@@ -1,0 +1,2555 @@
+{
+  "name": "ai-skills-german-law",
+  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 103 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "version": "0.2.0",
+  "repository": "https://github.com/borghei/AI-Skills-German-Law",
+  "website": "https://borghei.github.io/AI-Skills-German-Law",
+  "author": "borghei",
+  "license": "Apache-2.0 OR MIT",
+  "total_skills": 103,
+  "updated": "2026-05-22",
+  "domains": {
+    "arbeitsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Arbeitsrecht",
+      "desc": "KSchG, BetrVG, Aufhebungsvertrag, Abmahnung, Sozialauswahl"
+    },
+    "datenschutzrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Datenschutzrecht / GDPR",
+      "desc": "DSGVO, BDSG, AVV, Datenpanne, DPIA, Drittlandtransfer"
+    },
+    "vertragsrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Vertragsrecht",
+      "desc": "AGB-Kontrolle, Klauselgestaltung, Leistungsstörung, Anfechtung"
+    },
+    "mietrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Mietrecht",
+      "desc": "Wohnraummiete, Mieterhöhung, Kündigung, Betriebskostenabrechnung, WEG"
+    },
+    "gesellschaftsrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Gesellschaftsrecht",
+      "desc": "GmbH-Recht, Geschäftsführerhaftung, AG-Grundzüge, Umwandlungen"
+    },
+    "strafrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Strafrecht",
+      "desc": "Strafbefehl-Verteidigung, Akteneinsicht, OWi-Verkehr, Belehrungen"
+    },
+    "insolvenzrecht": {
+      "count": 4,
+      "tools": 0,
+      "label": "Insolvenzrecht",
+      "desc": "InsO § 15a, StaRUG, Liquiditätsplanung, Fortbestehensprognose"
+    },
+    "prozessrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Prozessrecht",
+      "desc": "Klageschrift §§ 253 ff. ZPO, Beweisantritt, Zuständigkeit, Rechtsmittel"
+    },
+    "erbrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Erbrecht",
+      "desc": "Testament, Erbvertrag, Pflichtteil §§ 2303 ff. BGB, Erbschein, Erbschaftsteuer"
+    },
+    "familienrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Familienrecht",
+      "desc": "Scheidung, Zugewinnausgleich, Unterhalt, Sorge- und Umgangsrecht"
+    },
+    "betreuungsrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Betreuungsrecht",
+      "desc": "Reform 2023 (§§ 1814 ff. BGB), Jahresbericht § 1863, Vermögenssorge"
+    },
+    "it-recht": {
+      "count": 1,
+      "tools": 0,
+      "label": "IT-Recht",
+      "desc": "SaaS-Verträge, Outsourcing, Softwarelizenz, Open Source, Cloud-AVV"
+    },
+    "bankrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Bank- und Kapitalmarktrecht",
+      "desc": "Verbraucherdarlehen §§ 491 ff. BGB, MiFID II, Anlageberatung"
+    },
+    "gewerblicher-rechtsschutz": {
+      "count": 1,
+      "tools": 0,
+      "label": "Gewerblicher Rechtsschutz",
+      "desc": "Marken (MarkenG), Designs (DesignG), UWG-Abmahnung"
+    },
+    "steuerrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Steuerrecht",
+      "desc": "AO Außenprüfung, Einspruch §§ 347 ff. AO, Selbstanzeige § 371, FGO"
+    },
+    "verwaltungsrecht": {
+      "count": 1,
+      "tools": 0,
+      "label": "Verwaltungsrecht",
+      "desc": "Widerspruch §§ 68 ff. VwGO, Anfechtungs-/Verpflichtungsklage, § 80"
+    },
+    "ki-vo-compliance": {
+      "count": 1,
+      "tools": 0,
+      "label": "EU KI-VO / AI Act",
+      "desc": "VO (EU) 2024/1689 — Hochrisiko Art. 6, Betreiber Art. 26, GPAI"
+    },
+    "nis2": {
+      "count": 1,
+      "tools": 0,
+      "label": "NIS2",
+      "desc": "RL (EU) 2022/2555 / NIS2UmsuCG — Risikomanagement, 24h-Frühwarnung"
+    },
+    "hinweisgeberschutz": {
+      "count": 1,
+      "tools": 0,
+      "label": "HinSchG",
+      "desc": "Interne Meldestelle, Vertraulichkeit, Repressalienverbot, Pflicht ab 50 EE"
+    },
+    "lieferkettengesetz": {
+      "count": 1,
+      "tools": 0,
+      "label": "LkSG",
+      "desc": "Risikoanalyse, Präventionsmaßnahmen, Beschwerde § 8, BAFA-Bericht § 10"
+    },
+    "dora": {
+      "count": 1,
+      "tools": 0,
+      "label": "DORA",
+      "desc": "VO (EU) 2022/2554 — IKT-Risiko, Vorfälle Art. 19, TLPT, Drittparteienrisiko"
+    },
+    "dsa-dma": {
+      "count": 1,
+      "tools": 0,
+      "label": "DSA / DMA",
+      "desc": "VO (EU) 2022/2065 + 2022/1925 — Notice & Action, Statement of Reasons, Gatekeeper"
+    },
+    "csrd": {
+      "count": 1,
+      "tools": 0,
+      "label": "CSRD / ESRS",
+      "desc": "RL (EU) 2022/2464 — doppelte Wesentlichkeitsanalyse, Berichtspflichten 2024–28"
+    },
+    "europarecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Europarecht",
+      "desc": "AEUV, Art. 267 Vorabentscheidung, Vertragsverletzung Art. 258–260, Richtlinien"
+    },
+    "verfassungsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Verfassungsrecht",
+      "desc": "GG, BVerfGG, Grundrechtsdogmatik, Organstreit Art. 93 GG"
+    },
+    "sozialrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Sozialrecht",
+      "desc": "SGB I–XII, Bürgergeld, Renten SGB VI, Widerspruch § 84 SGG"
+    },
+    "handelsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Handelsrecht",
+      "desc": "HGB §§ 1–15, Handelsvertreter §§ 84 ff. + § 89b, §§ 377/378 Rügepflicht"
+    },
+    "medizinrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Medizinrecht",
+      "desc": "Arzthaftung §§ 630a–h BGB, MBO-Ä, Akteneinsicht, § 203 StGB"
+    },
+    "versicherungsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Versicherungsrecht",
+      "desc": "VVG Deckungsprüfung 3-stufig, §§ 19–22, 28 ff., Maklerhaftung"
+    },
+    "baurecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Baurecht",
+      "desc": "BGB Bauvertrag §§ 650a–u, VOB/B, BauGB §§ 29–35, LBO, § 212a BauGB"
+    },
+    "verkehrsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Verkehrsrecht",
+      "desc": "StVG §§ 7/17/18, FeV MPU, OWi StVO + BKatV, §§ 142/315c/316 StGB"
+    },
+    "urheber-medienrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Urheber- und Medienrecht",
+      "desc": "UrhG § 97a-Abmahnung, Lizenz §§ 32/32a, MStV § 18, Gegendarstellung"
+    },
+    "sportrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Sportrecht",
+      "desc": "Verbands-/Vereinsrecht, CAS/DIS, AntiDopG/WADC, Athletenvertrag, Stadionverbot"
+    },
+    "migrationsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Migrationsrecht",
+      "desc": "AufenthG, AsylG §§ 3/4, § 60 V/VII, Dublin VO 604/2013, Abschiebung"
+    },
+    "agrarrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Agrarrecht",
+      "desc": "GAP 2023–27, GrdstVG / RSG-Vorkauf, LPachtVG, LwAnpG"
+    },
+    "vergaberecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Vergaberecht",
+      "desc": "GWB Teil 4, VgV, UVgO, Nachprüfung §§ 155 ff. GWB, Rüge § 160 III"
+    },
+    "umweltrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Umweltrecht",
+      "desc": "BImSchG §§ 4–7, KrWG, WHG, BNatSchG, UVPG, UmwRG"
+    },
+    "energierecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Energierecht",
+      "desc": "EnWG §§ 17/18, EEG-Förderung, EnEfG/EDL-G ab 7,5 GWh/a"
+    },
+    "aussenwirtschaft-zoll-sanktionen": {
+      "count": 3,
+      "tools": 0,
+      "label": "Außenwirtschaft, Zoll, Sanktionen",
+      "desc": "AWG/AWV, Dual-Use VO 2021/821, Sanktions-VOen, UZK Art. 33"
+    },
+    "geldwaesche-aml-kyc": {
+      "count": 3,
+      "tools": 0,
+      "label": "Geldwäsche / AML-KYC",
+      "desc": "GwG, KYC §§ 10 ff., FIU-Meldung § 43, AMLR/AMLA ab 2027"
+    },
+    "transportrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Transportrecht",
+      "desc": "HGB §§ 407–452d, CMR, Spedition §§ 453 ff., ADSp 2017"
+    },
+    "produktrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Produktrecht",
+      "desc": "ProdHaftG + § 823 BGB, GPSR VO 2023/988, Rückrufrecht"
+    },
+    "ki-governance": {
+      "count": 3,
+      "tools": 0,
+      "label": "KI-Governance",
+      "desc": "ISO 42001/23894, NIST AI RMF, AVV Art. 28, § 43e BRAO"
+    },
+    "wettbewerbsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Wettbewerbsrecht (UWG)",
+      "desc": "UWG § 13-Abmahnung, irreführende Werbung §§ 5/5a/5b, eV §§ 12 ff."
+    },
+    "kartellrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Kartellrecht (GWB/AEUV)",
+      "desc": "§ 1 GWB / Art. 101 AEUV, §§ 18 ff. + § 19a, §§ 35 ff. Fusionskontrolle"
+    },
+    "kapitalmarktrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Kapitalmarktrecht",
+      "desc": "WpHG/MAR, Prospekt-VO 2017/1129, WpÜG-Pflichtangebot"
+    },
+    "patentrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Patentrecht",
+      "desc": "PatG/EPÜ, §§ 139 ff. Verletzung, Freedom-to-Operate, UPC"
+    },
+    "berufsrecht-anwaltschaft": {
+      "count": 3,
+      "tools": 0,
+      "label": "Berufsrecht (Anwaltschaft)",
+      "desc": "BRAO + § 203 StGB, FAO-Fortbildung § 15, RDG-Abgrenzung"
+    }
+  },
+  "skills": [
+    {
+      "name": "abmahnung",
+      "description": "Entwurf einer BAG-konformen Abmahnung im Arbeitsrecht – konkrete Schilderung der Pflichtverletzung, klare Verhaltenserwartung, ausdrückliche Sanktionsandrohung. Use when AG eine verhaltensbedingte Sanktion vor einer Kündigung dokumentieren muss oder AN die Wirksamkeit einer empfangenen Abmahnung prüft.",
+      "path": "arbeitsrecht/skills/abmahnung/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "abmahnung",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "aufhebungsvertrag",
+      "description": "Erstellung und Prüfung eines Aufhebungsvertrags inkl. Sperrzeit § 159 SGB III, Schriftform § 623 BGB und steuerlicher Behandlung der Abfindung § 34 EStG. Use when ein Arbeitsverhältnis einvernehmlich beendet wird oder eine Sperrzeit-Risikobewertung benötigt wird.",
+      "path": "arbeitsrecht/skills/aufhebungsvertrag/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "aufhebungsvertrag",
+        "§159",
+        "§623",
+        "§34",
+        "sgb",
+        "bgb",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kuendigungs-pruefung",
+      "description": "Rechtliche Vollprüfung einer ordentlichen oder außerordentlichen Kündigung im deutschen Arbeitsrecht – KSchG (allgemeiner und besonderer Kündigungsschutz), § 102 BetrVG (BR-Anhörung), §§ 622 und 626 BGB (Fristen und wichtiger Grund), Sozialauswahl § 1 Abs. 3 KSchG, Sonderkündigungsschutz (MuSchG, BEEG, SGB IX, § 15 KSchG). Use when ein Arbeitgeber eine Kündigung plant oder ein Arbeitnehmervertretender eine empfangene Kündigung auf Klagewert prüft.",
+      "path": "arbeitsrecht/skills/kuendigungs-pruefung/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kuendigungs",
+        "pruefung",
+        "§102",
+        "§§622",
+        "§1",
+        "§15",
+        "kschg",
+        "betrvg"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "auskunftsersuchen-art-15",
+      "description": "Bearbeitung eines DSGVO-Auskunftsersuchens nach Art. 15 DSGVO – Identitätsprüfung, Umfang der Auskunft (Art. 15 Abs. 1 lit. a–h), Datenkopie (Abs. 3), Ausnahmen (Art. 15 Abs. 4; § 34 BDSG), 1-Monats-Frist (Art. 12 Abs. 3 DSGVO). Use when ein betroffener oder ehemaliger Vertragspartner Auskunft über die zu seiner Person verarbeiteten Daten verlangt.",
+      "path": "datenschutzrecht/skills/auskunftsersuchen-art-15/SKILL.md",
+      "domain": "datenschutzrecht",
+      "category": "datenschutzrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "auskunftsersuchen",
+        "art",
+        "§34",
+        "art.15",
+        "art.12",
+        "dsgvo",
+        "bdsg",
+        "datenschutzrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "agb-kontrolle",
+      "description": "Inhaltskontrolle Allgemeiner Geschäftsbedingungen nach §§ 305–310 BGB – Einbeziehung (§ 305), überraschende Klauseln (§ 305c), Klauselverbote ohne Wertung (§ 309) und mit Wertung (§ 308), Generalklausel (§ 307), Anwendung im B2B-Verkehr (§ 310). Use when ein Vertragstext auf AGB-Wirksamkeit zu prüfen ist oder eine neue Klausel entworfen wird.",
+      "path": "vertragsrecht/skills/agb-kontrolle/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "agb",
+        "kontrolle",
+        "§§305",
+        "§305",
+        "§305c",
+        "§309",
+        "§308",
+        "§307"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mieterhoehung-558-bgb",
+      "description": "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – Wartezeit (Abs. 1), Kappungsgrenze (Abs. 3), Begründungsmittel (§ 558a BGB: Mietspiegel, Sachverständigengutachten, Vergleichswohnungen, Mietdatenbank), Zustimmungsklage. Use when ein Vermieter eine Mieterhöhung gestaltet oder ein Mieter ein Mieterhöhungsverlangen auf Wirksamkeit prüft.",
+      "path": "mietrecht/skills/mieterhoehung-558-bgb/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mieterhoehung",
+        "558",
+        "bgb",
+        "§558",
+        "§558a",
+        "mietrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gmbh-geschaeftsfuehrerhaftung",
+      "description": "Prüfung der zivilrechtlichen Geschäftsführerhaftung gegenüber der GmbH (§ 43 GmbHG), der Außenhaftung in der Krise (§ 64 GmbHG / § 15b InsO) und der Insolvenzantragspflicht (§ 15a InsO). Use when ein Geschäftsführer in Anspruch genommen wird oder eine Gesellschaft Regressansprüche gegen einen ausgeschiedenen GF prüft.",
+      "path": "gesellschaftsrecht/skills/gmbh-geschaeftsfuehrerhaftung/SKILL.md",
+      "domain": "gesellschaftsrecht",
+      "category": "gesellschaftsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gmbh",
+        "geschaeftsfuehrerhaftung",
+        "§43",
+        "§64",
+        "§15b",
+        "§15a",
+        "gmbhg",
+        "inso"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "strafbefehl-pruefung",
+      "description": "Prüfung eines erhaltenen Strafbefehls auf Einspruchswert – 2-Wochen-Frist nach § 410 StPO, formale Wirksamkeit, materielle Tatbestandsmäßigkeit, prozessuale Rechte (Akteneinsicht § 147 StPO), Hauptverhandlungsoption. Use when ein Mandant einen Strafbefehl erhalten hat und Einspruch bzw. Annahme zu entscheiden ist.",
+      "path": "strafrecht/skills/strafbefehl-pruefung/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "strafbefehl",
+        "pruefung",
+        "§410",
+        "§147",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "antragspflicht-15a-inso",
+      "description": "Prüfung der Insolvenzantragspflicht nach § 15a InsO bei juristischen Personen und Gesellschaften ohne Rechtspersönlichkeit. Zahlungsunfähigkeit § 17 InsO, drohende Zahlungsunfähigkeit § 18 InsO, Überschuldung § 19 InsO; 3-Wochen-Frist bei ZU, 6-Wochen-Frist bei Überschuldung; Außenhaftung Neugläubiger § 823 Abs. 2 BGB i.V.m. § 15a InsO; § 15b InsO Erstattungspflicht. Use when ein Mandant in der Krise ist oder ein Geschäftsführer auf Antragspflicht-Risiko geprüft wird.",
+      "path": "insolvenzrecht/skills/antragspflicht-15a-inso/SKILL.md",
+      "domain": "insolvenzrecht",
+      "category": "insolvenzrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "antragspflicht",
+        "15a",
+        "inso",
+        "§15a",
+        "§17",
+        "§18",
+        "§19",
+        "§823"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "fortbestehensprognose",
+      "description": "Positive Fortbestehensprognose nach § 19 Abs. 2 S. 1 InsO. Überwiegende Wahrscheinlichkeit der Fortführungsfähigkeit (>50%) über 12 Monate (vorher 4 Monate in Krisenmodus). IDW-S-11-konforme Methodik, integriert mit Liquiditätsplanung. Use when ein Mandant überschuldet erscheint und geprüft werden muss, ob die rechnerische Überschuldung durch eine positive Fortbestehensprognose entfällt.",
+      "path": "insolvenzrecht/skills/fortbestehensprognose/SKILL.md",
+      "domain": "insolvenzrecht",
+      "category": "insolvenzrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "fortbestehensprognose",
+        "§19",
+        "inso",
+        "insolvenzrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "liquiditaetsplanung-13-wochen",
+      "description": "13-Wochen-Liquiditätsplanung als Frühwarn-Instrument für Krisenunternehmen und Anker der Zahlungsunfähigkeitsprüfung nach § 17 InsO. IDW-S-11-konforme Methodik, rollierende Aktualisierung, Zahlungsstockungsabgrenzung. Use when ein Mandant frühzeitig Liquiditätsentwicklung beurteilen oder die Zahlungsunfähigkeit nach § 17 InsO operativ prüfen muss.",
+      "path": "insolvenzrecht/skills/liquiditaetsplanung-13-wochen/SKILL.md",
+      "domain": "insolvenzrecht",
+      "category": "insolvenzrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "liquiditaetsplanung",
+        "wochen",
+        "§17",
+        "inso",
+        "insolvenzrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "starug-restrukturierungsplan",
+      "description": "Aufstellung und Annahme eines Restrukturierungsplans nach StaRUG. Anzeige § 31 StaRUG, Restrukturierungsbeauftragter § 73 StaRUG, Stabilisierungsanordnung § 49 StaRUG, Planabstimmung in Gruppen § 24 StaRUG, gerichtliche Bestätigung § 60 StaRUG. Use when ein Unternehmen in drohender Zahlungsunfähigkeit eine vorinsolvenzliche Sanierung anstrebt.",
+      "path": "insolvenzrecht/skills/starug-restrukturierungsplan/SKILL.md",
+      "domain": "insolvenzrecht",
+      "category": "insolvenzrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "starug",
+        "restrukturierungsplan",
+        "§31",
+        "§73",
+        "§49",
+        "§24",
+        "§60",
+        "insolvenzrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "klageschrift-zivilprozess",
+      "description": "Entwurf einer prozessual sauberen Klageschrift im Zivilprozess nach §§ 253 ff. ZPO. Streitgegenstand (zweigliedriger Begriff), Sachvortrag mit Substantiierung, Beweisantritt, sachliche und örtliche Zuständigkeit, Klagearten (Leistungs-, Feststellungs-, Gestaltungsklage), Streitwert. Use when eine Zivilklage entworfen wird oder eine Klageschrift auf prozessuale Mängel geprüft wird.",
+      "path": "prozessrecht/skills/klageschrift-zivilprozess/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "klageschrift",
+        "zivilprozess",
+        "§§253",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "testament-pruefung",
+      "description": "Prüfung eines Testaments auf formelle Wirksamkeit (eigenhändig § 2247 BGB oder notariell § 2232 BGB), Testierfähigkeit § 2229 BGB, Auslegung §§ 133, 2084 BGB, Wechselwirkung mit Pflichtteil §§ 2303 ff. BGB und Erbvertrag. Use when ein Testament auf Wirksamkeit, Anfechtbarkeit oder Pflichtteilsfolge geprüft wird.",
+      "path": "erbrecht/skills/testament-pruefung/SKILL.md",
+      "domain": "erbrecht",
+      "category": "erbrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "testament",
+        "pruefung",
+        "§2247",
+        "§2232",
+        "§2229",
+        "§§133",
+        "§§2303",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "scheidung-zugewinnausgleich",
+      "description": "Scheidung im Zugewinngemeinschafts-Güterstand mit Berechnung des Zugewinnausgleichsanspruchs §§ 1372 ff. BGB. Anfangs- und Endvermögen, Hinzurechnung illoyaler Verfügungen § 1375 Abs. 2 BGB, vorzeitiger Ausgleich § 1385 BGB, Auskunftsanspruch § 1379 BGB. Use when eine Scheidung mit Zugewinnausgleich gestaltet oder geprüft wird.",
+      "path": "familienrecht/skills/scheidung-zugewinnausgleich/SKILL.md",
+      "domain": "familienrecht",
+      "category": "familienrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "scheidung",
+        "zugewinnausgleich",
+        "§§1372",
+        "§1375",
+        "§1385",
+        "§1379",
+        "bgb",
+        "familienrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "jahresbericht-1863-bgb",
+      "description": "Jahresbericht des Betreuers an das Betreuungsgericht nach § 1863 BGB (Reform 2023). Pflichtinhalt: Bericht über persönliche Verhältnisse der betreuten Person, Vermögensentwicklung, geplante Maßnahmen. Pflichtbestandteile, Vorlagefrist, Abgrenzung zur Rechnungslegung § 1865 BGB. Use when ein beruflicher Betreuer den Jahresbericht erstellt oder die Vollständigkeit eines vorliegenden Berichts überprüft wird.",
+      "path": "betreuungsrecht/skills/jahresbericht-1863-bgb/SKILL.md",
+      "domain": "betreuungsrecht",
+      "category": "betreuungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "jahresbericht",
+        "1863",
+        "bgb",
+        "§1863",
+        "§1865",
+        "betreuungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "it-vertragspruefung",
+      "description": "Prüfung typischer IT-Verträge (SaaS, Cloud, Outsourcing, Werkvertrag/Dienstvertrag-Abgrenzung) auf AGB-Konformität, DSGVO-Verzahnung (Art. 28 AVV), Leistungsstandards (SLA), Haftungsbegrenzung, Migrations- und Beendigungsklauseln, Open-Source-Compliance. Use when ein IT-Dienstleistungsvertrag bewertet oder verhandelt wird.",
+      "path": "it-recht/skills/it-vertragspruefung/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vertragspruefung",
+        "art.28",
+        "dsgvo",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kreditvertragspruefung",
+      "description": "Prüfung von Verbraucherdarlehensverträgen nach §§ 491 ff. BGB. Informationspflichten und Pflichtangaben Art. 247 EGBGB, Widerrufsrecht §§ 495, 355 ff. BGB, vorzeitige Rückzahlung § 502 BGB mit Vorfälligkeitsentschädigung, Kopplungsverbote, AGB-Kontrolle. Use when ein Verbraucherdarlehensvertrag bewertet oder eine Forderung der Bank aus solchem Vertrag geprüft wird.",
+      "path": "bankrecht/skills/kreditvertragspruefung/SKILL.md",
+      "domain": "bankrecht",
+      "category": "bankrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kreditvertragspruefung",
+        "§§491",
+        "§§495",
+        "§502",
+        "art.247",
+        "bgb",
+        "bankrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "markenrechtsverletzung-abmahnung",
+      "description": "Außergerichtliche Abmahnung bei Markenrechtsverletzung nach §§ 14, 15 MarkenG. Pflichtinhalte (Verletzungshandlung, Markenschutz, Unterlassungsanspruch, Schadensersatz, Anwaltskosten), strafbewehrte Unterlassungserklärung, Reaktion auf Berechtigungsanfrage, Verjährung. Use when ein Markeninhaber einen Verletzer abmahnen will oder eine erhaltene Abmahnung auf Substantiierung und Reaktion zu prüfen ist.",
+      "path": "gewerblicher-rechtsschutz/skills/markenrechtsverletzung-abmahnung/SKILL.md",
+      "domain": "gewerblicher-rechtsschutz",
+      "category": "gewerblicher-rechtsschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "markenrechtsverletzung",
+        "abmahnung",
+        "§§14",
+        "gewerblicher-rechtsschutz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "aussenpruefung-betriebspruefung",
+      "description": "Begleitung einer Außenprüfung (Betriebsprüfung) durch die Finanzbehörde nach §§ 193 ff. AO. Anordnung und Prüfungsumfang, Mitwirkungspflichten §§ 90, 200 AO, Schlussbesprechung § 201 AO, Schätzungen § 162 AO, Rechtsbehelfe gegen Prüfungshandlungen, GoBD-konforme Aufzeichnungen. Use when ein Mandant eine Prüfungsanordnung erhalten hat oder die Schlussbesprechung vorbereitet.",
+      "path": "steuerrecht/skills/aussenpruefung-betriebspruefung/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "aussenpruefung",
+        "betriebspruefung",
+        "§§193",
+        "§§90",
+        "§201",
+        "§162",
+        "steuerrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "widerspruchsverfahren-vwgo",
+      "description": "Widerspruchsverfahren gegen Verwaltungsakte nach §§ 68 ff. VwGO. Statthaftigkeit, Form, Frist (1 Monat ab Bekanntgabe § 70 VwGO), aufschiebende Wirkung § 80 VwGO, Widerspruchsbescheid und Klagevoraussetzung. Use when ein Mandant einen belastenden Verwaltungsakt erhalten hat und Rechtsschutz im Vorverfahren begehrt.",
+      "path": "verwaltungsrecht/skills/widerspruchsverfahren-vwgo/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "widerspruchsverfahren",
+        "vwgo",
+        "§§68",
+        "§70",
+        "§80",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "hochrisiko-klassifizierung",
+      "description": "Klassifizierung eines KI-Systems als Hochrisiko-System nach Art. 6 i.V.m. Anhang III KI-VO – Anwendungsbereiche, Ausnahmen Art. 6 Abs. 3, Kennzeichnung als Sicherheitsbauteil Anhang I, Folgepflichten. Use when ein Unternehmen prüft, ob sein KI-System unter die Hochrisiko-Regelungen der KI-VO fällt.",
+      "path": "ki-vo-compliance/skills/hochrisiko-klassifizierung/SKILL.md",
+      "domain": "ki-vo-compliance",
+      "category": "ki-vo-compliance",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "hochrisiko",
+        "klassifizierung",
+        "art.6",
+        "ki-vo",
+        "ki-vo-compliance"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "meldepflicht-24h",
+      "description": "NIS2-Meldepflichten bei erheblichen Sicherheitsvorfällen – 24-Stunden-Frühwarnung, 72-Stunden-Erstmeldung, Zwischen- und Endbericht (Art. 23 NIS2 / NIS2UmsuCG). Use when ein erheblicher Sicherheitsvorfall vorliegt oder ein Notfallplan für Meldungen an das BSI erstellt wird.",
+      "path": "nis2/skills/meldepflicht-24h/SKILL.md",
+      "domain": "nis2",
+      "category": "nis2",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "meldepflicht",
+        "24h",
+        "art.23",
+        "nis2"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "meldestelle-einrichten",
+      "description": "Einrichtung einer HinSchG-konformen internen Meldestelle nach § 12 HinSchG – Auswahl Meldekanäle (mündlich, schriftlich, persönlich), Vertraulichkeitsschutz § 8, Anonymität § 16, Pflichten der Meldestelle § 13, Fristen § 17. Use when ein Unternehmen mit ≥ 50 EE die interne Meldestelle erstmals aufsetzt oder eine bestehende auf HinSchG-Konformität prüft.",
+      "path": "hinweisgeberschutz/skills/meldestelle-einrichten/SKILL.md",
+      "domain": "hinweisgeberschutz",
+      "category": "hinweisgeberschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "meldestelle",
+        "einrichten",
+        "§12",
+        "§8",
+        "§16",
+        "§13",
+        "§17",
+        "hinschg"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "risikoanalyse-lksg",
+      "description": "Risikoanalyse nach § 5 LkSG – Identifikation menschenrechtlicher und umweltbezogener Risiken im eigenen Geschäftsbereich und bei unmittelbaren Zulieferern; anlassbezogene Erweiterung auf mittelbare Zulieferer (§ 9 LkSG). Use when ein Unternehmen die jährliche Risikoanalyse aufsetzt oder ein anlassbezogenes Risiko bei einem mittelbaren Zulieferer eingegangen ist.",
+      "path": "lieferkettengesetz/skills/risikoanalyse-lksg/SKILL.md",
+      "domain": "lieferkettengesetz",
+      "category": "lieferkettengesetz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "risikoanalyse",
+        "lksg",
+        "§5",
+        "§9",
+        "lieferkettengesetz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ict-risikomanagement",
+      "description": "Aufbau eines DORA-konformen IKT-Risikomanagement-Rahmens für Finanzunternehmen – Governance Art. 5, Risikomanagement-Rahmen Art. 6, IKT-Systeme Art. 7, Identifikation Art. 8, Schutz Art. 9, Erkennung Art. 10, Reaktion und Wiederherstellung Art. 11, Lernen Art. 13. Use when ein Finanzunternehmen die DORA-Governance aufsetzt oder eine Gap-Analyse zum bestehenden BAIT/MaRisk-Rahmen durchführt.",
+      "path": "dora/skills/ict-risikomanagement/SKILL.md",
+      "domain": "dora",
+      "category": "dora",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ict",
+        "risikomanagement",
+        "art.5",
+        "art.6",
+        "art.7",
+        "art.8",
+        "art.9",
+        "art.10"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dsa-statement-of-reasons",
+      "description": "Erstellung eines DSA-konformen 'Statement of Reasons' nach Art. 17 DSA bei Inhaltsmoderations-Entscheidungen (Sperrung, Löschung, Demonetarisierung, Account-Sperre) – Inhaltsanforderungen, Bezug zu Allgemeinen Geschäftsbedingungen, Rechtsbehelfsbelehrung, DSA-Transparenzdatenbank. Use when ein Hosting-Anbieter oder eine Online-Plattform eine Inhalts-Restriktion gegenüber einem Nutzer kommuniziert.",
+      "path": "dsa-dma/skills/dsa-statement-of-reasons/SKILL.md",
+      "domain": "dsa-dma",
+      "category": "dsa-dma",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dsa",
+        "statement",
+        "reasons",
+        "art.17",
+        "dsa-dma"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "wesentlichkeitsanalyse-doppelt",
+      "description": "Durchführung der doppelten Wesentlichkeitsanalyse nach ESRS 1 §§ 25–53 – Impact Materiality (Auswirkungen des Unternehmens auf Mensch und Umwelt) und Financial Materiality (Risiken/Chancen aus Nachhaltigkeitsthemen für das Unternehmen). Use when ein Unternehmen erstmals CSRD-pflichtig ist oder die jährliche Wesentlichkeitsanalyse aufgesetzt wird.",
+      "path": "csrd/skills/wesentlichkeitsanalyse-doppelt/SKILL.md",
+      "domain": "csrd",
+      "category": "csrd",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "wesentlichkeitsanalyse",
+        "doppelt",
+        "§§25",
+        "esrs",
+        "csrd"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "eu-richtlinien-umsetzungspruefung",
+      "description": "Prüfung von Umsetzung, unmittelbarer Wirkung und richtlinienkonformer Auslegung einer EU-Richtlinie nach Art. 288 AEUV – vertikale unmittelbare Wirkung (Marshall/Faccini Dori), richtlinienkonforme Auslegung (von Colson/Marleasing/Pfeiffer), Francovich-Staatshaftung. Use when ein Mandant sich auf eine nicht oder fehlerhaft umgesetzte Richtlinie berufen will oder eine deutsche Norm auf RL-Konformität geprüft werden soll.",
+      "path": "europarecht/skills/eu-richtlinien-umsetzungspruefung/SKILL.md",
+      "domain": "europarecht",
+      "category": "europarecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "richtlinien",
+        "umsetzungspruefung",
+        "art.288",
+        "aeuv",
+        "europarecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vertragsverletzungsverfahren",
+      "description": "Reaktionsstrategie auf ein Vertragsverletzungsverfahren der EU-Kommission gegen die Bundesrepublik Deutschland nach Art. 258–260 AEUV – Mahnschreiben, Begründete Stellungnahme, Klage vor EuGH, Zwangsgeld/Pauschalbetrag Art. 260 II AEUV. Use when ein Bundesland oder eine Bundesbehörde ein Mahnschreiben oder eine Begründete Stellungnahme der Kommission erhalten hat oder das Risiko eines Verfahrens vorab eingeschätzt werden soll.",
+      "path": "europarecht/skills/vertragsverletzungsverfahren/SKILL.md",
+      "domain": "europarecht",
+      "category": "europarecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vertragsverletzungsverfahren",
+        "art.258",
+        "art.260",
+        "aeuv",
+        "europarecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vorabentscheidung-art-267",
+      "description": "Prüfung der Vorlagepflicht eines deutschen Gerichts nach Art. 267 AEUV und Entwurf der Vorlagefrage an den EuGH – CILFIT/acte clair/acte éclairé, fakultative Vorlage Art. 267 II, BVerfG-Kontrolle über Art. 101 I 2 GG. Use when ein deutsches Gericht in letzter oder vorletzter Instanz vor einer auslegungsbedürftigen Norm des Unionsrechts steht oder ein Mandant die unterbliebene Vorlage rügen will.",
+      "path": "europarecht/skills/vorabentscheidung-art-267/SKILL.md",
+      "domain": "europarecht",
+      "category": "europarecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vorabentscheidung",
+        "art",
+        "267",
+        "art.267",
+        "art.101",
+        "aeuv",
+        "gg",
+        "europarecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "grundrechtspruefung",
+      "description": "3-Stufen-Grundrechtsprüfung nach Schutzbereich, Eingriff und verfassungsrechtlicher Rechtfertigung inkl. Verhältnismäßigkeit und neuer Formel zu Art. 3 GG. Use when ein Hoheitsakt am Maßstab eines Freiheits- oder Gleichheitsrechts (Art. 1–19 GG) zu prüfen ist – ob als Vorstufe einer Verfassungsbeschwerde, im verwaltungsrechtlichen Klageverfahren oder in einem Gutachten zur Gesetzesfolgenabschätzung.",
+      "path": "verfassungsrecht/skills/grundrechtspruefung/SKILL.md",
+      "domain": "verfassungsrecht",
+      "category": "verfassungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "grundrechtspruefung",
+        "art.3",
+        "art.1",
+        "gg",
+        "verfassungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "organstreit-bund-laender",
+      "description": "Abgrenzung Organstreit (Art. 93 I Nr. 1 GG, §§ 63 ff. BVerfGG), Bund-Länder-Streit (Art. 93 I Nr. 3 GG, §§ 68 ff. BVerfGG) und abstrakte Normenkontrolle (Art. 93 I Nr. 2 GG, §§ 76 ff. BVerfGG) inkl. Antragsberechtigung, Antragsgegenstand und Frist. Use when ein Verfassungsorgan, eine Bundes- oder Landesregierung oder ein Bundestagsdrittel eine Kompetenz- oder Verfahrensfrage vor das BVerfG bringen will.",
+      "path": "verfassungsrecht/skills/organstreit-bund-laender/SKILL.md",
+      "domain": "verfassungsrecht",
+      "category": "verfassungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "organstreit",
+        "bund",
+        "laender",
+        "§§63",
+        "§§68",
+        "§§76",
+        "art.93",
+        "gg"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verfassungsbeschwerde",
+      "description": "Zulässigkeits- und Begründetheitsprüfung einer Verfassungsbeschwerde nach Art. 93 I Nr. 4a GG, §§ 90 ff. BVerfGG inklusive Schriftsatzentwurf. Use when ein Mandant gegen einen Hoheitsakt (Gesetz, Verwaltungsakt, fachgerichtliches Urteil) eine Grundrechtsverletzung rügen möchte oder ein bereits eingegangener Beschwerdeentwurf auf Zulässigkeit geprüft werden soll.",
+      "path": "verfassungsrecht/skills/verfassungsbeschwerde/SKILL.md",
+      "domain": "verfassungsrecht",
+      "category": "verfassungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verfassungsbeschwerde",
+        "§§90",
+        "art.93",
+        "gg",
+        "bverfgg",
+        "verfassungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sgb-ii-leistungsanspruch",
+      "description": "Vollprüfung des Bürgergeld-Anspruchs nach SGB II – Erwerbsfähigkeit § 8, Hilfebedürftigkeit § 9, Bedarfsgemeinschaft § 7 Abs. 3, anrechenbares Einkommen §§ 11 ff., Vermögen § 12, Regelbedarf § 20, Kosten der Unterkunft § 22, Mehrbedarfe § 21, Leistungsminderungen §§ 31 ff. nach Bürgergeld-Reform 2023. Use when Mandantin einen Erstantrag, eine Bedarfsneuberechnung oder eine Bescheidkontrolle benötigt.",
+      "path": "sozialrecht/skills/sgb-ii-leistungsanspruch/SKILL.md",
+      "domain": "sozialrecht",
+      "category": "sozialrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "sgb",
+        "leistungsanspruch",
+        "§8",
+        "§9",
+        "§7",
+        "§§11",
+        "§12",
+        "§20"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sgb-vi-rentenanspruch",
+      "description": "Prüfung des Rentenanspruchs nach SGB VI – Altersrenten §§ 35–38 (Regelaltersrente, langjährig / besonders langjährig Versicherte, Schwerbehinderte), Erwerbsminderungsrente §§ 43, 50, 51 (volle vs. teilweise EM, Wartezeit, besondere versicherungsrechtliche Voraussetzungen), Hinzuverdienst § 96a. Use when Mandantin Renteneintritt plant, Erwerbsminderung geltend macht oder einen Rentenbescheid prüft.",
+      "path": "sozialrecht/skills/sgb-vi-rentenanspruch/SKILL.md",
+      "domain": "sozialrecht",
+      "category": "sozialrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "sgb",
+        "rentenanspruch",
+        "§§35",
+        "§§43",
+        "§96a",
+        "sozialrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "widerspruch-leistungsbescheid",
+      "description": "Bescheidanalyse und Entwurf einer Widerspruchsschrift gegen einen sozialrechtlichen Leistungsbescheid – Frist § 84 SGG, Form §§ 81, 84 SGG, Begründungsmängel § 35 SGB X, aufschiebende Wirkung § 86a SGG, einstweiliger Rechtsschutz § 86b SGG, Anschluss-Klagefrist § 87 SGG. Use when Mandant einen Bescheid des Jobcenters, der Rentenversicherung, der Krankenkasse oder des Sozialamts angreifen möchte.",
+      "path": "sozialrecht/skills/widerspruch-leistungsbescheid/SKILL.md",
+      "domain": "sozialrecht",
+      "category": "sozialrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "widerspruch",
+        "leistungsbescheid",
+        "§84",
+        "§§81",
+        "§35",
+        "§86a",
+        "§86b",
+        "§87"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "handelsregister-eintragungspflicht",
+      "description": "Prüfung der Kaufmannseigenschaft nach §§ 1–6 HGB, daraus folgender Eintragungspflicht im Handelsregister sowie der Publizitätswirkung § 15 HGB. Use when ein Mandant prüfen muss, ob er Ist-/Kann-/Formkaufmann ist, ob eine Anmeldung beim Registergericht ansteht oder welche Folgen aus einer (un)richtigen Eintragung gegenüber Dritten resultieren.",
+      "path": "handelsrecht/skills/handelsregister-eintragungspflicht/SKILL.md",
+      "domain": "handelsrecht",
+      "category": "handelsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "handelsregister",
+        "eintragungspflicht",
+        "§§1",
+        "§15",
+        "hgb",
+        "handelsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "handelsvertretervertrag",
+      "description": "Entwurf und Prüfung eines Handelsvertretervertrags nach §§ 84 ff. HGB inkl. Abgrenzung zu Vertragshändler/Kommissionsagent/Franchisenehmer, Provisionsregelung §§ 87 ff. HGB, Kündigung § 89 HGB, Ausgleichsanspruch § 89b HGB und nachvertragliches Wettbewerbsverbot § 90a HGB. Use when ein Unternehmer einen Vertriebsvertrag aufsetzt, ein Handelsvertreter seinen Ausgleichsanspruch beziffert oder die Beendigung eines Vertragsverhältnisses ansteht.",
+      "path": "handelsrecht/skills/handelsvertretervertrag/SKILL.md",
+      "domain": "handelsrecht",
+      "category": "handelsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "handelsvertretervertrag",
+        "§§84",
+        "§§87",
+        "§89",
+        "§89b",
+        "§90a",
+        "hgb",
+        "handelsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "hgb-handelsgeschaeft-besonderheiten",
+      "description": "Praxischeck der Besonderheiten des Vierten Buches HGB im Vergleich zum BGB-Schuldrecht – Handelsbrauch § 346, kaufmännische Sorgfalt § 347, Form § 350, Zinsen § 352, gutgläubiger Erwerb § 366, kaufmännisches Bestätigungsschreiben §§ 362/363 sowie insbesondere Untersuchungs- und Rügepflicht §§ 377/378 HGB. Use when ein B2B-Sachverhalt zu beurteilen ist und zu klären, ob HGB-Sonderregeln greifen oder das BGB anwendbar bleibt.",
+      "path": "handelsrecht/skills/hgb-handelsgeschaeft-besonderheiten/SKILL.md",
+      "domain": "handelsrecht",
+      "category": "handelsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "hgb",
+        "handelsgeschaeft",
+        "besonderheiten",
+        "§346",
+        "§347",
+        "§350",
+        "§352",
+        "§366"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "arzthaftung-aufklaerungspflicht",
+      "description": "Prüfung der ärztlichen Aufklärungspflicht und der daraus folgenden zivilrechtlichen Arzthaftung – Selbstbestimmungsaufklärung § 630e BGB, Aufklärungsumfang, Form/Adressat, Bedenkzeit, Beweislast § 630h II BGB, hypothetische Einwilligung. Use when ein Patient einen Aufklärungsmangel rügt oder eine Behandlerseite (Arzt, Klinik, Haftpflichtversicherer) Aufklärung und Einwilligung verteidigen muss.",
+      "path": "medizinrecht/skills/arzthaftung-aufklaerungspflicht/SKILL.md",
+      "domain": "medizinrecht",
+      "category": "medizinrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "arzthaftung",
+        "aufklaerungspflicht",
+        "§630e",
+        "§630h",
+        "bgb",
+        "medizinrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mbo-aerzte-pruefung",
+      "description": "Berufsrechtliche Prüfung ärztlicher Pflichten nach der Musterberufsordnung MBO-Ä und der einschlägigen Landesberufsordnung – Werbung § 27 MBO-Ä iVm HWG, Schweigepflicht § 9 MBO-Ä iVm § 203 StGB, Dokumentation § 10 MBO-Ä iVm § 630f BGB, Fernbehandlung § 7 IV MBO-Ä, Fortbildung § 4 MBO-Ä iVm § 95d SGB V, Honorar § 12 MBO-Ä iVm GOÄ. Use when ein Arzt von einer Landesärztekammer berufsrechtlich in Anspruch genommen wird oder berufsrechtliche Konformität einer Praxis-/Werbekonzeption zu prüfen ist.",
+      "path": "medizinrecht/skills/mbo-aerzte-pruefung/SKILL.md",
+      "domain": "medizinrecht",
+      "category": "medizinrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mbo",
+        "aerzte",
+        "pruefung",
+        "§27",
+        "§9",
+        "§203",
+        "§10",
+        "§630f"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "patientenrechte-akteneinsicht",
+      "description": "Anspruch des Patienten (und seiner Erben/Angehörigen) auf Einsicht in die Behandlungsakte nach § 630g BGB und parallel Art. 15 DSGVO – Verweigerungsgründe (therapeutischer Vorbehalt, Rechte Dritter), Form, Kostenfolge, Erbenanspruch, Verhältnis zur ärztlichen Schweigepflicht § 203 StGB. Use when ein Patient oder Erbe Einsicht verlangt und die Behandlerseite verweigert oder die Form streitig ist.",
+      "path": "medizinrecht/skills/patientenrechte-akteneinsicht/SKILL.md",
+      "domain": "medizinrecht",
+      "category": "medizinrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "patientenrechte",
+        "akteneinsicht",
+        "§630g",
+        "§203",
+        "art.15",
+        "bgb",
+        "dsgvo",
+        "stgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "obliegenheitsverletzung-vvg",
+      "description": "Prüfung der Rechtsfolgen einer vorvertraglichen Anzeigepflichtverletzung §§ 19–22 VVG (Rücktritt, Kündigung, Vertragsanpassung, Arglistanfechtung) und einer vertraglichen Obliegenheitsverletzung § 28 VVG (Leistungsfreiheit, Quotelung, Kausalitätsgegenbeweis), jeweils inkl. Belehrungserfordernis (§ 19 Abs. 5, § 28 Abs. 4 VVG) und Fristen (§ 21 Abs. 1 VVG: 1 Monat; § 124 BGB: 1/10 Jahre). Use when ein Versicherer auf Anzeigepflicht- oder Obliegenheitsverletzung gestützt Rücktritt, Kündigung oder Leistungsfreiheit erklärt.",
+      "path": "versicherungsrecht/skills/obliegenheitsverletzung-vvg/SKILL.md",
+      "domain": "versicherungsrecht",
+      "category": "versicherungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "obliegenheitsverletzung",
+        "vvg",
+        "§§19",
+        "§28",
+        "§19",
+        "§21",
+        "§124",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "versicherungsfall-deckungspruefung",
+      "description": "Dreistufige Deckungsprüfung im VVG – Versicherungsfall unter die AVB-Leistungsbeschreibung, kein Risikoausschluss, keine Leistungsfreiheit; AVB-Auslegung nach Empfängerhorizont des durchschnittlichen Versicherungsnehmers, Unklarheitenregel § 305c Abs. 2 BGB, AGB-Kontrolle §§ 307 ff. BGB. Use when ein Versicherer die Eintrittspflicht ablehnt oder eine Klausel der Allgemeinen Versicherungsbedingungen streitig ist (Wohngebäude, Hausrat, Berufsunfähigkeit, Rechtsschutz, Kasko).",
+      "path": "versicherungsrecht/skills/versicherungsfall-deckungspruefung/SKILL.md",
+      "domain": "versicherungsrecht",
+      "category": "versicherungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "versicherungsfall",
+        "deckungspruefung",
+        "§305c",
+        "§§307",
+        "vvg",
+        "bgb",
+        "versicherungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "versicherungsmaklerhaftung",
+      "description": "Haftung des Versicherungsmaklers wegen Pflichtverletzung – Marktauswahl § 60 VVG, anlassbezogene Beratung § 61 VVG, Dokumentation/Beratungsprotokoll § 62 VVG, Schadensersatz § 63 VVG; Abgrenzung zum Versicherungsvertreter § 59 Abs. 2 VVG und § 34d GewO; Mitverschulden § 254 BGB; Verjährung §§ 195, 199 BGB. Use when ein Versicherungsnehmer Schadensersatz gegen den Makler verlangt (Unterversicherung, falsche Sparten-Empfehlung, fehlende Anlassprüfung, unvollständige Dokumentation).",
+      "path": "versicherungsrecht/skills/versicherungsmaklerhaftung/SKILL.md",
+      "domain": "versicherungsrecht",
+      "category": "versicherungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "versicherungsmaklerhaftung",
+        "§60",
+        "§61",
+        "§62",
+        "§63",
+        "§59",
+        "§34d",
+        "§254"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "baugenehmigungsverfahren",
+      "description": "Prüfung der Baugenehmigung: bauplanungsrechtliche Zulässigkeit (§§ 30–35 BauGB; faktisches Gebiet § 34 II BauGB iVm BauNVO; Außenbereich § 35; Befreiung § 31 II), bauordnungsrechtliche Zulässigkeit (Landes-BauO – Abstandsflächen, Brandschutz, Stellplätze), Einvernehmen der Gemeinde § 36 BauGB, Verfahrensart (volles Verfahren / vereinfachtes Verfahren / Genehmigungsfreistellung), Rechtsbehelfe (Verpflichtungs-/Anfechtungsklage § 42 VwGO, Untätigkeitsklage § 75 VwGO, Bauvoranfrage). Use when ein Bauvorhaben planungs- und ordnungsrechtlich vorgeprüft, ein Bauantrag begleitet oder ein ablehnender Bescheid / fehlendes Einvernehmen angegriffen werden soll.",
+      "path": "baurecht/skills/baugenehmigungsverfahren/SKILL.md",
+      "domain": "baurecht",
+      "category": "baurecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "baugenehmigungsverfahren",
+        "§§30",
+        "§34",
+        "§35",
+        "§31",
+        "§36",
+        "§42",
+        "§75"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nachbarrechtlicher-baustreit",
+      "description": "Nachbarliche Abwehr gegen Bauvorhaben in beiden Spuren: öffentlich-rechtlich Drittanfechtung der Baugenehmigung (drittschützende Norm – Abstandsflächen LBO, Rücksichtnahmegebot § 34 I 2 / § 35 III BauGB iVm § 15 BauNVO) mit Eilrechtsschutz § 80 V iVm § 80a VwGO trotz Sofortvollzug § 212a BauGB; zivilrechtlich Beseitigungs- und Unterlassungsansprüche § 1004 BGB iVm § 906 BGB (Immissionen, Wesentlichkeit, Ortsüblichkeit, Geldausgleich) sowie Ansprüche aus Landes-Nachbarrechtsgesetzen. Use when ein Mandant gegen ein Nachbarvorhaben vorgehen oder als Bauherr die Erfolgsaussichten einer Nachbarklage einschätzen will.",
+      "path": "baurecht/skills/nachbarrechtlicher-baustreit/SKILL.md",
+      "domain": "baurecht",
+      "category": "baurecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "nachbarrechtlicher",
+        "baustreit",
+        "§34",
+        "§35",
+        "§15",
+        "§80",
+        "§80a",
+        "§212a"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vob-werkvertrag-mangelpruefung",
+      "description": "Mängelprüfung am Bauwerk: Vertragsregime klären (BGB-Werkvertrag §§ 631 ff., Bauvertrag §§ 650a ff., Verbraucherbauvertrag §§ 650i ff. vs. VOB/B), Abnahme § 640 BGB und ihre Wirkungen, Mängelrechte § 634 BGB in gesetzlicher Reihenfolge, Verjährung § 634a BGB (5/2 Jahre); bei VOB/B die AGB-Inhaltskontrolle der „im Ganzen\"-Privilegierung. Use when ein Bauherr oder Auftragnehmer nach Abnahme über Mängel streitet, eine Mängelrüge formuliert werden soll, oder die Wirksamkeit einer VOB/B-Klausel zur Verjährung / Sicherheit / Zahlung geprüft wird.",
+      "path": "baurecht/skills/vob-werkvertrag-mangelpruefung/SKILL.md",
+      "domain": "baurecht",
+      "category": "baurecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vob",
+        "werkvertrag",
+        "mangelpruefung",
+        "§§631",
+        "§§650a",
+        "§§650i",
+        "§640",
+        "§634"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mpu-anordnung-pruefung",
+      "description": "Rechtmäßigkeitsprüfung einer MPU-Anordnung der Fahrerlaubnisbehörde – Trigger §§ 11, 13, 14 FeV (Alkohol ab 1,6 ‰; BTM; wiederholte Auffälligkeit), formelle und materielle Anforderungen, Schluss auf Nichteignung § 11 VIII FeV, Rechtsschutz Widerspruch/Klage § 74 VwGO und Eilantrag § 80 V VwGO. Use when ein Mandant eine MPU-Anordnung oder einen Entziehungsbescheid erhalten hat oder im Wiedererteilungsverfahren steht.",
+      "path": "verkehrsrecht/skills/mpu-anordnung-pruefung/SKILL.md",
+      "domain": "verkehrsrecht",
+      "category": "verkehrsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mpu",
+        "anordnung",
+        "pruefung",
+        "§§11",
+        "§11",
+        "§74",
+        "§80",
+        "fev"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ordnungswidrigkeit-stvo",
+      "description": "Prüfung eines Bußgeldbescheids wegen Verstoßes gegen die StVO – formelle Anforderungen § 66 OWiG, Einspruchsfrist 2 Wochen § 67 OWiG, standardisierte Messverfahren mit Akteneinsicht in Rohmessdaten, Fahrverbot § 25 StVG, Absehen wegen besonderer Härte § 4 IV BKatV, Verfolgungsverjährung § 26 III StVG / § 31 OWiG. Use when ein Mandant einen Bußgeldbescheid (Geschwindigkeit, Abstand, Rotlicht, Handy) erhalten hat und Einspruch geprüft werden soll.",
+      "path": "verkehrsrecht/skills/ordnungswidrigkeit-stvo/SKILL.md",
+      "domain": "verkehrsrecht",
+      "category": "verkehrsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ordnungswidrigkeit",
+        "stvo",
+        "§66",
+        "§67",
+        "§25",
+        "§4",
+        "§26",
+        "§31"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "stvg-haftungspruefung",
+      "description": "Haftungsprüfung nach Verkehrsunfall – Halterhaftung § 7 StVG, Fahrerhaftung § 18 StVG, Quotelung § 17 StVG bei beidseitiger Betriebsgefahr, Mitverschulden § 9 StVG iVm § 254 BGB, Schadensbezifferung mit 130%-Grenze, Nutzungsausfall, Mietwagen, Schmerzensgeld. Use when nach einem Verkehrsunfall die Haftungsquote und der ersatzfähige Schaden gegen Halter, Fahrer und Pflichtversicherer (§ 115 VVG) zu prüfen sind.",
+      "path": "verkehrsrecht/skills/stvg-haftungspruefung/SKILL.md",
+      "domain": "verkehrsrecht",
+      "category": "verkehrsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "stvg",
+        "haftungspruefung",
+        "§7",
+        "§18",
+        "§17",
+        "§9",
+        "§254",
+        "§115"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "lizenzvertrag-urhg",
+      "description": "Entwurf und Review eines urheberrechtlichen Lizenzvertrags mit präziser Nutzungsrechtseinräumung nach §§ 31–37 UrhG, Zweckübertragungsregel § 31 V UrhG und Angemessenheits-Check nach §§ 32, 32a, 32d UrhG (Bestseller-Klausel, Auskunftspflicht). Use when ein Lizenzvertrag — insb. Total-/Buy-Out-, Filmproduktions- oder Verlagsvertrag — gestaltet oder eine vorgelegte Klausel auf angemessene Vergütung und AGB-Wirksamkeit geprüft werden soll.",
+      "path": "urheber-medienrecht/skills/lizenzvertrag-urhg/SKILL.md",
+      "domain": "urheber-medienrecht",
+      "category": "urheber-medienrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "lizenzvertrag",
+        "urhg",
+        "§§31",
+        "§31",
+        "§§32",
+        "urheber-medienrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mstv-medienrechtspruefung",
+      "description": "Pflichtenprüfung für Diensteanbieter und journalistisch-redaktionelle Telemedien nach MStV (Impressum § 18, Trennungsgebot § 22, Sorgfaltspflichten § 19), Entwurf eines Gegendarstellungsantrags nach § 20 MStV/Landespressegesetz mit strenger Form-/Fristprüfung, Hilfsansprüche Berichtigung/Unterlassung iVm §§ 823 I, 1004 BGB und §§ 22, 23 KUG. Use when ein Diensteanbieter Pflichten auf Konformität prüfen lassen will oder ein Betroffener eine unrichtige Tatsachenbehauptung in einem journalistisch-redaktionellen Medium beanstanden möchte.",
+      "path": "urheber-medienrecht/skills/mstv-medienrechtspruefung/SKILL.md",
+      "domain": "urheber-medienrecht",
+      "category": "urheber-medienrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mstv",
+        "medienrechtspruefung",
+        "§18",
+        "§22",
+        "§19",
+        "§20",
+        "§§823",
+        "§§22"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "urheberrechtsverletzung-abmahnung",
+      "description": "Prüfung einer Urheberrechtsverletzung und Entwurf einer § 97a UrhG-konformen Abmahnung mit dreifacher Schadensberechnung, Auskunftsanspruch § 101 UrhG (insb. Provider-Auskunft § 101 IX) und Reaktionsoptionen (modifizierte Unterlassungserklärung, negative Feststellungsklage). Use when der Mandant eine eigene Urheberrechtsverletzung geltend machen will oder eine Abmahnung erhalten hat, einschließlich Filesharing- und Plattform-Konstellationen (UrhDaG).",
+      "path": "urheber-medienrecht/skills/urheberrechtsverletzung-abmahnung/SKILL.md",
+      "domain": "urheber-medienrecht",
+      "category": "urheber-medienrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "urheberrechtsverletzung",
+        "abmahnung",
+        "§97a",
+        "§101",
+        "urhg",
+        "urheber-medienrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "athletenvertrag",
+      "description": "Entwurf und AGB-Kontrolle von Athleten-, Spielerarbeits-, Förderungs-, Sponsoring- und Vermarktungsverträgen – §§ 305 ff. BGB Inhaltskontrolle, § 611a BGB / TzBfG Befristung, KUG §§ 22, 23 Bildnisrechte, § 1 GWB / Art. 101 AEUV Loyalty-/Exklusivklauseln (Bosman/Diarra-Linie), Doping-Klauseln und Bonusrückzahlung, DSGVO Art. 9 Gesundheits- und Trainingsdaten. Use when ein Athleten- oder Spielerarbeitsvertrag, Sponsoringvertrag, Förder- oder Vermarktungsvertrag entworfen, geprüft oder verhandelt werden soll.",
+      "path": "sportrecht/skills/athletenvertrag/SKILL.md",
+      "domain": "sportrecht",
+      "category": "sportrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "athletenvertrag",
+        "§§305",
+        "§611a",
+        "§§22",
+        "§1",
+        "art.101",
+        "art.9",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dopingverfahren-verteidigung",
+      "description": "Verteidigung der Athletin/des Athleten im sportrechtlichen Dopingverfahren – Anhörung bei NADA, Verbandsschiedsgericht, CAS-Berufung; WADC Art. 2.1 verschuldensunabhängige Anwesenheit, Sanktionsmilderung Art. 10.5/10.6 (No Significant Fault); Parallelverfahren § 4 IV AntiDopG (Selbstdoping Spitzensportler) und Verhältnis Sport-/Strafrecht; Whereabouts, B-Probe, Berufsverbot Art. 12 GG. Use when eine positive Probe gemeldet wurde, die NADA zur Anhörung lädt, ein Verband eine Sperre aussprechen oder bereits ausgesprochen hat, oder eine CAS-Berufung vorbereitet werden muss.",
+      "path": "sportrecht/skills/dopingverfahren-verteidigung/SKILL.md",
+      "domain": "sportrecht",
+      "category": "sportrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dopingverfahren",
+        "verteidigung",
+        "§4",
+        "art.2",
+        "art.10",
+        "art.12",
+        "gg",
+        "sportrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vereinsrechtliche-sanktion",
+      "description": "Anfechtung sportrechtlicher Vereins- und Verbandssanktionen – Vereinsausschluss (BGB §§ 25, 39), Verbandssperre (Disziplinargewalt aus Satzung iVm Mitgliedschaft), Stadionverbot (§ 858, § 1004 BGB Hausrecht); Inhaltskontrolle der Satzung §§ 138, 242 BGB, Art. 9 III GG vs. Art. 12 GG; Schiedsklausel-Wirksamkeit nach Pechstein-Linie, 2-Instanzen-Erfordernis; Anfechtungsfrist § 32 BGB / § 246 AktG analog. Use when ein Vereins- oder Verbandsmitglied gegen Ausschluss, Sperre oder andere disziplinarische Maßnahme vorgehen will oder ein Veranstalter ein Stadionverbot verteidigen oder anfechten muss.",
+      "path": "sportrecht/skills/vereinsrechtliche-sanktion/SKILL.md",
+      "domain": "sportrecht",
+      "category": "sportrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vereinsrechtliche",
+        "sanktion",
+        "§§25",
+        "§858",
+        "§1004",
+        "§§138",
+        "§32",
+        "§246"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "abschiebungsschutz",
+      "description": "Eilrechtsschutz gegen drohende Abschiebung und Duldungsantrag – § 80 V VwGO (insb. § 36 III AsylG 1-Wochen-Frist), § 123 VwGO, Duldung § 60a AufenthG, krankheitsbedingte Verbote § 60 VII AufenthG mit qualifizierter ärztlicher Bescheinigung § 60a IIc, Familienschutz Art. 6 GG / Art. 8 EMRK, EGMR Rule 39 als ultima ratio. Use when ein BAMF-Bescheid mit Abschiebungsandrohung zugestellt ist, eine Abschiebung unmittelbar droht oder Duldungsgründe entstanden sind.",
+      "path": "migrationsrecht/skills/abschiebungsschutz/SKILL.md",
+      "domain": "migrationsrecht",
+      "category": "migrationsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "abschiebungsschutz",
+        "§80",
+        "§36",
+        "§123",
+        "§60a",
+        "§60",
+        "art.6",
+        "art.8"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "asylantrag-vorbereitung",
+      "description": "Vorbereitung des Asylantrags und der BAMF-Anhörung § 25 AsylG – Triage Dublin-VO 604/2013, Flüchtlingseigenschaft § 3 AsylG, Asylberechtigung Art. 16a GG, subsidiärer Schutz § 4 AsylG, nationale Abschiebungsverbote § 60 V/VII AufenthG, Folgeantrag § 71 AsylG. Use when ein Asylantrag erstmalig gestellt werden soll, eine BAMF-Anhörung ansteht oder ein Folgeantrag wegen neuer Sachlage erwogen wird.",
+      "path": "migrationsrecht/skills/asylantrag-vorbereitung/SKILL.md",
+      "domain": "migrationsrecht",
+      "category": "migrationsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "asylantrag",
+        "vorbereitung",
+        "§25",
+        "§3",
+        "§4",
+        "§60",
+        "§71",
+        "art.16"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "aufenthaltstitel-pruefung",
+      "description": "Prüfung der einschlägigen Aufenthaltstitel-Art nach AufenthG (Visum § 6, Aufenthaltserlaubnis § 7, Niederlassungserlaubnis § 9, Daueraufenthalt-EU § 9a, Blaue Karte EU § 18b, Chancenkarte § 20a) und der allgemeinen Erteilungsvoraussetzungen § 5 AufenthG, Entwurf von Antrag und Begründung an die Ausländerbehörde. Use when ein Drittstaatsangehöriger erstmalig oder zum Zweckwechsel einen Aufenthaltstitel benötigt oder die Verlängerung beantragt.",
+      "path": "migrationsrecht/skills/aufenthaltstitel-pruefung/SKILL.md",
+      "domain": "migrationsrecht",
+      "category": "migrationsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "aufenthaltstitel",
+        "pruefung",
+        "§6",
+        "§7",
+        "§9",
+        "§9a",
+        "§18b",
+        "§20a"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "agrar-grundstuecksverkehrsrecht",
+      "description": "Prüfung der Genehmigungspflicht eines Verkaufs landwirtschaftlicher Flächen nach GrdstVG, der Versagungsgründe nach § 9 GrdstVG, des siedlungsrechtlichen Vorkaufsrechts nach § 4 RSG und der Anzeige- und Beanstandungspflicht bei Landpachtverträgen nach LPachtVG. Statutory anchors: §§ 2, 6, 9, 22 GrdstVG; §§ 4, 6 RSG; §§ 2, 4 LPachtVG; §§ 463 ff., 581 ff. BGB; LwVG. Use when ein Kaufvertrag über landwirtschaftliche Flächen genehmigt werden soll, das Vorkaufsrecht ausgeübt wurde, ein Landpachtvertrag anzuzeigen ist oder eine Beschwerde gegen einen LwG-Beschluss erwogen wird.",
+      "path": "agrarrecht/skills/agrar-grundstuecksverkehrsrecht/SKILL.md",
+      "domain": "agrarrecht",
+      "category": "agrarrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "agrar",
+        "grundstuecksverkehrsrecht",
+        "§9",
+        "§4",
+        "§§2",
+        "§§4",
+        "§§463",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gap-foerderantrag",
+      "description": "Begleitung und Verteidigung des Sammelantrags GAP 2023–2027 – Direktzahlungen (Einkommensgrundstützung, Umverteilung, Junglandwirteprämie, gekoppelte Stützung), Öko-Regelungen, Konditionalität (GLÖZ 1–9, GAB), Sanktionsbemessung, Widerspruch und Klage. Statutory anchors: VO (EU) 2021/2115, 2021/2116; GAP-DZG; GAPInVeKoSG; GAP-KondV; GAP-IntegrV. Use when ein Betriebsinhaber den Sammelantrag vorbereitet, eine Bewilligung erhält, eine Kürzung/Sanktion verteidigt oder Widerspruch/Klage erwägt.",
+      "path": "agrarrecht/skills/gap-foerderantrag/SKILL.md",
+      "domain": "agrarrecht",
+      "category": "agrarrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gap",
+        "foerderantrag",
+        "agrarrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "lwanpg-pruefung",
+      "description": "Prüfung und Durchsetzung von Auseinandersetzungsansprüchen ehemaliger LPG-Mitglieder bzw. ihrer Erben gegen die LPG-Nachfolgegesellschaft nach §§ 44 ff. LwAnpG vor dem Landwirtschaftsgericht – Anspruchsgrundlagen, Ermittlung des Auseinandersetzungsguthabens, Verjährung § 51a LwAnpG, Klagebefugnis, Verfahren nach LwVG/FamFG. Use when ein Mandant (Mitglied oder Erbe) Ansprüche gegen die LPG-Nachfolgegesellschaft (e.G., GmbH, GbR) geltend macht, ein Bescheid der Nachfolgegesellschaft angefochten werden soll oder die Verjährung zu prüfen ist.",
+      "path": "agrarrecht/skills/lwanpg-pruefung/SKILL.md",
+      "domain": "agrarrecht",
+      "category": "agrarrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "lwanpg",
+        "pruefung",
+        "§§44",
+        "§51a",
+        "agrarrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ausschreibungspruefung",
+      "description": "Prüfung der Vergabeunterlagen einer EU-weiten Ausschreibung auf Vergaberechtskonformität (Bieterperspektive) – Eignungsanforderungen §§ 122–124 GWB, Mindestanforderungen, Zuschlagskriterien § 127 GWB und deren Gewichtung, Diskriminierungsverbot § 97 Abs. 2 GWB, Leistungsbeschreibung § 31 VgV, Losaufteilung § 97 Abs. 4 GWB. Use when ein Bieter vor Angebotsabgabe (oder ein Auftraggeber vor Bekanntmachung) klären muss, ob die Vergabeunterlagen rügefest sind.",
+      "path": "vergaberecht/skills/ausschreibungspruefung/SKILL.md",
+      "domain": "vergaberecht",
+      "category": "vergaberecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ausschreibungspruefung",
+        "§§122",
+        "§127",
+        "§97",
+        "§31",
+        "gwb",
+        "vergaberecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nachpruefungsverfahren-vergabekammer",
+      "description": "Nachprüfungsverfahren vor der Vergabekammer §§ 155 ff. GWB – Antragsbefugnis § 160 Abs. 2 GWB (Interesse, Rechtsverletzung, Schadensgefahr), Rügeobliegenheit § 160 Abs. 3 GWB (10-Kalendertage-Frist), Suspensiveffekt § 169 GWB, Entscheidung § 168 GWB, Kostenfolgen § 182 GWB. Use when ein Bieter wegen drohender oder erfolgter Rechtsverletzung im Vergabeverfahren Eilrechtsschutz vor der zuständigen Vergabekammer (Bund: BKartA, Land: VK des jeweiligen Landes) sucht.",
+      "path": "vergaberecht/skills/nachpruefungsverfahren-vergabekammer/SKILL.md",
+      "domain": "vergaberecht",
+      "category": "vergaberecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "nachpruefungsverfahren",
+        "vergabekammer",
+        "§§155",
+        "§160",
+        "§169",
+        "§168",
+        "§182",
+        "gwb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vergabe-eu-schwellenwert-pruefung",
+      "description": "Schwellenwert- und Verfahrensprüfung im deutschen Vergaberecht – geschätzter Auftragswert nach § 3 VgV (Vollwertprinzip, Loseregelung § 3 Abs. 7 VgV), Abgleich mit aktuellen EU-Schwellenwerten (VO (EU) – regelmäßig prüfen), Auftraggebereigenschaft § 99 GWB und Empfehlung der Verfahrensart. Use when ein Auftraggeber vor Bekanntmachung klären muss, ob Oberschwellen- (GWB Teil 4 / VgV / SektVO / KonzVgV / VSVgV) oder Unterschwellenbereich (UVgO / VOB/A) gilt.",
+      "path": "vergaberecht/skills/vergabe-eu-schwellenwert-pruefung/SKILL.md",
+      "domain": "vergaberecht",
+      "category": "vergaberecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vergabe",
+        "schwellenwert",
+        "pruefung",
+        "§3",
+        "§99",
+        "gwb",
+        "vergaberecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "bimschg-genehmigungsverfahren",
+      "description": "Vollprüfung des immissionsschutzrechtlichen Genehmigungsverfahrens – Genehmigungsbedürftigkeit nach 4. BImSchV, Wahl zwischen förmlichem (§ 10 BImSchG) und vereinfachtem Verfahren (§ 19 BImSchG), Öffentlichkeitsbeteiligung nach 9. BImSchV, materielle Voraussetzungen § 5 BImSchG sowie Auflagen und Drittschutz. Use when Vorhabenträger eine Anlagengenehmigung beantragt, ein Bescheid auf Wirksamkeit / Anfechtbarkeit geprüft werden soll oder eine nachträgliche Anordnung § 17 BImSchG droht.",
+      "path": "umweltrecht/skills/bimschg-genehmigungsverfahren/SKILL.md",
+      "domain": "umweltrecht",
+      "category": "umweltrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "bimschg",
+        "genehmigungsverfahren",
+        "§10",
+        "§19",
+        "§5",
+        "§17",
+        "umweltrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "krwg-abfallrechtliche-pruefung",
+      "description": "Abfallrechtliche Prüfung nach KrWG – Abfallbegriff § 3 (objektiv/subjektiv), Abfallhierarchie § 6, Getrennthaltungsgebot § 14, Produktverantwortung §§ 23 ff., Überlassungspflicht § 17, Anzeige- und Erlaubnispflicht §§ 53/54, behördliche Überwachung und Sanktionen § 47. Use when ein Betrieb Abfälle einstuft, eine Anordnung der Abfallbehörde erhalten hat oder Anzeige-/Erlaubnispflichten geprüft werden müssen.",
+      "path": "umweltrecht/skills/krwg-abfallrechtliche-pruefung/SKILL.md",
+      "domain": "umweltrecht",
+      "category": "umweltrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "krwg",
+        "abfallrechtliche",
+        "pruefung",
+        "§3",
+        "§6",
+        "§14",
+        "§§23",
+        "§17"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "uvp-verfahrenspruefung",
+      "description": "Prüfung der Umweltverträglichkeitsprüfung – UVP-Pflicht nach § 5 UVPG i. V. m. Anlage 1, Vorprüfung des Einzelfalls § 7 UVPG (allgemeine/standortbezogene), Verfahrensschritte (Scoping § 15, Untersuchungsrahmen, Beteiligung § 18, Bewertung § 25), Verbindung mit immissionsschutzrechtlichem Trägerverfahren sowie Rechtsfolgen unterbliebener oder fehlerhafter UVP nach § 4 UmwRG. Use when ein Vorhaben UVP-Pflicht auslöst, eine Vorprüfung dokumentiert werden soll oder ein Verfahrensfehler im Genehmigungsbescheid geltend gemacht wird.",
+      "path": "umweltrecht/skills/uvp-verfahrenspruefung/SKILL.md",
+      "domain": "umweltrecht",
+      "category": "umweltrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "uvp",
+        "verfahrenspruefung",
+        "§5",
+        "§7",
+        "§15",
+        "§18",
+        "§25",
+        "§4"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "eeg-foerderpruefung",
+      "description": "Prüfung der Anspruchsvoraussetzungen für Marktprämie und Einspeisevergütung nach EEG 2023 – Anlagenart, Inbetriebnahme (§ 3 Nr. 30 EEG), Marktstammdatenregister-Meldung (§ 8 MaStRV / § 6 EEG), Förderzeitraum, anzulegender Wert nach Ausschreibung (§§ 36 ff. EEG) oder Festwert (§§ 49 ff. EEG), Direktvermarktung (§ 21b EEG), Reduktionen (Negativstunden § 51 EEG, Anlagengröße, Marktintegration). Use when ein Anlagenbetreiber Förderfähigkeit prüfen oder gegen einen Reduktions-/Verweigerungsbescheid des Netzbetreibers vorgehen will.",
+      "path": "energierecht/skills/eeg-foerderpruefung/SKILL.md",
+      "domain": "energierecht",
+      "category": "energierecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "eeg",
+        "foerderpruefung",
+        "§3",
+        "§8",
+        "§6",
+        "§§36",
+        "§§49",
+        "§21b"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "energieeffizienzpflicht",
+      "description": "Überblicksprüfung der Energieeffizienzpflichten für Unternehmen – EnMS-/UMS-Pflicht nach § 8 EnEfG ab Endenergieverbrauch >7,5 GWh/a, Energieaudit-Pflicht für Nicht-KMU alle 4 Jahre nach § 8 EDL-G, Veröffentlichungs- und Umsetzungspflichten wesentlicher Effizienzmaßnahmen, Schnittstellen GEG (Gebäude) und CSRD/ESRS E1 (Berichterstattung). Use when ein Unternehmen seine Pflichten nach EnEfG/EDL-G erstmals oder turnusmäßig überprüft oder ein BAFA-Nachweis vorbereitet werden muss.",
+      "path": "energierecht/skills/energieeffizienzpflicht/SKILL.md",
+      "domain": "energierecht",
+      "category": "energierecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "energieeffizienzpflicht",
+        "§8",
+        "csrd",
+        "esrs",
+        "energierecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "enwg-netzanschluss",
+      "description": "Prüfung des Anschluss- und Versorgungsanspruchs nach §§ 17, 18 EnWG und des vorrangigen EEG-Anschlussregimes nach §§ 8, 10, 12 EEG inkl. Konfliktfälle (Kapazitätsmangel, Netzausbaupflicht), Anschlusszusage, Realisierungsplan und BNetzA-Beschlussverfahren nach §§ 31 ff. EnWG. Use when ein Anschlussbegehren (insb. EEG-Anlage) durch den Netzbetreiber verzögert, verweigert oder mit unzulässigen Auflagen versehen wird.",
+      "path": "energierecht/skills/enwg-netzanschluss/SKILL.md",
+      "domain": "energierecht",
+      "category": "energierecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "enwg",
+        "netzanschluss",
+        "§§17",
+        "§§8",
+        "§§31",
+        "eeg",
+        "energierecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ausfuhr-dual-use-pruefung",
+      "description": "4-Stufen-Prüfung der Ausfuhrgenehmigungspflicht nach VO (EU) 2021/821 – Güterklassifikation Anhang I, Einzelgenehmigung bzw. EU-Allgemeine Genehmigungen IIa–IIg, Catch-all Art. 4 (militärische Endverwendung) und Art. 5 (Cyber-Surveillance), BAFA-Antrag ELAN-K2 mit Endverbleibsdokumentation. Use when ein deutscher Exporteur Güter in ein Drittland liefern will und Listung, Genehmigungspflicht oder Catch-all-Risiko prüfen muss; berücksichtigt Vorrang länderspezifischer Sanktions-VOen (Russland VO 833/2014, Iran VO 267/2012, DVRK VO 2017/1509 u.a.).",
+      "path": "aussenwirtschaft-zoll-sanktionen/skills/ausfuhr-dual-use-pruefung/SKILL.md",
+      "domain": "aussenwirtschaft-zoll-sanktionen",
+      "category": "aussenwirtschaft-zoll-sanktionen",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ausfuhr",
+        "dual",
+        "use",
+        "pruefung",
+        "art.4",
+        "art.5",
+        "aussenwirtschaft-zoll-sanktionen"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sanktionslisten-screening",
+      "description": "Treffer-Workflow zum Sanktionslisten-Screening nach EU-Sanktions-VOen (konsolidierte EU-Liste auf Basis VO (EU) 269/2014, 2580/2001, 881/2002, 833/2014, 2017/1509 u.a.) – Bereitstellungsverbot Art. 2, False-positive-Bewertung, Frostung von Geldern und wirtschaftlichen Ressourcen, Meldung an BMWK/Bundesbank/Zoll, Schnittstelle GwG-KYC (§§ 10 ff. GwG). Use when ein Geschäftspartner-Screening oder ein laufendes Re-Screening einen möglichen Treffer auf einer EU- oder nationalen Sanktionsliste ergibt.",
+      "path": "aussenwirtschaft-zoll-sanktionen/skills/sanktionslisten-screening/SKILL.md",
+      "domain": "aussenwirtschaft-zoll-sanktionen",
+      "category": "aussenwirtschaft-zoll-sanktionen",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "sanktionslisten",
+        "screening",
+        "§§10",
+        "art.2",
+        "gwg",
+        "aussenwirtschaft-zoll-sanktionen"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "zolltarif-vzta-antrag",
+      "description": "Tarifierung einer Ware in TARIC nach den Allgemeinen Vorschriften AV 1–6 und Entwurf eines Antrags auf verbindliche Zolltarifauskunft (vZTA) nach Art. 33 UZK – mit Abgrenzung zur verbindlichen Ursprungsauskunft (vUA), nicht-präferenziellem vs. präferenziellem Ursprung und ATLAS-Antragsverfahren. Use when ein Importeur/Exporteur eine streitige Tarifierung absichern will, eine verbindliche Auskunft beim Zoll beantragen möchte oder eine Ablehnung anfechten will.",
+      "path": "aussenwirtschaft-zoll-sanktionen/skills/zolltarif-vzta-antrag/SKILL.md",
+      "domain": "aussenwirtschaft-zoll-sanktionen",
+      "category": "aussenwirtschaft-zoll-sanktionen",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "zolltarif",
+        "vzta",
+        "antrag",
+        "art.33",
+        "uzk",
+        "aussenwirtschaft-zoll-sanktionen"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gwg-risikoanalyse",
+      "description": "Aufbau und Aktualisierung der institutsspezifischen Risikoanalyse nach § 5 GwG – Risikokategorien (Kunde / Produkt / Vertriebsweg / Geografie), Berücksichtigung Supranationale und Nationale Risk Assessment, Risikoklassen und Ableitung des Pflichtenniveaus §§ 10–17 GwG. Use when ein Verpflichteter iSv § 2 GwG die Risikoanalyse erstmals erstellen, jährlich fortschreiben oder anlassbezogen anpassen muss.",
+      "path": "geldwaesche-aml-kyc/skills/gwg-risikoanalyse/SKILL.md",
+      "domain": "geldwaesche-aml-kyc",
+      "category": "geldwaesche-aml-kyc",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gwg",
+        "risikoanalyse",
+        "§5",
+        "§§10",
+        "§2",
+        "geldwaesche-aml-kyc"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kyc-identifikationspflicht",
+      "description": "Identifizierung des Vertragspartners (§§ 10, 11 GwG) und des wirtschaftlich Berechtigten (§§ 3 ff. GwG) mit Transparenzregister-Abgleich (§§ 18–26 GwG); Trigger-Schwellen, vereinfachte (§ 14) und verstärkte Sorgfaltspflichten (§ 15), Aufzeichnung § 8 GwG. Use when ein Verpflichteter eine Geschäftsbeziehung aufnimmt, eine Schwellen-Transaktion durchführt oder bei Verdacht KYC nachholt.",
+      "path": "geldwaesche-aml-kyc/skills/kyc-identifikationspflicht/SKILL.md",
+      "domain": "geldwaesche-aml-kyc",
+      "category": "geldwaesche-aml-kyc",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kyc",
+        "identifikationspflicht",
+        "§§10",
+        "§§3",
+        "§§18",
+        "§14",
+        "§15",
+        "§8"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verdachtsmeldung-fiu",
+      "description": "Prüfung und Entwurf einer Verdachtsmeldung an die FIU nach § 43 GwG – niedrige Meldeschwelle ('Tatsachen darauf hindeuten'), Form über goAML, § 46 Stillhaltefrist (3 Werktage), § 47 Tippoff-Verbot, § 48 Haftungsfreistellung, Berufsrechts-Sondervorschrift § 43 II GwG für RAe / Notare / StB. Use when ein Verpflichteter eine auffällige Geschäftsbeziehung oder Transaktion bewerten und ggf. melden muss.",
+      "path": "geldwaesche-aml-kyc/skills/verdachtsmeldung-fiu/SKILL.md",
+      "domain": "geldwaesche-aml-kyc",
+      "category": "geldwaesche-aml-kyc",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verdachtsmeldung",
+        "fiu",
+        "§43",
+        "§46",
+        "§47",
+        "§48",
+        "gwg",
+        "geldwaesche-aml-kyc"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "cmr-grenzueberschreitender-transport",
+      "description": "Prüfung der Frachtführerhaftung im grenzüberschreitenden Straßengüterverkehr nach CMR – Anwendungsbereich Art. 1, Frachtbrief Art. 4–9, Obhutshaftung Art. 17, Höchstbetrag 8,33 SZR/kg Art. 23, Durchbruch Art. 29, Schadensanzeige Art. 30, Gerichtsstand Art. 31, Verjährung Art. 32. Use when eine entgeltliche Beförderung per LKW über mind. eine Staatsgrenze geht und einer der Staaten Vertragsstaat der CMR ist.",
+      "path": "transportrecht/skills/cmr-grenzueberschreitender-transport/SKILL.md",
+      "domain": "transportrecht",
+      "category": "transportrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "cmr",
+        "grenzueberschreitender",
+        "transport",
+        "art.1",
+        "art.4",
+        "art.17",
+        "art.23",
+        "art.29"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "hgb-frachtfuehrerhaftung",
+      "description": "Prüfung der Frachtführerhaftung nach §§ 425 ff. HGB – Obhutshaftung, Haftungsausschlüsse §§ 426–427, Haftungsbegrenzung § 431 (8,33 SZR/kg), Durchbruch bei qualifiziertem Verschulden § 435, Schadensanzeige § 438 und Verjährung § 439. Use when im innerdeutschen Straßengüterverkehr Verlust, Beschädigung oder Lieferfristüberschreitung eingetreten ist und Haftung sowie Höchstbetrag zu prüfen sind.",
+      "path": "transportrecht/skills/hgb-frachtfuehrerhaftung/SKILL.md",
+      "domain": "transportrecht",
+      "category": "transportrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "hgb",
+        "frachtfuehrerhaftung",
+        "§§425",
+        "§§426",
+        "§431",
+        "§435",
+        "§438",
+        "§439"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "lieferbedingungen-adsp",
+      "description": "Prüfung von Einbeziehung und Inhalt der Allgemeinen Deutschen Spediteurbedingungen (ADSp 2017) – Geltungsbereich Ziff. 2, Beauftragung Ziff. 6, Pfandrecht Ziff. 19, Haftungsbegrenzung Ziff. 23, Lagerhaltung Ziff. 24, Aufrechnungsverbot Ziff. 27. AGB-Kontrolle §§ 305 ff. BGB und § 449 HGB. Use when ein Speditionsvertrag oder Lagervertrag ADSp 2017 in Bezug nimmt und Wirksamkeit/Reichweite zu prüfen sind.",
+      "path": "transportrecht/skills/lieferbedingungen-adsp/SKILL.md",
+      "domain": "transportrecht",
+      "category": "transportrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "lieferbedingungen",
+        "adsp",
+        "§§305",
+        "§449",
+        "bgb",
+        "hgb",
+        "transportrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gpsr-sicherheitspruefung",
+      "description": "Pflichtenkatalog für Hersteller, Importeur, Fulfillment-Dienstleister und Online-Marktplätze nach GPSR (VO (EU) 2023/988, anwendbar ab 13.12.2024) mit Risikobewertung, technischer Dokumentation, Vorfallsmeldung über Safety Business Gateway und Rückrufpflicht – einschließlich Abgrenzung zu sektoraler Harmonisierung und ProdSG-Übergang. Use when ein Verbraucherprodukt neu in den EU-Markt gebracht wird oder ein Sicherheitsproblem die GPSR-Pflichten auslöst.",
+      "path": "produktrecht/skills/gpsr-sicherheitspruefung/SKILL.md",
+      "domain": "produktrecht",
+      "category": "produktrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gpsr",
+        "sicherheitspruefung",
+        "produktrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "prodhaftg-herstellerhaftung",
+      "description": "Parallele Anspruchsprüfung verschuldensunabhängige Herstellerhaftung nach §§ 1, 3 ProdHaftG und Produzentenhaftung § 823 I BGB mit Fehlertypologie (Konstruktion, Fabrikation, Instruktion, Produktbeobachtung) und BGH-Beweislastumkehr „Hühnerpest\". Use when ein Verbraucher durch ein fehlerhaftes Produkt geschädigt wurde oder ein Hersteller die Haftungsexposition für einen Schadensfall einschätzen muss.",
+      "path": "produktrecht/skills/prodhaftg-herstellerhaftung/SKILL.md",
+      "domain": "produktrecht",
+      "category": "produktrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "prodhaftg",
+        "herstellerhaftung",
+        "§§1",
+        "§823",
+        "bgb",
+        "produktrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "produkt-rueckruf-anordnung",
+      "description": "Zivilrechtliche Rückrufpflicht des Herstellers aus § 823 I BGB (Produktbeobachtung, BGH „Pflegebetten\") und öffentlich-rechtliche Anordnung der Marktaufsicht nach Art. 36 GPSR / sektoralen ProdSV mit Maßnahmenstufung (Warnung → Empfehlung → Reparatur → Rückruf → Vernichtung), Anhörung § 28 VwVfG, Sofortvollzug und Rechtsbehelf VwGO. Use when ein Hersteller die Rückruferforderlichkeit prüfen muss oder eine Marktaufsichtsbehörde eine Rückrufanordnung erlassen oder ihn der Adressat einer solchen Anordnung anfechten will.",
+      "path": "produktrecht/skills/produkt-rueckruf-anordnung/SKILL.md",
+      "domain": "produktrecht",
+      "category": "produktrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "produkt",
+        "rueckruf",
+        "anordnung",
+        "§823",
+        "§28",
+        "art.36",
+        "bgb",
+        "vwgo"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ki-monitoring-konzept",
+      "description": "Konzept zur laufenden Überwachung eines produktiv eingesetzten KI-Systems – Performance-Metriken, Daten- und Concept-Drift, Fairness, Robustheit, Logging Art. 12 KI-VO, menschliche Aufsicht Art. 14 KI-VO, Vorfallsmanagement und Audit-Intervalle nach ISO/IEC 42001. Use when ein KI-System produktiv läuft oder vor Inbetriebnahme das Monitoring-Konzept festgelegt werden muss.",
+      "path": "ki-governance/skills/ki-monitoring-konzept/SKILL.md",
+      "domain": "ki-governance",
+      "category": "ki-governance",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "monitoring",
+        "konzept",
+        "art.12",
+        "art.14",
+        "ki-vo",
+        "ki-governance"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ki-richtlinie-entwurf",
+      "description": "Entwurf einer internen KI-Richtlinie / KI-Policy für Unternehmen und Kanzleien – Geltungsbereich, Grundsätze, verbotene Einsätze, Genehmigungsprozess, Rollen, Lieferantenmanagement (AVV Art. 28 DSGVO, § 43e BRAO), Schulung Art. 4 KI-VO, Vorfallsmanagement. Use when eine Organisation erstmals eine verbindliche KI-Richtlinie einführen oder eine bestehende Policy konsolidieren will.",
+      "path": "ki-governance/skills/ki-richtlinie-entwurf/SKILL.md",
+      "domain": "ki-governance",
+      "category": "ki-governance",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "richtlinie",
+        "entwurf",
+        "§43e",
+        "art.28",
+        "art.4",
+        "dsgvo",
+        "brao",
+        "ki-vo"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ki-risikoassessment",
+      "description": "Strukturierte KI-Risikobewertung pro KI-System – Identifikation, Risikoklassifizierung (KI-VO-Trigger + interner Risk-Score), Schadensanalyse (CIA, Fairness/Bias, Sicherheit, Rechtskonformität), Risk-Treatment und Wiedervorlage nach ISO/IEC 23894 und NIST AI RMF. Use when ein KI-System neu eingeführt, wesentlich geändert oder periodisch reassessiert werden soll.",
+      "path": "ki-governance/skills/ki-risikoassessment/SKILL.md",
+      "domain": "ki-governance",
+      "category": "ki-governance",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "risikoassessment",
+        "ki-vo",
+        "ki-governance"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "einstweilige-verfuegung-uwg",
+      "description": "Einstweiliger Rechtsschutz nach §§ 12 ff. UWG iVm §§ 935, 940 ZPO – Verfügungsanspruch (UWG-Verstoß glaubhaft) und Verfügungsgrund (Dringlichkeitsvermutung § 12 I UWG mit Selbstwiderlegung), Schutzschriftenregister, mündliche Verhandlung § 937 II ZPO, Vollziehungsfrist § 929 II ZPO, Schadensersatz § 945 ZPO, Aufhebung § 927 ZPO. Use when ein UWG-Verstoß schnell unterbunden werden soll oder der Mandant präventiv Schutzschrift hinterlegen will.",
+      "path": "wettbewerbsrecht/skills/einstweilige-verfuegung-uwg/SKILL.md",
+      "domain": "wettbewerbsrecht",
+      "category": "wettbewerbsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "einstweilige",
+        "verfuegung",
+        "uwg",
+        "§§12",
+        "§§935",
+        "§12",
+        "§937",
+        "§929"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "irrefuehrende-werbung-pruefung",
+      "description": "Prüfung einer Werbeaussage auf Irreführung nach §§ 5, 5a, 5b UWG und vergleichende Werbung nach § 6 UWG – Maßstab des durchschnittlich informierten, aufmerksamen und verständigen Verbrauchers, Beispielskatalog § 5 II, Vorenthalten wesentlicher Informationen § 5a, Preisangaben-Schnittstelle PAngV, Abgleich mit Schwarzer Liste (Anhang § 3 III). Use when eine Werbeaussage präventiv geprüft oder gegen eine Werbeaussage des Wettbewerbers vorgegangen werden soll.",
+      "path": "wettbewerbsrecht/skills/irrefuehrende-werbung-pruefung/SKILL.md",
+      "domain": "wettbewerbsrecht",
+      "category": "wettbewerbsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "irrefuehrende",
+        "werbung",
+        "pruefung",
+        "§§5",
+        "§6",
+        "§5",
+        "§5a",
+        "§3"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "uwg-abmahnung-pruefung",
+      "description": "Prüfung einer wettbewerbsrechtlichen Abmahnung nach § 13 UWG aus Abmahner- und Abgemahnten-Perspektive – Aktivlegitimation §§ 8, 8b, formelle Anforderungen § 13 II, Aufwendungsersatz § 13 III, Vertragsstrafe § 13a, Rechtsmissbrauchsindizien § 8c. Use when Mandant eine UWG-Abmahnung erhalten hat oder eine Abmahnung gegen einen Wettbewerber prüfen / aussprechen will.",
+      "path": "wettbewerbsrecht/skills/uwg-abmahnung-pruefung/SKILL.md",
+      "domain": "wettbewerbsrecht",
+      "category": "wettbewerbsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "uwg",
+        "abmahnung",
+        "pruefung",
+        "§13",
+        "§§8",
+        "§13a",
+        "§8c",
+        "wettbewerbsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gwb-zusammenschluss-anmeldung",
+      "description": "Prüfung der Anmeldepflicht eines Zusammenschlusses beim Bundeskartellamt nach §§ 35 ff. GWB inkl. Umsatzschwellen § 35, Transaktionswert-Schwelle § 35 Ia, Verhältnis zur EU-FK-VO 139/2004 (One-Stop-Shop), Vorprüfung und Hauptprüfung § 40, Vollzugsverbot § 41. Use when ein M&A-Vorhaben (Anteils-/Vermögenserwerb, gemeinschaftliche Kontrolle, Joint Venture) ansteht und die kartellrechtliche Genehmigungspflicht zu klären ist.",
+      "path": "kartellrecht/skills/gwb-zusammenschluss-anmeldung/SKILL.md",
+      "domain": "kartellrecht",
+      "category": "kartellrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gwb",
+        "zusammenschluss",
+        "anmeldung",
+        "§§35",
+        "§35",
+        "§40",
+        "§41",
+        "kartellrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kartellverbot-pruefung",
+      "description": "Subsumtion einer Vereinbarung, eines Beschlusses oder einer abgestimmten Verhaltensweise unter das Kartellverbot § 1 GWB / Art. 101 AEUV – Unternehmens- und Vereinbarungsbegriff, Wettbewerbsbeschränkung als Zweck (Hardcore) oder Wirkung, Spürbarkeit (De-minimis), Vertikal-GVO 2022/720-Sicherheitshafen, Einzelausnahme § 2 GWB / Art. 101 III AEUV. Use when ein Liefer-, Vertriebs-, Kooperations- oder Lizenzvertrag oder eine horizontale Absprache kartellrechtlich zu bewerten ist.",
+      "path": "kartellrecht/skills/kartellverbot-pruefung/SKILL.md",
+      "domain": "kartellrecht",
+      "category": "kartellrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kartellverbot",
+        "pruefung",
+        "§1",
+        "§2",
+        "art.101",
+        "gwb",
+        "aeuv",
+        "kartellrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "marktbeherrschung-bewertung",
+      "description": "Prüfung einer Marktbeherrschung und eines Missbrauchs nach §§ 18, 19, 19a, 20 GWB / Art. 102 AEUV – Marktabgrenzung sachlich/räumlich/zeitlich (Bedarfsmarktkonzept, SSNIP-Test), Marktanteilsvermutung § 18 IV GWB, Behinderungs- und Ausbeutungsmissbrauch, strukturmarktrelevante Plattformen § 19a GWB, relative Marktmacht § 20 GWB, objektive Rechtfertigung. Use when ein Mandant ein marktstarkes Unternehmen ist oder einem solchen ausgesetzt ist und sein Verhalten auf Missbrauch geprüft werden soll.",
+      "path": "kartellrecht/skills/marktbeherrschung-bewertung/SKILL.md",
+      "domain": "kartellrecht",
+      "category": "kartellrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "marktbeherrschung",
+        "bewertung",
+        "§§18",
+        "§18",
+        "§19a",
+        "§20",
+        "art.102",
+        "gwb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "prospektpflicht-pruefung",
+      "description": "Prüfung der Prospektpflicht nach VO (EU) 2017/1129 iVm WpPG – Trigger Art. 3 (öffentliches Angebot / Zulassung), Ausnahmenkatalog Art. 1 IV, Schwellenwert § 3 WpPG (8 Mio. EUR, Wertpapier-Informationsblatt), Inhaltsanforderungen Art. 6–8, BaFin-Billigung Art. 20 (10/20/30 Werktage), Nachtragspflicht Art. 23, Prospekthaftung §§ 9–11 WpPG. Use when ein Emittent ein öffentliches Angebot oder die Zulassung zum regulierten Markt plant oder Prospekthaftungs-Ansprüche zu beurteilen sind.",
+      "path": "kapitalmarktrecht/skills/prospektpflicht-pruefung/SKILL.md",
+      "domain": "kapitalmarktrecht",
+      "category": "kapitalmarktrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "prospektpflicht",
+        "pruefung",
+        "§3",
+        "§§9",
+        "art.3",
+        "art.1",
+        "art.6",
+        "art.20"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "wphg-marktmissbrauch",
+      "description": "Prüfung von Insiderhandel und Marktmanipulation nach MAR (VO (EU) 596/2014) iVm WpHG – Insiderinformation Art. 7, Verbote Art. 14/15, Ausnahme Legitimate Behaviour Art. 9, Ad-hoc-Publizität Art. 17 (inkl. Selbstaufschub Abs. 4), Insiderliste Art. 18, Directors' Dealings Art. 19, Sanktionen Art. 30 MAR und §§ 38, 119 WpHG. Use when ein Emittent vor einer transaktions- oder informationsbedingten Marktmissbrauchsfrage steht (M&A, Restrukturierung, vorzeitige Bilanzdaten, Vorstandsgeschäfte).",
+      "path": "kapitalmarktrecht/skills/wphg-marktmissbrauch/SKILL.md",
+      "domain": "kapitalmarktrecht",
+      "category": "kapitalmarktrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "wphg",
+        "marktmissbrauch",
+        "§§38",
+        "art.7",
+        "art.14",
+        "art.9",
+        "art.17",
+        "art.18"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "wpueg-uebernahmeangebot",
+      "description": "Prüfung des Pflichtangebots nach WpÜG bei Kontrollerwerb (30 % Stimmrechte, § 29 II WpÜG) – Acting in concert (§ 30 Zurechnung), Veröffentlichungspflicht § 35, Angebotsunterlage § 11 mit BaFin-Prüfung 10 Werktage, Mindestpreis § 31 iVm WpÜG-AngVO, Annahmefrist § 16 (4–10 Wochen) plus Zaunkönig 2 Wochen, Verhaltenspflichten Zielgesellschaft § 33, Stellungnahme § 27, Befreiung § 37, Squeeze-out §§ 39a/b ab 95 %. Use when Bieter Kontrolle über eine börsennotierte Zielgesellschaft erwirbt oder Zielgesellschaft auf ein Angebot reagiert.",
+      "path": "kapitalmarktrecht/skills/wpueg-uebernahmeangebot/SKILL.md",
+      "domain": "kapitalmarktrecht",
+      "category": "kapitalmarktrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "wpueg",
+        "uebernahmeangebot",
+        "§29",
+        "§30",
+        "§35",
+        "§11",
+        "§31",
+        "§16"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "freedom-to-operate",
+      "description": "Freedom-to-Operate-Analyse vor Markteintritt – Recherche relevanter Patente / Gebrauchsmuster (DEPATISnet, esp@cenet, Patentscope), Schutzbereichsbestimmung nach § 14 PatG / Art. 69 EPÜ mit Wortlaut- und Äquivalenzprüfung, Lebensphasen-Analyse (anhängig / erteilt / abgelaufen / nichtig), Handlungsoptionen bei Treffer (Designaround, Lizenz, Nichtigkeitsantrag § 81 PatG, Verzicht, Risiko-Akzeptanz). Use when ein Unternehmen vor Markteintritt klären muss, ob sein Produkt fremde Schutzrechte verletzt.",
+      "path": "patentrecht/skills/freedom-to-operate/SKILL.md",
+      "domain": "patentrecht",
+      "category": "patentrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "freedom",
+        "operate",
+        "§14",
+        "§81",
+        "art.69",
+        "patg",
+        "patentrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "patentanmeldung-vorpruefung",
+      "description": "Vor-Check der Patentierbarkeit einer Erfindung nach §§ 1–5 PatG / Art. 52, 54, 56 EPÜ – technischer Charakter (auch CII / Software-Grenze § 1 III/IV PatG), Neuheit § 3 PatG mit Neuheitsschonfrist, erfinderische Tätigkeit § 4 PatG nach Aufgabe-Lösungs-Ansatz, gewerbliche Anwendbarkeit § 5 PatG. Use when ein Erfinder oder Anmelder vor der Anmeldung beim DPMA, EPA oder über PCT klären will, ob ein Patent / Gebrauchsmuster aussichtsreich ist und welcher Anmeldeweg sinnvoll ist.",
+      "path": "patentrecht/skills/patentanmeldung-vorpruefung/SKILL.md",
+      "domain": "patentrecht",
+      "category": "patentrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "patentanmeldung",
+        "vorpruefung",
+        "§§1",
+        "§1",
+        "§3",
+        "§4",
+        "§5",
+        "art.52"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "patentverletzung-klage",
+      "description": "Klageschrift-Gerüst für eine Patentverletzung nach §§ 9, 10, 14, 139–142a PatG inkl. Düsseldorfer Praxis – Schutzbereichsbestimmung mit Merkmalsgliederung und Äquivalenzlehre, Anspruchskatalog mit dreifacher Schadensberechnung, Wahl zwischen LG-Patentstreitkammer und UPC. Use when ein Patentinhaber eine Verletzung verfolgen will oder ein Beklagter Klageerwiderung vorbereiten muss.",
+      "path": "patentrecht/skills/patentverletzung-klage/SKILL.md",
+      "domain": "patentrecht",
+      "category": "patentrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "patentverletzung",
+        "klage",
+        "§§9",
+        "patg",
+        "patentrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "brao-pflichtenpruefung",
+      "description": "Checkliste anwaltlicher Grundpflichten vor Mandatsannahme und im laufenden Mandat – Verschwiegenheit § 43a II BRAO + § 2 BORA + § 203 StGB, Interessenkollision § 43a IV BRAO + § 3 BORA + § 356 StGB (mit Sozietätszurechnung), Sachlichkeit § 43a III/§ 44, Werbung § 43b/§§ 6 ff. BORA, Auslagerung/KI § 43e, Vergütung § 49b, Fremdgeld § 43a V, GwG-Hinweispflichten § 50 BRAO. Use when ein Anwalt vor Mandatsannahme die berufsrechtliche Zulässigkeit prüfen muss, eine Sozietät einen Konflikt-Check braucht, ein RAK-Aufsichtsverfahren droht oder KI-/Cloud-Auslagerung berufsrechtlich abzusichern ist.",
+      "path": "berufsrecht-anwaltschaft/skills/brao-pflichtenpruefung/SKILL.md",
+      "domain": "berufsrecht-anwaltschaft",
+      "category": "berufsrecht-anwaltschaft",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "brao",
+        "pflichtenpruefung",
+        "§43a",
+        "§2",
+        "§203",
+        "§3",
+        "§356",
+        "§44"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "fao-fortbildungsnachweis",
+      "description": "Nachweis der Fortbildungspflicht nach § 15 FAO (15 Zeitstunden pro Jahr je Fachgebiet, kumulativ bei Mehrfach-Fachanwaltschaft) und Verteidigung gegen Widerruf der Fachanwaltsbezeichnung nach § 25 FAO. Use when die RAK einen Stichproben-Nachweis fordert, ein Fachanwalt die Vollständigkeit seiner Fortbildung prüfen will, oder ein Widerrufsbescheid wegen unterlassener Fortbildung anzufechten ist.",
+      "path": "berufsrecht-anwaltschaft/skills/fao-fortbildungsnachweis/SKILL.md",
+      "domain": "berufsrecht-anwaltschaft",
+      "category": "berufsrecht-anwaltschaft",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "fao",
+        "fortbildungsnachweis",
+        "§15",
+        "§25",
+        "berufsrecht-anwaltschaft"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "rdg-abgrenzung",
+      "description": "Abgrenzung erlaubter Rechtsdienstleistungen Nicht-Anwälte nach RDG – Anwaltsmonopol §§ 1, 3 RDG, Nebenleistung § 5 RDG (Schwerpunkt-Test), Inkassodienstleistung § 10 RDG (registrierte Personen), Behörden § 6, Verbraucherzentralen § 8; Folge unerlaubter RDL: § 134 BGB-Nichtigkeit und § 3a UWG-Rechtsbruch. Use when ein Legal-Tech-Startup, eine Inkasso-Plattform oder ein Nicht-Anwalt-Berater die RDG-Grenze prüfen muss, oder ein Anwalt einen Wettbewerber wegen unerlaubter Rechtsdienstleistung abmahnen will.",
+      "path": "berufsrecht-anwaltschaft/skills/rdg-abgrenzung/SKILL.md",
+      "domain": "berufsrecht-anwaltschaft",
+      "category": "berufsrecht-anwaltschaft",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "rdg",
+        "abgrenzung",
+        "§§1",
+        "§5",
+        "§10",
+        "§6",
+        "§8",
+        "§134"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    }
+  ]
+}

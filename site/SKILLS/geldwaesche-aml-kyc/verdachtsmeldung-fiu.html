@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdachtsmeldung Fiu - AI Skills German Law</title>
+  <meta name="description" content="Prüfung und Entwurf einer Verdachtsmeldung an die FIU nach § 43 GwG – niedrige Meldeschwelle (&#x27;Tatsachen darauf hindeuten&#x27;), Form über goAML, § 46 Stillhaltefrist (3 Werktage), § 47 Tippoff-Verbot, § ">
+  <link rel="canonical" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/geldwaesche-aml-kyc/verdachtsmeldung-fiu.html">
+  <meta property="og:title" content="Verdachtsmeldung Fiu - AI Skills German Law">
+  <meta property="og:description" content="Prüfung und Entwurf einer Verdachtsmeldung an die FIU nach § 43 GwG – niedrige Meldeschwelle (&#x27;Tatsachen darauf hindeuten&#x27;), Form über goAML, § 46 Stillhaltefrist (3 Werktage), § 47 Tippoff-Verbot, § ">
+  <meta property="og:url" content="https://borghei.github.io/AI-Skills-German-Law/SKILLS/geldwaesche-aml-kyc/verdachtsmeldung-fiu.html">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Verdachtsmeldung Fiu", "description": "Prüfung und Entwurf einer Verdachtsmeldung an die FIU nach § 43 GwG – niedrige Meldeschwelle ('Tatsachen darauf hindeuten'), Form über goAML, § 46 Stillhaltefrist (3 Werktage), § 47 Tippoff-Verbot, § 48 Haftungsfreistellung, Berufsrechts-Sondervorschrift § 43 II GwG für RAe / Notare / StB. Use when ein Verpflichteter eine auffällige Geschäftsbeziehung oder Transaktion bewerten und ggf. melden muss.", "applicationCategory": "Geldwäsche / AML-KYC", "operatingSystem": "Any", "url": "https://borghei.github.io/AI-Skills-German-Law/SKILLS/geldwaesche-aml-kyc/verdachtsmeldung-fiu.html", "author": {"@type": "Person", "name": "Borghei"}, "inLanguage": "de"}</script>
+  <style>
+:root {
+  --bg: #faf9f5;
+  --bg-secondary: #f0eee6;
+  --text: #141413;
+  --text-muted: #5e5d59;
+  --accent: #d97757;
+  --accent-deep: #c6613f;
+  --border: rgba(20,20,19,0.1);
+  --border-strong: rgba(20,20,19,0.18);
+  --white: #ffffff;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'Cascadia Code', Menlo, monospace;
+  --max-width: 1200px;
+  --shadow-sm: 0 1px 2px rgba(20,20,19,0.04);
+  --shadow: 0 1px 3px rgba(20,20,19,0.06), 0 1px 2px rgba(20,20,19,0.04);
+  --shadow-md: 0 4px 12px rgba(20,20,19,0.08), 0 1px 3px rgba(20,20,19,0.06);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--accent-deep); }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+code { font-family: var(--font-mono); font-size: 0.875em; }
+
+/* Navbar */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(250,249,245,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo {
+  font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem;
+  color: var(--text); letter-spacing: -0.01em;
+}
+.nav-logo:hover { color: var(--text); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  color: var(--text-muted); font-size: 0.9rem; font-weight: 500;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.gh-link { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Breadcrumbs */
+.breadcrumbs { padding: 20px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs a:hover { color: var(--accent); }
+.breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+/* Page header */
+.page-header { padding: 48px 0 32px; }
+.page-title {
+  font-family: var(--font-serif); font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;
+  color: var(--text);
+}
+.page-subtitle { color: var(--text-muted); max-width: 760px; font-size: 1.05rem; line-height: 1.6; }
+
+.count-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--accent); background: rgba(217,119,87,0.08);
+  padding: 2px 10px; border-radius: 20px; margin-left: 8px;
+  vertical-align: middle; font-weight: 500;
+}
+
+/* Search + Filter */
+.filter-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.search-input {
+  flex: 1; min-width: 200px; padding: 10px 14px 10px 38px;
+  background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+.search-input::placeholder { color: var(--text-muted); }
+.search-wrap { position: relative; flex: 1; min-width: 200px; }
+.search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+.filter-select {
+  padding: 10px 14px; background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; cursor: pointer;
+}
+.filter-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+
+/* Card grid */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 60px; }
+.skill-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px 22px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex; flex-direction: column;
+}
+.skill-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.skill-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+.skill-card h3 a { color: var(--text); }
+.skill-card h3 a:hover { color: var(--accent); }
+.skill-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; flex: 1; }
+
+/* Badges */
+.badge-bar { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-mono); font-size: 0.7rem; padding: 3px 9px;
+  border-radius: 5px; font-weight: 500; white-space: nowrap;
+}
+.badge-domain { background: rgba(217,119,87,0.1); border: 1px solid rgba(217,119,87,0.2); color: var(--accent-deep); }
+.badge-subdomain { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-version { background: rgba(20,20,19,0.03); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-tools { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-refs { background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.15); color: var(--accent); }
+
+/* Tags */
+.skill-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.tag {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 8px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+.example-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.example-pill {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 7px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+/* Skill detail page */
+.skill-detail { padding-bottom: 80px; }
+.skill-detail h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 40px 0 16px; padding-top: 16px;
+  border-top: 1px solid var(--border); color: var(--text);
+}
+.skill-detail h3 { font-size: 1.05rem; font-weight: 600; margin: 20px 0 10px; color: var(--text); }
+.skill-detail h4 { font-size: 0.95rem; font-weight: 600; margin: 16px 0 8px; color: var(--text); }
+.skill-detail p, .skill-detail li { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
+.skill-detail ul, .skill-detail ol { margin-left: 22px; margin-bottom: 16px; }
+.skill-detail li { margin-bottom: 6px; }
+.skill-detail blockquote {
+  border-left: 3px solid var(--accent); padding: 6px 16px; margin: 12px 0;
+  background: var(--bg-secondary); border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-muted);
+}
+.skill-detail table {
+  width: 100%; border-collapse: collapse; margin: 14px 0 22px;
+  font-size: 0.9rem; background: var(--white);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.skill-detail th, .skill-detail td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.skill-detail th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+.skill-detail tr:last-child td { border-bottom: none; }
+.skill-detail pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  color: var(--text); margin: 12px 0 20px;
+}
+.skill-detail code {
+  font-family: var(--font-mono); font-size: 0.85rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.skill-detail pre code { background: none; padding: 0; }
+
+/* Hero (used on landing) */
+.hero { padding: 80px 0 60px; }
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; margin-bottom: 18px; letter-spacing: -0.02em;
+  line-height: 1.15; color: var(--text);
+}
+.hero-subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; line-height: 1.6; margin-bottom: 28px; }
+.stat-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; color: var(--text-muted); font-size: 0.95rem; }
+.stat-row .stat { display: inline-flex; align-items: center; gap: 6px; }
+.stat-row .stat strong { color: var(--text); font-family: var(--font-mono); font-size: 1rem; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.disclaimer {
+  background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.18);
+  border-left: 4px solid var(--accent); border-radius: var(--radius);
+  padding: 16px 20px; font-size: 0.9rem; color: var(--text-muted);
+  margin: 24px 0 40px;
+}
+.disclaimer strong { color: var(--text); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 18px; border-radius: var(--radius); font-size: 0.9rem;
+  font-weight: 500; font-family: var(--font-sans);
+  border: 1px solid transparent; cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+.btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.btn-primary:hover { background: #2a2a28; color: var(--bg); box-shadow: var(--shadow); }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--border-strong); }
+.btn-secondary:hover { background: var(--bg-secondary); color: var(--text); box-shadow: var(--shadow-sm); }
+
+.section-heading {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 30px 0 20px; color: var(--text);
+}
+
+/* Content pages (getting-started / guides / reference) */
+.content-page { padding-bottom: 80px; max-width: 760px; }
+.content-page h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 36px 0 14px; color: var(--text);
+}
+.content-page h3 { font-size: 1.1rem; font-weight: 600; margin: 22px 0 10px; color: var(--text); }
+.content-page p, .content-page li { font-size: 0.98rem; color: var(--text-muted); line-height: 1.7; }
+.content-page ul, .content-page ol { margin: 8px 0 18px 22px; }
+.content-page li { margin-bottom: 6px; }
+.content-page pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 18px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  margin: 12px 0 22px;
+}
+.content-page code {
+  font-family: var(--font-mono); font-size: 0.88rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.content-page pre code { background: none; padding: 0; }
+.content-page table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.content-page th, .content-page td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+}
+.content-page th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+
+.cards-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0 28px; }
+.mini-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 18px 20px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.mini-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.mini-card h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 6px; color: var(--text); }
+.mini-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+.mini-card a.view-link { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8rem; margin-top: 10px; color: var(--accent); }
+
+/* Footer */
+.footer {
+  padding: 36px 0; border-top: 1px solid var(--border); margin-top: 40px;
+  background: var(--bg);
+}
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-links { display: flex; align-items: center; gap: 12px; font-size: 0.85rem; color: var(--text-muted); }
+.footer-links a { color: var(--text-muted); }
+.footer-links a:hover { color: var(--accent); }
+.footer-sep { color: var(--border-strong); }
+.footer-credit { font-size: 0.85rem; color: var(--text-muted); }
+.footer-credit a { color: var(--text); font-weight: 600; }
+
+/* Related skills */
+.related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .skills-grid, .related-grid { grid-template-columns: repeat(2, 1fr); }
+  .cards-row { grid-template-columns: 1fr; }
+  .nav-links { gap: 14px; }
+}
+@media (max-width: 480px) {
+  .skills-grid, .related-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; }
+  .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a href="https://borghei.github.io/AI-Skills-German-Law/" class="nav-logo">AI Skills German Law</a>
+    <div class="nav-links">
+      <a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/" class="active">Skills</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/getting-started/">Getting Started</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/guides/authoring/">Guides</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/reference/">Reference</a>
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener" class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumbs container"><a href="https://borghei.github.io/AI-Skills-German-Law/">Home</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/">Skills</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/geldwaesche-aml-kyc/">Geldwäsche / AML-KYC</a><span class=sep>/</span><span>Verdachtsmeldung Fiu</span></div>
+<main class="container">
+
+<article class="skill-detail">
+  <div class="page-header">
+    <h1 class="page-title">Verdachtsmeldung Fiu</h1>
+    <p class="page-subtitle">Prüfung und Entwurf einer Verdachtsmeldung an die FIU nach § 43 GwG – niedrige Meldeschwelle (&#x27;Tatsachen darauf hindeuten&#x27;), Form über goAML, § 46 Stillhaltefrist (3 Werktage), § 47 Tippoff-Verbot, § 48 Haftungsfreistellung, Berufsrechts-Sondervorschrift § 43 II GwG für RAe / Notare / StB. Use when ein Verpflichteter eine auffällige Geschäftsbeziehung oder Transaktion bewerten und ggf. melden muss.</p>
+    <div class="badge-bar"><span class="badge badge-domain">Geldwäsche / AML-KYC</span> <span class="badge badge-version">v0.1.0</span></div>
+    <div class="skill-meta" style="margin-bottom:24px"><span class="tag">verdachtsmeldung</span><span class="tag">fiu</span><span class="tag">§43</span><span class="tag">§46</span><span class="tag">§47</span><span class="tag">§48</span><span class="tag">gwg</span><span class="tag">geldwaesche-aml-kyc</span></div>
+  </div>
+  <section><h2>Purpose</h2><p>Der Skill prüft die Meldepflicht nach § 43 I GwG („Tatsachen, die darauf hindeuten"), entwirft den Meldetext für das elektronische FIU-Portal <strong>goAML</strong> und stellt die flankierenden Pflichten sicher: <strong>Unverzüglichkeit</strong> (§ 43 I GwG), <strong>Stillhaltefrist</strong> drei Werktage (§ 46 GwG), <strong>Tippoff-Verbot</strong> (§ 47 GwG), <strong>Anonymitäts- und Haftungsschutz</strong> der meldenden Person (§§ 47 II, 48 GwG). Berufsrechtliche Sondervorschriften für Anwälte / Notare / StB (§ 43 II GwG) werden gesondert geprüft.</p></section>
+<section><h2>Inputs</h2><ul><li>Verpflichteten-Typ nach § 2 GwG (mit besonderer Markierung bei § 2 I Nr. 10–12 GwG: RAe / Patentanwälte / Notare / StB / WP)</li><li>konkreter Anlass (Transaktionsmuster, KYC-Auffälligkeit, Drittinformation, Medien)</li><li>bisherige KYC-Erkenntnisse (Sorgfaltspflichtniveau, Transparenzregister)</li><li>Zeitdruck (geplante Transaktion / Beurkundungstermin)</li><li>bei Berufsgeheimnisträgern: liegt eine Konstellation des § 43 II GwG vor (wissentliche Beteiligung an GW)?</li></ul></section>
+<section><h2>Sub-Agent Architecture</h2><p>Researcher liefert § 43 GwG mit § 46 (Stillhaltepflicht) und § 47 (Tippoff-Verbot, Anonymitätsschutz), § 48 (Haftungsfreistellung), Berufsrechts-Sondervorschriften (§ 43e BRAO, § 14a BNotO), FIU-Anwendungshinweise, Rspr. (BVerwG zur Meldeschwelle) und Kommentarstellen. Drafter entwirft den goAML-Meldetext (Sachverhalt → Auffälligkeiten → Risikoindikatoren, <strong>ohne</strong> rechtliche Subsumtion). Reviewer prüft Pflicht-Blocker § 43 (Unverzüglichkeit), § 46 (3 Werktage), § 47 (Tippoff) und Berufsrechts-Privileg.</p></section>
+<section><h2>Process</h2><h3>1. Meldeschwelle (§ 43 I GwG)</h3>
+<p>Tatbestand: „Tatsachen, die darauf hindeuten, dass …"</p>
+<ul><li>ein Vermögensgegenstand aus einer <strong>Vortat zur Geldwäsche</strong> (§ 261 StGB) herrührt,</li><li>die Transaktion / Geschäftsbeziehung der <strong>Terrorismusfinanzierung</strong> dient, oder</li><li>der Vertragspartner seiner Pflicht zur <strong>Offenlegung des wirtschaftlich Berechtigten</strong> nicht nachgekommen ist.</li></ul>
+<p>Die Schwelle ist <strong>niedrig</strong>: kein konkreter Tatverdacht iSv § 152 II StPO, sondern objektive Anhaltspunkte. Pflicht entsteht <strong>unabhängig</strong> vom Wert der Transaktion. Maßgeblich ist die ex-ante-Sicht des Verpflichteten. Auslegung der Schwelle: BVerwG, Urt. v. — Az. <code>[unverifiziert – BVerwG-Rspr. zur Auslegung in juris prüfen]</code>; FIU-AuA.</p>
+<h3>2. Unverzüglichkeit (§ 43 I GwG)</h3>
+<p>„Unverzüglich" = ohne schuldhaftes Zögern (§ 121 I BGB-Maßstab analog). Praktisch: binnen weniger Geschäftsstunden bis -tage nach Erkennen der Indikatoren, intern eskaliert über den GW-Beauftragten. Verzögerung ist Ordnungswidrigkeit § 56 GwG; bei Vorsatz und Vortat-Bezug ggf. § 261 StGB / § 258 StGB.</p>
+<h3>3. Form (§ 45 GwG, goAML)</h3>
+<p>Meldung <strong>elektronisch</strong> über das FIU-Portal <strong>goAML</strong> (Generalzolldirektion / FIU, www.zoll.de/fiu). Papierform nur in technischen Ausnahmefällen. Die Meldung enthält:</p>
+<ul><li>Identifikation des meldenden Verpflichteten und der meldenden Person</li><li>Identifizierungsdaten der Beteiligten (Vertragspartner, WB, Begünstigte)</li><li>Sachverhaltsdarstellung in Tatsachen</li><li>Auffälligkeiten und Risikoindikatoren (FIU-Indikatorenkatalog beachten)</li><li>Anlagen (Belege, KYC-Dokumentation)</li></ul>
+<p>Eine <strong>rechtliche Subsumtion</strong> gegenüber der FIU ist nicht zu liefern — Tatsachen genügen.</p>
+<h3>4. Stillhaltefrist (§ 46 GwG, 3 Werktage)</h3>
+<p>Nach Meldung darf die gemeldete Transaktion <strong>drei Werktage</strong> nicht durchgeführt werden (§ 46 I GwG), beginnend mit dem auf die Meldung folgenden Werktag. Innerhalb dieser Frist können Staatsanwaltschaft / Zoll-FIU vorläufige Maßnahmen anordnen. <strong>Ausnahmen</strong> (§ 46 II GwG):</p>
+<ul><li>die Aussetzung würde die strafrechtliche Verfolgung erschweren — dann Durchführung zulässig, aber <strong>nachträgliche</strong> Information FIU</li><li>die Aussetzung ist tatsächlich nicht möglich (z. B. automatisierter Lastschriftrückgabeprozess)</li></ul>
+<h3>5. Tippoff-Verbot (§ 47 GwG)</h3>
+<p><strong>Weder</strong> dem Kunden / Vertragspartner / wirtschaftlich Berechtigten <strong>noch</strong> sonstigen Dritten darf offengelegt werden, dass eine Meldung erfolgt ist oder erwogen wird. Ausnahmen eng:</p>
+<ul><li>Informationsaustausch innerhalb eines Konzerns / Konzernverbundes nach § 47 III GwG (auf Need-to-know-Basis)</li><li>Informationsaustausch mit anderem Verpflichteten gleicher Berufsgruppe in dem Verfahren betreffenden Verpflichtungen <code>[unverifiziert – konkrete Norm prüfen]</code></li><li>Erörterung mit der Aufsichtsbehörde / Strafverfolgung</li></ul>
+<p>Verstoß: Ordnungswidrigkeit § 56 GwG, ggf. Strafbarkeit § 258 StGB (Strafvereitelung).</p>
+<h3>6. Anonymitäts- und Haftungsschutz (§§ 47 II, 48 GwG)</h3>
+<p>Die Identität der meldenden natürlichen Person wird <strong>geschützt</strong> (§ 47 II GwG); Weitergabe nur unter engen Voraussetzungen. Die Meldung führt <strong>nicht</strong> zur zivilrechtlichen, strafrechtlichen oder disziplinarrechtlichen Verantwortung des Meldenden, sofern nicht vorsätzlich oder grob fahrlässig unwahr gemeldet (§ 48 GwG).</p>
+<h3>7. Berufsgeheimnisträger (§ 43 II GwG)</h3>
+<p>Für <strong>Rechtsanwälte, Patentanwälte, Notare, Steuerberater, vereidigte Buchprüfer</strong> gilt die Meldepflicht nicht, soweit sich der Sachverhalt auf <strong>Informationen bezieht, die sie im Rahmen der Tätigkeit der Rechtsberatung oder Prozessvertretung</strong> erhalten haben. <strong>Ausnahme</strong>: Der Berufsträger weiß, dass der Mandant die Rechtsberatung <strong>bewusst</strong> für GW / TF in Anspruch nimmt — dann Meldepflicht. Maßgeblich ergänzend: § 43e BRAO, § 14a BNotO, § 50 BORA.</p>
+<p>Die Abgrenzung ist berufsrechtlich heikel: Falschmeldung kann § 43a BRAO / § 203 StGB verletzen. <strong>Bei Zweifelsfällen:</strong> Konsultation der Rechtsanwaltskammer / Notarkammer und sorgfältige Dokumentation der Entscheidungsgrundlage.</p>
+<h3>8. Strafrechtliche Schnittstelle § 261 StGB</h3>
+<p>§ 261 StGB seit Reform 2021 als „all crimes approach" — jede rechtswidrige Tat kommt als Vortat in Betracht (§ 261 I 1 StGB). Tathandlungen: Verbergen, Verschleiern, Verschaffen, Verwahren, Verwenden. Strafbarkeit auch bei <strong>Leichtfertigkeit</strong> (§ 261 VI StGB). Eine <strong>unterlassene</strong> Verdachtsmeldung kann je nach Sachlage § 261 StGB-Beihilfe / § 258 StGB darstellen <code>[unverifiziert – BGH-Rspr. in juris prüfen]</code>.</p>
+<h3>9. Bußgeldrisiko</h3>
+<p>Unterlassene oder verspätete Meldung: Ordnungswidrigkeit § 56 I Nr. 64 GwG <code>[unverifiziert – Nr. prüfen]</code>. Rahmen bis 1 Mio. EUR / 10 % Jahresumsatz (§ 56 III GwG).</p></section>
+<section><h2>Sources and Citations</h2><p>Verbindlich: <a href="../../../references/zitierweise.md"><code>../../../references/zitierweise.md</code></a>.</p>
+<h3>Statute</h3>
+<ul><li><a href="https://www.gesetze-im-internet.de/gwg_2017/__43.html">§ 43 GwG</a> (Meldepflicht, Sondervorschrift Berufsgeheimnisträger)</li><li><a href="https://www.gesetze-im-internet.de/gwg_2017/__44.html">§ 44 GwG</a> (Meldepflicht Aufsichtsbehörden)</li><li><a href="https://www.gesetze-im-internet.de/gwg_2017/__45.html">§ 45 GwG</a> (Form, goAML)</li><li><a href="https://www.gesetze-im-internet.de/gwg_2017/__46.html">§ 46 GwG</a> (Stillhaltepflicht, 3 Werktage)</li><li><a href="https://www.gesetze-im-internet.de/gwg_2017/__47.html">§ 47 GwG</a> (Tippoff-Verbot, Anonymitätsschutz)</li><li><a href="https://www.gesetze-im-internet.de/gwg_2017/__48.html">§ 48 GwG</a> (Haftungsfreistellung)</li><li><a href="https://www.gesetze-im-internet.de/gwg_2017/__56.html">§ 56 GwG</a> (Bußgeldrahmen)</li><li><a href="https://www.gesetze-im-internet.de/stgb/__261.html">§ 261 StGB</a> (Geldwäsche-Strafrecht, „all crimes approach" seit 2021)</li><li><a href="https://www.gesetze-im-internet.de/stgb/__258.html">§ 258 StGB</a> (Strafvereitelung)</li><li><a href="https://www.gesetze-im-internet.de/brao/__43e.html">§ 43e BRAO</a> (GwG-Pflichten Rechtsanwälte)</li><li><a href="https://www.gesetze-im-internet.de/bnoto/__14a.html">§ 14a BNotO</a> (Pflichten Notare)</li><li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32015L0849">Art. 33–39 RL (EU) 2015/849</a> (Meldepflichten, Schutz Meldender)</li><li>VO (EU) 2024/1624 (AMLR) <code>[unverifiziert – Anwendungsbeginn 2027]</code></li></ul>
+<h3>Verwaltungsvorschriften und Portale</h3>
+<ul><li>FIU (Generalzolldirektion), Anwendungshinweise zum GwG, jeweils gültige Fassung — www.zoll.de/fiu</li><li>BaFin-AuA, Besonderer Teil Kreditinstitute, Abschnitt Verdachtsmeldung</li><li>FIU-Indikatorenkatalog für Verdachtsmomente (sektorale Ausgaben)</li><li>goAML-Portal (elektronische Meldung) — www.goaml.fiu.bund.de <code>[unverifiziert – konkrete URL prüfen]</code></li></ul>
+<h3>Kommentare</h3>
+<ul><li>Herzog, GwG, X. Aufl. Jahr, §§ 43–48 <code>[unverifiziert – Auflage prüfen]</code></li><li>Bülte, GwG, §§ 43 ff. <code>[unverifiziert]</code></li><li>Quedenfeld, Handbuch Bekämpfung Geldwäsche, Kap. zur Verdachtsmeldung</li><li>MüKoStGB / NK-StGB / Fischer zu § 261 StGB</li></ul>
+<h3>Rechtsprechung (<code>[unverifiziert – prüfen in juris]</code>)</h3>
+<ul><li>BVerwG zur Auslegung der Meldeschwelle „Tatsachen darauf hindeuten" <code>[unverifiziert]</code></li><li>BGH-Strafsenat zu § 261 StGB n.F. nach Reform 2021 (Vortat-Spektrum, Leichtfertigkeit) <code>[unverifiziert]</code></li><li>BVerfG zum Verhältnis Meldepflicht / Verschwiegenheit der Berufsgeheimnisträger <code>[unverifiziert]</code></li></ul></section>
+<section><h2>Output Format</h2><p><strong>Internes Memo</strong> (vor goAML-Meldung):</p>
+<pre><code>INTERNES MEMO — Verdachtsmeldung § 43 GwG
+Verpflichteter: &lt;Firma&gt;, § 2 I Nr. &lt;…&gt; GwG
+Vorgang: &lt;Beschreibung&gt;
+Datum / Uhrzeit Eskalation an GW-Beauftragten: &lt;…&gt;
+Datum / Uhrzeit geplante Meldung: &lt;…&gt;
+
+I.   Sachverhalt
+II.  Risikoindikatoren (Tatsachen, keine Wertungen)
+III. Subsumtion § 43 I GwG (Meldeschwelle)
+IV.  Sondervorschrift § 43 II GwG (Berufsgeheimnis)? — nur bei RAe/StB/Notaren
+V.   Unverzüglichkeit § 43 I — Begründung der Frist
+VI.  Stillhaltepflicht § 46 — laufende Transaktion?
+VII. Tippoff-Verbot § 47 — interne Kommunikationsregeln
+VIII. Risikoeinstufung
+     🟢 / 🟡 / 🔴
+
+IX.  Quellenverzeichnis</code></pre>
+<p><strong>goAML-Meldetext</strong> (Tatsachen, keine rechtliche Subsumtion):</p>
+<pre><code>MELDUNG NACH § 43 GwG
+
+1. Meldender Verpflichteter
+   - Firma, Anschrift, GwG-Verpflichteten-Typ
+   - meldende Person (Geldwäschebeauftragter)
+
+2. Beteiligte
+   - Vertragspartner (Identifizierungsdaten)
+   - wirtschaftlich Berechtigter
+   - sonstige Beteiligte
+
+3. Sachverhalt
+   &lt;Tatsachenschilderung — Datum, Uhrzeit, Vorgang, Beträge&gt;
+
+4. Auffälligkeiten und Risikoindikatoren
+   &lt;FIU-Indikatorenkatalog-Verweis, soweit anwendbar&gt;
+
+5. Bisherige KYC-Erkenntnisse
+   &lt;Sorgfaltspflichtniveau, Transparenzregister, frühere Vorgänge&gt;
+
+6. Anlagen
+   &lt;Belege, KYC-Dokumentation, Transaktionsauszüge&gt;</code></pre></section>
+<section><h2>Beispiel (Auszug, internes Memo, Gutachtenstil)</h2><blockquote><strong>III. Subsumtion § 43 I GwG</strong>  Die Mandantin bietet die Anzahlung in Höhe von 80.000 EUR in bar an. Bargeldzahlungen oberhalb der typischen Branchenschwellen sind nach dem FIU-Indikatorenkatalog für den Immobiliensektor regelmäßig auffällig; verstärkt wird das Indiz dadurch, dass der Käufer über eine zwischengeschaltete Briefkastenkonstruktion in einem Offshore-Zentrum agiert (Hochrisikohinweis nach § 15 III Nr. 3 GwG, komplexe Struktur). Diese Tatsachen lassen objektiv den Schluss zu, dass die Mittel aus einer Vortat iSv § 261 StGB herrühren könnten; die Schwelle des § 43 I GwG („Tatsachen, die darauf hindeuten") ist damit erreicht. Eine über den Anfangsverdacht des § 152 II StPO hinausgehende Konkretisierung ist nicht erforderlich (vgl. FIU-AuA, Allgemeiner Teil; Herzog, GwG, § 43 Rn. 10 ff. <code>[unverifiziert]</code>). Die Sondervorschrift § 43 II GwG greift nicht: Notare sind zwar Berufsgeheimnisträger, die Vorschrift sperrt die Meldepflicht aber nicht bei Geldwäscheverdacht im Rahmen einer Beurkundungstätigkeit nach § 2 I Nr. 10 lit. b GwG (sondern primär bei Rechtsberatung); zudem deutet die Konstellation auf wissentliche Inanspruchnahme zu GW-Zwecken hin (§ 43 II 2 GwG), was die Sperrwirkung ohnehin aufhebt. <strong>Empfehlung:</strong> unverzügliche Meldung über goAML; Stillhaltefrist § 46 GwG beachten (Beurkundungstermin verschieben); striktes Tippoff-Verbot § 47 GwG.</blockquote></section>
+<section><h2>Risks and Common Mistakes</h2><ul><li><strong>Schwellen-Erhöhung über den Wortlaut hinaus</strong> — der Verpflichtete darf die Meldeschwelle nicht erhöhen („nur bei konkreten Anhaltspunkten").</li><li><strong>Verspätete Meldung</strong> wegen interner Eskalations- / Freigabeketten — Verletzung Unverzüglichkeit § 43 I GwG.</li><li><strong>Tippoff durch Routinekommunikation</strong> — Bestätigungsmails an Kunde („Ihre Transaktion wird derzeit zusätzlich geprüft"), Kontoauszugskommentare, telefonische Nachfragen.</li><li><strong>Stillhaltepflicht ignoriert</strong> — laufende automatisierte Buchungsprozesse müssen so eingerichtet sein, dass Sperrung möglich ist.</li><li><strong>Falsche Anwendung Berufsrechts-Privileg § 43 II GwG</strong> — Anwälte / Notare / StB melden zu schnell oder zu spät; Folge entweder § 203 StGB-Verstoß oder § 56 GwG-Bußgeld.</li><li><strong>Rechtliche Subsumtion in der goAML-Meldung</strong> — die FIU benötigt Tatsachen, keine Begründung; rechtliche Bewertungen werden im internen Memo dokumentiert.</li><li><strong>Kein internes Vier-Augen-Prinzip</strong> beim GW-Beauftragten — bei Krankheit / Urlaub fehlende Vertretung verletzt § 7 GwG.</li></ul></section>
+  <h2>Related Skills in Geldwäsche / AML-KYC</h2><div class="related-grid"><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/geldwaesche-aml-kyc/gwg-risikoanalyse.html" class="skill-card" style="text-decoration:none"><h3>Gwg Risikoanalyse</h3><p>Aufbau und Aktualisierung der institutsspezifischen Risikoanalyse nach § 5 GwG – Risikokategorien (Kunde /...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/geldwaesche-aml-kyc/kyc-identifikationspflicht.html" class="skill-card" style="text-decoration:none"><h3>Kyc Identifikationspflicht</h3><p>Identifizierung des Vertragspartners (§§ 10, 11 GwG) und des wirtschaftlich Berechtigten (§§ 3 ff. GwG)...</p></a></div>
+  <p style="margin-top:32px"><a href="https://github.com/borghei/AI-Skills-German-Law/tree/main/geldwaesche-aml-kyc/skills/verdachtsmeldung-fiu/SKILL.md" target="_blank" rel="noopener" class="btn btn-secondary">View SKILL.md on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></p>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener">GitHub</a>
+      <span class="footer-sep">&middot;</span>
+      <span>Apache-2.0 OR MIT</span>
+      <span class="footer-sep">&middot;</span>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/llms.txt">llms.txt</a>
+    </div>
+    <div class="footer-credit">Built by <a href="https://github.com/borghei" target="_blank" rel="noopener">Borghei</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

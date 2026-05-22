@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patientenrechte Akteneinsicht - AI Skills German Law</title>
+  <meta name="description" content="Anspruch des Patienten (und seiner Erben/Angehörigen) auf Einsicht in die Behandlungsakte nach § 630g BGB und parallel Art. 15 DSGVO – Verweigerungsgründe (therapeutischer Vorbehalt, Rechte Dritter), ">
+  <link rel="canonical" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/medizinrecht/patientenrechte-akteneinsicht.html">
+  <meta property="og:title" content="Patientenrechte Akteneinsicht - AI Skills German Law">
+  <meta property="og:description" content="Anspruch des Patienten (und seiner Erben/Angehörigen) auf Einsicht in die Behandlungsakte nach § 630g BGB und parallel Art. 15 DSGVO – Verweigerungsgründe (therapeutischer Vorbehalt, Rechte Dritter), ">
+  <meta property="og:url" content="https://borghei.github.io/AI-Skills-German-Law/SKILLS/medizinrecht/patientenrechte-akteneinsicht.html">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Patientenrechte Akteneinsicht", "description": "Anspruch des Patienten (und seiner Erben/Angehörigen) auf Einsicht in die Behandlungsakte nach § 630g BGB und parallel Art. 15 DSGVO – Verweigerungsgründe (therapeutischer Vorbehalt, Rechte Dritter), Form, Kostenfolge, Erbenanspruch, Verhältnis zur ärztlichen Schweigepflicht § 203 StGB. Use when ein Patient oder Erbe Einsicht verlangt und die Behandlerseite verweigert oder die Form streitig ist.", "applicationCategory": "Medizinrecht", "operatingSystem": "Any", "url": "https://borghei.github.io/AI-Skills-German-Law/SKILLS/medizinrecht/patientenrechte-akteneinsicht.html", "author": {"@type": "Person", "name": "Borghei"}, "inLanguage": "de"}</script>
+  <style>
+:root {
+  --bg: #faf9f5;
+  --bg-secondary: #f0eee6;
+  --text: #141413;
+  --text-muted: #5e5d59;
+  --accent: #d97757;
+  --accent-deep: #c6613f;
+  --border: rgba(20,20,19,0.1);
+  --border-strong: rgba(20,20,19,0.18);
+  --white: #ffffff;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'Cascadia Code', Menlo, monospace;
+  --max-width: 1200px;
+  --shadow-sm: 0 1px 2px rgba(20,20,19,0.04);
+  --shadow: 0 1px 3px rgba(20,20,19,0.06), 0 1px 2px rgba(20,20,19,0.04);
+  --shadow-md: 0 4px 12px rgba(20,20,19,0.08), 0 1px 3px rgba(20,20,19,0.06);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--accent-deep); }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+code { font-family: var(--font-mono); font-size: 0.875em; }
+
+/* Navbar */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(250,249,245,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo {
+  font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem;
+  color: var(--text); letter-spacing: -0.01em;
+}
+.nav-logo:hover { color: var(--text); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  color: var(--text-muted); font-size: 0.9rem; font-weight: 500;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.gh-link { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Breadcrumbs */
+.breadcrumbs { padding: 20px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs a:hover { color: var(--accent); }
+.breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+/* Page header */
+.page-header { padding: 48px 0 32px; }
+.page-title {
+  font-family: var(--font-serif); font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;
+  color: var(--text);
+}
+.page-subtitle { color: var(--text-muted); max-width: 760px; font-size: 1.05rem; line-height: 1.6; }
+
+.count-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--accent); background: rgba(217,119,87,0.08);
+  padding: 2px 10px; border-radius: 20px; margin-left: 8px;
+  vertical-align: middle; font-weight: 500;
+}
+
+/* Search + Filter */
+.filter-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.search-input {
+  flex: 1; min-width: 200px; padding: 10px 14px 10px 38px;
+  background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+.search-input::placeholder { color: var(--text-muted); }
+.search-wrap { position: relative; flex: 1; min-width: 200px; }
+.search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+.filter-select {
+  padding: 10px 14px; background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; cursor: pointer;
+}
+.filter-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+
+/* Card grid */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 60px; }
+.skill-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px 22px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex; flex-direction: column;
+}
+.skill-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.skill-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+.skill-card h3 a { color: var(--text); }
+.skill-card h3 a:hover { color: var(--accent); }
+.skill-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; flex: 1; }
+
+/* Badges */
+.badge-bar { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-mono); font-size: 0.7rem; padding: 3px 9px;
+  border-radius: 5px; font-weight: 500; white-space: nowrap;
+}
+.badge-domain { background: rgba(217,119,87,0.1); border: 1px solid rgba(217,119,87,0.2); color: var(--accent-deep); }
+.badge-subdomain { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-version { background: rgba(20,20,19,0.03); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-tools { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-refs { background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.15); color: var(--accent); }
+
+/* Tags */
+.skill-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.tag {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 8px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+.example-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.example-pill {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 7px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+/* Skill detail page */
+.skill-detail { padding-bottom: 80px; }
+.skill-detail h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 40px 0 16px; padding-top: 16px;
+  border-top: 1px solid var(--border); color: var(--text);
+}
+.skill-detail h3 { font-size: 1.05rem; font-weight: 600; margin: 20px 0 10px; color: var(--text); }
+.skill-detail h4 { font-size: 0.95rem; font-weight: 600; margin: 16px 0 8px; color: var(--text); }
+.skill-detail p, .skill-detail li { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
+.skill-detail ul, .skill-detail ol { margin-left: 22px; margin-bottom: 16px; }
+.skill-detail li { margin-bottom: 6px; }
+.skill-detail blockquote {
+  border-left: 3px solid var(--accent); padding: 6px 16px; margin: 12px 0;
+  background: var(--bg-secondary); border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-muted);
+}
+.skill-detail table {
+  width: 100%; border-collapse: collapse; margin: 14px 0 22px;
+  font-size: 0.9rem; background: var(--white);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.skill-detail th, .skill-detail td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.skill-detail th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+.skill-detail tr:last-child td { border-bottom: none; }
+.skill-detail pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  color: var(--text); margin: 12px 0 20px;
+}
+.skill-detail code {
+  font-family: var(--font-mono); font-size: 0.85rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.skill-detail pre code { background: none; padding: 0; }
+
+/* Hero (used on landing) */
+.hero { padding: 80px 0 60px; }
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; margin-bottom: 18px; letter-spacing: -0.02em;
+  line-height: 1.15; color: var(--text);
+}
+.hero-subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; line-height: 1.6; margin-bottom: 28px; }
+.stat-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; color: var(--text-muted); font-size: 0.95rem; }
+.stat-row .stat { display: inline-flex; align-items: center; gap: 6px; }
+.stat-row .stat strong { color: var(--text); font-family: var(--font-mono); font-size: 1rem; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.disclaimer {
+  background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.18);
+  border-left: 4px solid var(--accent); border-radius: var(--radius);
+  padding: 16px 20px; font-size: 0.9rem; color: var(--text-muted);
+  margin: 24px 0 40px;
+}
+.disclaimer strong { color: var(--text); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 18px; border-radius: var(--radius); font-size: 0.9rem;
+  font-weight: 500; font-family: var(--font-sans);
+  border: 1px solid transparent; cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+.btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.btn-primary:hover { background: #2a2a28; color: var(--bg); box-shadow: var(--shadow); }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--border-strong); }
+.btn-secondary:hover { background: var(--bg-secondary); color: var(--text); box-shadow: var(--shadow-sm); }
+
+.section-heading {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 30px 0 20px; color: var(--text);
+}
+
+/* Content pages (getting-started / guides / reference) */
+.content-page { padding-bottom: 80px; max-width: 760px; }
+.content-page h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 36px 0 14px; color: var(--text);
+}
+.content-page h3 { font-size: 1.1rem; font-weight: 600; margin: 22px 0 10px; color: var(--text); }
+.content-page p, .content-page li { font-size: 0.98rem; color: var(--text-muted); line-height: 1.7; }
+.content-page ul, .content-page ol { margin: 8px 0 18px 22px; }
+.content-page li { margin-bottom: 6px; }
+.content-page pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 18px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  margin: 12px 0 22px;
+}
+.content-page code {
+  font-family: var(--font-mono); font-size: 0.88rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.content-page pre code { background: none; padding: 0; }
+.content-page table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.content-page th, .content-page td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+}
+.content-page th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+
+.cards-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0 28px; }
+.mini-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 18px 20px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.mini-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.mini-card h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 6px; color: var(--text); }
+.mini-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+.mini-card a.view-link { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8rem; margin-top: 10px; color: var(--accent); }
+
+/* Footer */
+.footer {
+  padding: 36px 0; border-top: 1px solid var(--border); margin-top: 40px;
+  background: var(--bg);
+}
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-links { display: flex; align-items: center; gap: 12px; font-size: 0.85rem; color: var(--text-muted); }
+.footer-links a { color: var(--text-muted); }
+.footer-links a:hover { color: var(--accent); }
+.footer-sep { color: var(--border-strong); }
+.footer-credit { font-size: 0.85rem; color: var(--text-muted); }
+.footer-credit a { color: var(--text); font-weight: 600; }
+
+/* Related skills */
+.related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .skills-grid, .related-grid { grid-template-columns: repeat(2, 1fr); }
+  .cards-row { grid-template-columns: 1fr; }
+  .nav-links { gap: 14px; }
+}
+@media (max-width: 480px) {
+  .skills-grid, .related-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; }
+  .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a href="https://borghei.github.io/AI-Skills-German-Law/" class="nav-logo">AI Skills German Law</a>
+    <div class="nav-links">
+      <a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/" class="active">Skills</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/getting-started/">Getting Started</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/guides/authoring/">Guides</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/reference/">Reference</a>
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener" class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumbs container"><a href="https://borghei.github.io/AI-Skills-German-Law/">Home</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/">Skills</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/medizinrecht/">Medizinrecht</a><span class=sep>/</span><span>Patientenrechte Akteneinsicht</span></div>
+<main class="container">
+
+<article class="skill-detail">
+  <div class="page-header">
+    <h1 class="page-title">Patientenrechte Akteneinsicht</h1>
+    <p class="page-subtitle">Anspruch des Patienten (und seiner Erben/Angehörigen) auf Einsicht in die Behandlungsakte nach § 630g BGB und parallel Art. 15 DSGVO – Verweigerungsgründe (therapeutischer Vorbehalt, Rechte Dritter), Form, Kostenfolge, Erbenanspruch, Verhältnis zur ärztlichen Schweigepflicht § 203 StGB. Use when ein Patient oder Erbe Einsicht verlangt und die Behandlerseite verweigert oder die Form streitig ist.</p>
+    <div class="badge-bar"><span class="badge badge-domain">Medizinrecht</span> <span class="badge badge-version">v0.1.0</span></div>
+    <div class="skill-meta" style="margin-bottom:24px"><span class="tag">patientenrechte</span><span class="tag">akteneinsicht</span><span class="tag">§630g</span><span class="tag">§203</span><span class="tag">art.15</span><span class="tag">bgb</span><span class="tag">dsgvo</span><span class="tag">stgb</span></div>
+  </div>
+  <section><h2>Purpose</h2><p>Der Skill prüft den Anspruch auf Einsicht in die Behandlungsdokumentation nach § 630g BGB und das parallele Auskunftsrecht aus Art. 15 DSGVO. Beide Ansprüche stehen nebeneinander (Anspruchskonkurrenz). Der Skill prüft Verweigerungsgründe (therapeutischer Vorbehalt, Rechte Dritter), Form (Original, Kopie, elektronisch), Kostenfolgen und den Erbenanspruch nach § 630g Abs. 3 BGB. Schnittstellen zu § 203 StGB (Schweigepflicht; Verstorbenenschutz) und zur Patientenverfügung §§ 1827 ff. BGB werden mitgeprüft.</p></section>
+<section><h2>Inputs</h2><ul><li>Behandlungsverhältnis (Behandler, Zeitraum, Inhalt der Akte, ggf. fremdärztliche Befunde, Aufnahmen)</li><li>Antragsteller (Patient persönlich / gesetzlicher Vertreter / Erbe / sonstiger Angehöriger)</li><li>Bei Erbenanspruch: Sterbedatum, Erbenstellung, behauptete vermögensrechtliche oder immaterielle Interessen</li><li>konkrete Verweigerungsgründe der Behandlerseite</li><li>Form-Wunsch (Einsicht vor Ort, Kopien, elektronische Übermittlung)</li></ul></section>
+<section><h2>Sub-Agent Architecture</h2><p>Researcher liefert § 630g BGB, Art. 15 DSGVO, § 22 BDSG, § 203 StGB, BGH-Rspr. zur restriktiven Anwendung des therapeutischen Vorbehalts, Erben-Linie, Kommentarstellen (Spickhoff, Laufs/Katzenmeier/Lipp, Wagner in MüKoBGB). Drafter erstellt Anspruchsschreiben oder Stellungnahme gegen Verweigerung im Gutachtenstil. Reviewer prüft restriktive Anwendung der Ausnahmen und das Verhältnis BGB/DSGVO (insb. Kosten, Form, Frist).</p></section>
+<section><h2>Process</h2><h3>1. Anspruchsgrundlage § 630g BGB</h3>
+<p><a href="https://www.gesetze-im-internet.de/bgb/__630g.html">§ 630g Abs. 1 S. 1 BGB</a>: „Dem Patienten ist auf Verlangen unverzüglich Einsicht in die vollständige, ihn betreffende Patientenakte zu gewähren, soweit der Einsichtnahme nicht erhebliche therapeutische Gründe oder sonstige erhebliche Rechte Dritter entgegenstehen."</p>
+<p>Tatbestandsmerkmale:</p>
+<ul><li><strong>Patient</strong> (Vertragspartner des Behandlungsvertrags § 630a BGB)</li><li><strong>Verlangen</strong> (formfreier Antrag; idR schriftlich aus Beweisgründen)</li><li><strong>unverzüglich</strong> – ohne schuldhaftes Zögern, § 121 I BGB-Maßstab; praktisch idR binnen weniger Wochen</li><li><strong>vollständig</strong> – inkl. Rohbefunden, Bildaufnahmen, Korrespondenz mit Mit-/Vorbehandlern, OP-Berichten, Pflegedokumentation</li><li><strong>die ihn betreffende</strong> – keine Patientenakte Dritter</li></ul>
+<h3>2. Verweigerungsgründe (eng auszulegen)</h3>
+<p>§ 630g Abs. 1 S. 1 Hs. 2 BGB nennt zwei Verweigerungsgründe:</p>
+<ol><li><strong>Erhebliche therapeutische Gründe</strong> – BGH-Linie: restriktiv; allein theoretische Gefährdung des Heilungserfolgs reicht nicht; konkrete, dokumentierte Gefahr für psychische Stabilität des Patienten (insb. Psychiatrie) erforderlich.</li><li><strong>Erhebliche Rechte Dritter</strong> – z. B. Angaben Dritter (Familienanamnese) mit deren Geheimhaltungsinteresse; ggf. Schwärzung; vollständige Verweigerung selten zulässig.</li></ol>
+<p>Die Verweigerung ist nach § 630g Abs. 1 S. 2 BGB <strong>zu begründen</strong>. Pauschale Verweigerung („therapeutische Gründe") trägt nicht.</p>
+<h3>3. Form und Kosten</h3>
+<ul><li><strong>Originalakte</strong> verbleibt bei der Behandlerseite; Anspruch auf <strong>Abschriften</strong> nach Abs. 2.</li><li><strong>Elektronisch geführte Akte</strong>: elektronische Abschrift (PDF, Bildauflösung, MRT-DICOM) genügt; bei rein elektronischer Akte ist sie auch in elektronischer Form bereitzustellen.</li><li><strong>Kosten</strong>: § 630g Abs. 2 S. 2 BGB verweist auf § 811 BGB – der Patient hat die <strong>Kosten zu erstatten</strong>. Faustregel: 0,50 € pro Kopie, Versandkosten zusätzlich; verlangt der Patient elektronische Übermittlung, sind die tatsächlich anfallenden Kosten (gering).</li></ul>
+<h3>4. Parallel: Art. 15 DSGVO</h3>
+<p>Der Patient hat zusätzlich Anspruch auf Auskunft und <strong>kostenfreie Datenkopie nach Art. 15 Abs. 3 DSGVO</strong> (erste Kopie kostenfrei; weitere Kopien gegen angemessenes Entgelt). Beide Ansprüche stehen in <strong>echter Anspruchskonkurrenz</strong> (h.M.) – der Patient kann wählen. Praktischer Tipp: Erstantrag auf Art. 15 DSGVO stützen, weil kostenfrei und an strenge DSGVO-Frist (idR ein Monat, Art. 12 Abs. 3 DSGVO) gebunden; Akteninhalt deckt sich weitgehend.</p>
+<p>EuGH zur Datenkopie iZm Patientenakten: Urt. v. 26.10.2023 – C-307/22 (FT/DW) (https://curia.europa.eu/juris/document/document.jsf?docid=279125&amp;doclang=DE) – Recht auf kostenfreie erste Kopie der Patientenakte bestätigt; nationale Kostenregelung (§ 630g II 2 BGB) tritt zurück, soweit der Patient Auskunft nach Art. 15 DSGVO begehrt.</p>
+<h3>5. Erbenanspruch § 630g Abs. 3 BGB</h3>
+<p>Nach dem Tod des Patienten steht das Einsichtsrecht zu:</p>
+<ul><li>den <strong>Erben</strong> zur Wahrnehmung <strong>vermögensrechtlicher Interessen</strong> (z. B. Behandlungsfehlerprüfung für Schadensersatzanspruch);</li><li>den <strong>nächsten Angehörigen</strong> zur Geltendmachung <strong>immaterieller Interessen</strong> (z. B. Aufklärung der Todesursache).</li></ul>
+<p>Beide Ansprüche entfallen, soweit ein <strong>entgegenstehender ausdrücklicher oder mutmaßlicher Wille</strong> des Patienten besteht. <strong>Beweislast für den entgegenstehenden Willen trägt die Behandlerseite</strong>; bloße Vermutungen genügen nicht. BGH-Linie zur restriktiven Anwendung des mutmaßlichen Willens <code>[unverifiziert – prüfen in juris]</code>.</p>
+<h3>6. Schnittstelle § 203 StGB</h3>
+<p>Die Schweigepflicht des Arztes (§ 203 StGB, § 9 MBO-Ä in der jeweiligen LBO) gilt <strong>über den Tod hinaus</strong>. Die Auskunftserteilung an Erben/Angehörige darf nur erfolgen, soweit § 630g Abs. 3 BGB sie erlaubt; insoweit liegt eine <strong>gesetzliche Befugnisnorm</strong> vor, die den Tatbestand des § 203 StGB ausschließt. Im Zweifel: Schweigepflichtentbindungserklärung des Patienten zu Lebzeiten anfordern bzw. die Erbenstellung urkundlich (Erbschein) nachweisen lassen.</p>
+<h3>7. Verhältnis Patientenverfügung</h3>
+<p>Hatte der Patient eine <a href="https://www.gesetze-im-internet.de/bgb/__1827.html">Patientenverfügung nach §§ 1827 ff. BGB</a> (n.F. seit Betreuungsrechtsreform 2023; früher §§ 1901a ff. BGB) errichtet, kann darin auch eine Schweigepflichtentbindung enthalten sein. Drafter sollte das Dokument anfordern.</p></section>
+<section><h2>Sources and Citations</h2><p>Verbindlich: <a href="../../../references/zitierweise.md"><code>../../../references/zitierweise.md</code></a>.</p>
+<h3>Statute</h3>
+<ul><li><a href="https://www.gesetze-im-internet.de/bgb/__630g.html">§ 630g BGB</a> (Akteneinsicht)</li><li><a href="https://www.gesetze-im-internet.de/bgb/__630f.html">§ 630f BGB</a> (Dokumentationspflicht – Grundlage des Einsichtsobjekts)</li><li><a href="https://www.gesetze-im-internet.de/bgb/__811.html">§ 811 BGB</a> (Kostenregel über § 630g II 2 BGB)</li><li><a href="https://www.gesetze-im-internet.de/bgb/__1827.html">§§ 1827 ff. BGB</a> (Patientenverfügung)</li><li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679">Art. 15 DSGVO</a>, <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679">Art. 9 DSGVO</a> (Gesundheitsdaten)</li><li><a href="https://www.gesetze-im-internet.de/bdsg_2018/__22.html">§ 22 BDSG</a> (Verarbeitung besonderer Kategorien personenbezogener Daten)</li><li><a href="https://www.gesetze-im-internet.de/stgb/__203.html">§ 203 StGB</a> (Schweigepflicht)</li><li>ggf. § 10 Abs. 3 MBO-Ä (berufsrechtliche Einsichts- und Aufbewahrungspflicht; 10 Jahre, ggf. länger)</li></ul>
+<h3>Kommentare</h3>
+<ul><li>Wagner, in: MüKoBGB, 9. Aufl. 2024, § 630g Rn. 1 ff.</li><li>Katzenmeier, in: BeckOK BGB, Stand 2024, § 630g Rn. 1 ff.</li><li>Spickhoff, in: Spickhoff, Medizinrecht, 4. Aufl. 2022, § 630g BGB Rn. 1 ff.</li><li>Laufs/Katzenmeier/Lipp, Handbuch des Arztrechts, 8. Aufl. 2021, Kap. VI (Dokumentation und Einsichtsrecht)</li><li>Bäcker, in: Kühling/Buchner, DSGVO/BDSG, 3. Aufl. 2020, Art. 15 DSGVO Rn. 1 ff.</li></ul>
+<h3>Rechtsprechung</h3>
+<ol><li>BGH, Urt. v. 26.02.2013 – VI ZR 359/11 (Einsichtsrecht; restriktive Anwendung des therapeutischen Vorbehalts) (https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&amp;Datum=26.02.2013&amp;Aktenzeichen=VI+ZR+359/11)</li><li>BGH-Linie zur Erbeneinsicht und mutmaßlichem Willen des Verstorbenen <code>[unverifiziert – prüfen in juris]</code></li><li>EuGH, Urt. v. 26.10.2023 – C-307/22, FT/DW (kostenfreie erste Kopie der Patientenakte nach Art. 15 III DSGVO) (https://curia.europa.eu/juris/document/document.jsf?docid=279125&amp;doclang=DE)</li><li>OLG-Rspr. zu Bildaufnahmen / Röntgenaufnahmen / DICOM-Daten <code>[unverifiziert – prüfen in juris]</code></li></ol></section>
+<section><h2>Output Format</h2><pre><code>GUTACHTEN / ANSPRUCHSSCHREIBEN — Akteneinsicht
+Mandat:  &lt;anonymisiert&gt;
+Behandler: &lt;Klinik/Praxis&gt;
+Zeitraum: &lt;…&gt;
+
+I.   Sachverhalt (knapp)
+II.  Frage(n)
+III. Kurzantwort
+     – Anspruch dem Grunde nach: [ja / nein / teilweise]
+     – Empfohlene Anspruchsgrundlage: [§ 630g BGB / Art. 15 DSGVO / beide]
+
+IV.  Rechtliche Bewertung
+     1. § 630g BGB
+        a) Anspruchsinhaber (Patient / Erbe / Angehöriger)
+        b) Vollständige Akte
+        c) Verweigerungsgründe
+           – therapeutischer Vorbehalt
+           – Rechte Dritter
+        d) Form (Einsicht / Kopie / elektronisch)
+        e) Kosten
+     2. Art. 15 DSGVO (parallel)
+        – Frist Art. 12 III DSGVO
+        – Kostenfreie erste Kopie Art. 15 III DSGVO
+     3. Schnittstelle § 203 StGB / § 22 BDSG / Art. 9 DSGVO
+     4. Bei Erbenanspruch: § 630g III BGB, mutmaßlicher Wille
+
+V.   Empfehlung
+     – Antragstellung
+     – Frist
+     – Eskalation (Aufsichtsbehörde, Klage AG/LG)
+
+VI.  Risiken / offene Punkte
+     🟢 / 🟡 / 🔴
+
+VII. Quellenverzeichnis</code></pre></section>
+<section><h2>Risks and Common Mistakes</h2><ul><li><strong>Pauschale Verweigerung „therapeutische Gründe"</strong> ohne konkrete Begründung – trägt nicht (§ 630g I 2 BGB).</li><li><strong>Verkennen der Anspruchskonkurrenz</strong> § 630g BGB ↔ Art. 15 DSGVO – Art. 15 DSGVO ist idR günstiger (kostenfrei, Monatsfrist).</li><li><strong>Ablehnung der Erbeneinsicht</strong> mit pauschalem Hinweis auf § 203 StGB – § 630g III BGB ist gesetzliche Befugnis und schließt den Tatbestand aus.</li><li><strong>Vergessen der Bildaufnahmen / DICOM-Daten</strong> – „vollständig" umfasst auch Rohdaten.</li><li><strong>Verweis auf 10-Jahres-Aufbewahrungsfrist § 10 MBO-Ä</strong> als Vernichtungsargument – Mindestfrist, nicht Maximalfrist; im Hinblick auf § 199 II BGB (30 Jahre Höchstfrist) faktisch längere Aufbewahrung geboten.</li><li><strong>Übersehen der Patientenverfügung</strong> §§ 1827 ff. BGB n.F. (Schweigepflichtentbindung).</li></ul></section>
+  <h2>Related Skills in Medizinrecht</h2><div class="related-grid"><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/medizinrecht/arzthaftung-aufklaerungspflicht.html" class="skill-card" style="text-decoration:none"><h3>Arzthaftung Aufklaerungspflicht</h3><p>Prüfung der ärztlichen Aufklärungspflicht und der daraus folgenden zivilrechtlichen Arzthaftung –...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/medizinrecht/mbo-aerzte-pruefung.html" class="skill-card" style="text-decoration:none"><h3>Mbo Aerzte Pruefung</h3><p>Berufsrechtliche Prüfung ärztlicher Pflichten nach der Musterberufsordnung MBO-Ä und der einschlägigen...</p></a></div>
+  <p style="margin-top:32px"><a href="https://github.com/borghei/AI-Skills-German-Law/tree/main/medizinrecht/skills/patientenrechte-akteneinsicht/SKILL.md" target="_blank" rel="noopener" class="btn btn-secondary">View SKILL.md on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></p>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener">GitHub</a>
+      <span class="footer-sep">&middot;</span>
+      <span>Apache-2.0 OR MIT</span>
+      <span class="footer-sep">&middot;</span>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/llms.txt">llms.txt</a>
+    </div>
+    <div class="footer-credit">Built by <a href="https://github.com/borghei" target="_blank" rel="noopener">Borghei</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://borghei.github.io/AI-Skills-German-Law/sitemap.xml
