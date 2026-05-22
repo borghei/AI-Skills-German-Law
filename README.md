@@ -86,7 +86,7 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 
 ## What's inside
 
-**23 areas: 11 substantive areas of German law plus 5 Fachanwaltschaften plus 7 EU/cross-cutting compliance frameworks** that affect virtually every European company. Each area ships as its own installable plugin.
+**48 areas: 23 substantive areas of German law (general practice and constitutional/public law), 5 Fachanwaltschaften, 7 EU/cross-cutting compliance frameworks, and 13 additional specialty plugins (regulated industries, IP, professional, finance/antitrust)** — together covering the breadth of German legal practice. Each area ships as its own installable plugin.
 
 ### German legal practice
 
@@ -125,6 +125,46 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 | **DORA** | [`dora/`](./dora/) | Banks, insurers, investment firms, crypto, CASPs |
 | **DSA / DMA** | [`dsa-dma/`](./dsa-dma/) | Hosting providers, online platforms, VLOPs, gatekeepers |
 | **CSRD / ESRS** | [`csrd/`](./csrd/) | Large companies, phased 2024 to 2028 (Omnibus pending) |
+
+### Substantive general law (expanded coverage)
+
+| Area | Plugin | Coverage |
+|---|---|---|
+| **Europarecht** | [`europarecht/`](./europarecht/) | Art. 267 AEUV Vorabentscheidung (CILFIT/acte clair), Vertragsverletzung Art. 258–260, Richtlinien-Umsetzung |
+| **Verfassungsrecht** | [`verfassungsrecht/`](./verfassungsrecht/) | Verfassungsbeschwerde §§ 90 ff. BVerfGG, 3-Stufen-Grundrechtsprüfung, Organstreit Art. 93 GG |
+| **Sozialrecht** | [`sozialrecht/`](./sozialrecht/) | SGB I–XII, Bürgergeld § 7 SGB II, Renten §§ 35, 43 SGB VI, Widerspruch § 84 SGG |
+| **Handelsrecht** | [`handelsrecht/`](./handelsrecht/) | Kaufmannseigenschaft §§ 1–15 HGB, Handelsvertreter §§ 84 ff. + § 89b, Untersuchungs-/Rügepflicht §§ 377 f. |
+| **Medizinrecht** | [`medizinrecht/`](./medizinrecht/) | Arzthaftung §§ 630a–h BGB, Aufklärungspflicht, Akteneinsicht, MBO-Ä, § 203 StGB |
+| **Versicherungsrecht** | [`versicherungsrecht/`](./versicherungsrecht/) | VVG-Deckungsprüfung 3-stufig, Obliegenheiten §§ 19–22, 28 ff., Maklerhaftung §§ 60–63 |
+| **Baurecht** | [`baurecht/`](./baurecht/) | BGB-Werkvertrag/Bauvertrag §§ 650a ff., VOB/B, BauGB §§ 29–35, LBO, Nachbarrechtsschutz § 212a BauGB |
+| **Verkehrsrecht** | [`verkehrsrecht/`](./verkehrsrecht/) | StVG §§ 7, 17, 18 (Quotenrechtsprechung), MPU-Anordnung FeV §§ 11, 13, 14, OWi nach StVO/BKatV |
+| **Urheber- und Medienrecht** | [`urheber-medienrecht/`](./urheber-medienrecht/) | UrhG § 97a-Abmahnung, dreifache Schadensberechnung, Lizenzvertrag §§ 32 ff., MStV-Pflichten |
+| **Sportrecht** | [`sportrecht/`](./sportrecht/) | Verbands-/Vereinsrecht, CAS/DIS-Schiedsgerichtsbarkeit, AntiDopG/WADC, Athletenvertrag |
+| **Migrationsrecht** | [`migrationsrecht/`](./migrationsrecht/) | AufenthG-Titel-Systematik, AsylG §§ 3, 4 + § 60 V/VII, Dublin VO 604/2013, Abschiebungsschutz |
+| **Agrarrecht** | [`agrarrecht/`](./agrarrecht/) | GAP 2023–27, GrdstVG-Genehmigung + RSG-Vorkaufsrecht, LPachtVG, LwAnpG-Vermögensauseinandersetzung |
+
+### Regulated industries & cross-cutting (expanded)
+
+| Area | Plugin | Triggers when |
+|---|---|---|
+| **Vergaberecht** | [`vergaberecht/`](./vergaberecht/) | Öffentliche Aufträge oberhalb/unterhalb EU-Schwelle; Nachprüfung VK §§ 155 ff. GWB |
+| **Umweltrecht** | [`umweltrecht/`](./umweltrecht/) | BImSchG-Genehmigung, KrWG, WHG, BNatSchG, UVPG/UmwRG, BBodSchG |
+| **Energierecht** | [`energierecht/`](./energierecht/) | EnWG-Netzanschluss, EEG-Förderung, EnEfG/EDL-G ab 7,5 GWh/a |
+| **Außenwirtschaft, Zoll, Sanktionen** | [`aussenwirtschaft-zoll-sanktionen/`](./aussenwirtschaft-zoll-sanktionen/) | Ausfuhrkontrolle AWG/Dual-Use 2021/821, EU-Sanktions-VOen, UZK Art. 33 |
+| **Geldwäsche / AML-KYC** | [`geldwaesche-aml-kyc/`](./geldwaesche-aml-kyc/) | GwG-Verpflichtete § 2, KYC §§ 10 ff., FIU-Meldung § 43; ab 2027 AMLR/AMLA |
+| **Transportrecht** | [`transportrecht/`](./transportrecht/) | HGB §§ 407 ff., CMR (grenzüberschreitend Straße), Spedition §§ 453 ff., ADSp 2017 |
+| **Produktrecht** | [`produktrecht/`](./produktrecht/) | ProdHaftG + Produzentenhaftung § 823, GPSR ab 13.12.2024, Rückrufrecht |
+| **KI-Governance** | [`ki-governance/`](./ki-governance/) | Querschnitt KI-Einsatz: AVV Art. 28, § 43e BRAO, ISO/IEC 42001/23894, NIST AI RMF |
+
+### Specialty law & IP (expanded)
+
+| Area | Plugin | Coverage |
+|---|---|---|
+| **Wettbewerbsrecht (UWG)** | [`wettbewerbsrecht/`](./wettbewerbsrecht/) | § 13 UWG-Abmahnung inkl. § 8c, irreführende Werbung §§ 5, 5a, 5b, eV §§ 12 ff. UWG |
+| **Kartellrecht (GWB)** | [`kartellrecht/`](./kartellrecht/) | § 1 GWB / Art. 101 AEUV, §§ 18 ff. Marktbeherrschung + § 19a, Fusionskontrolle §§ 35 ff. + EU-FK-VO 139/2004 |
+| **Kapitalmarktrecht** | [`kapitalmarktrecht/`](./kapitalmarktrecht/) | WpHG/MAR Marktmissbrauch und Ad-hoc, Prospekt-VO 2017/1129, WpÜG-Pflichtangebot |
+| **Patentrecht** | [`patentrecht/`](./patentrecht/) | PatG/EPÜ Anmeldung, Verletzungsklage §§ 139 ff. (Düsseldorfer Modell), Freedom-to-Operate, Einheitspatent/UPC |
+| **Berufsrecht (Anwaltschaft)** | [`berufsrecht-anwaltschaft/`](./berufsrecht-anwaltschaft/) | BRAO-Grundpflichten + § 203 StGB, FAO-Fortbildung § 15, RDG-Abgrenzung (Inkasso, Legal-Tech) |
 
 Each area includes a researcher sub-agent (Quellensuche), drafter sub-agent (Entwurf nach Gutachtenstil), reviewer sub-agent (Risiko- und Berufsrechts-Check), conventions per [`CONVENTIONS.md`](./CONVENTIONS.md), and at least one runnable test under `<area>/tests/`.
 

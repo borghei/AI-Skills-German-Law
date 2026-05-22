@@ -1,0 +1,11 @@
+{
+  "name": "vergaberecht",
+  "version": "0.1.0",
+  "description": "Deutsches Vergaberecht – Oberschwellenbereich (GWB Teil 4, VgV/SektVO/KonzVgV/VSVgV) und Unterschwellenbereich (UVgO/VOB/A). Schwellenwert- und Verfahrensprüfung, Nachprüfungsverfahren vor der Vergabekammer (§§ 155 ff. GWB) inkl. Rügeobliegenheit § 160 Abs. 3 GWB, Ausschreibungsprüfung der Vergabeunterlagen (Eignung §§ 122–124 GWB, Zuschlag § 127 GWB). Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

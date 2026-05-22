@@ -1,0 +1,11 @@
+{
+  "name": "medizinrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Medizinrecht aus Praxisperspektive – Arzthaftung und Aufklärungspflicht (§§ 630a–630h BGB, § 823 BGB), Patientenrechte und Akteneinsicht (§ 630g BGB iVm Art. 15 DSGVO), berufsrechtliche Prüfung der ärztlichen Pflichten nach MBO-Ä und Landesberufsordnungen (Werbung, Schweigepflicht § 203 StGB, Dokumentation, Fernbehandlung). Schnittstellen zu SGB V, BÄO, AMG, MPDG. Mit Researcher/Drafter/Reviewer-Subagenten und ausdrücklicher Behandlung der medizinrechtlichen Beweislastregeln (§ 630h BGB) und der 30-Jahre-Höchstfrist § 199 II BGB.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

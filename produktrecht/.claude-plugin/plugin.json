@@ -1,0 +1,11 @@
+{
+  "name": "produktrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Produktrecht aus Praxisperspektive – verschuldensunabhängige Herstellerhaftung nach ProdHaftG und Produzentenhaftung § 823 BGB (Konstruktions-, Fabrikations-, Instruktions-, Produktbeobachtungsfehler, Beweislastumkehr nach BGH Hühnerpest), Produktsicherheit nach GPSR (VO (EU) 2023/988, anwendbar ab 13.12.2024) mit ProdSG-Übergang und sektoraler Harmonisierung (Maschinen-VO 2023/1230, Spielzeug-RL, NSpRG, EMV, RED), Rückrufrecht zivil- und öffentlich-rechtlich (Marktaufsicht der Länder, BAuA, Safety Business Gateway). Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

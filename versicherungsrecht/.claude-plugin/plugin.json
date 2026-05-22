@@ -1,0 +1,11 @@
+{
+  "name": "versicherungsrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Versicherungsvertragsrecht (VVG) aus Praxisperspektive – Deckungsprüfung in drei Stufen (Versicherungsfall unter AVB, kein Risikoausschluss, keine Leistungsfreiheit) mit Unklarheitenregel § 305c II BGB und AGB-Kontrolle §§ 307 ff. BGB; vorvertragliche Anzeigepflicht §§ 19–22 VVG und Obliegenheiten §§ 28 ff. VVG inkl. Quotelung, Kausalitätsgegenbeweis und Belehrungspflichten; Haftung des Versicherungsmaklers §§ 60–63 VVG mit Marktauswahl, Beratungsdokumentation und Schadensersatz. Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

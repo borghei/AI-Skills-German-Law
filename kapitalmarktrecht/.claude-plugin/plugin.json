@@ -1,0 +1,11 @@
+{
+  "name": "kapitalmarktrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Kapitalmarktrecht im engeren Sinne – Wertpapier- und Emittentenrecht: WpHG/MAR (Marktmissbrauch, Insiderhandel, Ad-hoc-Publizität, Directors' Dealings, Stimmrechtsmeldungen), Prospekt-VO (EU) 2017/1129 iVm WpPG (Prospektpflicht, Ausnahmen, BaFin-Billigung, Prospekthaftung) und WpÜG (Pflichtangebot, Acting in concert, Mindestpreis, Verhaltenspflichten Zielgesellschaft, Squeeze-out). Mit Researcher/Drafter/Reviewer-Subagenten. Bankenaufsicht und Kreditverträge sind im Plugin `bankrecht` abgebildet.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

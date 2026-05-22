@@ -3,9 +3,9 @@ name: abmahnung
 description: "Entwurf einer BAG-konformen Abmahnung im Arbeitsrecht – konkrete Schilderung der Pflichtverletzung, klare Verhaltenserwartung, ausdrückliche Sanktionsandrohung. Use when AG eine verhaltensbedingte Sanktion vor einer Kündigung dokumentieren muss oder AN die Wirksamkeit einer empfangenen Abmahnung prüft."
 language: de
 agents:
-  researcher: ../agents/researcher.md
-  drafter: ../agents/drafter.md
-  reviewer: ../agents/reviewer.md
+  researcher: ../../agents/researcher.md
+  drafter: ../../agents/drafter.md
+  reviewer: ../../agents/reviewer.md
 provider_variants:
   - claude
   - gemini

@@ -122,6 +122,131 @@
       "name": "verwaltungsrecht",
       "source": "./verwaltungsrecht",
       "description": "Verwaltungsrecht (Fachanwaltschaft). Widerspruchsverfahren §§ 68 ff. VwGO, Anfechtungs- und Verpflichtungsklage §§ 42, 113 VwGO, einstweiliger Rechtsschutz § 80 VwGO, Vollstreckung VwVG."
+    },
+    {
+      "name": "europarecht",
+      "source": "./europarecht",
+      "description": "Europarecht aus deutscher Praxisperspektive – Vorabentscheidungsverfahren Art. 267 AEUV inkl. CILFIT/acte clair und BVerfG-Kontrolle Art. 101 I 2 GG, Vertragsverletzungsverfahren Art. 258–260 AEUV, Richtlinien-Umsetzungsprüfung (unmittelbare Wirkung, richtlinienkonforme Auslegung, Francovich-Staatshaftung)."
+    },
+    {
+      "name": "verfassungsrecht",
+      "source": "./verfassungsrecht",
+      "description": "Deutsches Verfassungsrecht – Grundgesetz, BVerfGG, Grundrechtsdogmatik, Organstreitigkeiten. Verfassungsbeschwerde (Zulässigkeit §§ 90 ff. BVerfGG, Begründetheit), 3-Stufen-Grundrechtsprüfung mit Verhältnismäßigkeit, Abgrenzung Organstreit / Bund-Länder-Streit / abstrakte Normenkontrolle (Art. 93 GG)."
+    },
+    {
+      "name": "umweltrecht",
+      "source": "./umweltrecht",
+      "description": "Deutsches Umweltrecht – Immissionsschutz (BImSchG §§ 4–7, 17, 20; 4./9. BImSchV; TA Luft/Lärm), Abfallrecht (KrWG §§ 3, 6, 14, 17, 47), Wasserrecht (WHG §§ 8 ff.), Naturschutz (BNatSchG §§ 13 ff., 44 ff., 64), UVP (UVPG §§ 5, 7, 15, 18, 25; UmwRG § 4), Bodenschutz (BBodSchG)."
+    },
+    {
+      "name": "sozialrecht",
+      "source": "./sozialrecht",
+      "description": "Sozialrecht – Sozialgesetzbuch I–XII, Sozialgerichtsverfahren (SGG), Sozialverwaltungsverfahren (SGB X). Bürgergeld-Anspruchsprüfung § 7 ff. SGB II, Renten nach SGB VI (Altersrente / Erwerbsminderungsrente §§ 35, 43), Widerspruch gegen Leistungsbescheid § 84 SGG."
+    },
+    {
+      "name": "vergaberecht",
+      "source": "./vergaberecht",
+      "description": "Deutsches Vergaberecht – Oberschwellenbereich (GWB Teil 4, VgV/SektVO/KonzVgV/VSVgV) und Unterschwellenbereich (UVgO/VOB/A). Schwellenwert- und Verfahrensprüfung, Nachprüfung vor der Vergabekammer (§§ 155 ff. GWB) inkl. Rügeobliegenheit § 160 III GWB, Ausschreibungsprüfung (Eignung §§ 122–124, Zuschlag § 127 GWB)."
+    },
+    {
+      "name": "wettbewerbsrecht",
+      "source": "./wettbewerbsrecht",
+      "description": "Deutsches Lauterkeitsrecht (UWG) – Prüfung einer UWG-Abmahnung § 13 UWG (Aktivlegitimation, Rechtsmissbrauch § 8c, Vertragsstrafe § 13a, Aufwendungsersatz § 13 III), irreführende und vergleichende Werbung §§ 5, 5a, 5b, 6 UWG, einstweilige Verfügung §§ 12 ff. UWG mit Dringlichkeitsvermutung und Vollziehungsfrist § 929 II ZPO."
+    },
+    {
+      "name": "handelsrecht",
+      "source": "./handelsrecht",
+      "description": "Deutsches Handelsrecht (HGB) – Kaufmannseigenschaft und Handelsregister §§ 1–15 HGB inkl. Publizitätswirkung, Handelsvertretervertrag §§ 84 ff. HGB mit Provision und Ausgleichsanspruch § 89b, Besonderheiten des Handelsgeschäfts §§ 343 ff. HGB einschließlich kaufmännischer Untersuchungs- und Rügepflicht §§ 377/378 HGB."
+    },
+    {
+      "name": "medizinrecht",
+      "source": "./medizinrecht",
+      "description": "Deutsches Medizinrecht – Arzthaftung und Aufklärungspflicht (§§ 630a–630h BGB, § 823 BGB), Patientenrechte und Akteneinsicht (§ 630g BGB iVm Art. 15 DSGVO), berufsrechtliche Pflichten nach MBO-Ä (Werbung, Schweigepflicht § 203 StGB, Dokumentation, Fernbehandlung). Schnittstellen SGB V, BÄO, AMG, MPDG."
+    },
+    {
+      "name": "versicherungsrecht",
+      "source": "./versicherungsrecht",
+      "description": "Deutsches Versicherungsvertragsrecht (VVG) – Deckungsprüfung in drei Stufen mit Unklarheitenregel § 305c II BGB und AGB-Kontrolle §§ 307 ff. BGB; vorvertragliche Anzeigepflicht §§ 19–22 VVG und Obliegenheiten §§ 28 ff. VVG inkl. Quotelung, Kausalitätsgegenbeweis und Belehrungspflichten; Haftung Versicherungsmakler §§ 60–63 VVG."
+    },
+    {
+      "name": "baurecht",
+      "source": "./baurecht",
+      "description": "Deutsches Baurecht – privates Baurecht (BGB-Werkvertrag §§ 631 ff., Bauvertragsrecht 2018 §§ 650a–u, VOB/B als AGB inkl. Inhaltskontrolle, HOAI) und öffentliches Baurecht (BauGB §§ 29–35 Vorhabenzulässigkeit, BauNVO, Landes-BauO). Mängelprüfung, Baugenehmigung, Nachbarrechtsschutz und Eilrechtsschutz § 80a VwGO, § 212a BauGB."
+    },
+    {
+      "name": "aussenwirtschaft-zoll-sanktionen",
+      "source": "./aussenwirtschaft-zoll-sanktionen",
+      "description": "Außenwirtschafts-, Zoll- und Sanktionsrecht – Dual-Use-Ausfuhrprüfung VO (EU) 2021/821 inkl. BAFA-Genehmigung und Catch-all Art. 4, Sanktionslisten-Screening nach EU-Sanktions-VOen (833/2014 u.a.) mit Bereitstellungsverbot-Workflow, Tarifierung Unionszollkodex VO (EU) 952/2013 und verbindliche Zolltarifauskunft Art. 33 UZK."
+    },
+    {
+      "name": "geldwaesche-aml-kyc",
+      "source": "./geldwaesche-aml-kyc",
+      "description": "Geldwäsche- und Terrorismusfinanzierungs-Prävention – GwG-Risikoanalyse § 5, KYC-Identifikationspflicht §§ 10 ff. mit wirtschaftlich Berechtigtem und Transparenzregister, Verdachtsmeldung an FIU § 43 inkl. § 46 Stillhaltepflicht und § 47 Tippoff-Verbot. Schnittstellen zu § 261 StGB, KWG §§ 25h–25j, MaRisk; EU-Vollharmonisierung (AMLR / AMLA)."
+    },
+    {
+      "name": "energierecht",
+      "source": "./energierecht",
+      "description": "Deutsches Energierecht – Netzanschluss §§ 17/18 EnWG und §§ 8 ff. EEG inkl. BNetzA-Beschlussverfahren, EEG-Förderprüfung (Marktprämie, Inbetriebnahme, MaStR-Meldung, anzulegender Wert) und Energieeffizienzpflichten nach EnEfG/EDL-G (EnMS-Pflicht ab 7,5 GWh/a, Energieaudit Nicht-KMU, Schnittstelle GEG/CSRD)."
+    },
+    {
+      "name": "verkehrsrecht",
+      "source": "./verkehrsrecht",
+      "description": "Deutsches Straßenverkehrsrecht in drei Säulen: zivilrechtliche Haftung (StVG §§ 7, 17, 18; BGB §§ 823, 249–254) mit Quotenrechtsprechung und Schadensposten, verwaltungsrechtliche Fahreignungsprüfung (FeV §§ 11, 13, 14, 46; MPU-Anordnung; § 80 V VwGO), Verkehrs-OWi (StVO, BKatV, OWiG §§ 67, 71) und Schnittstelle Verkehrsstrafrecht §§ 142, 315c, 316 StGB."
+    },
+    {
+      "name": "transportrecht",
+      "source": "./transportrecht",
+      "description": "Deutsches Transportrecht – HGB-Frachtführerhaftung §§ 407–452d (Obhutshaftung § 425, Begrenzung § 431 mit 8,33 SZR/kg, qualifiziertes Verschulden § 435, Schadensanzeige § 438, Verjährung § 439), CMR für grenzüberschreitenden Straßengüterverkehr (Art. 17, 23, 29, 30, 31, 32), Speditionsvertrag §§ 453 ff. HGB, ADSp 2017 als AGB."
+    },
+    {
+      "name": "produktrecht",
+      "source": "./produktrecht",
+      "description": "Deutsches Produktrecht – verschuldensunabhängige Herstellerhaftung nach ProdHaftG und Produzentenhaftung § 823 BGB (Konstruktions-, Fabrikations-, Instruktions-, Produktbeobachtungsfehler), Produktsicherheit GPSR (VO (EU) 2023/988) mit ProdSG-Übergang und sektoraler Harmonisierung, Rückrufrecht zivil- und öffentlich-rechtlich (Marktaufsicht der Länder, BAuA, Safety Business Gateway)."
+    },
+    {
+      "name": "ki-governance",
+      "source": "./ki-governance",
+      "description": "KI-Governance als Querschnittsdisziplin – Aufbau- und Ablauforganisation für den KI-Einsatz, Rollen, Lieferantenmanagement (AVV Art. 28 DSGVO, § 43e BRAO), Ethik-Leitplanken, ISO/IEC 42001 / 23894, NIST AI RMF, BSI AIC4. Skills: KI-Risikoassessment, KI-Monitoring-Konzept, KI-Richtlinien-Entwurf. Gesetzliche KI-VO-Pflichten siehe Plugin ki-vo-compliance."
+    },
+    {
+      "name": "patentrecht",
+      "source": "./patentrecht",
+      "description": "Deutsches und europäisches Patentrecht – Patentanmeldung und Vorprüfung nach PatG/EPÜ (technischer Charakter, Neuheit § 3 PatG / Art. 54 EPÜ, erfinderische Tätigkeit § 4 PatG / Art. 56 EPÜ, Aufgabe-Lösungs-Ansatz), Patentverletzungsklage §§ 9, 14, 139 ff. PatG (Düsseldorfer Modell, dreifache Schadensberechnung, Äquivalenz), Freedom-to-Operate. Hinweise auf GebrMG, ArbnErfG, Einheitspatent/UPC."
+    },
+    {
+      "name": "migrationsrecht",
+      "source": "./migrationsrecht",
+      "description": "Deutsches Migrations- und Asylrecht – Aufenthaltstitel-Systematik nach AufenthG (Erteilungsvoraussetzungen § 5, Erwerb/Studium/Familiennachzug/humanitäre Titel, Chancen-Aufenthalt § 25c), Asylantrag und BAMF-Verfahren nach AsylG (§§ 3, 4, 60 V/VII AufenthG, Dublin-VO 604/2013, Folgeantrag § 71), Abschiebungsschutz und Eilrechtsschutz (§ 80 V VwGO, § 36 III AsylG, Duldung § 60a)."
+    },
+    {
+      "name": "agrarrecht",
+      "source": "./agrarrecht",
+      "description": "Deutsches Agrarrecht – GAP-Förderantrag 2023–2027 (VO (EU) 2021/2115, GAP-DZG, GAPInVeKoSG, GAP-KondV, Öko-Regelungen, GLÖZ/GAB-Konditionalität), Grundstücksverkehrsrecht (GrdstVG-Genehmigung, RSG-Siedlungsvorkaufsrecht, LPachtVG-Anzeige), LwAnpG-Vermögensauseinandersetzung der LPG-Nachfolgegesellschaften vor dem Landwirtschaftsgericht."
+    },
+    {
+      "name": "sportrecht",
+      "source": "./sportrecht",
+      "description": "Deutsches Sportrecht – Verbands- und Vereinsrecht (BGB §§ 21 ff.), Verbands- und Schiedsgerichtsbarkeit (CAS Lausanne, DIS, Pechstein-Linie), Anti-Doping (WADC, NADC, AntiDopG §§ 2–4), Athletenrecht (Spielerarbeitsvertrag, Persönlichkeitsrecht KUG, Vermarktung), Stadionverbot, Schnittstellen Bosman/Meca-Medina und Sportwetten."
+    },
+    {
+      "name": "urheber-medienrecht",
+      "source": "./urheber-medienrecht",
+      "description": "Deutsches Urheber- und Medienrecht – Urheberrechtsverletzung mit § 97a UrhG-Abmahnung und dreifacher Schadensberechnung, Lizenzvertrag mit Zweckübertragungslehre und angemessener Vergütung §§ 32, 32a UrhG, medienrechtliche Pflichtenprüfung nach MStV (Impressum § 18, Trennungsgebot, journalistisch-redaktionelle Sorgfalt, Gegendarstellung). Schnittstellen UrhDaG, VGG, DSA, Landespressegesetze."
+    },
+    {
+      "name": "berufsrecht-anwaltschaft",
+      "source": "./berufsrecht-anwaltschaft",
+      "description": "Anwaltliches Berufsrecht – BRAO-Grundpflichtenprüfung (Verschwiegenheit § 43a II + § 203 StGB, Interessenkollision § 43a IV, Sachlichkeit § 43a III/§ 44, Werbung § 43b/§§ 6 ff. BORA, Auslagerung/KI § 43e, Vergütung § 49b, Fremdgeld § 43a V), FAO-Fortbildungsnachweis § 15 FAO inkl. Widerrufsverteidigung § 25 FAO, RDG-Abgrenzung (§§ 1, 2, 5, 10 RDG, Inkasso, Legal-Tech)."
+    },
+    {
+      "name": "kapitalmarktrecht",
+      "source": "./kapitalmarktrecht",
+      "description": "Deutsches Kapitalmarktrecht im engeren Sinne – WpHG/MAR (Marktmissbrauch, Insiderhandel, Ad-hoc-Publizität, Directors' Dealings, Stimmrechtsmeldungen), Prospekt-VO (EU) 2017/1129 iVm WpPG (Prospektpflicht, Ausnahmen, BaFin-Billigung, Prospekthaftung), WpÜG (Pflichtangebot, Acting in concert, Mindestpreis, Verhaltenspflichten Zielgesellschaft, Squeeze-out)."
+    },
+    {
+      "name": "kartellrecht",
+      "source": "./kartellrecht",
+      "description": "Deutsches und EU-Kartellrecht – GWB Teile 1–3 (Kartellverbot § 1, Marktbeherrschung §§ 18 ff., Fusionskontrolle §§ 35 ff.) inkl. § 19a strukturmarktrelevante Unternehmen sowie Art. 101/102 AEUV und EU-FK-VO 139/2004. GWB-Zusammenschlussanmeldung mit Vollzugsverbot § 41, Kartellverbots-Prüfung inkl. Vertikal-GVO 2022/720, Marktbeherrschung und Missbrauchsbewertung."
     }
   ]
 }

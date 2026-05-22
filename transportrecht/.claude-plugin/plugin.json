@@ -1,0 +1,11 @@
+{
+  "name": "transportrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Transportrecht – HGB-Frachtführerhaftung §§ 407–452d (Obhutshaftung § 425, Haftungsausschlüsse §§ 426–427, Haftungsbeschränkung § 431 mit 8,33 SZR/kg, qualifiziertes Verschulden § 435, Schadensanzeige § 438, Verjährung § 439), CMR für grenzüberschreitenden Straßengüterverkehr (Art. 17 ff., Art. 23, Art. 29, Art. 30, Art. 31, Art. 32), Speditionsvertrag §§ 453 ff. HGB, Lagervertrag §§ 467 ff. HGB, ADSp 2017 als AGB der Spediteure (Einbeziehung, Inhaltskontrolle §§ 305 ff. BGB, Ziff. 23 Haftungssumme, Ziff. 27 Aufrechnungsverbot). Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

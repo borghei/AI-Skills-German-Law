@@ -3,9 +3,9 @@ name: aufhebungsvertrag
 description: "Erstellung und Prüfung eines Aufhebungsvertrags inkl. Sperrzeit § 159 SGB III, Schriftform § 623 BGB und steuerlicher Behandlung der Abfindung § 34 EStG. Use when ein Arbeitsverhältnis einvernehmlich beendet wird oder eine Sperrzeit-Risikobewertung benötigt wird."
 language: de
 agents:
-  researcher: ../agents/researcher.md
-  drafter: ../agents/drafter.md
-  reviewer: ../agents/reviewer.md
+  researcher: ../../agents/researcher.md
+  drafter: ../../agents/drafter.md
+  reviewer: ../../agents/reviewer.md
 provider_variants:
   - claude
   - gemini

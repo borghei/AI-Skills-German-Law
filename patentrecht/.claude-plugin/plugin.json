@@ -1,0 +1,11 @@
+{
+  "name": "patentrecht",
+  "version": "0.1.0",
+  "description": "Deutsches und europäisches Patentrecht aus Praxisperspektive – Patentanmeldung und Vorprüfung nach PatG/EPÜ (technischer Charakter, Neuheit § 3 PatG / Art. 54 EPÜ, erfinderische Tätigkeit § 4 PatG / Art. 56 EPÜ, Aufgabe-Lösungs-Ansatz), Patentverletzungsklage §§ 9, 14, 139 ff. PatG (Düsseldorfer Modell, dreifache Schadensberechnung, Äquivalenz), Freedom-to-Operate-Analyse. Mit Hinweisen zu Gebrauchsmuster (GebrMG), ArbnErfG, Einheitspatent / UPC. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

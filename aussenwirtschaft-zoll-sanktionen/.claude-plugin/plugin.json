@@ -1,0 +1,11 @@
+{
+  "name": "aussenwirtschaft-zoll-sanktionen",
+  "version": "0.1.0",
+  "description": "Außenwirtschafts-, Zoll- und Sanktionsrecht für deutsche Exporteure und Importeure – Dual-Use-Ausfuhrprüfung nach VO (EU) 2021/821 inkl. BAFA-Genehmigung und Catch-all Art. 4, Sanktionslisten-Screening nach EU-Sanktions-VOen (Russland VO 833/2014, DVRK 2017/1509 u.a.) mit Bereitstellungsverbot-Workflow, sowie Tarifierung nach Unionszollkodex (VO (EU) 952/2013) und verbindliche Zolltarifauskunft Art. 33 UZK. Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

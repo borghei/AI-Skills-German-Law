@@ -1,0 +1,11 @@
+{
+  "name": "wettbewerbsrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Lauterkeitsrecht (UWG) aus Praxisperspektive – Prüfung einer UWG-Abmahnung nach § 13 UWG (Aktivlegitimation §§ 8, 8b, Rechtsmissbrauch § 8c, Vertragsstrafe § 13a, Aufwendungsersatz § 13 III), irreführende und vergleichende Werbung §§ 5, 5a, 5b, 6 UWG mit Verkehrsauffassungs-Maßstab und Schwarze-Liste-Abgleich (Anhang zu § 3 III), einstweilige Verfügung §§ 12 ff. UWG mit Dringlichkeitsvermutung, Schutzschriftenregister und Vollziehungsfrist § 929 II ZPO. Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "geldwaesche-aml-kyc",
+  "version": "0.1.0",
+  "description": "Geldwäsche- und Terrorismusfinanzierungs-Prävention aus deutscher Praxisperspektive – GwG-Risikoanalyse § 5 (Methodik, Risikokategorien, Aktualisierung), KYC-Identifikationspflicht §§ 10 ff. mit wirtschaftlich Berechtigtem §§ 3 ff. und Transparenzregister, Verdachtsmeldung an die FIU § 43 inklusive § 46 Stillhaltepflicht und § 47 Tippoff-Verbot. Schnittstellen zu § 261 StGB, KWG §§ 25h–25j, MaRisk AT 4.4.3 sowie zur EU-Vollharmonisierung (AMLR / AMLA, anwendbar ab 2027 [unverifiziert]). Researcher / Drafter / Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

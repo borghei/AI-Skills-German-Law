@@ -1,0 +1,11 @@
+{
+  "name": "migrationsrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Migrations- und Asylrecht – Aufenthaltstitel-Systematik nach AufenthG (Erteilungsvoraussetzungen § 5, Erwerb/Studium/Familiennachzug/humanitäre Titel, Chancen-Aufenthalt § 25c), Asylantrag und BAMF-Verfahren nach AsylG (Flüchtlingseigenschaft § 3, subsidiärer Schutz § 4, Abschiebungsverbote § 60 V/VII AufenthG, Dublin-VO 604/2013, Folgeantrag § 71), Abschiebungsschutz und Eilrechtsschutz (§ 80 V VwGO, § 123 VwGO, § 36 III AsylG, Duldung § 60a). Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

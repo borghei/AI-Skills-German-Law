@@ -1,0 +1,11 @@
+{
+  "name": "verkehrsrecht",
+  "version": "0.1.0",
+  "description": "Deutsches Straßenverkehrsrecht in drei Säulen: zivilrechtliche Haftung (StVG §§ 7, 17, 18; BGB §§ 823, 249–254; PflVG) mit Quotenrechtsprechung und Schadensposten (130%-Grenze, Nutzungsausfall, Mietwagen), verwaltungsrechtliche Fahreignungsprüfung (FeV §§ 11, 13, 14, 46; MPU-Anordnung; § 80 V VwGO einstweiliger Rechtsschutz), und Verkehrs-OWi (StVO, BKatV, OWiG §§ 67 Einspruch, 71 Hauptverhandlung) mit Schnittstelle Verkehrsstrafrecht §§ 142, 315c, 316 StGB. Mit Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

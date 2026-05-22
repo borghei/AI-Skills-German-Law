@@ -3,9 +3,9 @@ name: kuendigungs-pruefung
 description: "Rechtliche Vollprüfung einer ordentlichen oder außerordentlichen Kündigung im deutschen Arbeitsrecht – KSchG (allgemeiner und besonderer Kündigungsschutz), § 102 BetrVG (BR-Anhörung), §§ 622 und 626 BGB (Fristen und wichtiger Grund), Sozialauswahl § 1 Abs. 3 KSchG, Sonderkündigungsschutz (MuSchG, BEEG, SGB IX, § 15 KSchG). Use when ein Arbeitgeber eine Kündigung plant oder ein Arbeitnehmervertretender eine empfangene Kündigung auf Klagewert prüft."
 language: de
 agents:
-  researcher: ../agents/researcher.md
-  drafter: ../agents/drafter.md
-  reviewer: ../agents/reviewer.md
+  researcher: ../../agents/researcher.md
+  drafter: ../../agents/drafter.md
+  reviewer: ../../agents/reviewer.md
 provider_variants:
   - claude
   - gemini
