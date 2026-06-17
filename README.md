@@ -192,12 +192,14 @@ We are unsentimental about trust. Here is what is verified today, what is in act
 - **Statute citations.** Every `§ X` links to the **authoritative public source**, [gesetze-im-internet.de](https://www.gesetze-im-internet.de) and [EUR-Lex](https://eur-lex.europa.eu). One click, verifiable.
 - **Methodology.** Gutachtenstil, Anspruchsgrundlagen-Reihenfolge, BGH/Beck-Zitierweise, no Präjudizienbindungs-Argumente, textbook-correct conventions, documented in [`CONVENTIONS.md`](./CONVENTIONS.md) and enforced by the reviewer sub-agent.
 - **Compliance scaffolding.** PII redaction ([`scripts/pii_redact.py`](./scripts/pii_redact.py)), gateway setup guide ([`references/gateway-setup.md`](./references/gateway-setup.md)), § 203 / DSGVO / KI-VO checklist ([`references/compliance-checklist.md`](./references/compliance-checklist.md)).
+- **Deterministic legal calculators.** Fristenberechnung (§§ 187-193 BGB, § 222 ZPO), Verjährung (§§ 195-199 BGB), RVG and GKG fees from version-pinned statutory tables, all stdlib and unit-tested, no model call. See [`references/rechner.md`](./references/rechner.md).
+- **Citation verification.** [`scripts/verify_citations.py`](./scripts/verify_citations.py) parses every `§`-anchor, ECLI and CELEX in a skill and resolves it (statute anchors against gesetze-im-internet.de). It runs in CI as an informational pass; `--strict` (and `--online`) turns it into a hard gate for local pre-commit use.
 - **Multi-provider parity.** One canonical `SKILL.md` per skill; the router regenerates Claude / Gemini / OpenAI adapters on demand, no drift.
 
 ### In active improvement (contributions welcome)
 
 - **Case-law verification.** Every BAG / BGH / EuGH citation the model could not independently confirm carries `[unverifiziert, prüfen]`. The verification path is one PR per citation with a Beck-Online / juris / openjur URL. **Highest-leverage contribution.**
-- **Legal-accuracy eval.** Today eval is structural (does the workflow mention § 1 KSchG). The next layer compares actual model output to expert-drafted gold answers.
+- **Legal-accuracy eval.** Structural eval ships in CI (does the workflow mention § 1 KSchG). A behavioural layer now generates a [promptfoo](https://www.promptfoo.dev) config from the `test.md` files ([`scripts/build_eval_config.py`](./scripts/build_eval_config.py), see [`evals/README.md`](./evals/README.md)): deterministic assertions plus LLM-graded `expected_behavior` rubrics, judged by a different model family. Growing the per-skill rubric coverage and gold answers is open work.
 - **Rechtsanwalt review.** Each area gets stronger after a 2-hour pass by a licensed Anwalt in that Rechtsgebiet. Reviews are credited per area.
 
 ### Hard limitations
@@ -243,6 +245,19 @@ python scripts/route_provider.py --provider openai --out dist/openai
 # Chain multiple skills (e.g., full Kündigungs-Workflow)
 python scripts/orchestrate.py --preset kuendigung-vollumfang --fact "..."
 python scripts/orchestrate.py --list-chains
+
+# Deterministic legal calculators (no model call)
+python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 3 --einheit wochen --land BY
+python -m scripts.legal_calc.cli verjaehrung --entstehung 10.03.2023 --kenntnis 05.07.2023
+python -m scripts.legal_calc.cli rvg --wert 10000 --posten verfahren termin
+python -m unittest scripts.legal_calc.tests
+
+# Verify the statute / ECLI / CELEX citations in the skills
+python scripts/verify_citations.py                 # offline, informational
+python scripts/verify_citations.py --online --strict  # resolve URLs, fail on problems
+
+# Generate a behavioural (LLM-graded) eval config for promptfoo
+python scripts/build_eval_config.py --provider anthropic:messages:claude-opus-4-8 --judge google:gemini-2.5-pro
 ```
 
 ---
@@ -275,8 +290,12 @@ Built-in helpers: [`references/compliance-checklist.md`](./references/compliance
 | [`references/zitierweise.md`](./references/zitierweise.md) | BGH/Beck-Zitierweise (verbindlich) |
 | [`references/methodik.md`](./references/methodik.md) | Gutachtenstil, Anspruchsgrundlagen-Reihenfolge, Auslegungsmethoden |
 | [`references/primary-sources.md`](./references/primary-sources.md) | Verified URLs to gesetze-im-internet.de plus EUR-Lex |
+| [`references/rechner.md`](./references/rechner.md) | Deterministic calculators: Fristen, Verjährung, RVG, GKG (statutory basis, caveats, CLI) |
+| [`evals/README.md`](./evals/README.md) | Behavioural LLM-graded eval harness (promptfoo) and how to run it |
 | [`references/compliance-checklist.md`](./references/compliance-checklist.md) | § 203 / DSGVO / KI-VO checklist before deployment |
 | [`references/gateway-setup.md`](./references/gateway-setup.md) | Routing through a § 203-compliant gateway |
+| [`.mcp.json`](./.mcp.json) | Live MCP wiring (NeuRIS / rechtsinformationen.bund.de), see note below |
+| [`references/mcp-template.json`](./references/mcp-template.json) | Per-area MCP server config template |
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | How to add skills, verify citations, run tests |
 
 ---
@@ -294,6 +313,14 @@ Also welcome:
 - **Compliance corrections**, § 203, § 43e BRAO, KI-VO, Drittlandtransfer
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the PR workflow.
+
+---
+
+## Live legal data via MCP (NeuRIS)
+
+The repo ships a top-level [`.mcp.json`](./.mcp.json) that enables a single MCP server: **`rechtsinformationen`**, a community MIT-licensed wrapper ([wolfgangihloff/rechtsinformationen-bund-de-mcp](https://github.com/wolfgangihloff/rechtsinformationen-bund-de-mcp)) around the official **NeuRIS** open API at [rechtsinformationen.bund.de](https://docs.rechtsinformationen.bund.de), run by DigitalService for the Bundesministerium der Justiz (public beta). It exposes Bundesrecht and federal case-law addressable by ELI/ECLI as JSON/XML/HTML, via tools such as `semantische_rechtssuche`, `deutsche_gesetze_suchen`, `rechtsprechung_suchen` and `gesetz_per_eli_abrufen`.
+
+This server queries **only public statutes and case-law, never Mandatsdaten**, so it is § 203-safe. It is preconfigured in `.mcp.json` but requires a one-time local setup before it will start: the server has no published npm package, so clone the repo, run `./quick-setup.sh` (`npm install && npm run build`), then replace the placeholder absolute path to `dist/index.js` in `.mcp.json` with the real one (until then the server simply will not load). For per-area configs and the commercial-database placeholders (Beck-Online, juris, which have no public MCP server yet), see [`references/mcp-template.json`](./references/mcp-template.json).
 
 ---
 

@@ -1,8 +1,28 @@
 {
-  "_comment": "MCP server config template for areas in AI-Skills-German-Law. Copy into <area>/.mcp.json and customize per area. MCP servers extend a skill with live tools: legal databases (Beck-Online, juris, openjur), court calendars, BGBl. lookup, etc. This file ships as documentation; per-area .mcp.json files are not currently shipped because no public MCP servers exist yet for Beck-Online or juris.",
+  "_comment": "MCP server config template for areas in AI-Skills-German-Law. Copy into <area>/.mcp.json and customize per area. MCP servers extend a skill with live tools: legal databases (Beck-Online, juris, openjur), court calendars, BGBl. lookup, etc. A public MCP server now exists for Bundesrecht and federal case-law via the official NeuRIS open API (see 'rechtsinformationen' below); the top-level .mcp.json at the repo root ships it enabled. No public MCP server exists yet for the commercial databases Beck-Online or juris, so those remain placeholders.",
   "_documentation": "https://modelcontextprotocol.io/",
 
   "mcpServers": {
+    "rechtsinformationen": {
+      "_status": "WORKING - public MCP server for the official NeuRIS open API (rechtsinformationen.bund.de), run by DigitalService for the Bundesministerium der Justiz. Public beta (Testphase). Queries Bundesrecht plus federal case-law (Bundesgerichte), addressable by ELI/ECLI, returning JSON/XML/HTML. No auth and no Mandatsdaten required, so it is § 203-safe.",
+      "_license": "MIT",
+      "_repo": "https://github.com/wolfgangihloff/rechtsinformationen-bund-de-mcp",
+      "_api_docs": "https://docs.rechtsinformationen.bund.de",
+      "_api_base": "https://testphase.rechtsinformationen.bund.de/v1",
+      "_install": "No published npm package. Clone the repo, run ./quick-setup.sh (npm install && npm run build), then point 'args' below at the built dist/index.js using an absolute path.",
+      "_tools": [
+        "semantische_rechtssuche",
+        "deutsche_gesetze_suchen",
+        "rechtsprechung_suchen",
+        "alle_rechtsdokumente_suchen",
+        "dokument_details_abrufen",
+        "gesetz_per_eli_abrufen"
+      ],
+      "command": "node",
+      "args": ["/absolute/path/to/rechtsinformationen-bund-de-mcp/dist/index.js"],
+      "env": {}
+    },
+
     "_example_beck_online": {
       "_status": "placeholder - no public Beck-Online MCP server exists yet",
       "command": "npx",
@@ -30,7 +50,7 @@
     },
 
     "_example_gesetze_im_internet": {
-      "_status": "public source, no auth needed; could be a thin wrapper around HTTP",
+      "_status": "public source, no auth needed; could be a thin wrapper around HTTP. For most Bundesrecht lookups the 'rechtsinformationen' NeuRIS server above is the maintained, official option.",
       "command": "python3",
       "args": ["-m", "gesetze_mcp"],
       "env": {}
@@ -46,7 +66,7 @@
     }
   },
 
-  "_usage_in_skill": "Reference an MCP server from inside a SKILL.md by saying e.g. 'Use the gesetze_im_internet MCP server to fetch the current text of § X' or 'If a beck_online MCP server is available, verify the citation via tool_call.'. The skill remains usable without MCP (model falls back to verification markers).",
+  "_usage_in_skill": "Reference an MCP server from inside a SKILL.md by saying e.g. 'Use the rechtsinformationen MCP server (gesetz_per_eli_abrufen) to fetch the current text of § X' or 'If a beck_online MCP server is available, verify the citation via tool_call.'. The skill remains usable without MCP (model falls back to verification markers).",
 
-  "_note_on_203": "An MCP server that ships Mandatsdaten to a remote service is itself a Mandatsgeheimnis-Empfänger and needs the same § 203/§ 43e BRAO contracts as any LLM provider. Self-hosted MCP servers are preferable for client work."
+  "_note_on_203": "An MCP server that ships Mandatsdaten to a remote service is itself a Mandatsgeheimnis-Empfänger and needs the same § 203/§ 43e BRAO contracts as any LLM provider. Self-hosted MCP servers are preferable for client work. The 'rechtsinformationen' NeuRIS server is an exception: it queries only public statutes and case-law and never transmits Mandatsdaten, so it carries no § 203 exposure."
 }

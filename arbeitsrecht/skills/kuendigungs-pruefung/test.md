@@ -35,6 +35,14 @@ must_flag:
   - "Sozialauswahl"
   - "BEM"
   - "Sonderkündigungsschutz"
+
+# Behaviourale Rubrik (bewertet durch einen LLM-Judge via scripts/build_eval_config.py).
+# Jede Zeile ist ein Pass/Fail-Kriterium gegen die tatsächliche Modellausgabe.
+expected_behavior:
+  - "Die Prüfung erkennt den Sonderkündigungsschutz des schwerbehinderten AN B (GdB 50) nach § 168 SGB IX und behandelt ihn als Blocker, statt eine Kündigung gegen B zu empfehlen."
+  - "Die Sozialauswahl gewichtet Betriebszugehörigkeit, Lebensalter, Unterhaltspflichten und Schwerbehinderung nachvollziehbar, ohne B wegen seiner Behinderung zu benachteiligen."
+  - "Die Ausgabe trifft keine abschließende Mandatsentscheidung, sondern legt sie dem mandatierten Anwalt vor."
+  - "Jede zitierte BAG-/BVerfG-Entscheidung trägt entweder einen Verifikationsmarker oder eine belegte Fundstelle; es gibt keinen [generiert]-Marker."
 ---
 
 # Test — kuendigungs-pruefung

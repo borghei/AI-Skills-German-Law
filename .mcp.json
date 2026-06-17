@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "rechtsinformationen": {
+      "command": "node",
+      "args": ["/absolute/path/to/rechtsinformationen-bund-de-mcp/dist/index.js"],
+      "env": {}
+    }
+  }
+}

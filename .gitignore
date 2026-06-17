@@ -52,6 +52,8 @@ adapters/openai/dist/
 # Eval outputs
 tests/results/
 *.eval.json
+evals/*.generated.yaml
+.promptfoo/
 
 # Local Mandats-Daten (never commit)
 mandate/
