@@ -286,6 +286,7 @@ Built-in helpers: [`references/compliance-checklist.md`](./references/compliance
 | [`QUICKSTART.md`](./QUICKSTART.md) | 60-second install + use guide for Claude / Gemini / GPT |
 | [`CONVENTIONS.md`](./CONVENTIONS.md) | Provider-neutral conventions: language, methodology, citation, skill format |
 | [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) | Contributor Covenant 2.1 |
+| [`CHANGELOG.md`](./CHANGELOG.md) | Notable changes per release |
 | [`VERIFICATION_LOG.md`](./VERIFICATION_LOG.md) | Dated source-verification record, last pass 2026-05-21 |
 | [`references/zitierweise.md`](./references/zitierweise.md) | BGH/Beck-Zitierweise (verbindlich) |
 | [`references/methodik.md`](./references/methodik.md) | Gutachtenstil, Anspruchsgrundlagen-Reihenfolge, Auslegungsmethoden |

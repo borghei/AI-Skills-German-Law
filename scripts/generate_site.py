@@ -1559,8 +1559,18 @@ The reference section points to the binding documentation that every skill in th
 - **[README.md]({GITHUB_URL}/blob/main/README.md)** — project overview, install, and architecture.
 - **[CONVENTIONS.md]({GITHUB_URL}/blob/main/CONVENTIONS.md)** — provider-neutral conventions every skill must follow (language, methodology, citation discipline).
 - **[VERIFICATION_STATUS.md]({GITHUB_URL}/blob/main/VERIFICATION_STATUS.md)** — current snapshot of which plugins have completed an external case-law verification pass.
+- **[CHANGELOG.md]({GITHUB_URL}/blob/main/CHANGELOG.md)** — notable changes per release.
 - **[QUICKSTART.md]({GITHUB_URL}/blob/main/QUICKSTART.md)** — 60-second walkthrough.
 - **[CONTRIBUTING.md]({GITHUB_URL}/blob/main/CONTRIBUTING.md)** — how to add or fix a skill.
+
+## Tooling and automation
+
+Deterministic helpers that run without a model, plus the eval and verification harness:
+
+- **[references/rechner.md]({GITHUB_URL}/blob/main/references/rechner.md)** — deterministic legal calculators: Fristen (§§ 187-193 BGB), Verjährung (§§ 195-199 BGB), RVG and GKG fees, and Feiertage for all 16 Bundesländer.
+- **[scripts/verify_citations.py]({GITHUB_URL}/blob/main/scripts/verify_citations.py)** — resolves `§`-anchors, ECLI and CELEX citations against gesetze-im-internet.de; offline-informational, `--strict` to gate.
+- **[evals/]({GITHUB_URL}/blob/main/evals/README.md)** — behavioural, LLM-graded eval harness (promptfoo) generated from the per-skill `test.md` files.
+- **[references/mcp-template.json]({GITHUB_URL}/blob/main/references/mcp-template.json)** — live legal-data wiring via the NeuRIS (rechtsinformationen.bund.de) MCP server.
 
 ## Repository conventions (summary)
 
