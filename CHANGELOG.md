@@ -6,6 +6,20 @@ All notable changes to this project are documented here. Format follows
 ## [Unreleased]
 
 ### Added
+- **New area — Wohnungseigentumsrecht (WEG, post-WEMoG)**: a standalone plugin with
+  three skills — `beschlussanfechtung` (Anfechtungsklage gegen die Gemeinschaft der
+  Wohnungseigentümer §§ 44/45 WEG, Nichtigkeit vs. Anfechtbarkeit § 23 WEG,
+  ordnungsmäßige Verwaltung § 19 WEG), `hausgeldabrechnung` (Wirtschaftsplan,
+  Abrechnungsspitze und Vermögensbericht § 28 WEG, Verteilung § 16 WEG), and
+  `bauliche-veraenderung` (Gestattungsbeschluss und privilegierte Maßnahmen §§ 20/21 WEG
+  inkl. E-Mobilität und Steckersolargeräte). All paragraphs verified against the
+  post-01.12.2020 WEMoG numbering.
+- **Five new deepen skills** in existing areas: `datenschutzrecht/avv-pruefung`
+  (AVV-Prüfung Art. 28 DSGVO) and `datenschutzrecht/datenpanne-meldung` (72-Stunden-
+  Meldung Art. 33/34 DSGVO); `mietrecht/mieterhoehung-pruefung` (§§ 558 ff. BGB) and
+  `mietrecht/eigenbedarfskuendigung` (§§ 573 ff. BGB); `vertragsrecht/verzug-mahnung`
+  (Verzug und Verzugszinsen §§ 286, 288 BGB). Counts: **49 areas / 111 skills** (+1 area,
+  +8 skills).
 - **Deterministic legal calculators** (`scripts/legal_calc/`, stdlib-only, unit-tested):
   Fristenberechnung (§§ 187-193 BGB, § 222 ZPO), Verjährung (§§ 195-199 BGB),
   RVG and GKG fee calculation from version-pinned statutory tables, and a

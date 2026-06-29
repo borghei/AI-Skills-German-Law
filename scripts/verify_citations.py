@@ -72,6 +72,7 @@ AREAS = [
     "datenschutzrecht",
     "vertragsrecht",
     "mietrecht",
+    "wohnungseigentumsrecht",
     "gesellschaftsrecht",
     "strafrecht",
     "ki-vo-compliance",

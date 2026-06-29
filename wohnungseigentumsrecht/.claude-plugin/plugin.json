@@ -1,0 +1,11 @@
+{
+  "name": "wohnungseigentumsrecht",
+  "version": "0.1.0",
+  "description": "Wohnungseigentumsrecht (WEG) nach der WEMoG-Reform (seit 01.12.2020) – Beschlussanfechtung §§ 23, 44, 45 WEG (Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer, Monatsfrist, Nichtigkeit vs. Anfechtbarkeit), Jahresabrechnung und Hausgeld § 28 WEG (Wirtschaftsplan, Abrechnungsspitze, Vermögensbericht), bauliche Veränderung §§ 20, 21 WEG (Gestattungsbeschluss, privilegierte Maßnahmen, Kostenverteilung). Mit Researcher/Drafter/Reviewer-Subagenten und Eval-Tests.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

@@ -1,13 +1,13 @@
 {
   "name": "ai-skills-german-law",
-  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 103 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 111 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
   "version": "0.2.0",
   "repository": "https://github.com/borghei/AI-Skills-German-Law",
   "website": "https://borghei.github.io/AI-Skills-German-Law",
   "author": "borghei",
   "license": "Apache-2.0 OR MIT",
-  "total_skills": 103,
-  "updated": "2026-05-22",
+  "total_skills": 111,
+  "updated": "2026-06-29",
   "domains": {
     "arbeitsrecht": {
       "count": 3,
@@ -16,22 +16,28 @@
       "desc": "KSchG, BetrVG, Aufhebungsvertrag, Abmahnung, Sozialauswahl"
     },
     "datenschutzrecht": {
-      "count": 1,
+      "count": 3,
       "tools": 0,
       "label": "Datenschutzrecht / GDPR",
       "desc": "DSGVO, BDSG, AVV, Datenpanne, DPIA, Drittlandtransfer"
     },
     "vertragsrecht": {
-      "count": 1,
+      "count": 2,
       "tools": 0,
       "label": "Vertragsrecht",
       "desc": "AGB-Kontrolle, Klauselgestaltung, Leistungsstörung, Anfechtung"
     },
     "mietrecht": {
-      "count": 1,
+      "count": 3,
       "tools": 0,
       "label": "Mietrecht",
       "desc": "Wohnraummiete, Mieterhöhung, Kündigung, Betriebskostenabrechnung, WEG"
+    },
+    "wohnungseigentumsrecht": {
+      "count": 3,
+      "tools": 0,
+      "label": "Wohnungseigentumsrecht (WEG)",
+      "desc": "Beschlussanfechtung §§ 44/45, Hausgeld/Jahresabrechnung § 28, bauliche Veränderung §§ 20/21 — post-WEMoG"
     },
     "gesellschaftsrecht": {
       "count": 1,
@@ -385,6 +391,51 @@
       "has_assets": false
     },
     {
+      "name": "avv-pruefung",
+      "description": "Prüfung eines Auftragsverarbeitungsvertrags (AVV) nach Art. 28 DSGVO – Pflichtklauseln Art. 28 Abs. 3 lit. a–h, Unterauftragsverarbeiter Art. 28 Abs. 2 und Abs. 4, technische und organisatorische Maßnahmen Art. 32 DSGVO, § 203 StGB bei Berufsgeheimnisträgern, Bußgeldrisiko Art. 83 Abs. 4 DSGVO. Use when ein Verantwortlicher oder Auftragsverarbeiter einen AVV auf Wirksamkeit und Vollständigkeit prüft.",
+      "path": "datenschutzrecht/skills/avv-pruefung/SKILL.md",
+      "domain": "datenschutzrecht",
+      "category": "datenschutzrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "avv",
+        "pruefung",
+        "§203",
+        "art.28",
+        "art.32",
+        "art.83",
+        "dsgvo",
+        "stgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "datenpanne-meldung",
+      "description": "Meldung einer Verletzung des Schutzes personenbezogener Daten nach Art. 33 und Art. 34 DSGVO – 72-Stunden-Meldung an die Aufsichtsbehörde, Risikobewertung, Benachrichtigung der Betroffenen bei hohem Risiko, Dokumentationspflicht Art. 33 Abs. 5 DSGVO, Bußgeldrisiko Art. 83 Abs. 4 DSGVO. Use when ein Verantwortlicher nach Kenntnis von einer Datenpanne die Meldepflichten und Fristen prüfen muss.",
+      "path": "datenschutzrecht/skills/datenpanne-meldung/SKILL.md",
+      "domain": "datenschutzrecht",
+      "category": "datenschutzrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "datenpanne",
+        "meldung",
+        "art.33",
+        "art.34",
+        "art.83",
+        "dsgvo",
+        "datenschutzrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "agb-kontrolle",
       "description": "Inhaltskontrolle Allgemeiner Geschäftsbedingungen nach §§ 305–310 BGB – Einbeziehung (§ 305), überraschende Klauseln (§ 305c), Klauselverbote ohne Wertung (§ 309) und mit Wertung (§ 308), Generalklausel (§ 307), Anwendung im B2B-Verkehr (§ 310). Use when ein Vertragstext auf AGB-Wirksamkeit zu prüfen ist oder eine neue Klausel entworfen wird.",
       "path": "vertragsrecht/skills/agb-kontrolle/SKILL.md",
@@ -408,6 +459,49 @@
       "has_assets": false
     },
     {
+      "name": "verzug-mahnung",
+      "description": "Prüfung von Schuldnerverzug und Mahnung – Verzugseintritt durch Mahnung § 286 Abs. 1 BGB, Entbehrlichkeit der Mahnung § 286 Abs. 2 BGB, 30-Tage-Regel für Entgeltforderungen § 286 Abs. 3 BGB, Verzugszinsen 5 und 9 Prozentpunkte über dem Basiszinssatz § 288 Abs. 1 und Abs. 2 BGB, Verzugspauschale § 288 Abs. 5 BGB, weiterer Verzögerungsschaden § 280 Abs. 2 BGB. Use when geprüft werden soll, ob und ab wann ein Schuldner in Verzug ist und welche Verzugsfolgen bestehen.",
+      "path": "vertragsrecht/skills/verzug-mahnung/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verzug",
+        "mahnung",
+        "§286",
+        "§288",
+        "§280",
+        "bgb",
+        "vertragsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "eigenbedarfskuendigung",
+      "description": "Wirksamkeitsprüfung einer Eigenbedarfskündigung im Wohnraummietrecht – berechtigtes Interesse und begünstigter Personenkreis § 573 Abs. 2 Nr. 2 BGB, Begründungspflicht § 573 Abs. 3 BGB, Kündigungsfristen § 573c BGB, Widerspruch und Sozialklausel § 574 BGB, Schadensersatz bei vorgetäuschtem Eigenbedarf. Use when ein Vermieter eine Eigenbedarfskündigung gestaltet oder ein Mieter eine erhaltene Kündigung auf Wirksamkeit und Härtefall prüft.",
+      "path": "mietrecht/skills/eigenbedarfskuendigung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "eigenbedarfskuendigung",
+        "§573",
+        "§573c",
+        "§574",
+        "bgb",
+        "mietrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "mieterhoehung-558-bgb",
       "description": "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – Wartezeit (Abs. 1), Kappungsgrenze (Abs. 3), Begründungsmittel (§ 558a BGB: Mietspiegel, Sachverständigengutachten, Vergleichswohnungen, Mietdatenbank), Zustimmungsklage. Use when ein Vermieter eine Mieterhöhung gestaltet oder ein Mieter ein Mieterhöhungsverlangen auf Wirksamkeit prüft.",
       "path": "mietrecht/skills/mieterhoehung-558-bgb/SKILL.md",
@@ -423,6 +517,90 @@
         "§558",
         "§558a",
         "mietrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mieterhoehung-pruefung",
+      "description": "Wirksamkeitsprüfung eines empfangenen Mieterhöhungsverlangens auf die ortsübliche Vergleichsmiete – Formprüfung § 558a BGB, 15-Monats-Frist und Kappungsgrenze § 558 Abs. 3 BGB, Begründungsmittel, Abgrenzung zur Modernisierungsmieterhöhung § 559 BGB, Zustimmungsklage § 558b BGB. Use when ein Mieter ein erhaltenes Mieterhöhungsverlangen oder ein Vermieter den eigenen Entwurf auf Wirksamkeit prüft.",
+      "path": "mietrecht/skills/mieterhoehung-pruefung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mieterhoehung",
+        "pruefung",
+        "§558a",
+        "§558",
+        "§559",
+        "§558b",
+        "bgb",
+        "mietrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "bauliche-veraenderung",
+      "description": "Einordnung einer baulichen Veränderung im Wohnungseigentum nach der WEMoG-Reform – Gestattungsbeschluss mit einfacher Mehrheit § 20 Abs. 1 WEG, privilegierter Anspruch auf Barrierefreiheit, E-Mobilität, Einbruchschutz, Glasfaser und Steckersolargeräte § 20 Abs. 2 WEG, Zustimmung Beeinträchtigter § 20 Abs. 3 WEG, Kostenverteilung § 21 WEG. Use when eine geplante bauliche Maßnahme eines Wohnungseigentümers auf Beschlusserfordernis, privilegierten Anspruch und Kostentragung geprüft wird.",
+      "path": "wohnungseigentumsrecht/skills/bauliche-veraenderung/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "bauliche",
+        "veraenderung",
+        "§20",
+        "§21",
+        "wohnungseigentumsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "beschlussanfechtung",
+      "description": "Prüfung der Erfolgsaussicht einer WEG-Beschlussanfechtung nach der WEMoG-Reform – Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer § 44 Abs. 2 WEG, Monatsfrist § 45 WEG, Nichtigkeit und Anfechtbarkeit § 23 Abs. 4 WEG, Maßstab der ordnungsmäßigen Verwaltung § 19 WEG. Use when ein Wohnungseigentümer einen Beschluss der Eigentümerversammlung anfechten will oder die Erfolgsaussicht einer Anfechtungsklage geprüft werden soll.",
+      "path": "wohnungseigentumsrecht/skills/beschlussanfechtung/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "beschlussanfechtung",
+        "§44",
+        "§45",
+        "§23",
+        "§19",
+        "wohnungseigentumsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "hausgeldabrechnung",
+      "description": "Prüfung der Jahresabrechnung und der Beschlusskompetenz im Wohnungseigentumsrecht nach der WEMoG-Reform – Wirtschaftsplan und Vorschüsse § 28 Abs. 1 WEG, Nachschüsse und Abrechnungsspitze § 28 Abs. 2 WEG, Vermögensbericht § 28 Abs. 4 WEG, Verteilung nach Miteigentumsanteilen § 16 Abs. 2 WEG, Entziehung § 17 WEG als ultima ratio. Use when eine WEG-Jahresabrechnung oder ein Hausgeld-/Nachschussbeschluss auf Plausibilität und Beschlusskompetenz geprüft wird.",
+      "path": "wohnungseigentumsrecht/skills/hausgeldabrechnung/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "hausgeldabrechnung",
+        "§28",
+        "§16",
+        "§17",
+        "wohnungseigentumsrecht"
       ],
       "tools": 0,
       "has_references": false,

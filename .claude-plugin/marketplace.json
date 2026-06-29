@@ -247,6 +247,11 @@
       "name": "kartellrecht",
       "source": "./kartellrecht",
       "description": "Deutsches und EU-Kartellrecht – GWB Teile 1–3 (Kartellverbot § 1, Marktbeherrschung §§ 18 ff., Fusionskontrolle §§ 35 ff.) inkl. § 19a strukturmarktrelevante Unternehmen sowie Art. 101/102 AEUV und EU-FK-VO 139/2004. GWB-Zusammenschlussanmeldung mit Vollzugsverbot § 41, Kartellverbots-Prüfung inkl. Vertikal-GVO 2022/720, Marktbeherrschung und Missbrauchsbewertung."
+    },
+    {
+      "name": "wohnungseigentumsrecht",
+      "source": "./wohnungseigentumsrecht",
+      "description": "Wohnungseigentumsrecht (WEG) nach der WEMoG-Reform (seit 01.12.2020) – Beschlussanfechtung §§ 23, 44, 45 WEG (Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer, Monatsfrist, Nichtigkeit vs. Anfechtbarkeit), Jahresabrechnung und Hausgeld § 28 WEG (Wirtschaftsplan, Abrechnungsspitze, Vermögensbericht), bauliche Veränderung §§ 20, 21 WEG (Gestattungsbeschluss, privilegierte Maßnahmen inkl. E-Mobilität und Steckersolargeräte, Kostenverteilung)."
     }
   ]
 }

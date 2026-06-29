@@ -1118,7 +1118,7 @@ The skills work with three providers: **Claude** (Claude Code, claude.ai), **Gem
 
 ## What you get
 
-- 103 skills across 48 areas of German law and EU compliance.
+- 111 skills across 49 areas of German law and EU compliance.
 - Statute citations linked to `gesetze-im-internet.de` and `EUR-Lex`.
 - Case-law citations labelled `[unverifiziert – prüfen]` until externally checked. `[generiert]` (hallucinated) citations are forbidden.
 - Provider-neutral skill format — a single `SKILL.md` runs in Claude, Gemini, and GPT with adapters.

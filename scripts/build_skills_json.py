@@ -18,7 +18,7 @@ OUT = REPO_ROOT / "skills.json"
 # 48 plugin slugs in display order: 23 original + 25 new (grouped per README sections).
 DOMAINS_ORDER = [
     # German legal practice (general)
-    "arbeitsrecht", "datenschutzrecht", "vertragsrecht", "mietrecht",
+    "arbeitsrecht", "datenschutzrecht", "vertragsrecht", "mietrecht", "wohnungseigentumsrecht",
     "gesellschaftsrecht", "strafrecht", "insolvenzrecht", "prozessrecht",
     "erbrecht", "familienrecht", "betreuungsrecht",
     # Fachanwaltschaften
@@ -45,6 +45,7 @@ DOMAIN_META = {
     "datenschutzrecht": ("Datenschutzrecht / GDPR", "DSGVO, BDSG, AVV, Datenpanne, DPIA, Drittlandtransfer"),
     "vertragsrecht": ("Vertragsrecht", "AGB-Kontrolle, Klauselgestaltung, Leistungsstörung, Anfechtung"),
     "mietrecht": ("Mietrecht", "Wohnraummiete, Mieterhöhung, Kündigung, Betriebskostenabrechnung, WEG"),
+    "wohnungseigentumsrecht": ("Wohnungseigentumsrecht (WEG)", "Beschlussanfechtung §§ 44/45, Hausgeld/Jahresabrechnung § 28, bauliche Veränderung §§ 20/21 — post-WEMoG"),
     "gesellschaftsrecht": ("Gesellschaftsrecht", "GmbH-Recht, Geschäftsführerhaftung, AG-Grundzüge, Umwandlungen"),
     "strafrecht": ("Strafrecht", "Strafbefehl-Verteidigung, Akteneinsicht, OWi-Verkehr, Belehrungen"),
     "insolvenzrecht": ("Insolvenzrecht", "InsO § 15a, StaRUG, Liquiditätsplanung, Fortbestehensprognose"),
