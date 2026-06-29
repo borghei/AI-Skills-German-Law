@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/borghei/AI-Skills-German-Law/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/borghei/AI-Skills-German-Law/validate.yml?branch=main&label=CI&logo=github" alt="CI Status"></a>
   <img src="https://img.shields.io/badge/Areas-49-brightgreen.svg" alt="49 Areas">
-  <img src="https://img.shields.io/badge/Skills-119-success.svg" alt="119 Skills">
+  <img src="https://img.shields.io/badge/Skills-159-success.svg" alt="159 Skills">
   <img src="https://img.shields.io/badge/Providers-Claude_%7C_Gemini_%7C_GPT-purple.svg" alt="Providers">
   <img src="https://img.shields.io/badge/Last_verified-2026--05--22-blue.svg" alt="Last verified">
   <img src="https://img.shields.io/badge/Compliance-DSGVO_%7C_KI--VO_%7C_NIS2_%7C_HinSchG_%7C_LkSG_%7C_DORA_%7C_DSA_%7C_CSRD-red.svg" alt="Compliance">
@@ -40,7 +40,7 @@ A `[Modellwissen]`-Halluzination in einem Kündigungsschreiben ist kein Bug. Sie
 
 ## The fix
 
-A focused, **provider-agnostic** library: 49 areas, 119 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
+A focused, **provider-agnostic** library: 49 areas, 159 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
 
 It is **not legal advice**, **not a Beck-Online substitute**, and **not for Mandatsdaten without a § 203 StGB-compliant gateway**. It is a tested drafting aid with an honest paper trail.
 
@@ -189,7 +189,7 @@ We are unsentimental about trust. Here is what is verified today, what is in act
 
 ### Production-grade today
 
-- **Repo structure plus CI.** Every plugin manifest validates. CI runs `validate.py` on every push to catch structural drift. Locally, `python scripts/eval.py` runs 2,004 fact-pattern assertions across 119 skills (119/119 passing).
+- **Repo structure plus CI.** Every plugin manifest validates. CI runs `validate.py` on every push to catch structural drift. Locally, `python scripts/eval.py` runs 2,555 fact-pattern assertions across 159 skills (159/159 passing).
 - **Statute citations.** Every `§ X` links to the **authoritative public source**, [gesetze-im-internet.de](https://www.gesetze-im-internet.de) and [EUR-Lex](https://eur-lex.europa.eu). One click, verifiable.
 - **Methodology.** Gutachtenstil, Anspruchsgrundlagen-Reihenfolge, BGH/Beck-Zitierweise, no Präjudizienbindungs-Argumente, textbook-correct conventions, documented in [`CONVENTIONS.md`](./CONVENTIONS.md) and enforced by the reviewer sub-agent.
 - **Compliance scaffolding.** PII redaction ([`scripts/pii_redact.py`](./scripts/pii_redact.py)), gateway setup guide ([`references/gateway-setup.md`](./references/gateway-setup.md)), § 203 / DSGVO / KI-VO checklist ([`references/compliance-checklist.md`](./references/compliance-checklist.md)).
@@ -333,7 +333,7 @@ Dual-licensed: **Apache-2.0** ([LICENSE-APACHE](./LICENSE-APACHE)) **OR** **MIT*
 ---
 
 <p align="center">
-  <strong>49 areas · 119 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
+  <strong>49 areas · 159 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
   Verified <strong>2026-05-21</strong> · <a href="https://borghei.me">borghei.me</a>
 </p>
 

@@ -6,6 +6,22 @@ All notable changes to this project are documented here. Format follows
 ## [Unreleased]
 
 ### Added
+- **Forty litigation/IT skills** taking four areas from one skill to eleven each:
+  **strafrecht** (notwendige-verteidigung, durchsuchung-beschlagnahme,
+  untersuchungshaft, akteneinsicht-verteidiger, beschuldigtenvernehmung,
+  opportunitaetseinstellung, beweisverwertungsverbot, revision-strafsachen,
+  berufung-strafsachen, wiederaufnahme — StPO); **verwaltungsrecht**
+  (anfechtungs-/verpflichtungsklage, §§ 80/123 Eilrechtsschutz, Rücknahme/Widerruf
+  §§ 48/49 VwVfG, Ermessen, Nebenbestimmungen, Fortsetzungsfeststellung,
+  Normenkontrolle, Verwaltungsvollstreckung); **prozessrecht** (Mahnverfahren,
+  einstweilige Verfügung, Arrest, Zwangsvollstreckung, PKH, Versäumnisurteil,
+  selbst. Beweisverfahren, Vollstreckungsabwehrklage, Berufung, Beweislast — ZPO);
+  **it-recht** (SaaS, Softwareerstellung, Providerhaftung nach DDG/DSA,
+  Softwarelizenz-AGB, Open-Source-Compliance, IT-Sicherheit/BSIG, Cloud-AVV,
+  Domainrecht, E-Commerce-Pflichten, KI-Verträge). Counts: **49 areas / 159 skills**
+  (2,555 eval assertions, 159/159 passing). All case-law marked
+  [verifiziert]/[unverifiziert - prüfen]; Providerhaftung built on the current DDG
+  (not the repealed TMG), IT-Sicherheit flags the NIS2UmsuCG/BSIG recast.
 - **Eight more deepen skills** in four core civil/tax areas (each at one skill
   before): `erbrecht/pflichtteil-pruefung` (§§ 2303 ff. BGB) and
   `erbrecht/gesetzliche-erbfolge` (§§ 1924 ff., § 1931, § 1371 BGB);

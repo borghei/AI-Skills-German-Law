@@ -1,12 +1,12 @@
 {
   "name": "ai-skills-german-law",
-  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 119 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 159 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
   "version": "0.2.0",
   "repository": "https://github.com/borghei/AI-Skills-German-Law",
   "website": "https://borghei.github.io/AI-Skills-German-Law",
   "author": "borghei",
   "license": "Apache-2.0 OR MIT",
-  "total_skills": 119,
+  "total_skills": 159,
   "updated": "2026-06-29",
   "domains": {
     "arbeitsrecht": {
@@ -46,7 +46,7 @@
       "desc": "GmbH-Recht, Geschäftsführerhaftung, AG-Grundzüge, Umwandlungen"
     },
     "strafrecht": {
-      "count": 1,
+      "count": 11,
       "tools": 0,
       "label": "Strafrecht",
       "desc": "Strafbefehl-Verteidigung, Akteneinsicht, OWi-Verkehr, Belehrungen"
@@ -58,7 +58,7 @@
       "desc": "InsO § 15a, StaRUG, Liquiditätsplanung, Fortbestehensprognose"
     },
     "prozessrecht": {
-      "count": 1,
+      "count": 11,
       "tools": 0,
       "label": "Prozessrecht",
       "desc": "Klageschrift §§ 253 ff. ZPO, Beweisantritt, Zuständigkeit, Rechtsmittel"
@@ -82,7 +82,7 @@
       "desc": "Reform 2023 (§§ 1814 ff. BGB), Jahresbericht § 1863, Vermögenssorge"
     },
     "it-recht": {
-      "count": 1,
+      "count": 11,
       "tools": 0,
       "label": "IT-Recht",
       "desc": "SaaS-Verträge, Outsourcing, Softwarelizenz, Open Source, Cloud-AVV"
@@ -106,7 +106,7 @@
       "desc": "AO Außenprüfung, Einspruch §§ 347 ff. AO, Selbstanzeige § 371, FGO"
     },
     "verwaltungsrecht": {
-      "count": 1,
+      "count": 11,
       "tools": 0,
       "label": "Verwaltungsrecht",
       "desc": "Widerspruch §§ 68 ff. VwGO, Anfechtungs-/Verpflichtungsklage, § 80"
@@ -674,6 +674,182 @@
       "has_assets": false
     },
     {
+      "name": "akteneinsicht-verteidiger",
+      "description": "Prüfung des Akteneinsichtsrechts des Verteidigers nach § 147 StPO – Umfang, Versagung bei Gefährdung des Untersuchungszwecks (§ 147 Abs. 2), Akteneinsicht des unverteidigten Beschuldigten (§ 147 Abs. 4), Form der Gewährung § 32f StPO. Use when Akteneinsicht beantragt, verweigert oder beschränkt wurde und Umfang, Zeitpunkt und Rechtsschutz zu klären sind.",
+      "path": "strafrecht/skills/akteneinsicht-verteidiger/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "akteneinsicht",
+        "verteidiger",
+        "§147",
+        "§32f",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "berufung-strafsachen",
+      "description": "Prüfung und Strategie der Berufung in Strafsachen – Statthaftigkeit § 312 StPO, Einlegungsfrist § 314 StPO, Berufungsbeschränkung § 318 StPO, Verschlechterungsverbot § 331 StPO, Umfang und Entscheidung §§ 327, 328 StPO; Beschränkung auf die Rechtsfolgen, reformatio in peius. Use when gegen ein amtsgerichtliches Strafurteil Berufung zu prüfen, einzulegen oder zu beschränken ist.",
+      "path": "strafrecht/skills/berufung-strafsachen/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "berufung",
+        "strafsachen",
+        "§312",
+        "§314",
+        "§318",
+        "§331",
+        "§§327",
+        "stpo"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "beschuldigtenvernehmung",
+      "description": "Prüfung der Beschuldigtenvernehmung – Belehrung über Schweigerecht und Verteidigerkonsultation § 136 StPO, verbotene Vernehmungsmethoden und Verwertungsverbot § 136a StPO, polizeiliche Vernehmung im Ermittlungsverfahren § 163a StPO. Use when ein Belehrungsfehler oder eine verbotene Vernehmungsmethode auf ein Beweisverwertungsverbot zu prüfen ist.",
+      "path": "strafrecht/skills/beschuldigtenvernehmung/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "beschuldigtenvernehmung",
+        "§136",
+        "§136a",
+        "§163a",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "beweisverwertungsverbot",
+      "description": "Prüfung von Beweisverwertungsverboten im Strafprozess – verbotene Vernehmungsmethoden § 136a Abs. 3 StPO, körperliche Untersuchung und Blutprobe § 81a StPO, Belehrungspflicht § 136 StPO; Widerspruchslösung, unselbständige vs. selbständige Verwertungsverbote. Use when ein rechtswidrig erlangtes Beweismittel auf seine Verwertbarkeit in der Hauptverhandlung zu prüfen ist.",
+      "path": "strafrecht/skills/beweisverwertungsverbot/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "beweisverwertungsverbot",
+        "§136a",
+        "§81a",
+        "§136",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "durchsuchung-beschlagnahme",
+      "description": "Prüfung von Durchsuchung und Beschlagnahme – Durchsuchung beim Beschuldigten § 102 StPO und bei Dritten § 103 StPO, Richtervorbehalt und Gefahr im Verzug § 105 StPO, Sicherstellung/Beschlagnahme § 94 StPO und Verfahren § 98 StPO, Beschlagnahmeverbote § 97 StPO. Use when eine Durchsuchungs- oder Beschlagnahmemaßnahme auf Rechtmäßigkeit und Verwertbarkeit zu prüfen ist.",
+      "path": "strafrecht/skills/durchsuchung-beschlagnahme/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "durchsuchung",
+        "beschlagnahme",
+        "§102",
+        "§103",
+        "§105",
+        "§94",
+        "§98",
+        "§97"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "notwendige-verteidigung",
+      "description": "Prüfung der notwendigen Verteidigung – Fälle des § 140 StPO, Zeitpunkt der Pflichtverteidigerbestellung § 141 StPO, Zuständigkeit und Auswahlrecht § 142 StPO, Dauer und Aufhebung der Bestellung § 143 StPO. Use when zu klären ist, ob ein Fall notwendiger Verteidigung vorliegt und ein Pflichtverteidiger zu bestellen ist.",
+      "path": "strafrecht/skills/notwendige-verteidigung/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "notwendige",
+        "verteidigung",
+        "§140",
+        "§141",
+        "§142",
+        "§143",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "opportunitaetseinstellung",
+      "description": "Prüfung der Opportunitätseinstellung im Ermittlungs- und Hauptverfahren – Einstellung wegen Geringfügigkeit § 153 StPO, Einstellung gegen Auflagen und Weisungen § 153a StPO, Teileinstellung §§ 154, 154a StPO; Zustimmungserfordernisse, Auflagenkatalog, Rechtsfolgen. Use when eine Einstellung des Verfahrens aus Opportunitätsgründen zu prüfen, anzuregen oder zu verhandeln ist.",
+      "path": "strafrecht/skills/opportunitaetseinstellung/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "opportunitaetseinstellung",
+        "§153",
+        "§153a",
+        "§§154",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "revision-strafsachen",
+      "description": "Prüfung und Begründung der Revision in Strafsachen – Statthaftigkeit § 333 StPO, Sprungrevision § 335 StPO, Rüge der Gesetzesverletzung § 337 StPO, absolute Revisionsgründe § 338 StPO, Einlegungsfrist § 341 StPO, Form und Begründungsfrist §§ 344, 345 StPO; Verfahrens- vs. Sachrüge. Use when gegen ein Strafurteil Revision zu prüfen, fristgerecht einzulegen oder zu begründen ist.",
+      "path": "strafrecht/skills/revision-strafsachen/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "revision",
+        "strafsachen",
+        "§333",
+        "§335",
+        "§337",
+        "§338",
+        "§341",
+        "§§344"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "strafbefehl-pruefung",
       "description": "Prüfung eines erhaltenen Strafbefehls auf Einspruchswert – 2-Wochen-Frist nach § 410 StPO, formale Wirksamkeit, materielle Tatbestandsmäßigkeit, prozessuale Rechte (Akteneinsicht § 147 StPO), Hauptverhandlungsoption. Use when ein Mandant einen Strafbefehl erhalten hat und Einspruch bzw. Annahme zu entscheiden ist.",
       "path": "strafrecht/skills/strafbefehl-pruefung/SKILL.md",
@@ -687,6 +863,49 @@
         "pruefung",
         "§410",
         "§147",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "untersuchungshaft",
+      "description": "Prüfung der Untersuchungshaft – dringender Tatverdacht und Haftgründe § 112 StPO (Flucht, Fluchtgefahr, Verdunkelungsgefahr), Wiederholungsgefahr § 112a StPO, Aussetzung des Vollzugs § 116 StPO, Sechs-Monats-Haftprüfung §§ 121, 122 StPO. Use when ein Haftbefehl auf Rechtmäßigkeit, Verhältnismäßigkeit und Außervollzugsetzung zu prüfen ist.",
+      "path": "strafrecht/skills/untersuchungshaft/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "untersuchungshaft",
+        "§112",
+        "§112a",
+        "§116",
+        "§§121",
+        "stpo",
+        "strafrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "wiederaufnahme",
+      "description": "Prüfung der Wiederaufnahme eines rechtskräftig abgeschlossenen Strafverfahrens – zugunsten des Verurteilten § 359 StPO (neue Tatsachen und Beweismittel als novum), zuungunsten § 362 StPO, Zulässigkeits- und Begründetheitsprüfung §§ 368, 370 StPO; nova, Aditionsverfahren. Use when nach Rechtskraft eines Strafurteils neue Tatsachen oder Beweismittel die Wiederaufnahme rechtfertigen könnten.",
+      "path": "strafrecht/skills/wiederaufnahme/SKILL.md",
+      "domain": "strafrecht",
+      "category": "strafrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "wiederaufnahme",
+        "§359",
+        "§362",
+        "§§368",
         "stpo",
         "strafrecht"
       ],
@@ -780,6 +999,98 @@
       "has_assets": false
     },
     {
+      "name": "arrest",
+      "description": "Antrag auf Arrest zur Sicherung von Geldforderungen – dinglicher Arrest § 916 ZPO, Arrestgrund § 917 ZPO, persönlicher Arrest § 918 ZPO, Arrestgesuch und Glaubhaftmachung § 920 ZPO, Vollziehung § 929 ZPO. Use when eine Geldforderung gegen einen Schuldner vorläufig gesichert werden soll, bei dem die spätere Zwangsvollstreckung vereitelt oder erschwert zu werden droht.",
+      "path": "prozessrecht/skills/arrest/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "arrest",
+        "§916",
+        "§917",
+        "§918",
+        "§920",
+        "§929",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "berufung-zpo",
+      "description": "Berufung im Zivilprozess nach §§ 511 ff. ZPO. Statthaftigkeit und Berufungssumme — Beschwer über 600 EUR oder Zulassung (§ 511 ZPO), Berufungsgründe Rechtsverletzung oder fehlerhafte Tatsachen (§ 513 ZPO), einmonatige Berufungsfrist (§ 517 ZPO), Berufungsbegründung binnen zwei Monaten (§ 520 ZPO). Use when ein erstinstanzliches Zivilurteil mit der Berufung angegriffen oder die Erfolgsaussicht einer Berufung geprüft wird.",
+      "path": "prozessrecht/skills/berufung-zpo/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "berufung",
+        "zpo",
+        "§§511",
+        "§511",
+        "§513",
+        "§517",
+        "§520",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "beweislast",
+      "description": "Darlegungs- und Beweislast im Zivilprozess nach §§ 138, 286 ff. ZPO. Freie Beweiswürdigung (§ 286 ZPO), gerichtliches Geständnis (§ 288 ZPO), Beweisaufnahme über streitige Tatsachen (§ 355 ZPO), prozessuale Wahrheits- und Erklärungspflicht (§ 138 ZPO), Anscheinsbeweis und sekundäre Darlegungslast. Use when geklärt werden soll, welche Partei welche Tatsache beweisen muss und wie der Beweis geführt oder erschüttert wird.",
+      "path": "prozessrecht/skills/beweislast/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "beweislast",
+        "§§138",
+        "§286",
+        "§288",
+        "§355",
+        "§138",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "einstweilige-verfuegung",
+      "description": "Antrag auf einstweilige Verfügung im einstweiligen Rechtsschutz – Sicherungsverfügung § 935 ZPO, Regelungsverfügung § 940 ZPO, Verfügungsanspruch und Verfügungsgrund, Glaubhaftmachung § 920 ZPO, entsprechende Anwendung der Arrestvorschriften § 936 ZPO, Dringlichkeit. Use when ein Anspruch eilig gesichert oder ein Zustand vorläufig geregelt werden soll, bevor das Hauptsacheverfahren entscheidet.",
+      "path": "prozessrecht/skills/einstweilige-verfuegung/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "einstweilige",
+        "verfuegung",
+        "§935",
+        "§940",
+        "§920",
+        "§936",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "klageschrift-zivilprozess",
       "description": "Entwurf einer prozessual sauberen Klageschrift im Zivilprozess nach §§ 253 ff. ZPO. Streitgegenstand (zweigliedriger Begriff), Sachvortrag mit Substantiierung, Beweisantritt, sachliche und örtliche Zuständigkeit, Klagearten (Leistungs-, Feststellungs-, Gestaltungsklage), Streitwert. Use when eine Zivilklage entworfen wird oder eine Klageschrift auf prozessuale Mängel geprüft wird.",
       "path": "prozessrecht/skills/klageschrift-zivilprozess/SKILL.md",
@@ -792,6 +1103,140 @@
         "klageschrift",
         "zivilprozess",
         "§§253",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mahnverfahren",
+      "description": "Durchführung des gerichtlichen Mahnverfahrens – Zulässigkeit § 688 ZPO, Mahnantrag und Mahnbescheid § 690 ZPO, Widerspruch § 694 ZPO, Vollstreckungsbescheid § 699 ZPO, Einspruch § 700 ZPO, Verjährungshemmung. Use when eine bezifferte Geldforderung schnell und kostengünstig tituliert oder kurz vor Jahresende die Verjährung gehemmt werden soll.",
+      "path": "prozessrecht/skills/mahnverfahren/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mahnverfahren",
+        "§688",
+        "§690",
+        "§694",
+        "§699",
+        "§700",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "prozesskostenhilfe",
+      "description": "Prüfung und Antrag auf Prozesskostenhilfe (PKH) – die drei Voraussetzungen Bedürftigkeit, hinreichende Erfolgsaussicht und fehlende Mutwilligkeit § 114 ZPO, Einsatz von Einkommen und Vermögen mit Ratenberechnung § 115 ZPO, Beiordnung eines Rechtsanwalts § 121 ZPO. Use when eine bedürftige Partei für einen Zivilprozess Prozesskostenhilfe beantragen will oder die Erfolgsaussichten eines PKH-Antrags zu beurteilen sind.",
+      "path": "prozessrecht/skills/prozesskostenhilfe/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "prozesskostenhilfe",
+        "§114",
+        "§115",
+        "§121",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "selbststaendiges-beweisverfahren",
+      "description": "Selbständiges Beweisverfahren zur Beweissicherung vor oder außerhalb des Prozesses nach §§ 485 ff. ZPO. Zulässigkeit (§ 485 ZPO), Inhalt des Antrags (§ 487 ZPO), gerichtliches Verfahren (§ 490 ZPO), Verwertung im Hauptprozess (§ 493 ZPO). Häufig in Bausachen zur Sicherung von Mängelfeststellungen. Use when Beweise (Zeuge, Augenschein, Sachverständigengutachten) vor Verlust oder vor Klageerhebung gesichert werden sollen.",
+      "path": "prozessrecht/skills/selbststaendiges-beweisverfahren/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "selbststaendiges",
+        "beweisverfahren",
+        "§§485",
+        "§485",
+        "§487",
+        "§490",
+        "§493",
+        "zpo"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "versaeumnisurteil",
+      "description": "Versäumnisurteil und Einspruch im Zivilprozess nach §§ 330 ff. ZPO. VU gegen Kläger (§ 330 ZPO) und Beklagten (§ 331 ZPO), Schlüssigkeitsprüfung, Einspruch (§ 338 ZPO), zweiwöchige Einspruchsfrist als Notfrist (§ 339 ZPO), Form des Einspruchs (§ 340 ZPO), zweites Versäumnisurteil. Use when bei Säumnis in der mündlichen Verhandlung ein Versäumnisurteil beantragt, abgewehrt oder per Einspruch angegriffen wird.",
+      "path": "prozessrecht/skills/versaeumnisurteil/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "versaeumnisurteil",
+        "§§330",
+        "§330",
+        "§331",
+        "§338",
+        "§339",
+        "§340",
+        "zpo"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vollstreckungsabwehrklage",
+      "description": "Rechtsbehelfe des Schuldners und Dritter gegen die Zwangsvollstreckung nach §§ 767, 771 ZPO. Materielle Einwendungen gegen den titulierten Anspruch (§ 767 ZPO), Präklusion nach Schluss der mündlichen Verhandlung (§ 767 Abs. 2 ZPO), Drittwiderspruchsklage bei die Veräußerung hinderndem Recht (§ 771 ZPO). Use when ein Schuldner materiell-rechtliche Einwendungen gegen einen Titel erhebt oder ein Dritter sich gegen den Zugriff auf seine Sache wehrt.",
+      "path": "prozessrecht/skills/vollstreckungsabwehrklage/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vollstreckungsabwehrklage",
+        "§§767",
+        "§767",
+        "§771",
+        "zpo",
+        "prozessrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "zwangsvollstreckung-grundlagen",
+      "description": "Prüfung der Zwangsvollstreckung im Zivilrecht – die drei Vollstreckungsvoraussetzungen Titel, Klausel und Zustellung §§ 704, 750 ZPO, Sachpfändung beweglicher Sachen § 803 ZPO, Forderungs- und Lohnpfändung mit Pfändungsschutz § 850 ZPO, Vollstreckungserinnerung § 766 ZPO. Use when aus einem Titel vollstreckt werden soll oder eine bereits begonnene Zwangsvollstreckung auf ihre Voraussetzungen und Rechtsbehelfe geprüft wird.",
+      "path": "prozessrecht/skills/zwangsvollstreckung-grundlagen/SKILL.md",
+      "domain": "prozessrecht",
+      "category": "prozessrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "zwangsvollstreckung",
+        "grundlagen",
+        "§§704",
+        "§803",
+        "§850",
+        "§766",
         "zpo",
         "prozessrecht"
       ],
@@ -957,6 +1402,91 @@
       "has_assets": false
     },
     {
+      "name": "cloud-auftragsverarbeitung",
+      "description": "Datenschutzkonforme Gestaltung der Cloud-Nutzung: Auftragsverarbeitung nach Art. 28 DSGVO, technische und organisatorische Maßnahmen nach Art. 32 DSGVO und Drittlandtransfer nach Kapitel V DSGVO (Art. 44 ff.). Use when ein Cloud- oder SaaS-Dienst eingesetzt wird und der AVV sowie der Datentransfer geprüft oder gestaltet werden sollen.",
+      "path": "it-recht/skills/cloud-auftragsverarbeitung/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "cloud",
+        "auftragsverarbeitung",
+        "art.28",
+        "art.32",
+        "art.44",
+        "dsgvo",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "domainrecht",
+      "description": "Bewertung von Domainstreitigkeiten und Ansprüchen aus Namensrecht (§ 12 BGB), Kennzeichenrecht und geschäftlicher Bezeichnung (§§ 5, 15 MarkenG) sowie Markenrecht (§ 14 MarkenG), inklusive DENIC-Dispute-Eintrag und Domain-Grabbing. Use when ein Streit über eine Internet-Domain (Registrierung, Nutzung, Übertragung, Löschung) zu beurteilen ist.",
+      "path": "it-recht/skills/domainrecht/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "domainrecht",
+        "§12",
+        "§§5",
+        "§14",
+        "bgb",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "e-commerce-pflichten",
+      "description": "Prüfung der Pflichten eines Online-Shops im elektronischen Geschäftsverkehr: allgemeine Pflichten (§ 312i BGB), besondere Verbraucherpflichten und Button-Lösung (§ 312j BGB) sowie Widerrufsrecht (§ 312g, § 355 BGB), inklusive der Folgen von Verstößen. Use when ein Online-Shop oder Bestellprozess auf gesetzliche Pflichten und Abmahnrisiken geprüft werden soll.",
+      "path": "it-recht/skills/e-commerce-pflichten/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "commerce",
+        "pflichten",
+        "§312i",
+        "§312j",
+        "§312g",
+        "§355",
+        "bgb",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "it-sicherheit-meldepflichten",
+      "description": "Prüfung der IT-Sicherheits- und Meldepflichten von KRITIS-Betreibern und NIS2-Einrichtungen nach dem BSIG (Stand der Technik, Risikomanagement, Vorfallmeldung, Registrierung, Bußgeld). Use when geklärt werden soll, ob eine Einrichtung dem BSIG unterfällt und welche Sicherheits- und Meldepflichten sie treffen.",
+      "path": "it-recht/skills/it-sicherheit-meldepflichten/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "sicherheit",
+        "meldepflichten",
+        "nis2",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "it-vertragspruefung",
       "description": "Prüfung typischer IT-Verträge (SaaS, Cloud, Outsourcing, Werkvertrag/Dienstvertrag-Abgrenzung) auf AGB-Konformität, DSGVO-Verzahnung (Art. 28 AVV), Leistungsstandards (SLA), Haftungsbegrenzung, Migrations- und Beendigungsklauseln, Open-Source-Compliance. Use when ein IT-Dienstleistungsvertrag bewertet oder verhandelt wird.",
       "path": "it-recht/skills/it-vertragspruefung/SKILL.md",
@@ -969,6 +1499,143 @@
         "vertragspruefung",
         "art.28",
         "dsgvo",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ki-vertraege",
+      "description": "Gestaltung und Prüfung von Verträgen über KI-Systeme: Leistungsbeschreibung und Gewährleistung (§ 434, § 633, § 327 BGB), Trainingsdaten und Text-und-Data-Mining-Schranke (§ 44b UrhG), Verzahnung mit der KI-VO (Hochrisiko- und Transparenzpflichten) sowie Haftung für KI-Output. Use when ein Vertrag über Beschaffung, Entwicklung oder Nutzung eines KI-Systems gestaltet oder bewertet wird.",
+      "path": "it-recht/skills/ki-vertraege/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vertraege",
+        "§434",
+        "§633",
+        "§327",
+        "§44b",
+        "bgb",
+        "urhg",
+        "ki-vo"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "open-source-compliance",
+      "description": "Prüfung der Open-Source-Compliance in Produkten: urheberrechtliche Nutzungsrechte (§ 31 UrhG), Schutz von Computerprogrammen und zustimmungsbedürftige Verwertung (§ 69a, § 69c UrhG), Copyleft (GPL), Lizenzkette/Software Bill of Materials und Folgen der Lizenzverletzung (Unterlassung, Rückruf, § 97 UrhG). Use when die Verwendung von Open-Source-Komponenten in einem Produkt rechtlich abgesichert wird.",
+      "path": "it-recht/skills/open-source-compliance/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "open",
+        "source",
+        "compliance",
+        "§31",
+        "§69a",
+        "§69c",
+        "§97",
+        "urhg"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "providerhaftung",
+      "description": "Prüfung der Verantwortlichkeit von Diensteanbietern für fremde/nutzergenerierte Inhalte: beschränkte Verantwortlichkeit (§ 7 DDG i. V. m. Art. 4–8 DSA), Hosting (Art. 6 DSA), keine allgemeine Überwachungspflicht (Art. 8 DSA), Sperranspruch (§ 8 DDG), Auskunft (§ 10 DDG), Störerhaftung und Notice-and-Takedown. Use when die Haftung eines Host- oder Access-Providers für Drittinhalte zu beurteilen ist.",
+      "path": "it-recht/skills/providerhaftung/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "providerhaftung",
+        "§7",
+        "§8",
+        "§10",
+        "art.4",
+        "art.6",
+        "art.8",
+        "dsa"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "saas-vertrag",
+      "description": "Prüfung von Software-as-a-Service-Verträgen: vertragstypologische Einordnung als Mietvertrag (§ 535 BGB, BGH zu ASP), Mängelrechte des Mietrechts (§ 536 BGB), Service Level Agreement/Verfügbarkeit, Datenexport und AGB-Inhaltskontrolle (§§ 305, 307, 310 BGB). Use when ein SaaS- oder Cloud-Nutzungsvertrag bewertet, verhandelt oder gestaltet wird.",
+      "path": "it-recht/skills/saas-vertrag/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "saas",
+        "vertrag",
+        "§535",
+        "§536",
+        "§§305",
+        "bgb",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "softwareerstellung-werkvertrag",
+      "description": "Prüfung von Verträgen über die Erstellung von Individualsoftware als Werkvertrag (§ 631 BGB): Beschaffenheit (§ 633 BGB), Abnahme (§ 640 BGB), Mängelrechte (§ 634 BGB), Lasten-/Pflichtenheft und agile Entwicklung (Scrum). Use when ein Vertrag über die Programmierung individueller Software gestaltet oder gestritten wird.",
+      "path": "it-recht/skills/softwareerstellung-werkvertrag/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "softwareerstellung",
+        "werkvertrag",
+        "§631",
+        "§633",
+        "§640",
+        "§634",
+        "bgb",
+        "it-recht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "softwarelizenz-agb",
+      "description": "Prüfung von Software-Lizenz- und Nutzungs-AGB: Einräumung von Nutzungsrechten (§ 31 UrhG), zustimmungsbedürftige Handlungen und Erschöpfungsgrundsatz bei Gebrauchtsoftware (§ 69c UrhG, UsedSoft), AGB-Inhaltskontrolle von Weitergabe- und Audit-Klauseln (§§ 305, 307 BGB). Use when Lizenzbedingungen für Software gestaltet oder auf Wirksamkeit geprüft werden.",
+      "path": "it-recht/skills/softwarelizenz-agb/SKILL.md",
+      "domain": "it-recht",
+      "category": "it-recht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "softwarelizenz",
+        "agb",
+        "§31",
+        "§69c",
+        "§§305",
+        "urhg",
+        "bgb",
         "it-recht"
       ],
       "tools": 0,
@@ -1076,6 +1743,211 @@
         "§398a",
         "§153",
         "steuerrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "anfechtungsklage",
+      "description": "Anfechtungsklage gegen rechtswidrige belastende Verwaltungsakte. Klagebefugnis § 42 VwGO, Vorverfahren § 68 VwGO, Klagefrist § 74 VwGO, Aufhebung § 113 VwGO. Use when ein Mandant einen belastenden Verwaltungsakt aufheben lassen will und in eigenen Rechten verletzt ist.",
+      "path": "verwaltungsrecht/skills/anfechtungsklage/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "anfechtungsklage",
+        "§42",
+        "§68",
+        "§74",
+        "§113",
+        "vwgo",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "einstweilige-anordnung-123",
+      "description": "Vorläufiger Rechtsschutz außerhalb der Anfechtungssituation durch einstweilige Anordnung § 123 VwGO. Sicherungs- und Regelungsanordnung, Anordnungsanspruch und Anordnungsgrund, Glaubhaftmachung, Abgrenzung zu § 80 VwGO. Use when ein Mandant eine Leistung oder Sicherung im Eilverfahren begehrt und kein Anfechtungsfall vorliegt.",
+      "path": "verwaltungsrecht/skills/einstweilige-anordnung-123/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "einstweilige",
+        "anordnung",
+        "123",
+        "§123",
+        "§80",
+        "vwgo",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ermessensfehler",
+      "description": "Prüfung behördlicher Ermessensentscheidungen auf Ermessensfehler nach § 40 VwVfG und § 114 VwGO (Ermessensnichtgebrauch, Ermessensüberschreitung, Ermessensfehlgebrauch, Verhältnismäßigkeit, Ermessensreduzierung auf null). Use when ein Verwaltungsakt auf einer Ermessensnorm beruht und die Rechtmäßigkeit der Ermessensausübung geprüft werden soll.",
+      "path": "verwaltungsrecht/skills/ermessensfehler/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ermessensfehler",
+        "§40",
+        "§114",
+        "vwgo",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "fortsetzungsfeststellungsklage",
+      "description": "Prüfung der Fortsetzungsfeststellungsklage nach § 113 Abs. 1 Satz 4 VwGO bei erledigtem Verwaltungsakt: Erledigung, Fortsetzungsfeststellungsinteresse (Wiederholungsgefahr, Rehabilitierung, Präjudizinteresse) und analoge Anwendung. Use when sich ein angegriffener Verwaltungsakt vor oder während des Prozesses erledigt hat und der Mandant dessen Rechtswidrigkeit feststellen lassen will.",
+      "path": "verwaltungsrecht/skills/fortsetzungsfeststellungsklage/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "fortsetzungsfeststellungsklage",
+        "§113",
+        "vwgo",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nebenbestimmungen",
+      "description": "Prüfung von Nebenbestimmungen zum Verwaltungsakt nach § 36 VwVfG (Befristung, Bedingung, Auflage, Widerrufsvorbehalt, Auflagenvorbehalt) und ihres Rechtsschutzes, insbesondere der isolierten Anfechtbarkeit der Auflage. Use when ein begünstigender Verwaltungsakt mit einer belastenden Nebenbestimmung versehen ist und nur die Nebenbestimmung beseitigt werden soll.",
+      "path": "verwaltungsrecht/skills/nebenbestimmungen/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "nebenbestimmungen",
+        "§36",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "normenkontrolle",
+      "description": "Prüfung des prinzipalen Normenkontrollantrags nach § 47 VwGO vor dem Oberverwaltungsgericht gegen untergesetzliche Normen (insbesondere Bebauungspläne und Satzungen): Statthaftigkeit, Antragsbefugnis und Antragsfrist von einem Jahr. Use when ein untergesetzliches Regelwerk wie ein Bebauungsplan oder eine kommunale Satzung unmittelbar angegriffen werden soll.",
+      "path": "verwaltungsrecht/skills/normenkontrolle/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "normenkontrolle",
+        "§47",
+        "vwgo",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ruecknahme-widerruf-va",
+      "description": "Aufhebung bestandskräftiger Verwaltungsakte durch die Behörde: Rücknahme rechtswidriger VA § 48 VwVfG (Vertrauensschutz, Jahresfrist) und Widerruf rechtmäßiger VA § 49 VwVfG. Use when eine Behörde einen bereits erlassenen Verwaltungsakt aufheben will und die Bestandskraft durchbrochen werden soll.",
+      "path": "verwaltungsrecht/skills/ruecknahme-widerruf-va/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ruecknahme",
+        "widerruf",
+        "§48",
+        "§49",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verpflichtungsklage",
+      "description": "Verpflichtungsklage auf Erlass eines abgelehnten oder unterlassenen Verwaltungsakts. Klagebefugnis § 42 VwGO, Vorverfahren § 68 VwGO, Klagefrist § 74 VwGO, Verpflichtungs- und Bescheidungsurteil § 113 VwGO. Use when ein Mandant einen Anspruch auf Erlass eines Verwaltungsakts durchsetzen will.",
+      "path": "verwaltungsrecht/skills/verpflichtungsklage/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verpflichtungsklage",
+        "§42",
+        "§68",
+        "§74",
+        "§113",
+        "vwgo",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verwaltungsvollstreckung",
+      "description": "Prüfung der Durchsetzung von Verwaltungsakten im gestreckten Vollstreckungsverfahren nach dem VwVG: Zwangsmittel § 6 VwVG, Ersatzvornahme § 10 VwVG, Zwangsgeld § 11 VwVG, unmittelbarer Zwang § 12 VwVG und Androhung § 13 VwVG. Use when eine Behörde einen vollziehbaren Verwaltungsakt zwangsweise durchsetzen will oder ein Betroffener gegen Zwangsmittel vorgehen möchte.",
+      "path": "verwaltungsrecht/skills/verwaltungsvollstreckung/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verwaltungsvollstreckung",
+        "§6",
+        "§10",
+        "§11",
+        "§12",
+        "§13",
+        "verwaltungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vorlaeufiger-rechtsschutz-80",
+      "description": "Vorläufiger Rechtsschutz gegen Verwaltungsakte nach § 80 VwGO. Aufschiebende Wirkung und ihre Ausnahmen (Abs. 2), Anordnung/Wiederherstellung durch das Gericht (Abs. 5), Drittbetroffene § 80a VwGO. Use when ein belastender VA sofort vollziehbar ist und der Suspensiveffekt gesichert oder hergestellt werden soll.",
+      "path": "verwaltungsrecht/skills/vorlaeufiger-rechtsschutz-80/SKILL.md",
+      "domain": "verwaltungsrecht",
+      "category": "verwaltungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vorlaeufiger",
+        "rechtsschutz",
+        "§80",
+        "§80a",
+        "vwgo",
+        "verwaltungsrecht"
       ],
       "tools": 0,
       "has_references": false,
