@@ -6,6 +6,21 @@ All notable changes to this project are documented here. Format follows
 ## [Unreleased]
 
 ### Added
+- **Thirty compliance/civil skills** bringing the last ten 1-skill areas to four
+  each: **bankrecht** (Widerruf Verbraucherdarlehen, Bürgschaft, Zahlungsdienst-
+  haftung), **betreuungsrecht** (Betreuerbestellung, Einwilligungsvorbehalt,
+  Vorsorgevollmacht/Patientenverfügung — post-2023 BGB-Reform), **csrd** (ESRS-
+  Berichtspflicht, EU-Taxonomie, Nachhaltigkeitsbericht-Prüfung), **lieferketten-
+  gesetz** (Präventions-/Abhilfemaßnahmen, Beschwerdeverfahren, BAFA-Bericht),
+  **dora** (Vorfallsmeldung, Resilienztests/TLPT, Drittparteienrisiko), **nis2**
+  (Risikomanagement, Anwendungsbereich, Geschäftsleitungshaftung — BSIG n.F. nach
+  NIS2UmsuCG), **dsa-dma** (Notice-and-Action, Beschwerde/Streitbeilegung, DMA-
+  Gatekeeper-Pflichten), **ki-vo-compliance** (verbotene KI-Praktiken Art. 5,
+  Transparenz Art. 50, GPAI Art. 53/55), **gewerblicher-rechtsschutz** (Marken-
+  anmeldung, Designschutz, Patentverletzung), **hinweisgeberschutz** (interne
+  Meldungsbearbeitung, Repressalienschutz, externe Meldung/Offenlegung). Counts:
+  **49 areas / 189 skills** (2,982 eval assertions, 189/189 passing). Fast-moving
+  CSRD/LkSG (EU Omnibus 2025/2026) and NIS2/BSIG items marked [unverifiziert - prüfen].
 - **Forty litigation/IT skills** taking four areas from one skill to eleven each:
   **strafrecht** (notwendige-verteidigung, durchsuchung-beschlagnahme,
   untersuchungshaft, akteneinsicht-verteidiger, beschuldigtenvernehmung,

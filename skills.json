@@ -1,12 +1,12 @@
 {
   "name": "ai-skills-german-law",
-  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 159 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 189 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
   "version": "0.2.0",
   "repository": "https://github.com/borghei/AI-Skills-German-Law",
   "website": "https://borghei.github.io/AI-Skills-German-Law",
   "author": "borghei",
   "license": "Apache-2.0 OR MIT",
-  "total_skills": 159,
+  "total_skills": 189,
   "updated": "2026-06-29",
   "domains": {
     "arbeitsrecht": {
@@ -76,7 +76,7 @@
       "desc": "Scheidung, Zugewinnausgleich, Unterhalt, Sorge- und Umgangsrecht"
     },
     "betreuungsrecht": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "Betreuungsrecht",
       "desc": "Reform 2023 (§§ 1814 ff. BGB), Jahresbericht § 1863, Vermögenssorge"
@@ -88,13 +88,13 @@
       "desc": "SaaS-Verträge, Outsourcing, Softwarelizenz, Open Source, Cloud-AVV"
     },
     "bankrecht": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "Bank- und Kapitalmarktrecht",
       "desc": "Verbraucherdarlehen §§ 491 ff. BGB, MiFID II, Anlageberatung"
     },
     "gewerblicher-rechtsschutz": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "Gewerblicher Rechtsschutz",
       "desc": "Marken (MarkenG), Designs (DesignG), UWG-Abmahnung"
@@ -112,43 +112,43 @@
       "desc": "Widerspruch §§ 68 ff. VwGO, Anfechtungs-/Verpflichtungsklage, § 80"
     },
     "ki-vo-compliance": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "EU KI-VO / AI Act",
       "desc": "VO (EU) 2024/1689 — Hochrisiko Art. 6, Betreiber Art. 26, GPAI"
     },
     "nis2": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "NIS2",
       "desc": "RL (EU) 2022/2555 / NIS2UmsuCG — Risikomanagement, 24h-Frühwarnung"
     },
     "hinweisgeberschutz": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "HinSchG",
       "desc": "Interne Meldestelle, Vertraulichkeit, Repressalienverbot, Pflicht ab 50 EE"
     },
     "lieferkettengesetz": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "LkSG",
       "desc": "Risikoanalyse, Präventionsmaßnahmen, Beschwerde § 8, BAFA-Bericht § 10"
     },
     "dora": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "DORA",
       "desc": "VO (EU) 2022/2554 — IKT-Risiko, Vorfälle Art. 19, TLPT, Drittparteienrisiko"
     },
     "dsa-dma": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "DSA / DMA",
       "desc": "VO (EU) 2022/2065 + 2022/1925 — Notice & Action, Statement of Reasons, Gatekeeper"
     },
     "csrd": {
-      "count": 1,
+      "count": 4,
       "tools": 0,
       "label": "CSRD / ESRS",
       "desc": "RL (EU) 2022/2464 — doppelte Wesentlichkeitsanalyse, Berichtspflichten 2024–28"
@@ -1381,6 +1381,46 @@
       "has_assets": false
     },
     {
+      "name": "betreuerbestellung",
+      "description": "Prüfung der Voraussetzungen einer rechtlichen Betreuung nach der Reform 2023. Erforderlichkeit und Vorrang anderer Hilfen § 1814 BGB, Bestimmung der Aufgabenbereiche § 1815 BGB, Betreuerauswahl § 1816 BGB. Use when geprüft wird, ob eine Betreuung erforderlich ist, welche Aufgabenbereiche zu bestimmen sind und wer als Betreuer auszuwählen ist.",
+      "path": "betreuungsrecht/skills/betreuerbestellung/SKILL.md",
+      "domain": "betreuungsrecht",
+      "category": "betreuungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "betreuerbestellung",
+        "§1814",
+        "§1815",
+        "§1816",
+        "bgb",
+        "betreuungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "einwilligungsvorbehalt",
+      "description": "Prüfung der Anordnung eines Einwilligungsvorbehalts § 1825 BGB (Reform 2023): Abwehr einer erheblichen Gefahr für Person oder Vermögen, Verhältnismäßigkeit, Reichweite und Ausnahmen. Use when geprüft wird, ob ein Einwilligungsvorbehalt angeordnet, beschränkt oder aufgehoben werden soll.",
+      "path": "betreuungsrecht/skills/einwilligungsvorbehalt/SKILL.md",
+      "domain": "betreuungsrecht",
+      "category": "betreuungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "einwilligungsvorbehalt",
+        "§1825",
+        "bgb",
+        "betreuungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "jahresbericht-1863-bgb",
       "description": "Jahresbericht des Betreuers an das Betreuungsgericht nach § 1863 BGB (Reform 2023). Pflichtinhalt: Bericht über persönliche Verhältnisse der betreuten Person, Vermögensentwicklung, geplante Maßnahmen. Pflichtbestandteile, Vorlagefrist, Abgrenzung zur Rechnungslegung § 1865 BGB. Use when ein beruflicher Betreuer den Jahresbericht erstellt oder die Vollständigkeit eines vorliegenden Berichts überprüft wird.",
       "path": "betreuungsrecht/skills/jahresbericht-1863-bgb/SKILL.md",
@@ -1395,6 +1435,28 @@
         "bgb",
         "§1863",
         "§1865",
+        "betreuungsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vorsorgevollmacht-patientenverfuegung",
+      "description": "Prüfung der Vorsorgeinstrumente nach der Reform 2023: Vorsorgevollmacht § 1820 BGB, Patientenverfügung § 1827 BGB (Behandlungswunsch, mutmaßlicher Wille), betreuungsgerichtliche Genehmigung gefährlicher Maßnahmen § 1829 BGB, Vorrang vor Betreuung. Use when eine Vorsorgevollmacht oder Patientenverfügung erstellt, ausgelegt oder ihre Reichweite gegenüber einer Betreuung geprüft wird.",
+      "path": "betreuungsrecht/skills/vorsorgevollmacht-patientenverfuegung/SKILL.md",
+      "domain": "betreuungsrecht",
+      "category": "betreuungsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vorsorgevollmacht",
+        "patientenverfuegung",
+        "§1820",
+        "§1827",
+        "§1829",
+        "bgb",
         "betreuungsrecht"
       ],
       "tools": 0,
@@ -1643,6 +1705,29 @@
       "has_assets": false
     },
     {
+      "name": "buergschaft-pruefung",
+      "description": "Prüfung einer Bürgschaft § 765 BGB auf Wirksamkeit. Schriftform § 766 BGB, Akzessorietät § 767 BGB, Einrede der Vorausklage § 771 BGB, Sittenwidrigkeit bei krasser finanzieller Überforderung naher Angehöriger § 138 BGB. Use when eine Bürgschaftserklärung auf Form und Sittenwidrigkeit geprüft oder die Inanspruchnahme eines Bürgen verteidigt wird.",
+      "path": "bankrecht/skills/buergschaft-pruefung/SKILL.md",
+      "domain": "bankrecht",
+      "category": "bankrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "buergschaft",
+        "pruefung",
+        "§765",
+        "§766",
+        "§767",
+        "§771",
+        "§138",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "kreditvertragspruefung",
       "description": "Prüfung von Verbraucherdarlehensverträgen nach §§ 491 ff. BGB. Informationspflichten und Pflichtangaben Art. 247 EGBGB, Widerrufsrecht §§ 495, 355 ff. BGB, vorzeitige Rückzahlung § 502 BGB mit Vorfälligkeitsentschädigung, Kopplungsverbote, AGB-Kontrolle. Use when ein Verbraucherdarlehensvertrag bewertet oder eine Forderung der Bank aus solchem Vertrag geprüft wird.",
       "path": "bankrecht/skills/kreditvertragspruefung/SKILL.md",
@@ -1665,6 +1750,86 @@
       "has_assets": false
     },
     {
+      "name": "widerruf-verbraucherdarlehen",
+      "description": "Prüfung des Widerrufs eines Verbraucherdarlehensvertrags § 491 BGB. Pflichtangaben § 492 BGB i.V.m. Art. 247 EGBGB, Widerrufsrecht § 495 BGB i.V.m. § 355 BGB, Fristbeginn § 356b BGB, Rückabwicklung § 357b BGB; fehlerhafte Widerrufsinformation („Widerrufsjoker\\\"). Use when ein Verbraucher den Widerruf eines Darlehensvertrags erwägt oder die Wirksamkeit einer Widerrufsbelehrung geprüft wird.",
+      "path": "bankrecht/skills/widerruf-verbraucherdarlehen/SKILL.md",
+      "domain": "bankrecht",
+      "category": "bankrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "widerruf",
+        "verbraucherdarlehen",
+        "§491",
+        "§492",
+        "§495",
+        "§355",
+        "§356b",
+        "§357b"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "zahlungsdiensthaftung",
+      "description": "Haftungsverteilung bei nicht autorisierten Zahlungsvorgängen. Zahlungsdiensterahmen § 675c BGB, Erstattungsanspruch bei nicht autorisiertem Zahlungsvorgang § 675u BGB, Haftung des Zahlers bei grober Fahrlässigkeit § 675v BGB. Use when eine unautorisierte Abbuchung, ein Phishing- oder Kartenmissbrauchsfall bewertet und die Haftung zwischen Bank und Kunde verteilt wird.",
+      "path": "bankrecht/skills/zahlungsdiensthaftung/SKILL.md",
+      "domain": "bankrecht",
+      "category": "bankrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "zahlungsdiensthaftung",
+        "§675c",
+        "§675u",
+        "§675v",
+        "bgb",
+        "bankrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "designschutz",
+      "description": "Prüfung der Schutzvoraussetzungen eines eingetragenen Designs nach §§ 2, 6, 11, 27 DesignG – Neuheit und Eigenart, Neuheitsschonfrist, Anmeldung beim DPMA, Schutzdauer, Nichtigkeit sowie Abgrenzung Designschutz vs. Markenschutz. Use when ein Mandant ein Produktdesign anmelden oder ein bestehendes eingetragenes Design auf Bestand und Verletzung prüfen will.",
+      "path": "gewerblicher-rechtsschutz/skills/designschutz/SKILL.md",
+      "domain": "gewerblicher-rechtsschutz",
+      "category": "gewerblicher-rechtsschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "designschutz",
+        "§§2",
+        "gewerblicher-rechtsschutz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "markenanmeldung",
+      "description": "Prüfung der Eintragungsfähigkeit und Anmeldestrategie einer Marke nach §§ 3, 8, 9, 32, 47 MarkenG – markenfähige Zeichen, absolute und relative Schutzhindernisse, Anmeldung beim DPMA, Waren- und Dienstleistungsverzeichnis (Nizza), Schutzdauer. Use when ein Mandant ein Zeichen als Marke anmelden will und Eintragungsfähigkeit, Klassifizierung und Anmeldestrategie zu klären sind.",
+      "path": "gewerblicher-rechtsschutz/skills/markenanmeldung/SKILL.md",
+      "domain": "gewerblicher-rechtsschutz",
+      "category": "gewerblicher-rechtsschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "markenanmeldung",
+        "§§3",
+        "gewerblicher-rechtsschutz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "markenrechtsverletzung-abmahnung",
       "description": "Außergerichtliche Abmahnung bei Markenrechtsverletzung nach §§ 14, 15 MarkenG. Pflichtinhalte (Verletzungshandlung, Markenschutz, Unterlassungsanspruch, Schadensersatz, Anwaltskosten), strafbewehrte Unterlassungserklärung, Reaktion auf Berechtigungsanfrage, Verjährung. Use when ein Markeninhaber einen Verletzer abmahnen will oder eine erhaltene Abmahnung auf Substantiierung und Reaktion zu prüfen ist.",
       "path": "gewerblicher-rechtsschutz/skills/markenrechtsverletzung-abmahnung/SKILL.md",
@@ -1677,6 +1842,26 @@
         "markenrechtsverletzung",
         "abmahnung",
         "§§14",
+        "gewerblicher-rechtsschutz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "patentverletzung-pruefung",
+      "description": "Verletzungsprüfung eines Patents nach §§ 9, 14, 139, 140b, 140c PatG – Wirkung des Patents, Bestimmung des Schutzbereichs durch die Patentansprüche, wortsinngemäße vs. äquivalente Verletzung, Unterlassungs- und Schadensersatzanspruch, Auskunfts- und Besichtigungsanspruch. Use when zu prüfen ist, ob ein angegriffenes Erzeugnis oder Verfahren ein Patent verletzt und welche Ansprüche dem Patentinhaber zustehen.",
+      "path": "gewerblicher-rechtsschutz/skills/patentverletzung-pruefung/SKILL.md",
+      "domain": "gewerblicher-rechtsschutz",
+      "category": "gewerblicher-rechtsschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "patentverletzung",
+        "pruefung",
+        "§§9",
+        "patg",
         "gewerblicher-rechtsschutz"
       ],
       "tools": 0,
@@ -1975,6 +2160,27 @@
       "has_assets": false
     },
     {
+      "name": "gpai-pflichten",
+      "description": "Prüfung der Pflichten von Anbietern von KI-Modellen mit allgemeinem Verwendungszweck (GPAI) nach Art. 53 KI-VO und der Zusatzpflichten bei systemischem Risiko Art. 55 KI-VO – technische Dokumentation, Urheberrechtsstrategie, Praxisleitfäden (Codes of Practice). Use when ein Anbieter eines GPAI-Modells (Foundation Model) seine Dokumentations-, Transparenz- und Risikopflichten nach der KI-VO bestimmen muss.",
+      "path": "ki-vo-compliance/skills/gpai-pflichten/SKILL.md",
+      "domain": "ki-vo-compliance",
+      "category": "ki-vo-compliance",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gpai",
+        "pflichten",
+        "art.53",
+        "art.55",
+        "ki-vo",
+        "ki-vo-compliance"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "hochrisiko-klassifizierung",
       "description": "Klassifizierung eines KI-Systems als Hochrisiko-System nach Art. 6 i.V.m. Anhang III KI-VO – Anwendungsbereiche, Ausnahmen Art. 6 Abs. 3, Kennzeichnung als Sicherheitsbauteil Anhang I, Folgepflichten. Use when ein Unternehmen prüft, ob sein KI-System unter die Hochrisiko-Regelungen der KI-VO fällt.",
       "path": "ki-vo-compliance/skills/hochrisiko-klassifizierung/SKILL.md",
@@ -1987,6 +2193,47 @@
         "hochrisiko",
         "klassifizierung",
         "art.6",
+        "ki-vo",
+        "ki-vo-compliance"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ki-transparenzpflichten",
+      "description": "Prüfung der Transparenzpflichten nach Art. 50 KI-VO – Offenlegung der KI-Interaktion, Kennzeichnung synthetischer Inhalte und Deepfakes, Information bei Emotionserkennung und biometrischer Kategorisierung samt Bußgeldrisiko Art. 99 KI-VO. Use when ein Anbieter oder Betreiber eines KI-Systems prüfen muss, ob und wie er Nutzer über KI-Einsatz oder KI-generierte Inhalte informieren und kennzeichnen muss.",
+      "path": "ki-vo-compliance/skills/ki-transparenzpflichten/SKILL.md",
+      "domain": "ki-vo-compliance",
+      "category": "ki-vo-compliance",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "transparenzpflichten",
+        "art.50",
+        "art.99",
+        "ki-vo",
+        "ki-vo-compliance"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verbotene-ki-praktiken",
+      "description": "Prüfung der verbotenen KI-Praktiken nach Art. 5 KI-VO – manipulative und ausnutzende Systeme, Social Scoring, biometrische Echtzeit-Fernidentifizierung, Ausnahmen und Bußgeldrisiko Art. 99 KI-VO. Use when ein Unternehmen oder eine Behörde prüfen muss, ob ein geplantes oder eingesetztes KI-System unter die Verbotstatbestände der KI-VO fällt.",
+      "path": "ki-vo-compliance/skills/verbotene-ki-praktiken/SKILL.md",
+      "domain": "ki-vo-compliance",
+      "category": "ki-vo-compliance",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verbotene",
+        "praktiken",
+        "art.5",
+        "art.99",
         "ki-vo",
         "ki-vo-compliance"
       ],
@@ -2008,6 +2255,110 @@
         "24h",
         "art.23",
         "nis2"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nis2-anwendungsbereich",
+      "description": "Betroffenheitsprüfung und Registrierung nach NIS2 / neuem BSIG – wesentliche und wichtige Einrichtungen Art. 3 NIS2-RL / § 28 BSIG, Sektoren nach Anhang I/II, Größenschwellen sowie Registrierungspflicht §§ 33/34 BSIG. Use when eine Einrichtung klären muss, ob sie unter NIS2 fällt und sich beim BSI registrieren muss.",
+      "path": "nis2/skills/nis2-anwendungsbereich/SKILL.md",
+      "domain": "nis2",
+      "category": "nis2",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "nis2",
+        "anwendungsbereich",
+        "§28",
+        "§§33",
+        "art.3"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nis2-geschaeftsleitung-haftung",
+      "description": "Leitungsverantwortung und Haftung nach NIS2 / neuem BSIG – Billigung, Überwachung und Schulungspflicht der Geschäftsleitung Art. 20 NIS2-RL / § 38 BSIG, Verzahnung mit den Risikomaßnahmen § 30 BSIG und das Bußgeld § 65 BSIG. Use when die Geschäftsleitung ihre persönlichen Pflichten und ihr Haftungsrisiko unter dem neuen BSIG bewerten muss.",
+      "path": "nis2/skills/nis2-geschaeftsleitung-haftung/SKILL.md",
+      "domain": "nis2",
+      "category": "nis2",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "nis2",
+        "geschaeftsleitung",
+        "haftung",
+        "§38",
+        "§30",
+        "§65",
+        "art.20"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nis2-risikomanagement",
+      "description": "Aufbau der Risikomanagementmaßnahmen nach NIS2 / neuem BSIG – All-Hazards-Ansatz und die zehn Mindestmaßnahmen Art. 21 NIS2-RL / § 30 BSIG, Verhältnismäßigkeit, Verzahnung mit Leitungspflichten § 38 BSIG. Use when eine besonders wichtige oder wichtige Einrichtung ihre technischen und organisatorischen Maßnahmen nach dem neuen BSIG aufsetzt oder eine Gap-Analyse durchführt.",
+      "path": "nis2/skills/nis2-risikomanagement/SKILL.md",
+      "domain": "nis2",
+      "category": "nis2",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "nis2",
+        "risikomanagement",
+        "§30",
+        "§38",
+        "art.21"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "externe-meldung-offenlegung",
+      "description": "Externe Meldung und Offenlegung nach §§ 7, 19, 28, 32 HinSchG – Wahlrecht zwischen interner und externer Meldung, externe Meldestelle des Bundes beim Bundesamt für Justiz, Verfahren der externen Meldestelle, Voraussetzungen des Schutzes bei Offenlegung an die Öffentlichkeit. Use when ein Hinweisgeber zwischen interner und externer Meldung wählt oder prüfen will, ob eine Offenlegung gegenüber der Öffentlichkeit geschützt ist.",
+      "path": "hinweisgeberschutz/skills/externe-meldung-offenlegung/SKILL.md",
+      "domain": "hinweisgeberschutz",
+      "category": "hinweisgeberschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "externe",
+        "meldung",
+        "offenlegung",
+        "§§7",
+        "hinschg",
+        "hinweisgeberschutz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "interne-meldung-bearbeitung",
+      "description": "Bearbeitung einer eingegangenen internen Meldung durch die Meldestelle nach §§ 8, 13, 17, 18 HinSchG – Eingangsbestätigung binnen 7 Tagen, Prüfung der Stichhaltigkeit, Folgemaßnahmen, Rückmeldung binnen 3 Monaten, Vertraulichkeitsgebot und Dokumentation. Use when eine interne Meldestelle eine eingegangene Hinweisgebermeldung verfahrenskonform bearbeiten und fristgerecht beantworten muss.",
+      "path": "hinweisgeberschutz/skills/interne-meldung-bearbeitung/SKILL.md",
+      "domain": "hinweisgeberschutz",
+      "category": "hinweisgeberschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "interne",
+        "meldung",
+        "bearbeitung",
+        "§§8",
+        "hinschg",
+        "hinweisgeberschutz"
       ],
       "tools": 0,
       "has_references": false,
@@ -2037,6 +2388,92 @@
       "has_assets": false
     },
     {
+      "name": "repressalienschutz",
+      "description": "Schutz hinweisgebender Personen vor Benachteiligung nach §§ 33, 36, 37 HinSchG – Verbot von Repressalien, Beweislastumkehr nach § 36 Abs. 2 HinSchG, Schadensersatzanspruch des Hinweisgebers, Voraussetzungen des Schutzes. Use when ein Hinweisgeber nach einer Meldung eine berufliche Benachteiligung erleidet oder ein Arbeitgeber eine Personalmaßnahme gegen einen Hinweisgeber auf Repressalienrisiko prüfen lässt.",
+      "path": "hinweisgeberschutz/skills/repressalienschutz/SKILL.md",
+      "domain": "hinweisgeberschutz",
+      "category": "hinweisgeberschutz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "repressalienschutz",
+        "§§33",
+        "§36",
+        "hinschg",
+        "hinweisgeberschutz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "bafa-bericht-lksg",
+      "description": "Erfüllung der Dokumentationspflicht (§ 10 LkSG) und Berichtspflicht (§ 12 LkSG) sowie Vorbereitung auf die BAFA-Kontrolle und Anordnungen (§§ 14, 15 LkSG) und das Bußgeldrisiko (§ 24 LkSG), mit Ausblick auf die CSDDD-Schnittstelle. Use when ein Unternehmen seine Dokumentation/Berichterstattung an die BAFA aufsetzt oder sich auf eine behördliche Kontrolle oder ein Bußgeldverfahren vorbereitet.",
+      "path": "lieferkettengesetz/skills/bafa-bericht-lksg/SKILL.md",
+      "domain": "lieferkettengesetz",
+      "category": "lieferkettengesetz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "bafa",
+        "bericht",
+        "lksg",
+        "§10",
+        "§12",
+        "§§14",
+        "§24",
+        "lieferkettengesetz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "beschwerdeverfahren-lksg",
+      "description": "Einrichtung und Wirksamkeitsprüfung des Beschwerdeverfahrens nach § 8 LkSG – Verfahrensordnung, Zugänglichkeit, Vertraulichkeit und Schutz vor Benachteiligung sowie der anlassbezogene Bezug zu mittelbaren Zulieferern (§ 9 LkSG). Use when ein Beschwerdeverfahren aufgesetzt, überarbeitet oder auf seine Wirksamkeit geprüft werden soll.",
+      "path": "lieferkettengesetz/skills/beschwerdeverfahren-lksg/SKILL.md",
+      "domain": "lieferkettengesetz",
+      "category": "lieferkettengesetz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "beschwerdeverfahren",
+        "lksg",
+        "§8",
+        "§9",
+        "lieferkettengesetz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "praeventions-abhilfemassnahmen",
+      "description": "Ableitung und Priorisierung angemessener Präventionsmaßnahmen (§ 6 LkSG) und Abhilfemaßnahmen (§ 7 LkSG) im eigenen Geschäftsbereich und bei unmittelbaren Zulieferern, ausgehend von der Risikoanalyse (§ 5 LkSG) und dem Angemessenheitsmaßstab (§ 3 LkSG). Use when nach einer Risikoanalyse konkrete Präventions- oder Abhilfemaßnahmen festzulegen oder ein eingetretener Verstoß abzustellen ist.",
+      "path": "lieferkettengesetz/skills/praeventions-abhilfemassnahmen/SKILL.md",
+      "domain": "lieferkettengesetz",
+      "category": "lieferkettengesetz",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "praeventions",
+        "abhilfemassnahmen",
+        "§6",
+        "§7",
+        "§5",
+        "§3",
+        "lksg",
+        "lieferkettengesetz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "risikoanalyse-lksg",
       "description": "Risikoanalyse nach § 5 LkSG – Identifikation menschenrechtlicher und umweltbezogener Risiken im eigenen Geschäftsbereich und bei unmittelbaren Zulieferern; anlassbezogene Erweiterung auf mittelbare Zulieferer (§ 9 LkSG). Use when ein Unternehmen die jährliche Risikoanalyse aufsetzt oder ein anlassbezogenes Risiko bei einem mittelbaren Zulieferer eingegangen ist.",
       "path": "lieferkettengesetz/skills/risikoanalyse-lksg/SKILL.md",
@@ -2051,6 +2488,66 @@
         "§5",
         "§9",
         "lieferkettengesetz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dora-drittparteienrisiko",
+      "description": "Management des IKT-Drittparteienrisikos nach DORA – allgemeine Prinzipien und Informationsregister Art. 28 DORA, wesentliche Vertragsbestimmungen Art. 30 DORA, Behandlung kritischer IKT-Drittdienstleister im Überwachungsrahmen. Use when ein Finanzunternehmen eine IKT-Auslagerung bewertet, das Informationsregister aufbaut oder Verträge DORA-fest gestaltet.",
+      "path": "dora/skills/dora-drittparteienrisiko/SKILL.md",
+      "domain": "dora",
+      "category": "dora",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dora",
+        "drittparteienrisiko",
+        "art.28",
+        "art.30"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dora-resilienztests",
+      "description": "Aufbau eines DORA-Programms für Tests der digitalen operationalen Resilienz – allgemeine Testanforderungen Art. 24 DORA, Testmethoden Art. 25 DORA, bedrohungsorientierte Penetrationstests (TLPT) Art. 26 DORA, Anforderungen an Tester Art. 27 DORA. Use when ein Finanzunternehmen sein Testprogramm aufsetzt oder klärt, ob es zur TLPT verpflichtet ist.",
+      "path": "dora/skills/dora-resilienztests/SKILL.md",
+      "domain": "dora",
+      "category": "dora",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dora",
+        "resilienztests",
+        "art.24",
+        "art.25",
+        "art.26",
+        "art.27"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dora-vorfallsmeldung",
+      "description": "Klassifizierung und Meldung IKT-bezogener Vorfälle nach DORA – Behandlungsprozess Art. 17 DORA, Klassifizierung Art. 18 DORA, Meldung schwerwiegender Vorfälle Art. 19 DORA mit der Fristenkaskade 4h/72h/1 Monat. Use when ein Finanzunternehmen einen IKT-Vorfall klassifizieren und die Meldekette an die zuständige Behörde aufsetzen muss.",
+      "path": "dora/skills/dora-vorfallsmeldung/SKILL.md",
+      "domain": "dora",
+      "category": "dora",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dora",
+        "vorfallsmeldung",
+        "art.17",
+        "art.18",
+        "art.19"
       ],
       "tools": 0,
       "has_references": false,
@@ -2080,6 +2577,73 @@
       "has_assets": false
     },
     {
+      "name": "dma-gatekeeper-pflichten",
+      "description": "Prüfung der Torwächter-Benennung Art. 3 DMA und des Pflichtenkatalogs Art. 5 DMA und Art. 6 DMA (Verbot der Selbstbevorzugung, Datennutzung, Interoperabilität) sowie der Interoperabilität von Kommunikationsdiensten Art. 7 DMA – samt Durchsetzung. Use when ein Unternehmen prüft, ob es als Gatekeeper benannt ist oder wird, oder welche Verhaltenspflichten der DMA seinem zentralen Plattformdienst auferlegt.",
+      "path": "dsa-dma/skills/dma-gatekeeper-pflichten/SKILL.md",
+      "domain": "dsa-dma",
+      "category": "dsa-dma",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dma",
+        "gatekeeper",
+        "pflichten",
+        "art.3",
+        "art.5",
+        "art.6",
+        "art.7",
+        "dsa-dma"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dsa-beschwerde-streitbeilegung",
+      "description": "Rechtsbehelfe gegen Inhaltsmoderation nach DSA – internes Beschwerdemanagementsystem Art. 20 DSA, außergerichtliche Streitbeilegung Art. 21 DSA, vorrangige Bearbeitung von Meldungen vertrauenswürdiger Hinweisgeber Art. 22 DSA. Use when ein Nutzer gegen eine Moderationsentscheidung vorgehen will oder eine Plattform ihr Beschwerde- und Streitbeilegungssystem DSA-konform aufsetzen muss.",
+      "path": "dsa-dma/skills/dsa-beschwerde-streitbeilegung/SKILL.md",
+      "domain": "dsa-dma",
+      "category": "dsa-dma",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dsa",
+        "beschwerde",
+        "streitbeilegung",
+        "art.20",
+        "art.21",
+        "art.22",
+        "dsa-dma"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dsa-notice-action",
+      "description": "Prüfung und Gestaltung des Melde- und Abhilfeverfahrens (Notice-and-Action) nach Art. 16 DSA samt Begründungspflicht Art. 17 DSA und Haftungsprivileg des Hosting-Anbieters Art. 6 DSA – Meldewege, Kenntniserlangung, Reaktionsfristen, Folgen für die Haftung. Use when ein Hosting-Anbieter oder eine Online-Plattform eine Meldung über (angeblich) rechtswidrige Inhalte erhält oder sein Meldesystem DSA-konform gestalten will.",
+      "path": "dsa-dma/skills/dsa-notice-action/SKILL.md",
+      "domain": "dsa-dma",
+      "category": "dsa-dma",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "dsa",
+        "notice",
+        "action",
+        "art.16",
+        "art.17",
+        "art.6",
+        "dsa-dma"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "dsa-statement-of-reasons",
       "description": "Erstellung eines DSA-konformen 'Statement of Reasons' nach Art. 17 DSA bei Inhaltsmoderations-Entscheidungen (Sperrung, Löschung, Demonetarisierung, Account-Sperre) – Inhaltsanforderungen, Bezug zu Allgemeinen Geschäftsbedingungen, Rechtsbehelfsbelehrung, DSA-Transparenzdatenbank. Use when ein Hosting-Anbieter oder eine Online-Plattform eine Inhalts-Restriktion gegenüber einem Nutzer kommuniziert.",
       "path": "dsa-dma/skills/dsa-statement-of-reasons/SKILL.md",
@@ -2094,6 +2658,66 @@
         "reasons",
         "art.17",
         "dsa-dma"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "esrs-berichtspflicht",
+      "description": "Bestimmung der Nachhaltigkeitsberichtspflicht nach CSRD-RL (EU) 2022/2464 und ihrer HGB-Umsetzung – wer ab welchem Geschäftsjahr nach welchen ESRS-Standards berichtet (Anwendungsbereich, Größenkriterien, Konzernebene, Zeitplan). Use when geklärt werden muss, ob und ab wann ein Unternehmen einen Nachhaltigkeitsbericht erstellen muss und welchen Inhalt dieser hat.",
+      "path": "csrd/skills/esrs-berichtspflicht/SKILL.md",
+      "domain": "csrd",
+      "category": "csrd",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "esrs",
+        "berichtspflicht",
+        "csrd",
+        "hgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "eu-taxonomie",
+      "description": "Einordnung von Wirtschaftstätigkeiten nach der Taxonomie-VO (EU) 2020/852 – Taxonomiefähigkeit und Taxonomiekonformität (Art. 3, sechs Umweltziele Art. 9, „Do no significant harm“) sowie Offenlegung der KPI Umsatz/CapEx/OpEx nach Art. 8. Use when ein Unternehmen seine taxonomiefähigen und -konformen Anteile bestimmen oder die Art.-8-Offenlegung vorbereiten muss.",
+      "path": "csrd/skills/eu-taxonomie/SKILL.md",
+      "domain": "csrd",
+      "category": "csrd",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "taxonomie",
+        "art.3",
+        "art.9",
+        "art.8",
+        "csrd"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nachhaltigkeitsbericht-pruefung",
+      "description": "Vorbereitung und Durchführung der externen Prüfung der Nachhaltigkeitsberichterstattung nach CSRD-RL (EU) 2022/2464 – Prüferbestellung, Prüfungsumfang (limited assurance), ESRS-Konformität und Verbindung zum Lagebericht (§ 289b HGB). Use when ein CSRD-pflichtiges Unternehmen die Prüfung seines Nachhaltigkeitsberichts beauftragt oder den Prüfungsumfang klären muss.",
+      "path": "csrd/skills/nachhaltigkeitsbericht-pruefung/SKILL.md",
+      "domain": "csrd",
+      "category": "csrd",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "nachhaltigkeitsbericht",
+        "pruefung",
+        "§289b",
+        "csrd",
+        "esrs",
+        "hgb"
       ],
       "tools": 0,
       "has_references": false,
