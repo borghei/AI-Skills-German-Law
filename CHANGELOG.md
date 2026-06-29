@@ -6,6 +6,16 @@ All notable changes to this project are documented here. Format follows
 ## [Unreleased]
 
 ### Added
+- **Eight more deepen skills** in four core civil/tax areas (each at one skill
+  before): `erbrecht/pflichtteil-pruefung` (§§ 2303 ff. BGB) and
+  `erbrecht/gesetzliche-erbfolge` (§§ 1924 ff., § 1931, § 1371 BGB);
+  `familienrecht/ehegattenunterhalt` (§§ 1361, 1569 ff. BGB) and
+  `familienrecht/kindesunterhalt` (§§ 1601 ff., § 1612a BGB, Düsseldorfer Tabelle);
+  `gesellschaftsrecht/gesellschafterbeschluss-anfechtung` (§§ 47/51 GmbHG, analog
+  §§ 241/243/246 AktG) and `gesellschaftsrecht/kapitalerhaltung` (§§ 30/31 GmbHG);
+  `steuerrecht/einspruch-finanzamt` (§§ 347 ff. AO) and `steuerrecht/selbstanzeige`
+  (§§ 371, 398a AO). Counts: **49 areas / 119 skills** (2,004 eval assertions,
+  119/119 passing).
 - **New area — Wohnungseigentumsrecht (WEG, post-WEMoG)**: a standalone plugin with
   three skills — `beschlussanfechtung` (Anfechtungsklage gegen die Gemeinschaft der
   Wohnungseigentümer §§ 44/45 WEG, Nichtigkeit vs. Anfechtbarkeit § 23 WEG,

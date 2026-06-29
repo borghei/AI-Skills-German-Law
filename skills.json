@@ -1,12 +1,12 @@
 {
   "name": "ai-skills-german-law",
-  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 111 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 119 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
   "version": "0.2.0",
   "repository": "https://github.com/borghei/AI-Skills-German-Law",
   "website": "https://borghei.github.io/AI-Skills-German-Law",
   "author": "borghei",
   "license": "Apache-2.0 OR MIT",
-  "total_skills": 111,
+  "total_skills": 119,
   "updated": "2026-06-29",
   "domains": {
     "arbeitsrecht": {
@@ -40,7 +40,7 @@
       "desc": "Beschlussanfechtung §§ 44/45, Hausgeld/Jahresabrechnung § 28, bauliche Veränderung §§ 20/21 — post-WEMoG"
     },
     "gesellschaftsrecht": {
-      "count": 1,
+      "count": 3,
       "tools": 0,
       "label": "Gesellschaftsrecht",
       "desc": "GmbH-Recht, Geschäftsführerhaftung, AG-Grundzüge, Umwandlungen"
@@ -64,13 +64,13 @@
       "desc": "Klageschrift §§ 253 ff. ZPO, Beweisantritt, Zuständigkeit, Rechtsmittel"
     },
     "erbrecht": {
-      "count": 1,
+      "count": 3,
       "tools": 0,
       "label": "Erbrecht",
       "desc": "Testament, Erbvertrag, Pflichtteil §§ 2303 ff. BGB, Erbschein, Erbschaftsteuer"
     },
     "familienrecht": {
-      "count": 1,
+      "count": 3,
       "tools": 0,
       "label": "Familienrecht",
       "desc": "Scheidung, Zugewinnausgleich, Unterhalt, Sorge- und Umgangsrecht"
@@ -100,7 +100,7 @@
       "desc": "Marken (MarkenG), Designs (DesignG), UWG-Abmahnung"
     },
     "steuerrecht": {
-      "count": 1,
+      "count": 3,
       "tools": 0,
       "label": "Steuerrecht",
       "desc": "AO Außenprüfung, Einspruch §§ 347 ff. AO, Selbstanzeige § 371, FGO"
@@ -607,6 +607,29 @@
       "has_assets": false
     },
     {
+      "name": "gesellschafterbeschluss-anfechtung",
+      "description": "Prüfung der Anfechtung und Nichtigkeit von GmbH-Gesellschafterbeschlüssen – Beschlussfassung § 47 GmbHG, Stimmverbote § 47 Abs. 4 GmbHG, Einberufung und Ankündigung § 51 GmbHG, Beschlussmängelrecht in analoger Anwendung der §§ 241, 243, 246 AktG (Nichtigkeit, Anfechtbarkeit, Anfechtungsfrist). Use when ein GmbH-Gesellschafter einen Beschluss der Gesellschafterversammlung auf Nichtigkeit oder Anfechtbarkeit prüfen oder eine Beschlussmängelklage erheben will.",
+      "path": "gesellschaftsrecht/skills/gesellschafterbeschluss-anfechtung/SKILL.md",
+      "domain": "gesellschaftsrecht",
+      "category": "gesellschaftsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gesellschafterbeschluss",
+        "anfechtung",
+        "§47",
+        "§51",
+        "§§241",
+        "gmbhg",
+        "aktg",
+        "gesellschaftsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "gmbh-geschaeftsfuehrerhaftung",
       "description": "Prüfung der zivilrechtlichen Geschäftsführerhaftung gegenüber der GmbH (§ 43 GmbHG), der Außenhaftung in der Krise (§ 64 GmbHG / § 15b InsO) und der Insolvenzantragspflicht (§ 15a InsO). Use when ein Geschäftsführer in Anspruch genommen wird oder eine Gesellschaft Regressansprüche gegen einen ausgeschiedenen GF prüft.",
       "path": "gesellschaftsrecht/skills/gmbh-geschaeftsfuehrerhaftung/SKILL.md",
@@ -624,6 +647,27 @@
         "§15a",
         "gmbhg",
         "inso"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kapitalerhaltung",
+      "description": "Prüfung der GmbH-Kapitalerhaltung – Verbot der Auszahlung des zur Erhaltung des Stammkapitals erforderlichen Vermögens § 30 GmbHG, Rückgewähranspruch § 31 GmbHG, Unterbilanz und bilanzielle Betrachtung, Cash-Pooling und Upstream-Sicherheiten, Geschäftsführerhaftung § 43 Abs. 3 GmbHG, Abgrenzung zur Insolvenzverschleppung. Use when geprüft werden soll, ob eine Leistung der GmbH an einen Gesellschafter gegen die Kapitalerhaltung verstößt.",
+      "path": "gesellschaftsrecht/skills/kapitalerhaltung/SKILL.md",
+      "domain": "gesellschaftsrecht",
+      "category": "gesellschaftsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kapitalerhaltung",
+        "§30",
+        "§31",
+        "§43",
+        "gmbhg",
+        "gesellschaftsrecht"
       ],
       "tools": 0,
       "has_references": false,
@@ -756,6 +800,51 @@
       "has_assets": false
     },
     {
+      "name": "gesetzliche-erbfolge",
+      "description": "Bestimmung der gesetzlichen Erbfolge und der Erbquoten im deutschen Erbrecht – Ordnungssystem §§ 1924–1930 BGB, Repräsentations- und Eintrittsprinzip, Ehegattenerbrecht § 1931 BGB, güterstandsabhängige Erhöhung § 1371 BGB (Zugewinngemeinschaft), Verwandte der ersten bis dritten Ordnung. Use when bei einem Erbfall ohne (wirksames) Testament die gesetzlichen Erben und ihre Quoten zu bestimmen sind.",
+      "path": "erbrecht/skills/gesetzliche-erbfolge/SKILL.md",
+      "domain": "erbrecht",
+      "category": "erbrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gesetzliche",
+        "erbfolge",
+        "§§1924",
+        "§1931",
+        "§1371",
+        "bgb",
+        "erbrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "pflichtteil-pruefung",
+      "description": "Prüfung und Berechnung des Pflichtteils im deutschen Erbrecht – Pflichtteilsanspruch § 2303 BGB, Pflichtteilsquote (halber gesetzlicher Erbteil), Nachlassbewertung § 2311 BGB, Zusatz- und Ergänzungsansprüche §§ 2305, 2325 BGB, Auskunftsanspruch § 2314 BGB, Verjährung § 2332 BGB. Use when ein enterbter Pflichtteilsberechtigter seinen Anspruch geltend macht oder ein Erbe ein Pflichtteilsverlangen prüft.",
+      "path": "erbrecht/skills/pflichtteil-pruefung/SKILL.md",
+      "domain": "erbrecht",
+      "category": "erbrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "pflichtteil",
+        "pruefung",
+        "§2303",
+        "§2311",
+        "§§2305",
+        "§2314",
+        "§2332",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "testament-pruefung",
       "description": "Prüfung eines Testaments auf formelle Wirksamkeit (eigenhändig § 2247 BGB oder notariell § 2232 BGB), Testierfähigkeit § 2229 BGB, Auslegung §§ 133, 2084 BGB, Wechselwirkung mit Pflichtteil §§ 2303 ff. BGB und Erbvertrag. Use when ein Testament auf Wirksamkeit, Anfechtbarkeit oder Pflichtteilsfolge geprüft wird.",
       "path": "erbrecht/skills/testament-pruefung/SKILL.md",
@@ -772,6 +861,51 @@
         "§2229",
         "§§133",
         "§§2303",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ehegattenunterhalt",
+      "description": "Prüfung und Berechnung des Ehegattenunterhalts – Trennungsunterhalt § 1361 BGB, nachehelicher Unterhalt und Unterhaltstatbestände §§ 1569–1576 BGB, Bedarf nach den ehelichen Lebensverhältnissen § 1578 BGB, Leistungsfähigkeit und Selbstbehalt, Befristung und Herabsetzung § 1578b BGB, Erwerbsobliegenheit. Use when nach Trennung oder Scheidung Anspruch, Höhe und Dauer des Ehegattenunterhalts zu prüfen sind.",
+      "path": "familienrecht/skills/ehegattenunterhalt/SKILL.md",
+      "domain": "familienrecht",
+      "category": "familienrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ehegattenunterhalt",
+        "§1361",
+        "§§1569",
+        "§1578",
+        "§1578b",
+        "bgb",
+        "familienrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kindesunterhalt",
+      "description": "Prüfung und Berechnung des Kindesunterhalts – Verwandtenunterhalt §§ 1601 ff. BGB, gesteigerte Erwerbsobliegenheit und Selbstbehalt § 1603 BGB, Mindestunterhalt § 1612a BGB nach der Düsseldorfer Tabelle, Kindergeldanrechnung § 1612b BGB, Rangfolge und Mangelfall § 1609 BGB, Bar- und Betreuungsunterhalt § 1606 BGB. Use when der Unterhalt für ein minderjähriges oder privilegiertes volljähriges Kind zu berechnen oder zu prüfen ist.",
+      "path": "familienrecht/skills/kindesunterhalt/SKILL.md",
+      "domain": "familienrecht",
+      "category": "familienrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kindesunterhalt",
+        "§§1601",
+        "§1603",
+        "§1612a",
+        "§1612b",
+        "§1609",
+        "§1606",
         "bgb"
       ],
       "tools": 0,
@@ -898,6 +1032,49 @@
         "§§90",
         "§201",
         "§162",
+        "steuerrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "einspruch-finanzamt",
+      "description": "Prüfung und Einlegung des Einspruchs gegen einen Steuerbescheid – Statthaftigkeit § 347 AO, Einspruchsfrist von einem Monat § 355 AO, Form und Inhalt § 357 AO, Aussetzung der Vollziehung § 361 AO, Verböserungsgefahr § 367 Abs. 2 AO, Bekanntgabe und Fristberechnung § 122 AO. Use when gegen einen Steuerbescheid oder einen anderen Verwaltungsakt der Finanzbehörde Einspruch geprüft oder eingelegt werden soll.",
+      "path": "steuerrecht/skills/einspruch-finanzamt/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "einspruch",
+        "finanzamt",
+        "§347",
+        "§355",
+        "§357",
+        "§361",
+        "§367",
+        "§122"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "selbstanzeige",
+      "description": "Prüfung der strafbefreienden Selbstanzeige bei Steuerhinterziehung – Wirksamkeitsvoraussetzungen und Vollständigkeitsgebot § 371 AO, Sperrgründe § 371 Abs. 2 AO (Prüfungsanordnung, Tatentdeckung, Bekanntgabe der Einleitung), fristgerechte Nachzahlung nebst Hinterziehungszinsen, Zuschlag und Absehen von Verfolgung § 398a AO, Abgrenzung zur Berichtigung § 153 AO. Use when eine strafbefreiende Selbstanzeige nach § 371 AO vorbereitet oder auf Wirksamkeit geprüft wird.",
+      "path": "steuerrecht/skills/selbstanzeige/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "selbstanzeige",
+        "§371",
+        "§398a",
+        "§153",
         "steuerrecht"
       ],
       "tools": 0,
