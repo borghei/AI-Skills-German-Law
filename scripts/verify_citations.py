@@ -673,7 +673,32 @@ VERIFICATION_HOSTS = (
     "rechtsprechung-im-internet.de",
     "hudoc.echr.coe.int",
     "jurisprudence.tas-cas.org",
+    "eur-lex.europa.eu",
+    "competition-cases.ec.europa.eu",
+    "servat.unibe.ch",
 )
+
+# Hosts that LOOK like a source but are not a Fundstellenbeleg under
+# CONVENTIONS.md. Five BVerfGE citations were sourced to Wikipedia and the
+# checker said nothing - they surfaced only on manual inventory. A citation
+# whose only link is one of these is worse than an unsourced one, because it
+# reads as verified.
+PSEUDO_SOURCE_HOSTS = (
+    "wikipedia.org",
+    "wikisource.org",
+    "juraforum.de",
+    "anwalt.de",
+    "haufe.de",
+    "beck-community",
+)
+
+
+def has_pseudo_source(line: str) -> bool:
+    """True if the line's only apparent source is a non-authoritative host."""
+    return (
+        any(h in line for h in PSEUDO_SOURCE_HOSTS)
+        and not any(h in line for h in VERIFICATION_HOSTS)
+    )
 
 
 def has_verification_source(line: str) -> bool:
@@ -698,6 +723,12 @@ def _scan_caselaw(line: str, lineno: int, source: str,
                     source, lineno, "caselaw", az, Severity.INFO,
                     "case-law citation with verification marker (needs manual "
                     "verification, marker correctly present)",
+                ))
+            elif has_pseudo_source(line):
+                findings.append(Finding(
+                    source, lineno, "caselaw", az, Severity.WARN,
+                    "case-law citation sourced only to a non-authoritative host "
+                    "(Wikipedia o. ä.) — not a Fundstellenbeleg per CONVENTIONS.md",
                 ))
             elif verified:
                 findings.append(Finding(

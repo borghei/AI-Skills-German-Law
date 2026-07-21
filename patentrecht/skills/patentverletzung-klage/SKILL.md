@@ -109,7 +109,7 @@ Konzentrationsverordnungen weisen Patentstreitsachen einigen LG zu (insbesondere
 
 #### 7.2 UPC (Einheitliches Patentgericht)
 
-Seit [01.06.2023](https://en.wikipedia.org/wiki/Unified_Patent_Court) zuständig für:
+Seit [01.06.2023](https://www.unified-patent-court.org/) zuständig für:
 
 - **Einheitspatente** (zwingend)
 - **EP-Bündelpatente** (validierte EP) während Übergangszeit (7 Jahre + Verlängerung) **nur, wenn kein Opt-out erklärt**

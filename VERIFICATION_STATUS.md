@@ -474,3 +474,64 @@ Diese fünf Positionen tragen kein Aktenzeichen und kein Datum; der dejure-Endpu
 **Vorher 25 Warnungen, nachher 0.** Alle 25 waren `caselaw`-Warnungen über unmarkierte Fallzitate; keine einzige betraf eine unbekannte Gesetzesabkürzung. Nach der heutigen Korrektur des Prüfskripts zählt ein Zitat mit Link auf eine autoritative Quelle (`VERIFICATION_HOSTS`) als verifiziert, weshalb jede angehängte dejure-URL eine Warnung in ein INFO überführt. Die Gesamtzahl der Zitate stieg von 231 auf 235 (`fluggastrechte-vo-261` 40 → 43 durch *Germanwings* und die Aufspaltung des Art.-8-Absatzes, `reiseruecktritt-insolvenzschutz` 55 → 56).
 
 `scripts/validate.py --area reise-fluggastrecht` läuft sauber, `scripts/eval.py --area reise-fluggastrecht` besteht 4/4 (104 Assertions). **Keine `test.md` musste geändert werden** — keine der vier Testdateien behauptete eines der korrigierten Zitate; die beiden Fehler standen ausschließlich in den Rechtsprechungslisten und im Researcher-Agenten.
+
+---
+
+## Residual-Durchgang — `kartellrecht` und `verfassungsrecht` (2026-07-21)
+
+**Dies ist ein Residual-Durchgang.** Beide Bereiche hatten in einer früheren Sitzung bereits einen Teildurchgang (kartellrecht 22 verifiziert / 5 markiert / 3 Fehler; verfassungsrecht 14 / 2 / 2). Geprüft wurden hier ausschließlich die Zitate, die jenen Durchgang **überlebt haben oder danach hinzugekommen sind** — 15 unmarkierte Fallzitate in `kartellrecht`, 12 in `verfassungsrecht`.
+
+Methode: ausschließlich `WebFetch` gegen `dejure.org` (Vernetzungs-Endpunkt `?Gericht=…&Datum=…&Aktenzeichen=…` sowie `?Text=<Az>`-Fallback) und `servat.unibe.ch` (DFR) für BVerfGE-Band/Seite-Zitate ohne Datum. **Keine WebSearch**, keine kostenpflichtige Datenbank. 24 Abrufe, gepaced, kein Rate-Limit (HTTP 420) erreicht.
+
+| Plugin | Geprüft | Verifiziert | Korrigiert | Weiter markiert |
+|---|---|---|---|---|
+| `kartellrecht` | 15 | 14 | 4 | 2 |
+| `verfassungsrecht` | 12 | 12 | 1 | 1 |
+| **Summe** | **27** | **26** | **5** | **3** |
+
+### Die 5 gefundenen Fehler
+
+| # | Wo | Fehler | Auflösung |
+|---|---|---|---|
+| 1 | `gwb-zusammenschluss-anmeldung`, Rspr.-Liste Nr. 3 + `agents/researcher.md` | **EuG, Urt. v. 28.05.2020 – T-399/16, CK Telecoms** als geltender Maßstab für „Marktabgrenzung, SIEC-Test" zitiert. Entscheidung, Datum und Az sind korrekt — aber sie wurde **im Rechtsmittel aufgehoben** (EuGH, Urt. v. 13.07.2023 – C-376/20 P; der Aufhebungsvermerk steht im dejure-Datensatz zu T-399/16). Ein aufgehobenes Urteil als geltenden Beweismaßstab zu zitieren ist die gefährlichste Variante der Fehlzuordnung: das Zitat besteht jede Existenzprüfung und ist trotzdem falsch | Zitat behalten, mit ⚠️-Aufhebungsvermerk und Verweis auf C-376/20 P in beiden Dateien. Marker verengt auf `[unverifiziert – Rechtsmittelentscheidung nicht eigenständig abgerufen]`, weil C-376/20 P nicht separat geladen wurde |
+| 2 | `gwb-zusammenschluss-anmeldung`, Rspr.-Liste Nr. 2 | **BGH, Beschl. v. 14.11.2017 – KVR 57/15, EDEKA/Tengelmann (Ministererlaubnis § 42 GWB)** — **zwei** Fehler in einer Zeile. (a) Das Az ist falsch; korrekt ist **KVR 57/16** (der frühere Durchgang hatte das vermutet, aber nicht auflösen können). (b) Der Gegenstand ist falsch: dejure führt die Entscheidung als *EDEKA/Kaiser's Tengelmann* zur **Befugnis des BKartA, Verstöße gegen das Vollzugsverbot zu untersagen** — nicht zur Ministererlaubnis nach § 42 GWB (über deren Anfechtung entschied das OLG Düsseldorf) | Az korrigiert, Gegenstand korrigiert, dejure-Beleg gesetzt, Marker entfernt. Der Hinweis auf die abweichende Zuständigkeit für die Ministererlaubnis steht jetzt ausdrücklich in der Zeile |
+| 3 | `marktbeherrschung-bewertung`, Rspr.-Liste Nr. 9 | **BGH, Beschl. v. 04.07.2023 – KVB 59/22, Amazon § 19a** — Datum und Az falsch. `?Text=`-Fallback: die Entscheidung ist **BGH, Beschl. v. 23.04.2024 – KVB 56/22**, *Amazon (Feststellung der überragenden marktübergreifenden Bedeutung)*. Der frühere Durchgang hatte das vermutet; hier wurde es belegt | korrigiert und verifiziert, Marker entfernt |
+| 4 | `kartellrecht/agents/researcher.md` | **Apple-§-19a-Verfahren als „KVB 61/19"** bezeichnet. Der dejure-Datensatz zu KVB 56/22 weist die Apple-Entscheidung als **BGH, Beschl. v. 18.03.2025 – KVB 61/23** aus | korrigiert; die Google- und Meta-Verfahren bleiben markiert, weil dafür kein Az abgerufen wurde |
+| 5 | `verfassungsbeschwerde`, Rspr.-Liste Nr. 4 | **BVerfGE 26, 246 als „Subsidiarität / Ingenieurgesetz"**. Datum und Az waren gar nicht angegeben und wurden über DFR ermittelt: BVerfG, Beschl. v. 25.06.1969 – 2 BvR 128/66. Die **Leitsätze betreffen jedoch die fehlende Bundesgesetzgebungskompetenz für das Ingenieurgesetz und Art. 2 I GG** — ein Subsidiaritäts-Bezug ist aus der Quelle nicht ersichtlich. Klassische Fehlzuordnung: reale Entscheidung, für einen Satz zitiert, den sie nicht trägt | Datum und Az ergänzt und belegt; die **Subsidiaritäts-Zuordnung** unter verengtem Marker `[unverifiziert – Einschlägigkeit für die Subsidiarität prüfen]` belassen statt still korrigiert. Kein Ersatzzitat erfunden |
+
+### Ergänzend behoben: Wikipedia als Fundstellenbeleg (`verfassungsrecht`)
+
+Fünf BVerfGE-Zitate waren auf **de.wikipedia.org** verlinkt (Apotheken-Urteil, Elfes, Volkszählung, Kruzifix, Lüth) — in `grundrechtspruefung/SKILL.md` an sieben Stellen und in `agents/researcher.md` gebündelt. Das verstößt gegen `CONVENTIONS.md` („Statut oder amtlicher Text … Primärquelle"): Wikipedia ist kein Fundstellenbeleg. Alle wurden durch **Gericht + Entscheidungsart + Datum + Aktenzeichen + amtliche Sammlung + dejure.org-Beleg** ersetzt. Keiner dieser Punkte war eine Warnung des Prüfskripts — sie fielen beim Inventarisieren auf.
+
+Zusätzlich mit Datum und Az versehen (vorher nur Band/Seite): BVerfGE 90, 22 = Beschl. v. 08.02.1994 – 1 BvR 1693/92; BVerfGE 21, 362 = Beschl. v. 02.05.1967 – 1 BvR 578/63; BVerfGE 26, 246 = Beschl. v. 25.06.1969 – 2 BvR 128/66. Damit sind zwei der beiden vom Vordurchgang übrig gelassenen `[Datum/Aktenzeichen unverifiziert]`-Marker aufgelöst.
+
+### Behandlung von Kommissionsentscheidungen (`kartellrecht`)
+
+Der Auftrag, `M.####`- und `AT.#####`-Nummern nicht als Rechtsprechung zu behandeln, wurde **strukturell** umgesetzt, nicht nur durch einen Marker — analog zur CAS-Trennung in `sportrecht`:
+
+- Die Liste in `gwb-zusammenschluss-anmeldung/SKILL.md` hieß „Rechtsprechung **und Behördenpraxis**" und führte BKartA- und KOM-Verfahren als Positionen 5 und 6 direkt unter EuGH- und BGH-Urteilen. Sie ist jetzt in **zwei** Abschnitte geteilt: „Rechtsprechung (staatliche Gerichte)" und „Behördenpraxis — **keine Gerichtsentscheidungen, getrennt zitieren**".
+- Der neue Abschnitt sagt ausdrücklich, dass Entscheidungen der Kommission und des BKartA **Verwaltungsentscheidungen** sind, in dejure/juris nicht als Rspr. geführt werden, keine Bindungswirkung nach § 33b GWB entfalten und nur über `competition-cases.ec.europa.eu` bzw. `bundeskartellamt.de` zu belegen sind.
+- **M.10262 → M.10188** für Illumina/GRAIL korrigiert (der Vordurchgang hatte die Abweichung nur vermerkt). Die Zeile behält einen Marker mit der Begründung, dass die Nummer **konstruktionsbedingt** nicht über dejure belegbar ist — kein Fehlschlag des Zitats, sondern Reichweitengrenze der Methode. Über dejure wurde für keine `M.`-Nummer ein Abruf versucht.
+
+### Behandlung bloßer BVerfGE-Band/Seite-Zitate (`verfassungsrecht`)
+
+Der Datum-Endpunkt von dejure ist bei einem reinen Sammlungszitat **strukturell blind** — ohne Datum gibt es keine Abfrage. Das ist keine Eigenschaft des Zitats, sondern der Methode. Gelöst wurde es über **`servat.unibe.ch` (DFR)**, wo die Band/Seite-Fundstelle direkt adressierbar ist (`/dfr/bv090022.html`) und der Kopf der Entscheidung Gericht, Entscheidungsart, Datum und Aktenzeichen ausweist. Alle drei so ermittelten Tripel wurden anschließend **unabhängig über dejure gegengeprüft** und stimmten überein. Empfehlung für künftige Durchgänge: bei BVerfGE-Zitaten ohne Datum zuerst DFR, dann dejure zur Bestätigung.
+
+### Was nicht erreicht wurde
+
+- **EuGH, Urt. v. 13.07.2023 – C-376/20 P** (Rechtsmittel CK Telecoms) wurde **nicht eigenständig abgerufen**. Die Aufhebung ist nur mittelbar belegt — über den Rechtsmittelvermerk im dejure-Datensatz zu T-399/16. Deshalb steht dort ein verengter Marker und keine Vollverifikation.
+- **Google- und Meta-§-19a-Verfahren** in `agents/researcher.md`: kein Aktenzeichen abgerufen, Marker bleibt.
+- **eur-lex.europa.eu** steht nicht in der `VERIFICATION_HOSTS`-Liste von `scripts/verify_citations.py`. Sämtliche EU-Zitate beider Skills trugen bereits eur-lex-Links und wurden trotzdem als unmarkiert gewarnt. Sie wurden deshalb auf **dejure.org** umgestellt — was zugleich die Sachprüfung ermöglichte, die eur-lex-Links allein nicht leisten. `eur-lex.europa.eu` und `competition-cases.ec.europa.eu` in die Allowlist aufzunehmen wäre sinnvoll; `verify_citations.py` lag außerhalb dieses Durchgangs und wurde nicht angefasst.
+
+### Zur Metrik
+
+Anders als in den vorangegangenen Durchgängen **sinkt** die Zahl hier, wie vom Auftrag erwartet — der heute reparierte Checker zählt ein Zitat mit Beleg aus der `VERIFICATION_HOSTS`-Allowlist als verifiziert:
+
+- `kartellrecht`: **15 → 0** Warnungen
+- `verfassungsrecht`: **12 → 0** Warnungen
+
+Beide Bereiche haben damit **null unmarkierte Fallzitate**. Die drei verbleibenden `[unverifiziert]`-Instanzen sind bewusst gesetzt (C-376/20 P nicht abgerufen; Subsidiaritäts-Zuordnung BVerfGE 26, 246; KOM-Fallnummern) und tragen jeweils eine Begründung im Text.
+
+Eine im Zuge der Korrektur neu entstandene Warnung (`§ 5 WiStG` — Abkürzung fehlt in der Statute-Map) wurde durch Ausschreiben als „Wirtschaftsstrafgesetz" beseitigt; reine Schreibweise, keine Inhaltsänderung.
+
+`validate.py` läuft für beide Bereiche sauber, `eval.py` besteht (kartellrecht 60 Checks, verfassungsrecht 59; 0 Fehler). **Keine `test.md` musste geändert werden** — keines der korrigierten Zitate wurde in einer Testdatei behauptet.
