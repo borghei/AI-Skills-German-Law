@@ -1,0 +1,11 @@
+{
+  "name": "wirtschafts-steuerstrafrecht",
+  "version": "0.2.0",
+  "description": "Wirtschafts- und Steuerstrafrecht aus Verteidiger- und Unternehmensperspektive – Steuerhinterziehung § 370 AO mit Kompensationsverbot § 370 Abs. 4 S. 3 AO, besonders schwerem Fall § 370 Abs. 3 AO und Verjährung §§ 376 AO, 78 StGB, leichtfertige Steuerverkürzung § 378 AO; Untreue § 266 StGB, Betrug § 263 StGB, Vorenthalten von Arbeitsentgelt § 266a StGB, Bestechlichkeit im geschäftlichen Verkehr § 299 StGB, Vermögensabschöpfung §§ 73 ff. StGB; Aufsichtspflichtverletzung § 130 OWiG und Verbandsgeldbuße § 30 OWiG; Internal Investigation mit § 97 StPO, § 26 BDSG, Art. 6 DSGVO und § 87 BetrVG. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

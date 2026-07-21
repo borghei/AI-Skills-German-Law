@@ -1,0 +1,11 @@
+{
+  "name": "m-a-transaktionsrecht",
+  "version": "0.2.0",
+  "description": "Unternehmenskauf aus deutscher Transaktionspraxis – Share Deal mit notarieller Form § 15 Abs. 3, 4 GmbHG, Gesellschafterliste § 40 GmbHG und Legitimations- sowie Gutglaubenswirkung § 16 GmbHG, selbständige Garantien § 311 Abs. 1 BGB mit De-minimis/Basket/Cap und Abbedingung der §§ 434 ff. BGB, Due Diligence mit Disclosure, Art. 6 Abs. 1 lit. f DSGVO und Gun-Jumping-Grenzen, Asset Deal mit Bestimmtheitsgrundsatz, § 613a BGB, § 25 HGB, § 75 AO und § 1 Abs. 1a UStG. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

@@ -3,10 +3,17 @@
 
 Checks every plugin/area for:
 - presence of `.claude-plugin/plugin.json` with required keys
-- presence of `README.md`, `agents/`, `skills/`, `tests/`
+- plugin `version` consistent across all areas and with skills.json
+- presence of `README.md` and `skills/`
 - every skill having `SKILL.md` with valid frontmatter
-- every skill having (or being marked as missing) a `test.md`
+- frontmatter `name` matching the directory name, in kebab-case
+- `agents:` frontmatter paths actually resolving to files
+- every skill having a `test.md`
 - citation-marker consistency (no [generiert] in client-facing skill bodies)
+
+Note: `agents/` and `tests/` directories are optional by design - not every area
+defines a researcher/drafter/reviewer triplet. Earlier versions of this docstring
+claimed they were required; they were never checked, and the claim was wrong.
 
 Exit code:
 - 0 on success
@@ -29,6 +36,29 @@ from pathlib import Path
 REQUIRED_PLUGIN_KEYS = {"name", "version", "description", "license"}
 REQUIRED_SKILL_FRONTMATTER = {"name", "description"}
 REPO_ROOT = Path(__file__).resolve().parents[1]
+
+SLUG_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
+
+# Amtliche Sammlungen and Fachzeitschriften that indicate a real case citation.
+# Used only by --strict. The previous check knew about NZA and NJW alone, which
+# made any GRUR-, BVerwGE- or BVerfGE-citing skill fail for no reason.
+CASELAW_REPORTERS = (
+    "NZA", "NJW", "NVwZ", "NStZ", "NZI", "NZG", "NZM", "NZS", "NJOZ",
+    "GRUR", "GRUR-RR", "WRP", "ZIP", "ZInsO", "WM", "MDR", "VersR", "DStR",
+    "BGHZ", "BGHSt", "BVerfGE", "BVerwGE", "BAGE", "BFHE", "BSGE",
+    "DNotZ", "MittBayNot", "FamRZ", "ZEV", "ErbR", "RVGreport", "AGS",
+)
+
+# A citation is either journal-style ("..., NZA 2020, 123") or an amtliche
+# Sammlung ("BVerfGE 7, 198"). Matching on a leading comma - as this check did
+# originally - misses every Sammlung cite, so anchor on reporter + number instead.
+CASELAW_RE = re.compile(
+    r"\b(?:" + "|".join(re.escape(r) for r in CASELAW_REPORTERS) + r")\s+\d",
+)
+# Aktenzeichen forms: "1 BvR 2019/22", "VIII ZR 185/14", "C-555/07".
+AZ_RE = re.compile(
+    r"\b(?:[IVXL]+|\d+)\s+[A-Za-zÄÖÜ]{1,5}\s*\d+/\d{2,4}\b|\bC-\d+/\d{2,4}\b"
+)
 
 AREAS = [
     "arbeitsrecht",
@@ -81,6 +111,14 @@ AREAS = [
     "kapitalmarktrecht",
     "kartellrecht",
     "cyber-resilience-act",
+    "immobilien-grundbuchrecht",
+    "zwangsvollstreckung",
+    "kostenrecht-rvg",
+    "wirtschafts-steuerstrafrecht",
+    "m-a-transaktionsrecht",
+    "vereins-stiftungs-gemeinnuetzigkeitsrecht",
+    "beamten-disziplinarrecht",
+    "reise-fluggastrecht",
 ]
 
 
@@ -162,6 +200,41 @@ def validate_skill(skill_dir: Path, strict: bool, errors: list[ValidationError])
         errors.append(
             ValidationError(skill_md, "skill-frontmatter", "description too short or empty")
         )
+    # The frontmatter `name` is the slug the skill is invoked by. If it drifts
+    # from the directory name the skill becomes unaddressable, and nothing else
+    # in the toolchain catches it.
+    declared = str(meta.get("name", "")).strip()
+    if declared and declared != skill_dir.name:
+        errors.append(
+            ValidationError(
+                skill_md,
+                "skill-frontmatter",
+                f"name '{declared}' does not match directory '{skill_dir.name}'",
+            )
+        )
+    if declared and not SLUG_RE.fullmatch(declared):
+        errors.append(
+            ValidationError(
+                skill_md, "skill-frontmatter",
+                f"name '{declared}' is not lower-case kebab-case",
+            )
+        )
+
+    # `agents:` frontmatter points at ../../agents/*.md. Those paths were never
+    # checked, so a skill could advertise a sub-agent chain that does not exist.
+    agents = meta.get("agents")
+    if isinstance(agents, dict):
+        for role, rel in agents.items():
+            target = (skill_dir / str(rel)).resolve()
+            if not target.exists():
+                errors.append(
+                    ValidationError(
+                        skill_md,
+                        "skill-frontmatter",
+                        f"agents.{role} points at missing file: {rel}",
+                    )
+                )
+
     if "[generiert" in body:
         errors.append(
             ValidationError(
@@ -170,7 +243,14 @@ def validate_skill(skill_dir: Path, strict: bool, errors: list[ValidationError])
                 "skill body contains a [generiert] marker — forbidden in client-facing skills",
             )
         )
-    if strict and "[unverifiziert" not in body and ", NZA " not in body and ", NJW " not in body:
+    # Strict mode wants evidence of case law. The old heuristic recognised only
+    # NZA and NJW, so a skill citing GRUR, BVerwGE or BVerfGE failed spuriously.
+    if (
+        strict
+        and "[unverifiziert" not in body
+        and not CASELAW_RE.search(body)
+        and not AZ_RE.search(body)
+    ):
         errors.append(
             ValidationError(
                 skill_md,
@@ -229,6 +309,56 @@ def main() -> int:
 
     for area in areas:
         validate_area(area, args.strict, errors)
+
+    # Catalog coverage: an area directory that exists but is not in AREAS is
+    # silently never validated and never eval'd. That is exactly how a new area
+    # ships unchecked, so make the omission loud.
+    if not args.area:
+        on_disk = {
+            p.name for p in REPO_ROOT.iterdir()
+            if p.is_dir() and (p / ".claude-plugin" / "plugin.json").exists()
+        }
+        unregistered = sorted(on_disk - set(AREAS))
+        for name in unregistered:
+            errors.append(
+                ValidationError(
+                    REPO_ROOT / name, "area",
+                    "area directory exists but is not listed in AREAS "
+                    "(scripts/validate.py and scripts/eval.py) — it is never checked",
+                )
+            )
+
+        # Version consistency across plugin.json files and skills.json.
+        versions: dict[str, list[str]] = {}
+        for area in AREAS:
+            pj = REPO_ROOT / area / ".claude-plugin" / "plugin.json"
+            if pj.exists():
+                try:
+                    v = json.loads(pj.read_text(encoding="utf-8")).get("version", "?")
+                except json.JSONDecodeError:
+                    continue
+                versions.setdefault(str(v), []).append(area)
+        catalog = REPO_ROOT / "skills.json"
+        if catalog.exists() and versions:
+            try:
+                cat_v = str(json.loads(catalog.read_text(encoding="utf-8")).get("version", "?"))
+            except json.JSONDecodeError:
+                cat_v = "?"
+            if len(versions) > 1:
+                detail = "; ".join(
+                    f"{v}: {len(a)} area(s)" for v, a in sorted(versions.items())
+                )
+                errors.append(
+                    ValidationError(catalog, "version", f"plugin versions disagree — {detail}")
+                )
+            elif cat_v not in versions:
+                only = next(iter(versions))
+                errors.append(
+                    ValidationError(
+                        catalog, "version",
+                        f"skills.json version {cat_v!r} != plugin.json version {only!r}",
+                    )
+                )
 
     if errors:
         print(f"FAIL — {len(errors)} validation error(s):")

@@ -1,6 +1,6 @@
 {
   "name": "berufsrecht-anwaltschaft",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Anwaltliches Berufsrecht – BRAO-Grundpflichtenprüfung (Verschwiegenheit § 43a II + § 203 StGB, Interessenkollision § 43a IV, Sachlichkeit § 43a III/§ 44, Werbung § 43b/§§ 6 ff. BORA, Auslagerung/KI § 43e, Vergütung § 49b, Fremdgeld § 43a V), FAO-Fortbildungsnachweis § 15 FAO inkl. Widerrufsverteidigung § 25 FAO, RDG-Abgrenzung erlaubter Rechtsdienstleistungen Nicht-Anwälte (§§ 1, 2, 5, 10 RDG, Inkasso, Legal-Tech). Mit Researcher/Drafter/Reviewer-Subagenten und Eval-Tests.",
   "license": "Apache-2.0 OR MIT",
   "author": {

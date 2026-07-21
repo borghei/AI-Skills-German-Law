@@ -257,6 +257,46 @@
       "name": "cyber-resilience-act",
       "source": "./cyber-resilience-act",
       "description": "EU Cyber Resilience Act – VO (EU) 2024/2847. Anwendungsbereichsprüfung (Produkt mit digitalen Elementen, Ausnahmen Art. 2, Rollenbestimmung, Verwalter quelloffener Software, Einstufung nach Anhang III/IV), Meldepflichten nach Art. 14 ab 11.09.2026 (24h-Frühwarnung, 72h-Vollmeldung, Abschlussbericht binnen 14 Tagen bzw. 1 Monat über die einheitliche Meldeplattform an CSIRT und ENISA), grundlegende Anforderungen nach Anhang I mit SBOM, Unterstützungszeitraum, technischer Dokumentation Anhang VII, Konformitätsbewertung Anhang VIII und CE-Kennzeichnung sowie koordinierte Schwachstellenoffenlegung und Schwachstellenmanagement."
+    },
+    {
+      "name": "immobilien-grundbuchrecht",
+      "source": "./immobilien-grundbuchrecht",
+      "description": "Immobilien- und Grundbuchrecht. Grundstückskaufvertrag § 311b BGB, Auflassung § 925, GBO §§ 13/19/29/39, Grundschuld §§ 1191 ff., Teilungserklärung § 8 WEG."
+    },
+    {
+      "name": "zwangsvollstreckung",
+      "source": "./zwangsvollstreckung",
+      "description": "Zwangsvollstreckung / ZVG. Titel-Klausel-Zustellung §§ 704 ff. ZPO, PfÜB §§ 829/835, P-Konto § 850k, Vermögensauskunft § 802c, ZVG §§ 15/44/81/180."
+    },
+    {
+      "name": "kostenrecht-rvg",
+      "source": "./kostenrecht-rvg",
+      "description": "Kostenrecht (RVG / GKG / PKH). Gegenstandswert §§ 22 f. RVG, VV 2300/3100/3104, Kostenfestsetzung §§ 103 ff. ZPO, Vergütungsvereinbarung § 3a RVG, PKH §§ 114 ff. ZPO."
+    },
+    {
+      "name": "wirtschafts-steuerstrafrecht",
+      "source": "./wirtschafts-steuerstrafrecht",
+      "description": "Wirtschafts- und Steuerstrafrecht. § 370 AO, §§ 263/266/266a/299 StGB, Verbandsgeldbuße §§ 30/130 OWiG, Einziehung §§ 73 ff. StGB, Internal Investigations."
+    },
+    {
+      "name": "m-a-transaktionsrecht",
+      "source": "./m-a-transaktionsrecht",
+      "description": "M&A / Transaktionsrecht. Share Deal § 15 III/IV GmbHG, Garantien § 311 I BGB, Due Diligence, Asset Deal mit § 613a BGB und § 25 HGB."
+    },
+    {
+      "name": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
+      "source": "./vereins-stiftungs-gemeinnuetzigkeitsrecht",
+      "description": "Vereins-, Stiftungs- und Gemeinnützigkeitsrecht. Verein §§ 21 ff. BGB, Stiftungsrecht §§ 80–88 BGB (Reform 2023), Gemeinnützigkeit §§ 51–68 AO, Spendenrecht § 10b EStG."
+    },
+    {
+      "name": "beamten-disziplinarrecht",
+      "source": "./beamten-disziplinarrecht",
+      "description": "Beamten- und Disziplinarrecht. Dienstvergehen § 47 BeamtStG, Disziplinarmaßnahmen §§ 5/13 BDG, Konkurrentenstreit Art. 33 II GG + § 123 VwGO, dienstliche Beurteilung."
+    },
+    {
+      "name": "reise-fluggastrecht",
+      "source": "./reise-fluggastrecht",
+      "description": "Reise- und Fluggastrecht. VO (EG) 261/2004 Art. 5/7/8/9, Pauschalreise §§ 651a ff. BGB, Rücktritt § 651h, Insolvenzabsicherung § 651r."
     }
   ]
 }

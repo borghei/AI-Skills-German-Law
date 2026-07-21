@@ -1,6 +1,6 @@
 {
   "name": "sportrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches Sportrecht – Verbands- und Vereinsrecht (BGB §§ 21 ff.), Verbands- und Schiedsgerichtsbarkeit (CAS Lausanne, DIS-Sportschiedsgericht, Pechstein-Linie), Anti-Doping (WADC, NADC, AntiDopG §§ 2–4), Athletenrecht (Spielerarbeitsvertrag, Persönlichkeitsrecht KUG, Vermarktung), Stadionverbot (§ 858/§ 1004 BGB) und Schnittstellen zu Kartell-/Wettbewerbsrecht (Bosman, Meca-Medina) sowie Sportwetten (GlüStV). Skills: dopingverfahren-verteidigung, vereinsrechtliche-sanktion, athletenvertrag. Mit Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

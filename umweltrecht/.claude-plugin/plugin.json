@@ -1,6 +1,6 @@
 {
   "name": "umweltrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches Umweltrecht – Immissionsschutz (BImSchG §§ 4–7, 17, 20; 4./9. BImSchV; TA Luft/Lärm), Abfallrecht (KrWG §§ 3, 6, 14, 17, 47), Wasserrecht (WHG §§ 8 ff.), Naturschutz (BNatSchG §§ 13 ff., 44 ff., 64), UVP (UVPG §§ 5, 7, 15, 18, 25; UmwRG § 4), Bodenschutz (BBodSchG). Industriegenehmigung, Stilllegung, behördliche Anordnungen, Verbandsklage. Mit Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

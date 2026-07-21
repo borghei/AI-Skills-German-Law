@@ -1,6 +1,6 @@
 {
   "name": "ki-governance",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "KI-Governance als Querschnittsdisziplin – Aufbau- und Ablauforganisation für den KI-Einsatz, Rollen, Lieferantenmanagement (AVV Art. 28 DSGVO, § 43e BRAO), Ethik-Leitplanken, ISO/IEC 42001 / 23894, NIST AI RMF, BSI AIC4. Skills: KI-Risikoassessment, KI-Monitoring-Konzept, KI-Richtlinien-Entwurf. Querschnitt zu DSGVO, Berufsrecht und Wettbewerbsrecht; gesetzliche KI-VO-Pflichten siehe Plugin ki-vo-compliance. Mit Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

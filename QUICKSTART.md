@@ -8,7 +8,7 @@ Get from zero to a working German legal AI skill in 60 seconds.
 # Add the marketplace
 /plugin marketplace add borghei/AI-Skills-German-Law
 
-# Install the area you need (replace with any of the 50 areas)
+# Install the area you need (replace with any of the 58 areas)
 /plugin install arbeitsrecht
 
 # Use it
@@ -55,7 +55,7 @@ Open any `SKILL.md` in the repo, copy the body (everything below the frontmatter
 
 ## Pick an area
 
-50 areas grouped by buyer persona (full catalog: [borghei.github.io/AI-Skills-German-Law/SKILLS](https://borghei.github.io/AI-Skills-German-Law/SKILLS/)):
+58 areas grouped by buyer persona (full catalog: [borghei.github.io/AI-Skills-German-Law/SKILLS](https://borghei.github.io/AI-Skills-German-Law/SKILLS/)):
 
 **German legal practice** (everyday Kanzlei work):
 `arbeitsrecht` · `datenschutzrecht` · `vertragsrecht` · `mietrecht` · `wohnungseigentumsrecht` · `gesellschaftsrecht` · `strafrecht` · `insolvenzrecht` · `prozessrecht` · `erbrecht` · `familienrecht` · `betreuungsrecht`

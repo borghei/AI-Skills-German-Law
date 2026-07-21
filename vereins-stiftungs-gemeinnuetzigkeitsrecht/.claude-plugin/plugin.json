@@ -1,0 +1,11 @@
+{
+  "name": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
+  "version": "0.2.0",
+  "description": "Recht der Non-Profit-Körperschaften – Vereinsgründung und Satzung §§ 21, 22, 26, 30–33, 56–60, 77 BGB mit Haftungsprivilegien §§ 31a, 31b BGB, Stiftungsrecht nach der Bundesreform §§ 80–88 BGB seit 01.01.2023 (Stiftungsgeschäft § 81, Anerkennung § 82, Grundstockvermögen §§ 83b, 83c, Business Judgment Rule § 84a Abs. 2 BGB, Zulegung/Zusammenlegung §§ 86 ff.), Gemeinnützigkeit §§ 51–68 AO mit Mustersatzung Anlage 1 zu § 60 AO und Vier-Sphären-Systematik, Spendenrecht § 10b EStG mit Aussteller- und Veranlasserhaftung. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

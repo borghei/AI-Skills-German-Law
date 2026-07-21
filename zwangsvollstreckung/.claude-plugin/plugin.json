@@ -1,0 +1,11 @@
+{
+  "name": "zwangsvollstreckung",
+  "version": "0.2.0",
+  "description": "Zwangsvollstreckung aus zivilrechtlichen Titeln in der Gläubiger- und Schuldnerperspektive – Vollstreckungsvoraussetzungen Titel, Klausel und Zustellung §§ 704, 724–727, 750 ZPO mit Rechtsbehelfen §§ 732, 765a, 766, 767 ZPO, Forderungspfändung §§ 829, 835, 840 ZPO mit Pfändungsschutz §§ 850a–850l ZPO und P-Konto, Sachpfändung §§ 803, 811, 811a ZPO nebst Vermögensauskunft § 802c und Schuldnerverzeichnis § 882b ZPO, Immobiliarvollstreckung nach ZVG einschließlich Teilungsversteigerung § 180 ZVG. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

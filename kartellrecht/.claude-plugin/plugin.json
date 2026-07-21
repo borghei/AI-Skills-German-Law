@@ -1,6 +1,6 @@
 {
   "name": "kartellrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches und EU-Kartellrecht aus Praxisperspektive – GWB Teile 1–3 (Kartellverbot § 1, Marktbeherrschung §§ 18 ff., Fusionskontrolle §§ 35 ff.) inkl. § 19a strukturmarktrelevante Unternehmen sowie Art. 101/102 AEUV und EU-FK-VO 139/2004. Skills: GWB-Zusammenschlussanmeldung beim BKartA mit Vollzugsverbot § 41, Kartellverbots-Prüfung § 1 GWB / Art. 101 AEUV inkl. Vertikal-GVO 2022/720 und Einzelausnahme § 2 GWB / Art. 101 III AEUV, Marktbeherrschungs- und Missbrauchsbewertung §§ 18, 19, 19a, 20 GWB / Art. 102 AEUV. Mit Researcher/Drafter/Reviewer-Subagenten. Abgrenzung zu Lauterkeitsrecht (Plugin wettbewerbsrecht/UWG) und DMA (Plugin dsa-dma).",
   "license": "Apache-2.0 OR MIT",
   "author": {

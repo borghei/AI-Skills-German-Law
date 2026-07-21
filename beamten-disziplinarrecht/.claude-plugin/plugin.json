@@ -1,0 +1,11 @@
+{
+  "name": "beamten-disziplinarrecht",
+  "version": "0.2.0",
+  "description": "Beamtenrecht und Disziplinarrecht vor dem Verwaltungsgericht – Dienstvergehen § 47 BeamtStG / § 77 BBG, behördliches Disziplinarverfahren §§ 17, 20, 24 BDG, Disziplinarmaßnahmen § 5 BDG und Bemessung § 13 BDG, Maßnahmeverbot wegen Zeitablaufs § 15 BDG, Bindungswirkung §§ 22, 23 BDG; Konkurrentenstreit Art. 33 Abs. 2 GG mit Bewerbungsverfahrensanspruch und einstweiliger Anordnung § 123 VwGO; dienstliche Beurteilung und Beurteilungsspielraum; Statusrecht §§ 11, 12, 14, 15, 26, 36, 40, 45 BeamtStG, Dienstunfall § 45 BeamtVG. Jede Skill trennt Bundes- und Landesbeamtenrecht in Schritt 1. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}
