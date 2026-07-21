@@ -32,6 +32,8 @@ jobs:
         # this gate, editing a generator or a SKILL.md without re-running the
         # build ships a stale site and a stale catalog, silently.
         run: |
+          # build_eval_config.py needs PyYAML; validate/eval/site are stdlib-only.
+          pip install --quiet -r requirements.txt
           python scripts/build_skills_json.py
           python scripts/generate_site.py
           python scripts/build_eval_config.py
