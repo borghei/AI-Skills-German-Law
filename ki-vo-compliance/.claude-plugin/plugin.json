@@ -1,8 +1,11 @@
 {
   "name": "ki-vo-compliance",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "EU KI-VO / EU AI Act (VO (EU) 2024/1689) – Hochrisiko-Klassifizierung Art. 6 + Anhang III, Betreiberpflichten Art. 26, Transparenzpflichten Art. 50, GPAI-Anbieterpflichten Art. 51 ff., Konformitätsbewertung, Sanktionen Art. 99.",
   "license": "Apache-2.0 OR MIT",
-  "author": {"name": "Borghei", "url": "https://github.com/borghei"},
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
   "homepage": "https://github.com/borghei/AI-Skills-German-Law"
 }

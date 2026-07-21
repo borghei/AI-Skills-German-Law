@@ -1,8 +1,11 @@
 {
   "name": "verfassungsrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches Verfassungsrecht – Grundgesetz, BVerfGG, Grundrechtsdogmatik, Organstreitigkeiten, Bund-Länder-Verhältnis. Verfassungsbeschwerde (Zulässigkeit §§ 90 ff. BVerfGG + Begründetheit), 3-Stufen-Grundrechtsprüfung mit Verhältnismäßigkeit, Abgrenzung Organstreit / Bund-Länder-Streit / abstrakte Normenkontrolle (Art. 93 GG).",
   "license": "Apache-2.0 OR MIT",
-  "author": {"name": "Borghei", "url": "https://github.com/borghei"},
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
   "homepage": "https://github.com/borghei/AI-Skills-German-Law"
 }

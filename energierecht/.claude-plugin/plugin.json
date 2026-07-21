@@ -1,6 +1,6 @@
 {
   "name": "energierecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches Energierecht aus Praxisperspektive – Netzanschluss nach §§ 17/18 EnWG und §§ 8 ff. EEG inkl. Konfliktfälle und BNetzA-Beschlussverfahren, EEG-Förderprüfung (Marktprämie, Inbetriebnahme, MaStR-Meldung, anzulegender Wert) und Energieeffizienzpflichten nach EnEfG/EDL-G (EnMS-Pflicht ab 7,5 GWh/a, Energieaudit Nicht-KMU, Schnittstelle GEG/CSRD). Mit Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

@@ -1,6 +1,6 @@
 {
   "name": "strafrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Strafrecht – Strafbefehl-Verteidigung (§§ 407 ff. StPO), Akteneinsicht und -aufbereitung, OWi-Verkehrsrecht, Beschuldigtenbelehrung § 136 StPO, Beweisverwertungsverbote.",
   "license": "Apache-2.0 OR MIT",
   "author": {

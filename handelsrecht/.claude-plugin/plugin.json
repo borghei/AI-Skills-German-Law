@@ -1,6 +1,6 @@
 {
   "name": "handelsrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches Handelsrecht (HGB) – Kaufmannseigenschaft und Handelsregister §§ 1–15 HGB inkl. Publizitätswirkung, Handelsvertretervertrag §§ 84 ff. HGB mit Provision und Ausgleichsanspruch § 89b, Besonderheiten des Handelsgeschäfts §§ 343 ff. HGB einschließlich kaufmännischer Untersuchungs- und Rügepflicht §§ 377/378 HGB. Mit Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

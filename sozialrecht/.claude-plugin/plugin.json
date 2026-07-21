@@ -1,6 +1,6 @@
 {
   "name": "sozialrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Sozialrecht – Sozialgesetzbuch I–XII, Sozialgerichtsverfahren (SGG), Sozialverwaltungsverfahren (SGB X). Bürgergeld-Anspruchsprüfung § 7 ff. SGB II, Renten nach SGB VI (Altersrente / Erwerbsminderungsrente §§ 35, 43), Widerspruch gegen Leistungsbescheid § 84 SGG. Mit Researcher/Drafter/Reviewer-Subagenten und Eval-Tests.",
   "license": "Apache-2.0 OR MIT",
   "author": {

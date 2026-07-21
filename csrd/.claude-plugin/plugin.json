@@ -1,8 +1,11 @@
 {
   "name": "csrd",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CSRD (Corporate Sustainability Reporting Directive, RL (EU) 2022/2464) und ESRS – Doppelte Wesentlichkeitsanalyse, Berichtspflichten, Prüfungspflichten, phasierte Anwendung 2024–2028, Vorbereitung für CSDDD.",
   "license": "Apache-2.0 OR MIT",
-  "author": {"name": "Borghei", "url": "https://github.com/borghei"},
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
   "homepage": "https://github.com/borghei/AI-Skills-German-Law"
 }

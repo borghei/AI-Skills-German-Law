@@ -1,8 +1,11 @@
 {
   "name": "dsa-dma",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "DSA / DMA – Digital Services Act (VO (EU) 2022/2065) und Digital Markets Act (VO (EU) 2022/1925). Pflichten von Hosting-Anbietern, Online-Plattformen, VLOPs, Gatekeepern; Notice-and-Action Art. 16 DSA, Statement of Reasons Art. 17, Risikobewertung Art. 34.",
   "license": "Apache-2.0 OR MIT",
-  "author": {"name": "Borghei", "url": "https://github.com/borghei"},
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
   "homepage": "https://github.com/borghei/AI-Skills-German-Law"
 }

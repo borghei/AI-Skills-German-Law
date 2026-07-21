@@ -1,6 +1,6 @@
 {
   "name": "urheber-medienrecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches Urheber- und Medienrecht – Urheberrechtsverletzung mit § 97a UrhG-Abmahnung und dreifacher Schadensberechnung, Lizenzvertrag mit Zweckübertragungslehre und angemessener Vergütung §§ 32, 32a UrhG, medienrechtliche Pflichtenprüfung nach MStV (Impressum § 18, Trennungsgebot, journalistisch-redaktionelle Sorgfaltspflichten, Gegendarstellung). Mit Researcher/Drafter/Reviewer-Subagenten. Schnittstellen UrhDaG, VGG, DSA, Landespressegesetze.",
   "license": "Apache-2.0 OR MIT",
   "author": {

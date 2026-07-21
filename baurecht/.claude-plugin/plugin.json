@@ -1,6 +1,6 @@
 {
   "name": "baurecht",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deutsches Baurecht aus Anwaltsperspektive – beide Säulen: (A) Privates Baurecht (BGB-Werkvertrag §§ 631 ff., Bauvertragsrecht 2018 §§ 650a–u, Verbraucherbauvertrag §§ 650i ff., Architektenvertrag §§ 650p ff., VOB/B als AGB inkl. Inhaltskontrolle, HOAI) – Mängelprüfung, Abnahme, Verjährung; (B) Öffentliches Baurecht (BauGB §§ 29–35 Vorhabenzulässigkeit, BauNVO, Landes-BauO) – Baugenehmigungsverfahren, Nachbarrechtsschutz und Eilrechtsschutz § 80a VwGO, § 212a BauGB. Mit Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {
