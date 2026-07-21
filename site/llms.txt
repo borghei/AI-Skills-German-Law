@@ -9,10 +9,11 @@ Author: Borghei
 
 ## What This Is
 
-A library of provider-neutral skills (Claude, Gemini, OpenAI) for German legal practice. Each skill ships
-with a researcher / drafter / reviewer sub-agent architecture, linked statute citations, and case-law marked
-verified or [unverifiziert -- prüfen]. Outputs are drafts for review by a licensed Rechtsanwalt under
-§ 43a BRAO and § 2 BORA.
+A library of provider-neutral skills (Claude, Gemini, OpenAI) for German legal practice. Each skill ships with a researcher / drafter / reviewer sub-agent architecture, linked statute citations, and case-law marked verified or [unverifiziert -- prüfen]. Outputs are drafts for review by a licensed Rechtsanwalt under § 43a BRAO and § 2 BORA.
+
+## Languages
+
+This document describes the English site tree at https://borghei.github.io/AI-Skills-German-Law/. A German tree with identical coverage is at https://borghei.github.io/AI-Skills-German-Law/de/ (llms.txt: https://borghei.github.io/AI-Skills-German-Law/de/llms.txt).
 
 ## How to Use
 

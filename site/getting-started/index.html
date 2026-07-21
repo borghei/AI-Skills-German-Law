@@ -6,10 +6,14 @@
   <title>Getting Started - AI Skills German Law</title>
   <meta name="description" content="Install AI Skills German Law and run your first skill in under a minute.">
   <link rel="canonical" href="https://borghei.github.io/AI-Skills-German-Law/getting-started/">
+  <link rel="alternate" hreflang="en" href="https://borghei.github.io/AI-Skills-German-Law/getting-started/">
+  <link rel="alternate" hreflang="de" href="https://borghei.github.io/AI-Skills-German-Law/de/getting-started/">
+  <link rel="alternate" hreflang="x-default" href="https://borghei.github.io/AI-Skills-German-Law/getting-started/">
   <meta property="og:title" content="Getting Started - AI Skills German Law">
   <meta property="og:description" content="Install AI Skills German Law and run your first skill in under a minute.">
   <meta property="og:url" content="https://borghei.github.io/AI-Skills-German-Law/getting-started/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   
   <style>
 :root {
@@ -67,6 +71,19 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 .nav-links a:hover { color: var(--text); }
 .nav-links a.active { color: var(--accent); }
 .nav-links a.gh-link { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Language switcher */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border: 1px solid var(--border-strong);
+  border-radius: 20px; background: var(--white);
+  font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.4;
+}
+.lang-switch .lang-opt { font-weight: 600; letter-spacing: 0.02em; }
+.lang-switch a.lang-opt { color: var(--text-muted); }
+.lang-switch a.lang-opt:hover { color: var(--accent); }
+.lang-switch .lang-opt.active { color: var(--accent); cursor: default; }
+.lang-switch .lang-sep { color: var(--border-strong); }
 
 /* Breadcrumbs */
 .breadcrumbs { padding: 20px 0 0; font-size: 0.85rem; color: var(--text-muted); }
@@ -314,6 +331,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
       <a href="https://borghei.github.io/AI-Skills-German-Law/guides/authoring/">Guides</a>
       <a href="https://borghei.github.io/AI-Skills-German-Law/reference/">Reference</a>
       <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener" class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+      <div class="lang-switch" role="group" aria-label="Language"><span class="lang-opt active" aria-current="true" title="English">EN</span><span class="lang-sep">/</span><a class="lang-opt" href="https://borghei.github.io/AI-Skills-German-Law/de/getting-started/" hreflang="de" lang="de" title="Deutsch">DE</a></div>
     </div>
   </div>
 </nav>
@@ -326,11 +344,11 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
     <p class="page-subtitle">Install AI Skills German Law and run your first skill in under a minute.</p>
   </div>
   <p>This guide walks you through installing AI Skills German Law and running your first skill.</p>
-<p>The skills work with three providers: <strong>Claude</strong> (Claude Code, claude.ai), <strong>Gemini</strong> (Gems, Gemini CLI), and <strong>OpenAI</strong> (Custom GPTs, ChatGPT). Outputs are in German; the site shell is in English.</p>
+<p>The skills work with three providers: <strong>Claude</strong> (Claude Code, claude.ai), <strong>Gemini</strong> (Gems, Gemini CLI), and <strong>OpenAI</strong> (Custom GPTs, ChatGPT). Skill outputs are in German; this site is available in English and German.</p>
 <h3>Choose your path</h3>
 <ul><li><strong><a href="installation/">Installation</a></strong> — Add the marketplace to Claude Code, copy skills into your project, or use them directly from GitHub.</li><li><strong><a href="quick-start/">Quick Start</a></strong> — Run your first skill in under 60 seconds.</li><li><strong><a href="platforms/">Platforms</a></strong> — Provider-specific setup for Claude Code, Gemini CLI, ChatGPT Custom GPTs, Cursor, and other AI assistants.</li></ul>
 <h3>What you get</h3>
-<ul><li>189 skills across 49 areas of German law and EU compliance.</li><li>Statute citations linked to <code>gesetze-im-internet.de</code> and <code>EUR-Lex</code>.</li><li>Case-law citations labelled <code>[unverifiziert – prüfen]</code> until externally checked. <code>[generiert]</code> (hallucinated) citations are forbidden.</li><li>Provider-neutral skill format — a single <code>SKILL.md</code> runs in Claude, Gemini, and GPT with adapters.</li><li>Verification log (<code>VERIFICATION_STATUS.md</code>) tracking which case-law citations have been confirmed.</li></ul>
+<ul><li>226 skills across 50 areas of German law and EU compliance.</li><li>Statute citations linked to <code>gesetze-im-internet.de</code> and <code>EUR-Lex</code>.</li><li>Case-law citations labelled <code>[unverifiziert – prüfen]</code> until externally checked. <code>[generiert]</code> (hallucinated) citations are forbidden.</li><li>Provider-neutral skill format — a single <code>SKILL.md</code> runs in Claude, Gemini, and GPT with adapters.</li><li>Verification log (<code>VERIFICATION_STATUS.md</code>) tracking which case-law citations have been confirmed.</li></ul>
 <h3>Important — read first</h3>
 <p>This is not legal advice. Every skill output is a draft for review by a licensed Rechtsanwalt or Syndikusrechtsanwalt under § 43a BRAO and § 2 BORA. Always verify case-law citations in Beck-Online, juris, or openjur.net before client-facing or court-facing use.</p>
 </article>
