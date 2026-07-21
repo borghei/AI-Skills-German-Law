@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grundrechtspruefung - AI Skills German Law</title>
+  <meta name="description" content="3-Stufen-Grundrechtsprüfung nach Schutzbereich, Eingriff und verfassungsrechtlicher Rechtfertigung inkl. Verhältnismäßigkeit und neuer Formel zu Art. 3 GG. Use when ein Hoheitsakt am Maßstab eines Fre">
+  <link rel="canonical" href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/verfassungsrecht/grundrechtspruefung.html">
+  <link rel="alternate" hreflang="en" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/verfassungsrecht/grundrechtspruefung.html">
+  <link rel="alternate" hreflang="de" href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/verfassungsrecht/grundrechtspruefung.html">
+  <link rel="alternate" hreflang="x-default" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/verfassungsrecht/grundrechtspruefung.html">
+  <meta property="og:title" content="Grundrechtspruefung - AI Skills German Law">
+  <meta property="og:description" content="3-Stufen-Grundrechtsprüfung nach Schutzbereich, Eingriff und verfassungsrechtlicher Rechtfertigung inkl. Verhältnismäßigkeit und neuer Formel zu Art. 3 GG. Use when ein Hoheitsakt am Maßstab eines Fre">
+  <meta property="og:url" content="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/verfassungsrecht/grundrechtspruefung.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Grundrechtspruefung", "description": "3-Stufen-Grundrechtsprüfung nach Schutzbereich, Eingriff und verfassungsrechtlicher Rechtfertigung inkl. Verhältnismäßigkeit und neuer Formel zu Art. 3 GG. Use when ein Hoheitsakt am Maßstab eines Freiheits- oder Gleichheitsrechts (Art. 1–19 GG) zu prüfen ist – ob als Vorstufe einer Verfassungsbeschwerde, im verwaltungsrechtlichen Klageverfahren oder in einem Gutachten zur Gesetzesfolgenabschätzung.", "applicationCategory": "Verfassungsrecht", "operatingSystem": "Any", "url": "https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/verfassungsrecht/grundrechtspruefung.html", "author": {"@type": "Person", "name": "Borghei"}, "inLanguage": "de"}</script>
+  <style>
+:root {
+  --bg: #faf9f5;
+  --bg-secondary: #f0eee6;
+  --text: #141413;
+  --text-muted: #5e5d59;
+  --accent: #d97757;
+  --accent-deep: #c6613f;
+  --border: rgba(20,20,19,0.1);
+  --border-strong: rgba(20,20,19,0.18);
+  --white: #ffffff;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'Cascadia Code', Menlo, monospace;
+  --max-width: 1200px;
+  --shadow-sm: 0 1px 2px rgba(20,20,19,0.04);
+  --shadow: 0 1px 3px rgba(20,20,19,0.06), 0 1px 2px rgba(20,20,19,0.04);
+  --shadow-md: 0 4px 12px rgba(20,20,19,0.08), 0 1px 3px rgba(20,20,19,0.06);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--accent-deep); }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+code { font-family: var(--font-mono); font-size: 0.875em; }
+
+/* Navbar */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(250,249,245,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo {
+  font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem;
+  color: var(--text); letter-spacing: -0.01em;
+}
+.nav-logo:hover { color: var(--text); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  color: var(--text-muted); font-size: 0.9rem; font-weight: 500;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.gh-link { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Language switcher */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border: 1px solid var(--border-strong);
+  border-radius: 20px; background: var(--white);
+  font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.4;
+}
+.lang-switch .lang-opt { font-weight: 600; letter-spacing: 0.02em; }
+.lang-switch a.lang-opt { color: var(--text-muted); }
+.lang-switch a.lang-opt:hover { color: var(--accent); }
+.lang-switch .lang-opt.active { color: var(--accent); cursor: default; }
+.lang-switch .lang-sep { color: var(--border-strong); }
+
+/* Breadcrumbs */
+.breadcrumbs { padding: 20px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs a:hover { color: var(--accent); }
+.breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+/* Page header */
+.page-header { padding: 48px 0 32px; }
+.page-title {
+  font-family: var(--font-serif); font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;
+  color: var(--text);
+}
+.page-subtitle { color: var(--text-muted); max-width: 760px; font-size: 1.05rem; line-height: 1.6; }
+
+.count-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--accent); background: rgba(217,119,87,0.08);
+  padding: 2px 10px; border-radius: 20px; margin-left: 8px;
+  vertical-align: middle; font-weight: 500;
+}
+
+/* Search + Filter */
+.filter-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.search-input {
+  flex: 1; min-width: 200px; padding: 10px 14px 10px 38px;
+  background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+.search-input::placeholder { color: var(--text-muted); }
+.search-wrap { position: relative; flex: 1; min-width: 200px; }
+.search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+.filter-select {
+  padding: 10px 14px; background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; cursor: pointer;
+}
+.filter-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+
+/* Card grid */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 60px; }
+.skill-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px 22px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex; flex-direction: column;
+}
+.skill-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.skill-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+.skill-card h3 a { color: var(--text); }
+.skill-card h3 a:hover { color: var(--accent); }
+.skill-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; flex: 1; }
+
+/* Badges */
+.badge-bar { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-mono); font-size: 0.7rem; padding: 3px 9px;
+  border-radius: 5px; font-weight: 500; white-space: nowrap;
+}
+.badge-domain { background: rgba(217,119,87,0.1); border: 1px solid rgba(217,119,87,0.2); color: var(--accent-deep); }
+.badge-subdomain { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-version { background: rgba(20,20,19,0.03); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-tools { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-refs { background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.15); color: var(--accent); }
+
+/* Tags */
+.skill-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.tag {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 8px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+.example-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.example-pill {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 7px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+/* Skill detail page */
+.skill-detail { padding-bottom: 80px; }
+.skill-detail h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 40px 0 16px; padding-top: 16px;
+  border-top: 1px solid var(--border); color: var(--text);
+}
+.skill-detail h3 { font-size: 1.05rem; font-weight: 600; margin: 20px 0 10px; color: var(--text); }
+.skill-detail h4 { font-size: 0.95rem; font-weight: 600; margin: 16px 0 8px; color: var(--text); }
+.skill-detail p, .skill-detail li { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
+.skill-detail ul, .skill-detail ol { margin-left: 22px; margin-bottom: 16px; }
+.skill-detail li { margin-bottom: 6px; }
+.skill-detail blockquote {
+  border-left: 3px solid var(--accent); padding: 6px 16px; margin: 12px 0;
+  background: var(--bg-secondary); border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-muted);
+}
+.skill-detail table {
+  width: 100%; border-collapse: collapse; margin: 14px 0 22px;
+  font-size: 0.9rem; background: var(--white);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.skill-detail th, .skill-detail td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.skill-detail th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+.skill-detail tr:last-child td { border-bottom: none; }
+.skill-detail pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  color: var(--text); margin: 12px 0 20px;
+}
+.skill-detail code {
+  font-family: var(--font-mono); font-size: 0.85rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.skill-detail pre code { background: none; padding: 0; }
+
+/* Hero (used on landing) */
+.hero { padding: 80px 0 60px; }
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; margin-bottom: 18px; letter-spacing: -0.02em;
+  line-height: 1.15; color: var(--text);
+}
+.hero-subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; line-height: 1.6; margin-bottom: 28px; }
+.stat-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; color: var(--text-muted); font-size: 0.95rem; }
+.stat-row .stat { display: inline-flex; align-items: center; gap: 6px; }
+.stat-row .stat strong { color: var(--text); font-family: var(--font-mono); font-size: 1rem; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.disclaimer {
+  background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.18);
+  border-left: 4px solid var(--accent); border-radius: var(--radius);
+  padding: 16px 20px; font-size: 0.9rem; color: var(--text-muted);
+  margin: 24px 0 40px;
+}
+.disclaimer strong { color: var(--text); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 18px; border-radius: var(--radius); font-size: 0.9rem;
+  font-weight: 500; font-family: var(--font-sans);
+  border: 1px solid transparent; cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+.btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.btn-primary:hover { background: #2a2a28; color: var(--bg); box-shadow: var(--shadow); }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--border-strong); }
+.btn-secondary:hover { background: var(--bg-secondary); color: var(--text); box-shadow: var(--shadow-sm); }
+
+.section-heading {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 30px 0 20px; color: var(--text);
+}
+
+/* Content pages (getting-started / guides / reference) */
+.content-page { padding-bottom: 80px; max-width: 760px; }
+.content-page h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 36px 0 14px; color: var(--text);
+}
+.content-page h3 { font-size: 1.1rem; font-weight: 600; margin: 22px 0 10px; color: var(--text); }
+.content-page p, .content-page li { font-size: 0.98rem; color: var(--text-muted); line-height: 1.7; }
+.content-page ul, .content-page ol { margin: 8px 0 18px 22px; }
+.content-page li { margin-bottom: 6px; }
+.content-page pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 18px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  margin: 12px 0 22px;
+}
+.content-page code {
+  font-family: var(--font-mono); font-size: 0.88rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.content-page pre code { background: none; padding: 0; }
+.content-page table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.content-page th, .content-page td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+}
+.content-page th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+
+.cards-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0 28px; }
+.mini-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 18px 20px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.mini-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.mini-card h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 6px; color: var(--text); }
+.mini-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+.mini-card a.view-link { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8rem; margin-top: 10px; color: var(--accent); }
+
+/* Footer */
+.footer {
+  padding: 36px 0; border-top: 1px solid var(--border); margin-top: 40px;
+  background: var(--bg);
+}
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-links { display: flex; align-items: center; gap: 12px; font-size: 0.85rem; color: var(--text-muted); }
+.footer-links a { color: var(--text-muted); }
+.footer-links a:hover { color: var(--accent); }
+.footer-sep { color: var(--border-strong); }
+.footer-credit { font-size: 0.85rem; color: var(--text-muted); }
+.footer-credit a { color: var(--text); font-weight: 600; }
+
+/* Related skills */
+.related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .skills-grid, .related-grid { grid-template-columns: repeat(2, 1fr); }
+  .cards-row { grid-template-columns: 1fr; }
+  .nav-links { gap: 14px; }
+}
+@media (max-width: 480px) {
+  .skills-grid, .related-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; }
+  .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a href="https://borghei.github.io/AI-Skills-German-Law/de/" class="nav-logo">AI Skills German Law</a>
+    <div class="nav-links">
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/" class="active">Skills</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/getting-started/">Erste Schritte</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/guides/authoring/">Anleitungen</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/reference/">Referenz</a>
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener" class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+      <div class="lang-switch" role="group" aria-label="Sprache"><a class="lang-opt" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/verfassungsrecht/grundrechtspruefung.html" hreflang="en" lang="en" title="English">EN</a><span class="lang-sep">/</span><span class="lang-opt active" aria-current="true" title="Deutsch">DE</span></div>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumbs container"><a href="https://borghei.github.io/AI-Skills-German-Law/de/">Startseite</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/">Skills</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/verfassungsrecht/">Verfassungsrecht</a><span class=sep>/</span><span>Grundrechtspruefung</span></div>
+<main class="container">
+
+<article class="skill-detail">
+  <div class="page-header">
+    <h1 class="page-title">Grundrechtspruefung</h1>
+    <p class="page-subtitle">3-Stufen-Grundrechtsprüfung nach Schutzbereich, Eingriff und verfassungsrechtlicher Rechtfertigung inkl. Verhältnismäßigkeit und neuer Formel zu Art. 3 GG. Use when ein Hoheitsakt am Maßstab eines Freiheits- oder Gleichheitsrechts (Art. 1–19 GG) zu prüfen ist – ob als Vorstufe einer Verfassungsbeschwerde, im verwaltungsrechtlichen Klageverfahren oder in einem Gutachten zur Gesetzesfolgenabschätzung.</p>
+    <div class="badge-bar"><span class="badge badge-domain">Verfassungsrecht</span> <span class="badge badge-version">v0.1.0</span></div>
+    <div class="skill-meta" style="margin-bottom:24px"><span class="tag">grundrechtspruefung</span><span class="tag">art.3</span><span class="tag">art.1</span><span class="tag">gg</span><span class="tag">verfassungsrecht</span></div>
+  </div>
+  <section><h2>Zweck</h2><p>Die Grundrechtsprüfung folgt dem <strong>3-Stufen-Schema</strong>: Schutzbereich → Eingriff → Verfassungsrechtliche Rechtfertigung. Bei Gleichheitsrechten greift die <strong>neue Formel</strong> zu Art. 3 Abs. 1 GG. Dieser Skill stellt sicher, dass die einzelnen Stufen, ihre Spezialfälle (Drittwirkung, Schutzpflicht, Leistungsrechte) und die Schranken-Schranken (insbesondere Verhältnismäßigkeit) vollständig durchlaufen werden.</p></section>
+<section><h2>Eingaben</h2><ul><li>gerügter Hoheitsakt (Gesetz, Verwaltungsakt, Urteil oder schlichtes Verwaltungshandeln)</li><li>benanntes Grundrecht (Art. 1–19 GG) oder grundrechtsgleiches Recht</li><li>betroffene Person(en); juristische Person? Ausländer?</li><li>Schrankentyp (qualifizierter Gesetzesvorbehalt, einfacher Gesetzesvorbehalt, verfassungsimmanente Schranken)</li></ul></section>
+<section><h2>Sub-Agent-Architektur</h2><p>Researcher liefert Statute, Standardkommentare und einschlägige BVerfG-Leitentscheidungen zum Grundrecht. Drafter führt das 3-Stufen-Schema im Gutachtenstil durch. Reviewer prüft Vollständigkeit der Stufen, Verhältnismäßigkeit und die neue Formel bei Art. 3 GG.</p></section>
+<section><h2>Ablauf</h2><h3>1. Schutzbereich</h3>
+<table><thead><tr><th>Dimension</th><th>Inhalt</th></tr></thead><tbody><tr><td><strong>Persönlich</strong></td><td>Jedermannsgrundrecht oder Deutschengrundrecht (Art. 8, 9, 11, 12, 16 GG nur Deutsche)? Juristische Person (Art. 19 Abs. 3 GG)?</td></tr><tr><td><strong>Sachlich</strong></td><td>Welche Verhaltensweisen / Zustände sind erfasst?</td></tr></tbody></table>
+<p>Bei Freiheitsrechten: weit auszulegen, im Zweifel <strong>in dubio pro libertate</strong>. Bei der Auslegung des Schutzbereichs sind die vier klassischen Methoden anzuwenden.</p>
+<h3>2. Eingriff</h3>
+<p>Klassischer Eingriffsbegriff (final, unmittelbar, rechtsförmig, mit Befehl und Zwang) <strong>vs.</strong> moderner Eingriffsbegriff (jede dem Staat zurechenbare Beeinträchtigung des grundrechtlichen Schutzguts). Heutige h.M. folgt dem modernen Begriff — vgl. Sachs, in: Sachs GG, vor Art. 1 Rn. 78 ff.</p>
+<p>Sonderkonstellationen:</p>
+<ul><li><strong>Mittelbare Drittwirkung</strong> (BVerfG, Lüth, <a href="https://de.wikipedia.org/wiki/L%C3%BCth-Urteil">BVerfGE 7, 198</a>): Grundrechte als objektive Wertordnung wirken durch zivilrechtliche Generalklauseln (§§ 138, 242 BGB).</li><li><strong>Schutzpflichten</strong>: Grundrechte als Schutzauftrag (<a href="https://www.servat.unibe.ch/dfr/bv039001.html">BVerfGE 39, 1</a>); Untermaßverbot.</li><li><strong>Leistungsrechte</strong>: nur ausnahmsweise originäre Teilhabeansprüche (Existenzminimum, <a href="https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2010/02/ls20100209_1bvl000109.html">BVerfGE 125, 175</a>).</li></ul>
+<h3>3. Verfassungsrechtliche Rechtfertigung</h3>
+<h4>3.1 Schranke</h4>
+<ul><li><strong>Einfacher Gesetzesvorbehalt</strong> (z. B. Art. 8 Abs. 2, Art. 12 Abs. 1 S. 2 GG)</li><li><strong>Qualifizierter Gesetzesvorbehalt</strong> (z. B. Art. 11 Abs. 2 GG)</li><li><strong>Verfassungsimmanente Schranken</strong> (vorbehaltlos gewährleistete Grundrechte wie Art. 4 GG, Art. 5 Abs. 3 GG, Art. 8 Abs. 1 GG für Versammlungen unter freiem Himmel — Achtung Sonderfall Abs. 2)</li></ul>
+<h4>3.2 Schranken-Schranken</h4>
+<ul><li><strong>Zitiergebot</strong> Art. 19 Abs. 1 S. 2 GG</li><li><strong>Einzelfallgesetz-Verbot</strong> Art. 19 Abs. 1 S. 1 GG</li><li><strong>Wesensgehaltsgarantie</strong> Art. 19 Abs. 2 GG</li><li><strong>Verhältnismäßigkeit</strong> (siehe 3.3)</li><li>bei Art. 5 GG: <strong>Wechselwirkungslehre</strong> (BVerfGE 7, 198 — „Lüth")</li></ul>
+<h4>3.3 Verhältnismäßigkeit</h4>
+<table><thead><tr><th>Stufe</th><th>Maßstab</th></tr></thead><tbody><tr><td><strong>Legitimer Zweck</strong></td><td>Mit der Verfassung vereinbares öffentliches Interesse</td></tr><tr><td><strong>Geeignetheit</strong></td><td>Maßnahme fördert den Zweck (Einschätzungsprärogative des Gesetzgebers)</td></tr><tr><td><strong>Erforderlichkeit</strong></td><td>Kein gleich wirksames, milderes Mittel verfügbar</td></tr><tr><td><strong>Angemessenheit (i.e.S.)</strong></td><td>Abwägung Schwere des Eingriffs ↔ Gewicht des Zwecks</td></tr></tbody></table>
+<p>Bei Art. 12 GG: <strong>Drei-Stufen-Theorie</strong> (<a href="https://de.wikipedia.org/wiki/Apotheken-Urteil">BVerfGE 7, 377</a> — „Apotheken-Urteil") — Berufsausübungs-, subjektive Berufswahl-, objektive Berufswahlregelung.</p>
+<h3>4. Gleichheitsrechte (Art. 3 GG) — neue Formel</h3>
+<table><thead><tr><th>Test</th><th>Maßstab</th></tr></thead><tbody><tr><td><strong>Ungleichbehandlung von wesentlich Gleichem (oder umgekehrt)</strong></td><td>tatsächlich vergleichbare Sachverhalte</td></tr><tr><td><strong>Rechtfertigung</strong></td><td>Je nach Differenzierungsgrund: vom bloßen Willkürverbot bis zur strengen Verhältnismäßigkeit (insbes. personenbezogene Differenzierung) — <a href="https://www.servat.unibe.ch/dfr/bv055072.html">BVerfGE 55, 72</a> (neue Formel)</td></tr></tbody></table>
+<p>Spezielle Gleichheitssätze: Art. 3 Abs. 2, 3, Art. 6 Abs. 5, Art. 33 Abs. 1–3, Art. 38 Abs. 1, Art. 6 Abs. 1 GG.</p>
+<h3>5. Praxisrelevante Tipps</h3>
+<ul><li>Bei vorbehaltlosen Grundrechten zunächst prüfen, ob nicht <strong>schon der Schutzbereich</strong> durch eine engere Definition den Konflikt löst (Bsp. künstlerische Werbung – Art. 5 Abs. 3 GG).</li><li>Bei doppelter Grundrechtsbetroffenheit: <strong>Spezialitätsverhältnis</strong> prüfen (z. B. Art. 14 GG vor Art. 12 GG bei Vermögenseingriffen).</li><li>§ 31 BVerfGG ist die einzige zulässige Stelle, an der mit Bindung an BVerfG-Rspr. argumentiert werden darf.</li></ul></section>
+<section><h2>Quellen und Zitierweise</h2><p>Verbindlich: <a href="../../references/zitierweise.md"><code>../../references/zitierweise.md</code></a>.</p>
+<h3>Statute</h3>
+<ul><li><a href="https://www.gesetze-im-internet.de/gg/art_1.html">Art. 1 GG</a> (Menschenwürde)</li><li><a href="https://www.gesetze-im-internet.de/gg/art_2.html">Art. 2 GG</a> (allgemeine Handlungsfreiheit, Leben/körperliche Unversehrtheit)</li><li><a href="https://www.gesetze-im-internet.de/gg/art_3.html">Art. 3 GG</a> (Gleichheit)</li><li><a href="https://www.gesetze-im-internet.de/gg/art_5.html">Art. 5 GG</a> (Meinungs-/Pressefreiheit, Kunst und Wissenschaft)</li><li><a href="https://www.gesetze-im-internet.de/gg/art_12.html">Art. 12 GG</a> (Berufsfreiheit)</li><li><a href="https://www.gesetze-im-internet.de/gg/art_14.html">Art. 14 GG</a> (Eigentum)</li><li><a href="https://www.gesetze-im-internet.de/gg/art_19.html">Art. 19 GG</a> (Zitiergebot, Wesensgehaltsgarantie, juristische Person)</li><li><a href="https://www.gesetze-im-internet.de/gg/art_20.html">Art. 20 GG</a> (Verhältnismäßigkeit als Ausfluss Rechtsstaatsprinzip)</li></ul>
+<h3>Kommentare</h3>
+<ul><li>Herdegen, in: Maunz/Dürig GG, Loseblatt (Stand: aktuelle Lieferung), Art. 1 Abs. 1 Rn. 1 ff.</li><li>Murswiek/Rixen, in: Sachs GG, 9. Aufl. 2021, Art. 2 Rn. 1 ff.</li><li>Jarass, in: Jarass/Pieroth GG, 18. Aufl. 2024, Art. 3 Rn. 1 ff. (neue Formel)</li><li>Scholz, in: Maunz/Dürig GG, Art. 12 Rn. 1 ff. (Drei-Stufen-Theorie)</li><li>Schlaich/Korioth, Das Bundesverfassungsgericht, 12. Aufl. 2021, Rn. 442 ff. (Grundrechtsprüfung)</li></ul>
+<h3>Rechtsprechung</h3>
+<ol><li>BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, <a href="https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/1958/01/rs19580115_1bvr040051.html">BVerfGE 7, 198</a> („Lüth")</li><li>BVerfG, Urt. v. 11.06.1958 – 1 BvR 596/56, <a href="https://de.wikipedia.org/wiki/Apotheken-Urteil">BVerfGE 7, 377</a> („Apotheken-Urteil", Drei-Stufen-Theorie)</li><li>BVerfG, Urt. v. 16.01.1957 – 1 BvR 253/56, <a href="https://de.wikipedia.org/wiki/Elfes-Urteil">BVerfGE 6, 32</a> („Elfes", allgemeine Handlungsfreiheit)</li><li>BVerfG, Urt. v. 15.12.1983 – 1 BvR 209/83 u.a., <a href="https://de.wikipedia.org/wiki/Volksz%C3%A4hlungsurteil">BVerfGE 65, 1</a> („Volkszählung", informationelle Selbstbestimmung)</li><li>BVerfG, Beschl. v. 07.10.1980 – 1 BvL 50/79 u.a., <a href="https://www.servat.unibe.ch/dfr/bv055072.html">BVerfGE 55, 72</a> (neue Formel zu Art. 3 GG)</li><li>BVerfG, Beschl. v. 16.05.1995 – 1 BvR 1087/91, <a href="https://de.wikipedia.org/wiki/Kruzifix-Beschluss">BVerfGE 93, 1</a> („Kruzifix")</li><li>BVerfG, Urt. v. 09.02.2010 – 1 BvL 1/09 u.a., <a href="https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2010/02/ls20100209_1bvl000109.html">BVerfGE 125, 175</a> (Existenzminimum)</li></ol></section>
+<section><h2>Ausgabeformat</h2><pre><code>GUTACHTEN GRUNDRECHTSPRÜFUNG
+&lt;Datum&gt; — &lt;Skill-Mandat-ID&gt;
+
+A. Sachverhalt
+   &lt;knapp&gt;
+
+B. Frage
+   Verletzt &lt;Hoheitsakt&gt; den/die Betroffenen in Art. … GG?
+
+C. Kurzantwort
+   &lt;1 Satz&gt;
+
+D. Prüfung
+
+   I.   Schutzbereich
+        1. Persönlich (Jedermannsgrundrecht / Deutschengrundrecht /
+           juristische Person Art. 19 III GG)
+        2. Sachlich
+
+   II.  Eingriff
+        (klassisch / modern; ggf. mittelbare Drittwirkung,
+        Schutzpflicht, Leistungsrecht)
+
+   III. Verfassungsrechtliche Rechtfertigung
+        1. Schranke
+           (einfacher / qualifizierter Gesetzesvorbehalt /
+           verfassungsimmanent)
+        2. Schranken-Schranken
+           a) Zitiergebot Art. 19 I 2 GG
+           b) Wesensgehaltsgarantie Art. 19 II GG
+           c) Verhältnismäßigkeit
+              aa) Legitimer Zweck
+              bb) Geeignetheit
+              cc) Erforderlichkeit
+              dd) Angemessenheit
+           d) ggf. Wechselwirkungslehre / Drei-Stufen-Theorie
+
+E. Bei Art. 3 GG
+   I.   Ungleichbehandlung wesentlich Gleicher
+   II.  Rechtfertigung (Willkürverbot ↔ Verhältnismäßigkeit nach
+        Differenzierungsgrund — „neue Formel&quot;)
+
+F. Ergebnis
+   Grundrechtsverletzung ✅/❌
+
+G. Risiken / offene Punkte
+
+H. Quellenverzeichnis</code></pre></section>
+<section><h2>Beispiel (Auszug, Gutachtenstil)</h2><blockquote><strong>B. Frage</strong> Verletzt § X LandesHeilprG den Beschwerdeführer in seiner Berufsfreiheit aus Art. 12 Abs. 1 GG? <strong>D.I.</strong> Der Schutzbereich des Art. 12 Abs. 1 GG erfasst jede auf Dauer angelegte und erlaubte Tätigkeit zum Zweck der Schaffung und Erhaltung einer Lebensgrundlage; der Beschwerdeführer übt eine solche Tätigkeit als Heilpraktiker aus. <strong>D.II.</strong> In dieser Tätigkeit ist er durch den Erlaubnisvorbehalt unmittelbar und final betroffen — Eingriff bejaht. <strong>D.III.1.</strong> Schranke ist Art. 12 Abs. 1 S. 2 GG. <strong>D.III.2.c)</strong> Verhältnismäßigkeit ist nach der Drei-Stufen-Theorie zu prüfen (<a href="https://de.wikipedia.org/wiki/Apotheken-Urteil">BVerfGE 7, 377</a>): Es handelt sich um eine subjektive Berufswahlregelung; legitimer Zweck ist der Patientenschutz; geeignet; erforderlich, da ein milderes Mittel (Anzeigepflicht) den Zweck nicht gleich wirksam erreicht; angemessen, soweit die Erlaubnisvoraussetzungen die Tätigkeit nicht überproportional erschweren.</blockquote></section>
+<section><h2>Risiken / typische Fehler</h2><ul><li><strong>Schutzbereich zu schmal definiert</strong> — führt dazu, dass die spätere Verhältnismäßigkeitsprüfung umgangen wird.</li><li><strong>Eingriff bejaht ohne Zurechnung</strong> — bei privatem Handeln zunächst Drittwirkung prüfen.</li><li><strong>Verhältnismäßigkeit unvollständig</strong> — Erforderlichkeit und Angemessenheit werden häufig zusammengezogen.</li><li><strong>Art. 3 GG mit bloßem Willkürtest</strong> statt neuer Formel, obwohl personenbezogenes Differenzierungskriterium vorliegt.</li><li><strong>Wechselwirkungslehre vergessen</strong> bei Art. 5 Abs. 1 GG i.V.m. allgemeinem Gesetz.</li><li><strong>§ 31 BVerfGG fehlinterpretiert</strong> — Bindungswirkung umfasst nur tragende Gründe, nicht obiter dicta.</li></ul></section>
+  <h2>Verwandte Skills in Verfassungsrecht</h2><div class="related-grid"><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/verfassungsrecht/organstreit-bund-laender.html" class="skill-card" style="text-decoration:none"><h3>Organstreit Bund Laender</h3><p>Abgrenzung Organstreit (Art. 93 I Nr. 1 GG, §§ 63 ff. BVerfGG), Bund-Länder-Streit (Art. 93 I Nr. 3 GG, §§...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/verfassungsrecht/verfassungsbeschwerde.html" class="skill-card" style="text-decoration:none"><h3>Verfassungsbeschwerde</h3><p>Zulässigkeits- und Begründetheitsprüfung einer Verfassungsbeschwerde nach Art. 93 I Nr. 4a GG, §§ 90 ff....</p></a></div>
+  <p style="margin-top:32px"><a href="https://github.com/borghei/AI-Skills-German-Law/tree/main/verfassungsrecht/skills/grundrechtspruefung/SKILL.md" target="_blank" rel="noopener" class="btn btn-secondary">SKILL.md auf GitHub ansehen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></p>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener">GitHub</a>
+      <span class="footer-sep">&middot;</span>
+      <span>Apache-2.0 ODER MIT</span>
+      <span class="footer-sep">&middot;</span>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/llms.txt">llms.txt</a>
+    </div>
+    <div class="footer-credit">Erstellt von <a href="https://github.com/borghei" target="_blank" rel="noopener">Borghei</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

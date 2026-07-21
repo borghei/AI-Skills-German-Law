@@ -41,6 +41,365 @@ BRAND = "AI Skills German Law"
 AUTHOR = "Borghei"
 
 # ---------------------------------------------------------------------------
+# Languages
+#
+# URL layout: English lives at the site root (those URLs are live and linked
+# from README.md / skills.json, so they must not move). German lives under
+# /de/ mirroring the same tree.
+#
+#   /            <-> /de/
+#   /SKILLS/     <-> /de/SKILLS/
+#   /guides/...  <-> /de/guides/...
+#
+# One sitemap.xml at the root covers both trees with hreflang alternates.
+# ---------------------------------------------------------------------------
+
+LANGS = ("en", "de")
+OTHER_LANG = {"en": "de", "de": "en"}
+OG_LOCALE = {"en": "en_US", "de": "de_DE"}
+LANG_DIR = {"en": "", "de": "de"}
+
+
+def lang_base(lang):
+    """Absolute base URL for a language tree (no trailing slash)."""
+    d = LANG_DIR[lang]
+    return BASE_URL if not d else f"{BASE_URL}/{d}"
+
+
+def url_for(lang, rel=""):
+    """Absolute URL for a site-relative path (no leading slash).
+
+    rel="" -> tree root; rel="SKILLS/" -> index; rel="SKILLS/a/b.html" -> page.
+    """
+    return f"{lang_base(lang)}/{rel}"
+
+
+def out_path(lang, rel_file):
+    """Filesystem output path for a site-relative file path."""
+    d = LANG_DIR[lang]
+    return SITE_DIR / rel_file if not d else SITE_DIR / d / rel_file
+
+
+# ---------------------------------------------------------------------------
+# STRINGS — every user-visible chrome/content string, per language.
+#
+# German copy targets German lawyers: Sie-form, established terminology
+# (Rechtsgebiete, Erste Schritte, Anleitungen, Referenz, Schnelleinstieg).
+# Skill *bodies* stay German in both trees — the legal content is German by
+# nature. Only the surrounding UI, navigation and guide pages are translated.
+# ---------------------------------------------------------------------------
+
+STRINGS = {
+    "en": {
+        # -- chrome ---------------------------------------------------------
+        "nav_skills": "Skills",
+        "nav_getting_started": "Getting Started",
+        "nav_guides": "Guides",
+        "nav_reference": "Reference",
+        "nav_github": "GitHub",
+        "lang_switch_label": "Language",
+        "lang_en": "EN",
+        "lang_de": "DE",
+        "lang_en_title": "English",
+        "lang_de_title": "Deutsch",
+        "footer_license": "Apache-2.0 OR MIT",
+        "footer_built_by": "Built by",
+        "bc_home": "Home",
+        "bc_skills": "Skills",
+        "bc_getting_started": "Getting Started",
+        "bc_guides": "Guides",
+        "bc_reference": "Reference",
+        # -- shared fragments ------------------------------------------------
+        "count_skills": "{n} skills",
+        "count_skill_one": "1 skill",
+        "count_tools": "{n} tools",
+        "count_tool_one": "1 tool",
+        "more_n": "+{n} more",
+        "badge_references": "references",
+        "search_placeholder_all": "Search {n} skills...",
+        "search_placeholder_area": "Search {area} skills...",
+        "german_content_note": (
+            "Skill texts are written in German. That is intentional: these are drafting "
+            "instructions for German legal practice, and the deliverables (Abmahnung, "
+            "Schriftsatz, Memo) must be in German. The site around them is available in "
+            "English and German."
+        ),
+        # -- landing ---------------------------------------------------------
+        "landing_title": "{brand}: AI skills for German legal practice and EU compliance",
+        "landing_description": (
+            "{areas} areas, {total} skills, multi-provider (Claude, Gemini, GPT). "
+            "Primary-source citations linked to gesetze-im-internet.de and EUR-Lex. "
+            "Built for Kanzleien, in-house counsel, and EU compliance teams."
+        ),
+        "hero_title": "AI skills for German legal practice and EU compliance.",
+        "hero_subtitle": (
+            "Draft a BAG-konforme Abmahnung. Run a DSGVO Art. 15 workflow. Build a KI-VO "
+            "compliance plan. Tested, sourced, multi-provider. Paste into any AI chat or "
+            "install via Claude Code, Gemini, or GPT."
+        ),
+        "stat_areas": "Areas",
+        "stat_skills": "Skills",
+        "stat_providers": "Providers",
+        "stat_frameworks": "Compliance Frameworks",
+        "btn_browse_skills": "Browse skills",
+        "btn_getting_started": "Getting started",
+        "disclaimer": (
+            "<strong>This project is built with the assistance of AI tools.</strong> "
+            "AI-generated content may contain errors. <strong>This is not legal advice.</strong> "
+            "Any output is a draft for review by a licensed Rechtsanwalt or Syndikusrechtsanwalt "
+            "under &sect; 43a BRAO and &sect; 2 BORA. Verify case-law citations in Beck-Online, "
+            "juris, or openjur.net before client- or court-facing use. The author accepts no "
+            "liability. <strong>Use at your own risk.</strong>"
+        ),
+        "featured_areas": "Featured Areas",
+        "featured_areas_note": (
+            "{areas} areas total covering substantive German law, Fachanwaltschaften, "
+            "EU compliance frameworks, and specialty domains."
+        ),
+        "view_all_areas": "View all {areas} areas",
+        # -- skills index ----------------------------------------------------
+        "skills_index_title": "All Skills - {brand}",
+        "skills_index_description": "{total} German-law and EU-compliance skills across {areas} areas.",
+        "skills_catalog_h1": "Skill Catalog",
+        "browse_by_area": "Browse by Area",
+        "all_skills_h": "All Skills",
+        "filter_all_areas": "All Areas",
+        # -- area page -------------------------------------------------------
+        "area_description": "{n} skills in {area}. {desc}",
+        "area_desc_fallback": "Skills in the {area} area",
+        # -- skill page ------------------------------------------------------
+        "related_skills_in": "Related Skills in {area}",
+        "view_skill_md": "View SKILL.md on GitHub",
+        # -- 404 -------------------------------------------------------------
+        "p404_title": "404 - Page Not Found",
+        "p404_text": "The page you are looking for does not exist or has moved.",
+        "btn_go_home": "Go home",
+        "p404_other_tree": "Deutsche Fassung",
+        # -- getting started -------------------------------------------------
+        "gs_title": "Getting Started",
+        "gs_subtitle": "Install AI Skills German Law and run your first skill in under a minute.",
+        # -- installation ----------------------------------------------------
+        "install_title": "Installation",
+        "install_subtitle": "Add AI Skills German Law to Claude Code, clone the repo, or copy individual skills.",
+        # -- platforms -------------------------------------------------------
+        "platforms_title": "Platforms",
+        "platforms_subtitle": "Provider-specific setup for Claude Code, Claude.ai, Gemini, ChatGPT, Cursor, and other AI assistants.",
+        # -- quick start -----------------------------------------------------
+        "qs_title": "Quick Start",
+        "qs_subtitle": "Run your first German-law skill in 60 seconds.",
+        # -- guides ----------------------------------------------------------
+        "authoring_title": "Authoring Skills",
+        "authoring_subtitle": "How to write a new skill that fits the repository conventions.",
+        "bundles_title": "Bundles",
+        "bundles_subtitle": "Group related skills into workflows that span multiple areas.",
+        "custom_title": "Customization",
+        "custom_subtitle": "Fork, override, and extend skills for your Kanzlei or compliance team.",
+        "orch_title": "Orchestration",
+        "orch_subtitle": "How researcher, drafter, and reviewer agents work together inside every skill.",
+        # -- reference -------------------------------------------------------
+        "ref_title": "Reference",
+        "ref_subtitle": "Binding documentation that every skill in the repository follows.",
+        # -- llms.txt --------------------------------------------------------
+        "llms_tagline": (
+            "Provider-neutral AI skills for German legal practice and EU compliance -- "
+            "{total} skills across {areas} areas. Outputs in German; statute citations "
+            "linked to gesetze-im-internet.de and EUR-Lex."
+        ),
+        "llms_website": "Website",
+        "llms_repository": "Repository",
+        "llms_license": "License",
+        "llms_author": "Author",
+        "llms_h_what": "## What This Is",
+        "llms_what": (
+            "A library of provider-neutral skills (Claude, Gemini, OpenAI) for German legal practice. "
+            "Each skill ships with a researcher / drafter / reviewer sub-agent architecture, linked "
+            "statute citations, and case-law marked verified or [unverifiziert -- prüfen]. Outputs are "
+            "drafts for review by a licensed Rechtsanwalt under § 43a BRAO and § 2 BORA."
+        ),
+        "llms_h_how": "## How to Use",
+        "llms_h_areas": "## Areas",
+        "llms_h_all": "## All Skills",
+        "llms_h_lang": "## Languages",
+        "llms_lang": (
+            "This document describes the English site tree at {en_url}. "
+            "A German tree with identical coverage is at {de_url} (llms.txt: {de_llms})."
+        ),
+    },
+    "de": {
+        # -- chrome ---------------------------------------------------------
+        "nav_skills": "Skills",
+        "nav_getting_started": "Erste Schritte",
+        "nav_guides": "Anleitungen",
+        "nav_reference": "Referenz",
+        "nav_github": "GitHub",
+        "lang_switch_label": "Sprache",
+        "lang_en": "EN",
+        "lang_de": "DE",
+        "lang_en_title": "English",
+        "lang_de_title": "Deutsch",
+        "footer_license": "Apache-2.0 ODER MIT",
+        "footer_built_by": "Erstellt von",
+        "bc_home": "Startseite",
+        "bc_skills": "Skills",
+        "bc_getting_started": "Erste Schritte",
+        "bc_guides": "Anleitungen",
+        "bc_reference": "Referenz",
+        # -- shared fragments ------------------------------------------------
+        "count_skills": "{n} Skills",
+        "count_skill_one": "1 Skill",
+        "count_tools": "{n} Tools",
+        "count_tool_one": "1 Tool",
+        "more_n": "+{n} weitere",
+        "badge_references": "Referenzen",
+        "search_placeholder_all": "{n} Skills durchsuchen ...",
+        "search_placeholder_area": "Skills in {area} durchsuchen ...",
+        "german_content_note": (
+            "Die Skill-Texte sind durchgehend deutsch. Das ist beabsichtigt: Es handelt sich um "
+            "Arbeitsanweisungen für die deutsche Rechtspraxis, und die Arbeitsergebnisse "
+            "(Abmahnung, Schriftsatz, Vermerk) müssen deutsch sein. Die Benutzeroberfläche steht "
+            "auf Deutsch und Englisch zur Verfügung."
+        ),
+        # -- landing ---------------------------------------------------------
+        "landing_title": "{brand}: KI-Skills für die deutsche Rechtspraxis und EU-Compliance",
+        "landing_description": (
+            "{areas} Rechtsgebiete, {total} Skills, anbieterübergreifend (Claude, Gemini, GPT). "
+            "Normzitate verlinkt auf gesetze-im-internet.de und EUR-Lex. "
+            "Für Kanzleien, Rechtsabteilungen und EU-Compliance-Teams."
+        ),
+        "hero_title": "KI-Skills für die deutsche Rechtspraxis und EU-Compliance.",
+        "hero_subtitle": (
+            "BAG-konforme Abmahnung entwerfen. Auskunftsverlangen nach Art. 15 DSGVO bearbeiten. "
+            "KI-VO-Compliance-Plan aufsetzen. Getestet, mit Quellen belegt, anbieterübergreifend. "
+            "In jeden KI-Chat einfügen oder über Claude Code, Gemini oder GPT installieren."
+        ),
+        "stat_areas": "Rechtsgebiete",
+        "stat_skills": "Skills",
+        "stat_providers": "Anbieter",
+        "stat_frameworks": "Compliance-Rahmenwerke",
+        "btn_browse_skills": "Skills durchsuchen",
+        "btn_getting_started": "Erste Schritte",
+        "disclaimer": (
+            "<strong>Dieses Projekt wurde unter Einsatz von KI-Werkzeugen erstellt.</strong> "
+            "KI-generierte Inhalte können Fehler enthalten. "
+            "<strong>Dies ist keine Rechtsberatung.</strong> "
+            "Jede Ausgabe ist ein Entwurf zur Prüfung durch eine zugelassene Rechtsanwältin oder "
+            "einen zugelassenen Rechtsanwalt bzw. Syndikusrechtsanwalt nach &sect; 43a BRAO und "
+            "&sect; 2 BORA. Prüfen Sie Rechtsprechungsnachweise vor jeder mandats- oder "
+            "gerichtsbezogenen Verwendung in Beck-Online, juris oder openjur.net. Der Autor "
+            "übernimmt keine Haftung. <strong>Nutzung auf eigenes Risiko.</strong>"
+        ),
+        "featured_areas": "Ausgewählte Rechtsgebiete",
+        "featured_areas_note": (
+            "Insgesamt {areas} Rechtsgebiete: materielles deutsches Recht, Fachanwaltschaften, "
+            "EU-Compliance-Rahmenwerke und Spezialgebiete."
+        ),
+        "view_all_areas": "Alle {areas} Rechtsgebiete ansehen",
+        # -- skills index ----------------------------------------------------
+        "skills_index_title": "Alle Skills - {brand}",
+        "skills_index_description": "{total} Skills zum deutschen Recht und zur EU-Compliance in {areas} Rechtsgebieten.",
+        "skills_catalog_h1": "Skill-Katalog",
+        "browse_by_area": "Nach Rechtsgebiet",
+        "all_skills_h": "Alle Skills",
+        "filter_all_areas": "Alle Rechtsgebiete",
+        # -- area page -------------------------------------------------------
+        "area_description": "{n} Skills im Rechtsgebiet {area}. {desc}",
+        "area_desc_fallback": "Skills im Rechtsgebiet {area}",
+        # -- skill page ------------------------------------------------------
+        "related_skills_in": "Verwandte Skills in {area}",
+        "view_skill_md": "SKILL.md auf GitHub ansehen",
+        # -- 404 -------------------------------------------------------------
+        "p404_title": "404 - Seite nicht gefunden",
+        "p404_text": "Die aufgerufene Seite existiert nicht oder wurde verschoben.",
+        "btn_go_home": "Zur Startseite",
+        "p404_other_tree": "English version",
+        # -- getting started -------------------------------------------------
+        "gs_title": "Erste Schritte",
+        "gs_subtitle": "AI Skills German Law installieren und den ersten Skill in unter einer Minute ausführen.",
+        # -- installation ----------------------------------------------------
+        "install_title": "Installation",
+        "install_subtitle": "AI Skills German Law in Claude Code einbinden, das Repository klonen oder einzelne Skills kopieren.",
+        # -- platforms -------------------------------------------------------
+        "platforms_title": "Plattformen",
+        "platforms_subtitle": "Einrichtung je Anbieter: Claude Code, Claude.ai, Gemini, ChatGPT, Cursor und weitere KI-Assistenten.",
+        # -- quick start -----------------------------------------------------
+        "qs_title": "Schnelleinstieg",
+        "qs_subtitle": "Den ersten Skill zum deutschen Recht in 60 Sekunden ausführen.",
+        # -- guides ----------------------------------------------------------
+        "authoring_title": "Skills schreiben",
+        "authoring_subtitle": "Wie Sie einen neuen Skill schreiben, der den Konventionen des Repositorys entspricht.",
+        "bundles_title": "Bundles",
+        "bundles_subtitle": "Zusammengehörige Skills zu Arbeitsabläufen über mehrere Rechtsgebiete hinweg bündeln.",
+        "custom_title": "Anpassung",
+        "custom_subtitle": "Skills forken, überschreiben und an Ihre Kanzlei oder Ihr Compliance-Team anpassen.",
+        "orch_title": "Orchestrierung",
+        "orch_subtitle": "Wie Researcher-, Drafter- und Reviewer-Agenten in jedem Skill zusammenwirken.",
+        # -- reference -------------------------------------------------------
+        "ref_title": "Referenz",
+        "ref_subtitle": "Verbindliche Dokumentation, der jeder Skill des Repositorys folgt.",
+        # -- llms.txt --------------------------------------------------------
+        "llms_tagline": (
+            "Anbieterneutrale KI-Skills für die deutsche Rechtspraxis und EU-Compliance -- "
+            "{total} Skills in {areas} Rechtsgebieten. Ausgaben auf Deutsch; Normzitate verlinkt "
+            "auf gesetze-im-internet.de und EUR-Lex."
+        ),
+        "llms_website": "Website",
+        "llms_repository": "Repository",
+        "llms_license": "Lizenz",
+        "llms_author": "Autor",
+        "llms_h_what": "## Worum es geht",
+        "llms_what": (
+            "Eine Bibliothek anbieterneutraler Skills (Claude, Gemini, OpenAI) für die deutsche "
+            "Rechtspraxis. Jeder Skill bringt eine Sub-Agent-Architektur aus Researcher, Drafter und "
+            "Reviewer mit, verlinkte Normzitate sowie Rechtsprechungsnachweise, die als geprüft oder "
+            "als [unverifiziert -- prüfen] gekennzeichnet sind. Ausgaben sind Entwürfe zur Prüfung "
+            "durch eine zugelassene Rechtsanwältin oder einen zugelassenen Rechtsanwalt nach "
+            "§ 43a BRAO und § 2 BORA."
+        ),
+        "llms_h_how": "## Verwendung",
+        "llms_h_areas": "## Rechtsgebiete",
+        "llms_h_all": "## Alle Skills",
+        "llms_h_lang": "## Sprachen",
+        "llms_lang": (
+            "Dieses Dokument beschreibt den deutschen Seitenbaum unter {de_url}. "
+            "Ein englischer Baum mit identischem Umfang liegt unter {en_url} (llms.txt: {en_llms})."
+        ),
+    },
+}
+
+
+def T(lang, key, **kw):
+    """Look up a UI string. Raises loudly on a missing language or key."""
+    try:
+        table = STRINGS[lang]
+    except KeyError:
+        raise KeyError(f"STRINGS: unknown language {lang!r}") from None
+    try:
+        s = table[key]
+    except KeyError:
+        raise KeyError(f"STRINGS[{lang!r}]: missing key {key!r}") from None
+    return s.format(**kw) if kw else s
+
+
+def _assert_strings_parity():
+    """Both language tables must define exactly the same keys."""
+    en, de = set(STRINGS["en"]), set(STRINGS["de"])
+    if en != de:
+        raise KeyError(
+            "STRINGS key mismatch — en-only: {} | de-only: {}".format(
+                sorted(en - de), sorted(de - en)
+            )
+        )
+
+
+def n_skills(lang, n):
+    """'1 skill' / '{n} skills' with correct German forms."""
+    return T(lang, "count_skill_one") if n == 1 else T(lang, "count_skills", n=n)
+
+
+def n_tools(lang, n):
+    return T(lang, "count_tool_one") if n == 1 else T(lang, "count_tools", n=n)
+
+# ---------------------------------------------------------------------------
 # Inline SVG icons (16x16 line icons)
 # ---------------------------------------------------------------------------
 
@@ -120,10 +479,17 @@ GERMAN_TO_ENGLISH_HEADING = {
 }
 
 
-def translate_heading(german_title):
-    """Map a German H2 heading to its English UI equivalent. Keeps German if unmapped."""
-    key = german_title.strip().lower()
-    return GERMAN_TO_ENGLISH_HEADING.get(key, german_title.strip())
+def translate_heading(german_title, lang="en"):
+    """Map a German H2 heading to its English UI equivalent.
+
+    Only applies in the English tree. In the German tree the original headings
+    (Zweck, Eingaben, Ablauf, Quellen, Ausgabeformat, Risiken / typische Fehler)
+    are already correct German and are kept verbatim.
+    """
+    title = german_title.strip()
+    if lang != "en":
+        return title
+    return GERMAN_TO_ENGLISH_HEADING.get(title.lower(), title)
 
 
 # ---------------------------------------------------------------------------
@@ -395,6 +761,19 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 .nav-links a.active { color: var(--accent); }
 .nav-links a.gh-link { display: inline-flex; align-items: center; gap: 5px; }
 
+/* Language switcher */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border: 1px solid var(--border-strong);
+  border-radius: 20px; background: var(--white);
+  font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.4;
+}
+.lang-switch .lang-opt { font-weight: 600; letter-spacing: 0.02em; }
+.lang-switch a.lang-opt { color: var(--text-muted); }
+.lang-switch a.lang-opt:hover { color: var(--accent); }
+.lang-switch .lang-opt.active { color: var(--accent); cursor: default; }
+.lang-switch .lang-sep { color: var(--border-strong); }
+
 /* Breadcrumbs */
 .breadcrumbs { padding: 20px 0 0; font-size: 0.85rem; color: var(--text-muted); }
 .breadcrumbs a { color: var(--text-muted); }
@@ -632,42 +1011,88 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 """
 
 
-def _nav(active=""):
-    """Navigation bar HTML — English."""
+def _lang_switch(lang, alt_url):
+    """EN/DE switcher.
+
+    `alt_url` is the counterpart URL for the *same* page in the other language.
+    If it cannot be computed (None), fall back to the other tree's root rather
+    than emitting a broken link.
+    """
+    other = OTHER_LANG[lang]
+    href = alt_url or url_for(other)
+    items = []
+    for code in LANGS:
+        label = T(lang, f"lang_{code}")
+        title = T(lang, f"lang_{code}_title")
+        if code == lang:
+            items.append(
+                f'<span class="lang-opt active" aria-current="true" title="{escape(title)}">{escape(label)}</span>'
+            )
+        else:
+            items.append(
+                f'<a class="lang-opt" href="{href}" hreflang="{code}" lang="{code}" '
+                f'title="{escape(title)}">{escape(label)}</a>'
+            )
+    return (
+        f'<div class="lang-switch" role="group" aria-label="{escape(T(lang, "lang_switch_label"))}">'
+        + '<span class="lang-sep">/</span>'.join(items)
+        + "</div>"
+    )
+
+
+def _nav(active="", lang="en", alt_url=None):
+    """Navigation bar HTML for one language tree."""
     def _cls(name):
         return ' class="active"' if active == name else ""
     gh = SVG_ICONS["github"]
+    b = lang_base(lang)
     return f"""<nav class="navbar">
   <div class="container">
-    <a href="{BASE_URL}/" class="nav-logo">{BRAND}</a>
+    <a href="{b}/" class="nav-logo">{BRAND}</a>
     <div class="nav-links">
-      <a href="{BASE_URL}/SKILLS/"{ _cls("skills")}>Skills</a>
-      <a href="{BASE_URL}/getting-started/"{ _cls("getting-started")}>Getting Started</a>
-      <a href="{BASE_URL}/guides/authoring/"{ _cls("guides")}>Guides</a>
-      <a href="{BASE_URL}/reference/"{ _cls("reference")}>Reference</a>
-      <a href="{GITHUB_URL}" target="_blank" rel="noopener" class="gh-link">{gh} GitHub</a>
+      <a href="{b}/SKILLS/"{ _cls("skills")}>{escape(T(lang, "nav_skills"))}</a>
+      <a href="{b}/getting-started/"{ _cls("getting-started")}>{escape(T(lang, "nav_getting_started"))}</a>
+      <a href="{b}/guides/authoring/"{ _cls("guides")}>{escape(T(lang, "nav_guides"))}</a>
+      <a href="{b}/reference/"{ _cls("reference")}>{escape(T(lang, "nav_reference"))}</a>
+      <a href="{GITHUB_URL}" target="_blank" rel="noopener" class="gh-link">{gh} {escape(T(lang, "nav_github"))}</a>
+      {_lang_switch(lang, alt_url)}
     </div>
   </div>
 </nav>"""
 
 
-def _footer():
+def _footer(lang="en"):
+    b = lang_base(lang)
     return f"""<footer class="footer">
   <div class="container footer-inner">
     <div class="footer-links">
-      <a href="{GITHUB_URL}" target="_blank" rel="noopener">GitHub</a>
+      <a href="{GITHUB_URL}" target="_blank" rel="noopener">{escape(T(lang, "nav_github"))}</a>
       <span class="footer-sep">&middot;</span>
-      <span>Apache-2.0 OR MIT</span>
+      <span>{escape(T(lang, "footer_license"))}</span>
       <span class="footer-sep">&middot;</span>
-      <a href="{BASE_URL}/llms.txt">llms.txt</a>
+      <a href="{b}/llms.txt">llms.txt</a>
     </div>
-    <div class="footer-credit">Built by <a href="https://github.com/borghei" target="_blank" rel="noopener">{AUTHOR}</a></div>
+    <div class="footer-credit">{escape(T(lang, "footer_built_by"))} <a href="https://github.com/borghei" target="_blank" rel="noopener">{AUTHOR}</a></div>
   </div>
 </footer>"""
 
 
-def page(title, description, canonical, body, active="", breadcrumbs=None, jsonld=None, extra_js=""):
-    """Wrap body content in a full HTML page."""
+# Sentinel: derive the counterpart URL from `rel` automatically.
+AUTO = object()
+
+
+def page(title, description, rel, body, active="", breadcrumbs=None, jsonld=None,
+         extra_js="", lang="en", alt_url=AUTO):
+    """Wrap body content in a full HTML page.
+
+    `rel` is the site-relative path of this page ("" / "SKILLS/" / "a/b.html").
+    canonical is derived from `rel` in the current language; the counterpart in
+    the other language is derived the same way unless `alt_url` overrides it
+    (pass alt_url=None for pages that exist in one tree only, e.g. 404).
+    """
+    canonical = url_for(lang, rel)
+    if alt_url is AUTO:
+        alt_url = url_for(OTHER_LANG[lang], rel)
     bc_html = ""
     if breadcrumbs:
         parts = []
@@ -684,28 +1109,40 @@ def page(title, description, canonical, body, active="", breadcrumbs=None, jsonl
 
     js_tag = f"<script>{extra_js}</script>" if extra_js else ""
 
+    # hreflang alternates. Only emitted when both counterparts are known.
+    alt_tags = ""
+    if alt_url:
+        by_lang = {lang: canonical, OTHER_LANG[lang]: alt_url}
+        alt_tags = "\n  ".join(
+            f'<link rel="alternate" hreflang="{code}" href="{by_lang[code]}">' for code in LANGS
+        )
+        # x-default always points at the English tree.
+        alt_tags += f'\n  <link rel="alternate" hreflang="x-default" href="{by_lang["en"]}">'
+
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="{lang}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{escape(title)}</title>
   <meta name="description" content="{escape(description[:200])}">
   <link rel="canonical" href="{canonical}">
+  {alt_tags}
   <meta property="og:title" content="{escape(title)}">
   <meta property="og:description" content="{escape(description[:200])}">
   <meta property="og:url" content="{canonical}">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="{OG_LOCALE[lang]}">
   {ld_tag}
   <style>{_css()}</style>
 </head>
 <body>
-{_nav(active)}
+{_nav(active, lang, alt_url)}
 {bc_html}
 <main class="container">
 {body}
 </main>
-{_footer()}
+{_footer(lang)}
 {js_tag}
 </body>
 </html>
@@ -730,11 +1167,46 @@ def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
 
+# Every path written during a run, so stale output can be pruned afterwards.
+# Without this the generator is write-only: a skill deleted from the catalog
+# keeps its page served forever. That is not cosmetic - a merged or retired
+# skill would go on publishing superseded legal content under a live URL.
+_WRITTEN_PATHS: set[str] = set()
+
+
 def write_file(path, content):
     ensure_dir(os.path.dirname(path))
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
+    _WRITTEN_PATHS.add(os.path.realpath(path))
     return path
+
+
+def prune_stale_pages(roots=("SKILLS", "de/SKILLS")):
+    """Delete generated skill/area pages that this run did not write.
+
+    Scoped deliberately to the catalog-driven subtrees. Static content pages,
+    assets, css and js are never touched, so a partial run cannot wipe the site.
+    """
+    removed = []
+    for root in roots:
+        base = SITE_DIR / root
+        if not base.is_dir():
+            continue
+        for path in sorted(base.rglob("*.html")):
+            if os.path.realpath(path) not in _WRITTEN_PATHS:
+                path.unlink()
+                removed.append(str(path.relative_to(SITE_DIR)))
+    # Clear out any directory left empty by the pruning (e.g. a retired area).
+    for root in roots:
+        base = SITE_DIR / root
+        if not base.is_dir():
+            continue
+        for path in sorted(base.rglob("*"), reverse=True):
+            if path.is_dir() and not any(path.iterdir()):
+                path.rmdir()
+                removed.append(f"{path.relative_to(SITE_DIR)}/ (leeres Verzeichnis)")
+    return removed
 
 
 def truncate(text, length=160):
@@ -748,7 +1220,7 @@ def truncate(text, length=160):
 # Page generators
 # ---------------------------------------------------------------------------
 
-def gen_skill_page(skill, catalog, all_skills_by_domain):
+def gen_skill_page(skill, catalog, all_skills_by_domain, lang="en"):
     """Generate an individual skill detail page."""
     name = skill["name"]
     domain = skill["domain"]
@@ -765,12 +1237,14 @@ def gen_skill_page(skill, catalog, all_skills_by_domain):
 
     dl = domain_label(domain)
     pn = pretty_name(name)
+    b = lang_base(lang)
     title = f"{pn} - {BRAND}"
-    canonical = f"{BASE_URL}/SKILLS/{domain}/{name}.html"
+    rel = f"SKILLS/{domain}/{name}.html"
+    canonical = url_for(lang, rel)
     breadcrumbs = [
-        ("Home", f"{BASE_URL}/"),
-        ("Skills", f"{BASE_URL}/SKILLS/"),
-        (dl, f"{BASE_URL}/SKILLS/{domain}/"),
+        (T(lang, "bc_home"), f"{b}/"),
+        (T(lang, "bc_skills"), f"{b}/SKILLS/"),
+        (dl, f"{b}/SKILLS/{domain}/"),
         (pn, None),
     ]
 
@@ -793,9 +1267,9 @@ def gen_skill_page(skill, catalog, all_skills_by_domain):
     if version:
         badges += f' <span class="badge badge-version">v{escape(version)}</span>'
     if tools_count:
-        badges += f' <span class="badge badge-tools">{SVG_ICONS["tools"]} {tools_count} tool{"s" if tools_count != 1 else ""}</span>'
+        badges += f' <span class="badge badge-tools">{SVG_ICONS["tools"]} {escape(n_tools(lang, tools_count))}</span>'
     if has_refs:
-        badges += ' <span class="badge badge-refs">references</span>'
+        badges += f' <span class="badge badge-refs">{escape(T(lang, "badge_references"))}</span>'
     badge_bar = f'<div class="badge-bar">{badges}</div>'
 
     # Tag pills
@@ -806,12 +1280,13 @@ def gen_skill_page(skill, catalog, all_skills_by_domain):
     # Intro paragraph (description shown; intro_md skipped if just blank)
     sections_html = []
 
-    # Render each parsed section: H2 in English, body kept German
+    # Render each parsed section. Body always stays German; the H2 label is
+    # translated to English in the EN tree and kept German in the DE tree.
     for german_heading, body_md in sections:
-        english = translate_heading(german_heading)
+        heading = translate_heading(german_heading, lang)
         body_html = md_to_html(body_md) if body_md else ""
         sections_html.append(
-            f'<section><h2>{escape(english)}</h2>{body_html}</section>'
+            f'<section><h2>{escape(heading)}</h2>{body_html}</section>'
         )
 
     # If no sections parsed (fallback), render the entire markdown body
@@ -826,18 +1301,22 @@ def gen_skill_page(skill, catalog, all_skills_by_domain):
     related_html = ""
     if related:
         cards = "".join(
-            f'<a href="{BASE_URL}/SKILLS/{s["domain"]}/{s["name"]}.html" class="skill-card" style="text-decoration:none">'
+            f'<a href="{b}/SKILLS/{s["domain"]}/{s["name"]}.html" class="skill-card" style="text-decoration:none">'
             f'<h3>{escape(pretty_name(s["name"]))}</h3>'
             f'<p>{escape(truncate(s.get("description", ""), 110))}</p></a>'
             for s in related
         )
-        related_html = f'<h2>Related Skills in {escape(dl)}</h2><div class="related-grid">{cards}</div>'
+        related_html = (
+            f'<h2>{escape(T(lang, "related_skills_in", area=dl))}</h2>'
+            f'<div class="related-grid">{cards}</div>'
+        )
 
     # Source link
     ext = SVG_ICONS["external"]
     source_html = (
         f'<p style="margin-top:32px"><a href="{GITHUB_URL}/tree/main/{skill_path}" '
-        f'target="_blank" rel="noopener" class="btn btn-secondary">View SKILL.md on GitHub {ext}</a></p>'
+        f'target="_blank" rel="noopener" class="btn btn-secondary">'
+        f'{escape(T(lang, "view_skill_md"))} {ext}</a></p>'
     )
 
     body = f"""
@@ -853,30 +1332,33 @@ def gen_skill_page(skill, catalog, all_skills_by_domain):
   {source_html}
 </article>"""
 
-    return page(title, desc, canonical, body, active="skills", breadcrumbs=breadcrumbs, jsonld=jsonld)
+    return page(title, desc, rel, body, active="skills", breadcrumbs=breadcrumbs,
+                jsonld=jsonld, lang=lang)
 
 
-def gen_domain_page(domain, skills, catalog):
-    """Generate a domain index page."""
+def gen_domain_page(domain, skills, catalog, lang="en"):
+    """Generate a domain (area) index page."""
     dl = domain_label(domain)
     dm = DOMAIN_META.get(domain, {})
-    desc_short = dm.get("desc", f"Skills in the {dl} area")
+    desc_short = dm.get("desc") or T(lang, "area_desc_fallback", area=dl)
     count = len(skills)
 
+    b = lang_base(lang)
     title = f"{dl} - {BRAND}"
-    description = f"{count} skills in {dl}. {desc_short}"
-    canonical = f"{BASE_URL}/SKILLS/{domain}/"
+    description = T(lang, "area_description", n=count, area=dl, desc=desc_short)
+    rel = f"SKILLS/{domain}/"
     breadcrumbs = [
-        ("Home", f"{BASE_URL}/"),
-        ("Skills", f"{BASE_URL}/SKILLS/"),
+        (T(lang, "bc_home"), f"{b}/"),
+        (T(lang, "bc_skills"), f"{b}/SKILLS/"),
         (dl, None),
     ]
 
     search_icon = SVG_ICONS["search"]
+    ph = escape(T(lang, "search_placeholder_area", area=dl))
     filter_html = f"""<div class="filter-bar">
   <div class="search-wrap">
     {search_icon}
-    <input type="text" class="search-input" placeholder="Search {escape(dl)} skills..." id="domain-search" onkeyup="filterCards()">
+    <input type="text" class="search-input" placeholder="{ph}" id="domain-search" onkeyup="filterCards()">
   </div>
 </div>"""
 
@@ -888,9 +1370,9 @@ def gen_domain_page(domain, skills, catalog):
         if subdomain:
             badges += f' <span class="badge badge-subdomain">{escape(pretty_name(subdomain))}</span>'
         if s.get("has_references"):
-            badges += ' <span class="badge badge-refs">references</span>'
+            badges += f' <span class="badge badge-refs">{escape(T(lang, "badge_references"))}</span>'
         cards.append(
-            f'<a href="{BASE_URL}/SKILLS/{s["domain"]}/{s["name"]}.html" class="skill-card" '
+            f'<a href="{b}/SKILLS/{s["domain"]}/{s["name"]}.html" class="skill-card" '
             f'data-name="{escape(s["name"])}" data-tags="{escape(" ".join(s.get("tags", [])))}" style="text-decoration:none">'
             f'<h3>{escape(pretty_name(s["name"]))}</h3>'
             f'<p>{escape(truncate(s.get("description", ""), 130))}</p>'
@@ -912,7 +1394,7 @@ function filterCards(){
 
     body = f"""
 <div class="page-header">
-  <h1 class="page-title">{escape(dl)} <span class="count-badge">{count} skill{'s' if count != 1 else ''}</span></h1>
+  <h1 class="page-title">{escape(dl)} <span class="count-badge">{escape(n_skills(lang, count))}</span></h1>
   <p class="page-subtitle">{escape(desc_short)}</p>
 </div>
 {filter_html}
@@ -920,17 +1402,19 @@ function filterCards(){
 {"".join(cards)}
 </div>"""
 
-    return page(title, description, canonical, body, active="skills", breadcrumbs=breadcrumbs, extra_js=search_js)
+    return page(title, description, rel, body, active="skills", breadcrumbs=breadcrumbs,
+                extra_js=search_js, lang=lang)
 
 
-def gen_skills_index(catalog, all_skills_by_domain):
+def gen_skills_index(catalog, all_skills_by_domain, lang="en"):
     """Generate the all-skills catalog page."""
     total = len(catalog["skills"])
     domain_count = len(catalog.get("domains", {}))
-    title = f"All Skills - {BRAND}"
-    description = f"{total} German-law and EU-compliance skills across {domain_count} areas."
-    canonical = f"{BASE_URL}/SKILLS/"
-    breadcrumbs = [("Home", f"{BASE_URL}/"), ("Skills", None)]
+    b = lang_base(lang)
+    title = T(lang, "skills_index_title", brand=BRAND)
+    description = T(lang, "skills_index_description", total=total, areas=domain_count)
+    rel = "SKILLS/"
+    breadcrumbs = [(T(lang, "bc_home"), f"{b}/"), (T(lang, "bc_skills"), None)]
 
     domain_options = "".join(
         f'<option value="{d}">{escape(domain_label(d))}</option>'
@@ -938,13 +1422,14 @@ def gen_skills_index(catalog, all_skills_by_domain):
     )
 
     search_icon = SVG_ICONS["search"]
+    ph = escape(T(lang, "search_placeholder_all", n=total))
     filter_html = f"""<div class="filter-bar">
   <div class="search-wrap">
     {search_icon}
-    <input type="text" class="search-input" placeholder="Search {total} skills..." id="skill-search" onkeyup="filterSkills()">
+    <input type="text" class="search-input" placeholder="{ph}" id="skill-search" onkeyup="filterSkills()">
   </div>
   <select class="filter-select" id="domain-filter" onchange="filterSkills()">
-    <option value="">All Areas</option>
+    <option value="">{escape(T(lang, "filter_all_areas"))}</option>
     {domain_options}
   </select>
 </div>"""
@@ -958,11 +1443,11 @@ def gen_skills_index(catalog, all_skills_by_domain):
         examples = [s["name"] for s in all_skills_by_domain[d][:4]]
         pills = "".join(f'<span class="example-pill">{escape(pretty_name(e))}</span>' for e in examples)
         if cnt > len(examples):
-            pills += f'<span class="example-pill">+{cnt - len(examples)} more</span>'
+            pills += f'<span class="example-pill">{escape(T(lang, "more_n", n=cnt - len(examples)))}</span>'
         domain_summary.append(
-            f'<a href="{BASE_URL}/SKILLS/{d}/" class="skill-card" style="text-decoration:none">'
+            f'<a href="{b}/SKILLS/{d}/" class="skill-card" style="text-decoration:none">'
             f'<h3>{escape(dl_name)}</h3>'
-            f'<div class="badge-bar"><span class="badge badge-domain">{cnt} skill{"s" if cnt != 1 else ""}</span></div>'
+            f'<div class="badge-bar"><span class="badge badge-domain">{escape(n_skills(lang, cnt))}</span></div>'
             f'<p>{escape(dm.get("desc", ""))}</p>'
             f'<div class="example-pills">{pills}</div></a>'
         )
@@ -976,9 +1461,9 @@ def gen_skills_index(catalog, all_skills_by_domain):
         if subdomain:
             badges += f' <span class="badge badge-subdomain">{escape(pretty_name(subdomain))}</span>'
         if s.get("has_references"):
-            badges += ' <span class="badge badge-refs">references</span>'
+            badges += f' <span class="badge badge-refs">{escape(T(lang, "badge_references"))}</span>'
         cards.append(
-            f'<a href="{BASE_URL}/SKILLS/{s["domain"]}/{s["name"]}.html" class="skill-card" '
+            f'<a href="{b}/SKILLS/{s["domain"]}/{s["name"]}.html" class="skill-card" '
             f'data-name="{escape(s["name"])}" data-domain="{escape(s["domain"])}" '
             f'data-tags="{escape(" ".join(s.get("tags", [])))}" style="text-decoration:none">'
             f'<h3>{escape(pretty_name(s["name"]))}</h3>'
@@ -1005,40 +1490,37 @@ function filterSkills(){
 
     body = f"""
 <div class="page-header">
-  <h1 class="page-title">Skill Catalog <span class="count-badge">{total} skills</span></h1>
+  <h1 class="page-title">{escape(T(lang, "skills_catalog_h1"))} <span class="count-badge">{escape(n_skills(lang, total))}</span></h1>
   <p class="page-subtitle">{escape(description)}</p>
 </div>
 
-<h2 class="section-heading">Browse by Area</h2>
+<h2 class="section-heading">{escape(T(lang, "browse_by_area"))}</h2>
 <div class="skills-grid" style="margin-bottom:48px">
 {"".join(domain_summary)}
 </div>
 
-<h2 class="section-heading">All Skills</h2>
+<h2 class="section-heading">{escape(T(lang, "all_skills_h"))}</h2>
 {filter_html}
 <div class="skills-grid" id="all-skills">
 {"".join(cards)}
 </div>"""
 
-    return page(title, description, canonical, body, active="skills", breadcrumbs=breadcrumbs, extra_js=search_js)
+    return page(title, description, rel, body, active="skills", breadcrumbs=breadcrumbs,
+                extra_js=search_js, lang=lang)
 
 
 # ---------------------------------------------------------------------------
 # Landing page
 # ---------------------------------------------------------------------------
 
-def gen_landing(catalog, all_skills_by_domain):
-    """Generate the landing page (site/index.html)."""
+def gen_landing(catalog, all_skills_by_domain, lang="en"):
+    """Generate the landing page (site/index.html, site/de/index.html)."""
     total = catalog.get("total_skills", len(catalog["skills"]))
     domain_count = len(catalog.get("domains", {}))
+    b = lang_base(lang)
 
-    title = f"{BRAND}: AI skills for German legal practice and EU compliance"
-    description = (
-        f"{domain_count} areas, {total} skills, multi-provider (Claude, Gemini, GPT). "
-        "Primary-source citations linked to gesetze-im-internet.de and EUR-Lex. "
-        "Built for Kanzleien, in-house counsel, and EU compliance teams."
-    )
-    canonical = f"{BASE_URL}/"
+    title = T(lang, "landing_title", brand=BRAND)
+    description = T(lang, "landing_description", areas=domain_count, total=total)
 
     # Top 12 domains by skill count for the landing grid
     sorted_domains = sorted(all_skills_by_domain.items(), key=lambda x: -len(x[1]))
@@ -1048,67 +1530,59 @@ def gen_landing(catalog, all_skills_by_domain):
         dm = DOMAIN_META.get(d, {})
         cnt = len(sk_list)
         featured_cards.append(
-            f'<a href="{BASE_URL}/SKILLS/{d}/" class="skill-card" style="text-decoration:none">'
+            f'<a href="{b}/SKILLS/{d}/" class="skill-card" style="text-decoration:none">'
             f'<h3>{escape(dl)}</h3>'
-            f'<div class="badge-bar"><span class="badge badge-domain">{cnt} skill{"s" if cnt != 1 else ""}</span></div>'
+            f'<div class="badge-bar"><span class="badge badge-domain">{escape(n_skills(lang, cnt))}</span></div>'
             f'<p>{escape(dm.get("desc", ""))}</p></a>'
         )
 
     body = f"""
 <section class="hero">
-  <h1 class="hero-title">AI skills for German legal practice and EU compliance.</h1>
-  <p class="hero-subtitle">Draft a BAG-konforme Abmahnung. Run a DSGVO Art. 15 workflow. Build a KI-VO compliance plan. Tested, sourced, multi-provider. Paste into any AI chat or install via Claude Code, Gemini, or GPT.</p>
+  <h1 class="hero-title">{escape(T(lang, "hero_title"))}</h1>
+  <p class="hero-subtitle">{escape(T(lang, "hero_subtitle"))}</p>
   <div class="stat-row">
-    <span class="stat"><strong>{domain_count}</strong> Areas</span>
-    <span class="stat"><strong>{total}</strong> Skills</span>
-    <span class="stat"><strong>3</strong> Providers</span>
-    <span class="stat"><strong>8</strong> Compliance Frameworks</span>
+    <span class="stat"><strong>{domain_count}</strong> {escape(T(lang, "stat_areas"))}</span>
+    <span class="stat"><strong>{total}</strong> {escape(T(lang, "stat_skills"))}</span>
+    <span class="stat"><strong>3</strong> {escape(T(lang, "stat_providers"))}</span>
+    <span class="stat"><strong>8</strong> {escape(T(lang, "stat_frameworks"))}</span>
   </div>
   <div class="hero-actions">
-    <a href="{BASE_URL}/SKILLS/" class="btn btn-primary">Browse skills</a>
-    <a href="{BASE_URL}/getting-started/" class="btn btn-secondary">Getting started</a>
+    <a href="{b}/SKILLS/" class="btn btn-primary">{escape(T(lang, "btn_browse_skills"))}</a>
+    <a href="{b}/getting-started/" class="btn btn-secondary">{escape(T(lang, "btn_getting_started"))}</a>
   </div>
 </section>
 
 <div class="disclaimer">
-  <p><strong>This project is built with the assistance of AI tools.</strong> AI-generated content may contain errors. <strong>This is not legal advice.</strong> Any output is a draft for review by a licensed Rechtsanwalt or Syndikusrechtsanwalt under &sect; 43a BRAO and &sect; 2 BORA. Verify case-law citations in Beck-Online, juris, or openjur.net. The author accepts no liability. <strong>Use at your own risk.</strong></p>
+  <p>{T(lang, "disclaimer")}</p>
+  <p style="margin-top:10px">{escape(T(lang, "german_content_note"))}</p>
 </div>
 
-<h2 class="section-heading">Featured Areas</h2>
-<p style="color:var(--text-muted); max-width:720px; margin-bottom:20px;">{domain_count} areas total covering substantive German law, Fachanwaltschaften, EU compliance frameworks, and specialty domains.</p>
+<h2 class="section-heading">{escape(T(lang, "featured_areas"))}</h2>
+<p style="color:var(--text-muted); max-width:720px; margin-bottom:20px;">{escape(T(lang, "featured_areas_note", areas=domain_count))}</p>
 <div class="skills-grid">
 {"".join(featured_cards)}
 </div>
 
-<p style="text-align:center; margin: 16px 0 60px;"><a href="{BASE_URL}/SKILLS/" class="btn btn-secondary">View all {domain_count} areas {SVG_ICONS["arrow-right"]}</a></p>
+<p style="text-align:center; margin: 16px 0 60px;"><a href="{b}/SKILLS/" class="btn btn-secondary">{escape(T(lang, "view_all_areas", areas=domain_count))} {SVG_ICONS["arrow-right"]}</a></p>
 """
 
-    return page(title, description, canonical, body, active="")
+    return page(title, description, "", body, active="", lang=lang)
 
 
 # ---------------------------------------------------------------------------
 # Static content pages (getting-started / guides / reference / 404)
+#
+# The markdown bodies live in STRINGS so both trees go through the same
+# lookup path as the chrome. Bodies that need live counts from skills.json
+# carry {total} / {areas} placeholders; all other braces in these bodies are
+# literal, so T() only formats when keyword arguments are supplied.
 # ---------------------------------------------------------------------------
 
-def _content_page(title, subtitle, body_md, canonical, active, breadcrumbs):
-    """Wrap markdown body inside the standard content-page shell."""
-    body_html = md_to_html(body_md)
-    body = f"""
-<article class="content-page">
-  <div class="page-header">
-    <h1 class="page-title">{escape(title)}</h1>
-    <p class="page-subtitle">{escape(subtitle)}</p>
-  </div>
-  {body_html}
-</article>"""
-    return page(f"{title} - {BRAND}", subtitle, canonical, body, active=active, breadcrumbs=breadcrumbs)
-
-
-def gen_getting_started_index():
-    body_md = """
+STRINGS["en"].update({
+    "gs_body": """
 This guide walks you through installing AI Skills German Law and running your first skill.
 
-The skills work with three providers: **Claude** (Claude Code, claude.ai), **Gemini** (Gems, Gemini CLI), and **OpenAI** (Custom GPTs, ChatGPT). Outputs are in German; the site shell is in English.
+The skills work with three providers: **Claude** (Claude Code, claude.ai), **Gemini** (Gems, Gemini CLI), and **OpenAI** (Custom GPTs, ChatGPT). Skill outputs are in German; this site is available in English and German.
 
 ## Choose your path
 
@@ -1118,7 +1592,7 @@ The skills work with three providers: **Claude** (Claude Code, claude.ai), **Gem
 
 ## What you get
 
-- 189 skills across 49 areas of German law and EU compliance.
+- {total} skills across {areas} areas of German law and EU compliance.
 - Statute citations linked to `gesetze-im-internet.de` and `EUR-Lex`.
 - Case-law citations labelled `[unverifiziert – prüfen]` until externally checked. `[generiert]` (hallucinated) citations are forbidden.
 - Provider-neutral skill format — a single `SKILL.md` runs in Claude, Gemini, and GPT with adapters.
@@ -1127,19 +1601,8 @@ The skills work with three providers: **Claude** (Claude Code, claude.ai), **Gem
 ## Important — read first
 
 This is not legal advice. Every skill output is a draft for review by a licensed Rechtsanwalt or Syndikusrechtsanwalt under § 43a BRAO and § 2 BORA. Always verify case-law citations in Beck-Online, juris, or openjur.net before client-facing or court-facing use.
-"""
-    return _content_page(
-        "Getting Started",
-        "Install AI Skills German Law and run your first skill in under a minute.",
-        body_md,
-        f"{BASE_URL}/getting-started/",
-        active="getting-started",
-        breadcrumbs=[("Home", f"{BASE_URL}/"), ("Getting Started", None)],
-    )
-
-
-def gen_installation():
-    body_md = f"""
+""",
+    "install_body": f"""
 There are three ways to use AI Skills German Law: add it as a Claude Code plugin marketplace, clone the repo, or copy individual skills.
 
 ## Option 1 — Claude Code (recommended)
@@ -1184,23 +1647,8 @@ After install, check `VERIFICATION_STATUS.md` to see which plugins have complete
 ```bash
 cat VERIFICATION_STATUS.md
 ```
-"""
-    return _content_page(
-        "Installation",
-        "Add AI Skills German Law to Claude Code, clone the repo, or copy individual skills.",
-        body_md,
-        f"{BASE_URL}/getting-started/installation/",
-        active="getting-started",
-        breadcrumbs=[
-            ("Home", f"{BASE_URL}/"),
-            ("Getting Started", f"{BASE_URL}/getting-started/"),
-            ("Installation", None),
-        ],
-    )
-
-
-def gen_platforms():
-    body_md = """
+""",
+    "platforms_body": """
 Every skill is provider-neutral. The same `SKILL.md` runs on Claude, Gemini, and GPT — the only difference is how you load it.
 
 ## Claude Code
@@ -1248,23 +1696,8 @@ Reference the `SKILL.md` from your `.cursorrules` (or equivalent) or paste its c
 
 - Skill outputs are in German regardless of provider — that is intentional.
 - Each `SKILL.md` carries provider variants in the frontmatter under `provider_variants:`.
-"""
-    return _content_page(
-        "Platforms",
-        "Provider-specific setup for Claude Code, Claude.ai, Gemini, ChatGPT, Cursor, and other AI assistants.",
-        body_md,
-        f"{BASE_URL}/getting-started/platforms/",
-        active="getting-started",
-        breadcrumbs=[
-            ("Home", f"{BASE_URL}/"),
-            ("Getting Started", f"{BASE_URL}/getting-started/"),
-            ("Platforms", None),
-        ],
-    )
-
-
-def gen_quick_start():
-    body_md = """
+""",
+    "qs_body": """
 Run your first skill in under 60 seconds.
 
 ## 1. Pick a skill
@@ -1304,23 +1737,8 @@ If the draft is not quite right, give the skill more context in a follow-up turn
 - See [Platforms](../platforms/) for setup outside Claude Code.
 - See [Authoring](../../guides/authoring/) to write your own skill.
 - See [Reference](../../reference/) for the conventions every skill follows.
-"""
-    return _content_page(
-        "Quick Start",
-        "Run your first German-law skill in 60 seconds.",
-        body_md,
-        f"{BASE_URL}/getting-started/quick-start/",
-        active="getting-started",
-        breadcrumbs=[
-            ("Home", f"{BASE_URL}/"),
-            ("Getting Started", f"{BASE_URL}/getting-started/"),
-            ("Quick Start", None),
-        ],
-    )
-
-
-def gen_guide_authoring():
-    body_md = """
+""",
+    "authoring_body": """
 This guide explains how to write a new skill that fits the repository conventions.
 
 ## Skill anatomy
@@ -1401,23 +1819,8 @@ Every skill ships with a `test.md` that captures at least one full input/output 
 ## Submit
 
 Open a PR against `main`. The CI pipeline will run the smoke tests and check the frontmatter schema.
-"""
-    return _content_page(
-        "Authoring Skills",
-        "How to write a new skill that fits the repository conventions.",
-        body_md,
-        f"{BASE_URL}/guides/authoring/",
-        active="guides",
-        breadcrumbs=[
-            ("Home", f"{BASE_URL}/"),
-            ("Guides", f"{BASE_URL}/guides/authoring/"),
-            ("Authoring", None),
-        ],
-    )
-
-
-def gen_guide_bundles():
-    body_md = """
+""",
+    "bundles_body": """
 Bundles group skills that are routinely used together. They are not a separate concept in the file tree — each plugin (area) is itself a bundle.
 
 ## Per-area bundles
@@ -1446,23 +1849,8 @@ Install multiple plugins at once:
 ```
 
 The skills then orchestrate together through the shared researcher/drafter/reviewer agents.
-"""
-    return _content_page(
-        "Bundles",
-        "Group related skills into workflows that span multiple areas.",
-        body_md,
-        f"{BASE_URL}/guides/bundles/",
-        active="guides",
-        breadcrumbs=[
-            ("Home", f"{BASE_URL}/"),
-            ("Guides", f"{BASE_URL}/guides/authoring/"),
-            ("Bundles", None),
-        ],
-    )
-
-
-def gen_guide_customization():
-    body_md = """
+""",
+    "custom_body": """
 Every skill in this repo is a starting point. Customise it for your Kanzlei, your in-house style, or your Mandat.
 
 ## What to customise
@@ -1483,23 +1871,8 @@ Append to `references/kommentare.md` and `references/zitierweise.md` in your for
 ## Provider variants
 
 The frontmatter `provider_variants:` controls which providers a skill is exposed to. If you only use Gemini, drop `claude` and `openai`. This does not change the SKILL body; it only changes which adapter layers generate provider-specific manifests.
-"""
-    return _content_page(
-        "Customization",
-        "Fork, override, and extend skills for your Kanzlei or compliance team.",
-        body_md,
-        f"{BASE_URL}/guides/customization/",
-        active="guides",
-        breadcrumbs=[
-            ("Home", f"{BASE_URL}/"),
-            ("Guides", f"{BASE_URL}/guides/authoring/"),
-            ("Customization", None),
-        ],
-    )
-
-
-def gen_guide_orchestration():
-    body_md = """
+""",
+    "orch_body": """
 Skills in this repository follow a three-role sub-agent architecture: **researcher**, **drafter**, **reviewer**.
 
 ## The three agents
@@ -1535,23 +1908,8 @@ The skill body then describes which agent does what under `## Sub-Agent-Architek
 ## Customising the agents
 
 Edit `agents/researcher.md`, `agents/drafter.md`, `agents/reviewer.md` in your fork. The change applies to every skill that imports them.
-"""
-    return _content_page(
-        "Orchestration",
-        "How researcher, drafter, and reviewer agents work together inside every skill.",
-        body_md,
-        f"{BASE_URL}/guides/orchestration/",
-        active="guides",
-        breadcrumbs=[
-            ("Home", f"{BASE_URL}/"),
-            ("Guides", f"{BASE_URL}/guides/authoring/"),
-            ("Orchestration", None),
-        ],
-    )
-
-
-def gen_reference_index():
-    body_md = f"""
+""",
+    "ref_body": f"""
 The reference section points to the binding documentation that every skill in this repository follows.
 
 ## Source documents
@@ -1592,42 +1950,584 @@ Every case-law citation gets one of three markers:
 ## Disclaimer
 
 This is not legal advice. Skill output is a draft for review by a licensed Rechtsanwalt or Syndikusrechtsanwalt under § 43a BRAO and § 2 BORA.
-"""
+""",
+})
+
+STRINGS["de"].update({
+    "gs_body": """
+Diese Anleitung führt Sie durch die Installation von AI Skills German Law und die Ausführung Ihres ersten Skills.
+
+Die Skills laufen bei drei Anbietern: **Claude** (Claude Code, claude.ai), **Gemini** (Gems, Gemini CLI) und **OpenAI** (Custom GPTs, ChatGPT). Die Skill-Ausgaben sind deutsch; diese Website steht auf Deutsch und Englisch zur Verfügung.
+
+## Wählen Sie Ihren Einstieg
+
+- **[Installation](installation/)** — Marketplace in Claude Code einbinden, Skills in Ihr Projekt kopieren oder direkt von GitHub nutzen.
+- **[Schnelleinstieg](quick-start/)** — Den ersten Skill in unter 60 Sekunden ausführen.
+- **[Plattformen](platforms/)** — Einrichtung je Anbieter: Claude Code, Gemini CLI, ChatGPT Custom GPTs, Cursor und weitere KI-Assistenten.
+
+## Was Sie erhalten
+
+- {total} Skills in {areas} Rechtsgebieten des deutschen Rechts und der EU-Compliance.
+- Normzitate verlinkt auf `gesetze-im-internet.de` und `EUR-Lex`.
+- Rechtsprechungsnachweise sind mit `[unverifiziert – prüfen]` gekennzeichnet, solange sie nicht extern geprüft wurden. `[generiert]` (halluzinierte) Fundstellen sind unzulässig.
+- Anbieterneutrales Skill-Format — eine einzige `SKILL.md` läuft über Adapter in Claude, Gemini und GPT.
+- Prüfprotokoll (`VERIFICATION_STATUS.md`) mit dem Stand der bestätigten Rechtsprechungsnachweise.
+
+## Wichtig — bitte zuerst lesen
+
+Dies ist keine Rechtsberatung. Jede Skill-Ausgabe ist ein Entwurf zur Prüfung durch eine zugelassene Rechtsanwältin oder einen zugelassenen Rechtsanwalt bzw. Syndikusrechtsanwalt nach § 43a BRAO und § 2 BORA. Prüfen Sie Rechtsprechungsnachweise stets in Beck-Online, juris oder openjur.net, bevor Sie sie gegenüber Mandantschaft oder Gericht verwenden.
+""",
+    "install_body": f"""
+Es gibt drei Wege, AI Skills German Law zu nutzen: als Plugin-Marketplace in Claude Code einbinden, das Repository klonen oder einzelne Skills kopieren.
+
+## Variante 1 — Claude Code (empfohlen)
+
+```bash
+# Marketplace hinzufügen
+/plugin marketplace add borghei/AI-Skills-German-Law
+
+# Ein Rechtsgebiet installieren
+/plugin install arbeitsrecht
+/plugin install datenschutzrecht
+/plugin install kartellrecht
+
+# Einen Skill ausführen
+/arbeitsrecht:kuendigungs-pruefung
+```
+
+## Variante 2 — Repository klonen
+
+```bash
+git clone {GITHUB_URL}.git
+cd AI-Skills-German-Law
+
+# Einen Skill ansehen
+cat arbeitsrecht/skills/abmahnung/SKILL.md
+```
+
+## Variante 3 — Einzelnen Skill kopieren
+
+Wählen Sie den Ordner des gewünschten Rechtsgebiets und kopieren Sie ihn in Ihr Projekt.
+
+```bash
+# Beispiel: die Skills zum Datenschutzrecht in Ihr Projekt übernehmen
+git clone {GITHUB_URL}.git
+cp -r AI-Skills-German-Law/datenschutzrecht your-project/
+```
+
+## Prüfen
+
+Sehen Sie nach der Installation in `VERIFICATION_STATUS.md` nach, für welche Plugins eine externe Prüfung der Rechtsprechungsnachweise abgeschlossen ist.
+
+```bash
+cat VERIFICATION_STATUS.md
+```
+""",
+    "platforms_body": """
+Jeder Skill ist anbieterneutral. Dieselbe `SKILL.md` läuft in Claude, Gemini und GPT — unterschiedlich ist nur, wie Sie sie laden.
+
+## Claude Code
+
+Die schnellste Einrichtung. Einmal installieren, per Slash-Befehl ausführen.
+
+```bash
+/plugin marketplace add borghei/AI-Skills-German-Law
+/plugin install arbeitsrecht
+/arbeitsrecht:abmahnung
+```
+
+## Claude.ai (Projects)
+
+Legen Sie ein Projekt an, fügen Sie den Inhalt der `SKILL.md` in die Projektwissensbasis ein und arbeiten Sie dann wie gewohnt.
+
+1. `claude.ai` öffnen → Projects → Neues Projekt.
+2. Benennen Sie es nach dem Skill (z. B. `Abmahnung`).
+3. Fügen Sie den Inhalt der `SKILL.md` als Text in die Projektwissensbasis ein.
+4. Setzen Sie als Custom Instructions: *"Du bist Expertin bzw. Experte für das Rechtsgebiet {Domain}. Nutze das Projektwissen als Fachgrundlage. Antworte auf Deutsch."*
+
+## Gemini (Gems)
+
+Legen Sie unter `gemini.google.com` ein Gem an und fügen Sie den Inhalt der `SKILL.md` in den System-Prompt ein.
+
+## Gemini CLI
+
+```bash
+# Die SKILL.md in den Gemini-Einstellungen referenzieren:
+.gemini/skills/abmahnung/SKILL.md
+```
+
+## ChatGPT (Custom GPTs)
+
+1. `chatgpt.com` → Explore GPTs → Create.
+2. Benennen Sie den GPT nach dem Skill.
+3. Fügen Sie den Inhalt der `SKILL.md` in das Feld "Instructions" ein.
+4. Testen Sie mit dem Beispiel-Prompt am Ende der `SKILL.md`.
+
+## Cursor / Cline / Aider
+
+Referenzieren Sie die `SKILL.md` aus Ihrer `.cursorrules` (oder dem entsprechenden Pendant) oder fügen Sie den Inhalt in den System-Prompt ein.
+
+## Hinweise
+
+- Die Skill-Ausgaben sind unabhängig vom Anbieter deutsch — das ist beabsichtigt.
+- Jede `SKILL.md` führt die Anbietervarianten im Frontmatter unter `provider_variants:`.
+""",
+    "qs_body": """
+Führen Sie Ihren ersten Skill in unter 60 Sekunden aus.
+
+## 1. Skill auswählen
+
+Durchsuchen Sie den [Skill-Katalog](../../SKILLS/) und wählen Sie einen Skill. Für diese Anleitung verwenden wir `arbeitsrecht:abmahnung`.
+
+## 2. Marketplace installieren
+
+```bash
+/plugin marketplace add borghei/AI-Skills-German-Law
+/plugin install arbeitsrecht
+```
+
+## 3. Skill ausführen
+
+```
+/arbeitsrecht:abmahnung
+```
+
+Der Skill fragt ab:
+
+- konkretes Verhalten (Datum, Ort, Zeugen)
+- Art der Pflichtverletzung
+- frühere Abmahnungen
+- Position des AN
+
+## 4. Ausgabe prüfen
+
+Jede Skill-Ausgabe ist ein Entwurf. Prüfen Sie den deutschen Text, verifizieren Sie alle mit `[unverifiziert – prüfen]` gekennzeichneten Fundstellen in Beck-Online oder juris und passen Sie das Ergebnis an Ihr Mandat an.
+
+## 5. Nachschärfen
+
+Wenn der Entwurf noch nicht passt, geben Sie dem Skill im nächsten Schritt mehr Kontext. Skills arbeiten dialogisch — sie behalten den Stand der Datei und frühere Entscheidungen im Blick.
+
+## Nächste Schritte
+
+- Siehe [Plattformen](../platforms/) für die Einrichtung außerhalb von Claude Code.
+- Siehe [Skills schreiben](../../guides/authoring/), um einen eigenen Skill zu erstellen.
+- Siehe [Referenz](../../reference/) für die Konventionen, denen jeder Skill folgt.
+""",
+    "authoring_body": """
+Diese Anleitung erklärt, wie Sie einen neuen Skill schreiben, der den Konventionen des Repositorys entspricht.
+
+## Aufbau eines Skills
+
+Jeder Skill liegt unter `<rechtsgebiet>/skills/<skill-name>/SKILL.md` und folgt diesem Aufbau:
+
+```
+---
+name: skill-name
+description: "Eine prägnante Beschreibung..."
+language: de
+agents:
+  researcher: ../../agents/researcher.md
+  drafter: ../../agents/drafter.md
+  reviewer: ../../agents/reviewer.md
+provider_variants:
+  - claude
+  - gemini
+  - openai
+test: ./test.md
+---
+
+# /rechtsgebiet:skill-name
+
+## Zweck
+...
+
+## Eingaben
+...
+
+## Sub-Agent-Architektur
+...
+
+## Ablauf
+...
+
+## Quellen und Zitierweise
+...
+
+## Ausgabeformat
+...
+
+## Risiken / typische Fehler
+...
+```
+
+## Pflichtabschnitte
+
+1. **Zweck** — was der Skill leistet und wann er einzusetzen ist.
+2. **Eingaben** — welche Angaben die Nutzerin bzw. der Nutzer liefern muss.
+3. **Sub-Agent-Architektur** — wie Researcher, Drafter und Reviewer zusammenwirken.
+4. **Ablauf** — das schrittweise Vorgehen.
+5. **Quellen und Zitierweise** — Normen, Kommentarliteratur, Rechtsprechung (Fundstellen verlinkt).
+6. **Ausgabeformat** — die Form des Arbeitsergebnisses (Schreiben, Vermerk, Tabelle usw.).
+7. **Risiken / typische Fehler** — bekannte Fallstricke.
+
+## Zitierdisziplin
+
+- Normen: Verlinkung auf `gesetze-im-internet.de`.
+- Unionsrecht: Verlinkung auf `EUR-Lex`.
+- Rechtsprechungsnachweise haben genau einen von drei Zuständen:
+  - **(ohne Kennzeichnung, mit URL)** — gegen eine amtliche Quelle geprüft.
+  - **`[unverifiziert – prüfen]`** — Modellwissen, nicht extern geprüft. Die Prüfung obliegt Ihnen.
+  - **`[generiert]`** — in mandatsbezogenen Ausgaben unzulässig.
+
+Die verbindlichen Zitierkonventionen finden Sie in [`references/zitierweise.md`](../../reference/).
+
+## Methodik
+
+- Für Vermerke und begründete Mandantenschreiben grundsätzlich **Gutachtenstil**.
+- **Urteilsstil** für Schriftsätze und kurze interne Notizen.
+- **Anspruchsgrundlagenprüfung** in der klassischen Reihenfolge: Vertrag → c.i.c. → GoA → dinglich → Delikt → Bereicherung.
+
+## Testdatei
+
+Zu jedem Skill gehört eine `test.md` mit mindestens einem vollständigen Durchlauf aus Eingabe und Ausgabe. Die Testdatei wird im Frontmatter referenziert (`test: ./test.md`).
+
+## Einreichen
+
+Öffnen Sie einen Pull Request gegen `main`. Die CI-Pipeline führt die Smoke-Tests aus und prüft das Frontmatter-Schema.
+""",
+    "bundles_body": """
+Bundles fassen Skills zusammen, die regelmäßig gemeinsam eingesetzt werden. Sie sind kein eigenes Konzept im Dateibaum — jedes Plugin (Rechtsgebiet) ist selbst ein Bundle.
+
+## Bundles je Rechtsgebiet
+
+Jeder Ordner eines Rechtsgebiets (z. B. `arbeitsrecht/`, `kartellrecht/`, `datenschutzrecht/`) ist ein in sich geschlossenes Bundle aus Skills, gemeinsam genutzten Agenten und Tests. Mit dem Rechtsgebiet installieren Sie sämtliche darin enthaltenen Skills.
+
+## Bundles über Rechtsgebiete hinweg
+
+Manche Sachverhalte betreffen mehrere Rechtsgebiete. Häufige Kombinationen:
+
+- **M&A-Due-Diligence**: `gesellschaftsrecht`, `kartellrecht`, `aussenwirtschaft-zoll-sanktionen`, `arbeitsrecht` (Sozialauswahl).
+- **Launch eines KI-Produkts**: `ki-vo-compliance`, `datenschutzrecht`, `dsa-dma`, `produktrecht`.
+- **Compliance-Grundausstattung**: `geldwaesche-aml-kyc`, `hinweisgeberschutz`, `lieferkettengesetz`, `csrd`.
+- **Prüfung von IT-Verträgen**: `it-recht`, `datenschutzrecht`, `urheber-medienrecht`, `vertragsrecht`.
+- **Vorfall im Betrieb**: `arbeitsrecht`, `datenschutzrecht`, `strafrecht`.
+
+## Bundles in Claude Code zusammenstellen
+
+Mehrere Plugins auf einmal installieren:
+
+```bash
+/plugin install gesellschaftsrecht
+/plugin install kartellrecht
+/plugin install aussenwirtschaft-zoll-sanktionen
+/plugin install arbeitsrecht
+```
+
+Die Skills wirken dann über die gemeinsamen Researcher-, Drafter- und Reviewer-Agenten zusammen.
+""",
+    "custom_body": """
+Jeder Skill in diesem Repository ist ein Ausgangspunkt. Passen Sie ihn an Ihre Kanzlei, Ihren internen Stil oder Ihr Mandat an.
+
+## Was Sie anpassen können
+
+- **Stil**: die voreingestellte Sie-Form durch die Du-Form ersetzen, wenn Ihre Unternehmenskultur das trägt.
+- **Vorlagen**: jeder `Ausgabeformat`-Block lässt sich durch Ihren Briefkopf und Ihre Gliederung ersetzen.
+- **Zitierdichte**: die Zahl der Kommentarnachweise erhöhen oder verringern, je nachdem, ob die Ausgabe an Partner, Mandantschaft oder Gericht geht.
+- **Risikoschwellen**: die Risikohinweise unter `Risiken / typische Fehler` strenger oder großzügiger fassen.
+
+## Anpassen, ohne Updates zu verlieren
+
+Forken Sie das Repository. Legen Sie einen Overlay-Ordner `local/` an, der den Pfad des Ursprungs-Rechtsgebiets spiegelt, aber nur Ihre Überschreibungen enthält. Ihre `SKILL.md` unter `local/arbeitsrecht/skills/abmahnung/SKILL.md` verdrängt die stromaufwärts gelegene Fassung, wenn Sie `local/` zuerst laden.
+
+## Eigene Normen und Kommentare ergänzen
+
+Ergänzen Sie `references/kommentare.md` und `references/zitierweise.md` in Ihrem Fork. Zitieren Sie daraus wie gewohnt aus Ihrer SKILL.md.
+
+## Anbietervarianten
+
+Das Frontmatter-Feld `provider_variants:` steuert, welchen Anbietern ein Skill bereitgestellt wird. Wenn Sie ausschließlich Gemini nutzen, entfernen Sie `claude` und `openai`. Der Skill-Text selbst ändert sich dadurch nicht; es ändert sich nur, welche Adapter anbieterspezifische Manifeste erzeugen.
+""",
+    "orch_body": """
+Die Skills dieses Repositorys folgen einer Sub-Agent-Architektur mit drei Rollen: **Researcher**, **Drafter**, **Reviewer**.
+
+## Die drei Agenten
+
+- **Researcher** (`agents/researcher.md`) — ermittelt Normen, Kommentarstellen und Rechtsprechung. Ergebnis ist eine Fundstellensammlung mit Links.
+- **Drafter** (`agents/drafter.md`) — verfasst das Arbeitsergebnis (Schreiben, Vermerk, Schriftsatz, Ausgabevorlage).
+- **Reviewer** (`agents/reviewer.md`) — prüft auf Bestimmtheit, Verhältnismäßigkeit, fehlende Nachweise und Risikohinweise.
+
+## Wie die Orchestrierung abläuft
+
+Jede `SKILL.md` deklariert die drei Agenten im Frontmatter:
+
+```yaml
+agents:
+  researcher: ../../agents/researcher.md
+  drafter: ../../agents/drafter.md
+  reviewer: ../../agents/reviewer.md
+```
+
+Der Skill-Text beschreibt anschließend unter `## Sub-Agent-Architektur`, welcher Agent was übernimmt. Zur Laufzeit gilt:
+
+1. Der Skill wird geladen.
+2. Der Anbieter führt zuerst den `researcher` auf die Eingaben an.
+3. Der `drafter` verarbeitet die Fundstellensammlung und erstellt das Arbeitsergebnis.
+4. Der `reviewer` bewertet das Ergebnis, weist auf Risiken hin; die Endausgabe besteht aus Arbeitsergebnis und Reviewer-Hinweisen.
+
+## Warum das wichtig ist
+
+- **Die Fundstellen entstehen vor dem Arbeitsergebnis**, sodass der Drafter keine Fundstellen erfinden kann.
+- **Der Reviewer hat das letzte Wort** — er sieht Eingabe und Ergebnis und kann die Freigabe verweigern.
+- **Fehler bleiben lokal** — ist ein Nachweis falsch, korrigieren Sie den Researcher; stimmt der Ton nicht, den Drafter.
+
+## Die Agenten anpassen
+
+Bearbeiten Sie `agents/researcher.md`, `agents/drafter.md` und `agents/reviewer.md` in Ihrem Fork. Die Änderung wirkt für jeden Skill, der sie einbindet.
+""",
+    "ref_body": f"""
+Die Referenz verweist auf die verbindliche Dokumentation, der jeder Skill dieses Repositorys folgt.
+
+## Grundlagendokumente
+
+- **[README.md]({GITHUB_URL}/blob/main/README.md)** — Projektüberblick, Installation und Architektur.
+- **[CONVENTIONS.md]({GITHUB_URL}/blob/main/CONVENTIONS.md)** — anbieterneutrale Konventionen, die jeder Skill einhalten muss (Sprache, Methodik, Zitierdisziplin).
+- **[VERIFICATION_STATUS.md]({GITHUB_URL}/blob/main/VERIFICATION_STATUS.md)** — aktueller Stand, für welche Plugins eine externe Prüfung der Rechtsprechungsnachweise abgeschlossen ist.
+- **[CHANGELOG.md]({GITHUB_URL}/blob/main/CHANGELOG.md)** — wesentliche Änderungen je Release.
+- **[QUICKSTART.md]({GITHUB_URL}/blob/main/QUICKSTART.md)** — Einstieg in 60 Sekunden.
+- **[CONTRIBUTING.md]({GITHUB_URL}/blob/main/CONTRIBUTING.md)** — wie Sie einen Skill ergänzen oder korrigieren.
+
+## Werkzeuge und Automatisierung
+
+Deterministische Helfer, die ohne Modell laufen, sowie die Eval- und Prüfumgebung:
+
+- **[references/rechner.md]({GITHUB_URL}/blob/main/references/rechner.md)** — deterministische Rechner: Fristen (§§ 187-193 BGB), Verjährung (§§ 195-199 BGB), RVG- und GKG-Gebühren sowie Feiertage aller 16 Bundesländer.
+- **[scripts/verify_citations.py]({GITHUB_URL}/blob/main/scripts/verify_citations.py)** — löst `§`-Anker sowie ECLI- und CELEX-Fundstellen gegen gesetze-im-internet.de auf; standardmäßig nur informatorisch, mit `--strict` als Gate.
+- **[evals/]({GITHUB_URL}/blob/main/evals/README.md)** — verhaltensbasierte, LLM-bewertete Eval-Umgebung (promptfoo), erzeugt aus den `test.md`-Dateien der einzelnen Skills.
+- **[references/mcp-template.json]({GITHUB_URL}/blob/main/references/mcp-template.json)** — Anbindung an Live-Rechtsdaten über den MCP-Server von NeuRIS (rechtsinformationen.bund.de).
+
+## Konventionen des Repositorys (Kurzfassung)
+
+- **Ausgaben auf Deutsch.** Englische Begriffe nur, soweit etabliert (z. B. "Letter of Intent"), und bei erster Verwendung erläutert.
+- **Grundsätzlich Gutachtenstil** für Vermerke und begründete Schreiben; **Urteilsstil** für Schriftsätze und kurze interne Notizen.
+- **Anspruchsgrundlagenprüfung** in der klassischen Reihenfolge: Vertrag → c.i.c. → GoA → dinglich → Delikt → Bereicherung.
+- **Auslegung** nach allen vier klassischen Methoden zuzüglich verfassungs- und unionsrechtskonformer Auslegung.
+
+## Zustände von Rechtsprechungsnachweisen
+
+Jeder Rechtsprechungsnachweis erhält genau eine Kennzeichnung:
+
+| Zustand | Bedeutung |
+|---|---|
+| (ohne Kennzeichnung, mit URL) | gegen eine amtliche Quelle geprüft |
+| `[unverifiziert – prüfen]` | Modellwissen, nicht extern bestätigt — vor Verwendung prüfen |
+| `[generiert]` | in mandatsbezogenen Ausgaben unzulässig |
+
+## Hinweis
+
+Dies ist keine Rechtsberatung. Skill-Ausgaben sind Entwürfe zur Prüfung durch eine zugelassene Rechtsanwältin oder einen zugelassenen Rechtsanwalt bzw. Syndikusrechtsanwalt nach § 43a BRAO und § 2 BORA.
+""",
+})
+
+_assert_strings_parity()
+
+
+def _content_page(title, subtitle, body_md, rel, active, breadcrumbs, lang="en"):
+    """Wrap markdown body inside the standard content-page shell."""
+    body_html = md_to_html(body_md)
+    body = f"""
+<article class="content-page">
+  <div class="page-header">
+    <h1 class="page-title">{escape(title)}</h1>
+    <p class="page-subtitle">{escape(subtitle)}</p>
+  </div>
+  {body_html}
+</article>"""
+    return page(f"{title} - {BRAND}", subtitle, rel, body, active=active,
+                breadcrumbs=breadcrumbs, lang=lang)
+
+
+def _bc(lang, *trail):
+    """Breadcrumb helper. `trail` is a sequence of (string-key-or-literal, rel|None)."""
+    b = lang_base(lang)
+    out = [(T(lang, "bc_home"), f"{b}/")]
+    for key, rel in trail:
+        label = T(lang, key) if key in STRINGS[lang] else key
+        out.append((label, f"{b}/{rel}" if rel is not None else None))
+    return out
+
+
+def gen_getting_started_index(catalog, lang="en"):
+    total = catalog.get("total_skills", len(catalog["skills"]))
+    areas = len(catalog.get("domains", {}))
     return _content_page(
-        "Reference",
-        "Binding documentation that every skill in the repository follows.",
-        body_md,
-        f"{BASE_URL}/reference/",
-        active="reference",
-        breadcrumbs=[("Home", f"{BASE_URL}/"), ("Reference", None)],
+        T(lang, "gs_title"),
+        T(lang, "gs_subtitle"),
+        T(lang, "gs_body", total=total, areas=areas),
+        "getting-started/",
+        active="getting-started",
+        breadcrumbs=_bc(lang, ("bc_getting_started", None)),
+        lang=lang,
     )
 
 
-def gen_404():
+def gen_installation(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "install_title"),
+        T(lang, "install_subtitle"),
+        T(lang, "install_body"),
+        "getting-started/installation/",
+        active="getting-started",
+        breadcrumbs=_bc(lang, ("bc_getting_started", "getting-started/"),
+                        (T(lang, "install_title"), None)),
+        lang=lang,
+    )
+
+
+def gen_platforms(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "platforms_title"),
+        T(lang, "platforms_subtitle"),
+        T(lang, "platforms_body"),
+        "getting-started/platforms/",
+        active="getting-started",
+        breadcrumbs=_bc(lang, ("bc_getting_started", "getting-started/"),
+                        (T(lang, "platforms_title"), None)),
+        lang=lang,
+    )
+
+
+def gen_quick_start(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "qs_title"),
+        T(lang, "qs_subtitle"),
+        T(lang, "qs_body"),
+        "getting-started/quick-start/",
+        active="getting-started",
+        breadcrumbs=_bc(lang, ("bc_getting_started", "getting-started/"),
+                        (T(lang, "qs_title"), None)),
+        lang=lang,
+    )
+
+
+def gen_guide_authoring(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "authoring_title"),
+        T(lang, "authoring_subtitle"),
+        T(lang, "authoring_body"),
+        "guides/authoring/",
+        active="guides",
+        breadcrumbs=_bc(lang, ("bc_guides", "guides/authoring/"),
+                        (T(lang, "authoring_title"), None)),
+        lang=lang,
+    )
+
+
+def gen_guide_bundles(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "bundles_title"),
+        T(lang, "bundles_subtitle"),
+        T(lang, "bundles_body"),
+        "guides/bundles/",
+        active="guides",
+        breadcrumbs=_bc(lang, ("bc_guides", "guides/authoring/"),
+                        (T(lang, "bundles_title"), None)),
+        lang=lang,
+    )
+
+
+def gen_guide_customization(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "custom_title"),
+        T(lang, "custom_subtitle"),
+        T(lang, "custom_body"),
+        "guides/customization/",
+        active="guides",
+        breadcrumbs=_bc(lang, ("bc_guides", "guides/authoring/"),
+                        (T(lang, "custom_title"), None)),
+        lang=lang,
+    )
+
+
+def gen_guide_orchestration(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "orch_title"),
+        T(lang, "orch_subtitle"),
+        T(lang, "orch_body"),
+        "guides/orchestration/",
+        active="guides",
+        breadcrumbs=_bc(lang, ("bc_guides", "guides/authoring/"),
+                        (T(lang, "orch_title"), None)),
+        lang=lang,
+    )
+
+
+def gen_reference_index(catalog=None, lang="en"):
+    return _content_page(
+        T(lang, "ref_title"),
+        T(lang, "ref_subtitle"),
+        T(lang, "ref_body"),
+        "reference/",
+        active="reference",
+        breadcrumbs=_bc(lang, ("bc_reference", None)),
+        lang=lang,
+    )
+
+
+def gen_404(lang="en"):
+    """GitHub Pages serves a single 404 for the whole site, so it is English
+    and links into both trees."""
+    b = lang_base(lang)
+    other = OTHER_LANG[lang]
     body = f"""
 <div class="page-header" style="text-align:center; padding:80px 0 40px;">
-  <h1 class="page-title">404 - Page Not Found</h1>
-  <p class="page-subtitle" style="margin: 0 auto;">The page you are looking for does not exist or has moved.</p>
+  <h1 class="page-title">{escape(T(lang, "p404_title"))}</h1>
+  <p class="page-subtitle" style="margin: 0 auto;">{escape(T(lang, "p404_text"))}</p>
   <div style="margin-top: 28px;">
-    <a href="{BASE_URL}/" class="btn btn-primary">Go home</a>
-    <a href="{BASE_URL}/SKILLS/" class="btn btn-secondary">Browse skills</a>
+    <a href="{b}/" class="btn btn-primary">{escape(T(lang, "btn_go_home"))}</a>
+    <a href="{b}/SKILLS/" class="btn btn-secondary">{escape(T(lang, "btn_browse_skills"))}</a>
+    <a href="{url_for(other)}" class="btn btn-secondary" hreflang="{other}" lang="{other}">{escape(T(lang, "p404_other_tree"))}</a>
   </div>
 </div>"""
-    return page("404 - Page Not Found", "Page not found", f"{BASE_URL}/404.html", body)
+    # alt_url=None: there is only one 404 page, so no counterpart exists.
+    return page(T(lang, "p404_title"), T(lang, "p404_text"), "404.html", body,
+                lang=lang, alt_url=None)
 
 
 # ---------------------------------------------------------------------------
 # Sitemap, robots.txt, llms.txt
 # ---------------------------------------------------------------------------
 
-def gen_sitemap(pages):
-    """Generate sitemap.xml from a list of (url, priority) tuples."""
-    urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    for url, priority in pages:
-        u = ET.SubElement(urlset, "url")
-        ET.SubElement(u, "loc").text = url
-        ET.SubElement(u, "lastmod").text = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        ET.SubElement(u, "priority").text = str(priority)
+def gen_sitemap(entries):
+    """Generate one sitemap.xml covering both language trees.
+
+    `entries` is a list of (site_relative_path, priority). Each entry produces
+    one <url> per language, and every <url> carries xhtml:link alternates for
+    both languages plus x-default (English).
+    """
+    urlset = ET.Element(
+        "urlset",
+        {
+            "xmlns": "http://www.sitemaps.org/schemas/sitemap/0.9",
+            "xmlns:xhtml": "http://www.w3.org/1999/xhtml",
+        },
+    )
+    lastmod = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for rel, priority in entries:
+        by_lang = {code: url_for(code, rel) for code in LANGS}
+        for code in LANGS:
+            u = ET.SubElement(urlset, "url")
+            ET.SubElement(u, "loc").text = by_lang[code]
+            ET.SubElement(u, "lastmod").text = lastmod
+            ET.SubElement(u, "priority").text = str(priority)
+            for alt in LANGS:
+                ET.SubElement(
+                    u, "xhtml:link",
+                    {"rel": "alternate", "hreflang": alt, "href": by_lang[alt]},
+                )
+            ET.SubElement(
+                u, "xhtml:link",
+                {"rel": "alternate", "hreflang": "x-default", "href": by_lang["en"]},
+            )
     tree = ET.ElementTree(urlset)
     ET.indent(tree, space="  ")
     out = '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -1643,48 +2543,60 @@ Sitemap: {BASE_URL}/sitemap.xml
 """
 
 
-def gen_llms_txt(catalog):
-    """Generate llms.txt following the llms.txt convention."""
+def gen_llms_txt(catalog, lang="en"):
+    """Generate llms.txt following the llms.txt convention, per language.
+
+    Counts always come from skills.json — never hardcoded.
+    """
     total = len(catalog["skills"])
     domains = catalog.get("domains", {})
+    areas = len(domains)
+    b = lang_base(lang)
 
     lines = [
         f"# {BRAND}",
         "",
-        f"> Provider-neutral AI skills for German legal practice and EU compliance -- {total} skills across {len(domains)} areas. Outputs in German; statute citations linked to gesetze-im-internet.de and EUR-Lex.",
+        f"> {T(lang, 'llms_tagline', total=total, areas=areas)}",
         "",
-        f"Website: {BASE_URL}",
-        f"Repository: {GITHUB_URL}",
-        "License: Apache-2.0 OR MIT",
-        f"Author: {AUTHOR}",
+        f"{T(lang, 'llms_website')}: {b}",
+        f"{T(lang, 'llms_repository')}: {GITHUB_URL}",
+        f"{T(lang, 'llms_license')}: {T(lang, 'footer_license')}",
+        f"{T(lang, 'llms_author')}: {AUTHOR}",
         "",
-        "## What This Is",
+        T(lang, "llms_h_what"),
         "",
-        "A library of provider-neutral skills (Claude, Gemini, OpenAI) for German legal practice. Each skill ships",
-        "with a researcher / drafter / reviewer sub-agent architecture, linked statute citations, and case-law marked",
-        "verified or [unverifiziert -- prüfen]. Outputs are drafts for review by a licensed Rechtsanwalt under",
-        "§ 43a BRAO and § 2 BORA.",
+        T(lang, "llms_what"),
         "",
-        "## How to Use",
+        T(lang, "llms_h_lang"),
+        "",
+        T(lang, "llms_lang",
+          en_url=url_for("en"), de_url=url_for("de"),
+          en_llms=f"{lang_base('en')}/llms.txt", de_llms=f"{lang_base('de')}/llms.txt"),
+        "",
+        T(lang, "llms_h_how"),
         "",
         "```",
         f"git clone {GITHUB_URL}.git",
-        f"/plugin marketplace add borghei/AI-Skills-German-Law",
-        f"/plugin install arbeitsrecht",
-        f"/arbeitsrecht:abmahnung",
+        "/plugin marketplace add borghei/AI-Skills-German-Law",
+        "/plugin install arbeitsrecht",
+        "/arbeitsrecht:abmahnung",
         "```",
         "",
-        "## Areas",
+        T(lang, "llms_h_areas"),
         "",
     ]
 
     for d in sorted(domains.keys()):
         info = domains[d]
-        lines.append(f"- {info.get('label', d)}: {info.get('count', 0)} skill{'s' if info.get('count', 0) != 1 else ''} — {info.get('desc', '')}")
+        cnt = info.get("count", 0)
+        lines.append(f"- {info.get('label', d)}: {n_skills(lang, cnt)} — {info.get('desc', '')}")
 
-    lines += ["", "## All Skills", ""]
+    lines += ["", T(lang, "llms_h_all"), ""]
     for s in sorted(catalog["skills"], key=lambda x: (x["domain"], x["name"])):
-        lines.append(f"- [{pretty_name(s['name'])}]({BASE_URL}/SKILLS/{s['domain']}/{s['name']}.html): {truncate(s.get('description', ''), 140)}")
+        lines.append(
+            f"- [{pretty_name(s['name'])}]({b}/SKILLS/{s['domain']}/{s['name']}.html): "
+            f"{truncate(s.get('description', ''), 140)}"
+        )
 
     lines.append("")
     return "\n".join(lines)
@@ -1724,75 +2636,95 @@ def generate_full_site():
     for s in skills:
         by_domain.setdefault(s["domain"], []).append(s)
 
-    sitemap_pages = []
+    static_pages = [
+        ("getting-started/", gen_getting_started_index, "0.7"),
+        ("getting-started/installation/", gen_installation, "0.6"),
+        ("getting-started/platforms/", gen_platforms, "0.6"),
+        ("getting-started/quick-start/", gen_quick_start, "0.6"),
+        ("guides/authoring/", gen_guide_authoring, "0.6"),
+        ("guides/bundles/", gen_guide_bundles, "0.6"),
+        ("guides/customization/", gen_guide_customization, "0.6"),
+        ("guides/orchestration/", gen_guide_orchestration, "0.6"),
+        ("reference/", gen_reference_index, "0.6"),
+    ]
+
+    # Site-relative paths, shared by both trees. Collected once from the EN
+    # pass so the sitemap can emit both languages with hreflang alternates.
+    sitemap_entries = []
+    per_lang_counts = {}
     generated = 0
 
-    # 1. Landing
-    write_file(str(SITE_DIR / "index.html"), gen_landing(catalog, by_domain))
-    sitemap_pages.append((f"{BASE_URL}/", "1.0"))
+    for lang in LANGS:
+        n = 0
+
+        def emit(rel_dir_or_file, html, prio=None, is_dir=True):
+            """Write one page and (once) record it for the sitemap."""
+            nonlocal n
+            rel_file = (rel_dir_or_file + "index.html") if is_dir else rel_dir_or_file
+            write_file(str(out_path(lang, rel_file)), html)
+            if prio is not None and lang == LANGS[0]:
+                sitemap_entries.append((rel_dir_or_file, prio))
+            n += 1
+
+        # 1. Landing
+        emit("", gen_landing(catalog, by_domain, lang), "1.0")
+
+        # 2. Skills index
+        emit("SKILLS/", gen_skills_index(catalog, by_domain, lang), "0.9")
+
+        # 3. Area index pages
+        for domain, domain_skills in sorted(by_domain.items()):
+            emit(f"SKILLS/{domain}/", gen_domain_page(domain, domain_skills, catalog, lang), "0.8")
+
+        # 4. Individual skill pages
+        for s in skills:
+            emit(
+                f"SKILLS/{s['domain']}/{s['name']}.html",
+                gen_skill_page(s, catalog, by_domain, lang),
+                "0.7",
+                is_dir=False,
+            )
+
+        # 5. Static content pages
+        for rel, fn, prio in static_pages:
+            emit(rel, fn(catalog, lang), prio)
+
+        # 6. llms.txt per tree
+        emit("llms.txt", gen_llms_txt(catalog, lang), None, is_dir=False)
+
+        per_lang_counts[lang] = n
+        generated += n
+
+    # 7. Single-instance files at the root: 404 (GitHub Pages serves one),
+    #    robots.txt, and the combined sitemap.
+    write_file(str(SITE_DIR / "404.html"), gen_404("en"))
     generated += 1
-
-    # 2. Skills index
-    write_file(str(SITE_DIR / "SKILLS" / "index.html"), gen_skills_index(catalog, by_domain))
-    sitemap_pages.append((f"{BASE_URL}/SKILLS/", "0.9"))
-    generated += 1
-
-    # 3. Domain pages
-    for domain, domain_skills in sorted(by_domain.items()):
-        write_file(
-            str(SITE_DIR / "SKILLS" / domain / "index.html"),
-            gen_domain_page(domain, domain_skills, catalog),
-        )
-        sitemap_pages.append((f"{BASE_URL}/SKILLS/{domain}/", "0.8"))
-        generated += 1
-
-    # 4. Individual skill pages
-    for s in skills:
-        write_file(
-            str(SITE_DIR / "SKILLS" / s["domain"] / f"{s['name']}.html"),
-            gen_skill_page(s, catalog, by_domain),
-        )
-        sitemap_pages.append((f"{BASE_URL}/SKILLS/{s['domain']}/{s['name']}.html", "0.7"))
-        generated += 1
-
-    # 5. Getting started
-    static_pages = [
-        ("getting-started/index.html", gen_getting_started_index, f"{BASE_URL}/getting-started/", "0.7"),
-        ("getting-started/installation/index.html", gen_installation, f"{BASE_URL}/getting-started/installation/", "0.6"),
-        ("getting-started/platforms/index.html", gen_platforms, f"{BASE_URL}/getting-started/platforms/", "0.6"),
-        ("getting-started/quick-start/index.html", gen_quick_start, f"{BASE_URL}/getting-started/quick-start/", "0.6"),
-        ("guides/authoring/index.html", gen_guide_authoring, f"{BASE_URL}/guides/authoring/", "0.6"),
-        ("guides/bundles/index.html", gen_guide_bundles, f"{BASE_URL}/guides/bundles/", "0.6"),
-        ("guides/customization/index.html", gen_guide_customization, f"{BASE_URL}/guides/customization/", "0.6"),
-        ("guides/orchestration/index.html", gen_guide_orchestration, f"{BASE_URL}/guides/orchestration/", "0.6"),
-        ("reference/index.html", gen_reference_index, f"{BASE_URL}/reference/", "0.6"),
-    ]
-    for rel, fn, url, prio in static_pages:
-        write_file(str(SITE_DIR / rel), fn())
-        sitemap_pages.append((url, prio))
-        generated += 1
-
-    # 6. 404
-    write_file(str(SITE_DIR / "404.html"), gen_404())
-    generated += 1
-
-    # 7. Sitemap, robots, llms
-    write_file(str(SITE_DIR / "sitemap.xml"), gen_sitemap(sitemap_pages))
+    write_file(str(SITE_DIR / "sitemap.xml"), gen_sitemap(sitemap_entries))
     generated += 1
     write_file(str(SITE_DIR / "robots.txt"), gen_robots_txt())
     generated += 1
-    write_file(str(SITE_DIR / "llms.txt"), gen_llms_txt(catalog))
-    generated += 1
+
+    pruned = prune_stale_pages()
 
     preserve_static_assets()
 
+    counts = " / ".join(f"{lang}: {c}" for lang, c in per_lang_counts.items())
     print(f"\nGenerated {generated} files in {SITE_DIR}/")
-    print(f"  - 1 landing page")
-    print(f"  - 1 skills index")
-    print(f"  - {len(by_domain)} area index pages")
-    print(f"  - {len(skills)} skill detail pages")
-    print(f"  - {len(static_pages)} static content pages")
-    print(f"  - 404, sitemap.xml, robots.txt, llms.txt")
+    print(f"  - {len(LANGS)} language trees ({counts} files each tree)")
+    for lang in LANGS:
+        root = "site/" if lang == "en" else f"site/{LANG_DIR[lang]}/"
+        print(f"    [{lang}] {root} — 1 landing, 1 skills index, "
+              f"{len(by_domain)} area pages, {len(skills)} skill pages, "
+              f"{len(static_pages)} content pages, llms.txt")
+    print(f"  - 404.html, sitemap.xml (both trees + hreflang), robots.txt")
+
+    if pruned:
+        print(f"  - pruned {len(pruned)} stale page(s) no longer in the catalog:")
+        for rel in pruned:
+            print(f"      {rel}")
+
+    if len(set(per_lang_counts.values())) != 1:
+        raise SystemExit(f"Tree page counts differ: {per_lang_counts}")
 
 
 def generate_single_skill(skill_name):
@@ -1810,9 +2742,11 @@ def generate_single_skill(skill_name):
         sys.exit(1)
 
     for s in matches:
-        html = gen_skill_page(s, catalog, by_domain)
-        path = write_file(str(SITE_DIR / "SKILLS" / s["domain"] / f"{s['name']}.html"), html)
-        print(f"Generated {path}")
+        for lang in LANGS:
+            html = gen_skill_page(s, catalog, by_domain, lang)
+            rel = f"SKILLS/{s['domain']}/{s['name']}.html"
+            path = write_file(str(out_path(lang, rel)), html)
+            print(f"Generated [{lang}] {path}")
 
 
 def generate_single_domain(domain_name):
@@ -1830,16 +2764,18 @@ def generate_single_domain(domain_name):
 
     domain_skills = by_domain[domain_name]
 
-    html = gen_domain_page(domain_name, domain_skills, catalog)
-    path = write_file(str(SITE_DIR / "SKILLS" / domain_name / "index.html"), html)
-    print(f"Generated {path}")
+    for lang in LANGS:
+        html = gen_domain_page(domain_name, domain_skills, catalog, lang)
+        path = write_file(str(out_path(lang, f"SKILLS/{domain_name}/index.html")), html)
+        print(f"Generated [{lang}] {path}")
 
-    for s in domain_skills:
-        html = gen_skill_page(s, catalog, by_domain)
-        path = write_file(str(SITE_DIR / "SKILLS" / s["domain"] / f"{s['name']}.html"), html)
-        print(f"Generated {path}")
+        for s in domain_skills:
+            html = gen_skill_page(s, catalog, by_domain, lang)
+            path = write_file(str(out_path(lang, f"SKILLS/{s['domain']}/{s['name']}.html")), html)
+            print(f"Generated [{lang}] {path}")
 
-    print(f"\n{len(domain_skills) + 1} pages generated for {domain_label(domain_name)}")
+    print(f"\n{(len(domain_skills) + 1) * len(LANGS)} pages generated for "
+          f"{domain_label(domain_name)} across {len(LANGS)} language trees")
 
 
 def main():

@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - "skills.json"
+      - "scripts/generate_site.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 

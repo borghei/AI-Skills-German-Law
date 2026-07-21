@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>It Vertragspruefung - AI Skills German Law</title>
+  <meta name="description" content="Prüfung typischer IT-Verträge (SaaS, Cloud, Outsourcing, Werkvertrag/Dienstvertrag-Abgrenzung) auf AGB-Konformität, DSGVO-Verzahnung (Art. 28 AVV), Leistungsstandards (SLA), Haftungsbegrenzung, Migrat">
+  <link rel="canonical" href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/it-vertragspruefung.html">
+  <link rel="alternate" hreflang="en" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/it-recht/it-vertragspruefung.html">
+  <link rel="alternate" hreflang="de" href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/it-vertragspruefung.html">
+  <link rel="alternate" hreflang="x-default" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/it-recht/it-vertragspruefung.html">
+  <meta property="og:title" content="It Vertragspruefung - AI Skills German Law">
+  <meta property="og:description" content="Prüfung typischer IT-Verträge (SaaS, Cloud, Outsourcing, Werkvertrag/Dienstvertrag-Abgrenzung) auf AGB-Konformität, DSGVO-Verzahnung (Art. 28 AVV), Leistungsstandards (SLA), Haftungsbegrenzung, Migrat">
+  <meta property="og:url" content="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/it-vertragspruefung.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "It Vertragspruefung", "description": "Prüfung typischer IT-Verträge (SaaS, Cloud, Outsourcing, Werkvertrag/Dienstvertrag-Abgrenzung) auf AGB-Konformität, DSGVO-Verzahnung (Art. 28 AVV), Leistungsstandards (SLA), Haftungsbegrenzung, Migrations- und Beendigungsklauseln, Open-Source-Compliance. Use when ein IT-Dienstleistungsvertrag bewertet oder verhandelt wird.", "applicationCategory": "IT-Recht", "operatingSystem": "Any", "url": "https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/it-vertragspruefung.html", "author": {"@type": "Person", "name": "Borghei"}, "inLanguage": "de"}</script>
+  <style>
+:root {
+  --bg: #faf9f5;
+  --bg-secondary: #f0eee6;
+  --text: #141413;
+  --text-muted: #5e5d59;
+  --accent: #d97757;
+  --accent-deep: #c6613f;
+  --border: rgba(20,20,19,0.1);
+  --border-strong: rgba(20,20,19,0.18);
+  --white: #ffffff;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'Cascadia Code', Menlo, monospace;
+  --max-width: 1200px;
+  --shadow-sm: 0 1px 2px rgba(20,20,19,0.04);
+  --shadow: 0 1px 3px rgba(20,20,19,0.06), 0 1px 2px rgba(20,20,19,0.04);
+  --shadow-md: 0 4px 12px rgba(20,20,19,0.08), 0 1px 3px rgba(20,20,19,0.06);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--accent-deep); }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+code { font-family: var(--font-mono); font-size: 0.875em; }
+
+/* Navbar */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(250,249,245,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo {
+  font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem;
+  color: var(--text); letter-spacing: -0.01em;
+}
+.nav-logo:hover { color: var(--text); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  color: var(--text-muted); font-size: 0.9rem; font-weight: 500;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.gh-link { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Language switcher */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border: 1px solid var(--border-strong);
+  border-radius: 20px; background: var(--white);
+  font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.4;
+}
+.lang-switch .lang-opt { font-weight: 600; letter-spacing: 0.02em; }
+.lang-switch a.lang-opt { color: var(--text-muted); }
+.lang-switch a.lang-opt:hover { color: var(--accent); }
+.lang-switch .lang-opt.active { color: var(--accent); cursor: default; }
+.lang-switch .lang-sep { color: var(--border-strong); }
+
+/* Breadcrumbs */
+.breadcrumbs { padding: 20px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs a:hover { color: var(--accent); }
+.breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+/* Page header */
+.page-header { padding: 48px 0 32px; }
+.page-title {
+  font-family: var(--font-serif); font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;
+  color: var(--text);
+}
+.page-subtitle { color: var(--text-muted); max-width: 760px; font-size: 1.05rem; line-height: 1.6; }
+
+.count-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--accent); background: rgba(217,119,87,0.08);
+  padding: 2px 10px; border-radius: 20px; margin-left: 8px;
+  vertical-align: middle; font-weight: 500;
+}
+
+/* Search + Filter */
+.filter-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.search-input {
+  flex: 1; min-width: 200px; padding: 10px 14px 10px 38px;
+  background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+.search-input::placeholder { color: var(--text-muted); }
+.search-wrap { position: relative; flex: 1; min-width: 200px; }
+.search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+.filter-select {
+  padding: 10px 14px; background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; cursor: pointer;
+}
+.filter-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+
+/* Card grid */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 60px; }
+.skill-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px 22px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex; flex-direction: column;
+}
+.skill-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.skill-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+.skill-card h3 a { color: var(--text); }
+.skill-card h3 a:hover { color: var(--accent); }
+.skill-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; flex: 1; }
+
+/* Badges */
+.badge-bar { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-mono); font-size: 0.7rem; padding: 3px 9px;
+  border-radius: 5px; font-weight: 500; white-space: nowrap;
+}
+.badge-domain { background: rgba(217,119,87,0.1); border: 1px solid rgba(217,119,87,0.2); color: var(--accent-deep); }
+.badge-subdomain { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-version { background: rgba(20,20,19,0.03); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-tools { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-refs { background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.15); color: var(--accent); }
+
+/* Tags */
+.skill-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.tag {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 8px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+.example-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.example-pill {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 7px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+/* Skill detail page */
+.skill-detail { padding-bottom: 80px; }
+.skill-detail h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 40px 0 16px; padding-top: 16px;
+  border-top: 1px solid var(--border); color: var(--text);
+}
+.skill-detail h3 { font-size: 1.05rem; font-weight: 600; margin: 20px 0 10px; color: var(--text); }
+.skill-detail h4 { font-size: 0.95rem; font-weight: 600; margin: 16px 0 8px; color: var(--text); }
+.skill-detail p, .skill-detail li { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
+.skill-detail ul, .skill-detail ol { margin-left: 22px; margin-bottom: 16px; }
+.skill-detail li { margin-bottom: 6px; }
+.skill-detail blockquote {
+  border-left: 3px solid var(--accent); padding: 6px 16px; margin: 12px 0;
+  background: var(--bg-secondary); border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-muted);
+}
+.skill-detail table {
+  width: 100%; border-collapse: collapse; margin: 14px 0 22px;
+  font-size: 0.9rem; background: var(--white);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.skill-detail th, .skill-detail td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.skill-detail th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+.skill-detail tr:last-child td { border-bottom: none; }
+.skill-detail pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  color: var(--text); margin: 12px 0 20px;
+}
+.skill-detail code {
+  font-family: var(--font-mono); font-size: 0.85rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.skill-detail pre code { background: none; padding: 0; }
+
+/* Hero (used on landing) */
+.hero { padding: 80px 0 60px; }
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; margin-bottom: 18px; letter-spacing: -0.02em;
+  line-height: 1.15; color: var(--text);
+}
+.hero-subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; line-height: 1.6; margin-bottom: 28px; }
+.stat-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; color: var(--text-muted); font-size: 0.95rem; }
+.stat-row .stat { display: inline-flex; align-items: center; gap: 6px; }
+.stat-row .stat strong { color: var(--text); font-family: var(--font-mono); font-size: 1rem; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.disclaimer {
+  background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.18);
+  border-left: 4px solid var(--accent); border-radius: var(--radius);
+  padding: 16px 20px; font-size: 0.9rem; color: var(--text-muted);
+  margin: 24px 0 40px;
+}
+.disclaimer strong { color: var(--text); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 18px; border-radius: var(--radius); font-size: 0.9rem;
+  font-weight: 500; font-family: var(--font-sans);
+  border: 1px solid transparent; cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+.btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.btn-primary:hover { background: #2a2a28; color: var(--bg); box-shadow: var(--shadow); }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--border-strong); }
+.btn-secondary:hover { background: var(--bg-secondary); color: var(--text); box-shadow: var(--shadow-sm); }
+
+.section-heading {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 30px 0 20px; color: var(--text);
+}
+
+/* Content pages (getting-started / guides / reference) */
+.content-page { padding-bottom: 80px; max-width: 760px; }
+.content-page h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 36px 0 14px; color: var(--text);
+}
+.content-page h3 { font-size: 1.1rem; font-weight: 600; margin: 22px 0 10px; color: var(--text); }
+.content-page p, .content-page li { font-size: 0.98rem; color: var(--text-muted); line-height: 1.7; }
+.content-page ul, .content-page ol { margin: 8px 0 18px 22px; }
+.content-page li { margin-bottom: 6px; }
+.content-page pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 18px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  margin: 12px 0 22px;
+}
+.content-page code {
+  font-family: var(--font-mono); font-size: 0.88rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.content-page pre code { background: none; padding: 0; }
+.content-page table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.content-page th, .content-page td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+}
+.content-page th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+
+.cards-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0 28px; }
+.mini-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 18px 20px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.mini-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.mini-card h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 6px; color: var(--text); }
+.mini-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+.mini-card a.view-link { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8rem; margin-top: 10px; color: var(--accent); }
+
+/* Footer */
+.footer {
+  padding: 36px 0; border-top: 1px solid var(--border); margin-top: 40px;
+  background: var(--bg);
+}
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-links { display: flex; align-items: center; gap: 12px; font-size: 0.85rem; color: var(--text-muted); }
+.footer-links a { color: var(--text-muted); }
+.footer-links a:hover { color: var(--accent); }
+.footer-sep { color: var(--border-strong); }
+.footer-credit { font-size: 0.85rem; color: var(--text-muted); }
+.footer-credit a { color: var(--text); font-weight: 600; }
+
+/* Related skills */
+.related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .skills-grid, .related-grid { grid-template-columns: repeat(2, 1fr); }
+  .cards-row { grid-template-columns: 1fr; }
+  .nav-links { gap: 14px; }
+}
+@media (max-width: 480px) {
+  .skills-grid, .related-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; }
+  .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a href="https://borghei.github.io/AI-Skills-German-Law/de/" class="nav-logo">AI Skills German Law</a>
+    <div class="nav-links">
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/" class="active">Skills</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/getting-started/">Erste Schritte</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/guides/authoring/">Anleitungen</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/reference/">Referenz</a>
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener" class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+      <div class="lang-switch" role="group" aria-label="Sprache"><a class="lang-opt" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/it-recht/it-vertragspruefung.html" hreflang="en" lang="en" title="English">EN</a><span class="lang-sep">/</span><span class="lang-opt active" aria-current="true" title="Deutsch">DE</span></div>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumbs container"><a href="https://borghei.github.io/AI-Skills-German-Law/de/">Startseite</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/">Skills</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/">IT-Recht</a><span class=sep>/</span><span>It Vertragspruefung</span></div>
+<main class="container">
+
+<article class="skill-detail">
+  <div class="page-header">
+    <h1 class="page-title">It Vertragspruefung</h1>
+    <p class="page-subtitle">Prüfung typischer IT-Verträge (SaaS, Cloud, Outsourcing, Werkvertrag/Dienstvertrag-Abgrenzung) auf AGB-Konformität, DSGVO-Verzahnung (Art. 28 AVV), Leistungsstandards (SLA), Haftungsbegrenzung, Migrations- und Beendigungsklauseln, Open-Source-Compliance. Use when ein IT-Dienstleistungsvertrag bewertet oder verhandelt wird.</p>
+    <div class="badge-bar"><span class="badge badge-domain">IT-Recht</span> <span class="badge badge-version">v0.1.0</span></div>
+    <div class="skill-meta" style="margin-bottom:24px"><span class="tag">vertragspruefung</span><span class="tag">art.28</span><span class="tag">dsgvo</span><span class="tag">it-recht</span></div>
+  </div>
+  <section><h2>Zweck</h2><p>IT-Verträge enthalten regelmäßig Klauseln, die in der AGB-Inhaltskontrolle (§§ 305 ff. BGB) scheitern, DSGVO-Pflichten missachten oder unverhältnismäßige Haftungsverteilungen schaffen. Dieser Skill identifiziert die typischen Bruchstellen entlang eines strukturierten Prüfschemas.</p>
+<blockquote><strong>⚠️ Aktualität (Stand 2026-07):</strong> Seit dem <strong>12.09.2025</strong> ist der <strong>Data Act</strong> (<a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R2854">VO (EU) 2023/2854</a>) anwendbar. Er ist bei <strong>jeder</strong> IT-Vertragsprüfung als eigener Prüfschritt abzuarbeiten (siehe Schritt 3a) und gilt <strong>unabhängig davon, ob personenbezogene Daten betroffen sind</strong>.  - <strong>Art. 3 Abs. 1 (Zugang by design)</strong> gilt <strong>nur für vernetzte Produkte, die nach dem 12.09.2026 in Verkehr gebracht werden</strong> — also erst in wenigen Wochen. Für <strong>Bestandsprodukte</strong> greift diese Pflicht <strong>nicht</strong>; die vertraglichen Zugangs- und Bereitstellungspflichten der <strong>Art. 4 und 5</strong> sind davon zu trennen. - <strong>Art. 5</strong>: Nutzer können verlangen, dass Daten an einen <strong>Dritten</strong> weitergegeben werden. Solche Verlangen sind innerhalb der gesetzlichen Frist zu bearbeiten; <strong>Geschäftsgeheimnisse</strong> können eine Beschränkung rechtfertigen, aber nur unter den Voraussetzungen der Verordnung und mit dokumentierter Begründung. - <strong>Art. 14 ff.</strong>: Öffentliche Stellen können bei <strong>außergewöhnlichem Bedarf</strong> Daten anfordern — ein eigener, oft übersehener Anspruchstyp. - <strong>Art. 13</strong>: Missbräuchlichkeitskontrolle <strong>einseitig auferlegter Datenzugangsklauseln</strong> in B2B-Verträgen, <strong>neben</strong> §§ 305 ff. BGB. - <strong>Art. 23–31</strong>: Wechsel zwischen Datenverarbeitungsdiensten; <strong>Wechselentgelte entfallen vollständig bis zum 12.01.2027</strong>, bis dahin nur kostenbasiert reduziert. <strong>Art. 25</strong> verlangt vertragliche Ausstiegsunterstützung (siehe Skill <code>cloud-auftragsverarbeitung</code>). - Deutsches <strong>Data-Act-Durchführungsgesetz (DADG)</strong>: Bundestag <strong>26.03.2026</strong>, BGBl. <strong>29.05.2026</strong>; zuständige Behörde ist die <strong>Bundesnetzagentur</strong> (Bekanntgabe 30.05.2026). Im selben Paket wurde das deutsche Durchführungsgesetz zum <strong>Data Governance Act</strong> beschlossen (BNetzA-Aufsicht über Datenvermittlungsdienste und datenaltruistische Organisationen).  Einzelnormen des DADG sind vor mandantengerichteter Verwendung am verkündeten Text zu verifizieren. <code>[unverifiziert - prüfen]</code></blockquote></section>
+<section><h2>Eingaben</h2><ul><li>Vertragstyp (SaaS, Cloud-Hosting, Outsourcing, Individual-Software-Entwicklung, Wartung)</li><li>Vertragsrolle (Anbieter / Kunde)</li><li>Größenklasse (B2B / B2C)</li><li>DSGVO-relevant (personenbezogene Daten verarbeitet?)</li><li>Vorhandene Vorlagen (EVB-IT, BVB, BITKOM, eigene)</li><li>Data-Act-Bezug: Betrifft der Vertrag ein <strong>vernetztes Produkt</strong> oder einen <strong>verbundenen Dienst</strong> (IoT)? Falls ja: <strong>Datum des Inverkehrbringens</strong> (vor oder nach 12.09.2026)</li><li>Data-Act-Bezug: Handelt es sich um einen <strong>Datenverarbeitungsdienst</strong> (Cloud/SaaS) iSd Art. 23 ff.?</li></ul></section>
+<section><h2>Ablauf</h2><h3>1. Vertragstyp-Einordnung</h3>
+<p>Maßgeblich für anwendbares Recht:</p>
+<table><thead><tr><th>Vertragstyp</th><th>Rechtsnatur</th><th>Schwerpunkt</th></tr></thead><tbody><tr><td><strong>SaaS / Cloud-Hosting</strong></td><td>Miet- oder Pachtvertrag (§§ 535 ff. BGB), str.</td><td>Verfügbarkeit, Datenherausgabe</td></tr><tr><td><strong>Software-Entwicklung individuell</strong></td><td>Werkvertrag (§ 631 BGB)</td><td>Abnahme, Mängelhaftung</td></tr><tr><td><strong>Wartung / Support</strong></td><td>Dienstvertrag (§ 611 BGB)</td><td>Reaktionszeiten, kein Erfolg geschuldet</td></tr><tr><td><strong>IT-Outsourcing</strong></td><td>Mischvertrag (Dienst + Werk + Miete)</td><td>Vereinbarte Service-Level</td></tr><tr><td><strong>Lizenzvertrag</strong></td><td>atypischer Vertrag (§§ 311a, 631 analog)</td><td>Reichweite der Lizenz</td></tr></tbody></table>
+<h3>2. AGB-Kontrolle (§§ 305 ff. BGB)</h3>
+<p>Vorlagen aus einer Mehrzahl an Verträgen sind AGB. <strong>Auch im B2B</strong> gelten § 305c, § 307 BGB (über § 310 Abs. 1 S. 2 BGB).</p>
+<p>Typische problematische Klauseln:</p>
+<ul><li><strong>Haftungsausschluss für einfache Fahrlässigkeit</strong> in Bezug auf vertragstypische Kardinalpflichten → § 307 BGB, unwirksam.</li><li><strong>Pauschalierung auf Jahresvergütung</strong> → grundsätzlich zulässig, aber sorgfältig im Verhältnis.</li><li><strong>Vertragsanpassung durch Anbieter</strong> ohne Widerspruchsrecht → § 308 Nr. 5 BGB.</li><li><strong>„Wir haften nur, soweit gesetzlich zwingend"</strong> → Transparenzgebot § 307 Abs. 1 S. 2.</li></ul>
+<h3>3. DSGVO-Verzahnung</h3>
+<h4>Auftragsverarbeitungsvertrag (Art. 28 DSGVO)</h4>
+<p>Wenn personenbezogene Daten verarbeitet werden: AVV nach Art. 28 Abs. 3 DSGVO verpflichtend. Pflichtinhalte:</p>
+<ul><li>Gegenstand und Dauer der Verarbeitung</li><li>Art und Zweck der Verarbeitung</li><li>Datenkategorien und Betroffenenkategorien</li><li>Pflichten und Rechte des Verantwortlichen</li><li>Maßnahmen nach Art. 32 DSGVO</li><li>Sub-Auftragsverarbeiter</li><li>Unterstützung bei Betroffenenanfragen</li><li>Löschung / Rückgabe nach Beendigung</li><li>Audit-Rechte des Verantwortlichen</li></ul>
+<h4>Drittlandtransfer</h4>
+<p>US-Cloud-Anbieter: TIA + SCC + ggf. EU-US Data Privacy Framework. Beachte: Schrems II-Lage.</p>
+<h3>3a. Data-Act-Prüfung (VO (EU) 2023/2854, anwendbar seit 12.09.2025)</h3>
+<p>Dieser Schritt ist <strong>stets</strong> abzuarbeiten. Der Data Act gilt <strong>unabhängig vom Personenbezug</strong> der Daten und tritt neben DSGVO und AGB-Recht.</p>
+<p><strong>a) Anwendungsbereich bestimmen.</strong></p>
+<table><thead><tr><th>Vertragsgegenstand</th><th>Einschlägige Vorschriften</th></tr></thead><tbody><tr><td><strong>Vernetztes Produkt / verbundener Dienst</strong> (IoT)</td><td>Art. 3–5 (Zugang und Bereitstellung an Nutzer und Dritte)</td></tr><tr><td><strong>Datenverarbeitungsdienst</strong> (Cloud, SaaS, IaaS, PaaS)</td><td>Art. 23–31 (Wechsel), insb. Art. 25, 29</td></tr><tr><td><strong>B2B-Vertrag mit einseitig auferlegten Datenklauseln</strong></td><td>Art. 13 (Missbräuchlichkeitskontrolle)</td></tr><tr><td>Jeder Dateninhaber</td><td>Art. 14 ff. (Anfragen öffentlicher Stellen bei außergewöhnlichem Bedarf)</td></tr></tbody></table>
+<p><strong>b) Stichtag 12.09.2026 — die entscheidende Abgrenzung.</strong> Die Pflicht zum <strong>Zugang by design</strong> nach <strong>Art. 3 Abs. 1</strong> — vernetzte Produkte so zu gestalten, dass Nutzerdaten unmittelbar, einfach und sicher zugänglich sind — trifft <strong>nur Produkte, die nach dem 12.09.2026 in Verkehr gebracht werden</strong>. Für Bestandsprodukte besteht <strong>keine</strong> Nachrüstpflicht nach Art. 3 Abs. 1.</p>
+<p><strong>Nicht verwechseln:</strong> Die <strong>vertraglichen Bereitstellungspflichten</strong> gegenüber Nutzern (<strong>Art. 4</strong>) und gegenüber Dritten auf Nutzerverlangen (<strong>Art. 5</strong>) knüpfen <strong>nicht</strong> an diesen Stichtag an. Die Umstellung der Verträge ist daher von der Produktgestaltung zu trennen.</p>
+<p><strong>c) IoT-Verträge neu papieren (Art. 3–5).</strong> Prüfpunkte:</p>
+<ul><li>[ ] <strong>Vorvertragliche Informationen</strong> nach Art. 3 Abs. 2, 3: Art, Umfang, Format und Häufigkeit der erzeugten Daten; wie der Nutzer darauf zugreift; ob der Dateninhaber sie nutzt</li><li>[ ] <strong>Zugangsanspruch des Nutzers</strong> (Art. 4) vertraglich abgebildet, unentgeltlich und ohne unangemessene Hürden</li><li>[ ] <strong>Weitergabe an Dritte auf Verlangen des Nutzers</strong> (Art. 5) geregelt — einschließlich Bearbeitungsprozess und Fristwahrung</li><li>[ ] <strong>Nutzungsbeschränkungen des Dateninhabers</strong> (z. B. kein Wettbewerbsprodukt aus Nutzerdaten) korrekt und nicht überschießend formuliert</li><li>[ ] <strong>Geschäftsgeheimnisse</strong>: Beschränkungen der Datenweitergabe sind möglich, aber nur unter den Voraussetzungen der Verordnung, mit Schutzmaßnahmen und <strong>dokumentierter Begründung</strong>. Ein pauschaler Geheimnisvorbehalt trägt nicht.</li></ul>
+<p><strong>d) Art.-5-Anfragen operationalisieren.</strong> Ein Verlangen des Nutzers auf Weitergabe an einen Dritten ist <strong>innerhalb der gesetzlichen Frist</strong> zu bearbeiten. Erforderlich sind ein definierter Eingangskanal, ein Prüfpfad (Identität, Umfang, Geschäftsgeheimnisse, ausgeschlossene Empfänger) und eine Dokumentation. Die konkrete Fristenlänge ist am Verordnungstext zu verifizieren. <code>[unverifiziert - prüfen]</code></p>
+<p><strong>e) Anfragen öffentlicher Stellen (Art. 14 ff.).</strong> Bei <strong>außergewöhnlichem Bedarf</strong> können öffentliche Stellen Daten anfordern. Der Vertrag sollte regeln, wer solche Anfragen entgegennimmt, wie geprüft wird und wie die Vertragspartner informiert werden.</p>
+<p><strong>f) Klauselkontrolle nach Art. 13.</strong> Einseitig auferlegte Klauseln über Datenzugang, -nutzung und Haftung in B2B-Verträgen unterliegen einer <strong>eigenständigen</strong> Missbräuchlichkeitskontrolle. Sie ist <strong>zusätzlich</strong> zu §§ 305 ff. BGB zu prüfen und greift auch dort, wo die AGB-Kontrolle nicht durchdringt.</p>
+<p><strong>g) Zuständigkeit.</strong> Zuständige deutsche Behörde ist nach dem <strong>DADG</strong> (BGBl. 29.05.2026) die <strong>Bundesnetzagentur</strong>, nicht die Datenschutzaufsicht. Data-Act- und DSGVO-Verfahren laufen getrennt.</p>
+<h3>4. Service-Level-Agreements (SLA)</h3>
+<ul><li>Verfügbarkeit: Prozentangabe (z. B. 99,5 %) mit Berechnungsmethodik</li><li>Reaktionszeit / Wiederherstellungszeit</li><li>Wartungsfenster (geplant / ungeplant)</li><li>Sanktionen bei Unterschreitung (Gutschriften, Sonderkündigungsrecht)</li><li>Reporting / Monitoring</li></ul>
+<h3>5. Migrations- und Beendigungsklauseln</h3>
+<p>Kritisch bei Cloud-/SaaS-Verträgen:</p>
+<ul><li><strong>Datenherausgabe</strong> in strukturiertem, gängigem und maschinenlesbarem Format, ohne Zusatzkosten</li><li><strong>Übergangszeitraum</strong> mit Mitwirkung des Anbieters</li><li><strong>Löschung der Daten</strong> nach Vertragsende mit Nachweis</li><li><strong>Vendor Lock-in-Vermeidung</strong> (Datenexport-Schnittstellen)</li></ul>
+<p>Bei <strong>Datenverarbeitungsdiensten</strong> (Cloud, SaaS) sind diese Punkte seit dem Data Act nicht mehr nur Verhandlungssache, sondern <strong>gesetzlich vorgegeben</strong>:</p>
+<ul><li><strong>Art. 25</strong>: vertragliche Ausstiegsunterstützung — Wechselfrist, Übergangszeitraum, Exportformat, Beschreibung der exportierbaren Daten, Löschung beim Altanbieter</li><li><strong>Art. 29</strong>: <strong>Wechselentgelte entfallen vollständig bis zum 12.01.2027</strong>; bis dahin sind nur <strong>kostenbasiert reduzierte</strong> Entgelte zulässig. Pauschale Ausstiegs-, Migrations- oder Egress-Gebühren sind bereits jetzt unzulässig und aus dem Vertrag zu streichen.</li></ul>
+<p>Vertiefte Prüfung: Skill <code>cloud-auftragsverarbeitung</code>.</p>
+<h3>6. Open-Source-Compliance</h3>
+<ul><li>Inventarisierung verwendeter OSS-Komponenten (SBOM)</li><li>Lizenz-Verträglichkeit (GPL vs. MIT vs. Apache)</li><li>Copyleft-Risiko bei Distribution</li></ul>
+<h3>7. Haftung und Versicherung</h3>
+<ul><li>Kardinalpflichten klar definieren</li><li>Cap auf Jahresvergütung (typisch 1 bis 2 x)</li><li>Ausnahmen für Vorsatz, grobe Fahrlässigkeit, Leib/Leben, ProdHaftG</li><li>Versicherungsnachweis (Cyber, Berufshaftpflicht)</li></ul></section>
+<section><h2>Quellen</h2><h3>Statute</h3>
+<ul><li><a href="https://www.gesetze-im-internet.de/bgb/__305.html">§§ 305–310 BGB</a></li><li><a href="https://www.gesetze-im-internet.de/bgb/<strong>611.html">§ 611 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/</strong>631.html">§ 631 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/__535.html">§ 535 BGB</a></li><li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679">Art. 28 DSGVO</a></li><li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679">Art. 32 DSGVO</a>, Art. 44 ff.</li><li><a href="https://www.gesetze-im-internet.de/urhg/">UrhG</a> (Lizenzen)</li><li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R2854">VO (EU) 2023/2854 (Data Act)</a> — anwendbar seit <strong>12.09.2025</strong>; Art. 3 (Zugang by design, nur für nach dem <strong>12.09.2026</strong> in Verkehr gebrachte Produkte), Art. 4, 5 (Bereitstellung an Nutzer und Dritte), Art. 13 (missbräuchliche Klauseln B2B), Art. 14 ff. (öffentliche Stellen, außergewöhnlicher Bedarf), Art. 23–31 (Wechsel, insb. Art. 25 und Art. 29)</li><li><strong>Data-Act-Durchführungsgesetz (DADG)</strong> — Bundestag 26.03.2026, BGBl. 29.05.2026; zuständige Behörde <strong>Bundesnetzagentur</strong> (Bekanntgabe 30.05.2026). Einzelnormen <code>[unverifiziert - prüfen]</code></li><li>Deutsches Durchführungsgesetz zum <strong>Data Governance Act</strong> — beschlossen im selben Paket am 26.03.2026; BNetzA beaufsichtigt Datenvermittlungsdienste und datenaltruistische Organisationen <code>[unverifiziert - prüfen]</code></li></ul>
+<h3>Vorlagen / Standards</h3>
+<ul><li><strong>EVB-IT</strong> (Ergänzende Vertragsbedingungen IT) – öffentliche Beschaffung</li><li><strong>BITKOM-Musterverträge</strong></li><li><strong>BVB</strong> (Besondere Vertragsbedingungen)</li></ul>
+<h3>Rechtsprechung</h3>
+<ul><li>BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 (SaaS = Miete) <code>[unverifiziert – prüfen]</code></li><li>BGH, Urt. v. 18.12.2009 – V ZR 130/08, NJW 2010, 1962 (Cloud-Haftung) <code>[unverifiziert – prüfen]</code></li></ul></section>
+<section><h2>Ausgabeformat</h2><pre><code>IT-VERTRAGSPRÜFUNG — &lt;Vertragsbezeichnung&gt; — &lt;Datum&gt;
+
+I.    Vertragstyp                    [SaaS / Werkvertrag / Outsourcing / …]
+      Anwendbares Recht:              &lt;…&gt;
+II.   AGB-Kontrolle                   [✓ / ⚠️ / ❌]
+      Problemklauseln:                &lt;…&gt;
+III.  DSGVO
+      AVV vorhanden + vollständig:    [✓ / 🔴 lückenhaft]
+      Drittlandtransfer:              [N/A / SCC / DPF — TIA-Status]
+III-a. Data Act (VO (EU) 2023/2854)
+      Anwendungsbereich:              [IoT Art. 3–5 / Cloud Art. 23–31 / nur Art. 13 / N/A]
+      Inverkehrbringen des Produkts:  [vor / nach 12.09.2026 → Art. 3 Abs. 1?]
+      Nutzerzugang Art. 4 / Dritte Art. 5: [geregelt / 🔴 fehlt]
+      Art.-5-Prozess + Frist:         [etabliert / 🔴 fehlt]
+      Geschäftsgeheimnis-Vorbehalt:   [begründet / ⚠️ pauschal]
+      Wechselentgelte Art. 29:        [keine / kostenbasiert / 🔴 pauschal]
+      Ausstiegshilfe Art. 25:         [✓ / 🔴]
+      Art. 13 Klauselkontrolle:       [✓ / ⚠️]
+      Zuständige Behörde:             BNetzA (DADG)
+IV.   SLA
+      Verfügbarkeit, Reaktionszeit:   &lt;…&gt;
+      Sanktionen:                     &lt;…&gt;
+V.    Migration / Beendigung
+      Datenherausgabe:                [✓ / 🔴]
+      Löschnachweis:                  [✓ / 🔴]
+VI.   Open Source
+      SBOM:                           [vorhanden / fehlt]
+      Lizenz-Verträglichkeit:         [✓ / ⚠️]
+VII.  Haftung
+      Cap:                            &lt;EUR oder x Jahresvergütung&gt;
+      Ausnahmen:                      [vollständig / unvollständig]
+
+Verhandlungsstrategie:                &lt;…&gt;</code></pre></section>
+<section><h2>Risiken / typische Fehler</h2><ul><li><strong>SaaS ohne AVV</strong> — DSGVO-Verstoß, Bußgeldrisiko Art. 83 DSGVO.</li><li><strong>Drittlandtransfer ohne TIA</strong> — Schrems II-Risiko.</li><li><strong>Haftungsausschluss zu weit</strong> — § 309 Nr. 7 BGB, § 307 BGB.</li><li><strong>Datenherausgabe-Klausel fehlt</strong> — Vendor Lock-in als Verhandlungshebel des Anbieters.</li><li><strong>Open Source ohne Compliance-Prüfung</strong> — Copyleft-Risiko bei späterer Distribution.</li><li><strong>„Wir nutzen den Vendor-Standard"</strong> — ohne eigene Prüfung kein Vertrauensschutz.</li><li><strong>Data Act gar nicht geprüft</strong> — er gilt seit <strong>12.09.2025</strong> und <strong>unabhängig vom Personenbezug</strong>. Eine IT-Vertragsprüfung, die nur AGB-Recht und DSGVO abarbeitet, ist seit diesem Datum unvollständig.</li><li><strong>Art. 3 Abs. 1 auf Bestandsprodukte angewandt</strong> — die Pflicht zum <strong>Zugang by design</strong> trifft <strong>nur vernetzte Produkte, die nach dem 12.09.2026 in Verkehr gebracht werden</strong>. Wer sie für Altprodukte annimmt, empfiehlt eine gesetzlich nicht geschuldete Nachrüstung.</li><li><strong>Umgekehrter Fehler: Art. 4 und 5 mit dem Stichtag 12.09.2026 verknüpft</strong> — die Bereitstellungspflichten gegenüber Nutzern und Dritten hängen <strong>nicht</strong> am Inverkehrbringen des Produkts. Wer den Stichtag auf sie überträgt, unterschätzt den heutigen Handlungsbedarf.</li><li><strong>Art.-5-Verlangen ohne Prozess</strong> — Weitergabeverlangen des Nutzers an Dritte sind fristgebunden; ohne definierten Eingangskanal und Prüfpfad läuft die Frist unbemerkt ab.</li><li><strong>Pauschaler Geschäftsgeheimnis-Vorbehalt</strong> — Geschäftsgeheimnisse können die Datenweitergabe beschränken, aber nur unter den Voraussetzungen der Verordnung, mit Schutzmaßnahmen und dokumentierter Einzelfallbegründung. Eine Blankoklausel trägt nicht.</li><li><strong>Wechselentgelte im Cloud-Vertrag belassen</strong> — sie entfallen <strong>vollständig bis zum 12.01.2027</strong>; bis dahin sind nur kostenbasiert reduzierte Entgelte zulässig. Pauschale Ausstiegs- und Egress-Gebühren sind bereits jetzt unzulässig.</li><li><strong>Ausstiegsklausel nach Art. 25 fehlt</strong> — Wechselfrist, Übergangszeitraum, Exportformat und Löschung beim Altanbieter müssen <strong>vertraglich</strong> geregelt sein.</li><li><strong>Art. 13 Data Act mit der AGB-Kontrolle gleichgesetzt</strong> — es handelt sich um eine <strong>eigenständige</strong> Missbräuchlichkeitskontrolle für einseitig auferlegte Datenklauseln, die neben §§ 305 ff. BGB tritt.</li><li><strong>Anfragen öffentlicher Stellen (Art. 14 ff.) nicht bedacht</strong> — bei außergewöhnlichem Bedarf besteht ein eigener Herausgabeanspruch, für den weder Zuständigkeit noch Prozess geregelt sind.</li><li><strong>Falsche Aufsichtsbehörde adressiert</strong> — für den Data Act ist in Deutschland die <strong>Bundesnetzagentur</strong> zuständig (DADG, BGBl. 29.05.2026), nicht die Datenschutzaufsicht.</li></ul></section>
+  <h2>Verwandte Skills in IT-Recht</h2><div class="related-grid"><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/cloud-auftragsverarbeitung.html" class="skill-card" style="text-decoration:none"><h3>Cloud Auftragsverarbeitung</h3><p>Datenschutzkonforme Gestaltung der Cloud-Nutzung: Auftragsverarbeitung nach Art. 28 DSGVO, technische und...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/domainrecht.html" class="skill-card" style="text-decoration:none"><h3>Domainrecht</h3><p>Bewertung von Domainstreitigkeiten und Ansprüchen aus Namensrecht (§ 12 BGB), Kennzeichenrecht und...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/e-commerce-pflichten.html" class="skill-card" style="text-decoration:none"><h3>E Commerce Pflichten</h3><p>Prüfung der Pflichten eines Online-Shops im elektronischen Geschäftsverkehr: allgemeine Pflichten (§ 312i...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/it-sicherheit-meldepflichten.html" class="skill-card" style="text-decoration:none"><h3>It Sicherheit Meldepflichten</h3><p>Prüfung der IT-Sicherheits- und Meldepflichten von KRITIS-Betreibern und NIS2-Einrichtungen nach dem BSIG...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/ki-vertraege.html" class="skill-card" style="text-decoration:none"><h3>Ki Vertraege</h3><p>Gestaltung und Prüfung von Verträgen über KI-Systeme: Leistungsbeschreibung und Gewährleistung (§ 434, §...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/it-recht/open-source-compliance.html" class="skill-card" style="text-decoration:none"><h3>Open Source Compliance</h3><p>Prüfung der Open-Source-Compliance in Produkten: urheberrechtliche Nutzungsrechte (§ 31 UrhG), Schutz von...</p></a></div>
+  <p style="margin-top:32px"><a href="https://github.com/borghei/AI-Skills-German-Law/tree/main/it-recht/skills/it-vertragspruefung/SKILL.md" target="_blank" rel="noopener" class="btn btn-secondary">SKILL.md auf GitHub ansehen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></p>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener">GitHub</a>
+      <span class="footer-sep">&middot;</span>
+      <span>Apache-2.0 ODER MIT</span>
+      <span class="footer-sep">&middot;</span>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/de/llms.txt">llms.txt</a>
+    </div>
+    <div class="footer-credit">Erstellt von <a href="https://github.com/borghei" target="_blank" rel="noopener">Borghei</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

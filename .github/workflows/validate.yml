@@ -26,3 +26,21 @@ jobs:
         run: python -m unittest scripts.legal_calc.tests
       - name: Citation verification (offline, informational)
         run: python scripts/verify_citations.py
+      - name: Generated artefacts are up to date
+        # site/ and skills.json are generated but committed, and pages.yml
+        # deploys site/ exactly as committed - it does not regenerate. Without
+        # this gate, editing a generator or a SKILL.md without re-running the
+        # build ships a stale site and a stale catalog, silently.
+        run: |
+          python scripts/build_skills_json.py
+          python scripts/generate_site.py
+          python scripts/build_eval_config.py
+          if ! git diff --quiet; then
+            echo "::error::Generated output is stale. Run these locally and commit the result:"
+            echo "  python scripts/build_skills_json.py"
+            echo "  python scripts/generate_site.py"
+            echo "  python scripts/build_eval_config.py"
+            git diff --stat
+            exit 1
+          fi
+          echo "Generated output matches the committed tree."
