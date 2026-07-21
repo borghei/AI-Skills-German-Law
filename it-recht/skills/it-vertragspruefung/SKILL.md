@@ -169,8 +169,8 @@ Vertiefte Prüfung: Skill `cloud-auftragsverarbeitung`.
 
 ### Rechtsprechung
 
-- BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 (SaaS = Miete) `[unverifiziert – prüfen]`
-- BGH, Urt. v. 18.12.2009 – V ZR 130/08, NJW 2010, 1962 (Cloud-Haftung) `[unverifiziert – prüfen]`
+- BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 = MMR 2007, 243 (ASP/SaaS = Mietvertrag), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2006-11-15&Aktenzeichen=XII%20ZR%20120/04)
+- „Cloud-Haftung" `[unverifiziert – prüfen]` — die bisher hier geführte Fundstelle „BGH, Urt. v. 18.12.2009 – V ZR 130/08, NJW 2010, 1962" ist unzutreffend: unter dem 18.12.2009 existiert keine BGH-Entscheidung V ZR 130/08; V ZR 130/08 ist BGH, Urt. v. 06.02.2009 (Grundstücksübertragung, § 138 BGB, NJW 2009, 1346) und betrifft keine Cloud-Haftung. Eine einschlägige Leitentscheidung ist offen; Haftungsfragen sind bis auf Weiteres aus §§ 280, 535, 536a BGB und der AGB-Kontrolle abzuleiten
 
 ## Ausgabeformat
 

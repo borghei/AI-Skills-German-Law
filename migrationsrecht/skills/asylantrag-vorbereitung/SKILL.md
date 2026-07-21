@@ -46,7 +46,7 @@ Researcher liefert AsylG-Statute, Dublin-VO, Qualifikations- und Verfahrens-RL, 
 
 - **Zuständigkeitskriterien** Art. 7 ff. Dublin III (Familienkriterien, vorheriges Visum, Ersteinreise, freier Aufenthalt)
 - **Eurodac-Treffer Kat. 1 / Kat. 2** in anderem Mitgliedstaat? – Wiederaufnahmegesuch / Aufnahmegesuch
-- **Selbsteintritt Art. 17 Dublin III**: politische Souveränität DE; in Praxis bei systemischen Mängeln (EuGH, N.S. C-411/10 `[unverifiziert]`; EuGH, Jawo C-163/17 `[unverifiziert]`) oder bei Familieneinheit
+- **Selbsteintritt Art. 17 Dublin III**: politische Souveränität DE; in Praxis bei systemischen Mängeln (EuGH, Urt. v. 21.12.2011 – verb. Rs. C-411/10, C-493/10, N.S. u.a., [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2011-12-21&Aktenzeichen=C-411/10); EuGH, Urt. v. 19.03.2019 – Rs. C-163/17, Jawo, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2019-03-19&Aktenzeichen=C-163/17)) oder bei Familieneinheit
 - **Überstellungsfristen Art. 29 Dublin III**: **6 Monate** Standard; **12 Monate** bei Haft; **18 Monate** bei Flucht. Fristablauf = Zuständigkeitsübergang auf DE.
 - Unzulässigkeitsentscheidung § 29 I Nr. 1 AsylG mit Abschiebungsanordnung § 34a → **1 Woche** Eilantrag § 80 V VwGO iVm § 34a II AsylG
 
@@ -62,7 +62,7 @@ Researcher liefert AsylG-Statute, Dublin-VO, Qualifikations- und Verfahrens-RL, 
 - **b) Asylberechtigung Art. 16a GG**
   - **Subsidiär gegenüber § 3 AsylG** und wegen **Drittstaatenregelung Art. 16a II GG / § 26a AsylG** in der Praxis selten einschlägig (Einreise aus EU = sicherer Drittstaat)
 - **c) Subsidiärer Schutz § 4 AsylG** (RL 2011/95/EU)
-  - **Ernsthafter Schaden**: (1) Todesstrafe, (2) Folter/unmenschliche oder erniedrigende Behandlung, (3) ernsthafte individuelle Bedrohung des Lebens / der Unversehrtheit infolge willkürlicher Gewalt im internen / internationalen bewaffneten Konflikt (EuGH, Elgafaji C-465/07 `[unverifiziert]`)
+  - **Ernsthafter Schaden**: (1) Todesstrafe, (2) Folter/unmenschliche oder erniedrigende Behandlung, (3) ernsthafte individuelle Bedrohung des Lebens / der Unversehrtheit infolge willkürlicher Gewalt im internen / internationalen bewaffneten Konflikt (EuGH, Urt. v. 17.02.2009 – Rs. C-465/07, Elgafaji, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-02-17&Aktenzeichen=C-465/07))
 - **d) Nationale Abschiebungsverbote**
   - **§ 60 V AufenthG**: Verstoß gegen EMRK (idR Art. 3) im Zielstaat
   - **§ 60 VII S. 1 AufenthG**: erhebliche konkrete Gefahr für Leib, Leben, Freiheit
@@ -131,14 +131,14 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - GK-AsylG, Stand 2024, § 25 Rn. 1 ff. / § 29 Rn. 1 ff.
 - Hofmann, in: NK-AuslR, 3. Aufl. 2023, § 60 AufenthG Rn. 1 ff.
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/curia/hudoc]`)
+### Rechtsprechung
 
-1. EuGH, Urt. v. 17.02.2009 – Rs. C-465/07, Elgafaji (subsidiärer Schutz, willkürliche Gewalt)
-2. EuGH, Urt. v. 21.12.2011 – verb. Rs. C-411/10, C-493/10, N.S. (Dublin, systemische Mängel)
-3. EuGH, Urt. v. 19.03.2019 – Rs. C-163/17, Jawo (Dublin, Art. 4 GRCh)
-4. EuGH, Urt. v. 07.11.2013 – verb. Rs. C-199/12 u.a., X, Y, Z (Verfolgung wegen sexueller Orientierung)
-5. BVerwG, Urt. v. 04.07.2019 – 1 C 33.18 (interner Schutz § 3e AsylG)
-6. EGMR, Urt. v. 21.01.2011 – Nr. 30696/09, M.S.S. ./. Belgien und Griechenland (Dublin, Art. 3 EMRK)
+1. EuGH, Urt. v. 17.02.2009 – Rs. C-465/07, Elgafaji (subsidiärer Schutz, Art. 15 lit. c RL 2004/83/EG, willkürliche Gewalt), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-02-17&Aktenzeichen=C-465/07)
+2. EuGH, Urt. v. 21.12.2011 – verb. Rs. C-411/10, C-493/10, N.S. u.a. (systemische Mängel; ergangen noch zur Dublin-II-VO 343/2003), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2011-12-21&Aktenzeichen=C-411/10)
+3. EuGH, Urt. v. 19.03.2019 – Rs. C-163/17, Jawo (Dublin III, Begriff des „Flüchtigseins", Art. 4 GRCh), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2019-03-19&Aktenzeichen=C-163/17)
+4. EuGH, Urt. v. 07.11.2013 – verb. Rs. C-199/12 bis C-201/12, X, Y und Z (Verfolgung wegen sexueller Orientierung; keine Verweisung auf Verheimlichung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2013-11-07&Aktenzeichen=C-199/12)
+5. BVerwG, Urt. v. 04.07.2019 – 1 C 33.18, NVwZ 2020, 161 (Flüchtlingsanerkennung syrischer Antragsteller; Maßstab der beachtlichen Wahrscheinlichkeit und gerichtliche Aufklärungspflicht) — Bezug auf **§ 3e AsylG (interner Schutz)** ist der Quelle nicht zu entnehmen `[unverifiziert – Einschlägigkeit für internen Schutz prüfen]`, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2019-07-04&Aktenzeichen=1%20C%2033.18)
+6. EGMR, Urt. v. 21.01.2011 – Nr. 30696/09, M.S.S. ./. Belgien und Griechenland (Dublin, Art. 3 EMRK), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2011-01-21&Aktenzeichen=30696/09)
 
 ## Ausgabeformat
 
@@ -202,7 +202,7 @@ IX. Quellenverzeichnis
 
 > **Sachverhalt:** Mandant K. (Syrien, 28 J., sunnitischer Muslim aus Idlib) reiste über Griechenland und die Balkanroute am 15.03.2024 ein, Asylgesuch am 18.03.2024. Eurodac-Treffer Kat. 1 in Griechenland. BAMF-Anhörung in 3 Wochen.
 >
-> **Dublin-Vorprüfung:** Voraussichtlich Wiederaufnahmegesuch DE → GR nach Art. 18 I lit. b Dublin III. Indes liegt zu GR EGMR-Rechtsprechung zu systemischen Mängeln vor (M.S.S. `[unverifiziert]`; aktuelle Lage zu prüfen via aktuellen Länderberichten). Argumentation für Selbsteintritt Art. 17 / Abschiebungsverbot § 60 V AufenthG iVm Art. 3 EMRK tragfähig. **Überstellungsfrist 6 Monate** ab Zustimmung GR – Mandantenkalender.
+> **Dublin-Vorprüfung:** Voraussichtlich Wiederaufnahmegesuch DE → GR nach Art. 18 I lit. b Dublin III. Indes liegt zu GR EGMR-Rechtsprechung zu systemischen Mängeln vor (EGMR, Urt. v. 21.01.2011 – Nr. 30696/09, M.S.S. ./. Belgien und Griechenland, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2011-01-21&Aktenzeichen=30696/09); aktuelle Lage zu prüfen via aktuellen Länderberichten). Argumentation für Selbsteintritt Art. 17 / Abschiebungsverbot § 60 V AufenthG iVm Art. 3 EMRK tragfähig. **Überstellungsfrist 6 Monate** ab Zustimmung GR – Mandantenkalender.
 >
 > **Schutzformen-Triage:** § 3 AsylG vorrangig – Verfolgungsmerkmal politische Überzeugung / Religion (Idlib, Konflikt zwischen Regierung und nichtstaatlichen Akteuren), Akteure Staat und nichtstaatlich (§ 3c Nr. 3). Hilfsweise § 4 I Nr. 3 AsylG (willkürliche Gewalt im internen bewaffneten Konflikt) – BVerwG- und EuGH-Linie zu Syrien zu prüfen.
 >

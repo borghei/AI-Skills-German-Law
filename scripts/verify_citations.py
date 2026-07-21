@@ -66,58 +66,15 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
-# Areas mirror eval.py / validate.py (the full plugin set).
-AREAS = [
-    "arbeitsrecht",
-    "datenschutzrecht",
-    "vertragsrecht",
-    "mietrecht",
-    "wohnungseigentumsrecht",
-    "gesellschaftsrecht",
-    "strafrecht",
-    "ki-vo-compliance",
-    "nis2",
-    "hinweisgeberschutz",
-    "lieferkettengesetz",
-    "dora",
-    "dsa-dma",
-    "csrd",
-    "insolvenzrecht",
-    "prozessrecht",
-    "it-recht",
-    "bankrecht",
-    "erbrecht",
-    "familienrecht",
-    "betreuungsrecht",
-    "gewerblicher-rechtsschutz",
-    "steuerrecht",
-    "verwaltungsrecht",
-    "europarecht",
-    "verfassungsrecht",
-    "umweltrecht",
-    "sozialrecht",
-    "vergaberecht",
-    "wettbewerbsrecht",
-    "handelsrecht",
-    "medizinrecht",
-    "versicherungsrecht",
-    "baurecht",
-    "aussenwirtschaft-zoll-sanktionen",
-    "geldwaesche-aml-kyc",
-    "energierecht",
-    "verkehrsrecht",
-    "transportrecht",
-    "produktrecht",
-    "ki-governance",
-    "patentrecht",
-    "migrationsrecht",
-    "agrarrecht",
-    "sportrecht",
-    "urheber-medienrecht",
-    "berufsrecht-anwaltschaft",
-    "kapitalmarktrecht",
-    "kartellrecht",
-]
+# Areas are discovered from disk, not hardcoded. This file previously kept its
+# own copy of the list, which had silently drifted 9 areas behind - meaning the
+# 36 newest skills were never scanned at all. Any directory carrying a plugin
+# manifest is an area, so the list cannot go stale again.
+AREAS = sorted(
+    p.name
+    for p in REPO_ROOT.iterdir()
+    if p.is_dir() and (p / ".claude-plugin" / "plugin.json").exists()
+)
 
 GII_BASE = "https://www.gesetze-im-internet.de"
 EURLEX_CELEX = "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:{celex}"
@@ -181,6 +138,36 @@ STATUTE_SLUGS: dict[str, str] = {
     "TTDSG": "ttdsg",
     "TMG": "tmg",
     "TKG": "tkg_2021",
+    # Digitale Dienste / IT-Sicherheit. Missing entries here do not merely fail
+    # to resolve - the parser falls through to the case-law branch and reports a
+    # statute cite as an "unmarked case-law citation", inflating the review
+    # count. 49 of it-recht's 56 warnings were exactly this.
+    "DDG": "ddg",
+    "TDDDG": "tdddg",
+    "BSIG": "bsig_2009",
+    "NIS2UmsuCG": "bsig_2009",
+    "EnWG": "enwg_2005",
+    "GEG": "geg",
+    "WPG": "wpg",
+    "StiftRG": "stiftrg",
+    "GBO": "gbo",
+    "ZVG": "zvg",
+    "BDG": "bdg",
+    "BeamtStG": "beamtstg",
+    "BBG": "bbg_2009",
+    "BeamtVG": "beamtvg",
+    # Historic statutes that still appear in older case law. Without these the
+    # parser reports them as unmarked case-law citations - and they show up
+    # precisely BECAUSE a verification pass named what a decision actually
+    # decided (e.g. "§ 53 Abs. 6 S. 1 AuslG"), so verifying made the count rise.
+    "AuslG": "auslg_1990",
+    "AsylVfG": "asylvfg_1992",
+    "EntgTranspG": "entgtranspg",
+    "SchwarzArbG": "schwarzarbg_2004",
+    "GrdstVG": "grdstvg",
+    "LPachtVG": "lpachtvg",
+    "LwAnpG": "lwanpg",
+    "AntiDopG": "antidopg",
     # Straf- und Verkehrsrecht
     "StGB": "stgb",
     "StPO": "stpo",
@@ -317,6 +304,24 @@ EU_CELEX: dict[str, str] = {
     "DGA": "32022R0868",
     "Prospekt-VO": "32017R1129",
     "ProspektVO": "32017R1129",
+    # Newer EU instruments. A missing entry here is not cosmetic: the parser
+    # falls through and reports "unknown abbreviation", which is what made
+    # cyber-resilience-act appear to carry 82 citation warnings when every one
+    # was a well-formed "Art. 14 CRA".
+    "CRA": "32024R2847",
+    "KI-VO": "32024R1689",
+    "AI-Act": "32024R1689",
+    "DSA": "32022R2065",
+    "DMA": "32022R1925",
+    "CSDDD": "32024L1760",
+    "EUDR": "32023R1115",
+    "PPWR": "32025R0040",
+    "ESPR": "32024R1781",
+    "CBAM": "32023R0956",
+    "Data-Act": "32023R2854",
+    "DataAct": "32023R2854",
+    "AMLR": "32024R1624",
+    "AMLD6": "32024L1640",
 }
 
 # ---------------------------------------------------------------------------
@@ -558,7 +563,17 @@ def _scan_ecli(line: str, lineno: int, source: str, online: bool,
         country = ecli.split(":")[1]
         resolver = ECLI_RESOLVER.format(ecli=ecli) if online else None
         # ECLI:DE (and EU court decisions) are case law → expect a marker.
-        if not has_marker:
+        # Same rule as _scan_caselaw: an authoritative source link IS the
+        # verified state per CONVENTIONS.md. This branch was missed when that
+        # fix went in, so a verified ECLI still reported as unmarked.
+        if not has_marker and has_verification_source(line):
+            findings.append(Finding(
+                source, lineno, "ecli", ecli, Severity.INFO,
+                f"valid ECLI ({country}) without marker but with an "
+                "authoritative source link — verified state per CONVENTIONS.md",
+                resolver,
+            ))
+        elif not has_marker:
             findings.append(Finding(
                 source, lineno, "ecli", ecli, Severity.WARN,
                 f"valid ECLI ({country}) but unmarked case-law citation — "
@@ -602,6 +617,8 @@ VERIFICATION_HOSTS = (
     "curia.europa.eu",
     "lexetius.com",
     "rechtsprechung-im-internet.de",
+    "hudoc.echr.coe.int",
+    "jurisprudence.tas-cas.org",
 )
 
 

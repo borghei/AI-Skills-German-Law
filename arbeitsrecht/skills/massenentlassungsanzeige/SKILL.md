@@ -45,7 +45,7 @@ Anzeigepflicht besteht, wenn innerhalb von **30 Kalendertagen** entlassen werden
 
 Drei Fallen bei der Berechnung:
 
-1. **„Entlassung" ist der Ausspruch der Kündigung**, nicht das Ende des Arbeitsverhältnisses (richtlinienkonforme Auslegung nach der EuGH-Entscheidung in der Rechtssache *Junk* `[unverifiziert – prüfen]`). Maßgeblich ist der Zeitraum, in dem die Kündigungen **erklärt** werden.
+1. **„Entlassung" ist der Ausspruch der Kündigung**, nicht das Ende des Arbeitsverhältnisses (richtlinienkonforme Auslegung nach EuGH, Urt. v. 27.01.2005 – C-188/03, *Junk*; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=27.01.2005&Aktenzeichen=C-188/03)). Maßgeblich ist der Zeitraum, in dem die Kündigungen **erklärt** werden.
 2. **Aufhebungsverträge zählen mit** (§ 17 Abs. 1 S. 2 KSchG: „andere Beendigungen, die vom Arbeitgeber veranlasst werden"). Der Versuch, unter der Schwelle zu bleiben, indem man Aufhebungsverträge vorschaltet, geht regelmäßig fehl.
 3. **Fristlose Entlassungen** werden nach § 17 Abs. 4 S. 2 KSchG bei der Mindestzahl **nicht** mitgerechnet.
 
@@ -97,9 +97,11 @@ Historisch behandelte die Rechtsprechung **jeden** Verstoß gegen §§ 17, 18 KS
 | **Anzeige § 17 Abs. 1, 3 KSchG** ganz unterblieben | streitig; jedenfalls Sanktionsbedarf, Prüfung im Einzelfall geboten `[unverifiziert – prüfen]` |
 | **Anzeige fehlerhaft oder unvollständig** (z. B. fehlende Angaben, fehlende Abschrift nach § 17 Abs. 3 S. 1 KSchG) | **Keine** Unwirksamkeit der Kündigung; das Anzeigeverfahren dient dem arbeitsmarktpolitischen Interesse, nicht dem Individualschutz `[unverifiziert – prüfen]` |
 
-Hintergrund ist die unionsrechtliche Vorgabe: Der EuGH hat entschieden, dass die Übermittlung der Abschrift nach § 17 Abs. 3 S. 1 KSchG dem einzelnen Arbeitnehmer keine individuelle Rechtsposition vermittelt; das BAG hat daraufhin über eine Divergenzanfrage zwischen den Senaten seine Rechtsprechung zur Sanktionsfolge von Anzeigefehlern korrigiert `[unverifiziert – prüfen]`.
+Hintergrund ist die unionsrechtliche Vorgabe: Der EuGH hat entschieden, dass die Übermittlung der Abschrift der Unterrichtung an die Arbeitsverwaltung (Art. 2 Abs. 3 Unterabsatz 2 der Richtlinie 98/59/EG, umgesetzt in § 17 Abs. 3 S. 1 KSchG) dem einzelnen Arbeitnehmer **keine individuelle Rechtsposition** vermittelt, sondern allein der Information und Vorbereitung der zuständigen Behörde dient (EuGH, Urt. v. 13.07.2023 – C-134/22; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=13.07.2023&Aktenzeichen=C-134/22)). Das BAG hat daraufhin seine Rechtsprechung zur Sanktionsfolge von Anzeigefehlern korrigiert `[unverifiziert – prüfen]`.
 
-> **Praxishinweis:** Diese Zäsur ist eine **Verteidigungslinie für den Arbeitgeber**, keine Erlaubnis zur Nachlässigkeit. Erstens ist die genaue Reichweite der neuen Linie noch nicht ausjudiziert; zweitens bleibt das Konsultationsverfahren voll sanktioniert; drittens droht bei fehlender Anzeige ein Bußgeld nach § 121 SGB III sowie die Verzögerung durch die Sperrfrist. Der Entwurf ist daher unverändert auf vollständige Anzeigen auszulegen. Vor Berufung auf die geänderte Rechtsprechung ist der aktuelle Stand in juris zu verifizieren.
+> **Achtung — laufende Entwicklung, vor jeder Beratung zu prüfen.** Der Sechste Senat hat das Verfahren **6 AZR 152/22** mit Beschl. v. 23.05.2024 (BAGE 183, 254 = NZA 2024, 813; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=23.05.2024&Aktenzeichen=6%20AZR%20152/22)) dem EuGH vorgelegt und mit Urt. v. **01.04.2026 – 6 AZR 152/22**, NZA 2026, 669, entschieden. Der amtliche Leitsatz lautet: „Erstattet der Arbeitgeber eine – erforderliche – Massenentlassungsanzeige vor Abschluss des Konsultationsverfahrens mit dem Betriebsrat, ist die daraufhin ausgesprochene Kündigung unwirksam." ([bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/6-azr-152-22/)). Die Entscheidung betrifft eine **Verzahnung beider Stränge** — eine vor Abschluss der Konsultation erstattete Anzeige — und ist mit der dritten Zeile der obigen Tabelle nicht ohne Weiteres in Einklang zu bringen. Die Tabelle gibt den bisherigen Diskussionsstand wieder; die Reichweite der Zäsur ist damit **weiterhin nicht ausjudiziert** und vor Berufung auf sie im Volltext der Entscheidung und in juris zu verifizieren.
+
+> **Praxishinweis:** Die Zäsur ist eine **Verteidigungslinie für den Arbeitgeber**, keine Erlaubnis zur Nachlässigkeit. Erstens ist die genaue Reichweite der neuen Linie noch nicht ausjudiziert; zweitens bleibt das Konsultationsverfahren voll sanktioniert; drittens droht bei fehlender Anzeige ein Bußgeld nach § 121 SGB III sowie die Verzögerung durch die Sperrfrist. Der Entwurf ist daher unverändert auf vollständige Anzeigen auszulegen.
 
 ### 6. Reihenfolge — der prüffeste Zeitplan
 
@@ -179,10 +181,11 @@ Empfangsbestätigung: ____________________
 
 ### Rechtsprechung
 
-- EuGH-Rspr. zum Begriff der „Entlassung" als Ausspruch der Kündigung (Rechtssache *Junk*) `[unverifiziert – prüfen]`
+- EuGH, Urt. v. 27.01.2005 – C-188/03, *Junk* (Begriff der „Entlassung" = Ausspruch der Kündigung, nicht Beendigung des Arbeitsverhältnisses), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=27.01.2005&Aktenzeichen=C-188/03)
 - EuGH-Rspr. zum unionsrechtlichen Betriebsbegriff der Richtlinie 98/59/EG `[unverifiziert – prüfen]`
-- EuGH-Rspr. zu § 17 Abs. 3 S. 1 KSchG (Abschrift an die Agentur vermittelt keine individuelle Rechtsposition) `[unverifiziert – prüfen]`
-- BAG, Rechtsprechungsänderung 2024 zur Sanktionsfolge von Fehlern der Massenentlassungsanzeige (nach Divergenzanfrage zwischen den Senaten) `[unverifiziert – prüfen]`
+- EuGH, Urt. v. 13.07.2023 – C-134/22 (Art. 2 Abs. 3 Unterabsatz 2 der Richtlinie 98/59/EG bzw. § 17 Abs. 3 S. 1 KSchG: Abschrift an die Agentur dient der Behördeninformation und vermittelt keine individuelle Rechtsposition), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=13.07.2023&Aktenzeichen=C-134/22)
+- BAG, Beschl. v. 23.05.2024 – 6 AZR 152/22 (A), BAGE 183, 254 = NZA 2024, 813 (Vorlage an den EuGH zu den Folgen von Fehlern im Anzeigeverfahren), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=23.05.2024&Aktenzeichen=6%20AZR%20152/22)
+- BAG, Urt. v. 01.04.2026 – 6 AZR 152/22, NZA 2026, 669 (Anzeige vor Abschluss des Konsultationsverfahrens → Kündigung unwirksam), [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/6-azr-152-22/)
 - st. Rspr. des BAG zu § 17 Abs. 2 KSchG (Konsultationsverfahren ist arbeitnehmerschützend; Kündigung vor Abschluss ist unwirksam) `[unverifiziert – prüfen]`
 
 > Die Rechtsprechungsänderung von 2024 ist **vor jeder Verwendung** in juris oder der [BAG-Entscheidungsdatenbank](https://www.bundesarbeitsgericht.de/entscheidungen/) mit Aktenzeichen und Leitsatz zu verifizieren. Aktenzeichen werden hier bewusst nicht angegeben.

@@ -32,7 +32,7 @@ Nach § 31 UrhG kann der Urheber einfache oder ausschließliche Nutzungsrechte e
 
 ### 2. Erschöpfungsgrundsatz und Gebrauchtsoftware (§ 69c UrhG)
 
-Nach § 69c Nr. 3 S. 2 UrhG erschöpft sich das Verbreitungsrecht an einer Programmkopie, die mit Zustimmung des Rechtsinhabers im Gebiet der EU im Wege der Veräußerung in Verkehr gebracht wurde. Der EuGH hat klargestellt, dass dies auch für per **Download** veräußerte Kopien gilt, wenn der Ersterwerb gegen Entgelt auf unbegrenzte Zeit erfolgt (EuGH, Urt. v. 03.07.2012 – C-128/11 — UsedSoft; nachfolgend BGH, Urt. v. 17.07.2013 – I ZR 129/08 — UsedSoft II). Voraussetzung der zulässigen Weiterveräußerung ist, dass der Ersterwerber seine eigene Kopie unbrauchbar macht; eine Aufspaltung von Volumenlizenzen ist unzulässig.
+Nach § 69c Nr. 3 S. 2 UrhG erschöpft sich das Verbreitungsrecht an einer Programmkopie, die mit Zustimmung des Rechtsinhabers im Gebiet der EU im Wege der Veräußerung in Verkehr gebracht wurde. Der EuGH hat klargestellt, dass dies auch für per **Download** veräußerte Kopien gilt, wenn der Ersterwerb gegen Entgelt auf unbegrenzte Zeit erfolgt (EuGH, Urt. v. 03.07.2012 – C-128/11 — UsedSoft, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2012-07-03&Aktenzeichen=C-128/11); nachfolgend BGH, Urt. v. 17.07.2013 – I ZR 129/08 — UsedSoft II, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2013-07-17&Aktenzeichen=I%20ZR%20129/08)). Voraussetzung der zulässigen Weiterveräußerung ist, dass der Ersterwerber seine eigene Kopie unbrauchbar macht; eine Aufspaltung von Volumenlizenzen ist unzulässig.
 
 ### 3. AGB-Kontrolle von Weitergabe- und Audit-Klauseln (§§ 305, 307 BGB)
 
@@ -70,4 +70,5 @@ Empfehlung:                            <…>
 
 - [§ 31 UrhG](https://www.gesetze-im-internet.de/urhg/__31.html), [§ 69c UrhG](https://www.gesetze-im-internet.de/urhg/__69c.html), [§ 69d UrhG](https://www.gesetze-im-internet.de/urhg/__69d.html), [§ 97 UrhG](https://www.gesetze-im-internet.de/urhg/__97.html)
 - [§ 305 BGB](https://www.gesetze-im-internet.de/bgb/__305.html), [§ 307 BGB](https://www.gesetze-im-internet.de/bgb/__307.html), [§ 309 BGB](https://www.gesetze-im-internet.de/bgb/__309.html)
-- EuGH, Urt. v. 03.07.2012 – C-128/11 (UsedSoft) — verifiziert; BGH, Urt. v. 17.07.2013 – I ZR 129/08 (UsedSoft II) — verifiziert
+- EuGH, Urt. v. 03.07.2012 – C-128/11, NJW 2012, 2565 = GRUR 2012, 904 (UsedSoft), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2012-07-03&Aktenzeichen=C-128/11)
+- BGH, Urt. v. 17.07.2013 – I ZR 129/08, GRUR 2014, 264 = NJW 2014, 777 (UsedSoft II), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2013-07-17&Aktenzeichen=I%20ZR%20129/08)

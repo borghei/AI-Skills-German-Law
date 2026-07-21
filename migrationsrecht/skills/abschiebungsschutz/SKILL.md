@@ -59,7 +59,7 @@ Researcher liefert VwGO-, AsylG-, AufenthG-Statute, BVerwG- und EGMR-Rspr. (Soer
 
 ### 3. Zielstaatsbezogene Abschiebungsverbote
 
-- **§ 60 V AufenthG iVm Art. 3 EMRK** – unmenschliche oder erniedrigende Behandlung im Zielstaat (EGMR, Soering ./. UK `[unverifiziert]`; M.S.S. ./. Belgien und Griechenland `[unverifiziert]`)
+- **§ 60 V AufenthG iVm Art. 3 EMRK** – unmenschliche oder erniedrigende Behandlung im Zielstaat (EGMR, Urt. v. 07.07.1989 – Nr. 14038/88, Soering ./. UK, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=1989-07-07&Aktenzeichen=14038/88); EGMR, Urt. v. 21.01.2011 – Nr. 30696/09, M.S.S. ./. Belgien und Griechenland, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2011-01-21&Aktenzeichen=30696/09))
 - **§ 60 VII S. 1 AufenthG** – erhebliche konkrete Gefahr für Leib, Leben, Freiheit
 - **§ 60 VII S. 3, 4 AufenthG (krankheitsbedingt)** – wesentliche Verschlechterung lebensbedrohlicher / schwerwiegender Erkrankungen
   - **Qualifizierte ärztliche Bescheinigung § 60a IIc / IId AufenthG** zwingend: aktuelle ärztliche Diagnose, Behandlungsbedarf, Folgen bei Unterbrechung, fehlende Behandlungsmöglichkeit im Zielstaat
@@ -68,7 +68,7 @@ Researcher liefert VwGO-, AsylG-, AufenthG-Statute, BVerwG- und EGMR-Rspr. (Soer
 ### 4. Inlandsbezogene Abschiebungshindernisse
 
 - **Reisefähigkeit** (medizinisch): nicht zielstaat-, sondern reisebezogen
-- **Familie Art. 6 GG / Art. 8 EMRK**: Ehegatte / minderjährige Kinder mit deutscher Staatsangehörigkeit oder gesichertem Aufenthalt; Verhältnismäßigkeit (EGMR, Üner / Boultif `[unverifiziert]`)
+- **Familie Art. 6 GG / Art. 8 EMRK**: Ehegatte / minderjährige Kinder mit deutscher Staatsangehörigkeit oder gesichertem Aufenthalt; Verhältnismäßigkeit (EGMR, Urt. v. 18.10.2006 – Nr. 46410/99, Üner ./. NL, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2006-10-18&Aktenzeichen=46410/99); EGMR, Urt. v. 02.08.2001 – Nr. 54273/00, Boultif ./. CH, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2001-08-02&Aktenzeichen=54273/00))
 - **Kindeswohl** Art. 24 GRCh, UN-KRK
 - **Passersatzbeschaffung / Identitätsklärung**: tatsächliche Unmöglichkeit → § 60a II Duldung
 
@@ -118,15 +118,15 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Hofmann, in: NK-AuslR, 3. Aufl. 2023, § 60 AufenthG Rn. 1 ff.
 - Funke-Kaiser, in: GK-AsylG, Stand 2024, § 36 Rn. 1 ff.
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/curia/hudoc]`)
+### Rechtsprechung
 
-1. EGMR, Urt. v. 07.07.1989 – Nr. 14038/88, Soering ./. UK (Art. 3 EMRK, drohende Misshandlung im Zielstaat)
-2. EGMR, Urt. v. 21.01.2011 – Nr. 30696/09, M.S.S. ./. Belgien und Griechenland
-3. EGMR, Urt. v. 18.10.2006 – Nr. 46410/99, Üner ./. NL (Art. 8 EMRK)
-4. EGMR, Urt. v. 02.08.2001 – Nr. 54273/00, Boultif ./. CH (Verhältnismäßigkeit Ausweisung)
-5. BVerwG, Urt. v. 25.11.1997 – 9 C 58.96 (§ 60 VII AufenthG, krankheitsbedingt)
-6. BVerwG, Urt. v. 17.10.2006 – 1 C 18.05 (Reisefähigkeit, inlandsbezogen)
-7. BVerfG, Beschl. v. 17.09.2014 – 2 BvR 939/14 (Eilrechtsschutz bei drohender Abschiebung)
+1. EGMR, Urt. v. 07.07.1989 – Nr. 14038/88, Soering ./. UK (Art. 3 EMRK, drohende Misshandlung im Zielstaat), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=1989-07-07&Aktenzeichen=14038/88)
+2. EGMR, Urt. v. 21.01.2011 – Nr. 30696/09, M.S.S. ./. Belgien und Griechenland (Art. 3 und Art. 13 EMRK, systemische Mängel des griechischen Asylsystems), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2011-01-21&Aktenzeichen=30696/09)
+3. EGMR, Urt. v. 18.10.2006 – Nr. 46410/99, Üner ./. NL (Art. 8 EMRK, Ausweisung langjährig Aufhältiger), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2006-10-18&Aktenzeichen=46410/99)
+4. EGMR, Urt. v. 02.08.2001 – Nr. 54273/00, Boultif ./. CH (Verhältnismäßigkeit Ausweisung, Art. 8 EMRK), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2001-08-02&Aktenzeichen=54273/00)
+5. BVerwG, Urt. v. 25.11.1997 – 9 C 58.96, BVerwGE 105, 383 = NVwZ 1998, 524 (zielstaatsbezogenes Abschiebungshindernis bei unzureichenden Behandlungsmöglichkeiten; ergangen zu § 53 Abs. 6 S. 1 AuslG, heute § 60 VII AufenthG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=1997-11-25&Aktenzeichen=9%20C%2058.96)
+6. BVerwG, Urt. v. 17.10.2006 – 1 C 18.05, BVerwGE 127, 33 = NVwZ 2007, 712 (Abschiebungsverbot § 60 VII AufenthG wegen Verschlimmerung einer Erkrankung im Zielstaat — **zielstaatsbezogen**, nicht inlandsbezogene Reisefähigkeit), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2006-10-17&Aktenzeichen=1%20C%2018.05)
+7. BVerfG, Beschl. v. 17.09.2014 – 2 BvR 939/14, NVwZ 2014, 1511 (Dublin-Überstellung nach Italien; Pflicht zur Prüfung ziel- **und** inlandsbezogener Abschiebungshindernisse, ggf. Zusicherung des Zielstaats), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2014-09-17&Aktenzeichen=2%20BvR%20939/14)
 
 ## Ausgabeformat
 

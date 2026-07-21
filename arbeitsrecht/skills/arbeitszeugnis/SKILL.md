@@ -96,7 +96,7 @@ Für das **Verhalten** gilt eine eigene Reihung; entscheidend ist zusätzlich di
 Die Verteilung folgt einer Schwelle:
 
 - Der Arbeitgeber schuldet **grundsätzlich** eine Beurteilung; erteilt er eine **unterdurchschnittliche** Note (schlechter als „befriedigend"), muss **er** die zugrunde liegenden Tatsachen darlegen und beweisen.
-- Verlangt der Arbeitnehmer eine **bessere als die Note „befriedigend"**, trägt **er** die Darlegungs- und Beweislast für die überdurchschnittliche Leistung (st. Rspr. des BAG zur Darlegungslast bei der Zeugnisnote `[unverifiziert – prüfen]`).
+- Verlangt der Arbeitnehmer eine **bessere als die Note „befriedigend"**, trägt **er** die Darlegungs- und Beweislast für die überdurchschnittliche Leistung (BAG, Urt. v. 18.11.2014 – 9 AZR 584/13, BAGE 150, 66 = NZA 2015, 435; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=18.11.2014&Aktenzeichen=9%20AZR%20584/13) — die Formulierung „zur vollen Zufriedenheit" entspricht der Note „befriedigend", nicht „gut").
 - Der Ausgangspunkt „befriedigend" ist **keine gesetzliche Vermutung**, sondern eine von der Rechtsprechung gesetzte Beweislastschwelle. Der Einwand, in der Praxis würden überwiegend gute und sehr gute Zeugnisse erteilt, hat sich als Argument für eine Verschiebung dieser Schwelle nicht durchgesetzt `[unverifiziert – prüfen]`.
 
 Beweismittel des Arbeitnehmers: Zwischenzeugnisse, schriftliche Beurteilungen, Zielvereinbarungen mit dokumentierter Zielerreichung, Bonusabrechnungen, Beförderungen, Zeugen aus der Führungsebene.
@@ -201,7 +201,7 @@ Zuständig ist das Arbeitsgericht ([§ 2 ArbGG](https://www.gesetze-im-internet.
 
 ### Rechtsprechung
 
-- st. Rspr. des BAG zur Darlegungslast bei der Zeugnisnote (ab Verlangen einer besseren Note als „befriedigend" trägt der Arbeitnehmer die Darlegungslast) `[unverifiziert – prüfen]`
+- BAG, Urt. v. 18.11.2014 – 9 AZR 584/13, BAGE 150, 66 = NZA 2015, 435 (Darlegungslast bei der Zeugnisnote: ab Verlangen einer besseren Note als „befriedigend" trägt der Arbeitnehmer die Darlegungslast; „zur vollen Zufriedenheit" = befriedigend), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=18.11.2014&Aktenzeichen=9%20AZR%20584/13)
 - st. Rspr. des BAG zur Schlussformel (kein einklagbarer Anspruch auf Dank und Zukunftswünsche) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zu § 109 Abs. 2 GewO (Verbot verdeckter Aussagen, Wahrheits- und Wohlwollenspflicht) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zur Bindungswirkung eines erteilten Zwischenzeugnisses für das Endzeugnis `[unverifiziert – prüfen]`

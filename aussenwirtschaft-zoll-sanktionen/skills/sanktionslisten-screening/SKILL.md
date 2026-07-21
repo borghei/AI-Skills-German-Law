@@ -129,11 +129,11 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Hindelang, in: Krenzler/Herrmann/Niestedt, EU-Außenwirtschafts- und Zollrecht, Stand 2024, VO 269/2014 Rn. 1 ff.
 - Pelz, AW-Prax (laufende Jahrgänge) – Russland-Sanktionen.
 
-### Rechtsprechung (`[unverifiziert – prüfen in curia.europa.eu / juris]`)
+### Rechtsprechung
 
-1. EuGH, Urt. v. 03.09.2008 – verb. Rs. C-402/05 P, C-415/05 P, Kadi I, ECLI:EU:C:2008:461 (Verfahrensrechte gelisteter Personen) `[unverifiziert – prüfen]`
-2. EuGH, Urt. v. 18.07.2013 – Rs. C-584/10 P u.a., Kadi II, ECLI:EU:C:2013:518 `[unverifiziert – prüfen]`
-3. EuGH, Urt. v. 28.03.2017 – Rs. C-72/15, Rosneft, ECLI:EU:C:2017:236 (Auslegung Russland-VO, Bereitstellungsverbot) `[unverifiziert – prüfen]`
+1. EuGH, Urt. v. 03.09.2008 – verb. Rs. C-402/05 P, C-415/05 P, Kadi und Al Barakaat International Foundation/Rat und Kommission („Kadi I"), ECLI:EU:C:2008:461 (Verfahrensrechte gelisteter Personen; Vorrang unionsrechtlicher Grundrechte gegenüber der Umsetzung von UN-Resolutionen), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2008-09-03&Aktenzeichen=C-402/05)
+2. EuGH, Urt. v. 18.07.2013 – verb. Rs. C-584/10 P, C-593/10 P, C-595/10 P, Kommission u.a./Kadi („Kadi II"), ECLI:EU:C:2013:518 (umfassende Rechtmäßigkeitskontrolle des Listings, Begründungs- und Anhörungspflicht), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2013-07-18&Aktenzeichen=C-584/10)
+3. EuGH, Urt. v. 28.03.2017 – Rs. C-72/15, Rosneft, ECLI:EU:C:2017:236 (Zuständigkeit des EuGH für die Überprüfung von GASP-gestützten Sanktionen; Gültigkeit und Auslegung der Russland-Maßnahmen), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2017-03-28&Aktenzeichen=C-72/15)
 
 ## Ausgabeformat
 

@@ -38,5 +38,7 @@ must_flag:
   - "Umschichtungsgewinne pauschal als Ertrag behandelt"
   - "Pauschale Änderungsermächtigung im Stiftungsgeschäft"
   - "Business Judgment Rule ohne Dokumentation beansprucht"
-  - "Registerstand als bekannt vorausgesetzt"
+  - "Registerstart auf 01.01.2026 datiert"
+  - "01.01.2028"
+  - "Vertretungsbescheinigung der Stiftungsaufsicht"
 ---

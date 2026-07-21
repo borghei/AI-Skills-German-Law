@@ -95,5 +95,6 @@ Handlungsempfehlung:              <…>
 - [§ 14 MarkenG](https://www.gesetze-im-internet.de/markeng/__14.html) (eingetragene Marke)
 - [§ 826 BGB](https://www.gesetze-im-internet.de/bgb/__826.html), [§ 4 UWG](https://www.gesetze-im-internet.de/uwg_2004/__4.html) (Behinderung)
 - DENIC-Domainbedingungen / DENIC-Dispute-Verfahren
-- BGH, Urt. v. 22.11.2001 – I ZR 138/99 „shell.de" (Namensrecht vs. Domain) `[unverifiziert – prüfen]`
-- BGH „ambiente.de" / „afilias.de" (Haftung DENIC, Übertragung) `[unverifiziert – prüfen]`
+- BGH, Urt. v. 22.11.2001 – I ZR 138/99, BGHZ 149, 191 = GRUR 2002, 622 – „shell.de" (Namensrecht vs. Domain), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2001-11-22&Aktenzeichen=I%20ZR%20138/99)
+- BGH, Urt. v. 17.05.2001 – I ZR 251/99, BGHZ 148, 13 = GRUR 2001, 1038 – „ambiente.de" (Prüfungspflichten der DENIC nur bei offenkundiger Rechtsverletzung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2001-05-17&Aktenzeichen=I%20ZR%20251/99)
+- BGH „afilias.de" (Haftung DENIC, Übertragung) `[unverifiziert – prüfen]` — Az und Datum nicht ermittelbar; dejure indexiert keine Entscheidungsnamen, Fundstelle in juris/Beck-Online prüfen

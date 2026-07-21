@@ -25,7 +25,7 @@ Du bist die **Qualitäts- und Risikostufe** vor Auslieferung an den Mandantenanw
 - [ ] **GrdstVG-Genehmigung**: Entscheidungsfrist 1 Monat (§ 6 Abs. 1 S. 1 GrdstVG), verlängerbar auf 2 Monate (§ 6 Abs. 1 S. 2); Genehmigungsfiktion (§ 6 Abs. 2 GrdstVG)?
 - [ ] **RSG-Vorkaufsrecht**: Ausübungsfrist Siedlungsunternehmen über Genehmigungsbehörde 2 Monate (§ 6 Abs. 1 RSG iVm BGB)?
 - [ ] **LPachtVG-Anzeige**: 1 Monat ab Vertragsabschluss (§ 2 Abs. 1 LPachtVG); Beanstandungsfrist Behörde (§ 4 LPachtVG)?
-- [ ] **LwAnpG-Verjährung Auseinandersetzungsanspruch**: § 51a LwAnpG geprüft? Tilgungs-/Ratenzahlungsregelung § 44 Abs. 6 LwAnpG `[unverifiziert]`?
+- [ ] **LwAnpG-Verjährung Auseinandersetzungsanspruch**: **§ 3b LwAnpG** geprüft (10 Jahre ab Schluss des Entstehungsjahres) — *nicht* § 51a? Ratenzahlung in fünf Jahresraten nach **§ 51a** (vor dem 16.03.1990 ausgeschiedene Mitglieder) und Fälligkeit nach § 49 zutreffend zugeordnet? (§ 44 Abs. 6 regelt die Eigenkapitalermittlung, keine Ratenzahlung.)
 - [ ] **Beschwerdefrist gegen LwG-Beschluss**: § 22 GrdstVG, § 9 LwVG, FamFG?
 
 ### 2. EU-VO-Konformität und Anwendungsvorrang

@@ -98,3 +98,240 @@ Method: `dejure.org` Vernetzungs-Endpunkt (`/dienste/vernetzung/rechtsprechung?G
 - No Aktenzeichen, date or Fundstelle in this pass was supplied from model recall alone; every figure written into the files came from a retrieved dejure.org record.
 
 **Note on `scripts/verify_citations.py`:** its per-file "to review" count *rises* after a verification pass (urheber-medienrecht: 21 → 71 across the three SKILL.md files). This is expected and matches the already-verified areas: the script warns on any Aktenzeichen **without** an `[unverifiziert]` marker, so removing a marker converts a silent INFO into a WARN. The count is a marker census, not a quality signal.
+
+---
+
+## Verification pass — `it-recht` (2026-07-21)
+
+Method: `dejure.org` Vernetzungs-Endpunkt (`/dienste/vernetzung/rechtsprechung?Gericht=…&Datum=…&Aktenzeichen=…`), plus the `?Text=<Az>` fallback to identify what a wrong Aktenzeichen actually resolves to. No WebSearch, no paywalled database.
+
+| Plugin | Verified | Left flagged | Errors caught |
+|---|---|---|---|
+| `it-recht` | 6 | 1 | 2 |
+
+**Verified (6 decisions, all retrieved, marker removed + dejure.org URL added):**
+
+- BGH, Urt. v. 22.11.2001 – I ZR 138/99, BGHZ 149, 191 = GRUR 2002, 622 – „shell.de" (`domainrecht`)
+- BGH, Urt. v. 17.05.2001 – I ZR 251/99, BGHZ 148, 13 = GRUR 2001, 1038 – „ambiente.de" (`domainrecht`)
+- BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 = MMR 2007, 243 (ASP/SaaS = Mietvertrag) (`saas-vertrag` 2×, `it-vertragspruefung`)
+- EuGH, Urt. v. 30.05.2024 – C-400/22 (VT u. UR ./. Conny GmbH), NJW 2024, 2449 (Button-Lösung) (`e-commerce-pflichten`)
+- EuGH, Urt. v. 03.07.2012 – C-128/11, NJW 2012, 2565 = GRUR 2012, 904 – UsedSoft (`softwarelizenz-agb` 2×)
+- BGH, Urt. v. 17.07.2013 – I ZR 129/08, GRUR 2014, 264 = NJW 2014, 777 – UsedSoft II (`softwarelizenz-agb` 2×)
+
+**Left flagged (1):** BGH „afilias.de" in `domainrecht/SKILL.md`. The citation carries neither Datum noch Aktenzeichen, and dejure's `?Text=` search does not index Entscheidungsnamen (`Kein Eintrag` for „afilias.de", as in the `urheber-medienrecht` pass). The marker stays; the line now names the reason. „ambiente.de", with which it was bundled on one line, was resolved and split out.
+
+### The 2 errors caught
+
+| # | Where | Error | Action |
+|---|---|---|---|
+| 1 | `it-vertragspruefung/SKILL.md` | „BGH, Urt. v. 18.12.2009 – V ZR 130/08, NJW 2010, 1962 (Cloud-Haftung)" — **wrong on every axis**. dejure: „Keine Entscheidung des BGH vom 18.12.2009 mit dem Aktenzeichen V ZR 130/08". The Az resolves to BGH, Urt. v. **06.02.2009** – V ZR 130/08, **NJW 2009, 1346** — Grundstücksübertragung gegen Pflegezusage, § 138 BGB. Nothing to do with Cloud-Haftung; the NJW 2010, 1962 Fundstelle is not attested for it. Exactly the `urheber-medienrecht` failure mode (real Az, real decision, different case) — here compounded by a date that yields no decision at all | Fundstelle **not** replaced with a guess: no leading BGH decision on Cloud-Haftung is publicly attested. The marker stays and the line now records the discrepancy and points to §§ 280, 535, 536a BGB + AGB-Kontrolle as the actual basis. Legal substance unchanged |
+| 2 | `domainrecht/SKILL.md` | „BGH „ambiente.de" / „afilias.de"" cited as one line with no Datum, kein Az and no Fundstelle for either decision | „ambiente.de" resolved to I ZR 251/99 (BGHZ 148, 13) and verified; „afilias.de" split onto its own line and left flagged |
+
+### Errors *not* found — and a finding about the area's shape
+
+**6 of the 11 skills carry zero case citations**: `cloud-auftragsverarbeitung`, `ki-vertraege`, `open-source-compliance`, `providerhaftung`, `softwareerstellung-werkvertrag`, `it-sicherheit-meldepflichten`. This is **correct, not a defect**. These skills rest on statutory text (DSGVO Art. 28/32/44 ff., Data Act + DADG, DDG §§ 7–10 i. V. m. Art. 4–6 DSA, BSIG n. F., §§ 631 ff. BGB) and on standard licence terms (GPL/MIT/Apache-2.0), all of which are already linked to primary sources. No case law was manufactured for them.
+
+One substantive gap is worth flagging to a human, without inventing a citation to fill it: `providerhaftung/SKILL.md` invokes the **Störerhaftung** and the Prüfpflichten-Trias without citing a single decision, although this doctrine is entirely richterrechtlich (BGH I. und VI. Zivilsenat, EuGH C-401/19, C-682/18/C-683/18). Adding the leading cases there is a content task, not a verification task, and was left out of scope.
+
+### Honest note on the method's reach
+
+- `?Datum=…&Aktenzeichen=…` resolved **every** citation that carried a date — 6 of 6, including both EuGH cases (`Gericht=EuGH` works for C-Nummern).
+- The endpoint's *negative* answer is informative and was used as such: it is what exposed error #1. „Kein Eintrag" for a date+Az pair means dejure has no such decision — much stronger evidence than the `?Text=` fallback's silence.
+- `?Text=` remains name-blind, so a name-only citation („afilias.de") can only be resolved by hypothesising a date/Az and confirming it. „ambiente.de" was resolved that way (hypothesis I ZR 251/99 → confirmed by the retrieved record). For „afilias.de" the first hypothesis (I ZR 82/01) returned a real but **different** decision — „kurt-biedenkopf.de", NJW 2004, 1793 — and was therefore discarded rather than written into the file. It is recorded as *not retrievable*, not as *non-existent*.
+- No rate limiting was hit: the pass needed only 9 requests, paced.
+- No Aktenzeichen, Datum or Fundstelle in this pass came from model recall. Every figure written into a file came from a retrieved dejure.org record.
+
+### Note on the warning count
+
+`scripts/verify_citations.py` for `it-recht`: **56 → 50 warnings**. All 6 removed warnings are the case-law ones; the area now has **zero** unmarked case-law citations.
+
+The remaining **50 warnings contain no case law at all** and are not citation debt. They are gaps in the abbreviation map of `verify_citations.py`:
+
+- 34 × `BSIG` in `it-sicherheit-meldepflichten` — BSI-Gesetz n. F., a real statute
+- 15 × `DDG` in `providerhaftung` — Digitale-Dienste-Gesetz, a real statute
+- 1 × `Art. 28 AVV` in `it-vertragspruefung` — a parser artefact: the text reads „AVV nach Art. 28 DSGVO", and the regex binds `Art. 28` to the wrong token
+
+Adding `BSIG` and `DDG` to `GII_ABBR` in `scripts/verify_citations.py` would clear 49 of the 50 in one line each. That file was outside this pass's scope and was left untouched.
+
+---
+
+## Verification pass — `energierecht`, `migrationsrecht`, `aussenwirtschaft-zoll-sanktionen` (2026-07-21)
+
+Method: `dejure.org` Vernetzungs-Endpunkt (`/dienste/vernetzung/rechtsprechung?Gericht=…&Datum=…&Aktenzeichen=…`), plus the `?Text=<Az>` fallback for two citations carrying no date. **dejure indexes EuGH and EGMR decisions as well as German courts** (`Gericht=EuGH`, `Gericht=EGMR`) — for joined EU cases the `P` suffix must be dropped from the `Aktenzeichen` parameter (`C-402/05`, not `C-402/05 P`). No paywalled database, no WebSearch.
+
+| Plugin | Verified | Left flagged | Errors caught |
+|---|---|---|---|
+| `energierecht` | 0 | 1 | 1 (BGH KZR 17/07 not attested) |
+| `migrationsrecht` | 17 | 1 | 4 |
+| `aussenwirtschaft-zoll-sanktionen` | 6 | 3 | 3 |
+| **Total** | **23** | **5** | **8** |
+
+**Verified (23 decisions).** EuGH: C-465/07 Elgafaji; C-411/10 + C-493/10 N.S. u.a.; C-163/17 Jawo; C-199/12 bis C-201/12 X, Y und Z; C-578/08 Chakroun; C-540/03 Parlament/Rat; C-402/05 P + C-415/05 P Kadi I; C-584/10 P + C-593/10 P + C-595/10 P Kadi II; C-72/15 Rosneft; C-339/98 Peacock; C-486/06 Van Landeghem. EGMR: 14038/88 Soering; 30696/09 M.S.S.; 46410/99 Üner; 54273/00 Boultif. BVerwG: 9 C 58.96; 1 C 18.05; 1 C 33.18; 1 C 3.16; 1 C 17.09; 1 C 22.15. BVerfG: 2 BvR 939/14. Each now carries court, date, Aktenzeichen, amtliche Sammlung where one exists, and a parenthetical dejure.org URL, with the marker removed.
+
+**Left flagged (5).** (1) BGH KZR 17/07 in `enwg-netzanschluss` — not retrievable, see error 1. (2) BVerwG 1 C 33.18 in `asylantrag-vorbereitung` — decision confirmed, § 3e-Bezug not confirmed, see error 5. (3) EuGH C-201/09 P ArcelorMittal in `ausfuhr-dual-use-pruefung` — see error 6. (4) „BGH, Urt. zu § 34 AWG a.F. / § 18 AWG" and (5) „BFH zu vZTA-Bindung … Art. 34 UZK" — placeholder entries carrying neither Aktenzeichen nor date; unresearchable by construction. All remaining `[unverifiziert]` instances across the three areas are Kommentar-Auflagenstände, Behördenpraxis (BAFA-Merkblatt, BMWK-FAQ, BNetzA-Festlegungen), Fassungs-Vorbehalte, or skeleton entries of the form „BGH, Urt. v. – VIII ZR Az." with no citation content at all.
+
+### The 8 errors caught
+
+| # | Where | Error | Action |
+|---|---|---|---|
+| 1 | `enwg-netzanschluss` | BGH, Urt. v. 18.11.2008 – KZR 17/07, RdE 2009, 184 — dejure returns *Kein Eintrag* both for date+Az and for the Az alone. EEG-Anschlussstreitigkeiten fall to the VIII. Zivilsenat, not the Kartellsenat, so the Senatszuordnung is doubtful; a probe for `VIII ZR 78/08` on the same date was also negative | marker kept and sharpened to `[unverifiziert – Aktenzeichen nicht belegbar]` with an inline note naming the Senat problem. **No substitute Az invented** |
+| 2 | `abschiebungsschutz`, Rspr.-Liste Nr. 6 | BVerwG, Urt. v. 17.10.2006 – 1 C 18.05 labelled „Reisefähigkeit, inlandsbezogen". The decision (BVerwGE 127, 33) concerns a **zielstaatsbezogenes** Abschiebungsverbot nach § 60 VII AufenthG wegen Verschlimmerung einer Erkrankung im Zielstaat — the opposite category | label corrected, BVerwGE 127, 33 = NVwZ 2007, 712 added, the ziel-/inlandsbezogen distinction made explicit |
+| 3 | `aufenthaltstitel-pruefung`, Nr. 1 + `agents/researcher.md` | BVerwG, Urt. v. 22.02.2017 – 1 C 3.16 labelled „Bleiberecht, § 25b AufenthG". The decision (BVerwGE 157, 325) concerns the **Ausweisung eines anerkannten Flüchtlings wegen Unterstützung der PKK** | label corrected in both files, BVerwGE 157, 325 = NVwZ 2017, 1883 added |
+| 4 | `aufenthaltstitel-pruefung`, Nr. 2 | BVerwG, Urt. v. 16.11.2010 – 1 C 17.09 labelled „Identitätsklärung". The decision (BVerwGE 138, 122) concerns the **Nachholung des Visumverfahrens** beim Ehegattennachzug zu Deutschen | label corrected, BVerwGE 138, 122 = NVwZ 2011, 495 added |
+| 5 | `asylantrag-vorbereitung`, Nr. 5 + `agents/researcher.md` | BVerwG, Urt. v. 04.07.2019 – 1 C 33.18 labelled „interner Schutz § 3e AsylG". dejure records the decision as concerning Flüchtlingsanerkennung syrischer Antragsteller, Maßstab der beachtlichen Wahrscheinlichkeit und gerichtliche Aufklärungspflicht; a § 3e-Bezug is not evident from the source | decision itself verified and URL added; the § 3e attribution kept under a **narrowed marker** `[unverifiziert – Einschlägigkeit für internen Schutz prüfen]` rather than silently corrected |
+| 6 | `ausfuhr-dual-use-pruefung`, Nr. 2 | EuGH, Urt. v. 29.03.2011 – verb. Rs. C-201/09 P, C-216/09 P, ArcelorMittal, cited „zur Anwendung des Unionsrechts" in an **export-control** Rspr. list. Date and Aktenzeichen are correct, but the decision is a **Kartellsache** (Trägerkartell, Art. 65 EGKS, Kommissionszuständigkeit nach Auslaufen des EGKS-Vertrags) with no exportkontrollrechtlicher Gegenstand — the `urheber-medienrecht` failure mode: real decision, right date, wrong case for the proposition | marker kept, inline note names the discrepancy and flags the citation for deletion or replacement. Not silently removed |
+| 7 | `sanktionslisten-screening`, Nr. 3 | EuGH C-72/15 Rosneft labelled „Auslegung Russland-VO, **Bereitstellungsverbot**". The decision's holding is the Zuständigkeit des EuGH für GASP-gestützte restriktive Maßnahmen plus Gültigkeit/Auslegung der Russland-Maßnahmen; Bereitstellungsverbot is not its subject | label corrected in both `sanktionslisten-screening` and `ausfuhr-dual-use-pruefung` |
+| 8 | `zolltarif-vzta-antrag`, Nr. 2 | Rs. C-486/06 cited as „**BVBA** Van Landeghem". dejure records the case simply as „Van Landeghem" | name corrected; date 06.12.2007 and the 8703/8704-KN subject added (the citation had carried neither) |
+
+### Substantive currency check
+
+- **`energierecht` — the GModG correction is intact.** Every occurrence of the 65 % rule in `energieeffizienzpflicht/SKILL.md` (lines 22, 26, 27, 96, 136, 175, 201, 215) states it as **abolished** by the GModG (Bundestag 10.07.2026, 323 : 271), with duties keyed to the kommunaler Wärmeplan nach dem WPG. **No surviving 65 % rule was found** anywhere in the area, including the agent files. `test.md` already asserts the post-GModG state. Nothing reintroduced.
+- **`aussenwirtschaft-zoll-sanktionen` — no package-number claims.** The skills describe the mechanism (Bereitstellungsverbot, > 50 %-/Kontroll-Faustregel, Screening-Pflichten) and route to the konsolidierte EU-Liste; no assertion about the content of any specific sanctions package or listing was found, so nothing had to be marked on that ground.
+- **`migrationsrecht`** — noted in-place that N.S. (C-411/10) was decided under **Dublin II (VO 343/2003)**, not Dublin III, and that BVerwG 9 C 58.96 was decided under **§ 53 Abs. 6 S. 1 AuslG**, the predecessor of § 60 VII AufenthG. Both were previously cited without that qualification.
+
+### Metric note — the "to review" count is not comparable across this pass
+
+`scripts/verify_citations.py` was **modified by another agent during this session** (it gained a `VERIFICATION_HOSTS` allowlist so that an Aktenzeichen carrying a dejure/curia/bverfg link counts as verified rather than unmarked). The pre-pass baseline was therefore taken against a different script than the post-pass numbers, and the two are not directly comparable — e.g. `energieeffizienzpflicht` reads 10 → 0 although **no edit was made to that file** in this pass.
+
+Post-pass, every remaining warning in the three areas was inspected individually and **not one is an unverified case citation**:
+
+- `abschiebungsschutz` 8, `asylantrag-vorbereitung` 2, `aufenthaltstitel-pruefung` 1 — all are unknown-abbreviation warnings (`§ 60a IIc`, `Art. 24 GRCh`, `§ 53 Abs. 6 S. 1 AuslG`) or the regex reading `Art. 29 VO 604/2013` as an Aktenzeichen.
+- `ausfuhr-dual-use-pruefung` 10, `sanktionslisten-screening` 3, `zolltarif-vzta-antrag` 1 — the regex reading `Anhang I VO 2021/821` and similar as Aktenzeichen, plus `Art. 65 EGKS`.
+- `eeg-foerderpruefung` 4, `enwg-netzanschluss` 1 — pre-existing, untouched by this pass.
+
+Two of these warnings are newly introduced *by correct verification work* (`§ 53 Abs. 6 S. 1 AuslG` and `Art. 65 EGKS` are abbreviations the script's map does not know, added while naming what the cited decisions actually decided). Adding `AuslG`, `GRCh` and `EGKS` to `GII_ABBR` would clear them; that file was outside this pass's scope and was left untouched.
+
+`validate.py` and `eval.py` pass clean for all three areas (energierecht 55 checks, migrationsrecht 49, aussenwirtschaft 48; 0 failures). No `test.md` asserted any of the corrected citations, so no test file was changed.
+
+---
+
+## Verification pass — `arbeitsrecht` (2026-07-21)
+
+Method: `dejure.org` Vernetzungs-Endpunkt (`/dienste/vernetzung/rechtsprechung?Gericht=…&Datum=…&Aktenzeichen=…`), dessen `?Text=<Az>`-Fallback sowie `bundesarbeitsgericht.de` für den amtlichen Leitsatz. Keine WebSearch, keine kostenpflichtige Datenbank.
+
+| Plugin | Verified | Left flagged | Errors caught |
+|---|---|---|---|
+| `arbeitsrecht` | 14 | 40 | 1 |
+
+### Ausgangsbefund: Aktenzeichen-Sweep über alle 14 Skills
+
+Gesucht wurde nach `\d+ AZR \d+/\d+`, `\d+ ABR \d+/\d+`, `C-\d+/\d+`, `\d+ BvR|BvL \d+/\d+`.
+
+- **Die 11 am 21.07.2026 neu geschriebenen Skills enthielten tatsächlich null Aktenzeichen** — die Angabe des Autors ist bestätigt. Rechtsprechung war dort ausschließlich als „st. Rspr. des BAG zu § …" oder über EuGH-Parteinamen (*Junk*, *Spijkers*, *Marshall*, *Foster*, *Francovich*) bezeichnet, jeweils mit `[unverifiziert – prüfen]`.
+- Aktenzeichen fanden sich **nur in den drei Altskills** `kuendigungs-pruefung` (21), `abmahnung` (5), `aufhebungsvertrag` (1) sowie in `kuendigungs-pruefung/providers/claude.md` (20). **Alle** trugen bereits einen `[unverifiziert]`-Marker bzw. standen in einer explizit als unverifiziert deklarierten Rspr.-Liste; unmarkierte Aktenzeichen gab es nicht. Diese Altbestände wurden in diesem Durchgang **nicht** angefasst — sie sind ein eigener, noch offener Prüfauftrag.
+
+### Von „st. Rspr." auf eine belegte Entscheidung hochgestuft (14)
+
+| Proposition | Skill | Entscheidung |
+|---|---|---|
+| § 613a Abs. 5 BGB — Musterkatalog der Unterrichtung; Widerspruchsfrist läuft ohne ordnungsgemäße Unterrichtung nicht an | `betriebsuebergang` | BAG, Urt. v. 13.07.2006 – 8 AZR 305/05, BAGE 119, 91 = NZA 2006, 1268 |
+| Betriebsübergang — Identitätswahrung, Gesamtwürdigung | `betriebsuebergang` | EuGH, Urt. v. 18.03.1986 – Rs. 24/85, *Spijkers* |
+| Urlaubsverfall nur nach Erfüllung der Mitwirkungsobliegenheiten | `urlaubsanspruch` | EuGH, Urt. v. 06.11.2018 – C-619/16, *Kreuziger* |
+| dito, Aufklärungspflicht „klar und rechtzeitig" | `urlaubsanspruch` | EuGH, Urt. v. 06.11.2018 – C-684/16, *Max-Planck-Gesellschaft/Shimizu* |
+| Umsetzung der Hinweisobliegenheit in § 7 BUrlG | `urlaubsanspruch` | BAG, Urt. v. 19.02.2019 – 9 AZR 541/15, NZA 2019, 982 |
+| Verjährung des Urlaubsanspruchs beginnt erst nach Erfüllung der Obliegenheiten | `urlaubsanspruch` | BAG, Urt. v. 20.12.2022 – 9 AZR 266/20, NZA 2023, 683 |
+| 15-Monats-Frist bei Langzeiterkrankung | `urlaubsanspruch` | EuGH, Urt. v. 22.11.2011 – C-214/10, *KHS/Schulte* |
+| Vererblichkeit des Urlaubsabgeltungsanspruchs | `urlaubsanspruch` | EuGH, Urt. v. 06.11.2018 – C-569/16 und C-570/16, *Bauer* / *Willmeroth* |
+| § 14 Abs. 2 S. 2 TzBfG — Verwerfung der Drei-Jahres-Rspr., verfassungskonforme Einschränkung | `befristungskontrolle` | BVerfG, Beschl. v. 06.06.2018 – 1 BvL 7/14 und 1 BvR 1375/14, BVerfGE 149, 126 = NZA 2018, 774 |
+| § 109 GewO — Darlegungslast oberhalb „befriedigend"; „zur vollen Zufriedenheit" = befriedigend | `arbeitszeugnis` | BAG, Urt. v. 18.11.2014 – 9 AZR 584/13, BAGE 150, 66 = NZA 2015, 435 |
+| „Entlassung" = Ausspruch der Kündigung | `massenentlassungsanzeige` | EuGH, Urt. v. 27.01.2005 – C-188/03, *Junk* |
+| § 17 Abs. 3 S. 1 KSchG — Abschrift vermittelt keine individuelle Rechtsposition | `massenentlassungsanzeige` | EuGH, Urt. v. 13.07.2023 – C-134/22 |
+| Vorlage des 6. Senats zu den Folgen von Anzeigefehlern | `massenentlassungsanzeige` | BAG, Beschl. v. 23.05.2024 – 6 AZR 152/22 (A), BAGE 183, 254 = NZA 2024, 813 |
+| Schlussentscheidung dazu (siehe Warnung unten) | `massenentlassungsanzeige` | BAG, Urt. v. 01.04.2026 – 6 AZR 152/22, NZA 2026, 669 |
+
+### Gefundener Fehler (1) — und eine offene Sachfrage
+
+**Fehler:** Aus dem Modellgedächtnis stammte für die Massenentlassungs-Zäsur das Datum **13.06.2024** zum Aktenzeichen 6 AZR 152/22. Der dejure-Abruf ergab: *keine* Entscheidung unter diesem Datum. Der `?Text=`-Fallback zeigte, dass 6 AZR 152/22 real ist, aber unter **zwei anderen** Daten geführt wird — Vorlagebeschluss 23.05.2024 und Schlussurteil 01.04.2026. Das erinnerte Datum wurde verworfen, beide echten Daten wurden einzeln verifiziert. Kein erfundenes Datum ist in die Dateien gelangt.
+
+**Offene Sachfrage — § 17 KSchG.** Der amtliche Leitsatz des BAG-Urteils v. 01.04.2026 – 6 AZR 152/22 lautet (Volltext bundesarbeitsgericht.de): *„Erstattet der Arbeitgeber eine – erforderliche – Massenentlassungsanzeige vor Abschluss des Konsultationsverfahrens mit dem Betriebsrat, ist die daraufhin ausgesprochene Kündigung unwirksam."* Die Entscheidung führt weiter aus, dass Fehler im Anzeigeverfahren, die zur Unwirksamkeit der Anzeige führen, die dauerhafte Unwirksamkeit der Kündigung zur Folge haben.
+
+Das steht in Spannung zur dritten Zeile der Fehlerfolgen-Tabelle des Skills („Anzeige fehlerhaft oder unvollständig → **keine** Unwirksamkeit"). **Die Tabelle und ihre drei `[unverifiziert]`-Marker wurden bewusst unverändert gelassen** — die Auflösung dieser Spannung ist eine dogmatische Entscheidung, keine Zitatpflege, und der Fall betrifft eine Verzahnung beider Stränge (Anzeige *vor* Abschluss der Konsultation), nicht den reinen Anzeigefehler. Stattdessen wurde ein deutlich markierter Hinweiskasten mit dem wörtlichen Leitsatz und beiden Fundstellen eingefügt. **Der Split ist damit erhalten und nicht zu einer sicheren Position verdichtet.** Die inhaltliche Nachführung ist dem Fachautor vorbehalten.
+
+### Weiterhin markiert gelassen (40 Markerinstanzen)
+
+- **Alle Aktenzeichen der drei Altskills** (`kuendigungs-pruefung`, `abmahnung`, `aufhebungsvertrag` sowie die Provider-Variante) — außerhalb des Auftrags dieses Durchgangs, kein Abruf erfolgt.
+- **§ 102 BetrVG, subjektive Determination** (`betriebsratsanhoerung`): geprüft wurde BAG, Urt. v. 23.10.2008 – 2 AZR 163/07. Die Entscheidung existiert und betrifft § 102 BetrVG, formuliert den Grundsatz der subjektiven Determination aber **nicht** als tragende Aussage. Sie wurde daher **nicht** als Leitentscheidung zitiert — genau der Themen-Mismatch, an dem `urheber-medienrecht` gescheitert ist. Marker bleibt.
+- **AGG, Entgelttransparenz, Sozialauswahl, Arbeitsvertragsgestaltung, Kündigungsschutzklage:** durchweg Verweise auf gefestigte Linien ohne Az (§ 22 AGG, § 15 Abs. 4 AGG, Ausschlussfristen, Widerrufsvorbehalt, Altersgruppenbildung, abgestufte Darlegungslast, § 130 BGB, Weiterbeschäftigungsanspruch des Großen Senats). Ohne Az oder Datum ist der dejure-Endpunkt hier konstruktionsbedingt blind; die Marker sind zutreffend.
+- **Unionsrechtlicher Betriebsbegriff der RL 98/59/EG**, **betriebsmittelarme Tätigkeiten**, **Kettenbefristungs-Missbrauchskontrolle**, **Marshall / Foster / Francovich** in `entgelttransparenz`: nicht abgerufen (Ratenlimit-Budget), Marker bleiben. *Marshall* (Rs. 152/84) und *Francovich* (C-6/90, C-9/90) sind allerdings in `europarecht` bereits verifiziert belegt und könnten von dort übernommen werden.
+
+### Zahlenbewegung bei `scripts/verify_citations.py`
+
+Vorher 26 Warnungen im Bereich, nachher 25 — beide Zahlen betreffen **ausschließlich unbekannte Gesetzesabkürzungen**, nicht Rechtsprechung:
+
+- 25× `EntgTranspG` in `entgelttransparenz` (die Abkürzung fehlt in der Statute-Map des Skripts; die Zitate selbst sind korrekt),
+- 1× `SchwarzArbG` in `arbeitsvertrag-gestaltung` — **behoben ist keine davon**; entfallen ist stattdessen die zwischenzeitlich von diesem Durchgang selbst erzeugte Warnung.
+
+Die neu eingefügten Entscheidungen erzeugten zunächst drei zusätzliche Warnungen (2× `Art. 2 Abs. 3 UAbs. 2`, 1× `Art. 31 Abs. 2 GRC`). Sie wurden ausgeschrieben (`Unterabsatz 2` bzw. „i.V.m. der Grundrechtecharta"; auch `GRCh` fehlt in der Statute-Map), womit sie verschwanden — eine reine Schreibweisen-, keine Inhaltsänderung. Die **Gesamtzahl der Zitate stieg** (z. B. `urlaubsanspruch` 40 → 54, `befristungskontrolle` 58 → 62, `betriebsuebergang` 52 → 54, `arbeitszeugnis` 31 → 33), weil dort nun echte, belegte Entscheidungen stehen, wo vorher nur eine Floskel stand — die Zunahme ist genau das Ziel des Durchgangs. Die „to review"-Spalte bleibt bei den betroffenen Dateien auf 0, weil jede neue Zitatstelle eine Primärquellen-URL trägt.
+
+`scripts/validate.py --area arbeitsrecht` läuft sauber, `scripts/eval.py --area arbeitsrecht` besteht 14/14. Keine `test.md` musste geändert werden: es wurde kein bereits behauptetes Zitat korrigiert, sondern ausschließlich unbelegte Verweise durch belegte ersetzt.
+
+---
+
+## Verification pass — `agrarrecht` und `sportrecht` (2026-07-21)
+
+Methode: ausschließlich `WebFetch` gegen öffentliche Primärquellen — dejure.org Vernetzungs-Endpunkt (`?Gericht=…&Datum=…&Aktenzeichen=…` sowie der `?Text=<Az>`-Fallback), HUDOC-Query-API des EGMR und buzer.de für nicht auf gesetze-im-internet.de auflösbare Gesetze (LwAnpG). Keine WebSearch, keine kostenpflichtige Datenbank. 22 Abrufe, kein Rate-Limit erreicht.
+
+| Plugin | Verifiziert | Weiter markiert | Fehler gefunden |
+|---|---|---|---|
+| `agrarrecht` | 5 Entscheidungen + 3 Normen | 5 Rspr.-Linien ohne Az | 2 |
+| `sportrecht` | 11 Entscheidungen | 2 CAS-Schiedssprüche + 2 Rspr.-Linien ohne Az | 1 |
+| **Summe** | **19** | **9** | **3** |
+
+### `agrarrecht` — der Befund vorweg
+
+**Das Plugin enthielt vor diesem Durchlauf kein einziges konkretes Aktenzeichen.** Alle drei `### Rechtsprechung`-Abschnitte bestanden aus Gattungsverweisen („BGH-BLw-Senat zur ungesunden Verteilung …") ohne Gericht-Datum-Az-Tripel. Die von `verify_citations.py` gemeldeten 40 Warnungen sind **sämtlich Statut-Abkürzungs-Warnungen** (RSG, LPachtVG, LwVG, ALG, GAP-DZG fehlen in der Abkürzungstabelle des Skripts) — **keine einzige** betraf eine Fallzitierung. Der Durchlauf hat deshalb zwei Dinge getan: die vier belegbaren Leitentscheidungen erstmals mit Az und Fundstelle eingesetzt, und die Normzitate geprüft, an denen die Gutachtenlogik hängt.
+
+**Verifizierte Entscheidungen (5):**
+- BGH (BLw-Senat), Beschl. v. 26.11.2010 – **BLw 14/09**, NJW-RR 2011, 521 (§ 9 I Nr. 1 GrdstVG, Nichtlandwirt-Erwerb)
+- BVerfG, Beschl. v. 12.01.1967 – **1 BvR 169/63**, BVerfGE 21, 73 (§ 9 I Nr. 1 GrdstVG mit Art. 14 GG vereinbar; keine Versagung allein wegen Kapitalanlage)
+- BGH (BLw-Senat), Beschl. v. 29.11.2013 – **BLw 2/12**, EuZW 2014, 239 (EuGH-Vorlage, Art. 107 AEUV)
+- BGH (BLw-Senat), Beschl. v. 29.04.2016 – **BLw 2/12**, BGHZ 210, 134 (Nachfolgeentscheidung: Verkehrswert, nicht innerlandwirtschaftlicher Preis)
+- BGH (BLw-Senat), Beschl. v. 25.04.2014 – **BLw 5/13**, NJW-RR 2014, 1168 (grobes Missverhältnis, 50 %-Schwelle)
+
+**Verifizierte Normen (3):** § 44 Abs. 6, § 51a und § 3b LwAnpG, je mit buzer.de-Beleg.
+
+### `sportrecht` — verifizierte Entscheidungen (11)
+
+EuGH C-415/93 (*Bosman*), C-519/04 P (*Meca-Medina und Majcen*), C-650/22 (*Diarra*); BAG 7 AZR 312/16 (*Müller ./. Mainz 05*); BGH I ZR 49/97 (*Marlene Dietrich*), KZR 6/15 (*Pechstein/ISU*), V ZR 253/08 (*Stadionverbot*); OLG München U 1110/14 Kart (*Pechstein*, Vorinstanz); BVerfG 1 BvR 3080/09 (*Stadionverbot*) und 1 BvR 2103/16 (*Pechstein*-Verfassungsbeschwerde, neu ergänzt); EGMR Nr. 40575/10 und 67474/10 (*Mutu und Pechstein/Schweiz*, ECLI und Datum über HUDOC bestätigt).
+
+Datum und Aktenzeichen waren in allen elf Fällen bereits korrekt; ergänzt wurden Fundstellen, Entscheidungsnamen und Primärquellen-URLs.
+
+### Die 3 gefundenen Fehler
+
+| # | Wo | Fehler | Auflösung |
+|---|---|---|---|
+| 1 | `sportrecht/skills/vereinsrechtliche-sanktion/SKILL.md` (2×), `sportrecht/agents/researcher.md` | BGH, Urt. v. 30.10.2009 – V ZR 253/08 (*Stadionverbot*) zitiert als **BGHZ 183, 188**. dejure weist für diese Entscheidung **keine** BGHZ-Fundstelle aus; die Papierfundstellen sind NJW 2010, 534; VersR 2010, 825; SpuRt 2010, 28. Datum, Az und Gegenstand stimmen — nur die amtliche Sammlung ist nicht belegt | BGHZ-Angabe durch die belegten Fundstellen **NJW 2010, 534 = SpuRt 2010, 28** ersetzt |
+| 2 | `agrarrecht/skills/lwanpg-pruefung/SKILL.md` (3×: Normenliste, Abschnitt 4, Gutachtenbeispiel), `agrarrecht/agents/reviewer.md` | **§ 51a LwAnpG als Verjährungssonderregel** bezeichnet. § 51a regelt in Wahrheit die Ansprüche der *vor dem 16.03.1990* ausgeschiedenen Mitglieder und deren Auszahlung in fünf gleichen Jahresraten. Die Verjährung steht in **§ 3b LwAnpG** (zehn Jahre, Beginn mit Schluss des Entstehungsjahres, ausdrücklich auch für Ansprüche nach § 44 Abs. 1) | § 3b LwAnpG eingesetzt, Abschnittsüberschrift und Gutachtenbeispiel entsprechend geändert; § 51a mit seinem tatsächlichen Inhalt neu beschrieben |
+| 3 | `agrarrecht/skills/lwanpg-pruefung/SKILL.md`, `agrarrecht/agents/reviewer.md` | **§ 44 Abs. 6 LwAnpG als „Ratenzahlungsregelung, Verzinsung"**. Abs. 6 regelt die Ermittlung des Eigenkapitals auf Grundlage der nach Beendigung der Mitgliedschaft aufzustellenden ordentlichen Bilanz. Die Ratenzahlung steht in § 51a, die Fälligkeit in § 49 | Inhalt korrigiert, Zuordnung Ratenzahlung → § 51a / Fälligkeit → § 49 ausdrücklich ergänzt |
+
+Fehler 2 und 3 sind keine Zitierfehler, sondern falsche Normzuordnungen mit unmittelbarer Mandatsrelevanz: eine auf § 51a gestützte Verjährungsprüfung greift an der Norm vorbei, die die Frist tatsächlich setzt.
+
+### Behandlung von CAS-Schiedssprüchen und Verbandsregelwerken (`sportrecht`)
+
+Der Auftrag, CAS-Awards nicht wie Gerichtsentscheidungen zu behandeln, wurde strukturell umgesetzt und nicht nur durch einen Marker:
+
+- Die Liste in `dopingverfahren-verteidigung/SKILL.md` ist in **zwei** Abschnitte geteilt: „Staatliche Rechtsprechung (verifiziert)" und „Schiedssprüche und Verbandsregelwerke — **keine staatliche Rechtsprechung**". CAS 2009/A/1912 und CAS 2008/A/1644 standen zuvor als Positionen 3 und 4 zwischen BGH und BVerfG; das ist die Vermischung, die der Skill nicht reproduzieren soll.
+- Der neue Abschnitt sagt ausdrücklich, dass CAS-Awards Schiedssprüche eines privaten Schiedsgerichts sind, in dejure und juris nicht nachgewiesen werden, nach deutschem Recht keine Bindungswirkung entfalten und nur über `jurisprudence.tas-cas.org` zu belegen sind. Der Versuch, den Volltext von CAS 2009/A/1912 abzurufen, blieb ergebnislos — beide Awards behalten ihren Marker, jetzt mit korrektem Quellenhinweis statt „prüfen in juris".
+- WADC und NADC sind als **Verbandsregelwerke** gekennzeichnet, mit Verweis auf wada-ama.org bzw. nada.de; sie sind keine Rechtsnormen und werden im Skill auch nicht mehr in einer Reihe mit dem AntiDopG geführt.
+- Dieselbe Trennung ist in `sportrecht/agents/researcher.md` nachgezogen: „Doping (staatliche Gerichte)" und „Doping (Schiedssprüche, **keine** Gerichtsentscheidungen — getrennt zitieren)".
+
+Die Pechstein-Linie ist demgegenüber vollständig staatliche Rechtsprechung und vollständig verifiziert: OLG München → BGH → EGMR → BVerfG. Die BVerfG-Folgeentscheidung 1 BvR 2103/16 (03.06.2022) fehlte im Plugin und wurde ergänzt; sie ist für die Schiedsklausel-Prüfung tragend, weil sie dem BGH-Ergebnis den Justizgewährungsanspruch entgegenhält.
+
+### Was weiterhin markiert bleibt (9)
+
+- `agrarrecht`: Rspr.-Linien ohne Aktenzeichen zum Siedlungs-Vorkaufsrecht (§ 4/6 RSG), zu den OLG-Landwirtschaftssenaten sowie die drei LwAnpG-Linien (Auseinandersetzungsguthaben, Verjährungshemmung, Stufenklage). Für keine dieser Linien ließ sich eine namentlich belegte Entscheidung aus einer öffentlichen Quelle bestätigen. Sie sind jetzt als Suchauftrag gekennzeichnet, nicht als Zitat.
+- `sportrecht`: CAS 2009/A/1912 und CAS 2008/A/1644 (s. o.); BGH zur Inhaltskontrolle der Vereinssatzung (st. Rspr., kein Az); BGH-Kartellsenat zum Reit-/Pferdesport — der im Researcher geführte Entscheidungsname „Bundesligaentscheidung Reiten" ließ sich **nicht** bestätigen und ist entsprechend als unbelegt gekennzeichnet.
+
+### Was dejure nicht erreichen konnte
+
+- **Kein Treffer über `?Datum=…&Aktenzeichen=…` bei Aktenzeichen mit Zusatz-Token**: `C-519/04 P` (Suffix „P") und `U 1110/14 Kart` (dejure führt „Kart." mit Punkt) liefen beide ins *Nichts gefunden*, obwohl beide Entscheidungen in der Datenbank stehen — der `?Text=<Az>`-Fallback fand sie sofort. Ein Fehlschlag des Datum-Az-Endpunkts ist also **kein** Beleg für die Nichtexistenz einer Entscheidung.
+- **dejure hostet RSG, LPachtVG und LwAnpG nicht** (`/gesetze/RSG/4.html` leitet auf buzer.de weiter). Der sonst nützliche Weg, über die Normseite die zitierende Rechtsprechung zu finden, steht im Agrarrecht daher nicht offen — das ist der Hauptgrund, warum die BLw-Linien zu RSG und LwAnpG unbelegt bleiben. Dasselbe gilt für GrdstVG.
+- **curia.europa.eu bleibt für WebFetch unbrauchbar**: der Aufruf leitet auf `infocuria.curia.europa.eu` um und liefert dort nur den Platzhalter „RPEX". Alle EuGH-Belege stammen deshalb aus dejure.
+- **HUDOC funktioniert** über die Query-API (`/app/query/results?query=…&select=…`) und lieferte für 40575/10 Fallname, beide Beschwerde-Nummern, Datum und ECLI. Diese Route ist für künftige EGMR-Zitate zu bevorzugen.
+- **CAS**: `jurisprudence.tas-cas.org` gibt über WebFetch keinen Volltext heraus.
+
+### Zur Metrik `scripts/verify_citations.py`
+
+Der Auftrag zu diesem Durchlauf ging davon aus, „to review" müsse **sinken**. Es steigt — agrarrecht 40 → 40, sportrecht 19 → 27 — und das ist korrekt, nicht defekt. Es bestätigt die bereits bei `urheber-medienrecht` (21 → 71) protokollierte Eigenschaft: das Skript zählt **Marker, nicht Belege**. Jede Fallzitierung *ohne* `[unverifiziert]` wird gewarnt, unabhängig davon, ob eine Primärquellen-URL danebensteht. Eine erfolgreiche Verifikation verwandelt daher ein stilles INFO in ein WARN. Die Zahl ist eine Markerzählung, kein Qualitätssignal, und taugt nicht als Fortschrittsmaß für diese Art von Durchlauf.
+
+Ergänzend, weil es beim Inventarisieren auffiel: die 40 agrarrecht-Warnungen und 19 der sportrecht-Warnungen sind **unbekannte Gesetzesabkürzungen** (RSG, LPachtVG, LwVG, ALG, GAP-DZG, AntiDopG, KUG, EGV), die in der Abkürzungstabelle von `scripts/verify_citations.py` fehlen. Alle diese Gesetze existieren; die Warnung ist eine Lücke des Skripts, kein Zitierfehler. Eine Ergänzung der Tabelle lag außerhalb des Auftragsumfangs dieses Durchlaufs.

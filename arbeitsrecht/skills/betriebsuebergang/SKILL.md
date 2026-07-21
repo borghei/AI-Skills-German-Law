@@ -38,7 +38,7 @@ test: ./test.md
 
 Erforderlich ist der Übergang eines **Betriebs oder Betriebsteils** auf einen anderen Inhaber **durch Rechtsgeschäft**. Unionsrechtlich (Richtlinie 2001/23/EG) ist der Begriff als Übergang einer **wirtschaftlichen Einheit unter Wahrung ihrer Identität** auszulegen — einer organisierten Gesamtheit von Personen und Sachen zur Ausübung einer wirtschaftlichen Tätigkeit mit eigenem Zweck.
 
-Die Identitätswahrung wird nach einer **Gesamtwürdigung** aller Umstände beurteilt (EuGH-Rspr. zum Betriebsübergang, Rechtssache *Spijkers* und Folgeentscheidungen `[unverifiziert – prüfen]`). Die Kriterien:
+Die Identitätswahrung wird nach einer **Gesamtwürdigung** aller Umstände beurteilt (EuGH, Urt. v. 18.03.1986 – Rs. 24/85, *Spijkers*, und Folgeentscheidungen; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=18.03.1986&Aktenzeichen=24/85)). Die Kriterien:
 
 1. Art des betreffenden Unternehmens oder Betriebs,
 2. Übergang materieller Betriebsmittel,
@@ -89,7 +89,7 @@ Veräußerer **oder** Erwerber haben die betroffenen Arbeitnehmer **vor** dem Ü
 3. die rechtlichen, wirtschaftlichen und sozialen Folgen des Übergangs für die Arbeitnehmer,
 4. die hinsichtlich der Arbeitnehmer in Aussicht genommenen Maßnahmen.
 
-Die Rechtsprechung hat diese vier Ziffern zu einem **Katalog** konkretisiert; das Schreiben muss den Arbeitnehmer in die Lage versetzen, eine informierte Entscheidung über den Widerspruch zu treffen. Als Mindestinhalte gelten (st. Rspr. des BAG zu den Anforderungen an die Unterrichtung nach § 613a Abs. 5 BGB `[unverifiziert – prüfen]`):
+Die Rechtsprechung hat diese vier Ziffern zu einem **Katalog** konkretisiert; das Schreiben muss den Arbeitnehmer in die Lage versetzen, eine informierte Entscheidung über den Widerspruch zu treffen. Als Mindestinhalte gelten (grundlegend BAG, Urt. v. 13.07.2006 – 8 AZR 305/05, BAGE 119, 91 = NZA 2006, 1268; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=13.07.2006&Aktenzeichen=8%20AZR%20305/05) — danach setzt weder eine unterbliebene noch eine fehlerhafte Unterrichtung die Widerspruchsfrist des § 613a Abs. 6 BGB in Lauf):
 
 | Punkt | Inhalt |
 |---|---|
@@ -198,9 +198,9 @@ Betriebsteil <Bezeichnung> mit Wirkung zum <Datum> auf die
 
 ### Rechtsprechung
 
-- EuGH-Rspr. zum Betriebsübergang und zur Gesamtwürdigung (Rechtssache *Spijkers* und Folgeentscheidungen) `[unverifiziert – prüfen]`
+- EuGH, Urt. v. 18.03.1986 – Rs. 24/85, *Spijkers* (Wahrung der Identität der wirtschaftlichen Einheit; Gesamtwürdigung aller Umstände, keine isolierte Betrachtung einzelner Kriterien), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=18.03.1986&Aktenzeichen=24/85)
 - EuGH-Rspr. zu betriebsmittelarmen Tätigkeiten (Übernahme eines nach Zahl und Sachkunde wesentlichen Teils der Belegschaft) `[unverifiziert – prüfen]`
-- st. Rspr. des BAG zu den inhaltlichen Anforderungen an die Unterrichtung nach § 613a Abs. 5 BGB `[unverifiziert – prüfen]`
+- BAG, Urt. v. 13.07.2006 – 8 AZR 305/05, BAGE 119, 91 = NZA 2006, 1268 (inhaltliche Anforderungen an die Unterrichtung nach § 613a Abs. 5 BGB; Widerspruchsfrist läuft ohne ordnungsgemäße Unterrichtung nicht an), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=13.07.2006&Aktenzeichen=8%20AZR%20305/05)
 - st. Rspr. des BAG zur Verwirkung des Widerspruchsrechts bei fehlerhafter Unterrichtung (Zeit- und Umstandsmoment) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zu § 613a Abs. 4 BGB und zum Erwerberkonzept `[unverifiziert – prüfen]`
 

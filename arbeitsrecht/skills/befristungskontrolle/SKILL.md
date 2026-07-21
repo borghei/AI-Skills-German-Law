@@ -80,8 +80,8 @@ Wortlaut: Die sachgrundlose Befristung ist **nicht zulässig, wenn mit demselben
 Die Entwicklung in drei Schritten:
 
 1. Das BAG legte die Norm zeitweise dahin aus, dass nur Vorbeschäftigungen innerhalb der letzten **drei Jahre** schädlich seien `[unverifiziert – prüfen]`.
-2. Das **BVerfG** verwarf diese Auslegung im Jahr **2018** als Überschreitung der Grenzen richterlicher Rechtsfortbildung: Der Wortlaut sei eindeutig, ein starres Drei-Jahres-Modell mit ihm nicht vereinbar `[unverifiziert – prüfen]`.
-3. Zugleich verlangte das BVerfG eine **verfassungskonforme Einschränkung** für Fälle, in denen das Verbot unzumutbar wäre. Anerkannte Fallgruppen: die Vorbeschäftigung liegt **sehr lange** zurück, war **ganz anders geartet** oder von **sehr kurzer Dauer** — genannt werden geringfügige Nebenbeschäftigungen während Schule oder Studium, Werkstudententätigkeiten und Beschäftigungen im Rahmen der Berufsausbildung `[unverifiziert – prüfen]`.
+2. Das **BVerfG** verwarf diese Auslegung mit Beschl. v. 06.06.2018 – 1 BvL 7/14 und 1 BvR 1375/14, BVerfGE 149, 126 = NZA 2018, 774 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=06.06.2018&Aktenzeichen=1%20BvL%207/14)) als Überschreitung der Grenzen richterlicher Rechtsfortbildung: Der Wortlaut sei eindeutig, ein starres Drei-Jahres-Modell mit dem erkennbaren Willen des Gesetzgebers nicht vereinbar.
+3. Zugleich verlangte das BVerfG in derselben Entscheidung eine **verfassungskonforme Einschränkung** für Fälle, in denen das Verbot unzumutbar wäre. Anerkannte Fallgruppen: die Vorbeschäftigung liegt **sehr lange** zurück, war **ganz anders geartet** oder von **sehr kurzer Dauer** — genannt werden geringfügige Nebenbeschäftigungen während Schule oder Studium, Werkstudententätigkeiten und Beschäftigungen im Rahmen der Berufsausbildung.
 
 **Praxisfolge:** „Sehr lange" ist nicht mit den früheren drei Jahren gleichzusetzen; in der nachfolgenden Instanzrechtsprechung wurden Zeiträume im Bereich von etwa zwei Jahrzehnten als ausreichend, deutlich kürzere als nicht ausreichend angesehen `[unverifiziert – prüfen]`. Für die Gestaltung heißt das: **Bei jeder sachgrundlosen Befristung ist die Personalhistorie vollständig abzufragen**, einschließlich Aushilfs-, Ferien- und Praktikantenverhältnissen. Der Arbeitgeber, der auf eine Selbstauskunft vertraut, trägt das Risiko; eine bewusst falsche Antwort des Arbeitnehmers kann allerdings den Einwand des Rechtsmissbrauchs begründen.
 
@@ -139,7 +139,7 @@ Ist die Befristung unwirksam, gilt der Vertrag als auf **unbestimmte Zeit** gesc
 
 ### Rechtsprechung
 
-- BVerfG, 2018, zur verfassungsrechtlichen Grenze der Auslegung des § 14 Abs. 2 S. 2 TzBfG (Verwerfung der Drei-Jahres-Rechtsprechung des BAG; verfassungskonforme Einschränkung bei sehr lange zurückliegender, ganz anders gearteter oder sehr kurzer Vorbeschäftigung) `[unverifiziert – prüfen]`
+- BVerfG, Beschl. v. 06.06.2018 – 1 BvL 7/14 und 1 BvR 1375/14, BVerfGE 149, 126 = NZA 2018, 774 (verfassungsrechtliche Grenze der Auslegung des § 14 Abs. 2 S. 2 TzBfG: Verwerfung der Drei-Jahres-Rechtsprechung des BAG; verfassungskonforme Einschränkung bei sehr lange zurückliegender, ganz anders gearteter oder sehr kurzer Vorbeschäftigung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=06.06.2018&Aktenzeichen=1%20BvL%207/14)
 - st. Rspr. des BAG zu § 14 Abs. 4 TzBfG (Schriftform der Befristungsabrede vor Arbeitsaufnahme) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zum Verlängerungsbegriff des § 14 Abs. 2 S. 1 TzBfG (nahtloser Anschluss, ausschließlich Änderung der Vertragsdauer) `[unverifiziert – prüfen]`
 - EuGH- und BAG-Rspr. zur institutionellen Rechtsmissbrauchskontrolle bei Kettenbefristungen `[unverifiziert – prüfen]`

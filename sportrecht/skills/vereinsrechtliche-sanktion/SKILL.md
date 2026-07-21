@@ -62,12 +62,13 @@ Die **Disziplinargewalt** des Vereins/Verbands folgt nicht aus § 25 BGB unmitte
 
 ### 4. Schiedsklausel-Wirksamkeit (Pechstein-Linie)
 
-Athletenvereinbarungen mit Schiedsklausel zugunsten CAS/DIS sind grundsätzlich wirksam (BGH, KZR 6/15 `[unverifiziert]`); bei "strukturellem Ungleichgewicht" Inhaltskontrolle:
+Athletenvereinbarungen mit Schiedsklausel zugunsten CAS/DIS sind grundsätzlich wirksam (BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 = NJW 2016, 2266 = SchiedsVZ 2016, 268 – *Pechstein/ISU*, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2016-06-07&Aktenzeichen=KZR%206/15)); bei "strukturellem Ungleichgewicht" Inhaltskontrolle:
 
 - Verband hat Monopolstellung in der Sportart
 - Athletin muss zustimmen, um an Wettkämpfen teilzunehmen
 - Auswahl der Schiedsrichter / Verfahrensgestaltung muss neutralitätswahrend sein
-- EGMR (*Mutu und Pechstein/Schweiz* `[unverifiziert]`): öffentliche Verhandlung in Disziplinarsachen nach Art. 6 EMRK
+- EGMR, Urt. v. 02.10.2018 – Nr. 40575/10 und 67474/10, ECLI:CE:ECHR:2018:1002JUD004057510 (*Mutu und Pechstein/Schweiz*): öffentliche Verhandlung in Disziplinarsachen nach Art. 6 Abs. 1 EMRK ([hudoc.echr.coe.int](https://hudoc.echr.coe.int/eng?i=001-186828))
+- Verfassungsrechtliche Fortsetzung: BVerfG, Beschl. v. 03.06.2022 – 1 BvR 2103/16 (*Pechstein*): Der BGH hat den Justizgewährungsanspruch (Art. 2 Abs. 1 iVm Art. 20 Abs. 3 GG) verletzt; die Schiedsvereinbarung muss rechtsstaatliche Mindeststandards — insbesondere die vom EGMR geforderte öffentliche Verhandlung — wahren ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2022-06-03&Aktenzeichen=1%20BvR%202103/16))
 
 Konsequenz für die Verteidigung: Einrede der Unwirksamkeit der Schiedsklausel öffnet den Weg zum staatlichen Gericht.
 
@@ -83,7 +84,7 @@ Konsequenz für die Verteidigung: Einrede der Unwirksamkeit der Schiedsklausel �
 
 ### 6. Stadionverbot — zivilrechtliche Sonderlage
 
-Stadionverbote werden auf das **Hausrecht** des Veranstalters gestützt (§§ 858, 903, 1004 BGB analog). BGH (Urt. v. 30.10.2009 – V ZR 253/08, BGHZ 183, 188 `[unverifiziert – prüfen]`): Hausrechtsausübung darf nicht willkürlich erfolgen, sachlicher Grund erforderlich; Drittwirkung Art. 3 GG verlangt diskriminierungsfreie Anwendung. BVerfG (Beschl. v. 11.04.2018 – 1 BvR 3080/09 `[unverifiziert – prüfen]`) bestätigt mittelbare Drittwirkung. Bundesweite Stadionverbote über DFB-Richtlinien — Inhaltskontrolle nach §§ 305 ff. BGB möglich, wenn Eintrittskarten-AGB sie einbeziehen.
+Stadionverbote werden auf das **Hausrecht** des Veranstalters gestützt (§§ 858, 903, 1004 BGB analog). BGH, Urt. v. 30.10.2009 – V ZR 253/08, NJW 2010, 534 = SpuRt 2010, 28 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2009-10-30&Aktenzeichen=V%20ZR%20253/08)): Hausrechtsausübung darf nicht willkürlich erfolgen, ein sachlicher Grund ist erforderlich; präventive Stadionverbote sind auch ohne strafrechtliche Verurteilung zulässig. BVerfG, Beschl. v. 11.04.2018 – 1 BvR 3080/09, BVerfGE 148, 267 = NJW 2018, 1667 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2018-04-11&Aktenzeichen=1%20BvR%203080/09)) bestätigt die mittelbare Drittwirkung des Art. 3 Abs. 1 GG bei Veranstaltungen, die ohne Ansehen der Person einem großen Publikum geöffnet werden. Bundesweite Stadionverbote über DFB-Richtlinien — Inhaltskontrolle nach §§ 305 ff. BGB möglich, wenn Eintrittskarten-AGB sie einbeziehen.
 
 ### 7. Anfechtungsfrist und Rechtsmittel
 
@@ -117,14 +118,16 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Summerer, in: Fritzweiler/Pfister/Summerer, Praxishandbuch Sportrecht, X. Aufl. Jahr, Kap. Verbandsgerichtsbarkeit
 - MüKoBGB / Leuschner, § 25 BGB Rn. 1 ff. (Bandes 1, 9. Aufl. 2021)
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/Beck-Online/cas.tas-cas.org/hudoc.echr.coe.int]`)
+### Rechtsprechung
 
-1. BGH, Urt. v. 30.10.2009 – V ZR 253/08, BGHZ 183, 188 (Stadionverbot)
-2. BVerfG, Beschl. v. 11.04.2018 – 1 BvR 3080/09 (Stadionverbot – mittelbare Drittwirkung Art. 3 GG)
-3. BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 (Pechstein – Schiedsklausel)
-4. EGMR, Urt. v. 02.10.2018 – Nr. 40575/10 und 67474/10 (Mutu und Pechstein/Schweiz)
-5. BGH zur Inhaltskontrolle Vereinssatzung (st. Rspr. — Az. konkret prüfen)
-6. BGH (KartellSenat) zu DFB-Pferdesport `[unverifiziert]`
+1. BGH, Urt. v. 30.10.2009 – V ZR 253/08, NJW 2010, 534 = SpuRt 2010, 28 (Stadionverbot – sachlicher Grund, keine Willkür), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2009-10-30&Aktenzeichen=V%20ZR%20253/08)
+2. BVerfG, Beschl. v. 11.04.2018 – 1 BvR 3080/09, BVerfGE 148, 267 = NJW 2018, 1667 (Stadionverbot – mittelbare Drittwirkung Art. 3 Abs. 1 GG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2018-04-11&Aktenzeichen=1%20BvR%203080/09)
+3. BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 = NJW 2016, 2266 (*Pechstein/ISU* – Schiedsklausel), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2016-06-07&Aktenzeichen=KZR%206/15)
+4. OLG München, Urt. v. 15.01.2015 – U 1110/14 Kart, SchiedsVZ 2015, 40 = SpuRt 2015, 78 (*Pechstein/ISU* – Vorinstanz, Schiedsklausel kartellrechtswidrig), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=U%201110/14%20Kart)
+5. EGMR, Urt. v. 02.10.2018 – Nr. 40575/10 und 67474/10, ECLI:CE:ECHR:2018:1002JUD004057510 (*Mutu und Pechstein/Schweiz*), [hudoc.echr.coe.int](https://hudoc.echr.coe.int/eng?i=001-186828)
+6. BVerfG, Beschl. v. 03.06.2022 – 1 BvR 2103/16 (*Pechstein* – Justizgewährungsanspruch, rechtsstaatliche Mindeststandards der Sportschiedsgerichtsbarkeit), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2022-06-03&Aktenzeichen=1%20BvR%202103/16)
+7. BGH zur Inhaltskontrolle der Vereinssatzung (st. Rspr.) `[unverifiziert – kein Aktenzeichen aus öffentlicher Primärquelle belegt; in juris/Beck-Online ermitteln]`
+8. BGH (Kartellsenat) zum Reit-/Pferdesport `[unverifiziert – weder Aktenzeichen noch Entscheidungsname bestätigt; die im Researcher genannte „Bundesligaentscheidung Reiten" ist nicht belegt]`
 
 ## Ausgabeformat
 

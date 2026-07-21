@@ -89,7 +89,7 @@ Pro Statut **bis zu drei** einschlägige Entscheidungen aus dem Modellwissen:
 
 Pflicht-Leitentscheidungen je nach Skill:
 
-- Sanktionsrecht (Listing/Verfahrensrechte): EuGH, **Kadi I** (C-402/05 P), **Kadi II** (C-584/10 P), **Rosneft** (C-72/15) `[unverifiziert]`
+- Sanktionsrecht (Listing/Verfahrensrechte): EuGH, **Kadi I**, Urt. v. 03.09.2008 – verb. Rs. C-402/05 P, C-415/05 P, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2008-09-03&Aktenzeichen=C-402/05); **Kadi II**, Urt. v. 18.07.2013 – verb. Rs. C-584/10 P, C-593/10 P, C-595/10 P, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2013-07-18&Aktenzeichen=C-584/10); **Rosneft**, Urt. v. 28.03.2017 – Rs. C-72/15, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2017-03-28&Aktenzeichen=C-72/15)
 - Dual-Use / Catch-all: EuGH zu „militärische Endverwendung", Auslegung Art. 4 Dual-Use-VO – soweit Modellwissen reicht, sonst lückenhaft markieren
 - Zolltarifierung: EuGH-Standard zur Tarifierung nach objektiven Merkmalen / Allgemeinen Vorschriften (AV); BFH zu vZTA-Bindung
 
