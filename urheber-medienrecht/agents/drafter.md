@@ -89,7 +89,7 @@ Die dreifache Schadensberechnung (BGH-st. Rspr.) zur Wahl des Verletzten:
 | Methode | Inhalt | Belegquelle |
 |---|---|---|
 | Konkreter Schaden | Entgangener Gewinn des Verletzten | § 252 BGB |
-| Verletzergewinn | Herausgabe des durch die Verletzung erzielten Gewinns (abzgl. ausschließlich variabler Kosten – BGH „Gemeinkostenanteil" `[unverifiziert]`) | § 97 II 2 UrhG |
+| Verletzergewinn | Herausgabe des durch die Verletzung erzielten Gewinns (abzgl. ausschließlich variabler Kosten – BGH „Gemeinkostenanteil", Urt. v. 02.11.2000 – I ZR 246/98, BGHZ 145, 366, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2000-11-02&Aktenzeichen=I%20ZR%20246/98)) | § 97 II 2 UrhG |
 | Lizenzanalogie | Fiktive angemessene Lizenzgebühr; bei Fotos: MFM-Bildhonorartabellen, ggf. 100 %-Zuschlag bei fehlender Urhebernennung | § 97 II 3 UrhG |
 
 ### 6. Risikoeinstufung am Ende

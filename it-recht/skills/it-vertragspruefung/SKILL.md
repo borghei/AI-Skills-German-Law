@@ -12,6 +12,17 @@ test: ./test.md
 
 IT-Verträge enthalten regelmäßig Klauseln, die in der AGB-Inhaltskontrolle (§§ 305 ff. BGB) scheitern, DSGVO-Pflichten missachten oder unverhältnismäßige Haftungsverteilungen schaffen. Dieser Skill identifiziert die typischen Bruchstellen entlang eines strukturierten Prüfschemas.
 
+> **⚠️ Aktualität (Stand 2026-07):** Seit dem **12.09.2025** ist der **Data Act** ([VO (EU) 2023/2854](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R2854)) anwendbar. Er ist bei **jeder** IT-Vertragsprüfung als eigener Prüfschritt abzuarbeiten (siehe Schritt 3a) und gilt **unabhängig davon, ob personenbezogene Daten betroffen sind**.
+>
+> - **Art. 3 Abs. 1 (Zugang by design)** gilt **nur für vernetzte Produkte, die nach dem 12.09.2026 in Verkehr gebracht werden** — also erst in wenigen Wochen. Für **Bestandsprodukte** greift diese Pflicht **nicht**; die vertraglichen Zugangs- und Bereitstellungspflichten der **Art. 4 und 5** sind davon zu trennen.
+> - **Art. 5**: Nutzer können verlangen, dass Daten an einen **Dritten** weitergegeben werden. Solche Verlangen sind innerhalb der gesetzlichen Frist zu bearbeiten; **Geschäftsgeheimnisse** können eine Beschränkung rechtfertigen, aber nur unter den Voraussetzungen der Verordnung und mit dokumentierter Begründung.
+> - **Art. 14 ff.**: Öffentliche Stellen können bei **außergewöhnlichem Bedarf** Daten anfordern — ein eigener, oft übersehener Anspruchstyp.
+> - **Art. 13**: Missbräuchlichkeitskontrolle **einseitig auferlegter Datenzugangsklauseln** in B2B-Verträgen, **neben** §§ 305 ff. BGB.
+> - **Art. 23–31**: Wechsel zwischen Datenverarbeitungsdiensten; **Wechselentgelte entfallen vollständig bis zum 12.01.2027**, bis dahin nur kostenbasiert reduziert. **Art. 25** verlangt vertragliche Ausstiegsunterstützung (siehe Skill `cloud-auftragsverarbeitung`).
+> - Deutsches **Data-Act-Durchführungsgesetz (DADG)**: Bundestag **26.03.2026**, BGBl. **29.05.2026**; zuständige Behörde ist die **Bundesnetzagentur** (Bekanntgabe 30.05.2026). Im selben Paket wurde das deutsche Durchführungsgesetz zum **Data Governance Act** beschlossen (BNetzA-Aufsicht über Datenvermittlungsdienste und datenaltruistische Organisationen).
+>
+> Einzelnormen des DADG sind vor mandantengerichteter Verwendung am verkündeten Text zu verifizieren. `[unverifiziert - prüfen]`
+
 ## Eingaben
 
 - Vertragstyp (SaaS, Cloud-Hosting, Outsourcing, Individual-Software-Entwicklung, Wartung)
@@ -19,6 +30,8 @@ IT-Verträge enthalten regelmäßig Klauseln, die in der AGB-Inhaltskontrolle (�
 - Größenklasse (B2B / B2C)
 - DSGVO-relevant (personenbezogene Daten verarbeitet?)
 - Vorhandene Vorlagen (EVB-IT, BVB, BITKOM, eigene)
+- Data-Act-Bezug: Betrifft der Vertrag ein **vernetztes Produkt** oder einen **verbundenen Dienst** (IoT)? Falls ja: **Datum des Inverkehrbringens** (vor oder nach 12.09.2026)
+- Data-Act-Bezug: Handelt es sich um einen **Datenverarbeitungsdienst** (Cloud/SaaS) iSd Art. 23 ff.?
 
 ## Ablauf
 
@@ -65,6 +78,39 @@ Wenn personenbezogene Daten verarbeitet werden: AVV nach Art. 28 Abs. 3 DSGVO ve
 
 US-Cloud-Anbieter: TIA + SCC + ggf. EU-US Data Privacy Framework. Beachte: Schrems II-Lage.
 
+### 3a. Data-Act-Prüfung (VO (EU) 2023/2854, anwendbar seit 12.09.2025)
+
+Dieser Schritt ist **stets** abzuarbeiten. Der Data Act gilt **unabhängig vom Personenbezug** der Daten und tritt neben DSGVO und AGB-Recht.
+
+**a) Anwendungsbereich bestimmen.**
+
+| Vertragsgegenstand | Einschlägige Vorschriften |
+|---|---|
+| **Vernetztes Produkt / verbundener Dienst** (IoT) | Art. 3–5 (Zugang und Bereitstellung an Nutzer und Dritte) |
+| **Datenverarbeitungsdienst** (Cloud, SaaS, IaaS, PaaS) | Art. 23–31 (Wechsel), insb. Art. 25, 29 |
+| **B2B-Vertrag mit einseitig auferlegten Datenklauseln** | Art. 13 (Missbräuchlichkeitskontrolle) |
+| Jeder Dateninhaber | Art. 14 ff. (Anfragen öffentlicher Stellen bei außergewöhnlichem Bedarf) |
+
+**b) Stichtag 12.09.2026 — die entscheidende Abgrenzung.** Die Pflicht zum **Zugang by design** nach **Art. 3 Abs. 1** — vernetzte Produkte so zu gestalten, dass Nutzerdaten unmittelbar, einfach und sicher zugänglich sind — trifft **nur Produkte, die nach dem 12.09.2026 in Verkehr gebracht werden**. Für Bestandsprodukte besteht **keine** Nachrüstpflicht nach Art. 3 Abs. 1.
+
+**Nicht verwechseln:** Die **vertraglichen Bereitstellungspflichten** gegenüber Nutzern (**Art. 4**) und gegenüber Dritten auf Nutzerverlangen (**Art. 5**) knüpfen **nicht** an diesen Stichtag an. Die Umstellung der Verträge ist daher von der Produktgestaltung zu trennen.
+
+**c) IoT-Verträge neu papieren (Art. 3–5).** Prüfpunkte:
+
+- [ ] **Vorvertragliche Informationen** nach Art. 3 Abs. 2, 3: Art, Umfang, Format und Häufigkeit der erzeugten Daten; wie der Nutzer darauf zugreift; ob der Dateninhaber sie nutzt
+- [ ] **Zugangsanspruch des Nutzers** (Art. 4) vertraglich abgebildet, unentgeltlich und ohne unangemessene Hürden
+- [ ] **Weitergabe an Dritte auf Verlangen des Nutzers** (Art. 5) geregelt — einschließlich Bearbeitungsprozess und Fristwahrung
+- [ ] **Nutzungsbeschränkungen des Dateninhabers** (z. B. kein Wettbewerbsprodukt aus Nutzerdaten) korrekt und nicht überschießend formuliert
+- [ ] **Geschäftsgeheimnisse**: Beschränkungen der Datenweitergabe sind möglich, aber nur unter den Voraussetzungen der Verordnung, mit Schutzmaßnahmen und **dokumentierter Begründung**. Ein pauschaler Geheimnisvorbehalt trägt nicht.
+
+**d) Art.-5-Anfragen operationalisieren.** Ein Verlangen des Nutzers auf Weitergabe an einen Dritten ist **innerhalb der gesetzlichen Frist** zu bearbeiten. Erforderlich sind ein definierter Eingangskanal, ein Prüfpfad (Identität, Umfang, Geschäftsgeheimnisse, ausgeschlossene Empfänger) und eine Dokumentation. Die konkrete Fristenlänge ist am Verordnungstext zu verifizieren. `[unverifiziert - prüfen]`
+
+**e) Anfragen öffentlicher Stellen (Art. 14 ff.).** Bei **außergewöhnlichem Bedarf** können öffentliche Stellen Daten anfordern. Der Vertrag sollte regeln, wer solche Anfragen entgegennimmt, wie geprüft wird und wie die Vertragspartner informiert werden.
+
+**f) Klauselkontrolle nach Art. 13.** Einseitig auferlegte Klauseln über Datenzugang, -nutzung und Haftung in B2B-Verträgen unterliegen einer **eigenständigen** Missbräuchlichkeitskontrolle. Sie ist **zusätzlich** zu §§ 305 ff. BGB zu prüfen und greift auch dort, wo die AGB-Kontrolle nicht durchdringt.
+
+**g) Zuständigkeit.** Zuständige deutsche Behörde ist nach dem **DADG** (BGBl. 29.05.2026) die **Bundesnetzagentur**, nicht die Datenschutzaufsicht. Data-Act- und DSGVO-Verfahren laufen getrennt.
+
 ### 4. Service-Level-Agreements (SLA)
 
 - Verfügbarkeit: Prozentangabe (z. B. 99,5 %) mit Berechnungsmethodik
@@ -77,10 +123,17 @@ US-Cloud-Anbieter: TIA + SCC + ggf. EU-US Data Privacy Framework. Beachte: Schre
 
 Kritisch bei Cloud-/SaaS-Verträgen:
 
-- **Datenherausgabe** in maschinenlesbarem Format, ohne Zusatzkosten
+- **Datenherausgabe** in strukturiertem, gängigem und maschinenlesbarem Format, ohne Zusatzkosten
 - **Übergangszeitraum** mit Mitwirkung des Anbieters
 - **Löschung der Daten** nach Vertragsende mit Nachweis
 - **Vendor Lock-in-Vermeidung** (Datenexport-Schnittstellen)
+
+Bei **Datenverarbeitungsdiensten** (Cloud, SaaS) sind diese Punkte seit dem Data Act nicht mehr nur Verhandlungssache, sondern **gesetzlich vorgegeben**:
+
+- **Art. 25**: vertragliche Ausstiegsunterstützung — Wechselfrist, Übergangszeitraum, Exportformat, Beschreibung der exportierbaren Daten, Löschung beim Altanbieter
+- **Art. 29**: **Wechselentgelte entfallen vollständig bis zum 12.01.2027**; bis dahin sind nur **kostenbasiert reduzierte** Entgelte zulässig. Pauschale Ausstiegs-, Migrations- oder Egress-Gebühren sind bereits jetzt unzulässig und aus dem Vertrag zu streichen.
+
+Vertiefte Prüfung: Skill `cloud-auftragsverarbeitung`.
 
 ### 6. Open-Source-Compliance
 
@@ -104,6 +157,9 @@ Kritisch bei Cloud-/SaaS-Verträgen:
 - [Art. 28 DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679)
 - [Art. 32 DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679), Art. 44 ff.
 - [UrhG](https://www.gesetze-im-internet.de/urhg/) (Lizenzen)
+- [VO (EU) 2023/2854 (Data Act)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R2854) — anwendbar seit **12.09.2025**; Art. 3 (Zugang by design, nur für nach dem **12.09.2026** in Verkehr gebrachte Produkte), Art. 4, 5 (Bereitstellung an Nutzer und Dritte), Art. 13 (missbräuchliche Klauseln B2B), Art. 14 ff. (öffentliche Stellen, außergewöhnlicher Bedarf), Art. 23–31 (Wechsel, insb. Art. 25 und Art. 29)
+- **Data-Act-Durchführungsgesetz (DADG)** — Bundestag 26.03.2026, BGBl. 29.05.2026; zuständige Behörde **Bundesnetzagentur** (Bekanntgabe 30.05.2026). Einzelnormen `[unverifiziert - prüfen]`
+- Deutsches Durchführungsgesetz zum **Data Governance Act** — beschlossen im selben Paket am 26.03.2026; BNetzA beaufsichtigt Datenvermittlungsdienste und datenaltruistische Organisationen `[unverifiziert - prüfen]`
 
 ### Vorlagen / Standards
 
@@ -128,6 +184,16 @@ II.   AGB-Kontrolle                   [✓ / ⚠️ / ❌]
 III.  DSGVO
       AVV vorhanden + vollständig:    [✓ / 🔴 lückenhaft]
       Drittlandtransfer:              [N/A / SCC / DPF — TIA-Status]
+III-a. Data Act (VO (EU) 2023/2854)
+      Anwendungsbereich:              [IoT Art. 3–5 / Cloud Art. 23–31 / nur Art. 13 / N/A]
+      Inverkehrbringen des Produkts:  [vor / nach 12.09.2026 → Art. 3 Abs. 1?]
+      Nutzerzugang Art. 4 / Dritte Art. 5: [geregelt / 🔴 fehlt]
+      Art.-5-Prozess + Frist:         [etabliert / 🔴 fehlt]
+      Geschäftsgeheimnis-Vorbehalt:   [begründet / ⚠️ pauschal]
+      Wechselentgelte Art. 29:        [keine / kostenbasiert / 🔴 pauschal]
+      Ausstiegshilfe Art. 25:         [✓ / 🔴]
+      Art. 13 Klauselkontrolle:       [✓ / ⚠️]
+      Zuständige Behörde:             BNetzA (DADG)
 IV.   SLA
       Verfügbarkeit, Reaktionszeit:   <…>
       Sanktionen:                     <…>
@@ -152,3 +218,13 @@ Verhandlungsstrategie:                <…>
 - **Datenherausgabe-Klausel fehlt** — Vendor Lock-in als Verhandlungshebel des Anbieters.
 - **Open Source ohne Compliance-Prüfung** — Copyleft-Risiko bei späterer Distribution.
 - **„Wir nutzen den Vendor-Standard"** — ohne eigene Prüfung kein Vertrauensschutz.
+- **Data Act gar nicht geprüft** — er gilt seit **12.09.2025** und **unabhängig vom Personenbezug**. Eine IT-Vertragsprüfung, die nur AGB-Recht und DSGVO abarbeitet, ist seit diesem Datum unvollständig.
+- **Art. 3 Abs. 1 auf Bestandsprodukte angewandt** — die Pflicht zum **Zugang by design** trifft **nur vernetzte Produkte, die nach dem 12.09.2026 in Verkehr gebracht werden**. Wer sie für Altprodukte annimmt, empfiehlt eine gesetzlich nicht geschuldete Nachrüstung.
+- **Umgekehrter Fehler: Art. 4 und 5 mit dem Stichtag 12.09.2026 verknüpft** — die Bereitstellungspflichten gegenüber Nutzern und Dritten hängen **nicht** am Inverkehrbringen des Produkts. Wer den Stichtag auf sie überträgt, unterschätzt den heutigen Handlungsbedarf.
+- **Art.-5-Verlangen ohne Prozess** — Weitergabeverlangen des Nutzers an Dritte sind fristgebunden; ohne definierten Eingangskanal und Prüfpfad läuft die Frist unbemerkt ab.
+- **Pauschaler Geschäftsgeheimnis-Vorbehalt** — Geschäftsgeheimnisse können die Datenweitergabe beschränken, aber nur unter den Voraussetzungen der Verordnung, mit Schutzmaßnahmen und dokumentierter Einzelfallbegründung. Eine Blankoklausel trägt nicht.
+- **Wechselentgelte im Cloud-Vertrag belassen** — sie entfallen **vollständig bis zum 12.01.2027**; bis dahin sind nur kostenbasiert reduzierte Entgelte zulässig. Pauschale Ausstiegs- und Egress-Gebühren sind bereits jetzt unzulässig.
+- **Ausstiegsklausel nach Art. 25 fehlt** — Wechselfrist, Übergangszeitraum, Exportformat und Löschung beim Altanbieter müssen **vertraglich** geregelt sein.
+- **Art. 13 Data Act mit der AGB-Kontrolle gleichgesetzt** — es handelt sich um eine **eigenständige** Missbräuchlichkeitskontrolle für einseitig auferlegte Datenklauseln, die neben §§ 305 ff. BGB tritt.
+- **Anfragen öffentlicher Stellen (Art. 14 ff.) nicht bedacht** — bei außergewöhnlichem Bedarf besteht ein eigener Herausgabeanspruch, für den weder Zuständigkeit noch Prozess geregelt sind.
+- **Falsche Aufsichtsbehörde adressiert** — für den Data Act ist in Deutschland die **Bundesnetzagentur** zuständig (DADG, BGBl. 29.05.2026), nicht die Datenschutzaufsicht.

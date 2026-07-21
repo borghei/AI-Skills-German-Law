@@ -37,9 +37,9 @@ Researcher liefert Statute (§§ 2, 15, 72, 97, 97a, 101, 102 UrhG; UrhDaG), die
 
 ### 1. Werkqualität § 2 UrhG / verwandte Schutzrechte
 
-- Subsumtion unter § 2 II UrhG (eigene geistige Schöpfung – EuGH-Linie: „Cofemel" C-683/17, „Brompton" C-833/18 `[unverifiziert – prüfen in curia.europa.eu]`).
+- Subsumtion unter § 2 II UrhG (eigene geistige Schöpfung – EuGH-Linie: „Cofemel" C-683/17, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2019-09-12&Aktenzeichen=C-683/17); „Brompton" C-833/18, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-06-11&Aktenzeichen=C-833/18)).
 - Bei fehlender Schöpfungshöhe: Prüfung verwandter Schutzrechte — Lichtbild § 72 UrhG (50 J Schutzdauer ab Erscheinen), ausübende Künstler §§ 73 ff., Tonträgerhersteller § 85, Sendeunternehmen § 87, Datenbankhersteller § 87a (eigenständiger sui-generis-Schutz), Filmhersteller § 94.
-- Bei Werken angewandter Kunst (Industriedesign): nach BGH „Geburtstagszug" (I ZR 143/12 `[unverifiziert]`) keine erhöhten Anforderungen mehr; ggf. Schnittstelle Designrecht (`gewerblicher-rechtsschutz`).
+- Bei Werken angewandter Kunst (Industriedesign): nach BGH „Geburtstagszug" (Urt. v. 13.11.2013 – I ZR 143/12, BGHZ 199, 52, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2013-11-13&Aktenzeichen=I%20ZR%20143/12)) keine erhöhten Anforderungen mehr; ggf. Schnittstelle Designrecht (`gewerblicher-rechtsschutz`).
 - Schutzdauer § 64 UrhG: 70 Jahre pma; ggf. Gemeinfreiheit prüfen.
 
 ### 2. Aktivlegitimation
@@ -53,7 +53,7 @@ Researcher liefert Statute (§§ 2, 15, 72, 97, 97a, 101, 102 UrhG; UrhDaG), die
 
 - Vervielfältigung § 16 UrhG (auch transiente RAM-Vervielfältigung).
 - Verbreitung § 17 UrhG (Erschöpfungsgrundsatz im EWR).
-- Öffentliche Zugänglichmachung § 19a UrhG (Online-Bereitstellung); maßgeblich EuGH „Svensson" (C-466/12), „GS Media" (C-160/15), „Renckhoff" (C-161/17), „YouTube/Cyando" (C-682/18, C-683/18) — alle `[unverifiziert]`.
+- Öffentliche Zugänglichmachung § 19a UrhG (Online-Bereitstellung); maßgeblich EuGH „Svensson" (C-466/12, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2014-02-13&Aktenzeichen=C-466/12)), „GS Media" (C-160/15, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2016-09-08&Aktenzeichen=C-160/15)), „Renckhoff" (C-161/17, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2018-08-07&Aktenzeichen=C-161/17)), „YouTube/Cyando" (C-682/18, C-683/18, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2021-06-22&Aktenzeichen=C-682/18)).
 - Senderecht § 20 UrhG.
 - Bearbeitungs-/Umgestaltungsrecht § 23 UrhG (mit § 23 II UrhG Anpassung 2021 zur „hinreichenden Abstand"-Doktrin).
 
@@ -71,7 +71,7 @@ Researcher liefert Statute (§§ 2, 15, 72, 97, 97a, 101, 102 UrhG; UrhDaG), die
 | Methode | Norm | Bemerkung |
 |---|---|---|
 | Entgangener Gewinn | § 252 BGB iVm § 97 II 1 UrhG | Selten praktikabel ohne Marktdaten |
-| Verletzergewinn | § 97 II 2 UrhG | „Gemeinkostenanteil"-Rspr.: nur ausschließlich variable Kosten abzugsfähig (BGH I ZR 34/02 `[unverifiziert]`) |
+| Verletzergewinn | § 97 II 2 UrhG | „Gemeinkostenanteil"-Rspr.: nur ausschließlich variable Kosten abzugsfähig (BGH, Urt. v. 02.11.2000 – I ZR 246/98, BGHZ 145, 366, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2000-11-02&Aktenzeichen=I%20ZR%20246/98)) |
 | Lizenzanalogie | § 97 II 3 UrhG | Bei Lichtbildern idR MFM-Bildhonorartabellen, ggf. 100 %-Aufschlag bei fehlender Urhebernennung (BGH-Linie `[unverifiziert]`) |
 
 - **Beseitigung** § 98 UrhG (Vernichtung, Rückruf).
@@ -91,9 +91,9 @@ Inhaltsanforderungen § 97a II UrhG (alle vier zwingend, sonst unwirksam, § 97a
 
 **Filesharing-Spezifika:**
 
-- Täterhaftung Anschlussinhaber: tatsächliche Vermutung, widerlegbar durch sekundäre Darlegungslast (BGH „Loud" I ZR 19/16 `[unverifiziert]`).
-- Familienanschlüsse: keine generelle Belehrungspflicht volljähriger Familienmitglieder (BGH „BearShare" I ZR 169/12 `[unverifiziert]`).
-- WLAN-Privatperson: Aufklärungspflicht bei Standardkonfiguration nicht erforderlich (BGH „Sommer unseres Lebens" I ZR 121/08, in der Folge präzisiert `[unverifiziert]`).
+- Täterhaftung Anschlussinhaber: tatsächliche Vermutung, widerlegbar durch sekundäre Darlegungslast (BGH „Loud", Urt. v. 30.03.2017 – I ZR 19/16, GRUR 2017, 1233, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2017-03-30&Aktenzeichen=I%20ZR%2019/16)).
+- Familienanschlüsse: keine generelle Belehrungspflicht volljähriger Familienmitglieder (BGH „BearShare", Urt. v. 08.01.2014 – I ZR 169/12, BGHZ 200, 76, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2014-01-08&Aktenzeichen=I%20ZR%20169/12)).
+- WLAN-Privatperson: Aufklärungspflicht bei Standardkonfiguration nicht erforderlich (BGH „Sommer unseres Lebens", Urt. v. 12.05.2010 – I ZR 121/08, BGHZ 185, 330, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2010-05-12&Aktenzeichen=I%20ZR%20121/08); in der Folge präzisiert).
 
 **UrhDaG (Plattformkonstellation):** Bei Verletzung auf großen Diensteanbietern iSv § 2 UrhDaG primär Plattformhaftung gemäß §§ 1–10 UrhDaG, Beschwerdemechanismus § 14 UrhDaG, Pastiche-Schranke § 5 UrhDaG (Schnittstelle § 51a UrhG).
 
@@ -131,17 +131,19 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Schricker/Loewenheim, Urheberrecht, 6. Aufl. 2020, § 97 UrhG Rn. 1 ff. `[unverifiziert]`
 - BeckOK UrhG/Reber, Stand 2024, § 97 Rn. 1 ff.
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/Beck-Online]`)
+### Rechtsprechung
 
-1. BGH, Urt. v. 02.10.2008 – I ZR 6/06, GRUR 2009, 150 – „Tchibo/Rolex II" (dreifache Schadensberechnung) `[unverifiziert]`
-2. BGH, Urt. v. 02.11.2000 – I ZR 246/98, GRUR 2001, 329 – „Gemeinkostenanteil" `[unverifiziert]`
-3. BGH, Urt. v. 12.05.2010 – I ZR 121/08, GRUR 2010, 633 – „Sommer unseres Lebens" (Filesharing) `[unverifiziert]`
-4. BGH, Urt. v. 08.01.2014 – I ZR 169/12, GRUR 2014, 657 – „BearShare" `[unverifiziert]`
-5. BGH, Urt. v. 30.03.2017 – I ZR 19/16, GRUR 2017, 1233 – „Loud" `[unverifiziert]`
-6. BGH, Urt. v. 13.11.2013 – I ZR 143/12, GRUR 2014, 175 – „Geburtstagszug" `[unverifiziert]`
-7. EuGH, Urt. v. 12.09.2019 – Rs. C-683/17, ECLI:EU:C:2019:721 – Cofemel `[unverifiziert]`
-8. EuGH, Urt. v. 11.06.2020 – Rs. C-833/18, ECLI:EU:C:2020:461 – Brompton `[unverifiziert]`
-9. EuGH, Urt. v. 22.06.2021 – Rs. C-682/18, C-683/18, ECLI:EU:C:2021:503 – YouTube/Cyando `[unverifiziert]`
+1. BGH, Urt. v. 17.06.1992 – I ZR 107/90, BGHZ 119, 20 = GRUR 1993, 55 – „Tchibo/Rolex II" (dreifache Schadensberechnung: Wahlrecht zwischen den drei Berechnungsarten), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=1992-06-17&Aktenzeichen=I%20ZR%20107/90)
+2. BGH, Urt. v. 02.11.2000 – I ZR 246/98, BGHZ 145, 366 = GRUR 2001, 329 – „Gemeinkostenanteil", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2000-11-02&Aktenzeichen=I%20ZR%20246/98)
+3. BGH, Urt. v. 12.05.2010 – I ZR 121/08, BGHZ 185, 330 = GRUR 2010, 633 – „Sommer unseres Lebens" (Filesharing), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2010-05-12&Aktenzeichen=I%20ZR%20121/08)
+4. BGH, Urt. v. 08.01.2014 – I ZR 169/12, BGHZ 200, 76 = GRUR 2014, 657 – „BearShare", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2014-01-08&Aktenzeichen=I%20ZR%20169/12)
+5. BGH, Urt. v. 30.03.2017 – I ZR 19/16, GRUR 2017, 1233 – „Loud", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2017-03-30&Aktenzeichen=I%20ZR%2019/16)
+6. BGH, Urt. v. 13.11.2013 – I ZR 143/12, BGHZ 199, 52 = GRUR 2014, 175 – „Geburtstagszug", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2013-11-13&Aktenzeichen=I%20ZR%20143/12)
+7. BGH, Urt. v. 15.11.2012 – I ZR 74/12, GRUR 2013, 511 – „Morpheus" (Aufsichtspflicht bei Minderjährigen), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2012-11-15&Aktenzeichen=I%20ZR%2074/12)
+8. EuGH, Urt. v. 12.09.2019 – Rs. C-683/17, ECLI:EU:C:2019:721 – Cofemel, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2019-09-12&Aktenzeichen=C-683/17)
+9. EuGH, Urt. v. 11.06.2020 – Rs. C-833/18, ECLI:EU:C:2020:461 – Brompton Bicycle, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-06-11&Aktenzeichen=C-833/18)
+10. EuGH, Urt. v. 22.06.2021 – Rs. C-682/18, C-683/18, ECLI:EU:C:2021:503 – YouTube/Cyando, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2021-06-22&Aktenzeichen=C-682/18)
+11. EuGH, Urt. v. 16.07.2009 – Rs. C-5/08, ECLI:EU:C:2009:465 – Infopaq (Werkbegriff), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-07-16&Aktenzeichen=C-5/08)
 
 ## Ausgabeformat
 

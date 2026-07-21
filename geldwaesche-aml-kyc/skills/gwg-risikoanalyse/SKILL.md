@@ -19,6 +19,16 @@ test: ./test.md
 
 Der Skill erzeugt das Grundgerüst einer **dokumentierten** Risikoanalyse nach § 5 GwG, ordnet Risikofaktoren den vier Pflichtkategorien (Kunde, Produkt / Dienstleistung, Vertriebsweg, geografisches Risiko) zu und leitet daraus das Sorgfaltspflichtenniveau (§§ 10, 14, 15 GwG) ab. Er stellt sicher, dass die Analyse die Supranationale Risikoanalyse der EU-Kommission und die Nationale Risikoanalyse des BMF berücksichtigt und mindestens jährlich oder anlassbezogen aktualisiert wird.
 
+> **⚠️ Aktualität (Stand 2026-07):** **Rechtsgrundlage der Risikoanalyse ist weiterhin § 5 GwG.** Das EU-AML-Paket löst das GwG nicht heute, sondern zum 10.07.2027 ab — der Übergang gehört jedoch bereits jetzt in die Analyse und in den Aktualisierungsanlass:
+>
+> - **AMLA** (VO (EU) 2024/1620) ist seit dem **01.07.2025 in Frankfurt am Main operativ**. Sie wird ausgewählte Verpflichtete **unmittelbar** beaufsichtigen und koordiniert im Übrigen die nationalen Aufsichtsbehörden.
+> - **AMLR** (VO (EU) 2024/1624) gilt ab **10.07.2027** als unmittelbar anwendbares **Single Rulebook** — ohne nationales Umsetzungsgesetz.
+> - **AMLD6** (RL (EU) 2024/1640): Umsetzungsfrist für **Art. 11–13, 15** (Register wirtschaftlich Berechtigter) am **10.07.2026 abgelaufen**; allgemeine Umsetzungsfrist **10.07.2027**.
+> - Der Großteil der **AMLA-Level-2-/Level-3-Maßnahmen** war zum **10.07.2026** fällig; rund **23 RTS/ITS und Leitlinien** stehen noch aus — darunter Konkretisierungen zu Risikobewertung und Risikofaktoren.
+> - **EU-weite Bargeldobergrenze 10.000 EUR**, Mitgliedstaaten dürfen niedrigere Grenzen setzen — relevant für die Risikokategorie „Produkt/Dienstleistung" bei bargeldintensivem Geschäft. `[unverifiziert - prüfen]`
+>
+> **Konsequenz für diesen Skill:** Der bevorstehende AMLR-Wechsel ist ein **anlassbezogener Aktualisierungsgrund** iSd § 5 II GwG. Die Analyse ist so zu strukturieren, dass sie zum 10.07.2027 auf die AMLR umgehängt werden kann (siehe Schritt 7a).
+
 ## Eingaben
 
 - Verpflichteten-Typ nach § 2 GwG (Kreditinstitut, Finanzdienstleister, Versicherer, Vermögensverwalter, RA / StB / Notar, Güterhändler ab Schwelle, Immobilienmakler, Edelmetall- / Kunsthändler, Glücksspielanbieter, Krypto-Verwahrer)
@@ -82,6 +92,18 @@ Die Risikoanalyse muss in konkrete Sicherungsmaßnahmen münden: Verfahren zur K
 
 Mindestens **jährlich** und **anlassbezogen** (neue Produkte, neue Märkte, geänderte Aufsichtsleitlinien, neue NRA / SNRA, sichtbare Veränderung des Bedrohungsbildes). Aktualisierungen sind zu dokumentieren mit Datum, Anlass und Verantwortlichem.
 
+### 7a. Vorbereitung auf AMLR, AMLA und AMLD6
+
+Der Übergang auf das EU-AML-Paket ist kein künftiges Thema, sondern ein **anlassbezogener Aktualisierungsgrund** nach § 5 II GwG. Vier Arbeitsstränge gehören in die Analyse und in den Maßnahmenplan:
+
+**a) Gap-Mapping der bestehenden GwG-Verfahren auf die AMLR (Stichtag 10.07.2027).** Jede in der Risikoanalyse verankerte Pflicht wird auf die entsprechende AMLR-Vorschrift abgebildet und eingeordnet als **deckungsgleich**, **verschärft** (Prozess- und IT-Vorlauf einplanen) oder **entfallend/abweichend**. Wichtig: Die AMLR ist **vollharmonisierend** — nationale Zusatzanforderungen, die heute selbstverständlich sind, lassen sich nicht ohne Weiteres fortschreiben. Das Mapping ist zu dokumentieren und mit Zuständigkeiten und Terminen zu versehen.
+
+**b) UBO-Daten an der 25-%-Schwelle ausrichten.** Die Umsetzungsfrist der Register-Vorschriften (AMLD6 Art. 11–13, 15) ist am **10.07.2026 abgelaufen**. Die Analyse muss die Datenqualität zu wirtschaftlich Berechtigten als eigenen Risikofaktor der Kategorie „Kunde" abbilden — insbesondere bei mehrstufigen und grenzüberschreitenden Beteiligungsketten.
+
+**c) AMLA-Level-2-Pipeline überwachen.** Rund 23 technische Standards und Leitlinien sind noch offen; sie konkretisieren gerade die Risikobewertung. In der Risikoanalyse ist ein **Verantwortlicher für das Monitoring** zu benennen, und Festlegungen, die von noch ausstehenden Standards abhängen, sind als **vorläufig** zu kennzeichnen.
+
+**d) Auswahl zur direkten AMLA-Aufsicht prüfen.** Verpflichtete mit grenzüberschreitender Tätigkeit und erhöhtem Risikoprofil können unmittelbar der AMLA unterstellt werden. Die Selbsteinschätzung („Kommen wir in Betracht?") gehört in die Risikoanalyse; folgt daraus ein realistischer Kandidatenstatus, sind Dokumentationstiefe, Datenqualität und Ansprechstellen entsprechend zu heben. Auswahlkriterien und Zeitplan sind an der AMLA-Verordnung und den AMLA-Veröffentlichungen zu verifizieren. `[unverifiziert - prüfen]`
+
 ### 8. Bußgeldrisiko
 
 Pflichtverletzung iSv § 5 GwG ist Ordnungswidrigkeit nach § 56 I Nr. 6 GwG `[unverifiziert – konkrete Nr. prüfen]`. Bußgeldrahmen bei vorsätzlichen Verstößen bis 1 Mio. EUR bzw. 10 % des jährlichen Gesamtumsatzes (§ 56 III GwG).
@@ -99,7 +121,9 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - [§§ 10, 14, 15 GwG](https://www.gesetze-im-internet.de/gwg_2017/__10.html) (Pflichtenniveau)
 - [§ 56 GwG](https://www.gesetze-im-internet.de/gwg_2017/__56.html) (Bußgelder)
 - [Art. 6, 7, 8 RL (EU) 2015/849](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32015L0849) (Risikobewertungspflichten)
-- VO (EU) 2024/1624 (AMLR, Art. 9–11 Risikobewertung) `[unverifiziert – Anwendungsbeginn 2027]`
+- [VO (EU) 2024/1624 (AMLR — Single Rulebook)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1624) — unmittelbar anwendbar ab **10.07.2027**; Vorschriften zur Risikobewertung, zu Sorgfaltspflichten und zur EU-weiten Bargeldobergrenze von 10.000 EUR. Konkrete Artikelzuordnung am Verordnungstext verifizieren `[unverifiziert - prüfen]`
+- [RL (EU) 2024/1640 (AMLD6)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024L1640) — Art. 11–13, 15 (Register wirtschaftlich Berechtigter) Umsetzungsfrist **10.07.2026**; allgemeine Umsetzungsfrist **10.07.2027**
+- [VO (EU) 2024/1620 (AMLA-Verordnung)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1620) — AMLA seit **01.07.2025** in Frankfurt am Main operativ; direkte Aufsicht über ausgewählte Verpflichtete, Level-2-/Level-3-Rechtsetzung
 
 ### Verwaltungsvorschriften
 
@@ -150,6 +174,12 @@ IV.  Interne Sicherungsmaßnahmen § 6 GwG
 V.   Aktualisierungsregime
      - jährlich + anlassbezogen
 
+V-a. Übergang EU-AML-Paket
+     - Gap-Mapping GwG → AMLR (Stichtag 10.07.2027): <Stand, Verantwortlicher, Termin>
+     - UBO-Datenqualität / 25-%-Schwelle (AMLD6 Art. 11–13, 15; Frist 10.07.2026): <…>
+     - AMLA-Level-2-Pipeline (offene RTS/ITS/Leitlinien): <Monitoring-Verantwortlicher>
+     - Kandidat für direkte AMLA-Aufsicht? <ja / nein / offen — Begründung>
+
 VI.  Risiken / offene Punkte
      🟢 / 🟡 / 🔴 <Einstufung mit Begründung>
 
@@ -169,4 +199,10 @@ VII. Quellenverzeichnis
 - **PEP-Status unbeachtet** — § 1 XII GwG erfasst auch ausländische und nationale Amtsträger sowie Angehörige; ohne strukturierte PEP-Abfrage ist § 15 III GwG verletzt.
 - **Keine Aktualisierung** seit > 12 Monaten oder trotz neuer NRA / EU-Hochrisikoliste — verletzt § 5 II GwG.
 - **GW-Beauftragter ohne Stellvertreter** bei Verpflichteten mit entsprechender Pflicht (§ 7 GwG iVm Branchenspezifik) — MaRisk-Verstoß bei Kreditinstituten.
-- **AMLR / AMLA-Übergang ignoriert** — ab Anwendungsbeginn `[unverifiziert – 2027]` greifen vollharmonisierte Pflichten; Risikoanalyse sollte schon jetzt darauf vorbereitet sein.
+- **AMLR-/AMLA-Übergang ignoriert** — ab **10.07.2027** greifen die vollharmonisierten Pflichten der AMLR unmittelbar. Wer das Gap-Mapping erst 2027 beginnt, hat für IT- und Prozessanpassungen keinen Vorlauf mehr.
+- **AMLR bereits heute als Prüfungsmaßstab verwendet** — bis zum 10.07.2027 ist **§ 5 GwG** die Rechtsgrundlage der Risikoanalyse. Eine auf die AMLR gestützte Analyse ist derzeit aufsichtsrechtlich unbrauchbar.
+- **Auf ein nationales AMLR-Umsetzungsgesetz gewartet** — die AMLR ist eine **Verordnung** und gilt unmittelbar; nur die AMLD6 wird national umgesetzt.
+- **Vollharmonisierung unterschätzt** — nationale Zusatzanforderungen aus dem GwG lassen sich unter der AMLR nicht ohne Weiteres fortschreiben. Das Gap-Mapping muss auch **entfallende** Pflichten ausweisen, nicht nur Lücken.
+- **UBO-Datenqualität nicht als Risikofaktor abgebildet** — die AMLD6-Frist für die Register-Vorschriften (Art. 11–13, 15) ist am **10.07.2026** abgelaufen; lückenhafte Ketten oberhalb der **25-%-Schwelle** sind ein typischer Prüfungsbefund.
+- **Noch offene AMLA-Level-2-Standards als final behandelt** — rund 23 RTS/ITS und Leitlinien stehen aus; darauf gestützte Festlegungen sind als vorläufig zu kennzeichnen und mit einem Monitoring-Verantwortlichen zu versehen.
+- **Direkte AMLA-Aufsicht nicht selbst eingeschätzt** — die AMLA (seit 01.07.2025 in Frankfurt operativ) beaufsichtigt ausgewählte Verpflichtete unmittelbar; die Selbsteinschätzung gehört in die Risikoanalyse.

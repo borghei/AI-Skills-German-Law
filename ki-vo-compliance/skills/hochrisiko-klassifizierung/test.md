@@ -22,5 +22,7 @@ must_appear:
 must_flag:
   - "Profiling"
   - "Bußgeldrisiko"
-  - "Phasierte Anwendung"
+  - "Überholte Geltungsdaten"
+  - "02.12.2027"
+  - "Bundesnetzagentur"
 ---

@@ -7,11 +7,11 @@
 
 <p align="center">
   <a href="https://github.com/borghei/AI-Skills-German-Law/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/borghei/AI-Skills-German-Law/validate.yml?branch=main&label=CI&logo=github" alt="CI Status"></a>
-  <img src="https://img.shields.io/badge/Areas-49-brightgreen.svg" alt="49 Areas">
-  <img src="https://img.shields.io/badge/Skills-189-success.svg" alt="189 Skills">
+  <img src="https://img.shields.io/badge/Areas-50-brightgreen.svg" alt="50 Areas">
+  <img src="https://img.shields.io/badge/Skills-226-success.svg" alt="226 Skills">
   <img src="https://img.shields.io/badge/Providers-Claude_%7C_Gemini_%7C_GPT-purple.svg" alt="Providers">
-  <img src="https://img.shields.io/badge/Last_verified-2026--05--22-blue.svg" alt="Last verified">
-  <img src="https://img.shields.io/badge/Compliance-DSGVO_%7C_KI--VO_%7C_NIS2_%7C_HinSchG_%7C_LkSG_%7C_DORA_%7C_DSA_%7C_CSRD-red.svg" alt="Compliance">
+  <img src="https://img.shields.io/badge/Last_verified-2026--07--21-blue.svg" alt="Last verified">
+  <img src="https://img.shields.io/badge/Compliance-DSGVO_%7C_KI--VO_%7C_NIS2_%7C_CRA_%7C_HinSchG_%7C_LkSG_%7C_DORA_%7C_DSA_%7C_CSRD-red.svg" alt="Compliance">
   <img src="https://img.shields.io/github/stars/borghei/AI-Skills-German-Law?style=social" alt="GitHub Stars">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0_OR_MIT-yellow.svg" alt="License"></a>
 </p>
@@ -40,7 +40,7 @@ A `[Modellwissen]`-Halluzination in einem Kündigungsschreiben ist kein Bug. Sie
 
 ## The fix
 
-A focused, **provider-agnostic** library: 49 areas, 189 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
+A focused, **provider-agnostic** library: 50 areas, 226 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
 
 It is **not legal advice**, **not a Beck-Online substitute**, and **not for Mandatsdaten without a § 203 StGB-compliant gateway**. It is a tested drafting aid with an honest paper trail.
 
@@ -86,16 +86,16 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 
 ## What's inside
 
-**49 areas: 24 substantive areas of German law (general practice and constitutional/public law), 5 Fachanwaltschaften, 7 EU/cross-cutting compliance frameworks, and 13 additional specialty plugins (regulated industries, IP, professional, finance/antitrust)** — together covering the breadth of German legal practice. Each area ships as its own installable plugin.
+**50 areas: 24 substantive areas of German law (general practice and constitutional/public law), 5 Fachanwaltschaften, 8 EU/cross-cutting compliance frameworks, and 13 additional specialty plugins (regulated industries, IP, professional, finance/antitrust)** — together covering the breadth of German legal practice. Each area ships as its own installable plugin.
 
 ### German legal practice
 
 | Area | Plugin | Coverage |
 |---|---|---|
-| **Arbeitsrecht** | [`arbeitsrecht/`](./arbeitsrecht/) | KSchG-Prüfung, § 102 BetrVG, Aufhebungsvertrag, Abmahnung, Sozialauswahl, Massenentlassung |
+| **Arbeitsrecht** (14) | [`arbeitsrecht/`](./arbeitsrecht/) | Kündigungsschutzklage § 4 KSchG, Betriebsratsanhörung § 102 BetrVG, Massenentlassung §§ 17 f., Sozialauswahl, Zeugnis § 109 GewO, Befristung § 14 TzBfG, AGG § 15, § 613a, Urlaub, **Entgelttransparenz** |
 | **Datenschutzrecht / GDPR** | [`datenschutzrecht/`](./datenschutzrecht/) | DSGVO/BDSG, AVV-Review, Art. 15 Auskunft, Art. 33/34 Datenpanne, DPIA, Drittlandtransfer |
-| **Vertragsrecht** | [`vertragsrecht/`](./vertragsrecht/) | AGB-Kontrolle §§ 305 ff. BGB, Klauselgestaltung, c.i.c., Leistungsstörung, Anfechtung |
-| **Mietrecht** | [`mietrecht/`](./mietrecht/) | Wohnraummiete, Mieterhöhung § 558 BGB, Kündigung §§ 573 ff., Betriebskostenabrechnung, WEG |
+| **Vertragsrecht** (14) | [`vertragsrecht/`](./vertragsrecht/) | AGB-Kontrolle §§ 305 ff., Kaufmängel §§ 434 ff., Werkvertrag §§ 631 ff., Rücktritt/Schadensersatz, Verbraucherwiderruf, Verjährung, Sicherheiten, Vertragsstrafe, § 313, Anfechtung, Vergleich, c.i.c. |
+| **Mietrecht** (13) | [`mietrecht/`](./mietrecht/) | Mieterhöhung § 558, Modernisierung § 559, fristlose Kündigung § 543, Betriebskosten § 556, Mietmangel § 536, Räumung, Mietpreisbremse, Kaution § 551, Schönheitsreparaturen, Gewerberaummiete |
 | **Wohnungseigentumsrecht (WEG)** | [`wohnungseigentumsrecht/`](./wohnungseigentumsrecht/) | Beschlussanfechtung §§ 44, 45 WEG, Jahresabrechnung/Hausgeld § 28 WEG, bauliche Veränderung §§ 20, 21 WEG — post-WEMoG |
 | **Gesellschaftsrecht** | [`gesellschaftsrecht/`](./gesellschaftsrecht/) | GmbH-Recht (GmbHG), Geschäftsführerhaftung, Gesellschafterbeschlüsse, AG-Grundzüge |
 | **Strafrecht** | [`strafrecht/`](./strafrecht/) | Strafbefehl-Verteidigung, Akteneinsicht, OWi-Verkehrsrecht, Beschuldigtenbelehrung |
@@ -119,13 +119,14 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 
 | Area | Plugin | Triggers when |
 |---|---|---|
-| **EU KI-VO / AI Act** | [`ki-vo-compliance/`](./ki-vo-compliance/) | Any company deploying AI in the EU |
+| **EU KI-VO / AI Act** | [`ki-vo-compliance/`](./ki-vo-compliance/) | Any company deploying AI in the EU. **Art. 50 + GPAI enforcement from 02.08.2026**; Hochrisiko deferred to 02.12.2027 / 02.08.2028 |
+| **Cyber Resilience Act** | [`cyber-resilience-act/`](./cyber-resilience-act/) | Anyone placing a product with digital elements on the EU market. **Meldepflichten ab 11.09.2026** (24 h / 72 h / 14 d) |
 | **NIS2** | [`nis2/`](./nis2/) | ~30,000 German entities (essential plus important) |
 | **HinSchG** | [`hinweisgeberschutz/`](./hinweisgeberschutz/) | Every employer with 50 or more EE |
-| **LkSG** | [`lieferkettengesetz/`](./lieferkettengesetz/) | Companies over 1,000 EE in DE (CSDDD soon broader) |
+| **LkSG** | [`lieferkettengesetz/`](./lieferkettengesetz/) | BAFA-Berichtsprüfung seit 03.09.2025 eingestellt; Sorgfaltspflichten bleiben. CSDDD ab 26.07.2029 (> 5.000 EE **und** > 1,5 Mrd. EUR) |
 | **DORA** | [`dora/`](./dora/) | Banks, insurers, investment firms, crypto, CASPs |
 | **DSA / DMA** | [`dsa-dma/`](./dsa-dma/) | Hosting providers, online platforms, VLOPs, gatekeepers |
-| **CSRD / ESRS** | [`csrd/`](./csrd/) | Large companies, phased 2024 to 2028 (Omnibus pending) |
+| **CSRD / ESRS** | [`csrd/`](./csrd/) | Nach Omnibus I (in Kraft 18.03.2026): > 1.000 Beschäftigte **und** > 450 Mio. EUR Nettoumsatz |
 
 ### Substantive general law (expanded coverage)
 
@@ -189,17 +190,21 @@ We are unsentimental about trust. Here is what is verified today, what is in act
 
 ### Production-grade today
 
-- **Repo structure plus CI.** Every plugin manifest validates. CI runs `validate.py` on every push to catch structural drift. Locally, `python scripts/eval.py` runs 2,982 fact-pattern assertions across 189 skills (189/189 passing).
+- **Repo structure plus CI.** Every plugin manifest validates. CI runs `validate.py` on every push to catch structural drift. Locally, `python scripts/eval.py` runs 3,922 fact-pattern assertions across 226 skills (226/226 passing).
 - **Statute citations.** Every `§ X` links to the **authoritative public source**, [gesetze-im-internet.de](https://www.gesetze-im-internet.de) and [EUR-Lex](https://eur-lex.europa.eu). One click, verifiable.
 - **Methodology.** Gutachtenstil, Anspruchsgrundlagen-Reihenfolge, BGH/Beck-Zitierweise, no Präjudizienbindungs-Argumente, textbook-correct conventions, documented in [`CONVENTIONS.md`](./CONVENTIONS.md) and enforced by the reviewer sub-agent.
 - **Compliance scaffolding.** PII redaction ([`scripts/pii_redact.py`](./scripts/pii_redact.py)), gateway setup guide ([`references/gateway-setup.md`](./references/gateway-setup.md)), § 203 / DSGVO / KI-VO checklist ([`references/compliance-checklist.md`](./references/compliance-checklist.md)).
-- **Deterministic legal calculators.** Fristenberechnung (§§ 187-193 BGB, § 222 ZPO), Verjährung (§§ 195-199 BGB), RVG and GKG fees from version-pinned statutory tables, all stdlib and unit-tested, no model call. See [`references/rechner.md`](./references/rechner.md).
+- **Deterministic legal calculators.** Fristenberechnung (§§ 187-193 BGB, § 222 ZPO), Verjährung (§§ 195-199 BGB), Kündigungsfristen (§ 622 BGB), Verzugszinsen (§§ 288, 247 BGB), RVG and GKG fees from version-pinned statutory tables — all stdlib, 47 unit tests, no model call. This is where language models hallucinate most reliably, so the arithmetic is pushed out of the model entirely; the legal judgment (Zugang, Fristbeginn, Anspruchsart) stays an explicit input. Values that drift are **required inputs, never hardcoded** — the Basiszinssatz resets every 1 Jan / 1 Jul, so a baked-in figure would silently go wrong. See [`references/rechner.md`](./references/rechner.md).
 - **Citation verification.** [`scripts/verify_citations.py`](./scripts/verify_citations.py) parses every `§`-anchor, ECLI and CELEX in a skill and resolves it (statute anchors against gesetze-im-internet.de). It runs in CI as an informational pass; `--strict` (and `--online`) turns it into a hard gate for local pre-commit use.
 - **Multi-provider parity.** One canonical `SKILL.md` per skill; the router regenerates Claude / Gemini / OpenAI adapters on demand, no drift.
 
 ### In active improvement (contributions welcome)
 
-- **Case-law verification.** Every BAG / BGH / EuGH citation the model could not independently confirm carries `[unverifiziert, prüfen]`. The verification path is one PR per citation with a Beck-Online / juris / openjur URL. **Highest-leverage contribution.**
+- **Case-law verification.** Every BAG / BGH / EuGH citation the model could not independently confirm carries `[unverifiziert, prüfen]`. The verification path is one PR per citation with a Beck-Online / juris / openjur URL. **Highest-leverage contribution — and we mean that literally.**
+
+  Coverage today: **12 of 50 areas** have a verification record. Where a pass has run, the measured error rate is roughly **10 %**, and the errors are not obvious junk — in `urheber-medienrecht`, 30 decisions were confirmed and **12 errors caught**, including two competing citations for the same case where *neither* was correct, and one Aktenzeichen that resolves to a real decision of the cited date but a different case with a different Fundstelle. That is the failure mode that survives casual review because it looks checkable.
+
+  A practical method that does not need a paywalled database: `https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=YYYY-MM-DD&Aktenzeichen=<AZ>` resolves whenever the decision date is known. Caveat: dejure's text search does **not** index Entscheidungsnamen, so a name-only citation can be confirmed but never excluded — record such cases as "not retrievable", not "non-existent".
 - **Legal-accuracy eval.** Structural eval ships in CI (does the workflow mention § 1 KSchG). A behavioural layer now generates a [promptfoo](https://www.promptfoo.dev) config from the `test.md` files ([`scripts/build_eval_config.py`](./scripts/build_eval_config.py), see [`evals/README.md`](./evals/README.md)): deterministic assertions plus LLM-graded `expected_behavior` rubrics, judged by a different model family. Growing the per-skill rubric coverage and gold answers is open work.
 - **Rechtsanwalt review.** Each area gets stronger after a 2-hour pass by a licensed Anwalt in that Rechtsgebiet. Reviews are credited per area.
 
@@ -219,7 +224,7 @@ We are unsentimental about trust. Here is what is verified today, what is in act
 6. Use on live Mandate only after 1 to 5 plus your own Berufsrechts-Freigabe.
 ```
 
-The full audit trail lives in [`VERIFICATION_LOG.md`](./VERIFICATION_LOG.md), last pass 2026-05-21.
+The full audit trail lives in [`VERIFICATION_LOG.md`](./VERIFICATION_LOG.md) and [`VERIFICATION_STATUS.md`](./VERIFICATION_STATUS.md), last pass 2026-07-21.
 
 ---
 
@@ -228,7 +233,7 @@ The full audit trail lives in [`VERIFICATION_LOG.md`](./VERIFICATION_LOG.md), la
 ```bash
 # Validate the repo structure
 python scripts/validate.py
-# OK, 49 areas validated.
+# OK, 50 areas validated.
 
 # Run the eval suite (structural smoke check)
 python scripts/eval.py
@@ -251,6 +256,9 @@ python scripts/orchestrate.py --list-chains
 python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 3 --einheit wochen --land BY
 python -m scripts.legal_calc.cli verjaehrung --entstehung 10.03.2023 --kenntnis 05.07.2023
 python -m scripts.legal_calc.cli rvg --wert 10000 --posten verfahren termin
+python -m scripts.legal_calc.cli kuendigungsfrist --eintritt 01.03.2014 --zugang 20.07.2026
+python -m scripts.legal_calc.cli verzugszinsen --betrag 12500 --verzug-ab 15.03.2025 \
+    --bis 21.07.2026 --basiszins 01.01.2026:1.10 --entgeltforderung --kein-verbraucher-beteiligt
 python -m unittest scripts.legal_calc.tests
 
 # Verify the statute / ECLI / CELEX citations in the skills
@@ -288,11 +296,11 @@ Built-in helpers: [`references/compliance-checklist.md`](./references/compliance
 | [`CONVENTIONS.md`](./CONVENTIONS.md) | Provider-neutral conventions: language, methodology, citation, skill format |
 | [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) | Contributor Covenant 2.1 |
 | [`CHANGELOG.md`](./CHANGELOG.md) | Notable changes per release |
-| [`VERIFICATION_LOG.md`](./VERIFICATION_LOG.md) | Dated source-verification record, last pass 2026-05-21 |
+| [`VERIFICATION_LOG.md`](./VERIFICATION_LOG.md) | Dated source-verification record, last pass 2026-07-21 |
 | [`references/zitierweise.md`](./references/zitierweise.md) | BGH/Beck-Zitierweise (verbindlich) |
 | [`references/methodik.md`](./references/methodik.md) | Gutachtenstil, Anspruchsgrundlagen-Reihenfolge, Auslegungsmethoden |
 | [`references/primary-sources.md`](./references/primary-sources.md) | Verified URLs to gesetze-im-internet.de plus EUR-Lex |
-| [`references/rechner.md`](./references/rechner.md) | Deterministic calculators: Fristen, Verjährung, RVG, GKG (statutory basis, caveats, CLI) |
+| [`references/rechner.md`](./references/rechner.md) | Deterministic calculators: Fristen, Verjährung, Kündigungsfristen § 622 BGB, Verzugszinsen §§ 288/247 BGB, RVG, GKG (statutory basis, caveats, CLI) |
 | [`evals/README.md`](./evals/README.md) | Behavioural LLM-graded eval harness (promptfoo) and how to run it |
 | [`references/compliance-checklist.md`](./references/compliance-checklist.md) | § 203 / DSGVO / KI-VO checklist before deployment |
 | [`references/gateway-setup.md`](./references/gateway-setup.md) | Routing through a § 203-compliant gateway |
@@ -333,7 +341,7 @@ Dual-licensed: **Apache-2.0** ([LICENSE-APACHE](./LICENSE-APACHE)) **OR** **MIT*
 ---
 
 <p align="center">
-  <strong>49 areas · 189 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
+  <strong>50 areas · 226 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
   Verified <strong>2026-05-21</strong> · <a href="https://borghei.me">borghei.me</a>
 </p>
 

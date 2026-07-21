@@ -5,7 +5,77 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+### Fixed — superseded law (2026-07-21)
+
+Four areas taught law that had been repealed, replaced or deferred. Corrections
+verified against primary sources where marked:
+
+- **`energierecht` / `baurecht` — GEG.** The **Gebäudemodernisierungsgesetz**
+  passed the Bundestag on **10.07.2026 (323:271)**, deleting **§§ 71, 71b–71p and
+  § 72 GEG**. The 65 %-renewables heating rule is gone; building-level duties now
+  key off the municipal **Wärmeplan (WPG)**. Verified against bundestag.de.
+- **`lieferkettengesetz` — LkSG-Berichtspflicht.** BAFA stopped reviewing reports
+  under **§§ 12, 13 LkSG on 03.09.2025** and closed the submission portal. Encoded
+  as an **executive Weisung, not a statutory repeal** — the duties formally remain.
+  §§ 5, 6, 7, 8, 10, 14, 15 survive unchanged. Verified against bafa.de.
+- **`ki-vo-compliance` — Digital Omnibus on AI.** High-risk obligations deferred
+  (Anhang III → **02.12.2027**, Anhang I → **02.08.2028**), but **Art. 50
+  transparency remains 02.08.2026** and **GPAI (Art. 51–55) was not deferred** —
+  Commission enforcement and fines begin **02.08.2026**. Added the Art. 52(1)
+  two-week notification, the mandatory training-content template, the Code of
+  Practice signatory position, Art. 111(3) legacy models, and two new prohibitions
+  (NCII, CSAM) from 02.12.2026. Germany's market surveillance authority is the
+  **Bundesnetzagentur**, not the Datenschutzaufsicht.
+- **`csrd` / `lieferkettengesetz` — Omnibus I** (RL (EU) 2026/470, in force
+  18.03.2026): CSRD **> 1.000 Beschäftigte UND > 450 Mio. EUR**; CSDDD
+  **> 5.000 UND > 1,5 Mrd. EUR**, duties from 26.07.2029.
+- **`kapitalmarktrecht` — EU Listing Act** (applicable 05.06.2026): in a
+  zeitlich gestreckter Vorgang only the **Endereignis** is ad-hoc disclosable.
+  Zwischenschritte remain *Insiderinformation* for Art. 14/10/18 purposes — the
+  decoupling of Art. 7 from Art. 17 is now stated explicitly.
+- **`produktrecht`** — new Produkthaftungsregime from **09.12.2026**; because
+  § 13 ProdHaftG runs ten years, both regimes coexist into the 2030s, so the skill
+  gained a placing-on-market weichenstellung rather than a replacement.
+- **`vergaberecht`, `geldwaesche-aml-kyc`, `it-recht`** — BTTG (01.05.2026),
+  Vergabebeschleunigungsgesetz (01.07.2026), AMLD6/AMLR/AMLA, Data Act + DADG.
+
 ### Added
+
+- **New area `cyber-resilience-act`** (4 skills, VO (EU) 2024/2847): scope test,
+  the **24 h / 72 h / 14 d reporting regime starting 11.09.2026**, product
+  requirements and SBOM, coordinated vulnerability disclosure.
+- **`vertragsrecht` 2 → 14 skills** — Kaufmängel, Werkvertrag, Rücktritt/SE,
+  Verbraucherwiderruf, Verjährung, Sicherheiten, Vertragsstrafe, § 313,
+  Abtretung, Anfechtung, Vergleich, vorvertragliche Phase.
+- **`arbeitsrecht` 3 → 14 skills** — Kündigungsschutzklage, Betriebsratsanhörung,
+  Massenentlassung, Sozialauswahl, Zeugnis, Befristung, AGG, Vertragsgestaltung,
+  § 613a, Urlaub, **Entgelttransparenz** (Germany in transposition default since
+  08.06.2026; direct vertical effect against staatliche Stellen).
+- **`mietrecht` 3 → 13 skills**, with the duplicated Mieterhöhungs-Skills merged
+  and the freed slot spent on the genuinely missing § 559 Modernisierung.
+- **Deterministic calculators extended** (`scripts/legal_calc/`): `kuendigungs-
+  fristen.py` (§ 622 BGB) and `verzugszinsen.py` (§§ 288, 247 BGB). Test suite
+  **29 → 47**. The Basiszinssatz is a required input, never hardcoded, and
+  § 622 Abs. 2 S. 2 is not applied by default (Kücükdeveci). Calculator-wired
+  skills: **2 → 11**.
+
+### Changed
+
+- **`scripts/verify_citations.py`** — a case citation carrying an authoritative
+  source link (dejure.org, bverfg.de, curia.europa.eu, …) now counts as
+  **verified** rather than "unmarked". Previously verifying a citation *raised*
+  the warning count, so the metric inverted quality. Repo-wide warnings
+  **498 → 437** despite the file count rising 189 → 226.
+
+### Verified
+
+- **`urheber-medienrecht` citation pass** — 30 decisions confirmed against
+  dejure.org, **12 errors caught**. Both candidates for "Das Boot II" were wrong
+  (`I ZR 145/11` is "Fluch der Karibik"); "Tchibo/Rolex II" is `I ZR 107/90`, and
+  the previously cited `I ZR 6/06` is a real decision of that date but a different
+  case with a different Fundstelle. See VERIFICATION_STATUS.md.
+
+Counts: **50 areas / 226 skills** (3,922 eval assertions, 226/226 passing).
 - **Thirty compliance/civil skills** bringing the last ten 1-skill areas to four
   each: **bankrecht** (Widerruf Verbraucherdarlehen, Bürgschaft, Zahlungsdienst-
   haftung), **betreuungsrecht** (Betreuerbestellung, Einwilligungsvorbehalt,

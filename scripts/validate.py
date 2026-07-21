@@ -80,6 +80,7 @@ AREAS = [
     "berufsrecht-anwaltschaft",
     "kapitalmarktrecht",
     "kartellrecht",
+    "cyber-resilience-act",
 ]
 
 

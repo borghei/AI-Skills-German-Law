@@ -19,6 +19,21 @@ test: ./test.md
 
 Der Skill liefert eine **Übersicht** über die in einem Unternehmen einschlägigen Energieeffizienzpflichten und ordnet sie den richtigen Adressatenkreisen zu: Energiemanagementsystem (EnMS) bzw. Umweltmanagementsystem (UMS) nach § 8 EnEfG, Energieaudit nach § 8 EDL-G, Veröffentlichung wesentlicher Effizienzmaßnahmen, Schnittstelle GEG/CSRD. Er bereitet die Nachweisführung gegenüber dem BAFA vor.
 
+> **⚠️ Aktualität (Stand 2026-07) — die 65 %-Regel für Heizungen ist aufgehoben:** Der Deutsche Bundestag hat das **Gebäudemodernisierungsgesetz (GModG)** am **10.07.2026** in namentlicher Abstimmung mit **323 : 271** Stimmen beschlossen. Das Gesetz **streicht §§ 71, 71b–71p und § 72 GEG**. Die Pflicht, dass jede neu eingebaute Heizung zu mindestens **65 % mit erneuerbaren Energien** betrieben werden muss, **besteht nicht mehr**.
+>
+> | Alt (bis GModG) | Neu (GModG) |
+> |---|---|
+> | § 71 GEG: 65 % erneuerbare Energien je Heizung | gestrichen — **freie Heizungswahl ab November 2026** |
+> | §§ 71b–71p GEG: Erfüllungsoptionen, Übergangs- und Härtefallregeln | gestrichen |
+> | § 72 GEG: Betriebsverbote/Austauschpflichten | gestrichen |
+> | — | **Bio-Anteilspflicht („Bio-Treppe") ab 01.01.2029** für weiter betriebene Gas-/Ölheizungen |
+> | — | **Quote für grünes Gas / grünes Heizöl ab 2028** |
+> | — | **Klimaneutralität aller Heizbrennstoffe bis 2045** |
+>
+> **Neuer Anknüpfungspunkt auf Gebäudeebene ist die kommunale Wärmeplanung nach dem WPG**, nicht mehr eine bundeseinheitliche Prozentvorgabe: Kommunen mit **mehr als 100.000 Einwohnern** haben den Wärmeplan bis **30.06.2026** vorzulegen, kleinere Kommunen bis **30.06.2028**. Ob und welche Anforderungen an einen Heizungstausch gestellt werden, ist deshalb **standortbezogen** anhand des jeweiligen kommunalen Wärmeplans (Gebiet für Wärmenetz / Wasserstoffnetz / dezentrale Versorgung) zu ermitteln.
+>
+> Weitergeltend bleiben die **Anforderungen an den Primärenergiebedarf** und die **Energieausweis-Pflichten (§§ 79 ff. GEG)**. Das **EnEfG** und das **EDL-G** sind von der Novelle **nicht** betroffen. Das genaue **Inkrafttreten** (erwartet Ende Juli / Anfang August 2026) und die BGBl.-Fundstelle sind `[unverifiziert - prüfen]`; Verkündung war zum Stand 07/2026 nicht belegbar.
+
 ## Eingaben
 
 - Unternehmensgröße (MA, Umsatz, Bilanzsumme – für KMU-Einstufung nach Empfehlung 2003/361/EG)
@@ -27,6 +42,7 @@ Der Skill liefert eine **Übersicht** über die in einem Unternehmen einschlägi
 - Konzernstruktur (verbundene Unternehmen für KMU-Berechnung)
 - bisherige Energieaudits (Datum, Auditor, BAFA-Meldung)
 - CSRD-Berichtspflicht (ja / nein / ab welchem Geschäftsjahr)
+- Standort(e) der Betriebsgebäude und **Stand der kommunalen Wärmeplanung (WPG)** je Standort (Wärmeplan vorgelegt? ausgewiesenes Gebiet?)
 
 ## Sub-Agent-Architektur
 
@@ -71,15 +87,23 @@ Pflichtenkatalog (§ 8 Abs. 3, 4 EnEfG):
 
 § 9 EnEfG verpflichtet erfasste Unternehmen, **wesentliche Energieeffizienzmaßnahmen** zu erstellen, durch einen unabhängigen Auditor / einen Energiemanager bestätigen zu lassen und zu **veröffentlichen**. Es besteht **keine** unmittelbare Umsetzungspflicht, aber eine Begründungspflicht bei Nichtumsetzung wirtschaftlich zumutbarer Maßnahmen.
 
-### 5. Schnittstelle GEG (Gebäudeenergie)
+### 5. Schnittstelle GEG / kommunale Wärmeplanung (Gebäudeenergie)
 
-Das **Gebäudeenergiegesetz (GEG)** regelt Gebäudeeffizienz für Neubau und Bestand:
+Das **Gebäudeenergiegesetz (GEG)** regelt die Gebäudeeffizienz für Neubau und Bestand. Nach dem **GModG** (Bundestag 10.07.2026) gilt:
 
-- Anforderungen an den Primärenergiebedarf
-- Anteile erneuerbarer Energien (§ 71 GEG – 65 %-Vorgabe für neue Heizungen ab 2024)
-- Energieausweis-Pflichten (§§ 79 ff. GEG)
+- **Anforderungen an den Primärenergiebedarf** — unverändert weitergeltend.
+- **Energieausweis-Pflichten (§§ 79 ff. GEG)** — unverändert weitergeltend.
+- **Keine 65 %-Vorgabe mehr für neue Heizungen.** §§ 71, 71b–71p und § 72 GEG sind gestrichen; ab **November 2026** gilt freie Heizungswahl. Gas- und Ölheizungen dürfen weiter eingebaut und betrieben werden.
+- Stattdessen greifen **brennstoffseitige** Pflichten: **Bio-Anteil („Bio-Treppe") ab 01.01.2029**, **Quote für grünes Gas / grünes Heizöl ab 2028**, **Klimaneutralität aller Heizbrennstoffe bis 2045** `[unverifiziert - prüfen]` hinsichtlich der Ausgestaltung in der verkündeten Fassung.
 
-Die Schnittstelle zum EnEfG/EDL-G ist **kumulativ**, nicht alternativ: EnEfG/EDL-G erfasst den Unternehmensverbrauch insgesamt, GEG die Gebäudehülle und Anlagentechnik.
+**Prüfungsreihenfolge auf Gebäudeebene (neu):**
+
+1. Standort bestimmen → zuständige Kommune.
+2. **Kommunalen Wärmeplan nach dem WPG** abfragen: Frist **30.06.2026** für Kommunen > 100.000 Einwohner, **30.06.2028** für kleinere Kommunen.
+3. Ausgewiesenes Gebiet feststellen (Wärmenetz / Wasserstoffnetz / dezentrale Versorgung) und daraus die konkreten Anforderungen und Anschlussperspektiven ableiten.
+4. Erst danach die Investitionsentscheidung (Heizungstausch, Nah-/Fernwärmeanschluss, Wärmepumpe) treffen.
+
+Die Schnittstelle zum EnEfG/EDL-G ist **kumulativ**, nicht alternativ: EnEfG/EDL-G erfasst den Unternehmensverbrauch insgesamt, GEG/WPG die Gebäudehülle, die Anlagentechnik und die standortbezogene Wärmeversorgung. **EnEfG und EDL-G sind vom GModG nicht berührt.**
 
 ### 6. Schnittstelle CSRD / ESRS E1
 
@@ -109,7 +133,9 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - [§ 12 EnEfG](https://www.gesetze-im-internet.de/enefg/__12.html) (Bußgeldvorschriften)
 - [§ 8 EDL-G](https://www.gesetze-im-internet.de/edl-g/__8.html) (Energieaudit für Nicht-KMU)
 - [§ 12 EDL-G](https://www.gesetze-im-internet.de/edl-g/__12.html) (Bußgeldvorschriften)
-- [GEG](https://www.gesetze-im-internet.de/geg/) (Gebäudeenergiegesetz, insb. §§ 71, 79 ff.)
+- [GEG](https://www.gesetze-im-internet.de/geg/) (Gebäudeenergiegesetz, insb. §§ 79 ff. Energieausweis; **§§ 71, 71b–71p, 72 durch das GModG gestrichen**)
+- Gebäudemodernisierungsgesetz (GModG), Beschluss des Bundestages vom **10.07.2026** (namentliche Abstimmung 323 : 271) — BGBl.-Fundstelle und Inkrafttreten `[unverifiziert - prüfen]`
+- [WPG (Wärmeplanungsgesetz)](https://www.gesetze-im-internet.de/wpg/) (kommunale Wärmeplanung; Fristen 30.06.2026 / 30.06.2028)
 - EU: [Empfehlung 2003/361/EG](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32003H0361) (KMU-Definition)
 - EU: [RL (EU) 2023/1791](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023L1791) (Energieeffizienz-RL Neufassung, EED)
 - EU: [RL (EU) 2022/2464](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32022L2464) (CSRD)
@@ -143,7 +169,11 @@ II. Pflicht-Matrix
    | EnMS/UMS § 8 EnEfG          | ja/nein   | <Frist>      | Zertifikat  |
    | Wesentl. Maßnahmen § 9 EnEfG| ja/nein   | <Frist>      | Veröffentl. |
    | GEG (Gebäude)               | ja/nein   | ─            | Energieausw.|
+   | Kommunaler Wärmeplan (WPG)  | ja/nein   | 30.06.2026 / 30.06.2028 | Wärmeplan Kommune |
    | CSRD / ESRS E1              | ja/nein   | ab GJ JJJJ   | Lagebericht |
+
+   Hinweis: Die 65 %-Vorgabe des § 71 GEG ist durch das GModG (10.07.2026) gestrichen —
+   nicht mehr prüfen. Maßgeblich ist der kommunale Wärmeplan am Standort.
 
 III. Empfehlung
     – konkretes To-Do (Reihenfolge)
@@ -168,7 +198,7 @@ V. Quellenverzeichnis
 >
 > **Wesentliche Maßnahmen § 9 EnEfG.** Identifikation, Begutachtung, Veröffentlichung; Umsetzungspflicht nur, soweit wirtschaftlich zumutbar.
 >
-> **GEG-Schnittstelle.** Eigenständig zu prüfen (Heizungstausch, Energieausweis).
+> **GEG-Schnittstelle.** Eigenständig zu prüfen (Energieausweis, Primärenergiebedarf). Für einen anstehenden Heizungstausch gilt **nicht mehr** die 65 %-Vorgabe des § 71 GEG — diese ist durch das GModG vom 10.07.2026 gestrichen. Maßgeblich ist der **kommunale Wärmeplan nach dem WPG** am Betriebsstandort; ist die Kommune > 100.000 Einwohner, lag der Plan zum 30.06.2026 vor und ist abzufragen. Brennstoffseitig sind Bio-Quote ab 2029 und Klimaneutralität bis 2045 einzupreisen `[unverifiziert - prüfen]`.
 >
 > **CSRD-Schnittstelle.** Falls die Mandantin in den Anwendungsbereich fällt, ESRS-E1-Datenpunkte integriert mit EnMS-Erhebung erheben.
 >
@@ -182,3 +212,8 @@ V. Quellenverzeichnis
 - **CSRD-Daten unabhängig vom EnMS erhoben** – Doppelarbeit, Inkonsistenzen zwischen Lagebericht und BAFA-Meldung.
 - **Übergangsfristen EnEfG** unkritisch übernommen – die Geltung der 20-Monats-Frist ist bei jeder Anwendung mit `[unverifiziert – aktuelle Fassung prüfen]` zu kennzeichnen.
 - **Sanktionshöhen** aus älterer Fassung übernommen – § 12 EnEfG / § 12 EDL-G in aktueller Bekanntmachung prüfen.
+- **Mandant plant gegen aufgehobenes Recht (65 %-Regel)** – die schwerwiegendste Fehlerquelle: Beratung oder Investitionsplanung auf Basis des **gestrichenen § 71 GEG**. Die 65 %-Vorgabe für neue Heizungen existiert seit dem GModG (Bundestag 10.07.2026) nicht mehr; §§ 71, 71b–71p, 72 GEG sind entfallen. Wer sie weiter anwendet, erzeugt unnötige Investitionen und falsche Fördererwartungen.
+- **Kommunalen Wärmeplan nicht abgefragt** – die Gebäudeebene knüpft nun standortbezogen an den Wärmeplan nach dem **WPG** an (Frist 30.06.2026 bei > 100.000 Einwohnern, sonst 30.06.2028). Ohne Abfrage lässt sich die Anschluss- und Investitionsperspektive nicht beurteilen.
+- **Brennstoffpflichten übersehen** – die Entlastung ist nur anlagenseitig: **Bio-Anteilspflicht ab 01.01.2029**, Quote für grünes Gas/Heizöl ab 2028 und Klimaneutralität bis 2045 bleiben Kostentreiber einer weiterbetriebenen Gas-/Ölheizung.
+- **GModG-Reichweite überdehnt** – das GModG ändert das **GEG**, nicht das **EnEfG** oder das **EDL-G**. EnMS-Pflicht (§ 8 EnEfG) und Audit-Pflicht (§ 8 EDL-G) bestehen unverändert fort.
+- **Inkrafttreten als gesichert dargestellt** – Verkündung und Inkrafttretensdatum des GModG waren zum Stand 07/2026 nicht belegbar und sind mit `[unverifiziert - prüfen]` zu kennzeichnen.

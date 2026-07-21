@@ -12,7 +12,13 @@ test: ./test.md
 
 Diese Skill bündelt die **Nachweis- und Durchsetzungsebene** des LkSG: die interne **Dokumentationspflicht** (**§ 10 LkSG**), die **Berichtspflicht** gegenüber dem BAFA (**§ 12 LkSG**), die behördliche Kontrolle und **Anordnungen** (**§§ 14, 15 LkSG**) sowie das **Bußgeld** (**§ 24 LkSG**). Sie ordnet die Pflichten dem aktuellen Rechtsstand zu und bereitet auf eine **BAFA**-Kontrolle vor.
 
-> **⚠️ Aktualität (Stand 2026-06):** Die **Berichtspflicht** nach **§ 12 LkSG** und die behördliche Berichtsprüfung (§ 13 LkSG) werden durch eine LkSG-Novelle **rückwirkend zum 01.01.2023 gestrichen**; das **BAFA** prüft Unternehmensberichte nach §§ 12, 13 LkSG bereits seit Herbst 2025 nicht mehr und verlangt keine Einreichung. Die behördliche **Kontrolle** der Sorgfaltspflichten bleibt; Ordnungswidrigkeiten sollen künftig nur bei besonders schweren Verstößen (z. B. unterlassene **Abhilfemaßnahmen** oder fehlende Präventionskonzepte) verfolgt werden. Außerdem überlagert die **CSDDD** das LkSG. Konkreter Inkrafttretens- und Anwendungsstand: `[unverifiziert - prüfen]`.
+> **⚠️ Aktualität (Stand 2026-07) — Berichtseinreichung faktisch eingestellt:** Das **BAFA** hat die Prüfung von Unternehmensberichten nach **§§ 12, 13 LkSG mit Wirkung zum 03.09.2025 vollständig eingestellt**; die Einreichung über den dafür vorgesehenen BAFA-Zugang **ist nicht mehr möglich**. Grundlage ist ein **Kabinettsbeschluss vom 03.09.2025 nebst Weisung an das BAFA**, mit der die Bundesregierung nach eigener Formulierung „der Gesetzesnovelle vorgreift".
+>
+> **Wichtige Abgrenzung:** Es handelt sich um eine **exekutive Weisung, nicht um eine Gesetzesaufhebung**. Die §§ 12, 13 LkSG stehen formal weiter im Gesetz; sie werden lediglich nicht mehr vollzogen und können mangels Einreichungsweg auch nicht erfüllt werden. Die geplante Novelle (Streichung, teils rückwirkend diskutiert) war zum Stand 07/2026 **nicht als verkündetes Gesetz nachweisbar** — Inkrafttretensstand `[unverifiziert - prüfen]`.
+>
+> **Unverändert fortbestehend:** Risikoanalyse (§ 5), Präventions- und Abhilfemaßnahmen (§§ 6, 7), **Beschwerdeverfahren** (§ 8), interne **Dokumentation** (§ 10) sowie die behördliche **Kontrolle** und **Anordnungsbefugnis** (§§ 14, 15). Ordnungswidrigkeiten sollen künftig auf besonders schwere Verstöße konzentriert werden.
+>
+> **Ablösung:** Das LkSG wird durch die **CSDDD**-Umsetzung abgelöst — Umsetzungsfrist **26.07.2028**, materielle Pflichten ab **26.07.2029** (Fassung nach Omnibus I). Mandanten sollten die bestehenden LkSG-Kontrollen bereits jetzt auf Art. 8–11 CSDDD mappen.
 
 ## Eingaben
 
@@ -35,8 +41,10 @@ Ein **Dokumentations-Agent** stellt die fortlaufende interne Dokumentation nach 
 
 ### 2. Berichtspflicht (§ 12 LkSG)
 
-- Ursprünglich: jährlicher Bericht über die Erfüllung der Sorgfaltspflichten, Veröffentlichung und Einreichung beim **BAFA**.
-- **Aktuell:** Die **Berichtspflicht** nach § 12 LkSG wird durch die Novelle gestrichen; das BAFA fordert derzeit keine Berichte. Maßgeblichen Stand prüfen `[unverifiziert - prüfen]`.
+- Ursprünglich: jährlicher Bericht über die Erfüllung der Sorgfaltspflichten, Veröffentlichung und Einreichung beim **BAFA** binnen vier Monaten nach Schluss des Geschäftsjahres.
+- **Aktuell (ab 03.09.2025):** Das BAFA **prüft keine Berichte mehr und nimmt keine entgegen**; der Einreichungszugang ist geschlossen. Eine Einreichung ist damit weder möglich noch gefordert.
+- **Beratungsfolge:** Mandanten ist **nicht** zu einer Einreichung zu raten. Empfohlen wird stattdessen, den Berichtsinhalt als **interne Dokumentation nach § 10 LkSG** vorzuhalten — erstens weil § 10 fortgilt, zweitens weil die CSDDD-Berichtslinie darauf aufsetzt. Ein bereits erstellter Bericht ist nicht wertlos, sondern wird zur Dokumentationsgrundlage.
+- **Nicht als Aufhebung darstellen:** Solange die Novelle nicht verkündet ist, bleibt die Norm formal bestehen. Gegenüber Mandanten ist zwischen *nicht vollzogen* und *aufgehoben* zu unterscheiden `[unverifiziert - prüfen]`.
 
 ### 3. Behördliche Kontrolle (§ 14 LkSG)
 
@@ -57,7 +65,9 @@ Ein **Dokumentations-Agent** stellt die fortlaufende interne Dokumentation nach 
 ### 6. CSDDD-Schnittstelle
 
 - Die **CSDDD** (Richtlinie (EU) 2024/1760) wird das LkSG ablösen/überlagern (zivilrechtliche Haftung, Klimaplan, breitere Wertschöpfungskette).
-- Umsetzungs- und Anwendungstermine sind durch das Omnibus-Verfahren in Bewegung `[unverifiziert - prüfen]`.
+- **Stand nach Omnibus I** (Änderungs-RL (EU) 2026/470, in Kraft 18.03.2026): Anwendungsschwelle auf **> 5.000 Beschäftigte UND > 1,5 Mrd. EUR Nettoumsatz** angehoben; **Umsetzungsfrist 26.07.2028**, materielle Sorgfaltspflichten ab **26.07.2029**.
+- **Praxisfolge:** Ein großer Teil der bisher adressierten Unternehmen fällt aus dem CSDDD-Anwendungsbereich heraus. Die Schwellenprüfung ist daher **neu durchzuführen** — die alte LkSG-Schwelle (1.000 Beschäftigte) sagt über die CSDDD-Betroffenheit nichts aus.
+- Mapping der bestehenden LkSG-Kontrollen auf **Art. 8–11 CSDDD** empfohlen `[unverifiziert - prüfen]`.
 
 ## Risiken / typische Fehler
 

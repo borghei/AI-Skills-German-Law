@@ -1,16 +1,16 @@
 {
   "name": "ai-skills-german-law",
-  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 189 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "description": "AI skills for German legal practice and EU compliance — 48 plugins, 226 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
   "version": "0.2.0",
   "repository": "https://github.com/borghei/AI-Skills-German-Law",
   "website": "https://borghei.github.io/AI-Skills-German-Law",
   "author": "borghei",
   "license": "Apache-2.0 OR MIT",
-  "total_skills": 189,
-  "updated": "2026-06-29",
+  "total_skills": 226,
+  "updated": "2026-07-21",
   "domains": {
     "arbeitsrecht": {
-      "count": 3,
+      "count": 14,
       "tools": 0,
       "label": "Arbeitsrecht",
       "desc": "KSchG, BetrVG, Aufhebungsvertrag, Abmahnung, Sozialauswahl"
@@ -22,13 +22,13 @@
       "desc": "DSGVO, BDSG, AVV, Datenpanne, DPIA, Drittlandtransfer"
     },
     "vertragsrecht": {
-      "count": 2,
+      "count": 14,
       "tools": 0,
       "label": "Vertragsrecht",
       "desc": "AGB-Kontrolle, Klauselgestaltung, Leistungsstörung, Anfechtung"
     },
     "mietrecht": {
-      "count": 3,
+      "count": 13,
       "tools": 0,
       "label": "Mietrecht",
       "desc": "Wohnraummiete, Mieterhöhung, Kündigung, Betriebskostenabrechnung, WEG"
@@ -302,6 +302,12 @@
       "tools": 0,
       "label": "Berufsrecht (Anwaltschaft)",
       "desc": "BRAO + § 203 StGB, FAO-Fortbildung § 15, RDG-Abgrenzung"
+    },
+    "cyber-resilience-act": {
+      "count": 4,
+      "tools": 0,
+      "label": "Cyber Resilience Act",
+      "desc": "VO (EU) 2024/2847 — Anwendungsbereich, Meldepflichten ab 11.09.2026, Anhang I, CE"
     }
   },
   "skills": [
@@ -316,6 +322,72 @@
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abmahnung",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "agg-entschaedigung",
+      "description": "Entschädigung und Schadensersatz wegen Benachteiligung nach § 15 AGG – Benachteiligungsverbot §§ 1, 3, 7 AGG, Rechtfertigung §§ 8–10 AGG, Indizienbeweis und Beweislastumkehr § 22 AGG, zweistufiges Fristenregime (§ 15 Abs. 4 AGG: 2 Monate schriftliche Geltendmachung; § 61b Abs. 1 ArbGG: 3 Monate Klagefrist), Bewerberfälle und Deckelung § 15 Abs. 2 S. 2 AGG, kein Einstellungsanspruch § 15 Abs. 6 AGG, AGG-Hopping als Rechtsmissbrauchseinwand. Use when ein abgelehnter Bewerber oder ein Beschäftigter Entschädigung geltend macht oder ein Arbeitgeber eine AGG-Forderung abwehrt.",
+      "path": "arbeitsrecht/skills/agg-entschaedigung/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "agg",
+        "entschaedigung",
+        "§15",
+        "§§1",
+        "§§8",
+        "§22",
+        "§61b",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "arbeitsvertrag-gestaltung",
+      "description": "Gestaltung und AGB-Kontrolle des Arbeitsvertrages – Anwendung der §§ 305–310 BGB im Arbeitsrecht mit der Besonderheit des § 310 Abs. 4 S. 2 BGB, Transparenzgebot § 307 Abs. 1 S. 2 BGB und Verbot der geltungserhaltenden Reduktion, zweistufige Ausschlussfrist mit der zwingenden Ausnahme für den Mindestlohn (§ 3 MiLoG) und weitere unabdingbare Ansprüche, Widerrufs- und Freiwilligkeitsvorbehalte, Vertragsstrafe, Nachweispflichten § 2 NachwG in der Fassung seit 01.08.2022 samt Bußgeld § 4 NachwG, Verhältnis von Textform (Nachweis) und Schriftform (§ 623 BGB, § 14 Abs. 4 TzBfG). Use when ein Arbeitsvertrag oder ein Vertragsmuster entworfen, überarbeitet oder auf Unwirksamkeit einzelner Klauseln geprüft wird.",
+      "path": "arbeitsrecht/skills/arbeitsvertrag-gestaltung/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "arbeitsvertrag",
+        "gestaltung",
+        "§§305",
+        "§310",
+        "§307",
+        "§3",
+        "§2",
+        "§4"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "arbeitszeugnis",
+      "description": "Erteilung, Prüfung und Berichtigung des Arbeitszeugnisses – Anspruch auf einfaches und qualifiziertes Zeugnis § 109 GewO, § 630 BGB, Gebot der Zeugnisklarheit und Verbot verdeckter Aussagen § 109 Abs. 2 GewO, Notenstufen der Zeugnissprache und Geheimcodes, Verteilung der Darlegungslast (ab der Note 'befriedigend' trägt der Arbeitnehmer die Darlegungslast für eine bessere Beurteilung), Zwischenzeugnis, Berichtigungs- und Erfüllungsklage, Form und Ausstellungsdatum. Use when ein Arbeitnehmer ein Zeugnis verlangt oder ein erteiltes Zeugnis auf verdeckte Abwertungen prüfen lässt, oder wenn ein Arbeitgeber ein rechtssicheres Zeugnis formulieren will.",
+      "path": "arbeitsrecht/skills/arbeitszeugnis/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "arbeitszeugnis",
+        "§109",
+        "§630",
+        "bgb",
         "arbeitsrecht"
       ],
       "tools": 0,
@@ -345,6 +417,85 @@
       "has_assets": false
     },
     {
+      "name": "befristungskontrolle",
+      "description": "Wirksamkeitskontrolle befristeter Arbeitsverträge nach dem TzBfG – Schriftformerfordernis § 14 Abs. 4 TzBfG, Sachgrundbefristung § 14 Abs. 1 TzBfG mit dem Katalog Nr. 1–8, sachgrundlose Befristung § 14 Abs. 2 TzBfG (zwei Jahre, dreimalige Verlängerung) und das Vorbeschäftigungsverbot § 14 Abs. 2 S. 2 TzBfG nach der Entscheidung des BVerfG von 2018, Sonderregeln § 14 Abs. 2a und Abs. 3 TzBfG, Entfristungsklage § 17 TzBfG und Rechtsfolge § 16 TzBfG. Use when eine Befristung gestaltet oder eine auslaufende Befristung auf Unwirksamkeit geprüft wird.",
+      "path": "arbeitsrecht/skills/befristungskontrolle/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "befristungskontrolle",
+        "§14",
+        "§17",
+        "§16",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "betriebsratsanhoerung",
+      "description": "Ordnungsgemäße Anhörung des Betriebsrats vor jeder Kündigung nach § 102 BetrVG – Entwurf des Anhörungsschreibens, Grundsatz der subjektiven Determination, Wochenfrist § 102 Abs. 2 S. 1 BetrVG (ordentlich) und Drei-Tages-Frist § 102 Abs. 2 S. 3 BetrVG (außerordentlich), Unwirksamkeitsfolge § 102 Abs. 1 S. 3 BetrVG, Widerspruchsgründe § 102 Abs. 3 BetrVG und Weiterbeschäftigungsanspruch § 102 Abs. 5 BetrVG, Fehlerkatalog. Use when ein Arbeitgeber mit Betriebsrat eine Kündigung vorbereitet oder ein Arbeitnehmervertreter die Anhörung auf Fehler prüft.",
+      "path": "arbeitsrecht/skills/betriebsratsanhoerung/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "betriebsratsanhoerung",
+        "§102",
+        "betrvg",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "betriebsuebergang",
+      "description": "Betriebsübergang nach § 613a BGB – Tatbestand des Übergangs einer wirtschaftlichen Einheit durch Rechtsgeschäft, Eintritt in die Rechte und Pflichten § 613a Abs. 1 S. 1 BGB, Transformation und einjährige Veränderungssperre § 613a Abs. 1 S. 2–4 BGB, gesamtschuldnerische Nachhaftung des Veräußerers § 613a Abs. 2 BGB, Kündigungsverbot wegen des Übergangs § 613a Abs. 4 BGB, Unterrichtung in Textform § 613a Abs. 5 BGB und der von der Rechtsprechung entwickelte Katalog, Widerspruchsrecht binnen eines Monats § 613a Abs. 6 BGB, Richtlinie 2001/23/EG. Use when ein Asset Deal, Outsourcing, Betriebsteilübergang oder Rückübertragung ansteht oder wenn ein Unterrichtungsschreiben auf Fehler geprüft wird.",
+      "path": "arbeitsrecht/skills/betriebsuebergang/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "betriebsuebergang",
+        "§613a",
+        "bgb",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "entgelttransparenz",
+      "description": "Entgelttransparenz und Entgeltgleichheit im Übergang von nationalem zu europäischem Recht – geltendes deutsches Recht nach dem EntgTranspG (individueller Auskunftsanspruch §§ 10 ff., Reichweite § 12, betriebliches Prüfverfahren §§ 17 ff., Berichtspflicht §§ 21 f.) und die ab dem 08.06.2026 wirkende Richtlinie (EU) 2023/970 (Entgelttransparenz vor der Einstellung, Verbot der Frage nach der Entgelthistorie, Auskunftsanspruch ohne Schwellenwert, Gender-Pay-Gap-Berichterstattung ab 100/150/250 Beschäftigten, gemeinsame Entgeltbewertung bei einem ungeklärten Gefälle von mindestens 5 %, Beweislastumkehr), unmittelbare Wirkung gegenüber staatlichen Stellen und richtlinienkonforme Auslegung im Privatsektor. Use when ein Arbeitgeber die Umsetzung der Entgelttransparenzrichtlinie vorbereitet, ein Auskunftsverlangen beantwortet oder eine Entgeltgleichheitsklage bewertet wird.",
+      "path": "arbeitsrecht/skills/entgelttransparenz/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "entgelttransparenz",
+        "§§10",
+        "§12",
+        "§§17",
+        "§§21",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "kuendigungs-pruefung",
       "description": "Rechtliche Vollprüfung einer ordentlichen oder außerordentlichen Kündigung im deutschen Arbeitsrecht – KSchG (allgemeiner und besonderer Kündigungsschutz), § 102 BetrVG (BR-Anhörung), §§ 622 und 626 BGB (Fristen und wichtiger Grund), Sozialauswahl § 1 Abs. 3 KSchG, Sonderkündigungsschutz (MuSchG, BEEG, SGB IX, § 15 KSchG). Use when ein Arbeitgeber eine Kündigung plant oder ein Arbeitnehmervertretender eine empfangene Kündigung auf Klagewert prüft.",
       "path": "arbeitsrecht/skills/kuendigungs-pruefung/SKILL.md",
@@ -362,6 +513,92 @@
         "§15",
         "kschg",
         "betrvg"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kuendigungsschutzklage",
+      "description": "Erhebung und Führung der Kündigungsschutzklage – 3-Wochen-Frist § 4 KSchG ab Zugang der schriftlichen Kündigung, Präklusion § 7 KSchG, nachträgliche Zulassung § 5 KSchG, verlängerte Anrufungsfrist § 6 KSchG, allgemeiner Feststellungsantrag, Weiterbeschäftigungsantrag (§ 102 Abs. 5 BetrVG und allgemeiner Weiterbeschäftigungsanspruch), Auflösungsantrag §§ 9, 10 KSchG, Güte- und Kammertermin § 54 ArbGG, Kostentragung § 12a ArbGG. Use when ein Arbeitnehmer eine Kündigung erhalten hat und Klage zu erheben ist, oder wenn ein Arbeitgeber die Erfolgsaussichten einer bereits erhobenen Klage bewertet.",
+      "path": "arbeitsrecht/skills/kuendigungsschutzklage/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kuendigungsschutzklage",
+        "§4",
+        "§7",
+        "§5",
+        "§6",
+        "§102",
+        "§§9",
+        "§54"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "massenentlassungsanzeige",
+      "description": "Massenentlassung nach §§ 17, 18 KSchG – Schwellenwerte § 17 Abs. 1 KSchG und Betriebsbegriff, Konsultationsverfahren mit dem Betriebsrat § 17 Abs. 2 KSchG, Abschrift an die Agentur für Arbeit § 17 Abs. 3 S. 1 KSchG, Muss- und Soll-Angaben der Anzeige § 17 Abs. 3 S. 4 und 5 KSchG, Entlassungssperre und Freifrist § 18 KSchG, Umsetzung der Richtlinie 98/59/EG, Rechtsfolgen von Konsultations- und Anzeigefehlern. Use when ein Arbeitgeber einen Personalabbau plant, der die Schwellen des § 17 KSchG erreichen könnte, oder wenn eine ausgesprochene Kündigung auf Massenentlassungsfehler geprüft wird.",
+      "path": "arbeitsrecht/skills/massenentlassungsanzeige/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "massenentlassungsanzeige",
+        "§§17",
+        "§17",
+        "§18",
+        "kschg",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sozialauswahl",
+      "description": "Durchführung und Angriff der Sozialauswahl bei betriebsbedingter Kündigung nach § 1 Abs. 3 KSchG – Bildung der Vergleichsgruppe (horizontale Vergleichbarkeit, Direktionsrecht § 106 GewO), die vier gesetzlichen Kriterien und ihre Gewichtung im Punkteschema, Herausnahme von Leistungsträgern § 1 Abs. 3 S. 2 KSchG, Auskunftsanspruch des Arbeitnehmers § 1 Abs. 3 S. 1 Hs. 2 KSchG, abgestufte Darlegungs- und Beweislast § 1 Abs. 3 S. 3 KSchG, Auswahlrichtlinie und Namensliste § 1 Abs. 4, 5 KSchG. Use when ein Arbeitgeber die Auswahlentscheidung dokumentationsfest treffen muss oder ein Arbeitnehmer die Sozialauswahl im Kündigungsschutzprozess angreift.",
+      "path": "arbeitsrecht/skills/sozialauswahl/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "sozialauswahl",
+        "§1",
+        "§106",
+        "kschg",
+        "arbeitsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "urlaubsanspruch",
+      "description": "Urlaubsansprüche nach dem BUrlG – Entstehung und Wartezeit §§ 1, 4 BUrlG, gesetzlicher Mindesturlaub § 3 BUrlG in Werktagen und die Umrechnung bei abweichender Verteilung der Arbeitszeit, Festlegung und Übertragung § 7 Abs. 3 BUrlG, Abgeltung bei Beendigung § 7 Abs. 4 BUrlG, Verfall nur nach Erfüllung der arbeitgeberseitigen Hinweis- und Aufforderungsobliegenheit, Verjährung des Urlaubsanspruchs, Erkrankung im Urlaub § 9 BUrlG, 15-Monats-Frist bei durchgehender Langzeiterkrankung, Teilurlaub § 5 BUrlG, Abgrenzung von gesetzlichem und vertraglichem Mehrurlaub. Use when Urlaubsansprüche zu berechnen, Verfall oder Verjährung zu prüfen oder Abgeltungsansprüche nach Beendigung geltend zu machen sind.",
+      "path": "arbeitsrecht/skills/urlaubsanspruch/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "urlaubsanspruch",
+        "§§1",
+        "§3",
+        "§7",
+        "§9",
+        "§5",
+        "arbeitsrecht"
       ],
       "tools": 0,
       "has_references": false,
@@ -436,6 +673,29 @@
       "has_assets": false
     },
     {
+      "name": "abtretung-vertragsuebernahme",
+      "description": "Prüfung und Gestaltung von Forderungsabtretung, Schuld- und Vertragsübernahme – Abtretung § 398 BGB, Abtretungsausschluss § 399 BGB und dessen Durchbrechung für Geldforderungen aus Handelsgeschäften nach § 354a HGB, Schuldnerschutz bei stiller Zession § 407 BGB, Schuldübernahme §§ 414, 415 BGB, Vertragsübernahme als Drei-Parteien-Vereinbarung sowie Factoring und Abtretungsanzeige. Use when eine Forderung übertragen, ein Vertrag auf einen Dritten übergeleitet oder ein vertragliches Abtretungsverbot geprüft werden soll.",
+      "path": "vertragsrecht/skills/abtretung-vertragsuebernahme/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "abtretung",
+        "vertragsuebernahme",
+        "§398",
+        "§399",
+        "§354a",
+        "§407",
+        "§§414",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "agb-kontrolle",
       "description": "Inhaltskontrolle Allgemeiner Geschäftsbedingungen nach §§ 305–310 BGB – Einbeziehung (§ 305), überraschende Klauseln (§ 305c), Klauselverbote ohne Wertung (§ 309) und mit Wertung (§ 308), Generalklausel (§ 307), Anwendung im B2B-Verkehr (§ 310). Use when ein Vertragstext auf AGB-Wirksamkeit zu prüfen ist oder eine neue Klausel entworfen wird.",
       "path": "vertragsrecht/skills/agb-kontrolle/SKILL.md",
@@ -453,6 +713,210 @@
         "§309",
         "§308",
         "§307"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "anfechtung-willenserklaerung",
+      "description": "Prüfung und Erklärung der Anfechtung einer Willenserklärung – Inhalts- und Erklärungsirrtum sowie Eigenschaftsirrtum § 119 BGB, unrichtige Übermittlung § 120 BGB, arglistige Täuschung und widerrechtliche Drohung § 123 BGB, Anfechtungsfristen § 121 BGB (unverzüglich) und § 124 BGB (ein Jahr), Anfechtungserklärung § 143 BGB, Nichtigkeit ex tunc § 142 BGB und Vertrauensschadensersatz § 122 BGB. Use when eine Vertragspartei sich beim Vertragsschluss geirrt hat, getäuscht oder bedroht wurde und die Lösung vom Vertrag geprüft wird.",
+      "path": "vertragsrecht/skills/anfechtung-willenserklaerung/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "anfechtung",
+        "willenserklaerung",
+        "§119",
+        "§120",
+        "§123",
+        "§121",
+        "§124",
+        "§143"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kaufrecht-maengelhaftung",
+      "description": "Prüfung kaufrechtlicher Mängelrechte – Sachmangel § 434 BGB (subjektive, objektive und Montageanforderungen), Rechtekatalog § 437 BGB, Nacherfüllung § 439 BGB einschließlich Aus- und Einbaukosten § 439 Abs. 3 BGB, Fristsetzung und Rücktritt § 323 BGB, Entbehrlichkeit § 440 BGB, Minderung § 441 BGB, Schadensersatz §§ 280, 281 BGB, Verjährung § 438 BGB und Beweislastumkehr § 477 BGB. Use when eine gelieferte Sache mangelhaft ist und geklärt werden soll, welches Mängelrecht in welcher Reihenfolge und bis wann geltend zu machen ist.",
+      "path": "vertragsrecht/skills/kaufrecht-maengelhaftung/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kaufrecht",
+        "maengelhaftung",
+        "§434",
+        "§437",
+        "§439",
+        "§323",
+        "§440",
+        "§441"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ruecktritt-schadensersatz",
+      "description": "Prüfung von Rücktritt und Schadensersatz wegen Leistungsstörung – Schadensersatz statt der Leistung §§ 280, 281 BGB, Unmöglichkeit §§ 275, 283, 326 BGB, Rücktritt nach Fristsetzung § 323 BGB und Entbehrlichkeit § 323 Abs. 2 BGB, Nebeneinander von Rücktritt und Schadensersatz § 325 BGB sowie Rückabwicklung mit Nutzungs- und Wertersatz §§ 346, 347 BGB. Use when eine Vertragspartei nicht, zu spät oder schlecht leistet und geklärt werden soll, ob eine Nachfrist zu setzen ist und welche Sekundärrechte in welcher Kombination bestehen.",
+      "path": "vertragsrecht/skills/ruecktritt-schadensersatz/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "ruecktritt",
+        "schadensersatz",
+        "§§280",
+        "§§275",
+        "§323",
+        "§325",
+        "§§346",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sicherheiten-gestaltung",
+      "description": "Auswahl und Gestaltung von Kreditsicherheiten im Vertragsrecht – Bürgschaft §§ 765–778 BGB mit Schriftform § 766 BGB, Einrede der Vorausklage § 771 BGB und selbstschuldnerischer Bürgschaft § 773 BGB, Eigentumsvorbehalt § 449 BGB in einfacher, verlängerter und erweiterter Form, Sicherungsübereignung nach §§ 929, 930 BGB und Sicherungsabtretung nach § 398 BGB einschließlich Globalzession und Übersicherung. Use when eine Forderung besichert werden soll oder eine bestehende Sicherheit auf Wirksamkeit und Verwertbarkeit zu prüfen ist.",
+      "path": "vertragsrecht/skills/sicherheiten-gestaltung/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "sicherheiten",
+        "gestaltung",
+        "§§765",
+        "§766",
+        "§771",
+        "§773",
+        "§449",
+        "§§929"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "stoerung-geschaeftsgrundlage",
+      "description": "Prüfung der Störung der Geschäftsgrundlage nach § 313 BGB – reales und hypothetisches Element, Zumutbarkeitsprüfung, Subsidiarität gegenüber vertraglicher Risikoverteilung und Gewährleistungsrecht, Anpassungsverlangen und Rücktritt oder Kündigung nach § 313 Abs. 3 BGB sowie die vertragliche Alternative durch Force-Majeure-, Preisanpassungs- und Kostenelementeklauseln. Use when sich nach Vertragsschluss die Umstände erheblich verändert haben (Kostenexplosion, Lieferkettenstörung, Sanktionen, behördliche Anordnung) und eine Vertragsanpassung oder Lösung geprüft wird.",
+      "path": "vertragsrecht/skills/stoerung-geschaeftsgrundlage/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "stoerung",
+        "geschaeftsgrundlage",
+        "§313",
+        "bgb",
+        "vertragsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verbraucherwiderruf",
+      "description": "Prüfung und Gestaltung des Verbraucherwiderrufsrechts – Widerrufsrecht bei Fernabsatz und außerhalb von Geschäftsräumen § 312g BGB, Widerrufsfrist § 355 BGB, Fristbeginn und Erlöschen § 356 BGB, Rechtsfolgen §§ 357, 357a BGB einschließlich Wertersatz, Informationspflichten und Muster-Widerrufsbelehrung nach Art. 246a EGBGB sowie Verträge über digitale Produkte §§ 327 ff. BGB. Use when zu klären ist, ob ein Verbraucher widerrufen kann, bis wann die Frist läuft, ob die Belehrung wirksam ist und wie rückabzuwickeln ist.",
+      "path": "vertragsrecht/skills/verbraucherwiderruf/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verbraucherwiderruf",
+        "§312g",
+        "§355",
+        "§356",
+        "§§357",
+        "§§327",
+        "art.246",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vergleich-abfindung",
+      "description": "Gestaltung und Prüfung von Vergleichen und Abfindungsvereinbarungen – Vergleich § 779 BGB mit gegenseitigem Nachgeben und Unwirksamkeit bei Sachverhaltsirrtum, Erledigungs- und Abgeltungsklausel, Erlassvertrag § 397 BGB, Widerrufsvorbehalt, Prozessvergleich als Vollstreckungstitel § 794 Abs. 1 Nr. 1 ZPO und Anwaltsvergleich § 796a ZPO. Use when ein Rechtsstreit oder eine streitige Forderung durch Vergleich beendet werden soll und der Umfang der Abgeltung, die Vollstreckbarkeit und die Widerrufsmöglichkeit zu regeln sind.",
+      "path": "vertragsrecht/skills/vergleich-abfindung/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vergleich",
+        "abfindung",
+        "§779",
+        "§397",
+        "§794",
+        "§796a",
+        "bgb",
+        "zpo"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verjaehrung-pruefung",
+      "description": "Vollständige Verjährungsprüfung im Zivilrecht – Regelverjährung § 195 BGB, kenntnisabhängiger Beginn und Höchstfristen § 199 BGB, Hemmung durch Verhandlungen § 203 BGB und durch Rechtsverfolgung § 204 BGB, Neubeginn durch Anerkenntnis § 212 BGB, Wirkung der Verjährungseinrede § 214 BGB sowie Hemmungsvereinbarung und Einredeverzicht nach § 202 BGB. Use when zu klären ist, ob ein Anspruch verjährt ist, bis wann verjährungshemmend gehandelt werden muss oder ob eine Verjährungsverzichtserklärung eingeholt werden sollte.",
+      "path": "vertragsrecht/skills/verjaehrung-pruefung/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verjaehrung",
+        "pruefung",
+        "§195",
+        "§199",
+        "§203",
+        "§204",
+        "§212",
+        "§214"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vertragsstrafe",
+      "description": "Gestaltung und Prüfung von Vertragsstrafeklauseln nach §§ 339–345 BGB – Verwirkung § 339 BGB, Strafe für Nichterfüllung § 340 BGB und für nicht gehörige Erfüllung § 341 BGB mit Vorbehaltserfordernis, Herabsetzung durch das Gericht § 343 BGB und deren Ausschluss für Kaufleute § 348 HGB, AGB-Grenzen nach § 309 Nr. 6 BGB und § 307 BGB sowie die Ermessensstrafe nach Hamburger Brauch. Use when eine Vertragsstrafe vereinbart, verwirkt oder auf Wirksamkeit und Höhe geprüft werden soll.",
+      "path": "vertragsrecht/skills/vertragsstrafe/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vertragsstrafe",
+        "§§339",
+        "§339",
+        "§340",
+        "§341",
+        "§343",
+        "§348",
+        "§309"
       ],
       "tools": 0,
       "has_references": false,
@@ -481,6 +945,71 @@
       "has_assets": false
     },
     {
+      "name": "vorvertragliche-phase",
+      "description": "Gestaltung und Haftungsprüfung der vorvertraglichen Phase – vorvertragliches Schuldverhältnis § 311 Abs. 2 BGB, Rücksichtnahme- und Aufklärungspflichten § 241 Abs. 2 BGB, culpa in contrahendo (c.i.c.) nach § 280 Abs. 1 BGB mit Vertragsaufhebung als Schadensersatz, Geheimhaltungsvereinbarung (NDA) mit GeschGehG-Bezug, Letter of Intent und Term Sheet sowie Exklusivitätsvereinbarung und Break-up Fee. Use when Verhandlungen aufgenommen, abgebrochen oder eine Vorfeldvereinbarung entworfen oder auf Bindungswirkung geprüft werden soll.",
+      "path": "vertragsrecht/skills/vorvertragliche-phase/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vorvertragliche",
+        "phase",
+        "§311",
+        "§241",
+        "§280",
+        "bgb",
+        "vertragsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "werkvertrag-maengel",
+      "description": "Prüfung werkvertraglicher Mängelrechte und Beendigungsrechte nach §§ 631–650v BGB – Abnahme § 640 BGB einschließlich fiktiver Abnahme § 640 Abs. 2 BGB, Rechtekatalog § 634 BGB, Selbstvornahme und Vorschuss § 637 BGB, Verjährung § 634a BGB, freie Kündigung § 648 BGB und Kündigung aus wichtigem Grund § 648a BGB sowie Verbraucherbauvertrag §§ 650i ff. BGB mit Widerrufsrecht § 650l BGB. Use when ein Werk mangelhaft ist, die Abnahme streitig ist oder ein Werk- oder Bauvertrag vorzeitig beendet werden soll.",
+      "path": "vertragsrecht/skills/werkvertrag-maengel/SKILL.md",
+      "domain": "vertragsrecht",
+      "category": "vertragsrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "werkvertrag",
+        "maengel",
+        "§§631",
+        "§640",
+        "§634",
+        "§637",
+        "§634a",
+        "§648"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "betriebskostenabrechnung",
+      "description": "Prüfung und Erstellung der Betriebskostenabrechnung im Wohnraummietrecht – Umlagevereinbarung und Abrechnungspflicht § 556 BGB, Abrechnungsfrist § 556 Abs. 3 S. 2 BGB und Einwendungsfrist § 556 Abs. 3 S. 5 BGB, Umlagemaßstab § 556a BGB, Betriebskostenkatalog der BetrKV, HeizkostenV, Belegeinsicht, Abgrenzung formeller und materieller Fehler, Wirtschaftlichkeitsgebot, CO2KostAufG mit Stufenmodell seit 2023. Use when eine Betriebskostenabrechnung erstellt, geprüft oder eine Nachforderung bzw. ein Guthaben durchgesetzt wird.",
+      "path": "mietrecht/skills/betriebskostenabrechnung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "betriebskostenabrechnung",
+        "§556",
+        "§556a",
+        "bgb",
+        "mietrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "eigenbedarfskuendigung",
       "description": "Wirksamkeitsprüfung einer Eigenbedarfskündigung im Wohnraummietrecht – berechtigtes Interesse und begünstigter Personenkreis § 573 Abs. 2 Nr. 2 BGB, Begründungspflicht § 573 Abs. 3 BGB, Kündigungsfristen § 573c BGB, Widerspruch und Sozialklausel § 574 BGB, Schadensersatz bei vorgetäuschtem Eigenbedarf. Use when ein Vermieter eine Eigenbedarfskündigung gestaltet oder ein Mieter eine erhaltene Kündigung auf Wirksamkeit und Härtefall prüft.",
       "path": "mietrecht/skills/eigenbedarfskuendigung/SKILL.md",
@@ -502,8 +1031,76 @@
       "has_assets": false
     },
     {
+      "name": "fristlose-kuendigung-543",
+      "description": "Außerordentliche fristlose Kündigung des Mietverhältnisses aus wichtigem Grund – wichtiger Grund und Regelbeispiele § 543 Abs. 2 BGB, Zahlungsverzug § 543 Abs. 2 S. 1 Nr. 3 BGB, Abmahnung und Fristsetzung § 543 Abs. 3 BGB, ergänzende Wohnraumtatbestände § 569 BGB, Schonfristzahlung § 569 Abs. 3 Nr. 2 BGB, Form und Begründung § 569 Abs. 4, § 568 BGB, Verhältnis zur hilfsweise erklärten ordentlichen Kündigung § 573 Abs. 2 Nr. 1 BGB. Use when ein Vermieter wegen Zahlungsverzugs oder Pflichtverletzung fristlos kündigen will oder ein Mieter eine erhaltene fristlose Kündigung prüft.",
+      "path": "mietrecht/skills/fristlose-kuendigung-543/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "fristlose",
+        "kuendigung",
+        "543",
+        "§543",
+        "§569",
+        "§568",
+        "§573",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gewerberaummiete",
+      "description": "Gewerberaummiete – gesetzliche Schriftform langfristiger Mietverträge § 550 BGB und die Unwirksamkeit von Schriftformheilungsklauseln, Index- und Staffelmiete §§ 557a, 557b BGB, vertragsimmanenter Konkurrenzschutz und Sortimentsbindung, Betriebspflicht und Offenhaltungsklausel, AGB-Kontrolle §§ 305 ff. BGB, Störung der Geschäftsgrundlage § 313 BGB und Art. 240 § 7 EGBGB, Kündigungsfristen § 580a BGB, Vermieterpfandrecht § 562 BGB. Use when ein Gewerberaummietvertrag gestaltet, geprüft, beendet oder eine Anpassung wegen veränderter Umstände verlangt wird.",
+      "path": "mietrecht/skills/gewerberaummiete/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "gewerberaummiete",
+        "§550",
+        "§§557a",
+        "§§305",
+        "§313",
+        "§7",
+        "§580a",
+        "§562"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kaution-mietsicherheit",
+      "description": "Mietsicherheit im Wohnraummietrecht – Höchstbetrag von drei Nettokaltmieten und Ratenzahlungsrecht § 551 Abs. 1, Abs. 2 BGB, insolvenzfeste Anlagepflicht getrennt vom Vermietervermögen § 551 Abs. 3 BGB, Unwirksamkeit abweichender Vereinbarungen § 551 Abs. 4 BGB, Kündigung wegen Kautionsverzugs § 569 Abs. 2a BGB, Abrechnung und Zurückbehaltung nach Rückgabe, Verwertung und Aufrechnung, Verjährung § 548 BGB. Use when eine Kaution vereinbart, angelegt, verwertet oder nach Mietende abgerechnet und zurückgefordert wird.",
+      "path": "mietrecht/skills/kaution-mietsicherheit/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kaution",
+        "mietsicherheit",
+        "§551",
+        "§569",
+        "§548",
+        "bgb",
+        "mietrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "mieterhoehung-558-bgb",
-      "description": "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – Wartezeit (Abs. 1), Kappungsgrenze (Abs. 3), Begründungsmittel (§ 558a BGB: Mietspiegel, Sachverständigengutachten, Vergleichswohnungen, Mietdatenbank), Zustimmungsklage. Use when ein Vermieter eine Mieterhöhung gestaltet oder ein Mieter ein Mieterhöhungsverlangen auf Wirksamkeit prüft.",
+      "description": "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – aus beiden Perspektiven: Vermieter-Entwurf und Mieter-Wirksamkeitsprüfung. Wartezeit und Jahressperre § 558 Abs. 1 BGB, ortsübliche Vergleichsmiete § 558 Abs. 2 BGB, Kappungsgrenze § 558 Abs. 3 BGB, Begründungsmittel § 558a BGB (Mietspiegel, Sachverständigengutachten, drei Vergleichswohnungen, Mietdatenbank), qualifizierter Mietspiegel §§ 558c–558e BGB, Zustimmungs- und Klagefrist § 558b BGB, Abgrenzung zur Modernisierungsmieterhöhung § 559 BGB, Mietpreisbremse §§ 556d ff. BGB. Use when ein Vermieter ein Mieterhöhungsverlangen gestaltet oder ein Mieter ein empfangenes Verlangen auf Wirksamkeit, Höhe und Fristen prüft.",
       "path": "mietrecht/skills/mieterhoehung-558-bgb/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
@@ -516,6 +1113,53 @@
         "bgb",
         "§558",
         "§558a",
+        "§§558c",
+        "§558b",
+        "§559"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mietmangel-minderung",
+      "description": "Mietmangel und Mietminderung im Wohnraummietrecht – Mangelbegriff und kraft Gesetzes eintretende Minderung § 536 BGB, Ausschluss bei Kenntnis § 536b BGB, Schadensersatz und Selbstvornahme mit Aufwendungsersatz § 536a BGB, Mängelanzeige und Anzeigeobliegenheit § 536c BGB, Zurückbehaltungsrecht § 320 BGB, Symptomtheorie und Darlegungslast, Minderungsquote und Bezugsgröße Bruttomiete. Use when ein Mieter wegen eines Mangels mindern, Mängelbeseitigung verlangen oder Schadensersatz geltend machen will oder ein Vermieter eine Minderung prüft.",
+      "path": "mietrecht/skills/mietmangel-minderung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mietmangel",
+        "minderung",
+        "§536",
+        "§536b",
+        "§536a",
+        "§536c",
+        "§320",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mietpreisbremse",
+      "description": "Mietpreisbremse bei Wiedervermietung von Wohnraum – zulässige Miethöhe § 556d BGB (ortsübliche Vergleichsmiete zzgl. 10 %) und Landesverordnung, Ausnahmen für Neubau und umfassende Modernisierung § 556f BGB, Vormiete und modernisierte Wohnung § 556e BGB, vorvertragliche Auskunftspflicht § 556g Abs. 1a BGB, qualifizierte Rüge und Rückforderung § 556g Abs. 2 BGB, Unwirksamkeit abweichender Vereinbarungen § 556g Abs. 1 BGB. Use when eine Neuvertragsmiete auf Zulässigkeit geprüft, eine Rüge erhoben oder überzahlte Miete zurückgefordert wird.",
+      "path": "mietrecht/skills/mietpreisbremse/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mietpreisbremse",
+        "§556d",
+        "§556f",
+        "§556e",
+        "§556g",
+        "bgb",
         "mietrecht"
       ],
       "tools": 0,
@@ -523,21 +1167,112 @@
       "has_assets": false
     },
     {
-      "name": "mieterhoehung-pruefung",
-      "description": "Wirksamkeitsprüfung eines empfangenen Mieterhöhungsverlangens auf die ortsübliche Vergleichsmiete – Formprüfung § 558a BGB, 15-Monats-Frist und Kappungsgrenze § 558 Abs. 3 BGB, Begründungsmittel, Abgrenzung zur Modernisierungsmieterhöhung § 559 BGB, Zustimmungsklage § 558b BGB. Use when ein Mieter ein erhaltenes Mieterhöhungsverlangen oder ein Vermieter den eigenen Entwurf auf Wirksamkeit prüft.",
-      "path": "mietrecht/skills/mieterhoehung-pruefung/SKILL.md",
+      "name": "modernisierung-559-bgb",
+      "description": "Modernisierung und Modernisierungsmieterhöhung im Wohnraummietrecht – Begriff der Modernisierungsmaßnahme § 555b BGB, Modernisierungsankündigung § 555c BGB, Duldungspflicht und Härteeinwand § 555d BGB, Aufwendungsersatz § 555a Abs. 3 BGB, Sonderkündigungsrecht § 555e BGB, Mieterhöhung nach § 559 BGB mit 8-%-Umlage, Kappung § 559 Abs. 3a BGB und Härteeinwand § 559 Abs. 4 BGB, Abgrenzung Erhaltung / Modernisierung, Verhältnis zu § 558 BGB. Use when ein Vermieter eine Modernisierung ankündigt oder umlegt oder ein Mieter Ankündigung, Duldungspflicht und Modernisierungsmieterhöhung prüft.",
+      "path": "mietrecht/skills/modernisierung-559-bgb/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
       "version": "0.1.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
-        "mieterhoehung",
-        "pruefung",
-        "§558a",
-        "§558",
-        "§559",
-        "§558b",
+        "modernisierung",
+        "559",
+        "bgb",
+        "§555b",
+        "§555c",
+        "§555d",
+        "§555a",
+        "§555e"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "raeumungsklage",
+      "description": "Räumungsklage und Zwangsräumung im Wohnraum- und Gewerberaummietrecht – Rückgabeanspruch § 546 BGB und Herausgabeanspruch § 985 BGB, Nutzungsentschädigung § 546a BGB, Verbindung mit der Zahlungsklage, Klage auf künftige Räumung § 259 ZPO, Zuständigkeit § 23 Nr. 2a GVG und § 29a ZPO, Räumungsfrist § 721 ZPO und Vollstreckungsschutz § 765a ZPO, Sicherungsanordnung § 283a ZPO, einstweilige Räumungsverfügung § 940a ZPO, Berliner Räumung § 885a ZPO. Use when eine Räumungsklage vorbereitet, erhoben oder abgewehrt wird oder eine Zwangsräumung ansteht.",
+      "path": "mietrecht/skills/raeumungsklage/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "raeumungsklage",
+        "§546",
+        "§985",
+        "§546a",
+        "§259",
+        "§23",
+        "§29a",
+        "§721"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "schoenheitsreparaturen-rueckgabe",
+      "description": "Schönheitsreparaturen und Rückgabeabwicklung im Wohnraummietrecht – Erhaltungspflicht des Vermieters § 535 Abs. 1 S. 2 BGB, Rückgabepflicht § 546 BGB, AGB-Kontrolle starrer Fristenpläne und Endrenovierungsklauseln §§ 307, 309 BGB, unrenoviert übergebene Wohnung und hälftige Kostenteilung, Rückbau- und Wiederherstellungspflicht, Schadensersatz statt der Leistung §§ 280, 281 BGB, sechsmonatige Verjährung § 548 BGB. Use when eine Schönheitsreparaturklausel geprüft, eine Wohnung zurückgegeben oder eine Renovierungs- bzw. Schadensersatzforderung nach Mietende geltend gemacht oder abgewehrt wird.",
+      "path": "mietrecht/skills/schoenheitsreparaturen-rueckgabe/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "schoenheitsreparaturen",
+        "rueckgabe",
+        "§535",
+        "§546",
+        "§§307",
+        "§§280",
+        "§548",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sozialklausel-widerspruch",
+      "description": "Sozialklausel und Widerspruch gegen die ordentliche Kündigung von Wohnraum – Härtegründe und Interessenabwägung § 574 BGB, fehlender angemessener Ersatzwohnraum § 574 Abs. 2 BGB, Fortsetzung des Mietverhältnisses § 574a BGB, Form und Frist des Widerspruchs § 574b BGB, Fortsetzung nach Wegfall der Härte § 574c BGB, Unabdingbarkeit § 574 Abs. 4 BGB, Verhältnis zur Räumungsklage und zur Räumungsfrist § 721 ZPO. Use when ein Mieter einer ordentlichen Kündigung widersprechen und Fortsetzung verlangen will oder ein Vermieter die Erfolgsaussichten eines Härteeinwands bewertet.",
+      "path": "mietrecht/skills/sozialklausel-widerspruch/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "sozialklausel",
+        "widerspruch",
+        "§574",
+        "§574a",
+        "§574b",
+        "§574c",
+        "§721",
+        "bgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "untervermietung",
+      "description": "Untervermietung und Gebrauchsüberlassung an Dritte im Wohnraummietrecht – Erlaubnisvorbehalt § 540 BGB und Sonderkündigungsrecht des Mieters, Anspruch auf Gestattung der Teiluntervermietung bei berechtigtem Interesse § 553 Abs. 1 BGB, Untermietzuschlag § 553 Abs. 2 BGB, Abgrenzung zur Aufnahme von Angehörigen und Besuchern, Kurzzeitvermietung und Zweckentfremdung, Abmahnung und Kündigung bei unerlaubter Gebrauchsüberlassung §§ 543 Abs. 2 Nr. 2, 573 Abs. 2 Nr. 1 BGB, Rückgabeanspruch gegen den Untermieter § 546 Abs. 2 BGB. Use when eine Untermieterlaubnis beantragt, erteilt, verweigert oder eine unerlaubte Gebrauchsüberlassung sanktioniert wird.",
+      "path": "mietrecht/skills/untervermietung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "untervermietung",
+        "§540",
+        "§553",
+        "§§543",
+        "§546",
         "bgb",
         "mietrecht"
       ],
@@ -3960,7 +4695,7 @@
     },
     {
       "name": "prodhaftg-herstellerhaftung",
-      "description": "Parallele Anspruchsprüfung verschuldensunabhängige Herstellerhaftung nach §§ 1, 3 ProdHaftG und Produzentenhaftung § 823 I BGB mit Fehlertypologie (Konstruktion, Fabrikation, Instruktion, Produktbeobachtung) und BGH-Beweislastumkehr „Hühnerpest\". Use when ein Verbraucher durch ein fehlerhaftes Produkt geschädigt wurde oder ein Hersteller die Haftungsexposition für einen Schadensfall einschätzen muss.",
+      "description": "Parallele Anspruchsprüfung verschuldensunabhängige Herstellerhaftung nach §§ 1, 3 ProdHaftG und Produzentenhaftung § 823 I BGB mit Fehlertypologie (Konstruktion, Fabrikation, Instruktion, Produktbeobachtung) und BGH-Beweislastumkehr „Hühnerpest\"; einschließlich Weichenstellung zum neuen Produkthaftungsrecht der RL (EU) 2024/2853 (Stichtag Inverkehrbringen 08.12.2026, Software als Produkt, Wegfall der 85-Mio.-EUR-Höchstgrenze). Use when ein Verbraucher durch ein fehlerhaftes Produkt geschädigt wurde oder ein Hersteller die Haftungsexposition für einen Schadensfall einschätzen muss.",
       "path": "produktrecht/skills/prodhaftg-herstellerhaftung/SKILL.md",
       "domain": "produktrecht",
       "category": "produktrecht",
@@ -4397,6 +5132,87 @@
         "§6",
         "§8",
         "§134"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "cra-anwendungsbereich",
+      "description": "Prüfung, ob ein Produkt in den Anwendungsbereich des Cyber Resilience Act fällt – Produkt mit digitalen Elementen (Art. 3 CRA), Bereichsausnahmen nach Art. 2 CRA (Medizinprodukte, Kraftfahrzeuge, Luftfahrt, Schiffsausrüstung, Verteidigung), Rollenbestimmung als Hersteller, Einführer oder Händler, Verwalter quelloffener Software nach Art. 24 CRA sowie Einstufung als wichtiges Produkt nach Anhang III oder kritisches Produkt nach Anhang IV. Use when ein Unternehmen sein Produktportfolio gegen die VO (EU) 2024/2847 abgleichen, ein CRA-Produktinventar aufbauen oder vor dem 11.09.2026 klären muss, welche Produkte und welche Rolle die Melde- und Herstellerpflichten auslösen.",
+      "path": "cyber-resilience-act/skills/cra-anwendungsbereich/SKILL.md",
+      "domain": "cyber-resilience-act",
+      "category": "cyber-resilience-act",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "cra",
+        "anwendungsbereich",
+        "art.3",
+        "art.2",
+        "art.24",
+        "cyber-resilience-act"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "cra-meldepflichten",
+      "description": "Steuerung der CRA-Meldepflichten nach Art. 14 VO (EU) 2024/2847 ab dem 11.09.2026 – Abgrenzung aktiv ausgenutzte Schwachstelle gegenüber schwerwiegendem Sicherheitsvorfall, 24-Stunden-Frühwarnung, 72-Stunden-Vollmeldung, Abschlussbericht binnen 14 Tagen bzw. 1 Monat, Einreichung über die einheitliche Meldeplattform an das CSIRT des Mitgliedstaats der Hauptniederlassung bei paralleler Unterrichtung der ENISA, interner Eskalationsprozess und Dokumentation. Use when ein Hersteller einen laufenden Vorfall oder eine ausgenutzte Schwachstelle melden muss oder wenn vor dem 11.09.2026 der Melde- und Eskalationsprozess aufgebaut und gegen NIS2 und DSGVO abgegrenzt wird.",
+      "path": "cyber-resilience-act/skills/cra-meldepflichten/SKILL.md",
+      "domain": "cyber-resilience-act",
+      "category": "cyber-resilience-act",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "cra",
+        "meldepflichten",
+        "art.14",
+        "nis2",
+        "dsgvo",
+        "cyber-resilience-act"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "cra-produktanforderungen",
+      "description": "Bestimmung der grundlegenden Cybersicherheitsanforderungen nach Anhang I VO (EU) 2024/2847 – Sicherheitseigenschaften des Produkts nach Anhang I Teil I, Anforderungen an die Schwachstellenbehandlung nach Anhang I Teil II, Cybersicherheits-Risikobewertung nach Art. 13 CRA, Software-Stückliste (SBOM), Unterstützungszeitraum und unentgeltliche Sicherheitsupdates, Wahl des Konformitätsbewertungsverfahrens nach Anhang VIII, technische Dokumentation nach Anhang VII, EU-Konformitätserklärung und CE-Kennzeichnung. Use when ein Hersteller vor dem 11.12.2027 eine Gap-Analyse gegen Anhang I durchführt, den Konformitätsbewertungsweg für ein Produkt festlegt oder die technische Dokumentation und die CE-Kennzeichnung vorbereitet.",
+      "path": "cyber-resilience-act/skills/cra-produktanforderungen/SKILL.md",
+      "domain": "cyber-resilience-act",
+      "category": "cyber-resilience-act",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "cra",
+        "produktanforderungen",
+        "art.13",
+        "cyber-resilience-act"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "cra-schwachstellenmanagement",
+      "description": "Aufbau und Prüfung des Schwachstellenmanagements nach Anhang I Teil II VO (EU) 2024/2847 – Politik zur koordinierten Schwachstellenoffenlegung (CVD-Policy), Kontaktstelle und Eingangskanäle für Meldungen, Triage und Bewertung, Behebung durch Sicherheitsupdates, sichere Update-Verteilung mit Signatur, öffentliche Offenlegung behobener Schwachstellen und Security Advisories, Koordinierung mit CSIRT, BSI und CVE-Vergabe sowie die Schnittstellen zur Meldepflicht nach Art. 14 CRA, zu NIS2 und zur reformierten Produkthaftung ab dem 09.12.2026. Use when ein Hersteller eine CVD-Policy einführen, seinen Schwachstellenprozess CRA-fest machen oder eine eingehende Schwachstellenmeldung eines Sicherheitsforschers rechtlich und prozessual behandeln muss.",
+      "path": "cyber-resilience-act/skills/cra-schwachstellenmanagement/SKILL.md",
+      "domain": "cyber-resilience-act",
+      "category": "cyber-resilience-act",
+      "subdomain": "",
+      "version": "0.1.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "cra",
+        "schwachstellenmanagement",
+        "art.14",
+        "nis2",
+        "cyber-resilience-act"
       ],
       "tools": 0,
       "has_references": false,

@@ -29,6 +29,20 @@ Sozialauswahl bei betriebsbedingter Kündigung
      https://www.gesetze-im-internet.de/kschg/__1.html
 ```
 
+**Regelmäßig einschlägige Gesetze im Arbeitsrecht** (alle auf gesetze-im-internet.de verifizierbar):
+
+| Bereich | Gesetze |
+|---|---|
+| Kündigung und Bestandsschutz | KSchG, BGB (§§ 611a, 613, 622, 623, 626), MuSchG, BEEG, PflegeZG, SGB IX |
+| Kollektivrecht | BetrVG (insb. §§ 80, 95, 99, 102, 103, 111, 112), TVG, SprAuG |
+| Verfahren | ArbGG (§§ 2, 12a, 46, 54, 61b), ZPO (§§ 222, 253, 256), GKG |
+| Vertrag und Nachweis | BGB (§§ 305–310, 126, 126b, 202, 242), NachwG (§§ 2, 4), TzBfG, MiLoG, AEntG, AÜG |
+| Arbeitszeit und Urlaub | ArbZG, BUrlG (§§ 1, 3, 4, 5, 7, 9, 11, 13), EFZG |
+| Gleichbehandlung und Entgelt | AGG (§§ 1–3, 6–10, 15, 22), EntgTranspG (§§ 10–15, 21 f.), GewO (§§ 106, 109) |
+| Übergang und Umstrukturierung | BGB § 613a, UmwG, KSchG §§ 17, 18 |
+
+**Regelmäßig einschlägiges Unionsrecht:** RL 98/59/EG (Massenentlassung), RL 1999/70/EG (Befristung), RL 2000/78/EG und RL 2006/54/EG (Gleichbehandlung), RL 2001/23/EG (Betriebsübergang), RL 2003/88/EG (Arbeitszeit und Urlaub), RL (EU) 2019/1152 (transparente Arbeitsbedingungen), RL (EU) 2023/970 (Entgelttransparenz), Art. 157 AEUV, Art. 31 Abs. 2 GRCh.
+
 ### 2. Kommentar-Belegstellen vorschlagen
 
 Pro Statut **mindestens eine** Kommentar-Belegstelle aus der Standardliteratur:

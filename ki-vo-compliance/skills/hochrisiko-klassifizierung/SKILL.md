@@ -12,6 +12,21 @@ test: ./test.md
 
 Die Hochrisiko-Klassifizierung entscheidet über die anwendbaren Pflichten der KI-VO: Konformitätsbewertung, Risikomanagement, Datenqualität, Transparenz, menschliche Aufsicht, Logging, Genauigkeit/Robustheit/Cybersicherheit. Eine Fehlklassifizierung kann Bußgelder bis zu **15 Mio. EUR oder 3 % des weltweiten Jahresumsatzes** (Art. 99 Abs. 4 KI-VO) auslösen.
 
+> **⚠️ Geltungsdaten nach dem Digital Omnibus on AI (Stand 2026-07):** Die Hochrisiko-Pflichten sind **verschoben**. Das KI-VO-Vereinfachungspaket wurde vom Europäischen Parlament am **16.06.2026** und vom Rat am **29.06.2026** endgültig angenommen.
+>
+> | Regelungsbereich | Geltung |
+> |---|---|
+> | Verbote Art. 5, KI-Kompetenz Art. 4 | 02.02.2025 (gilt) |
+> | GPAI Art. 51–55 | 02.08.2025 (gilt) — **nicht verschoben** |
+> | **Allgemeine Anwendung + Transparenz Art. 50** | **02.08.2026 — bleibt** |
+> | **Hochrisiko Anhang III (Art. 6 Abs. 2, eigenständige Systeme)** | **02.12.2027** (vorher 02.08.2026) |
+> | **Hochrisiko Anhang I (Art. 6 Abs. 1, Sicherheitsbauteil)** | **02.08.2028** (vorher 02.08.2027) |
+> | Reallabore Art. 57 | 02.08.2027 (vorher 02.08.2026) |
+> | Neue Verbote (NCII, CSAM) | 02.12.2026 |
+> | Altmodelle GPAI (Art. 111 Abs. 3) | 02.08.2027 |
+>
+> **Keine pauschale Verschiebung:** Die Klassifizierung ist weiterhin einzelfallbezogen vorzunehmen — verschoben sind die *Pflichtenfolgen*, nicht die Einordnung. Art. 50 greift unabhängig von der Hochrisiko-Einstufung. Amtsblatt-Fundstelle der Änderungsverordnung `[unverifiziert - prüfen]`.
+
 ## Eingaben
 
 - Funktion des KI-Systems (Use Case)
@@ -129,5 +144,7 @@ Nächste Schritte: <…>
 - **Ausnahme Art. 6 Abs. 3 fehlinterpretiert** — die Ausnahme greift nur kumulativ mit "kein erhebliches Risiko"; reine Vorbereitung genügt nicht.
 - **Profiling übersehen** — Art. 6 Abs. 3 schließt Profiling aus, die Ausnahme greift dann nie.
 - **Rolle nicht sauber bestimmt** — Anbieter-/Betreiber-Pflichten unterscheiden sich grundlegend. Self-Build = oft Anbieter UND Betreiber.
-- **Phasierte Anwendung übersehen** — Hochrisiko-Pflichten gelten zu unterschiedlichen Daten (2025-08 / 2026-08 / 2027-08).
+- **Überholte Geltungsdaten verwendet** — die Hochrisiko-Pflichten gelten nach dem Digital Omnibus **erst ab 02.12.2027 (Anhang III)** bzw. **02.08.2028 (Anhang I)**. Mandanten, die noch auf den 02.08.2026 hinarbeiten, planen gegen aufgehobenes Recht; umgekehrt ist **Art. 50 zum 02.08.2026 unverändert anwendbar** und wird wegen der Hochrisiko-Verschiebung häufig übersehen.
+- **Verschiebung mit Entwarnung verwechselt** — verschoben sind die Pflichtenfolgen, nicht die Klassifizierung. GPAI-Pflichten (Art. 51–55) sind **nicht** verschoben und ab 02.08.2026 bußgeldbewehrt.
+- **Nationale Zuständigkeit falsch adressiert** — Marktüberwachungsbehörde ist die **Bundesnetzagentur** (Auffangzuständigkeit, KI-MIG), nicht die Datenschutzaufsicht; für Biometrie in der Strafverfolgung die unabhängige KI-Marktüberwachungskammer. `[unverifiziert - prüfen]`
 - **Wechselwirkung mit DSGVO** — Art. 27 KI-VO verlangt eine Grundrechte-Folgenabschätzung zusätzlich zur DPIA Art. 35 DSGVO.

@@ -252,6 +252,11 @@
       "name": "wohnungseigentumsrecht",
       "source": "./wohnungseigentumsrecht",
       "description": "Wohnungseigentumsrecht (WEG) nach der WEMoG-Reform (seit 01.12.2020) – Beschlussanfechtung §§ 23, 44, 45 WEG (Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer, Monatsfrist, Nichtigkeit vs. Anfechtbarkeit), Jahresabrechnung und Hausgeld § 28 WEG (Wirtschaftsplan, Abrechnungsspitze, Vermögensbericht), bauliche Veränderung §§ 20, 21 WEG (Gestattungsbeschluss, privilegierte Maßnahmen inkl. E-Mobilität und Steckersolargeräte, Kostenverteilung)."
+    },
+    {
+      "name": "cyber-resilience-act",
+      "source": "./cyber-resilience-act",
+      "description": "EU Cyber Resilience Act – VO (EU) 2024/2847. Anwendungsbereichsprüfung (Produkt mit digitalen Elementen, Ausnahmen Art. 2, Rollenbestimmung, Verwalter quelloffener Software, Einstufung nach Anhang III/IV), Meldepflichten nach Art. 14 ab 11.09.2026 (24h-Frühwarnung, 72h-Vollmeldung, Abschlussbericht binnen 14 Tagen bzw. 1 Monat über die einheitliche Meldeplattform an CSIRT und ENISA), grundlegende Anforderungen nach Anhang I mit SBOM, Unterstützungszeitraum, technischer Dokumentation Anhang VII, Konformitätsbewertung Anhang VIII und CE-Kennzeichnung sowie koordinierte Schwachstellenoffenlegung und Schwachstellenmanagement."
     }
   ]
 }

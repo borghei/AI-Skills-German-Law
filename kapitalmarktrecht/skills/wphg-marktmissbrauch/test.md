@@ -32,10 +32,16 @@ must_appear:
   - "Directors' Dealings"
   - "Closed Period"
   - "unverzüglich"
+  - "gestreckten Vorgang"
+  - "Endereignis"
+  - "05.06.2026"
+  - "35 zeitlich gestreckte Vorgänge"
 
 must_flag:
   - "Aufschub Art. 17 IV ohne Dokumentation"
-  - "Zwischenschritt"
+  - "Zwischenschritt nach überholter Geltl-Linie"
+  - "Endereignis nicht dokumentiert bestimmt"
+  - "Ad-hoc-Gremium nicht nachgeschult"
   - "Closed Period"
   - "Selbst-Bewertung"
 ---
@@ -43,5 +49,9 @@ must_flag:
 # Test — wphg-marktmissbrauch
 
 Struktureller Smoke-Test. Die vier Kriterien der Insiderinformation müssen geprüft sein, die drei Voraussetzungen des Selbstaufschubs (Art. 17 IV MAR) explizit abgehakt, Insiderliste und Closed Period adressiert sein.
+
+**Rechtsstand seit 05.06.2026 (EU Listing Act, RL (EU) 2024/2811 / VO (EU) 2024/2809).** Der Sachverhalt ist ein zeitlich gestreckter Vorgang: das unterzeichnete Term Sheet ist ein **Zwischenschritt**. Die Prüfung muss zu dem Ergebnis kommen, dass daraus **keine Ad-hoc-Pflicht** folgt — veröffentlichungspflichtig ist allein das **Endereignis** (hier: Signing). Zugleich muss sie feststellen, dass die Insiderqualität nach Art. 7 MAR **unberührt** bleibt und Handelsverbot (Art. 14) sowie Insiderlisten-Pflicht (Art. 18) bereits jetzt greifen.
+
+Die früheren Assertions unterstellten die überholte Zwischenschritt-Ad-hoc-Pflicht (Geltl-Linie) und wurden auf die Endereignis-Systematik umgestellt.
 
 Run: `python ../../../scripts/eval.py --skill kapitalmarktrecht/skills/wphg-marktmissbrauch`
