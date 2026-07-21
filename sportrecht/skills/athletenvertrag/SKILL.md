@@ -68,13 +68,13 @@ Häufige rote Klauseln im Sportbereich:
 
 ### 3. Befristung Spielerarbeitsvertrag (TzBfG)
 
-Spielerarbeitsverträge sind ganz überwiegend befristet. Sachgrund nach § 14 I TzBfG ist nach hM gegeben (Eigenart der Arbeitsleistung — körperliche Höchstleistung, begrenzte Karriere); BAG hat dies für Profifußball anerkannt (BAG, Urt. v. 16.01.2018 – 7 AZR 312/16 `[unverifiziert – prüfen]`). Kettenbefristungen sind kritisch.
+Spielerarbeitsverträge sind ganz überwiegend befristet. Sachgrund nach § 14 I TzBfG ist nach hM gegeben (Eigenart der Arbeitsleistung — körperliche Höchstleistung, begrenzte Karriere); BAG hat dies für Profifußball anerkannt (BAG, Urt. v. 16.01.2018 – 7 AZR 312/16, NZA 2018, 703 = NJW 2018, 1992 = SpuRt 2018, 170 — *Müller ./. 1. FSV Mainz 05*, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=2018-01-16&Aktenzeichen=7%20AZR%20312/16)). Kettenbefristungen sind kritisch.
 
 ### 4. Bosman/Diarra: Ausbildungsentschädigung und Transferregeln
 
-- EuGH, **Bosman**, C-415/93, ECLI:EU:C:1995:463 `[unverifiziert – prüfen in curia]`: Transferentschädigung nach Vertragsende verletzt Art. 45 AEUV (damals Art. 48 EGV).
-- EuGH, **Meca-Medina**, C-519/04 P `[unverifiziert]`: Sportregeln unterliegen Art. 101 AEUV, wenn sie wirtschaftliche Wirkung haben; Drei-Stufen-Test (legitimer Zweck, Verhältnismäßigkeit, kohärenter Vollzug).
-- EuGH, **Diarra/Royal Antwerp**, C-650/22 `[unverifiziert – prüfen]`: FIFA-Regelungen zur einseitigen Vertragsauflösung im Profifußball am Maßstab von Art. 45, 101 AEUV.
+- EuGH, Urt. v. 15.12.1995 – **Bosman**, C-415/93, ECLI:EU:C:1995:463, NJW 1996, 505 = EuZW 1996, 82: Transferentschädigung nach Vertragsende verletzt Art. 45 AEUV (damals Art. 48 EGV); zugleich Unzulässigkeit der Ausländerklauseln ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=1995-12-15&Aktenzeichen=C-415/93)).
+- EuGH, Urt. v. 18.07.2006 – **Meca-Medina und Majcen/Kommission**, C-519/04 P, NJW 2007, 2097 = EuZW 2006, 593 = SpuRt 2006, 195: Sportregeln unterliegen Art. 101 AEUV, wenn sie wirtschaftliche Wirkung haben; Drei-Stufen-Test (legitimer Zweck, Verhältnismäßigkeit, kohärenter Vollzug) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=C-519/04)).
+- EuGH, Urt. v. 04.10.2024 – **Diarra (FIFA ./. BZ)**, C-650/22: FIFA-Regelungen zum Status und Transfer von Spielern (RSTS) zur einseitigen Vertragsauflösung am Maßstab von Art. 45, 101 AEUV ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2024-10-04&Aktenzeichen=C-650/22)).
 
 Konsequenz für Vertragsentwurf: Transferentschädigungs- und Loyalty-Klauseln am Art. 45/101 AEUV-Maßstab prüfen; § 1 GWB nationale Schranke.
 
@@ -82,7 +82,7 @@ Konsequenz für Vertragsentwurf: Transferentschädigungs- und Loyalty-Klauseln a
 
 - **§ 22 KUG**: Bildnisse nur mit Einwilligung der abgebildeten Person verbreitet/zur Schau gestellt — gilt während *und nach* dem Athletenvertrag.
 - **§ 23 KUG**: Ausnahmen (Bildnisse aus dem Bereich der Zeitgeschichte, Versammlungen) — abnehmender Schutz bei Spitzensportler/innen, aber höchstpersönlicher Kernbereich bleibt.
-- **Vermögensrechtlicher Persönlichkeitsschutz** (BGH, *Marlene Dietrich*-Linie `[unverifiziert]`): kommerzielle Verwertung des eigenen Bildnisses ist vermögenswert.
+- **Vermögensrechtlicher Persönlichkeitsschutz** (BGH, Urt. v. 01.12.1999 – I ZR 49/97, BGHZ 143, 214 = NJW 2000, 2195 = GRUR 2000, 709 – *Marlene Dietrich*): die vermögenswerten Bestandteile des Persönlichkeitsrechts sind kommerziell verwertbar und vererblich; Schadensberechnung nach den drei Berechnungsarten ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=1999-12-01&Aktenzeichen=I%20ZR%2049/97)).
 
 Klauselbaustein **Bildrechteübertragung**: präzise nach Medium, Territorium, Laufzeit, Verwendungszweck; bloße "umfassende" Übertragung ist intransparent und im AGB-Kontext angreifbar.
 
@@ -128,13 +128,13 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Basedow, in: MüKoBGB, 9. Aufl. 2022, § 305 BGB Rn. 1 ff.; Wurmnest, § 307 BGB Rn. 1 ff.
 - Linck, in: ErfK, 24. Aufl. 2024, § 14 TzBfG Rn. 1 ff.
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/Beck-Online/curia.europa.eu]`)
+### Rechtsprechung
 
-1. EuGH, Urt. v. 15.12.1995 – Rs. C-415/93, ECLI:EU:C:1995:463 (Bosman)
-2. EuGH, Urt. v. 18.07.2006 – Rs. C-519/04 P (Meca-Medina)
-3. EuGH, Urt. v. 04.10.2024 – Rs. C-650/22 (Diarra)
-4. BAG, Urt. v. 16.01.2018 – 7 AZR 312/16 (Befristung Profifußball)
-5. BGH, *Marlene Dietrich*, Urt. v. 01.12.1999 – I ZR 49/97, BGHZ 143, 214 (vermögensrechtlicher Persönlichkeitsschutz)
+1. EuGH, Urt. v. 15.12.1995 – Rs. C-415/93, ECLI:EU:C:1995:463, NJW 1996, 505 (*Bosman* – Art. 45 AEUV, Transferentschädigung und Ausländerklauseln), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=1995-12-15&Aktenzeichen=C-415/93)
+2. EuGH, Urt. v. 18.07.2006 – Rs. C-519/04 P, NJW 2007, 2097 = SpuRt 2006, 195 (*Meca-Medina und Majcen/Kommission* – Anti-Doping-Regeln am Maßstab des Kartellrechts), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=C-519/04)
+3. EuGH, Urt. v. 04.10.2024 – Rs. C-650/22 (*Diarra*, FIFA ./. BZ – FIFA-RSTS, Art. 45, 101 AEUV), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2024-10-04&Aktenzeichen=C-650/22)
+4. BAG, Urt. v. 16.01.2018 – 7 AZR 312/16, NZA 2018, 703 = SpuRt 2018, 170 (*Müller ./. 1. FSV Mainz 05* – Befristung Profifußball, § 14 I TzBfG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=2018-01-16&Aktenzeichen=7%20AZR%20312/16)
+5. BGH, Urt. v. 01.12.1999 – I ZR 49/97, BGHZ 143, 214 = GRUR 2000, 709 (*Marlene Dietrich* – vermögensrechtlicher Persönlichkeitsschutz), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=1999-12-01&Aktenzeichen=I%20ZR%2049/97)
 
 ## Ausgabeformat
 
@@ -173,7 +173,7 @@ Vertragstyp: <…>
 KLAUSELKOMMENTAR (intern)
 
 1. § 2 Befristung
-   - Sachgrund § 14 I Nr. 4 TzBfG (BAG 7 AZR 312/16 [unverifiziert])
+   - Sachgrund § 14 I Nr. 4 TzBfG (BAG, Urt. v. 16.01.2018 – 7 AZR 312/16, NZA 2018, 703)
 2. § 5 Bildrechte
    - "umfassend" zu unbestimmt → § 307 I 2 BGB; präzisieren
 3. § 6 Doping-Rückzahlung

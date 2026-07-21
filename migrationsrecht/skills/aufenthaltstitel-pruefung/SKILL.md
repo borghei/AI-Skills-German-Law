@@ -121,13 +121,13 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Hofmann, in: NK-AuslR, 3. Aufl. 2023, § 5 AufenthG Rn. 1 ff.
 - Maor, in: Huber/Mantel, AufenthG/AsylG, 3. Aufl. 2021, § 18b AufenthG Rn. 1 ff.
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/curia]`)
+### Rechtsprechung
 
-1. BVerwG, Urt. v. 22.02.2017 – 1 C 3.16 (Bleiberecht, § 25b AufenthG)
-2. BVerwG, Urt. v. 16.11.2010 – 1 C 17.09 (Identitätsklärung)
-3. EuGH, Urt. v. 04.03.2010 – Rs. C-578/08, Chakroun (Familienzusammenführung)
-4. EuGH, Urt. v. 27.06.2006 – Rs. C-540/03, Parlament/Rat (Familienzusammenführungs-RL)
-5. EGMR, Urt. v. 18.10.2006 – Nr. 46410/99, Üner ./. NL (Ausweisung, Art. 8 EMRK)
+1. BVerwG, Urt. v. 22.02.2017 – 1 C 3.16, BVerwGE 157, 325 = NVwZ 2017, 1883 (**Ausweisung eines anerkannten Flüchtlings wegen Unterstützung der PKK** — nicht Bleiberecht nach § 25b AufenthG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2017-02-22&Aktenzeichen=1%20C%203.16)
+2. BVerwG, Urt. v. 16.11.2010 – 1 C 17.09, BVerwGE 138, 122 = NVwZ 2011, 495 (**Nachholung des Visumverfahrens** bei Ehegatten Deutscher; „erforderliches" Visum richtet sich nach dem tatsächlich verfolgten Aufenthaltszweck — nicht Identitätsklärung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2010-11-16&Aktenzeichen=1%20C%2017.09)
+3. EuGH, Urt. v. 04.03.2010 – Rs. C-578/08, Chakroun (Familienzusammenführung, RL 2003/86/EG, Begriff der Sozialhilfe), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2010-03-04&Aktenzeichen=C-578/08)
+4. EuGH, Urt. v. 27.06.2006 – Rs. C-540/03, Parlament/Rat (Familienzusammenführungs-RL 2003/86/EG, Kindeswohl und Achtung des Familienlebens), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2006-06-27&Aktenzeichen=C-540/03)
+5. EGMR, Urt. v. 18.10.2006 – Nr. 46410/99, Üner ./. NL (Ausweisung, Art. 8 EMRK), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EGMR&Datum=2006-10-18&Aktenzeichen=46410/99)
 
 ## Ausgabeformat
 

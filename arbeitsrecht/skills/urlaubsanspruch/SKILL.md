@@ -66,7 +66,7 @@ Praktische Konsequenz für die Vertragsgestaltung: Wer Mehrurlaub gewährt, soll
 
 Nach dem Gesetzeswortlaut ist der Urlaub **im laufenden Kalenderjahr** zu gewähren und zu nehmen; eine Übertragung ist nur bei dringenden betrieblichen oder in der Person liegenden Gründen statthaft und führt zum Verfall am **31. März** des Folgejahres (§ 7 Abs. 3 BUrlG).
 
-Dieser automatische Verfall gilt so **nicht mehr**. Nach der unionsrechtlich geprägten Rechtsprechung verfällt der gesetzliche Urlaub am Jahresende oder zum 31. März nur, wenn der Arbeitgeber zuvor seine **Mitwirkungsobliegenheiten** erfüllt hat (EuGH-Rspr. zu Art. 7 RL 2003/88/EG und nachfolgende Rspr. des BAG zu § 7 BUrlG `[unverifiziert – prüfen]`). Erforderlich sind kumulativ:
+Dieser automatische Verfall gilt so **nicht mehr**. Nach der unionsrechtlich geprägten Rechtsprechung verfällt der gesetzliche Urlaub am Jahresende oder zum 31. März nur, wenn der Arbeitgeber zuvor seine **Mitwirkungsobliegenheiten** erfüllt hat (EuGH, Urt. v. 06.11.2018 – C-619/16, *Kreuziger*, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-619/16), und C-684/16, *Max-Planck-Gesellschaft/Shimizu*, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-684/16); umgesetzt durch BAG, Urt. v. 19.02.2019 – 9 AZR 541/15, NZA 2019, 982, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=19.02.2019&Aktenzeichen=9%20AZR%20541/15)). Erforderlich sind kumulativ:
 
 1. eine **individuelle** Mitteilung an den einzelnen Arbeitnehmer — kein Aushang, kein Intranet-Rundschreiben,
 2. Angabe der **konkreten Zahl** der noch offenen Urlaubstage,
@@ -109,7 +109,7 @@ Der Rücklauf ist zur Personalakte zu nehmen — das Schreiben ist das Beweismit
 
 ### 4. Verjährung
 
-Der Urlaubsanspruch unterliegt der Regelverjährung von drei Jahren ([§ 195 BGB](https://www.gesetze-im-internet.de/bgb/__195.html)). Die Verjährungsfrist beginnt jedoch **nicht** mit dem Schluss des Urlaubsjahres, sondern erst mit dem Schluss des Jahres, in dem der Arbeitgeber seine Hinweis- und Aufforderungsobliegenheiten **erfüllt** hat und der Urlaub gleichwohl nicht genommen wurde (Rspr. des EuGH und des BAG zur Verjährung des Urlaubsanspruchs `[unverifiziert – prüfen]`).
+Der Urlaubsanspruch unterliegt der Regelverjährung von drei Jahren ([§ 195 BGB](https://www.gesetze-im-internet.de/bgb/__195.html)). Die Verjährungsfrist beginnt jedoch **nicht** mit dem Schluss des Urlaubsjahres, sondern erst mit dem Schluss des Jahres, in dem der Arbeitgeber seine Hinweis- und Aufforderungsobliegenheiten **erfüllt** hat und der Urlaub gleichwohl nicht genommen wurde (BAG, Urt. v. 20.12.2022 – 9 AZR 266/20, NZA 2023, 683; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=20.12.2022&Aktenzeichen=9%20AZR%20266/20)).
 
 Praxisfolge: Bei einem Arbeitgeber, der nie belehrt hat, ist der Anspruch weder verfallen noch verjährt — er kumuliert bis zur Beendigung des Arbeitsverhältnisses und schlägt dann in einen Abgeltungsanspruch um. Der Abgeltungsanspruch selbst ist ein reiner Geldanspruch und verjährt ab seiner Entstehung mit der Beendigung nach §§ 195, 199 BGB; er unterliegt zudem **arbeitsvertraglichen und tariflichen Ausschlussfristen**.
 
@@ -117,7 +117,7 @@ Praxisfolge: Bei einem Arbeitgeber, der nie belehrt hat, ist der Anspruch weder 
 
 - **Erkrankung während des Urlaubs** ([§ 9 BUrlG](https://www.gesetze-im-internet.de/burlg/__9.html)): Durch ärztliches Zeugnis nachgewiesene Tage der Arbeitsunfähigkeit werden **nicht** auf den Jahresurlaub angerechnet. Die Tage sind gutzuschreiben; der Arbeitnehmer darf den Urlaub allerdings nicht eigenmächtig verlängern.
 - **Urlaub bei durchgehender Arbeitsunfähigkeit:** Der Anspruch entsteht auch während der Erkrankung; er ist nur nicht erfüllbar. Der Arbeitgeber kann seine Hinweisobliegenheit hier nicht erfüllen, weil der Urlaub tatsächlich nicht genommen werden kann.
-- **15-Monats-Frist:** Ist der Arbeitnehmer durchgehend arbeitsunfähig und deshalb an der Inanspruchnahme gehindert, verfällt der gesetzliche Urlaubsanspruch **15 Monate nach Ablauf des Urlaubsjahres** — für das Urlaubsjahr 2024 also mit Ablauf des **31.03.2026** (EuGH-Rspr. zur zeitlichen Begrenzung der Ansammlung von Urlaubsansprüchen bei Langzeiterkrankung, umgesetzt in st. Rspr. des BAG `[unverifiziert – prüfen]`).
+- **15-Monats-Frist:** Ist der Arbeitnehmer durchgehend arbeitsunfähig und deshalb an der Inanspruchnahme gehindert, verfällt der gesetzliche Urlaubsanspruch **15 Monate nach Ablauf des Urlaubsjahres** — für das Urlaubsjahr 2024 also mit Ablauf des **31.03.2026** (EuGH, Urt. v. 22.11.2011 – C-214/10, *KHS/Schulte*; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=22.11.2011&Aktenzeichen=C-214/10); umgesetzt in st. Rspr. des BAG `[unverifiziert – prüfen]`).
 - **Wichtige Einschränkung:** Diese 15-Monats-Frist greift nur, wenn der Arbeitnehmer **durchgehend** arbeitsunfähig war. War er im Urlaubsjahr zeitweise arbeitsfähig, hätte er den Urlaub teilweise nehmen können; dann bleibt es beim Erfordernis der Hinweisobliegenheit, und ohne deren Erfüllung tritt kein Verfall ein `[unverifiziert – prüfen]`.
 
 ### 6. Abgeltung ([§ 7 Abs. 4 BUrlG](https://www.gesetze-im-internet.de/burlg/__7.html))
@@ -126,7 +126,7 @@ Kann der Urlaub wegen Beendigung des Arbeitsverhältnisses ganz oder teilweise n
 
 - Der Abgeltungsanspruch entsteht **erst mit der Beendigung** und ist ein reiner Geldanspruch.
 - Eine Abgeltung im **laufenden** Arbeitsverhältnis ist unzulässig; sie erfüllt den Urlaubsanspruch nicht.
-- Der Anspruch ist **vererblich**: Endet das Arbeitsverhältnis durch Tod des Arbeitnehmers, steht der Abgeltungsanspruch den Erben zu (EuGH-Rspr. zur Vererblichkeit des Urlaubsabgeltungsanspruchs `[unverifiziert – prüfen]`).
+- Der Anspruch ist **vererblich**: Endet das Arbeitsverhältnis durch Tod des Arbeitnehmers, steht der Abgeltungsanspruch den Erben zu (EuGH, Urt. v. 06.11.2018 – C-569/16 und C-570/16, *Bauer* und *Willmeroth*; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-569/16)).
 - Bemessung nach [§ 11 BUrlG](https://www.gesetze-im-internet.de/burlg/__11.html): durchschnittlicher Arbeitsverdienst der letzten **13 Wochen** vor Urlaubsbeginn, ohne zusätzlich für Überstunden gezahltes Entgelt.
 
 **Berechnungsformel:**
@@ -159,11 +159,12 @@ Abgeltung = Urlaubsentgelt je Tag × offene Urlaubstage
 
 ### Rechtsprechung
 
-- EuGH-Rspr. zu Art. 7 RL 2003/88/EG (Verfall des Urlaubs setzt die Erfüllung arbeitgeberseitiger Mitwirkungsobliegenheiten voraus) `[unverifiziert – prüfen]`
-- st. Rspr. des BAG zu § 7 BUrlG (Umsetzung der Mitwirkungsobliegenheiten: individuelle Aufforderung, Angabe der Tage, Verfallhinweis) `[unverifiziert – prüfen]`
-- EuGH- und BAG-Rspr. zur Verjährung des Urlaubsanspruchs (Verjährungsbeginn erst nach Erfüllung der Obliegenheiten) `[unverifiziert – prüfen]`
-- EuGH-Rspr. zur zeitlichen Begrenzung der Ansammlung bei Langzeiterkrankung (15 Monate nach Ablauf des Urlaubsjahres) `[unverifiziert – prüfen]`
-- EuGH-Rspr. zur Vererblichkeit des Urlaubsabgeltungsanspruchs `[unverifiziert – prüfen]`
+- EuGH, Urt. v. 06.11.2018 – C-619/16, *Kreuziger* (Art. 7 RL 2003/88/EG; kein automatischer Verfall allein wegen unterbliebenen Urlaubsantrags), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-619/16)
+- EuGH, Urt. v. 06.11.2018 – C-684/16, *Max-Planck-Gesellschaft/Shimizu* (Art. 7 RL 2003/88/EG i.V.m. der Grundrechtecharta; Arbeitgeber muss klar und rechtzeitig über den drohenden Verfall aufklären), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-684/16)
+- BAG, Urt. v. 19.02.2019 – 9 AZR 541/15, NZA 2019, 982 (Umsetzung der Mitwirkungsobliegenheiten zu § 7 BUrlG: individuelle Aufforderung, Angabe der Tage, Verfallhinweis), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=19.02.2019&Aktenzeichen=9%20AZR%20541/15)
+- BAG, Urt. v. 20.12.2022 – 9 AZR 266/20, NZA 2023, 683 (Verjährung des Urlaubsanspruchs; Verjährungsbeginn erst nach Erfüllung der Obliegenheiten), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=20.12.2022&Aktenzeichen=9%20AZR%20266/20)
+- EuGH, Urt. v. 22.11.2011 – C-214/10, *KHS/Schulte* (zeitliche Begrenzung der Ansammlung bei Langzeiterkrankung; Übertragungszeitraum von 15 Monaten unionsrechtlich zulässig), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=22.11.2011&Aktenzeichen=C-214/10)
+- EuGH, Urt. v. 06.11.2018 – C-569/16 und C-570/16, *Bauer* und *Willmeroth* (Vererblichkeit des Urlaubsabgeltungsanspruchs), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-569/16)
 - st. Rspr. des BAG zur Abgrenzung von gesetzlichem Urlaub und vertraglichem Mehrurlaub `[unverifiziert – prüfen]`
 
 > Aktenzeichen und Rechtssachennummern sind vor Verwendung in juris, Beck-Online, [curia.europa.eu](https://curia.europa.eu) oder der [BAG-Entscheidungsdatenbank](https://www.bundesarbeitsgericht.de/entscheidungen/) zu ermitteln.

@@ -28,7 +28,7 @@ Die Prüfung wird gedanklich auf drei Rollen verteilt, die nacheinander arbeiten
 
 ### 1. Vertragstypologische Einordnung
 
-Der BGH ordnet die entgeltliche Überlassung von Software auf Zeit (ASP/SaaS) dem Mietrecht zu, weil der Schwerpunkt in der Gebrauchsüberlassung liegt (BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 — ASP-Vertrag ist Mietvertrag). Maßgeblich ist damit § 535 BGB: Der Anbieter schuldet die fortlaufende Gewährung des vertragsgemäßen Gebrauchs während der gesamten Laufzeit, nicht nur eine einmalige Bereitstellung. Implementierungs-, Customizing- oder Schulungsanteile können zu einem typengemischten Vertrag mit werkvertraglichen Elementen führen und sind gesondert auszuweisen.
+Der BGH ordnet die entgeltliche Überlassung von Software auf Zeit (ASP/SaaS) dem Mietrecht zu, weil der Schwerpunkt in der Gebrauchsüberlassung liegt (BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 — ASP-Vertrag ist Mietvertrag, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2006-11-15&Aktenzeichen=XII%20ZR%20120/04)). Maßgeblich ist damit § 535 BGB: Der Anbieter schuldet die fortlaufende Gewährung des vertragsgemäßen Gebrauchs während der gesamten Laufzeit, nicht nur eine einmalige Bereitstellung. Implementierungs-, Customizing- oder Schulungsanteile können zu einem typengemischten Vertrag mit werkvertraglichen Elementen führen und sind gesondert auszuweisen.
 
 ### 2. Mängelrechte und Verfügbarkeit
 
@@ -83,4 +83,4 @@ Verhandlungsempfehlung:                 <…>
 
 - [§ 535 BGB](https://www.gesetze-im-internet.de/bgb/__535.html), [§ 536 BGB](https://www.gesetze-im-internet.de/bgb/__536.html)
 - [§ 305 BGB](https://www.gesetze-im-internet.de/bgb/__305.html), [§ 307 BGB](https://www.gesetze-im-internet.de/bgb/__307.html), [§ 310 BGB](https://www.gesetze-im-internet.de/bgb/__310.html)
-- BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 (ASP-Vertrag = Mietvertrag) — verifiziert
+- BGH, Urt. v. 15.11.2006 – XII ZR 120/04, NJW 2007, 2394 = MMR 2007, 243 (ASP-Vertrag = Mietvertrag), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2006-11-15&Aktenzeichen=XII%20ZR%20120/04)

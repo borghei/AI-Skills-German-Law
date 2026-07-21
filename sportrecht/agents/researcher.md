@@ -75,9 +75,10 @@ Pro Statut **bis zu drei** einschlägige Entscheidungen aus dem Modellwissen. Qu
 
 Pflicht-Leitentscheidungen je nach Skill:
 
-- **Doping**: CAS, *Pechstein* (CAS 2009/A/1912) `[unverifiziert]`; CAS, *Mutu* (CAS 2008/A/1644) `[unverifiziert]`; OLG München, Pechstein (Az. U 1110/14 Kart) `[unverifiziert]`; BGH, *Pechstein* (Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292) `[unverifiziert – prüfen]`; EGMR, *Mutu und Pechstein/Schweiz* (Nr. 40575/10, 67474/10) `[unverifiziert]`
-- **Verein/Verband**: BGH, *Bundesligaentscheidung Reiten* (KartellSenat) `[unverifiziert]`; BGH, *Inhaltskontrolle Vereinssatzung* (st. Rspr.) `[unverifiziert]`; BGH, *Stadionverbot* (Urt. v. 30.10.2009 – V ZR 253/08, BGHZ 183, 188) `[unverifiziert – prüfen]`; BVerfG, *Stadionverbot* (Beschl. v. 11.04.2018 – 1 BvR 3080/09) `[unverifiziert]`
-- **Spielerarbeitsvertrag/Kartell**: EuGH, *Bosman*, Rs. C-415/93, ECLI:EU:C:1995:463 `[unverifiziert]`; EuGH, *Meca-Medina*, C-519/04 P `[unverifiziert]`; EuGH, *Diarra/RoyalAntwerp*, C-650/22 `[unverifiziert]`
+- **Doping** (staatliche Gerichte): OLG München, Urt. v. 15.01.2015 – U 1110/14 Kart, SchiedsVZ 2015, 40; BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 = NJW 2016, 2266 (*Pechstein/ISU*); EGMR, Urt. v. 02.10.2018 – Nr. 40575/10 und 67474/10 (*Mutu und Pechstein/Schweiz*); BVerfG, Beschl. v. 03.06.2022 – 1 BvR 2103/16 (*Pechstein*)
+- **Doping** (Schiedssprüche, **keine** Gerichtsentscheidungen — getrennt zitieren, nicht in dieselbe Liste): CAS 2009/A/1912 (*Pechstein*) `[unverifiziert – nur über jurisprudence.tas-cas.org belegbar]`; CAS 2008/A/1644 (*Mutu*) `[unverifiziert – nur über jurisprudence.tas-cas.org belegbar]`
+- **Verein/Verband**: BGH, Urt. v. 30.10.2009 – V ZR 253/08, NJW 2010, 534 = SpuRt 2010, 28 (*Stadionverbot*); BVerfG, Beschl. v. 11.04.2018 – 1 BvR 3080/09, BVerfGE 148, 267 = NJW 2018, 1667 (*Stadionverbot*, mittelbare Drittwirkung Art. 3 I GG); BGH, *Inhaltskontrolle Vereinssatzung* (st. Rspr.) `[unverifiziert – Az. ermitteln]`; BGH (Kartellsenat) zum Reit-/Pferdesport `[unverifiziert – Entscheidungsname „Bundesligaentscheidung Reiten" nicht belegt]`
+- **Spielerarbeitsvertrag/Kartell**: EuGH, Urt. v. 15.12.1995 – Rs. C-415/93, ECLI:EU:C:1995:463, NJW 1996, 505 (*Bosman*); EuGH, Urt. v. 18.07.2006 – C-519/04 P, NJW 2007, 2097 (*Meca-Medina und Majcen/Kommission*); EuGH, Urt. v. 04.10.2024 – C-650/22 (*Diarra*, FIFA ./. BZ); BAG, Urt. v. 16.01.2018 – 7 AZR 312/16, NZA 2018, 703 (Befristung Profifußball)
 
 ### 4. Strittige Fragen markieren
 

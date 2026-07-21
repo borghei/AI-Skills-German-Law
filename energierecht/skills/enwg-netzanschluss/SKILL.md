@@ -125,7 +125,7 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 
 ### Rechtsprechung und Behördenpraxis (`[unverifiziert – prüfen in juris / bundesnetzagentur.de]`)
 
-1. BGH, Urt. v. 18.11.2008 – KZR 17/07, RdE 2009, 184 (Anschluss EEG-Anlage, kürzester Verknüpfungspunkt) `[unverifiziert]`
+1. BGH, Urt. v. 18.11.2008 – KZR 17/07, RdE 2009, 184 (Anschluss EEG-Anlage, kürzester Verknüpfungspunkt) — in dejure.org weder unter Datum + Aktenzeichen noch über die Aktenzeichen-Suche auffindbar; Senatszuordnung (KZR statt VIII ZR) und Fundstelle sind vor jeder Verwendung zu prüfen `[unverifiziert – Aktenzeichen nicht belegbar]`
 2. OLG Düsseldorf, Beschl. v. – VI-3 Kart Az. (Beschwerde gegen BNetzA-Beschluss zum Netzanschluss) `[unverifiziert]`
 3. BNetzA, Festlegung BK6 zu Anschluss- und Verteilfragen `[unverifiziert]`
 

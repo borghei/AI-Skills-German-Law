@@ -89,4 +89,4 @@ Handlungsempfehlung:              <…>
 - [§ 312j BGB](https://www.gesetze-im-internet.de/bgb/__312j.html) (besondere Pflichten, Button-Lösung)
 - [§ 312g BGB](https://www.gesetze-im-internet.de/bgb/__312g.html), [§ 355 BGB](https://www.gesetze-im-internet.de/bgb/__355.html) (Widerrufsrecht)
 - Art. 246a EGBGB (Informationspflichten Fernabsatz)
-- EuGH, Urt. v. 30.5.2024 – C-400/22 (Button-Lösung auch bei bedingter Zahlungspflicht) `[unverifiziert – prüfen]`
+- EuGH, Urt. v. 30.05.2024 – C-400/22 (VT u. UR ./. Conny GmbH), NJW 2024, 2449 (Button-Lösung nach Art. 8 Abs. 2 RL 2011/83/EU auch bei bedingter Zahlungspflicht), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2024-05-30&Aktenzeichen=C-400/22)

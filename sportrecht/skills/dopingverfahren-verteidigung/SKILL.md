@@ -37,7 +37,7 @@ Researcher liefert WADC-Artikel, NADC-Bestimmungen, einschlägiges Verbandsstatu
 
 ### 1. Anwendbares Regelwerk identifizieren
 
-Welche **Fassung** des WADC (idR 2021 ff. `[unverifiziert]`) und des NADC ist über das Verbandsstatut und die Athletenvereinbarung in das konkrete Verfahren einbezogen? Schiedsklausel zugunsten CAS wirksam nach Pechstein-Linie (BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 `[unverifiziert – prüfen]`; EGMR, *Mutu und Pechstein/Schweiz*, Nr. 40575/10 und 67474/10 `[unverifiziert]`)?
+Welche **Fassung** des WADC (idR 2021 ff. `[unverifiziert]`) und des NADC ist über das Verbandsstatut und die Athletenvereinbarung in das konkrete Verfahren einbezogen? Schiedsklausel zugunsten CAS wirksam nach Pechstein-Linie (BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 = NJW 2016, 2266, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2016-06-07&Aktenzeichen=KZR%206/15); EGMR, Urt. v. 02.10.2018 – Nr. 40575/10 und 67474/10, *Mutu und Pechstein/Schweiz*, [hudoc.echr.coe.int](https://hudoc.echr.coe.int/eng?i=001-186828); Fortsetzung BVerfG, Beschl. v. 03.06.2022 – 1 BvR 2103/16, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2022-06-03&Aktenzeichen=1%20BvR%202103/16))?
 
 ### 2. Verstoßtatbestand WADC Art. 2
 
@@ -127,13 +127,21 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Vieweg/Steinbach, Sportrecht, Loseblatt, Stand Jahr, Kap. Anti-Doping
 - Holla, Praxishandbuch Sportrecht, X. Aufl. Jahr, Kap. zu CAS-Verfahren
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/Beck-Online/cas.tas-cas.org/hudoc.echr.coe.int]`)
+### Staatliche Rechtsprechung (verifiziert)
 
-1. BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 (Pechstein – Schiedsklausel wirksam, aber Inhaltskontrolle)
-2. EGMR, Urt. v. 02.10.2018 – Nr. 40575/10 und 67474/10 (Mutu und Pechstein/Schweiz – öffentliche Verhandlung CAS)
-3. CAS 2009/A/1912 (Pechstein-Award)
-4. CAS 2008/A/1644 (Mutu)
-5. BVerfG zur Sportgerichtsbarkeit (st. Rspr.) — Az. konkret prüfen
+1. BGH, Urt. v. 07.06.2016 – KZR 6/15, BGHZ 210, 292 = NJW 2016, 2266 = SchiedsVZ 2016, 268 (*Pechstein/ISU* – Schiedsklausel wirksam, aber Inhaltskontrolle), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2016-06-07&Aktenzeichen=KZR%206/15)
+2. OLG München, Urt. v. 15.01.2015 – U 1110/14 Kart, SchiedsVZ 2015, 40 = SpuRt 2015, 78 (Vorinstanz – Schiedsklausel kartellrechtswidrig), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=U%201110/14%20Kart)
+3. EGMR, Urt. v. 02.10.2018 – Nr. 40575/10 und 67474/10, ECLI:CE:ECHR:2018:1002JUD004057510 (*Mutu und Pechstein/Schweiz* – öffentliche Verhandlung vor dem CAS nach Art. 6 Abs. 1 EMRK), [hudoc.echr.coe.int](https://hudoc.echr.coe.int/eng?i=001-186828)
+4. BVerfG, Beschl. v. 03.06.2022 – 1 BvR 2103/16 (*Pechstein* – Justizgewährungsanspruch; rechtsstaatliche Mindeststandards der Sportschiedsgerichtsbarkeit), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2022-06-03&Aktenzeichen=1%20BvR%202103/16)
+5. EuGH, Urt. v. 18.07.2006 – C-519/04 P, NJW 2007, 2097 = SpuRt 2006, 195 (*Meca-Medina und Majcen/Kommission* – Anti-Doping-Regeln unterliegen dem Kartellrecht, sind aber bei Verhältnismäßigkeit gerechtfertigt), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=C-519/04)
+
+### Schiedssprüche und Verbandsregelwerke — **keine staatliche Rechtsprechung**
+
+CAS-Awards sind **Schiedssprüche** eines privaten Schiedsgerichts, keine Gerichtsentscheidungen. Sie sind weder in dejure.org noch in juris nachgewiesen, entfalten keine Bindungswirkung nach deutschem Recht und sind nur über die CAS-Datenbank ([jurisprudence.tas-cas.org](https://jurisprudence.tas-cas.org)) zu belegen. Dasselbe gilt für WADC und NADC als **Verbandsregelwerke**. Im Gutachten sind sie ausdrücklich als solche zu kennzeichnen und nicht mit staatlicher Rechtsprechung in einer Liste zu führen.
+
+- CAS 2009/A/1912 (*Pechstein ./. ISU*) — Schiedsspruch `[unverifiziert – nicht über dejure/juris belegbar; Volltext über jurisprudence.tas-cas.org prüfen]`
+- CAS 2008/A/1644 (*Mutu ./. Chelsea*) — Schiedsspruch `[unverifiziert – nicht über dejure/juris belegbar; Volltext über jurisprudence.tas-cas.org prüfen]`
+- WADC / NADC in der jeweils einbezogenen Fassung — Verbandsregelwerk `[unverifiziert – Fassung über wada-ama.org bzw. nada.de prüfen]`
 
 ## Ausgabeformat
 

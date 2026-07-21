@@ -126,11 +126,11 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Wolffgang/Niestedt, in: Krenzler/Herrmann/Niestedt, EU-Außenwirtschafts- und Zollrecht, Stand 2024, VO 2021/821 Art. 3 Rn. 1 ff.
 - Friedrich/Lieser, Außenwirtschaftsrecht, 1. Aufl. 2023, Kap. zu Dual-Use.
 
-### Rechtsprechung (`[unverifiziert – prüfen in curia.europa.eu / juris]`)
+### Rechtsprechung (`[unverifiziert – prüfen in curia.europa.eu / juris]`, soweit markiert)
 
-1. EuGH, Urt. v. 28.03.2017 – Rs. C-72/15, Rosneft, ECLI:EU:C:2017:236 (Russland-Sanktionen, Reichweite VO 833/2014) `[unverifiziert – prüfen]`
-2. EuGH, Urt. v. 29.03.2011 – verb. Rs. C-201/09 P, C-216/09 P, ArcelorMittal (zur Anwendung des Unionsrechts) `[unverifiziert – prüfen]`
-3. BGH, Urt. zu § 34 AWG a.F. / § 18 AWG (Dual-Use-Strafverfahren) `[unverifiziert – prüfen]`
+1. EuGH, Urt. v. 28.03.2017 – Rs. C-72/15, Rosneft, ECLI:EU:C:2017:236 (Gültigkeit und Auslegung der Russland-Maßnahmen, Reichweite VO 833/2014; Zuständigkeit des EuGH für GASP-gestützte Sanktionen), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2017-03-28&Aktenzeichen=C-72/15)
+2. EuGH, Urt. v. 29.03.2011 – verb. Rs. C-201/09 P, C-216/09 P, ArcelorMittal Luxembourg/Kommission — die Entscheidung existiert unter diesem Datum und Aktenzeichen, betrifft aber **Kartellrecht (Trägerkartell, Art. 65 EGKS, Zuständigkeit der Kommission nach Auslaufen des EGKS-Vertrags)** und hat keinen exportkontrollrechtlichen Gegenstand; die Angabe „zur Anwendung des Unionsrechts" trägt in diesem Kontext nicht `[unverifiziert – Einschlägigkeit für die Ausfuhrkontrolle prüfen oder Zitat streichen]`, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2011-03-29&Aktenzeichen=C-201/09)
+3. BGH, Urt. zu § 34 AWG a.F. / § 18 AWG (Dual-Use-Strafverfahren) — ohne Aktenzeichen und Datum nicht recherchierbar `[unverifiziert – prüfen]`
 
 ## Ausgabeformat
 

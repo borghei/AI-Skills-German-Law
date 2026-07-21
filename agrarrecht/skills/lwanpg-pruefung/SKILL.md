@@ -41,9 +41,10 @@ Zentrale Anspruchsgrundlage ist § 44 LwAnpG (Wertermittlung und Auseinandersetz
 - **§ 28 LwAnpG** — Wahl der Rechtsform durch die LPG, Wirkungen der Umwandlung
 - **§§ 36 ff. LwAnpG** — Auseinandersetzung bei Umwandlung in andere Rechtsform
 - **§ 44 LwAnpG** — Auseinandersetzungsguthaben (Inventarbeitrag, Bodenanteil, Fonds-Anteil)
-- **§ 44 Abs. 6 LwAnpG** `[unverifiziert]` — Ratenzahlungsregelung, Verzinsung
+- **§ 44 Abs. 6 LwAnpG** — Ermittlung des Eigenkapitals iSd Abs. 1 auf Grundlage der nach Beendigung der Mitgliedschaft aufzustellenden ordentlichen Bilanz ([buzer.de](https://www.buzer.de/s1.htm?a=44&g=LwAnpG&dorg=1)). **Keine** Ratenzahlungs- oder Verzinsungsregelung — die Ratenzahlung steht in § 51a, die Fälligkeit in § 49.
 - **§ 49 LwAnpG** — Auskunftsanspruch gegen die Nachfolgegesellschaft
-- **§ 51a LwAnpG** — Verjährungssonderregelung
+- **§ 51a LwAnpG** — Ansprüche der **vor dem 16.03.1990** ausgeschiedenen Mitglieder und ihrer Erben; Auszahlung in **fünf gleichen Jahresraten**, Berechnung nach § 44 mit der Geltendmachung statt der Beendigung der Mitgliedschaft als Stichtag ([buzer.de](https://www.buzer.de/s1.htm?a=51a&g=LwAnpG&dorg=1)). **Keine Verjährungsvorschrift.**
+- **§ 3b LwAnpG** — Verjährung: **zehn Jahre** für Ansprüche nach §§ 3a, 28 Abs. 2, 37 Abs. 2, 44 Abs. 1 sowie 51a Abs. 1 und 2; Beginn mit dem **Schluss des Jahres, in dem der Anspruch entstanden ist** ([buzer.de](https://www.buzer.de/s1.htm?a=3b&g=LwAnpG&dorg=1))
 
 Bei Erben: § 1922 BGB iVm der jeweiligen LwAnpG-Vorschrift; Klagebefugnis ist gesondert zu prüfen.
 
@@ -62,9 +63,9 @@ Maßstab für die Wertermittlung: Schweizer, LwAnpG-Kommentar, § 44 LwAnpG `[un
 
 Das ausgeschiedene Mitglied (bzw. der Erbe) kann nach § 49 LwAnpG Auskunft über die Berechnungsgrundlagen verlangen, insbesondere Einsicht in die Übergangsbilanz und die LPG-Mitgliederliste. Praxisrelevant als **Stufenklage** (§ 254 ZPO entsprechend; vor dem Landwirtschaftsgericht über FamFG-Vorschriften), wenn die Nachfolgegesellschaft die Auskunft verweigert.
 
-### 4. Verjährung § 51a LwAnpG
+### 4. Verjährung § 3b LwAnpG
 
-§ 51a LwAnpG enthält eine Sonderregel zur Verjährung von Auseinandersetzungsansprüchen `[unverifiziert – konkrete Fristdauer und Anknüpfungspunkt im aktuellen LwAnpG-Stand prüfen]`. Die regelmäßige Verjährung des § 195 BGB greift nicht. Wegen der jahrzehntelangen Bearbeitungspraxis ist die individuelle Anknüpfung (Bescheidzustellung, Auskunftserteilung, Verhandlungsende § 203 BGB analog) sorgfältig zu prüfen.
+Die Sonderregel zur Verjährung steht in **§ 3b LwAnpG**, nicht in § 51a: Ansprüche nach §§ 3a, 28 Abs. 2, 37 Abs. 2, **44 Abs. 1** sowie 51a Abs. 1 und 2 verjähren in **zehn Jahren**; die Verjährung beginnt mit dem **Schluss des Jahres, in dem der Anspruch entstanden ist** ([buzer.de](https://www.buzer.de/s1.htm?a=3b&g=LwAnpG&dorg=1)). Die regelmäßige Verjährung des § 195 BGB greift nicht. Wegen der jahrzehntelangen Bearbeitungspraxis ist die individuelle Anknüpfung (Bescheidzustellung, Auskunftserteilung, Verhandlungsende § 203 BGB analog) sorgfältig zu prüfen.
 
 ### 5. Klagebefugnis und Aktivlegitimation
 
@@ -103,9 +104,11 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 
 ### Rechtsprechung (`[unverifiziert – prüfen in juris/openjur]`)
 
-1. BGH-Landwirtschaftssenat (BLw-Senat) zur Ermittlung des Auseinandersetzungsguthabens und zur Übergangsbilanzbewertung — Standardlinie seit den 1990er-Jahren.
-2. BGH-BLw zur Verjährung § 51a LwAnpG und zur Hemmung durch Verhandlungen.
-3. OLG-Landwirtschaftssenate (insb. Dresden, Naumburg, Rostock, Jena) zur Stufenklage und zum Auskunftsanspruch § 49 LwAnpG.
+Hier stehen **keine konkreten Aktenzeichen**, weil der Verifikationsdurchlauf keine namentlich belegte BLw-Entscheidung zu diesen drei Punkten aus einer öffentlichen Primärquelle bestätigen konnte. Die Linien sind als Suchauftrag zu lesen, nicht als Zitat:
+
+1. BGH-Landwirtschaftssenat (BLw-Senat) zur Ermittlung des Auseinandersetzungsguthabens und zur Übergangsbilanzbewertung — Standardlinie seit den 1990er-Jahren. `[unverifiziert – Az. in juris/openjur ermitteln]`
+2. BGH-BLw zur Verjährung nach **§ 3b LwAnpG** (nicht § 51a) und zur Hemmung durch Verhandlungen. `[unverifiziert – Az. in juris/openjur ermitteln]`
+3. OLG-Landwirtschaftssenate (insb. Dresden, Naumburg, Rostock, Jena) zur Stufenklage und zum Auskunftsanspruch § 49 LwAnpG. `[unverifiziert – Az. in juris/openjur ermitteln]`
 
 ## Ausgabeformat (Antragsschrift Landwirtschaftsgericht)
 
@@ -164,7 +167,7 @@ Beweismittel:
 
 ## Beispiel (Auszug Gutachten zur Verjährung)
 
-> **IV. Verjährung, § 51a LwAnpG.** Der Auseinandersetzungsanspruch des Mandanten unterliegt nicht der regelmäßigen Verjährung des § 195 BGB, sondern der Sonderregelung des § 51a LwAnpG `[unverifiziert – konkrete Fristdauer im aktuellen Stand prüfen]`. Anknüpfungspunkt ist nach der Linie des BGH-Landwirtschaftssenats `[unverifiziert]` nicht das Ausscheiden des Mitglieds, sondern die Fälligkeit des Auseinandersetzungsguthabens nach Feststellung der Übergangsbilanz. Da die Antragsgegnerin bis heute keine prüffähige Auskunft nach § 49 LwAnpG erteilt hat, ist die Verjährung in Bezug auf den Hauptanspruch noch nicht eingetreten; jedenfalls war sie durch Verhandlungen (§ 203 BGB analog) gehemmt, solange die Antragsgegnerin Zahlungs- und Auskunftsbereitschaft signalisierte. **Empfehlung:** Verjährungseinrede vorsorglich antizipieren und in der Antragsschrift adressieren.
+> **IV. Verjährung, § 3b LwAnpG.** Der Auseinandersetzungsanspruch des Mandanten (§ 44 Abs. 1 LwAnpG) unterliegt nicht der regelmäßigen Verjährung des § 195 BGB, sondern der Sonderregelung des § 3b LwAnpG: zehn Jahre, beginnend mit dem Schluss des Jahres, in dem der Anspruch entstanden ist. Anknüpfungspunkt ist nach der Linie des BGH-Landwirtschaftssenats `[unverifiziert]` nicht das Ausscheiden des Mitglieds, sondern die Fälligkeit des Auseinandersetzungsguthabens nach Feststellung der Übergangsbilanz. Da die Antragsgegnerin bis heute keine prüffähige Auskunft nach § 49 LwAnpG erteilt hat, ist die Verjährung in Bezug auf den Hauptanspruch noch nicht eingetreten; jedenfalls war sie durch Verhandlungen (§ 203 BGB analog) gehemmt, solange die Antragsgegnerin Zahlungs- und Auskunftsbereitschaft signalisierte. **Empfehlung:** Verjährungseinrede vorsorglich antizipieren und in der Antragsschrift adressieren.
 
 ## Risiken / typische Fehler
 

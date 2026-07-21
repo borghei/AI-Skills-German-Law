@@ -54,7 +54,9 @@ Die Genehmigung **ist zu versagen** (gebundene Entscheidung), wenn einer der Gr�
 | 2 | **Unwirtschaftliche Verkleinerung oder Aufteilung** eines lebensfähigen landwirtschaftlichen Betriebs |
 | 3 | **Grobes Missverhältnis** zwischen vereinbartem Kaufpreis und Verkehrswert (idR > 50 % über Verkehrswert) |
 
-Maßstab: BGH-BLw-Senat, Linie zu § 9 Abs. 1 Nr. 1 GrdstVG (aufstockungsbedürftiger Landwirt, Kaufbereitschaft zum Verkehrswert) `[unverifiziert – prüfen in juris/openjur]`; ferner BVerfG zum Eingriff in Art. 14 GG durch die Genehmigungsverweigerung `[unverifiziert]`.
+Maßstab zu § 9 Abs. 1 Nr. 1 GrdstVG (aufstockungsbedürftiger Landwirt, Kaufbereitschaft zum Verkehrswert): BGH (BLw-Senat), Beschl. v. 26.11.2010 – BLw 14/09, NJW-RR 2011, 521 — Kriterien für den Erwerb durch Nichtlandwirte bzw. durch Gesellschaften, die selbst keinen Betrieb führen ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2010-11-26&Aktenzeichen=BLw%2014/09)).
+
+Verfassungsrechtlicher Rahmen: BVerfG, Beschl. v. 12.01.1967 – 1 BvR 169/63, BVerfGE 21, 73 — § 9 Abs. 1 Nr. 1 GrdstVG ist mit Art. 14 GG vereinbar; die Abwehr einer „ungesunden Verteilung des Grund und Bodens" hält sich im Rahmen des Art. 14 Abs. 2 GG. Die Genehmigung darf jedoch **nicht** allein deshalb versagt werden, weil der Erwerb der Kapitalanlage dient ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1967-01-12&Aktenzeichen=1%20BvR%20169/63)).
 
 ### 4. Siedlungsrechtliches Vorkaufsrecht § 4 RSG
 
@@ -113,12 +115,15 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Wöhrmann, Landwirtschaftsrecht, Stand `[unverifiziert]`
 - Bearbeiter, in: Düsing/Martinez, Agrarrecht, Stand 2024, GrdstVG/RSG/LPachtVG `[unverifiziert]`
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/openjur]`)
+### Rechtsprechung
 
-1. BGH-BLw-Senat zur „ungesunden Verteilung" § 9 Abs. 1 Nr. 1 GrdstVG bei Nichtlandwirt-Erwerb und Vorhandensein aufstockungsbedürftiger Landwirte.
-2. BGH-BLw-Senat zur Ausübung des Siedlungs-Vorkaufsrechts und zur Frist § 6 RSG.
-3. BVerfG zur Verhältnismäßigkeit der GrdstVG-Versagung im Lichte des Art. 14 GG.
-4. OLG-Landwirtschaftssenate (Hamm, Celle, Rostock, München) zur Verkehrswertfeststellung und zum „groben Missverhältnis" § 9 Abs. 1 Nr. 3.
+1. BGH (BLw-Senat), Beschl. v. 26.11.2010 – **BLw 14/09**, NJW-RR 2011, 521 = NZM 2011, 776 — „ungesunde Verteilung" § 9 Abs. 1 Nr. 1 GrdstVG beim Erwerb durch Nichtlandwirte bzw. durch Gesellschaften ohne eigenen Betrieb, aber mit betrieblicher Verflechtung ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2010-11-26&Aktenzeichen=BLw%2014/09))
+2. BVerfG, Beschl. v. 12.01.1967 – **1 BvR 169/63**, BVerfGE 21, 73 — § 9 Abs. 1 Nr. 1 GrdstVG mit Art. 14 GG vereinbar; Versagung nicht allein wegen Kapitalanlageabsicht ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1967-01-12&Aktenzeichen=1%20BvR%20169/63))
+3. BGH (BLw-Senat), Beschl. v. 29.11.2013 – **BLw 2/12**, EuZW 2014, 239 = WM 2014, 907 — Vorlage an den EuGH: Vereinbarkeit der Versagung nach § 9 Abs. 1 Nr. 3 GrdstVG mit dem Beihilfenrecht (Art. 107 AEUV) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=BLw%202/12))
+4. BGH (BLw-Senat), Beschl. v. 29.04.2016 – **BLw 2/12**, BGHZ 210, 134 = DNotZ 2016, 951 — Nachfolgeentscheidung: Für das „grobe Missverhältnis" ist der **Verkehrswert**, nicht allein der innerlandwirtschaftliche Preis maßgeblich ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=BLw%202/12))
+5. BGH (BLw-Senat), Beschl. v. 25.04.2014 – **BLw 5/13**, NJW-RR 2014, 1168 — „innerlandwirtschaftlicher Verkehrswert"; Überschreitung um mehr als 50 % als Versagungsgrund nach § 9 Abs. 1 Nr. 3 GrdstVG ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=BLw%205/13))
+6. BGH-BLw-Senat zur Ausübung des Siedlungs-Vorkaufsrechts und zur Frist § 6 RSG. `[unverifiziert – kein Aktenzeichen aus öffentlicher Primärquelle belegt; in juris/openjur ermitteln]`
+7. OLG-Landwirtschaftssenate (Hamm, Celle, Rostock, München) zur Verkehrswertfeststellung. `[unverifiziert – Az. in juris/openjur ermitteln]`
 
 ## Ausgabeformat
 

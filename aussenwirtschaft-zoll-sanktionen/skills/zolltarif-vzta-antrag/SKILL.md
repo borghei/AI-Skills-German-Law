@@ -53,7 +53,7 @@ Tarifierung erfolgt **streng** in dieser Reihenfolge (Anhang I VO Tarif-/Zolltar
 
 **AV 1 hat absoluten Vorrang.** Wenn AV 1 die Tarifierung trägt, sind AV 2–4 nicht zu bemühen. Standardfehler: direkter Einstieg mit AV 3b („wesentlicher Charakter") ohne saubere Prüfung von Wortlaut und Anmerkungen.
 
-EuGH-Linie: Tarifierung folgt **objektiven Merkmalen und Eigenschaften** der Ware, ablesbar aus Wortlaut und Erläuterungen; Verwendungszweck nur ausnahmsweise relevant `[unverifiziert – prüfen]`.
+EuGH-Linie: Tarifierung folgt **objektiven Merkmalen und Eigenschaften** der Ware, ablesbar aus Wortlaut und Erläuterungen; Verwendungszweck nur ausnahmsweise relevant (vgl. EuGH, Urt. v. 19.10.2000 – Rs. C-339/98, Peacock, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2000-10-19&Aktenzeichen=C-339/98); EuGH, Urt. v. 06.12.2007 – Rs. C-486/06, Van Landeghem, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2007-12-06&Aktenzeichen=C-486/06)).
 
 ### 2. TARIC-Recherche
 
@@ -129,11 +129,11 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Lux, in: Dorsch, Zollrecht, Stand 2024, Art. 33 UZK Rn. 1 ff.
 - Bender, in: Krenzler/Herrmann/Niestedt, EU-Außenwirtschafts- und Zollrecht, Stand 2024, Art. 33 UZK Rn. 1 ff.
 
-### Rechtsprechung (`[unverifiziert – prüfen in curia.europa.eu / juris/BFH-Datenbank]`)
+### Rechtsprechung (`[unverifiziert – prüfen in juris/BFH-Datenbank]`, soweit markiert)
 
-1. EuGH, Standard-Rspr. zur Tarifierung nach objektiven Merkmalen und Eigenschaften (z.B. Rs. C-339/98, Peacock) `[unverifiziert – prüfen]`
-2. EuGH, Urt. zur Auslegung der KN (z.B. Rs. C-486/06, BVBA Van Landeghem) `[unverifiziert – prüfen]`
-3. BFH zu vZTA-Bindung und Widerruf nach Art. 34 UZK `[unverifiziert – prüfen in juris/BFH-Datenbank]`
+1. EuGH, Urt. v. 19.10.2000 – Rs. C-339/98, Peacock (Tarifierung von Netzwerkkarten nach objektiven Merkmalen und Eigenschaften), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2000-10-19&Aktenzeichen=C-339/98)
+2. EuGH, Urt. v. 06.12.2007 – Rs. C-486/06, Van Landeghem (Einreihung von Pick-ups: Position 8703 oder 8704 KN), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2007-12-06&Aktenzeichen=C-486/06)
+3. BFH zu vZTA-Bindung und Widerruf nach Art. 34 UZK — ohne Aktenzeichen und Datum nicht recherchierbar `[unverifiziert – prüfen in juris/BFH-Datenbank]`
 
 ## Ausgabeformat
 

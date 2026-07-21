@@ -118,7 +118,17 @@ Satzungsänderungen bedürfen zusätzlich der behördlichen Genehmigung nach dem
 
 Mit der Reform wurde ein **bundesweites Stiftungsregister** beim Bundesamt für Justiz geschaffen; die Rechtsgrundlage ist das **Stiftungsregistergesetz (StiftRG)**. Vorgesehen sind eine Eintragungspflicht, **Publizitätswirkung** entsprechend § 15 HGB, öffentliche Einsehbarkeit und der Namenszusatz „e. S." bzw. „e. VS." für eingetragene (Verbrauchs-)Stiftungen.
 
-> **Statusvorbehalt:** Die operative Inkraftsetzung des Registers ist gesondert zu prüfen. Bei Abruf der amtlichen Fassung auf gesetze-im-internet.de waren die §§ 1 bis 18 und § 20 StiftRG als **„zukünftig in Kraft"** ausgewiesen; lediglich § 19 StiftRG (Verordnungsermächtigung) war in Kraft. **Der operative Stand des Stiftungsregisters, der Beginn der Eintragungspflicht, die Übergangsfristen für Bestandsstiftungen und der Zeitpunkt der Publizitätswirkung sind daher `[unverifiziert - prüfen]`** und vor jeder Auskunft an den Mandanten unmittelbar in der amtlichen Fassung des StiftRG und den zugehörigen Rechtsverordnungen nachzusehen. Bis zur Eintragungspflicht bleibt der Nachweis der Vertretungsberechtigung über die **Vertretungsbescheinigung der Stiftungsaufsicht** zu führen.
+> **⚠️ Inkrafttreten auf den 01.01.2028 verschoben (Stand 2026-07, am Gesetzestext verifiziert).** Das Stiftungsregister ist **noch nicht in Betrieb**. Die Inkraftsetzungsfußnote der amtlichen Fassung lautet:
+>
+> „*§ 20: Tritt gem. Art. 11 Abs. 1 Nr. 2 G v. 16.7.2021 I 2947 idF d. Art. 33 G v. 8.12.2025 I Nr. 319 am 1.1.2028 in Kraft*"
+>
+> Dieselbe Fußnote trägt § 18; die §§ 1 bis 18 und § 20 StiftRG sind auf gesetze-im-internet.de durchgängig als **„zukünftig in Kraft"** ausgewiesen. In Kraft ist allein **§ 19 StiftRG** (Verordnungsermächtigung), damit die Rechtsverordnung zur technischen Ausgestaltung vorbereitet werden kann.
+>
+> **Beratungsfolge — der häufigste Fehler in diesem Bereich:** Der ursprünglich vorgesehene Registerstart zum **01.01.2026** ist durch **Art. 33 des Gesetzes vom 08.12.2025 (BGBl. 2025 I Nr. 319)** auf den **01.01.2028** verschoben worden. Ein erheblicher Teil der Literatur, der Beratungspraxis und der Stiftungsratgeber nennt weiterhin den 01.01.2026. Wer darauf aufbaut, terminiert Eintragungspflichten, den Namenszusatz „e. S." / „e. VS." und die Publizitätswirkung **zwei Jahre zu früh**.
+>
+> **Bis zum 01.01.2028** gilt unverändert: Der Nachweis der Vertretungsberechtigung wird über die **Vertretungsbescheinigung der Stiftungsaufsicht** geführt; eine Registerpublizität entsprechend § 15 HGB besteht **nicht**, ein Gutglaubensschutz kann darauf also nicht gestützt werden.
+>
+> Die Übergangsfristen für Bestandsstiftungen und die Ausgestaltung durch Rechtsverordnung nach § 19 StiftRG bleiben `[unverifiziert - prüfen]`.
 
 Landesrecht gilt fort für Aufsicht und Verfahren; § 88 BGB stellt klar, dass die Landesvorschriften über **kirchliche Stiftungen** unberührt bleiben.
 
@@ -131,7 +141,7 @@ Landesrecht gilt fort für Aufsicht und Verfahren; § 88 BGB stellt klar, dass d
 - [§ 84 BGB](https://www.gesetze-im-internet.de/bgb/__84.html), [§ 84a BGB](https://www.gesetze-im-internet.de/bgb/__84a.html), [§ 84b BGB](https://www.gesetze-im-internet.de/bgb/__84b.html), [§ 84c BGB](https://www.gesetze-im-internet.de/bgb/__84c.html)
 - [§ 85 BGB](https://www.gesetze-im-internet.de/bgb/__85.html), [§ 86 BGB](https://www.gesetze-im-internet.de/bgb/__86.html), [§ 86a BGB](https://www.gesetze-im-internet.de/bgb/__86a.html), [§ 86b BGB](https://www.gesetze-im-internet.de/bgb/__86b.html)
 - [§ 87 BGB](https://www.gesetze-im-internet.de/bgb/__87.html), [§ 87a BGB](https://www.gesetze-im-internet.de/bgb/__87a.html), [§ 87b BGB](https://www.gesetze-im-internet.de/bgb/__87b.html), [§ 87c BGB](https://www.gesetze-im-internet.de/bgb/__87c.html), [§ 88 BGB](https://www.gesetze-im-internet.de/bgb/__88.html)
-- [Stiftungsregistergesetz (StiftRG)](https://www.gesetze-im-internet.de/stiftrg/) — Inkraftsetzungsstand gesondert prüfen
+- [Stiftungsregistergesetz (StiftRG)](https://www.gesetze-im-internet.de/stiftrg/) — §§ 1–18, 20 treten erst am **01.01.2028** in Kraft (Art. 33 G v. 08.12.2025, BGBl. 2025 I Nr. 319); in Kraft ist allein § 19 (Verordnungsermächtigung)
 - [§ 31a BGB](https://www.gesetze-im-internet.de/bgb/__31a.html) (über § 84a Abs. 3 BGB), [§ 311b BGB](https://www.gesetze-im-internet.de/bgb/__311b.html)
 
 ### Kommentare
@@ -171,7 +181,7 @@ VII.  Satzungsänderung § 85         Stufe: [Abs. 1 Zweck / Abs. 2 prägend / A
         Stifterermächtigung Abs. 4: [vorhanden, hinreichend bestimmt ✅/❌]
         Genehmigung:                [Behörde <…>; Finanzamt § 60a AO abgestimmt ✅/❌]
 VIII. Umstrukturierung              [Zulegung § 86 / Zusammenlegung § 86a — Vertrag § 86b]
-IX.   Stiftungsregister             [Eintragungsstand: <…>]  `[unverifiziert - prüfen]`
+IX.   Stiftungsregister             [nicht in Betrieb bis 01.01.2028 — Vertretungsbescheinigung der Stiftungsaufsicht]
         Nachweis Vertretung:        [Registerauszug / Vertretungsbescheinigung der Aufsicht]
 
 Gesamtbefund: [🟢 / 🟡 / 🔴]
@@ -187,4 +197,4 @@ Offene Punkte: <Liste>
 - **Pauschale Änderungsermächtigung im Stiftungsgeschäft** — nach § 85 Abs. 4 S. 3 BGB unwirksam, weil Inhalt und Ausmaß nicht hinreichend bestimmt sind; nachträglich lässt sich die Ermächtigung nicht mehr schaffen.
 - **Business Judgment Rule ohne Dokumentation beansprucht** — § 84a Abs. 2 BGB verlangt eine **angemessene Informationsgrundlage**; ohne Protokoll und Anlagerichtlinie ist sie im Streit nicht zu belegen.
 - **Zulegung ohne Zweckübereinstimmung betrieben** — § 86 Nr. 2 BGB verlangt, dass der Zweck der übertragenden Stiftung im Wesentlichen mit einem Zweck der übernehmenden übereinstimmt.
-- **Registerstand als bekannt vorausgesetzt** — der operative Stand des Stiftungsregisters nach dem StiftRG ist vor jeder Auskunft in der amtlichen Fassung zu prüfen; bis dahin trägt die Vertretungsbescheinigung der Stiftungsaufsicht.
+- **Registerstart auf 01.01.2026 datiert** — das Stiftungsregister startet erst am **01.01.2028** (Art. 33 G v. 08.12.2025). Ein Großteil der Literatur nennt noch 2026. Wer darauf aufbaut, terminiert Eintragungspflicht, Namenszusatz und Publizitätswirkung zwei Jahre zu früh; bis dahin trägt allein die Vertretungsbescheinigung der Stiftungsaufsicht, eine Publizitätswirkung entsprechend § 15 HGB besteht nicht.
