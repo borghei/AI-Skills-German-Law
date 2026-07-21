@@ -64,7 +64,10 @@ Open any `SKILL.md` in the repo, copy the body (everything below the frontmatter
 `it-recht` · `bankrecht` · `gewerblicher-rechtsschutz` · `steuerrecht` · `verwaltungsrecht`
 
 **EU / cross-cutting compliance** (every European company touches one of these):
-`ki-vo-compliance` · `nis2` · `hinweisgeberschutz` · `lieferkettengesetz` · `dora` · `dsa-dma` · `csrd`
+`ki-vo-compliance` · `cyber-resilience-act` · `nis2` · `hinweisgeberschutz` · `lieferkettengesetz` · `dora` · `dsa-dma` · `csrd`
+
+**High-volume practice areas** (the bread-and-butter mandates):
+`immobilien-grundbuchrecht` · `zwangsvollstreckung` · `kostenrecht-rvg` · `wirtschafts-steuerstrafrecht` · `m-a-transaktionsrecht` · `vereins-stiftungs-gemeinnuetzigkeitsrecht` · `beamten-disziplinarrecht` · `reise-fluggastrecht`
 
 **Substantive general law (expanded)**:
 `europarecht` · `verfassungsrecht` · `sozialrecht` · `handelsrecht` · `medizinrecht` · `versicherungsrecht` · `baurecht` · `verkehrsrecht` · `urheber-medienrecht` · `sportrecht` · `migrationsrecht` · `agrarrecht`
@@ -79,7 +82,7 @@ Open any `SKILL.md` in the repo, copy the body (everything below the frontmatter
 
 Three things, in order:
 
-1. **Read [VERIFICATION_LOG.md](./VERIFICATION_LOG.md)**, last verified 2026-05-21
+1. **Read [VERIFICATION_LOG.md](./VERIFICATION_LOG.md) and [VERIFICATION_STATUS.md](./VERIFICATION_STATUS.md)**, last verified 2026-07-21. Note: 46 of 58 areas have no verification record yet; in the areas checked so far the measured citation error rate is roughly 10 %
 2. **Verify the case-law citations** in the SKILL.md you plan to use; replace `[unverifiziert, prüfen]` markers with sourced URLs (one PR per citation helps every user)
 3. **Wire a § 203-compliant gateway** ([`references/gateway-setup.md`](./references/gateway-setup.md)) before sending any Mandatsdaten
 
