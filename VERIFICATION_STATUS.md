@@ -335,3 +335,203 @@ Die Pechstein-Linie ist demgegenüber vollständig staatliche Rechtsprechung und
 Der Auftrag zu diesem Durchlauf ging davon aus, „to review" müsse **sinken**. Es steigt — agrarrecht 40 → 40, sportrecht 19 → 27 — und das ist korrekt, nicht defekt. Es bestätigt die bereits bei `urheber-medienrecht` (21 → 71) protokollierte Eigenschaft: das Skript zählt **Marker, nicht Belege**. Jede Fallzitierung *ohne* `[unverifiziert]` wird gewarnt, unabhängig davon, ob eine Primärquellen-URL danebensteht. Eine erfolgreiche Verifikation verwandelt daher ein stilles INFO in ein WARN. Die Zahl ist eine Markerzählung, kein Qualitätssignal, und taugt nicht als Fortschrittsmaß für diese Art von Durchlauf.
 
 Ergänzend, weil es beim Inventarisieren auffiel: die 40 agrarrecht-Warnungen und 19 der sportrecht-Warnungen sind **unbekannte Gesetzesabkürzungen** (RSG, LPachtVG, LwVG, ALG, GAP-DZG, AntiDopG, KUG, EGV), die in der Abkürzungstabelle von `scripts/verify_citations.py` fehlen. Alle diese Gesetze existieren; die Warnung ist eine Lücke des Skripts, kein Zitierfehler. Eine Ergänzung der Tabelle lag außerhalb des Auftragsumfangs dieses Durchlaufs.
+
+---
+
+## Verification pass — long tail, 13 Bereiche (2026-07-21)
+
+Abschlussdurchgang über die zuletzt verbliebenen, dünn verteilten Fallzitate. Methode: ausschließlich `WebFetch` gegen den dejure.org-Vernetzungs-Endpunkt (`?Gericht=…&Datum=…&Aktenzeichen=…`). Keine WebSearch, keine kostenpflichtige Datenbank. 9 Abrufe, kein Rate-Limit.
+
+| Plugin | Verifiziert | Weiter markiert | Fehler gefunden | Art |
+|---|---|---|---|---|
+| `wohnungseigentumsrecht` | 1 (4 Fundstellen) | 0 | 0 | neu |
+| `vertragsrecht` | 1 (3 Fundstellen) | 0 | 0 | neu |
+| `patentrecht` | 2 (3 Fundstellen) | 0 | 1 | **Rest-Durchgang** |
+| `mietrecht` | 1 (2 Fundstellen) | 0 | 0 | neu |
+| `beamten-disziplinarrecht` | 1 (2 Fundstellen) | 0 | 0 | neu |
+| `sozialrecht` | 1 | 0 | 0 | neu |
+| `europarecht` | 1 | 0 | 0 | **Rest-Durchgang** |
+| `berufsrecht-anwaltschaft` | 1 | 0 | 0 | neu |
+| `aussenwirtschaft-zoll-sanktionen` | – | 0 | 0 | **Rest-Durchgang**, s. u. |
+| `vergaberecht` | – | 0 | 0 | **Rest-Durchgang**, s. u. |
+| `migrationsrecht` | – | 0 | 0 | **Rest-Durchgang**, s. u. |
+| `zwangsvollstreckung` | – | 0 | 0 | neu, s. u. |
+| `geldwaesche-aml-kyc` | – | 0 | 0 | neu, s. u. |
+| **Summe** | **9 Entscheidungen / 17 Fundstellen** | **0** | **1** | |
+
+### Der zentrale Befund: 18 der 35 gemeldeten „Fallzitate" sind keine
+
+Die Aufgabenstellung ging von 35 unmarkierten Fallzitaten aus. Nach Sichtung jeder einzelnen Fundstelle sind **18 davon Regex-Artefakte** von `scripts/verify_citations.py` — Normzitate, die das Aktenzeichen-Muster `\d+/\d+` triggern. Kein einziges ist eine Rechtsprechungsangabe, keines war zu verifizieren, keines wurde geändert:
+
+- `aussenwirtschaft-zoll-sanktionen` **9/9** — sämtlich `Anhang I VO 2021/821`, `Art. 3 / 4 / 5 VO 2021/821`, `Art. 2 Nr. 3 VO 2021/821`. Die Dual-Use-VO wird als „Az 2021/821" gelesen.
+- `vergaberecht` **5/5** — `Art. 18 / 58 / 67 RL 2014/24/EU`, `Art. 4 RL 2014/24/EU`, `Art. 1, 2 RL 89/665/EWG`. Alle fünf tragen bereits einen EUR-Lex-CELEX-Link.
+- `migrationsrecht` **2/2** — 2× `Art. 29 VO 604/2013` (Dublin-III-Überstellungsfrist).
+- `geldwaesche-aml-kyc` **1/1** — `Art. 9 RL 2015/849`.
+- `zwangsvollstreckung` **1/1** — die **Bruchzahlen** der Wertgrenzen: „7/10 und 5/10" in der Überschrift zu §§ 74a, 85a ZVG. Das Skript liest „10 und 5/10" als Aktenzeichen.
+
+Damit bestätigt sich für `aussenwirtschaft-zoll-sanktionen`, `vergaberecht` und `migrationsrecht`, dass die früheren Durchgänge diese Bereiche **vollständig** abgearbeitet hatten: der Rest war nie Zitatschuld. Für `zwangsvollstreckung` und `beamten-disziplinarrecht` bestätigt sich die Zusage des Autors, unter strikter Kein-erfundenes-Az-Regel geschrieben zu haben — `beamten-disziplinarrecht` enthielt genau **ein** Aktenzeichen in vier Skills, und es ist korrekt.
+
+### Verifizierte Entscheidungen (9)
+
+Alle neun über dejure abgerufen, Gegenstand gegen die behauptete Proposition geprüft, Marker entfernt, amtliche Sammlung und `[dejure.org](…)`-Link ergänzt:
+
+| Entscheidung | Fundstelle | Proposition — geprüft |
+|---|---|---|
+| BGH, Urt. v. 11.04.2025 – **V ZR 96/24** | NJW 2025, 1504 = NZM 2025, 351 | Teilanfechtung des Nachschuss-/Abrechnungsspitzen-Beschlusses post-WEMoG — trägt |
+| BAG, Urt. v. 25.09.2018 – **8 AZR 26/18** | BAGE 163, 309 = NZA 2019, 121 | § 12a I 1 ArbGG schließt § 288 V BGB aus — trägt wörtlich |
+| BGH, Urt. v. 26.03.2019 – **X ZR 109/16** | BGHZ 221, 342 = GRUR 2019, 496 | „Spannungsversorgungsvorrichtung", Restschadensersatz § 852 BGB / § 141 S. 2 PatG — trägt |
+| BGH, Urt. v. 02.11.2000 – **I ZR 246/98** | BGHZ 145, 366 = GRUR 2001, 329 | „Gemeinkostenanteil", Verletzergewinn — trägt, aber s. Fehler 1 |
+| BGH, Urt. v. 10.06.2015 – **VIII ZR 99/14** | NJW 2015, 2324 = NZM 2015, 532 | Schadensersatz § 280 I BGB bei vorgetäuschtem Eigenbedarf — trägt |
+| BVerfG, Beschl. v. 29.07.2003 – **2 BvR 311/03** | BVerfGK 1, 292 = NVwZ 2004, 95 | Bewerbungsverfahrensanspruch, effektiver Rechtsschutz Art. 33 II iVm 19 IV GG — trägt |
+| BVerfG, Urt. v. 05.11.2019 – **1 BvL 7/16** | BVerfGE 152, 68 = NJW 2019, 3703 | SGB-II-Sanktionsurteil — trägt |
+| EuGH, Urt. v. 12.07.2005 – **C-304/02**, Kommission/Frankreich | Slg. 2005, I-6263 | Erstmals kombiniert Pauschalbetrag **und** Zwangsgeld (Zwangsgeld 316.500 €/Tag), Art. 228 EGV — trägt |
+| BGH, Urt. v. 27.11.2019 – **VIII ZR 285/18** | BGHZ 224, 89 = NJW 2020, 208 | LexFox/wenigermiete.de, weiter Inkassobegriff § 10 RDG — trägt |
+
+### Gefundener Fehler (1)
+
+| # | Wo | Fehler | Auflösung |
+|---|---|---|---|
+| 1 | `patentrecht/skills/patentverletzung-klage/SKILL.md`, Schadensberechnung | „Gemeinkostenanteil", I ZR 246/98 in einer **patentrechtlichen** Schadensliste zitiert. Datum, Az und Gegenstand (Verletzergewinn, Anrechnung von Gemeinkosten) sind korrekt — die Entscheidung ist aber zum **Geschmacksmusterrecht** ergangen (§ 14a GeschmMG a.F.), nicht zum PatG. Ein leiser Herkunftswechsel derselben Art wie der `urheber-medienrecht`-Befund, nur milder: die Aussage trägt, die Rechtsquelle ist eine andere | Zitat behalten und um den ausdrücklichen Zusatz „ergangen zum Geschmacksmusterrecht, im Patentrecht entsprechend angewandt" ergänzt. Kein Marker, weil die Übertragung auf das Patentrecht gefestigt ist; die Herkunft wird aber nicht mehr verschwiegen |
+
+Zwei ergänzende Beobachtungen ohne Fehlercharakter, aber protokollpflichtig:
+
+- **Der `[verifiziert]`-Marker ist kein Konventions-Marker.** In `wohnungseigentumsrecht` (4×), `vertragsrecht` (2×) und `mietrecht` (1×) stand ein selbstgesetztes `[verifiziert]` bzw. „— Fundstelle verifiziert" ohne jede Quellenangabe. CONVENTIONS.md kennt nur drei Zustände, und „verifiziert" heißt dort *Marker weg plus URL*. Eine Behauptung der Verifikation ist kein Beleg. Alle sieben Instanzen sind jetzt durch echte Abrufe gedeckt und in Hausform gebracht.
+- **Zwei Belege lagen auf nicht-autoritativen Hosts.** `patentrecht` verlinkte X ZR 109/16 auf einen **Kanzlei-Blog** (`preubohlig.de`) und I ZR 246/98 auf `openjur.**de**` (die Allowlist des Skripts kennt `openjur.**net**`). Beide sind durch dejure-Links ersetzt. `europarecht` verlinkte C-304/02 auf EUR-Lex, das nicht in `VERIFICATION_HOSTS` steht — ebenfalls auf dejure umgestellt, ohne den inhaltlichen Nachweis zu schwächen.
+
+### Zur Metrik
+
+Die **bereichsbezogene** Zahl ist eindeutig: die 13 realen Fallzitat-Warnungen in den 13 Zielbereichen sind auf **0** gegangen (`wohnungseigentumsrecht` 4→0, `vertragsrecht` 3→0, `patentrecht` 3→0, `mietrecht` 2→0, `beamten-disziplinarrecht` 2→0, `sozialrecht` 1→0, `europarecht` 1→0, `berufsrecht-anwaltschaft` 1→0). Diesmal *sinkt* die Zahl, weil der in dieser Session korrigierte Checker eine Fallzitierung mit autoritativem Link als *verifiziert* zählt.
+
+Die **repo-weite** Zahl ging während dieses Durchgangs von 136 auf 93, aber **diese Differenz ist nicht diesem Durchgang zuzurechnen und darf nicht so gelesen werden.** Parallel arbeitende Agenten derselben Session haben währenddessen `reise-fluggastrecht`, `verfassungsrecht` und `arbeitsrecht` bearbeitet **und `scripts/verify_citations.py` selbst um 45 Zeilen erweitert**. Vorher- und Nachher-Wert stammen damit aus verschiedenen Messinstrumenten auf verschiedenen Dateiständen. Auf diesen Durchgang entfallen nachweislich **13** der entfallenen Warnungen. Die verbleibenden 18 Warnungen in den fünf oben genannten Bereichen sind die Normzitat-Artefakte und lassen sich nicht durch Zitatarbeit beseitigen, sondern nur durch eine Verschärfung von `AZ_RE` in `scripts/verify_citations.py` — außerhalb des Auftrags, Datei unberührt.
+
+`scripts/validate.py` läuft über alle 58 Bereiche sauber, `scripts/eval.py` besteht 258/258. Keine `test.md` behauptete eines der korrigierten Zitate; keine Testdatei wurde geändert.
+
+---
+
+## Verification pass — `reise-fluggastrecht` (2026-07-21)
+
+Methode: ausschließlich `WebFetch` gegen den dejure.org-Vernetzungs-Endpunkt (`?Gericht=…&Datum=…&Aktenzeichen=…`), für eine Entscheidung zusätzlich mit `&Ausgabe=Langtext` zur Kontrolle des Tenors. Keine WebSearch, keine kostenpflichtige Datenbank, kein curia-Abruf. **13 Abrufe, kein Rate-Limit erreicht.** dejure indexiert den EuGH vollständig; curia war nicht erforderlich.
+
+| Plugin | Verifiziert | Weiter markiert | Fehler gefunden |
+|---|---|---|---|
+| `fluggastrechte-vo-261` | 10 Entscheidungen (9 geprüft + 1 neu belegt) | 3 Linien ohne Az | 1 |
+| `pauschalreise-maengel` | 2 Entscheidungen | 1 Linie ohne Az | 0 |
+| `reiseruecktritt-insolvenzschutz` | 2 Entscheidungen | 1 Linie ohne Az | 1 |
+| `reisevermittlung-informationspflichten` | 2 Entscheidungen | 1 Linie ohne Az | 0 |
+| **Summe (unique)** | **12 von 12 Zitaten geprüft, 11 bestätigt, 1 neu ergänzt** | **6 Linien ohne Az** | **2** |
+
+Alle 25 unmarkierten Fallzitate des Bereichs betrafen zwölf unterschiedliche Entscheidungen (Mehrfachnennungen in Fließtext, Rspr.-Listen und `agents/researcher.md`). **Jede der zwölf wurde einzeln abgerufen.**
+
+### Bestätigt — Gericht, Datum, Aktenzeichen und Fundstelle stimmen (11)
+
+| Entscheidung | Fundstelle laut dejure | Bemerkung |
+|---|---|---|
+| EuGH, 19.11.2009 – verb. Rs. C-402/07 und C-432/07, *Sturgeon u.a.* | NJW 2010, 43 = EuZW 2009, 890 = Slg. 2009, I-10923 | joined case; beide Nummern korrekt geführt |
+| EuGH, 23.10.2012 – verb. Rs. C-581/10 und C-629/10, *Nelson u.a.* | NJW 2013, 671 = EuZW 2012, 906 | joined case |
+| EuGH, 22.12.2008 – Rs. C-549/07, *Wallentin-Hermann* | NJW 2009, 347 = EuZW 2009, 111 | |
+| EuGH, 17.09.2015 – Rs. C-257/14, *van der Lans* | NJW 2015, 3427 | |
+| EuGH, 17.04.2018 – verb. Rs. C-195/17 u.a., *Krüsemann u.a.* | NJW 2018, 1592 = EuZW 2018, 457 | dejure führt **25** verbundene Rechtssachen (C-195/17 bis C-292/17); die Zitierung als „C-195/17" allein ist verkürzt und wurde auf „verb. Rs. C-195/17 u.a." korrigiert |
+| EuGH, 11.06.2020 – Rs. C-74/19, *Transportes Aéreos Portugueses* | NJW-RR 2020, 871 = EuZW 2020, 617 | Parteiname im Skill zuvor nicht genannt, ergänzt |
+| EuGH, 26.02.2013 – Rs. C-11/11, *Air France/Folkerts* | NJW 2013, 1291 = EuZW 2013, 434 | |
+| EuGH, 09.07.2009 – Rs. C-204/08, *Rehder* | EuZW 2009, 569 = NJW 2009, 487 (Ls.) | die NJW-Stelle ist nur ein Leitsatz; entsprechend gekennzeichnet |
+| EuGH, 12.03.2002 – Rs. C-168/00, *Leitner* | NJW 2002, 1255 = EuZW 2002, 339 | ergangen zur Vorgänger-RL 90/314/EWG; ergänzt |
+| EuGH, 08.06.2023 – Rs. C-407/21, *UFC-Que choisir und CLCV* | EuZW 2023, 709 = MDR 2023, 964 | Vorabentscheidung, RL (EU) 2015/2302, COVID-19-Rücktritt |
+| EuGH, 08.06.2023 – Rs. C-49/22, *Austrian Airlines (Rückholflug)* | NJW 2023, 2629 = EuZW 2023, 815 | Az und Fundstelle korrekt, **Proposition falsch — siehe Fehler 2** |
+
+### Neu ergänzt (1)
+
+Die Aussage „Ankunftszeit ist der Zeitpunkt, zu dem mindestens eine Flugzeugtür geöffnet wird" stand ohne jeden Beleg und nur mit `[unverifiziert]`. Sie ist belegt durch **EuGH, Urt. v. 04.09.2014 – Rs. C-452/13, *Germanwings*, NJW 2015, 221 = EuZW 2014, 873** (dejure-Wortlaut: „der Zeitpunkt, zu dem mindestens eine der Flugzeugtüren geöffnet wird"). Der Marker konnte entfallen; die Formulierung wurde um die vom EuGH mitgeforderte Bedingung ergänzt, dass den Fluggästen das Verlassen des Flugzeugs gestattet ist.
+
+### Die 2 gefundenen Fehler
+
+| # | Wo | Fehler | Auflösung |
+|---|---|---|---|
+| 1 | `fluggastrechte-vo-261/SKILL.md` (Rspr.-Liste Nr. 9), `agents/researcher.md` | **BGH, Urt. v. 09.12.2014 – X ZR 147/13, NJW-RR 2015, 618** war als Beleg für die **„einheitliche Buchung"** von Anschlussflügen geführt. Datum, Aktenzeichen und Fundstelle sind bestätigt (dejure: NJW-RR 2015, 618 = MDR 2015, 447 = WM 2015, 1253) — die Entscheidung betrifft jedoch die **Anzahlungsklausel im Reisevertrag**: eine AGB-Klausel, die die Anzahlung auf nicht mehr als 20 % des Reisepreises begrenzt, benachteiligt den Reisenden nicht unangemessen und ist wirksam. Das ist der an diesem Tag wiederholt aufgetretene Typ: echte Entscheidung, richtiges Datum, richtiges Az, **falsche Proposition** | Die Entscheidung bleibt zitiert, aber mit ihrem **tatsächlichen** Gegenstand und einem ausdrücklichen Mismatch-Hinweis. Für die einheitliche Buchung wird auf die belegte Grundlage *Folkerts* verwiesen; eine BGH-Leitentscheidung hierzu ist als offener Rechercheauftrag mit `[unverifiziert - prüfen]` gekennzeichnet. **Kein Zitat gelöscht** |
+| 2 | `fluggastrechte-vo-261/SKILL.md` (Art.-8-Abschnitt), `reiseruecktritt-insolvenzschutz/SKILL.md` (Rspr.-Liste Nr. 2) | **EuGH, 08.06.2023 – C-49/22** war zweifach falsch etikettiert: (a) im VO-261-Skill als Beleg für das **Wahlrecht des Art. 8 Abs. 1** — das ist reiner Verordnungstext, keine Aussage dieser Entscheidung; (b) im Rücktritts-Skill als **pauschalreiserechtliche** Entscheidung („Erstattung und Rückbeförderung"), obwohl sie zur **VO (EG) 261/2004** ergeht. Der über `&Ausgabe=Langtext` abgerufene Tenor lautet gegenteilig zur unterstellten Reichweite: ein konsularisch organisierter **Repatriierungsflug ist keine anderweitige Beförderung** iSd Art. 8 Abs. 1 lit. b; zugleich kennt die Verordnung „keine gesonderte Kategorie besonders außergewöhnlicher Umstände", die von Art. 8 vollständig befreite | Das Wahlrecht des Art. 8 wird jetzt der Norm selbst zugeordnet, nicht der Entscheidung. C-49/22 erhält einen eigenen Absatz mit beiden tatsächlichen Aussagen. Im Rücktritts-Skill ist ausdrücklich vermerkt, dass die Entscheidung Fluggastrecht und nicht Pauschalreiserecht betrifft und für § 651h BGB nur mittelbar heranzuziehen ist |
+
+### Zur 3-Stunden-Linie
+
+Der Skill kennzeichnete die Gleichstellung großer Verspätungen bereits korrekt als **richterrechtlich**. Das ist nach Prüfung von *Sturgeon* und *Nelson* bestätigt und wurde **nicht** zu einer Aussage des Verordnungstextes verdichtet. Ergänzt wurde ein ausdrücklicher Satz, dass diese Gleichstellung nicht in der Verordnung steht, sondern Auslegungsergebnis des EuGH ist und gegenüber Gericht und Gegenseite als solches zu kennzeichnen ist. Die Tabelle in Abschnitt 2 führt die große Verspätung unverändert als „richterrechtlich aus Art. 5–7 entwickelt".
+
+Der pauschale Zusatz „Fundstellen verifiziert, Kernaussage im Volltext gegenzulesen `[unverifiziert - prüfen]`" ist entfallen: er behauptete eine Verifikation, die vor diesem Durchgang **nicht** stattgefunden hatte. Dieselbe Formel („— Fundstelle verifiziert") stand ohne Beleg hinter allen neun Positionen der Rspr.-Liste und in den drei anderen Skills; sie ist überall durch die tatsächlich abgerufene Primärquellen-URL ersetzt.
+
+### Weiterhin markiert gelassen (6)
+
+- `fluggastrechte-vo-261`: **Wetter** und **Vorfeldfolgen** als außergewöhnliche Umstände — instanzgerichtliche Kasuistik ohne belegbare Leitentscheidung. Der Sammel-Marker über der gesamten Kasuistik-Liste wurde auf genau diese beiden Punkte verengt, weil die übrigen vier jetzt belegt sind.
+- `fluggastrechte-vo-261`: **BGH zur einheitlichen Buchung mit Anschlussflug** — offener Rechercheauftrag (Folge von Fehler 1).
+- `pauschalreise-maengel`: Bemessung der Minderungsquote und Erheblichkeitsschwelle des § 651n Abs. 2 BGB.
+- `reiseruecktritt-insolvenzschutz`: Auslegung des § 651h Abs. 3 BGB in Pandemie- und Krisenlagen.
+- `reisevermittlung-informationspflichten`: Abgrenzung Veranstalter / Vermittler nach dem Auftreten gegenüber dem Reisenden.
+
+Diese fünf Positionen tragen kein Aktenzeichen und kein Datum; der dejure-Endpunkt ist dort konstruktionsbedingt blind. Sie sind als Suchauftrag formuliert, nicht als Zitat.
+
+### Was dejure nicht erreichen konnte
+
+**Nichts.** Alle zwölf abgefragten Entscheidungen waren über `?Gericht=…&Datum=…&Aktenzeichen=…` beim ersten Versuch auflösbar — neun EuGH-Vorabentscheidungen, eine EuGH-Entscheidung mit 25 verbundenen Rechtssachen, eine weitere EuGH-Entscheidung von 2023 und ein BGH-Urteil. Der `?Text=`-Fallback war nicht nötig, das Weglassen von Zusatz-Token am Aktenzeichen ebenfalls nicht: keines der hier geführten Aktenzeichen trug ein Suffix (kein „P"-Rechtsmittel, kein „Kart."). Bei den beiden joined cases genügte jeweils die **erste** Rechtssachennummer; die zweite ist auf derselben Seite mit ausgewiesen. Das bestätigt die Vermutung des Auftrags nicht: die von der Sekundärliteratur nach Parteinamen zitierten Leitentscheidungen des Fluggastrechts waren im Bestand **durchgehend mit korrekter Nummer und korrektem Datum** geführt.
+
+### Zahlenbewegung bei `scripts/verify_citations.py`
+
+**Vorher 25 Warnungen, nachher 0.** Alle 25 waren `caselaw`-Warnungen über unmarkierte Fallzitate; keine einzige betraf eine unbekannte Gesetzesabkürzung. Nach der heutigen Korrektur des Prüfskripts zählt ein Zitat mit Link auf eine autoritative Quelle (`VERIFICATION_HOSTS`) als verifiziert, weshalb jede angehängte dejure-URL eine Warnung in ein INFO überführt. Die Gesamtzahl der Zitate stieg von 231 auf 235 (`fluggastrechte-vo-261` 40 → 43 durch *Germanwings* und die Aufspaltung des Art.-8-Absatzes, `reiseruecktritt-insolvenzschutz` 55 → 56).
+
+`scripts/validate.py --area reise-fluggastrecht` läuft sauber, `scripts/eval.py --area reise-fluggastrecht` besteht 4/4 (104 Assertions). **Keine `test.md` musste geändert werden** — keine der vier Testdateien behauptete eines der korrigierten Zitate; die beiden Fehler standen ausschließlich in den Rechtsprechungslisten und im Researcher-Agenten.
+
+---
+
+## Residual-Durchgang — `kartellrecht` und `verfassungsrecht` (2026-07-21)
+
+**Dies ist ein Residual-Durchgang.** Beide Bereiche hatten in einer früheren Sitzung bereits einen Teildurchgang (kartellrecht 22 verifiziert / 5 markiert / 3 Fehler; verfassungsrecht 14 / 2 / 2). Geprüft wurden hier ausschließlich die Zitate, die jenen Durchgang **überlebt haben oder danach hinzugekommen sind** — 15 unmarkierte Fallzitate in `kartellrecht`, 12 in `verfassungsrecht`.
+
+Methode: ausschließlich `WebFetch` gegen `dejure.org` (Vernetzungs-Endpunkt `?Gericht=…&Datum=…&Aktenzeichen=…` sowie `?Text=<Az>`-Fallback) und `servat.unibe.ch` (DFR) für BVerfGE-Band/Seite-Zitate ohne Datum. **Keine WebSearch**, keine kostenpflichtige Datenbank. 24 Abrufe, gepaced, kein Rate-Limit (HTTP 420) erreicht.
+
+| Plugin | Geprüft | Verifiziert | Korrigiert | Weiter markiert |
+|---|---|---|---|---|
+| `kartellrecht` | 15 | 14 | 4 | 2 |
+| `verfassungsrecht` | 12 | 12 | 1 | 1 |
+| **Summe** | **27** | **26** | **5** | **3** |
+
+### Die 5 gefundenen Fehler
+
+| # | Wo | Fehler | Auflösung |
+|---|---|---|---|
+| 1 | `gwb-zusammenschluss-anmeldung`, Rspr.-Liste Nr. 3 + `agents/researcher.md` | **EuG, Urt. v. 28.05.2020 – T-399/16, CK Telecoms** als geltender Maßstab für „Marktabgrenzung, SIEC-Test" zitiert. Entscheidung, Datum und Az sind korrekt — aber sie wurde **im Rechtsmittel aufgehoben** (EuGH, Urt. v. 13.07.2023 – C-376/20 P; der Aufhebungsvermerk steht im dejure-Datensatz zu T-399/16). Ein aufgehobenes Urteil als geltenden Beweismaßstab zu zitieren ist die gefährlichste Variante der Fehlzuordnung: das Zitat besteht jede Existenzprüfung und ist trotzdem falsch | Zitat behalten, mit ⚠️-Aufhebungsvermerk und Verweis auf C-376/20 P in beiden Dateien. Marker verengt auf `[unverifiziert – Rechtsmittelentscheidung nicht eigenständig abgerufen]`, weil C-376/20 P nicht separat geladen wurde |
+| 2 | `gwb-zusammenschluss-anmeldung`, Rspr.-Liste Nr. 2 | **BGH, Beschl. v. 14.11.2017 – KVR 57/15, EDEKA/Tengelmann (Ministererlaubnis § 42 GWB)** — **zwei** Fehler in einer Zeile. (a) Das Az ist falsch; korrekt ist **KVR 57/16** (der frühere Durchgang hatte das vermutet, aber nicht auflösen können). (b) Der Gegenstand ist falsch: dejure führt die Entscheidung als *EDEKA/Kaiser's Tengelmann* zur **Befugnis des BKartA, Verstöße gegen das Vollzugsverbot zu untersagen** — nicht zur Ministererlaubnis nach § 42 GWB (über deren Anfechtung entschied das OLG Düsseldorf) | Az korrigiert, Gegenstand korrigiert, dejure-Beleg gesetzt, Marker entfernt. Der Hinweis auf die abweichende Zuständigkeit für die Ministererlaubnis steht jetzt ausdrücklich in der Zeile |
+| 3 | `marktbeherrschung-bewertung`, Rspr.-Liste Nr. 9 | **BGH, Beschl. v. 04.07.2023 – KVB 59/22, Amazon § 19a** — Datum und Az falsch. `?Text=`-Fallback: die Entscheidung ist **BGH, Beschl. v. 23.04.2024 – KVB 56/22**, *Amazon (Feststellung der überragenden marktübergreifenden Bedeutung)*. Der frühere Durchgang hatte das vermutet; hier wurde es belegt | korrigiert und verifiziert, Marker entfernt |
+| 4 | `kartellrecht/agents/researcher.md` | **Apple-§-19a-Verfahren als „KVB 61/19"** bezeichnet. Der dejure-Datensatz zu KVB 56/22 weist die Apple-Entscheidung als **BGH, Beschl. v. 18.03.2025 – KVB 61/23** aus | korrigiert; die Google- und Meta-Verfahren bleiben markiert, weil dafür kein Az abgerufen wurde |
+| 5 | `verfassungsbeschwerde`, Rspr.-Liste Nr. 4 | **BVerfGE 26, 246 als „Subsidiarität / Ingenieurgesetz"**. Datum und Az waren gar nicht angegeben und wurden über DFR ermittelt: BVerfG, Beschl. v. 25.06.1969 – 2 BvR 128/66. Die **Leitsätze betreffen jedoch die fehlende Bundesgesetzgebungskompetenz für das Ingenieurgesetz und Art. 2 I GG** — ein Subsidiaritäts-Bezug ist aus der Quelle nicht ersichtlich. Klassische Fehlzuordnung: reale Entscheidung, für einen Satz zitiert, den sie nicht trägt | Datum und Az ergänzt und belegt; die **Subsidiaritäts-Zuordnung** unter verengtem Marker `[unverifiziert – Einschlägigkeit für die Subsidiarität prüfen]` belassen statt still korrigiert. Kein Ersatzzitat erfunden |
+
+### Ergänzend behoben: Wikipedia als Fundstellenbeleg (`verfassungsrecht`)
+
+Fünf BVerfGE-Zitate waren auf **de.wikipedia.org** verlinkt (Apotheken-Urteil, Elfes, Volkszählung, Kruzifix, Lüth) — in `grundrechtspruefung/SKILL.md` an sieben Stellen und in `agents/researcher.md` gebündelt. Das verstößt gegen `CONVENTIONS.md` („Statut oder amtlicher Text … Primärquelle"): Wikipedia ist kein Fundstellenbeleg. Alle wurden durch **Gericht + Entscheidungsart + Datum + Aktenzeichen + amtliche Sammlung + dejure.org-Beleg** ersetzt. Keiner dieser Punkte war eine Warnung des Prüfskripts — sie fielen beim Inventarisieren auf.
+
+Zusätzlich mit Datum und Az versehen (vorher nur Band/Seite): BVerfGE 90, 22 = Beschl. v. 08.02.1994 – 1 BvR 1693/92; BVerfGE 21, 362 = Beschl. v. 02.05.1967 – 1 BvR 578/63; BVerfGE 26, 246 = Beschl. v. 25.06.1969 – 2 BvR 128/66. Damit sind zwei der beiden vom Vordurchgang übrig gelassenen `[Datum/Aktenzeichen unverifiziert]`-Marker aufgelöst.
+
+### Behandlung von Kommissionsentscheidungen (`kartellrecht`)
+
+Der Auftrag, `M.####`- und `AT.#####`-Nummern nicht als Rechtsprechung zu behandeln, wurde **strukturell** umgesetzt, nicht nur durch einen Marker — analog zur CAS-Trennung in `sportrecht`:
+
+- Die Liste in `gwb-zusammenschluss-anmeldung/SKILL.md` hieß „Rechtsprechung **und Behördenpraxis**" und führte BKartA- und KOM-Verfahren als Positionen 5 und 6 direkt unter EuGH- und BGH-Urteilen. Sie ist jetzt in **zwei** Abschnitte geteilt: „Rechtsprechung (staatliche Gerichte)" und „Behördenpraxis — **keine Gerichtsentscheidungen, getrennt zitieren**".
+- Der neue Abschnitt sagt ausdrücklich, dass Entscheidungen der Kommission und des BKartA **Verwaltungsentscheidungen** sind, in dejure/juris nicht als Rspr. geführt werden, keine Bindungswirkung nach § 33b GWB entfalten und nur über `competition-cases.ec.europa.eu` bzw. `bundeskartellamt.de` zu belegen sind.
+- **M.10262 → M.10188** für Illumina/GRAIL korrigiert (der Vordurchgang hatte die Abweichung nur vermerkt). Die Zeile behält einen Marker mit der Begründung, dass die Nummer **konstruktionsbedingt** nicht über dejure belegbar ist — kein Fehlschlag des Zitats, sondern Reichweitengrenze der Methode. Über dejure wurde für keine `M.`-Nummer ein Abruf versucht.
+
+### Behandlung bloßer BVerfGE-Band/Seite-Zitate (`verfassungsrecht`)
+
+Der Datum-Endpunkt von dejure ist bei einem reinen Sammlungszitat **strukturell blind** — ohne Datum gibt es keine Abfrage. Das ist keine Eigenschaft des Zitats, sondern der Methode. Gelöst wurde es über **`servat.unibe.ch` (DFR)**, wo die Band/Seite-Fundstelle direkt adressierbar ist (`/dfr/bv090022.html`) und der Kopf der Entscheidung Gericht, Entscheidungsart, Datum und Aktenzeichen ausweist. Alle drei so ermittelten Tripel wurden anschließend **unabhängig über dejure gegengeprüft** und stimmten überein. Empfehlung für künftige Durchgänge: bei BVerfGE-Zitaten ohne Datum zuerst DFR, dann dejure zur Bestätigung.
+
+### Was nicht erreicht wurde
+
+- **EuGH, Urt. v. 13.07.2023 – C-376/20 P** (Rechtsmittel CK Telecoms) wurde **nicht eigenständig abgerufen**. Die Aufhebung ist nur mittelbar belegt — über den Rechtsmittelvermerk im dejure-Datensatz zu T-399/16. Deshalb steht dort ein verengter Marker und keine Vollverifikation.
+- **Google- und Meta-§-19a-Verfahren** in `agents/researcher.md`: kein Aktenzeichen abgerufen, Marker bleibt.
+- **eur-lex.europa.eu** steht nicht in der `VERIFICATION_HOSTS`-Liste von `scripts/verify_citations.py`. Sämtliche EU-Zitate beider Skills trugen bereits eur-lex-Links und wurden trotzdem als unmarkiert gewarnt. Sie wurden deshalb auf **dejure.org** umgestellt — was zugleich die Sachprüfung ermöglichte, die eur-lex-Links allein nicht leisten. `eur-lex.europa.eu` und `competition-cases.ec.europa.eu` in die Allowlist aufzunehmen wäre sinnvoll; `verify_citations.py` lag außerhalb dieses Durchgangs und wurde nicht angefasst.
+
+### Zur Metrik
+
+Anders als in den vorangegangenen Durchgängen **sinkt** die Zahl hier, wie vom Auftrag erwartet — der heute reparierte Checker zählt ein Zitat mit Beleg aus der `VERIFICATION_HOSTS`-Allowlist als verifiziert:
+
+- `kartellrecht`: **15 → 0** Warnungen
+- `verfassungsrecht`: **12 → 0** Warnungen
+
+Beide Bereiche haben damit **null unmarkierte Fallzitate**. Die drei verbleibenden `[unverifiziert]`-Instanzen sind bewusst gesetzt (C-376/20 P nicht abgerufen; Subsidiaritäts-Zuordnung BVerfGE 26, 246; KOM-Fallnummern) und tragen jeweils eine Begründung im Text.
+
+Eine im Zuge der Korrektur neu entstandene Warnung (`§ 5 WiStG` — Abkürzung fehlt in der Statute-Map) wurde durch Ausschreiben als „Wirtschaftsstrafgesetz" beseitigt; reine Schreibweise, keine Inhaltsänderung.
+
+`validate.py` läuft für beide Bereiche sauber, `eval.py` besteht (kartellrecht 60 Checks, verfassungsrecht 59; 0 Fehler). **Keine `test.md` musste geändert werden** — keines der korrigierten Zitate wurde in einer Testdatei behauptet.

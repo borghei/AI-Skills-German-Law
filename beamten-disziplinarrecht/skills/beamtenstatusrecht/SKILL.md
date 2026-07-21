@@ -123,8 +123,8 @@ Beamte tragen für die Rechtmäßigkeit ihrer dienstlichen Handlungen die **voll
 
 ### Rechtsprechung
 
-1. BVerwG, Urt. v. 05.06.2014 – 2 C 22.13, BVerwGE 150, 1 = NVwZ 2014, 1319 (Anforderungen an das ärztliche Gutachten bei Dienstunfähigkeit) — Fundstelle verifiziert
-2. BVerwG, Urt. v. 04.11.2010 – 2 C 16.09, BVerwGE 138, 102 = NJW 2011, 695 (Ernennung und Ämterstabilität) — Fundstelle verifiziert
+1. BVerwG, Urt. v. 05.06.2014 – 2 C 22.13, BVerwGE 150, 1 = NVwZ 2014, 1319 (Anforderungen an das ärztliche Gutachten bei Dienstunfähigkeit) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2014-06-05&Aktenzeichen=2%20C%2022.13))
+2. BVerwG, Urt. v. 04.11.2010 – 2 C 16.09, BVerwGE 138, 102 = NJW 2011, 695 (Ernennung und Ämterstabilität) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2010-11-04&Aktenzeichen=2%20C%2016.09))
 3. Zur Abgrenzung Umsetzung / Versetzung und zur Kausalität im Dienstunfallrecht ist die Senatsrechtsprechung im Einzelfall zu recherchieren `[unverifiziert - prüfen]`
 
 ## Ausgabeformat

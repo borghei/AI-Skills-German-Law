@@ -62,11 +62,11 @@ Maßstab: KOM, Bekanntmachung über die Definition des relevanten Marktes (ABl. 
 
 Spezialthemen:
 
-- **Kampfpreis** (predatory pricing): AKZO-Schwelle — Preis unter durchschnittlich variablen Kosten = vermutet missbräuchlich; zwischen variabler und durchschnittlich vermeidbarer/Gesamtkosten = bei Verdrängungsabsicht missbräuchlich (EuGH, AKZO, [Rs. C-62/86](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:61986CJ0062)).
-- **Marge-Squeeze**: vertikal integriertes Unternehmen mit Marktbeherrschung im Vorleistungsmarkt setzt Vorleistungspreise so, dass eigener Endkundenpreis für Wettbewerber unrentabel wird (EuGH, Deutsche Telekom, [C-280/08 P](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62008CJ0280)).
-- **Treuerabatte / loyalitätsfördernde Rabatte**: Intel-Rechtsprechung — Effekt-Analyse erforderlich (EuGH, Intel, [C-413/14 P](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62014CJ0413)).
-- **Self-Preferencing** durch Plattformen: Google Shopping (EuG, [T-612/17](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62017TJ0612); EuGH, [C-48/22 P](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A62022CJ0048)); zusätzlich § 19a Nr. 1 GWB.
-- **Daten- und Konditionenmissbrauch**: BKartA-Verfahren Facebook ([B6-22/16](https://www.bundeskartellamt.de/SharedDocs/Entscheidung/DE/Entscheidungen/Missbrauchsaufsicht/2019/B6-22-16.html)); BGH-Bestätigung; EuGH, Meta Platforms, [C-252/21](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62021CJ0252).
+- **Kampfpreis** (predatory pricing): AKZO-Schwelle — Preis unter durchschnittlich variablen Kosten = vermutet missbräuchlich; zwischen variabler und durchschnittlich vermeidbarer/Gesamtkosten = bei Verdrängungsabsicht missbräuchlich (EuGH, Urt. v. 03.07.1991 – Rs. C-62/86, AKZO Chemie ./. Kommission, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=1991-07-03&Aktenzeichen=C-62/86)).
+- **Marge-Squeeze**: vertikal integriertes Unternehmen mit Marktbeherrschung im Vorleistungsmarkt setzt Vorleistungspreise so, dass eigener Endkundenpreis für Wettbewerber unrentabel wird (EuGH, Urt. v. 14.10.2010 – C-280/08 P, Deutsche Telekom ./. Kommission, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2010-10-14&Aktenzeichen=C-280/08)).
+- **Treuerabatte / loyalitätsfördernde Rabatte**: Intel-Rechtsprechung — Effekt-Analyse erforderlich (EuGH, Urt. v. 06.09.2017 – C-413/14 P, Intel ./. Kommission, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2017-09-06&Aktenzeichen=C-413/14)).
+- **Self-Preferencing** durch Plattformen: Google Shopping (EuG, Urt. v. 10.11.2021 – T-612/17, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuG&Datum=2021-11-10&Aktenzeichen=T-612/17); im Rechtsmittel bestätigt durch EuGH, Urt. v. 10.09.2024 – C-48/22 P, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2024-09-10&Aktenzeichen=C-48/22)); zusätzlich § 19a Nr. 1 GWB.
+- **Daten- und Konditionenmissbrauch**: BKartA-Verfahren Facebook ([B6-22/16](https://www.bundeskartellamt.de/SharedDocs/Entscheidung/DE/Entscheidungen/Missbrauchsaufsicht/2019/B6-22-16.html)); BGH-Bestätigung; EuGH, Urt. v. 04.07.2023 – C-252/21, Meta Platforms u.a., [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-07-04&Aktenzeichen=C-252/21).
 
 ### 4. Objektive Rechtfertigung und Effizienzverteidigung
 
@@ -115,13 +115,13 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 
 1. EuGH, Urt. v. 13.02.1979 – Rs. 85/76, Hoffmann-La Roche (Behinderungsbegriff)
 2. EuGH, Urt. v. 14.02.1978 – Rs. 27/76, United Brands (Marktabgrenzung Bananen)
-3. EuGH, Urt. v. 03.07.1991 – C-62/86, AKZO (Kampfpreis-Test)
-4. EuGH, Urt. v. 14.10.2010 – C-280/08 P, Deutsche Telekom (Marge-Squeeze)
-5. EuGH, Urt. v. 06.09.2017 – C-413/14 P, Intel (Rabattmissbrauch, Effekt-Analyse)
-6. EuG, Urt. v. 10.11.2021 – T-612/17, Google Shopping (Self-Preferencing)
-7. EuGH, Urt. v. 04.07.2023 – C-252/21, Meta Platforms (Datenmissbrauch / DSGVO-Verzahnung)
+3. EuGH, Urt. v. 03.07.1991 – Rs. C-62/86, AKZO Chemie ./. Kommission (Kampfpreis-Test; Preise unter durchschnittlichen variablen Kosten), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=1991-07-03&Aktenzeichen=C-62/86)
+4. EuGH, Urt. v. 14.10.2010 – C-280/08 P, Deutsche Telekom ./. Kommission (Marge-Squeeze auf den Festnetzmärkten), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2010-10-14&Aktenzeichen=C-280/08)
+5. EuGH, Urt. v. 06.09.2017 – C-413/14 P, Intel ./. Kommission (Treuerabatte; Verdrängungseignung ist zu prüfen, wenn substantiiert bestritten), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2017-09-06&Aktenzeichen=C-413/14)
+6. EuG, Urt. v. 10.11.2021 – T-612/17, Google und Alphabet ./. Kommission (Google Shopping — Self-Preferencing), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuG&Datum=2021-11-10&Aktenzeichen=T-612/17); im Rechtsmittel bestätigt durch EuGH, Urt. v. 10.09.2024 – C-48/22 P, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2024-09-10&Aktenzeichen=C-48/22)
+7. EuGH, Urt. v. 04.07.2023 – C-252/21, Meta Platforms u.a. (nationale Kartellbehörde darf DSGVO-Verstöße im Missbrauchsverfahren inzident prüfen), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-07-04&Aktenzeichen=C-252/21)
 8. BGH, Beschl. v. 23.06.2020 – [KVR 69/19, Facebook](https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&client=12&pos=0&anz=1&Blank=1.pdf&nr=109506) (vorläufiges Verfahren)
-9. BGH, Beschl. v. 04.07.2023 – KVB 59/22, Amazon § 19a (Marktposition) `[unverifiziert – Az./Datum prüfen; in öffentlich verfügbaren Quellen erscheint die Amazon-§-19a-Bestätigung als BGH, Beschl. v. 23.04.2024 – KVB 56/22]`
+9. BGH, Beschl. v. 23.04.2024 – KVB 56/22, Amazon (Feststellung der überragenden marktübergreifenden Bedeutung nach § 19a I GWB), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2024-04-23&Aktenzeichen=KVB%2056/22)
 10. BKartA, Beschl. v. 06.02.2019 – [B6-22/16, Facebook](https://www.bundeskartellamt.de/SharedDocs/Entscheidung/DE/Entscheidungen/Missbrauchsaufsicht/2019/B6-22-16.html) (Konditionenmissbrauch)
 11. BKartA, [Verfügungen 2022 ff.](https://www.bundeskartellamt.de/DE/DigitalWirtschaft/VerfahrenGegenGrosseDigitalkonzerne/verfahrengegengrossedigitalkonzerne_node.html) gegen Amazon, Apple, Google, Meta zu § 19a
 

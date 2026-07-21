@@ -74,7 +74,7 @@ Inhaltlich ist Maßstab die **ordnungsmäßige Verwaltung** nach [§ 19 WEG](htt
 
 ### 6. Teilanfechtung eines Beschlusses
 
-Ein Beschluss kann auch **in Teilen** angefochten werden, wenn der angegriffene Teil abtrennbar ist und der Restbeschluss eigenständig Bestand haben kann. Auch nach der WEMoG-Reform bleibt die **Teilanfechtung** etwa eines Beschlusses über die Nachschüsse/Abrechnungsspitze möglich (BGH, Urt. v. 11.04.2025 – V ZR 96/24 `[verifiziert]`). Praktisch relevant bei Jahresabrechnungen, deren einzelne Positionen separat angreifbar sind.
+Ein Beschluss kann auch **in Teilen** angefochten werden, wenn der angegriffene Teil abtrennbar ist und der Restbeschluss eigenständig Bestand haben kann. Auch nach der WEMoG-Reform bleibt die **Teilanfechtung** etwa eines Beschlusses über die Nachschüsse/Abrechnungsspitze möglich (BGH, Urt. v. 11.04.2025 – V ZR 96/24, NJW 2025, 1504 = NZM 2025, 351, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=11.04.2025&Aktenzeichen=V%20ZR%2096/24)). Praktisch relevant bei Jahresabrechnungen, deren einzelne Positionen separat angreifbar sind.
 
 ### 7. Ergebnis
 
@@ -93,7 +93,7 @@ Verbindlich: [`../../references/zitierweise.md`](../../references/zitierweise.md
 
 ### Rechtsprechung
 
-1. BGH, Urt. v. 11.04.2025 – V ZR 96/24 `[verifiziert]` (Teilanfechtung eines Beschlusses über Nachschüsse/Abrechnungsspitze auch nach WEMoG)
+1. BGH, Urt. v. 11.04.2025 – V ZR 96/24, NJW 2025, 1504 = NZM 2025, 351 (Teilanfechtung eines Beschlusses über Nachschüsse/Abrechnungsspitze auch nach WEMoG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=11.04.2025&Aktenzeichen=V%20ZR%2096/24)
 
 ## Risiken / typische Fehler
 

@@ -88,7 +88,7 @@ Praktische Folgerungen:
 
 ### 6. Gutscheinlösungen
 
-Wird der Vertrag rückabgewickelt, schuldet der Unternehmer **Erstattung in Geld**. Ein Gutschein ist eine Leistung an Erfüllungs statt und bedarf der **Zustimmung** des Reisenden; er kann nicht einseitig aufgedrängt werden. Vor der Annahme zu prüfen sind Insolvenzabsicherung des Gutscheins, Einlösefrist, Übertragbarkeit und die Frage, ob mit der Annahme weitergehende Ansprüche abgegolten sein sollen. Die unionsrechtliche Linie zur Erstattung im Pauschalreisebereich ergibt sich aus EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709 — Fundstelle verifiziert, Reichweite im Einzelfall zu prüfen `[unverifiziert - prüfen]`.
+Wird der Vertrag rückabgewickelt, schuldet der Unternehmer **Erstattung in Geld**. Ein Gutschein ist eine Leistung an Erfüllungs statt und bedarf der **Zustimmung** des Reisenden; er kann nicht einseitig aufgedrängt werden. Vor der Annahme zu prüfen sind Insolvenzabsicherung des Gutscheins, Einlösefrist, Übertragbarkeit und die Frage, ob mit der Annahme weitergehende Ansprüche abgegolten sein sollen. Die unionsrechtliche Linie zur Erstattung im Pauschalreisebereich ergibt sich aus EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-407/21)), Reichweite im Einzelfall zu prüfen `[unverifiziert - prüfen]`.
 
 ### 7. Beweisführung und Dokumentation
 
@@ -113,8 +113,8 @@ Die Rollenzuordnung wird über Unterlagen entschieden, nicht über Behauptungen.
 
 ### Rechtsprechung
 
-1. EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709 (Erstattung im Pauschalreiserecht) — Fundstelle verifiziert
-2. EuGH, Urt. v. 12.03.2002 – C-168/00 (Leitner), NJW 2002, 1255 (Schutzzweck des Pauschalreiserechts) — Fundstelle verifiziert
+1. EuGH, Urt. v. 08.06.2023 – Rs. C-407/21, UFC-Que choisir und CLCV, EuZW 2023, 709 = MDR 2023, 964 (Erstattung im Pauschalreiserecht nach Rücktritt; RL (EU) 2015/2302), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-407/21)
+2. EuGH, Urt. v. 12.03.2002 – Rs. C-168/00, Leitner, NJW 2002, 1255 = EuZW 2002, 339 (immaterieller Schaden; zum Schutzzweck des Pauschalreiserechts), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2002-03-12&Aktenzeichen=C-168/00)
 3. Zur Abgrenzung Veranstalter / Vermittler nach dem Auftreten gegenüber dem Reisenden ist die instanzgerichtliche Praxis einzelfallbezogen zu recherchieren `[unverifiziert - prüfen]`
 
 ## Ausgabeformat

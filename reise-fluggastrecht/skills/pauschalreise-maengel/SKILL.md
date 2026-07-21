@@ -89,7 +89,7 @@ Wird die Reise durch einen Mangel **erheblich beeinträchtigt**, kann der Reisen
 ### 7. Schadensersatz und entgangene Urlaubsfreude ([§ 651n BGB](https://www.gesetze-im-internet.de/bgb/__651n.html))
 
 - **§ 651n Abs. 1 BGB**: Schadensersatz neben der Minderung, es sei denn, der Mangel ist vom Reisenden verschuldet, von einem Dritten verursacht, der weder Leistungserbringer noch sonst in die Leistungserbringung eingebunden war, oder durch unvermeidbare außergewöhnliche Umstände verursacht.
-- **§ 651n Abs. 2 BGB — entgangene Urlaubsfreude**: Wird die Reise **vereitelt oder erheblich beeinträchtigt**, kann der Reisende auch wegen nutzlos aufgewendeter Urlaubszeit eine **angemessene Entschädigung in Geld** verlangen. Der Anspruch ist immateriell und setzt eine erhebliche Schwelle voraus; die Bemessung orientiert sich am Tagesreisepreis und an der Dauer und Intensität der Beeinträchtigung. Unionsrechtliche Grundlage ist die Anerkennung des immateriellen Schadens im Reiserecht (EuGH, Urt. v. 12.03.2002 – C-168/00 „Leitner", NJW 2002, 1255) — Fundstelle verifiziert.
+- **§ 651n Abs. 2 BGB — entgangene Urlaubsfreude**: Wird die Reise **vereitelt oder erheblich beeinträchtigt**, kann der Reisende auch wegen nutzlos aufgewendeter Urlaubszeit eine **angemessene Entschädigung in Geld** verlangen. Der Anspruch ist immateriell und setzt eine erhebliche Schwelle voraus; die Bemessung orientiert sich am Tagesreisepreis und an der Dauer und Intensität der Beeinträchtigung. Unionsrechtliche Grundlage ist die Anerkennung des immateriellen Schadens im Reiserecht (EuGH, Urt. v. 12.03.2002 – Rs. C-168/00 „Leitner", NJW 2002, 1255 = EuZW 2002, 339, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2002-03-12&Aktenzeichen=C-168/00); ergangen noch zur Pauschalreise-RL 90/314/EWG).
 - **§ 651n Abs. 3 BGB** verweist für Haftungsbeschränkungen auf internationale Übereinkommen; [§ 651p BGB](https://www.gesetze-im-internet.de/bgb/__651p.html) erlaubt eine vertragliche Begrenzung auf den dreifachen Reisepreis nur für nicht körperliche Schäden und nur bei fehlendem Vorsatz und grober Fahrlässigkeit.
 
 Vergebliche Aufwendungen (Visa, Impfungen, Ausrüstung, gebuchte Ausflüge) sind gesondert zu beziffern.
@@ -133,8 +133,8 @@ python -m scripts.legal_calc.cli frist --ereignis 12.08.2024 --menge 2 --einheit
 
 ### Rechtsprechung
 
-1. EuGH, Urt. v. 12.03.2002 – C-168/00 (Leitner), NJW 2002, 1255 (immaterieller Schaden im Reiserecht) — Fundstelle verifiziert
-2. EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709 (Pauschalreise, Rückerstattung) — Fundstelle verifiziert
+1. EuGH, Urt. v. 12.03.2002 – Rs. C-168/00, Leitner, NJW 2002, 1255 = EuZW 2002, 339 (immaterieller Schaden im Reiserecht; RL 90/314/EWG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2002-03-12&Aktenzeichen=C-168/00)
+2. EuGH, Urt. v. 08.06.2023 – Rs. C-407/21, UFC-Que choisir und CLCV, EuZW 2023, 709 = MDR 2023, 964 (Rücktritt wegen unvermeidbarer außergewöhnlicher Umstände in der COVID-19-Pandemie; Erstattungspflicht des Veranstalters nach RL (EU) 2015/2302 — kein Gutschein gegen den Willen des Reisenden), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-407/21)
 3. Zur Bemessung der Minderungsquote und zur Erheblichkeitsschwelle des § 651n Abs. 2 BGB ist die instanzgerichtliche Praxis einzelfallbezogen zu recherchieren `[unverifiziert - prüfen]`
 
 ## Ausgabeformat

@@ -128,14 +128,18 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Riesenkampff/Lehr, in: Loewenheim/Meessen/Riesenkampff/Kersting/Meyer-Lindemann, Kartellrecht, 4. Aufl. 2020, § 35 GWB Rn. 1 ff.
 - Körber, in: Immenga/Mestmäcker, EU-Wettbewerbsrecht, 6. Aufl. 2019, FKVO Art. 1 Rn. 1 ff. `[unverifiziert – Auflagenstand]`
 
-### Rechtsprechung und Behördenpraxis (`[unverifiziert – prüfen in juris/EuGH-Datenbank/BKartA-Website]`)
+### Rechtsprechung (staatliche Gerichte)
 
 1. BGH, Beschl. v. 25.09.2007 – [KVR 19/07, Sulzer/Kelmix](https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&nr=41867&pos=0&anz=1) (Erwerb wettbewerblich erheblicher Einfluss)
-2. BGH, Beschl. v. 14.11.2017 – KVR 57/15, EDEKA/Tengelmann (Ministererlaubnis § 42 GWB) `[unverifiziert – Az. zu prüfen, BGH-Beschl. v. 14.11.2017 trägt Az. KVR 57/16]`
-3. EuG, Urt. v. 28.05.2020 – [T-399/16, CK Telecoms](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62016TJ0399) (Marktabgrenzung, SIEC-Test)
-4. EuGH, Urt. v. 04.03.2020 – [C-10/18 P, Marine Harvest](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62018CJ0010) (Gun-Jumping, Art. 7 FK-VO)
-5. BKartA, Tätigkeitsberichte mit Bußgeldern für Gun-Jumping (z. B. [Mars/Nutro 2008](https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2008/15_12_2008_Mars_Vollzugsverbot.html)).
-6. KOM, [M.7217 Facebook/WhatsApp](https://competition-cases.ec.europa.eu/cases/M.7217); [M.8124 Microsoft/LinkedIn](https://competition-cases.ec.europa.eu/cases/M.8124); M.10262 Illumina/Grail (Phase II) `[unverifiziert – KOM-Fallnummer prüfen; Illumina/GRAIL trägt die Fallnummer M.10188]`
+2. BGH, Beschl. v. 14.11.2017 – KVR 57/16, EDEKA/Kaiser's Tengelmann (Befugnis des BKartA, Verstöße gegen das **Vollzugsverbot** zu untersagen; **nicht** die Ministererlaubnis nach § 42 GWB — über deren Anfechtung entschied das OLG Düsseldorf), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2017-11-14&Aktenzeichen=KVR%2057/16)
+3. EuG, Urt. v. 28.05.2020 – T-399/16, CK Telecoms UK Investments ./. Kommission (SIEC-Test, Beweismaß; Nichtigerklärung der Untersagung Hutchison 3G UK/Telefónica UK), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuG&Datum=2020-05-28&Aktenzeichen=T-399/16) — **⚠️ im Rechtsmittel aufgehoben**: EuGH, Urt. v. 13.07.2023 – C-376/20 P; die Beweismaß-Ausführungen des EuG sind damit überholt und dürfen nicht mehr als geltender Maßstab zitiert werden `[unverifiziert – Rechtsmittelentscheidung C-376/20 P nicht eigenständig abgerufen; Aufhebung ist im dejure-Datensatz zu T-399/16 vermerkt]`
+4. EuGH, Urt. v. 04.03.2020 – C-10/18 P, Mowi (vormals Marine Harvest) ./. Kommission (Gun-Jumping; Art. 4 I und Art. 7 I FK-VO als eigenständige Verstöße, ne bis in idem), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-03-04&Aktenzeichen=C-10/18)
+### Behördenpraxis — **keine Gerichtsentscheidungen, getrennt zitieren**
+
+Entscheidungen der Europäischen Kommission (`M.####`, `AT.#####`) und des Bundeskartellamts sind **Verwaltungsentscheidungen**, keine Rechtsprechung. Sie sind nicht in dejure oder juris als Rspr. nachgewiesen, entfalten keine Bindungswirkung nach § 33b GWB und dürfen in einer Rspr.-Liste nicht neben Urteile des EuGH, EuG oder BGH gestellt werden. Beleg ausschließlich über `competition-cases.ec.europa.eu` bzw. `bundeskartellamt.de`.
+
+- BKartA, Tätigkeitsberichte mit Bußgeldern für Gun-Jumping (z. B. [Mars/Nutro 2008](https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2008/15_12_2008_Mars_Vollzugsverbot.html)).
+- KOM, [M.7217 Facebook/WhatsApp](https://competition-cases.ec.europa.eu/cases/M.7217); [M.8124 Microsoft/LinkedIn](https://competition-cases.ec.europa.eu/cases/M.8124); [M.10188 Illumina/GRAIL](https://competition-cases.ec.europa.eu/cases/M.10188) (Phase II; die zuvor hier genannte Nummer M.10262 gehört nicht zu diesem Vorhaben) `[unverifiziert – KOM-Fallnummer über competition-cases.ec.europa.eu gegenprüfen; über dejure nicht belegbar, weil dort keine Kommissionsentscheidungen geführt werden]`
 
 ## Ausgabeformat
 
@@ -193,7 +197,7 @@ VIII. Quellenverzeichnis
 
 ## Beispiel (Auszug, Gutachtenstil)
 
-> A. Erwerb von 100 % der Anteile an der B-GmbH durch die A-AG ist ein Zusammenschluss iSv § 37 I Nr. 3 lit. b GWB, da die 50 %-Schwelle erreicht ist. Die Aufgreifschwellen § 35 I GWB sind nach den im Sachverhalt mitgeteilten Umsätzen (weltweit > 500 Mio. EUR; Inlandsumsatz A-AG > 50 Mio. EUR; Inlandsumsatz B-GmbH > 17,5 Mio. EUR) erreicht. Da die EU-Schwellen Art. 1 FK-VO bei dem aggregierten Unionsumsatz von ca. ... nicht erfüllt sind, verbleibt die ausschließliche Zuständigkeit beim Bundeskartellamt. Der Zusammenschluss ist daher gemäß § 39 GWB **vor Vollzug** anzumelden. Vollzug vor Freigabe ist nach § 41 I GWB verboten und nach § 81 II Nr. 1 GWB bußgeldbewehrt bis zu 10 % des weltweiten Konzernumsatzes des vorletzten Geschäftsjahres (vgl. EuGH, Urt. v. 04.03.2020 – [C-10/18 P, Marine Harvest](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62018CJ0010)). ...
+> A. Erwerb von 100 % der Anteile an der B-GmbH durch die A-AG ist ein Zusammenschluss iSv § 37 I Nr. 3 lit. b GWB, da die 50 %-Schwelle erreicht ist. Die Aufgreifschwellen § 35 I GWB sind nach den im Sachverhalt mitgeteilten Umsätzen (weltweit > 500 Mio. EUR; Inlandsumsatz A-AG > 50 Mio. EUR; Inlandsumsatz B-GmbH > 17,5 Mio. EUR) erreicht. Da die EU-Schwellen Art. 1 FK-VO bei dem aggregierten Unionsumsatz von ca. ... nicht erfüllt sind, verbleibt die ausschließliche Zuständigkeit beim Bundeskartellamt. Der Zusammenschluss ist daher gemäß § 39 GWB **vor Vollzug** anzumelden. Vollzug vor Freigabe ist nach § 41 I GWB verboten und nach § 81 II Nr. 1 GWB bußgeldbewehrt bis zu 10 % des weltweiten Konzernumsatzes des vorletzten Geschäftsjahres (vgl. EuGH, Urt. v. 04.03.2020 – C-10/18 P, Mowi/Marine Harvest, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-03-04&Aktenzeichen=C-10/18)). ...
 
 ## Risiken / typische Fehler
 

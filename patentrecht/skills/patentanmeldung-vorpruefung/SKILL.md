@@ -36,7 +36,7 @@ Researcher liefert PatG- und EPÜ-Statute, BGH-X-ZS- und EPA-Beschwerdekammer-Re
 
 ### 1. Erfindungsgegenstand abgrenzen
 
-Klärung, **was** die Erfindung ist (Erzeugnis, Verfahren, Verwendung). Bei Software-Anteilen: gibt es einen **technischen Beitrag** im Sinne der EPA-Beschwerdekammern ([T 0641/00 „COMVIK"](https://en.wikipedia.org/wiki/T_641/00)) bzw. eine Lösung eines konkreten technischen Problems iSd BGH-Rspr. zu computerimplementierten Erfindungen?
+Klärung, **was** die Erfindung ist (Erzeugnis, Verfahren, Verwendung). Bei Software-Anteilen: gibt es einen **technischen Beitrag** im Sinne der EPA-Beschwerdekammern (T 0641/00 „COMVIK" ([EPA-Entscheidungsdatenbank](https://www.epo.org/en/boards-of-appeal/decisions)) `[unverifiziert - prüfen]`) bzw. eine Lösung eines konkreten technischen Problems iSd BGH-Rspr. zu computerimplementierten Erfindungen?
 
 ### 2. Ausschlusstatbestände § 1 III, IV PatG / Art. 52 II, III EPÜ
 
@@ -48,7 +48,7 @@ Folgende Gegenstände sind **als solche** nicht patentierbar:
 - Programme für Datenverarbeitungsanlagen
 - Wiedergabe von Informationen
 
-Die „als solche"-Klausel ist der Hebel der Praxis. Computerimplementierte Erfindungen sind patentierbar, wenn sie ein **konkretes technisches Problem** mit **technischen Mitteln** lösen (BGH, [„Rentabilitätsermittlung", X ZB 34/03](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=19.10.2004&Aktenzeichen=X+ZB+34/03); BGH, [„Logikverifikation", X ZB 11/98](https://de.wikipedia.org/wiki/Logikverifikation_(Beschluss)); EPA, [G 0003/08](https://en.wikipedia.org/wiki/G_3/08)).
+Die „als solche"-Klausel ist der Hebel der Praxis. Computerimplementierte Erfindungen sind patentierbar, wenn sie ein **konkretes technisches Problem** mit **technischen Mitteln** lösen (BGH, [„Rentabilitätsermittlung", X ZB 34/03](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=19.10.2004&Aktenzeichen=X+ZB+34/03); BGH, „Logikverifikation", X ZB 11/98 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=X+ZB+11/98)); EPA, G 0003/08 ([EPA-Entscheidungsdatenbank](https://www.epo.org/en/boards-of-appeal/decisions)) `[unverifiziert - prüfen]`).
 
 Zusätzliche Ausschlüsse: Pflanzensorten / Tierrassen (§ 2a PatG), Heilbehandlungs- und Diagnoseverfahren am menschlichen / tierischen Körper (§ 2a I Nr. 2 PatG).
 
@@ -70,7 +70,7 @@ Maßstab: Naheliegen für den Fachmann. EPA-Standard und BGH-Praxis nutzen den *
 2. **Objektive technische Aufgabe** formulieren (Unterschied der Erfindung gegenüber nächstliegendem Stand der Technik → technischer Effekt → Aufgabe)
 3. **Naheliegen** prüfen: hätte der Fachmann ausgehend vom nächstliegenden Stand der Technik in Erwartung des technischen Effekts die beanspruchte Lösung naheliegend erreicht (could-would-Ansatz)?
 
-Bei **gemischten Erfindungen** (technisch + nicht-technisch, etwa Geschäftsmethode + Computer) zählen nur die zum technischen Beitrag beitragenden Merkmale (EPA [„COMVIK", T 0641/00](https://en.wikipedia.org/wiki/T_641/00)).
+Bei **gemischten Erfindungen** (technisch + nicht-technisch, etwa Geschäftsmethode + Computer) zählen nur die zum technischen Beitrag beitragenden Merkmale (EPA „COMVIK", T 0641/00 ([EPA](https://www.epo.org/en/boards-of-appeal/decisions)) `[unverifiziert - prüfen]`).
 
 Beim **Gebrauchsmuster** gilt nur ein **„erfinderischer Schritt"** geringer Schwelle (§ 1 GebrMG) — niedrigere Anforderung als § 4 PatG.
 
@@ -126,11 +126,11 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 
 ### Rechtsprechung
 
-1. EPA, Beschwerdekammer, [T 0641/00 „COMVIK"](https://en.wikipedia.org/wiki/T_641/00) (gemischte Erfindungen, technischer Beitrag)
-2. EPA, Große Beschwerdekammer, [G 0003/08](https://en.wikipedia.org/wiki/G_3/08) (Programme für Datenverarbeitungsanlagen)
+1. EPA, Beschwerdekammer, T 0641/00 „COMVIK" ([EPA-Entscheidungsdatenbank](https://www.epo.org/en/boards-of-appeal/decisions)) `[unverifiziert - prüfen]` (gemischte Erfindungen, technischer Beitrag)
+2. EPA, Große Beschwerdekammer, G 0003/08 ([EPA-Entscheidungsdatenbank](https://www.epo.org/en/boards-of-appeal/decisions)) `[unverifiziert - prüfen]` (Programme für Datenverarbeitungsanlagen)
 3. EPA, Große Beschwerdekammer, [G 0001/92](https://www.wipo.int/wipolex/en/judgments/details/2797) (öffentliche Zugänglichkeit)
 4. BGH, [Urt. v. 22.04.2010 – Xa ZB 20/08](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=Xa+ZB+20/08) „Dynamische Dokumentengenerierung" (CII)
-5. BGH, [„Logikverifikation", X ZB 11/98](https://de.wikipedia.org/wiki/Logikverifikation_(Beschluss)); BGH, [„Rentabilitätsermittlung", X ZB 34/03](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=19.10.2004&Aktenzeichen=X+ZB+34/03); BGH, [„Webseitenanzeige", X ZR 121/09](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=24.02.2011&Aktenzeichen=X+ZR+121/09)
+5. BGH, „Logikverifikation", X ZB 11/98 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Text=X+ZB+11/98)); BGH, [„Rentabilitätsermittlung", X ZB 34/03](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=19.10.2004&Aktenzeichen=X+ZB+34/03); BGH, [„Webseitenanzeige", X ZR 121/09](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=24.02.2011&Aktenzeichen=X+ZR+121/09)
 6. BGH, [„Olanzapin", X ZR 89/07](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=16.12.2008&Aktenzeichen=X+ZR+89/07) (Neuheit, individualisierte Offenbarung)
 
 ## Ausgabeformat
@@ -191,7 +191,7 @@ VII. Quellenverzeichnis
 
 **Szenario:** Start-up hat ein KI-Verfahren entwickelt, das aus Sensordaten einer Werkzeugmaschine Vorhersagen über Werkzeugverschleiß ableitet und die Maschine entsprechend ansteuert. Vor 3 Monaten Vortrag auf Fachkonferenz mit Folien-Veröffentlichung.
 
-Kurzantwort: 🟡 Patentierbarkeit grundsätzlich aussichtsreich, da konkretes technisches Problem (Werkzeugverschleiß / Maschinensteuerung) mit technischen Mitteln gelöst wird (vgl. BGH-Linie zu CII, EPA [„COMVIK", T 0641/00](https://en.wikipedia.org/wiki/T_641/00)). **Eigenvorveröffentlichung** ist kritisch: für EPA-Route faktisch neuheitsschädlich (Art. 55 EPÜ greift kaum); für DPMA enge Schonfrist § 3 V PatG. **Empfehlung**: Schnellanmeldung beim DPMA innerhalb der 6-Monats-Schonfrist; parallel Gebrauchsmuster-Abzweig (§ 5 GebrMG) als Rettungsanker; EPA-/PCT-Strategie unter Priorität der DPMA-Anmeldung innerhalb 12 Monaten.
+Kurzantwort: 🟡 Patentierbarkeit grundsätzlich aussichtsreich, da konkretes technisches Problem (Werkzeugverschleiß / Maschinensteuerung) mit technischen Mitteln gelöst wird (vgl. BGH-Linie zu CII, EPA „COMVIK", T 0641/00 ([EPA](https://www.epo.org/en/boards-of-appeal/decisions)) `[unverifiziert - prüfen]`). **Eigenvorveröffentlichung** ist kritisch: für EPA-Route faktisch neuheitsschädlich (Art. 55 EPÜ greift kaum); für DPMA enge Schonfrist § 3 V PatG. **Empfehlung**: Schnellanmeldung beim DPMA innerhalb der 6-Monats-Schonfrist; parallel Gebrauchsmuster-Abzweig (§ 5 GebrMG) als Rettungsanker; EPA-/PCT-Strategie unter Priorität der DPMA-Anmeldung innerhalb 12 Monaten.
 
 ## Risiken / typische Fehler
 

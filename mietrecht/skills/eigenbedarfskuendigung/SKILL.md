@@ -51,7 +51,7 @@ Auch eine formell wirksame Kündigung kann am **Widerspruch** des Mieters scheit
 
 ### 6. Rechtsmissbrauch / vorgetäuschter Eigenbedarf + Schadensersatz
 
-Die Kündigung ist rechtsmissbräuchlich und unwirksam, wenn der Eigenbedarf nur vorgeschoben ist. Stellt sich nach Auszug heraus, dass der behauptete Bedarf nie bestand, liegt ein **vorgetäuschter Eigenbedarf** vor: Der Vermieter haftet dem Mieter auf **Schadensersatz** nach § 280 Abs. 1 BGB (Umzugs-, Makler-, Mehrkosten). Leitentscheidung: **BGH, Urt. v. 10.06.2015 – VIII ZR 99/14 [verifiziert]**. Fällt der Eigenbedarf vor Ablauf der Kündigungsfrist weg, trifft den Vermieter eine gesteigerte Mitteilungs- und Darlegungslast (BGH – VIII ZR 44/16 `[unverifiziert - prüfen]`). Indizien für Vortäuschung: fehlender tatsächlicher Einzug, alsbaldige Weitervermietung oder Verkauf, wechselnde Begründungen.
+Die Kündigung ist rechtsmissbräuchlich und unwirksam, wenn der Eigenbedarf nur vorgeschoben ist. Stellt sich nach Auszug heraus, dass der behauptete Bedarf nie bestand, liegt ein **vorgetäuschter Eigenbedarf** vor: Der Vermieter haftet dem Mieter auf **Schadensersatz** nach § 280 Abs. 1 BGB (Umzugs-, Makler-, Mehrkosten). Leitentscheidung: **BGH, Urt. v. 10.06.2015 – VIII ZR 99/14** ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-06-10&Aktenzeichen=VIII%20ZR%2099/14)). Fällt der Eigenbedarf vor Ablauf der Kündigungsfrist weg, trifft den Vermieter eine gesteigerte Mitteilungs- und Darlegungslast (BGH – VIII ZR 44/16 `[unverifiziert - prüfen]`). Indizien für Vortäuschung: fehlender tatsächlicher Einzug, alsbaldige Weitervermietung oder Verkauf, wechselnde Begründungen.
 
 ### 7. Ergebnis
 
@@ -63,7 +63,7 @@ Zusammenführung: Liegt ein konkreter Eigenbedarf für eine privilegierte Person
 - **Begünstigte Person außerhalb des privilegierten Kreises** → kein Eigenbedarf.
 - **Kündigungsfrist nach § 573c BGB falsch berechnet** (Staffelung 3/6/9 Monate übersehen) → Beendigungszeitpunkt unwirksam.
 - **Härtefall / Sozialklausel unterschätzt** → Mieter erzwingt Fortsetzung nach § 574 BGB.
-- **Vorgetäuschter Eigenbedarf** → Unwirksamkeit *und* Schadensersatz (VIII ZR 99/14).
+- **Vorgetäuschter Eigenbedarf** → Unwirksamkeit *und* Schadensersatz (BGH, Urt. v. 10.06.2015 – VIII ZR 99/14, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=10.06.2015&Aktenzeichen=VIII%20ZR%2099/14)).
 - **Wegfall des Eigenbedarfs während der Frist nicht mitgeteilt** → Schadensersatzrisiko.
 
 ## Quellen
@@ -74,7 +74,7 @@ Zusammenführung: Liegt ein konkreter Eigenbedarf für eine privilegierte Person
 
 ### Rechtsprechung
 
-- BGH, Urt. v. 10.06.2015 – VIII ZR 99/14 [verifiziert] (Schadensersatz bei vorgetäuschtem Eigenbedarf)
+- BGH, Urt. v. 10.06.2015 – VIII ZR 99/14, NJW 2015, 2324 = NZM 2015, 532 (Schadensersatz bei vorgetäuschtem Eigenbedarf, § 280 Abs. 1 BGB), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=10.06.2015&Aktenzeichen=VIII%20ZR%2099/14)
 - BGH – VIII ZR 44/16 `[unverifiziert - prüfen]` (gesteigerte Darlegungslast bei Wegfall des Eigenbedarfs)
 
 ## Ausgabeformat

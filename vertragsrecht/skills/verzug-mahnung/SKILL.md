@@ -69,7 +69,7 @@ Der Schuldner einer **Entgeltforderung** kommt spätestens in Verzug, wenn er ni
 
 Bei einer Entgeltforderung gegen einen **Nicht-Verbraucher** kann der Gläubiger zusätzlich eine **Verzugspauschale** von **40 Euro** verlangen. Die Verzugspauschale wird auf einen geschuldeten Schadensersatz wegen der Rechtsverfolgungskosten angerechnet (§ 288 Abs. 5 S. 3 BGB).
 
-> **Ausnahme im Arbeitsrecht:** Die 40-Euro-Verzugspauschale gilt **nicht** für Ansprüche aus dem Arbeitsverhältnis, weil § 12a Abs. 1 ArbGG den Kostenerstattungsanspruch in erster Instanz ausschließt — BAG, Urt. v. 25.09.2018 – 8 AZR 26/18 [verifiziert].
+> **Ausnahme im Arbeitsrecht:** Die 40-Euro-Verzugspauschale gilt **nicht** für Ansprüche aus dem Arbeitsverhältnis, weil § 12a Abs. 1 ArbGG den Kostenerstattungsanspruch in erster Instanz ausschließt — BAG, Urt. v. 25.09.2018 – 8 AZR 26/18, BAGE 163, 309 = NZA 2019, 121, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=25.09.2018&Aktenzeichen=8%20AZR%2026/18).
 
 ### 5. Weiterer Verzögerungsschaden ([§ 280 Abs. 2 BGB](https://www.gesetze-im-internet.de/bgb/__280.html))
 
@@ -88,7 +88,7 @@ Taggenaue Festlegung des Verzugsbeginns, Zinssatz (5 oder 9 Prozentpunkte über 
 - **Mahnung mit bloßer Rechnung verwechselt** — die Rechnung ist keine Mahnung; ohne Mahnung greift nur Entbehrlichkeit oder die 30-Tage-Regel.
 - **30-Tage-Regel gegen Verbraucher ohne Hinweis** angewandt — gegenüber einem **Verbraucher** ohne Rechnungshinweis tritt kein Verzug nach § 286 Abs. 3 BGB ein.
 - **Falscher Zinssatz** — 9 Prozentpunkte über dem Basiszinssatz nur ohne Verbraucherbeteiligung; sonst 5 Prozentpunkte über dem Basiszinssatz.
-- **Verzugspauschale im Arbeitsrecht** angesetzt — unzulässig (§ 12a Abs. 1 ArbGG, BAG 8 AZR 26/18).
+- **Verzugspauschale im Arbeitsrecht** angesetzt — unzulässig (§ 12a Abs. 1 ArbGG, BAG 8 AZR 26/18, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=25.09.2018&Aktenzeichen=8%20AZR%2026/18)).
 - **Basiszinssatz** nicht zum Verzugszeitraum, sondern pauschal angesetzt — er ändert sich halbjährlich.
 - **Erfundenes Aktenzeichen** — niemals ein Urteil zitieren, das nicht verifiziert ist.
 
@@ -108,7 +108,7 @@ Taggenaue Festlegung des Verzugsbeginns, Zinssatz (5 oder 9 Prozentpunkte über 
 
 ### Rechtsprechung
 
-- BAG, Urt. v. 25.09.2018 – 8 AZR 26/18 [verifiziert] (Verzugspauschale § 288 Abs. 5 BGB im Arbeitsrecht ausgeschlossen, § 12a Abs. 1 ArbGG)
+- BAG, Urt. v. 25.09.2018 – 8 AZR 26/18, BAGE 163, 309 = NZA 2019, 121 (Verzugspauschale § 288 Abs. 5 BGB im Arbeitsrecht ausgeschlossen, § 12a Abs. 1 ArbGG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=25.09.2018&Aktenzeichen=8%20AZR%2026/18)
 
 ## Ausgabeformat
 

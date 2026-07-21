@@ -105,9 +105,9 @@ Eine deutliche Absenkung bei unverändertem Aufgabenzuschnitt und unveränderter
 
 ### Rechtsprechung
 
-1. BVerwG, Urt. v. 17.09.2015 – 2 C 27.14, BVerwGE 153, 48 = NVwZ 2016, 1262 (Herleitung und Plausibilisierung des Gesamturteils) — Fundstelle verifiziert
-2. BVerwG, Urt. v. 01.03.2018 – 2 A 10.17, BVerwGE 161, 240 = NVwZ 2019, 75 (Anforderungen an die Begründung der Beurteilung) — Fundstelle verifiziert
-3. BVerwG, Urt. v. 24.11.2005 – 2 C 34.04, BVerwGE 124, 356 = NVwZ 2006, 465 (Richtwerte und Vergleichsgruppe) — Fundstelle verifiziert
+1. BVerwG, Urt. v. 17.09.2015 – 2 C 27.14, BVerwGE 153, 48 = NVwZ 2016, 1262 (Herleitung und Plausibilisierung des Gesamturteils) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2015-09-17&Aktenzeichen=2%20C%2027.14))
+2. BVerwG, Urt. v. 01.03.2018 – 2 A 10.17, BVerwGE 161, 240 = NVwZ 2019, 75 (Anforderungen an die Begründung der Beurteilung) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2018-03-01&Aktenzeichen=2%20A%2010.17))
+3. BVerwG, Urt. v. 24.11.2005 – 2 C 34.04, BVerwGE 124, 356 = NVwZ 2006, 465 (Richtwerte und Vergleichsgruppe) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2005-11-24&Aktenzeichen=2%20C%2034.04))
 4. Zur landesrechtlichen Statthaftigkeit des Widerspruchs gegen Beurteilungen ist die Rechtsprechung des zuständigen OVG heranzuziehen `[unverifiziert - prüfen]`
 
 ## Ausgabeformat

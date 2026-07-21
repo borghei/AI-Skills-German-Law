@@ -109,10 +109,10 @@ Verbindlich: [`../../references/zitierweise.md`](../../references/zitierweise.md
 
 ### Rechtsprechung
 
-1. BVerfG, Urt. v. 05.04.1952 – 2 BvH 1/52, [BVerfGE 1, 208](https://www.servat.unibe.ch/dfr/bv001208.html) (7,5%-Sperrklausel; Parteifähigkeit politischer Parteien — frühe Linie)
-2. BVerfG, Urt. v. 23.10.1952 – 1 BvB 1/51, [BVerfGE 2, 1](https://www.servat.unibe.ch/dfr/bv002001.html) (Verbot SRP — Parteiverbotsverfahren)
+1. BVerfG, Urt. v. 05.04.1952 – 2 BvH 1/52, BVerfGE 1, 208 (7,5%-Sperrklausel im schleswig-holsteinischen Landeswahlgesetz; Parteifähigkeit politischer Parteien, Wahlrechtsgleichheit — frühe Linie), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1952-04-05&Aktenzeichen=2%20BvH%201/52)
+2. BVerfG, Urt. v. 23.10.1952 – 1 BvB 1/51, BVerfGE 2, 1 (Verbot der SRP — Parteiverbotsverfahren nach Art. 21 II GG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1952-10-23&Aktenzeichen=1%20BvB%201/51)
 3. BVerfG, Urt. v. 30.07.1958 – 2 BvF 3, 6/58, [BVerfGE 8, 104](https://www.servat.unibe.ch/dfr/bv008104.html) (abstrakte Normenkontrolle, Volksbefragung Hamburg/Bremen)
-4. BVerfG, Urt. v. 14.12.1965 – 1 BvR 413/60, [BVerfGE 19, 206](https://www.servat.unibe.ch/dfr/bv019206.html) (Kirchenbausteuer; juristische Personen, Verfassungsbeschwerde)
+4. BVerfG, Urt. v. 14.12.1965 – 1 BvR 413/60 u.a., BVerfGE 19, 206 („Kirchenbausteuer"; Heranziehung juristischer Personen zur Kirchenbausteuer verletzt Art. 2 I GG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1965-12-14&Aktenzeichen=1%20BvR%20413/60)
 
 ## Ausgabeformat
 

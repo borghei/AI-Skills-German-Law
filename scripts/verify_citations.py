@@ -168,6 +168,39 @@ STATUTE_SLUGS: dict[str, str] = {
     "LPachtVG": "lpachtvg",
     "LwAnpG": "lwanpg",
     "AntiDopG": "antidopg",
+    # Cleared from the unknown-abbreviation backlog. Each missing entry was
+    # being reported as an unmarked case-law citation, so this list is a
+    # correctness fix for the metric, not a convenience.
+    "ALG": "alg",
+    "ArbnErfG": "arbnerfg",
+    "BNatSchG": "bnatschg_2009",
+    "BZRG": "bzrg",
+    "BauNVO": "baunvo",
+    "BÄO": "b_o",
+    "BörsG": "boersg_2007",
+    "EStDV": "estdv_1955",
+    "GAP-DZG": "gapdzg",
+    "GBV": "gbo_dv",
+    "GOÄ": "go_1982",
+    "GrEStG": "grestg_1983",
+    "HOAI": "hoai_2013",
+    "HWG": "heilmwerbg",
+    "KUG": "kunsturhg",
+    "KWKG": "kwkg_2016",
+    "LwVG": "lwvg",
+    "MaStRV": "mastrv",
+    "PAngV": "pangv_2022",
+    "ProdSG": "prodsg_2021",
+    "RPflG": "rpflg",
+    "RSG": "rsg",
+    "StBerG": "stberg",
+    "StrlSchV": "strlschv_2018",
+    "UVgO": "uvgo",
+    "UrhDaG": "urhdag",
+    "UrhG": "urhg",
+    "VerlG": "verlg",
+    "VwVG": "vwvg",
+    "WRegG": "wregg",
     # Straf- und Verkehrsrecht
     "StGB": "stgb",
     "StPO": "stpo",
@@ -322,6 +355,18 @@ EU_CELEX: dict[str, str] = {
     "DataAct": "32023R2854",
     "AMLR": "32024R1624",
     "AMLD6": "32024L1640",
+    "DSM-RL": "32019L0790",
+    "EGV": "11997E/TXT",
+    "EU-FK-VO": "32004R0139",
+    "FK-VO": "32004R0139",
+    "FKVO": "32004R0139",
+    "GRCh": "12012P/TXT",
+    "MarktüberwachungsVO": "32019R1020",
+    "MiFID": "32014L0065",
+    "NIS2-RL": "32022L2555",
+    "Taxonomie-VO": "32020R0852",
+    "UZK-DA": "32015R2446",
+    "Vertikal-GVO": "32022R0720",
 }
 
 # ---------------------------------------------------------------------------
@@ -360,7 +405,16 @@ CELEX_RE = re.compile(r"\b\d(?:19|20)\d{2}[A-Z]{1,2}\d{3,4}\b")
 # Aktenzeichen (German courts): senate (roman/arabic) + registry letters +
 # running-number/2-digit-year, e.g. "2 AZR 541/09", "1 BvL 15/87",
 # "VIII ZR 117/22".
-AZ_RE = re.compile(r"\b(?:[IVXL]{1,5}|\d{1,3})\s+[A-Za-z]{2,5}\s+\d{1,5}/\d{2,4}\b")
+# The middle token is the Registerzeichen (BvR, ZR, AZR, KZR, C ...). EU
+# instrument markers must be excluded: "Anhang I VO 2021/821",
+# "Art. 29 VO 604/2013" and "Art. 9 RL 2015/849" otherwise parse as
+# Aktenzeichen, so statutes get reported as unverified case law. In one
+# pass 18 of 35 apparent citations were exactly this artefact.
+_EU_INSTRUMENT = ("VO", "RL", "EG", "EU", "EWG", "EGV", "AEUV", "GRCh")
+AZ_RE = re.compile(
+    r"\b(?:[IVXL]{1,5}|\d{1,3})\s+(?!(?:" + "|".join(_EU_INSTRUMENT) + r")\b)"
+    r"[A-Z][A-Za-z]{1,4}\s+\d{1,5}/\d{2,4}\b"
+)
 # EU court docket numbers, e.g. "C-311/18", "T-201/04", "C-311/2018".
 EU_DOCKET_RE = re.compile(r"\b[CTF]-\d{1,4}/\d{2,4}\b")
 
@@ -619,7 +673,32 @@ VERIFICATION_HOSTS = (
     "rechtsprechung-im-internet.de",
     "hudoc.echr.coe.int",
     "jurisprudence.tas-cas.org",
+    "eur-lex.europa.eu",
+    "competition-cases.ec.europa.eu",
+    "servat.unibe.ch",
 )
+
+# Hosts that LOOK like a source but are not a Fundstellenbeleg under
+# CONVENTIONS.md. Five BVerfGE citations were sourced to Wikipedia and the
+# checker said nothing - they surfaced only on manual inventory. A citation
+# whose only link is one of these is worse than an unsourced one, because it
+# reads as verified.
+PSEUDO_SOURCE_HOSTS = (
+    "wikipedia.org",
+    "wikisource.org",
+    "juraforum.de",
+    "anwalt.de",
+    "haufe.de",
+    "beck-community",
+)
+
+
+def has_pseudo_source(line: str) -> bool:
+    """True if the line's only apparent source is a non-authoritative host."""
+    return (
+        any(h in line for h in PSEUDO_SOURCE_HOSTS)
+        and not any(h in line for h in VERIFICATION_HOSTS)
+    )
 
 
 def has_verification_source(line: str) -> bool:
@@ -644,6 +723,12 @@ def _scan_caselaw(line: str, lineno: int, source: str,
                     source, lineno, "caselaw", az, Severity.INFO,
                     "case-law citation with verification marker (needs manual "
                     "verification, marker correctly present)",
+                ))
+            elif has_pseudo_source(line):
+                findings.append(Finding(
+                    source, lineno, "caselaw", az, Severity.WARN,
+                    "case-law citation sourced only to a non-authoritative host "
+                    "(Wikipedia o. ä.) — not a Fundstellenbeleg per CONVENTIONS.md",
                 ))
             elif verified:
                 findings.append(Finding(

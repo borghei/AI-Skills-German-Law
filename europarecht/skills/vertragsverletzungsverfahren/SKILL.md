@@ -93,7 +93,7 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 
 ### Rechtsprechung
 
-1. EuGH, Urt. v. 12.07.2005 – Rs. C-304/02, Kommission/Frankreich (kombinierte Sanktion Pauschalbetrag + Zwangsgeld), [eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:62002CJ0304)
+1. EuGH, Urt. v. 12.07.2005 – Rs. C-304/02, Kommission/Frankreich (kombinierte Sanktion Pauschalbetrag + Zwangsgeld), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=12.07.2005&Aktenzeichen=C-304/02)
 2. EuGH, Urt. v. 19.12.2012 – Rs. C-374/11, Kommission/Irland (Sanktionsbemessung), [curia.europa.eu](https://curia.europa.eu/juris/liste.jsf?num=C-374/11&language=DE)
 3. EuGH, Urt. v. 16.07.2020 – Rs. C-549/18, Kommission/Rumänien (Art. 260 III AEUV bei RL-Nichtumsetzung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=16.07.2020&Aktenzeichen=C-549/18)
 

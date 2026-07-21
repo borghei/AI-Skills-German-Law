@@ -47,7 +47,7 @@ Landesrechtliche Besonderheiten — insbesondere zu Frauenförderung, Wartefrist
 
 Jeder Deutsche hat nach Eignung, Befähigung und fachlicher Leistung gleichen Zugang zu jedem öffentlichen Amt. Diese drei Kriterien sind **abschließend**. Sachfremde Erwägungen — Dienstalter als solches, Proporz, Verwendungswünsche der Behörde, Haushaltsgesichtspunkte — sind unzulässig, soweit sie nicht ihrerseits an Eignung, Befähigung oder Leistung anknüpfen.
 
-Aus Art. 33 Abs. 2 GG iVm Art. 19 Abs. 4 GG folgt der **Bewerbungsverfahrensanspruch**: ein subjektives Recht auf eine rechtsfehlerfreie Auswahlentscheidung. Er gibt **keinen** Anspruch auf das Amt, wohl aber auf ein ordnungsgemäßes Verfahren und darauf, dass das Amt nicht besetzt wird, bevor über den Anspruch effektiv entschieden werden konnte (BVerfG, Beschl. v. 29.07.2003 – 2 BvR 311/03, BVerfGK 1, 292 = NVwZ 2004, 95).
+Aus Art. 33 Abs. 2 GG iVm Art. 19 Abs. 4 GG folgt der **Bewerbungsverfahrensanspruch**: ein subjektives Recht auf eine rechtsfehlerfreie Auswahlentscheidung. Er gibt **keinen** Anspruch auf das Amt, wohl aber auf ein ordnungsgemäßes Verfahren und darauf, dass das Amt nicht besetzt wird, bevor über den Anspruch effektiv entschieden werden konnte (BVerfG, Beschl. v. 29.07.2003 – 2 BvR 311/03, BVerfGK 1, 292 = NVwZ 2004, 95, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=29.07.2003&Aktenzeichen=2%20BvR%20311/03)).
 
 ### 3. Beurteilungen als Auswahlgrundlage ([§ 21 BBG](https://www.gesetze-im-internet.de/bbg_2009/__21.html))
 
@@ -113,9 +113,9 @@ Die **Obliegenheit zum Eilrechtsschutz** ist der Grund, warum ein versäumter §
 
 ### Rechtsprechung
 
-1. BVerfG, Beschl. v. 29.07.2003 – 2 BvR 311/03, BVerfGK 1, 292 = NVwZ 2004, 95 (effektiver Rechtsschutz im Auswahlverfahren) — Fundstelle verifiziert
-2. BVerwG, Beschl. v. 20.06.2013 – 2 VR 1.13, BVerwGE 147, 20 = NVwZ 2014, 75 (Anforderungen an Auswahlentscheidung und Dokumentation) — Fundstelle verifiziert
-3. BVerwG, Urt. v. 04.11.2010 – 2 C 16.09, BVerwGE 138, 102 = NJW 2011, 695 (Ämterstabilität, Durchbrechung bei Rechtsschutzvereitelung) — Fundstelle verifiziert
+1. BVerfG, Beschl. v. 29.07.2003 – 2 BvR 311/03, BVerfGK 1, 292 = NVwZ 2004, 95 (effektiver Rechtsschutz im beamtenrechtlichen Auswahlverfahren), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=29.07.2003&Aktenzeichen=2%20BvR%20311/03)
+2. BVerwG, Beschl. v. 20.06.2013 – 2 VR 1.13, BVerwGE 147, 20 = NVwZ 2014, 75 (Anforderungen an Auswahlentscheidung und Dokumentation) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2013-06-20&Aktenzeichen=2%20VR%201.13))
+3. BVerwG, Urt. v. 04.11.2010 – 2 C 16.09, BVerwGE 138, 102 = NJW 2011, 695 (Ämterstabilität, Durchbrechung bei Rechtsschutzvereitelung) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2010-11-04&Aktenzeichen=2%20C%2016.09))
 4. Zur landesrechtlichen Ausgestaltung der Wartefrist ist die Rechtsprechung des zuständigen OVG heranzuziehen `[unverifiziert - prüfen]`
 
 ## Ausgabeformat
