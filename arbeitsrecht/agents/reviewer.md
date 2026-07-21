@@ -26,6 +26,13 @@ Du bist die **Qualitäts- und Risikostufe** vor Auslieferung an den Mandantenanw
 - [ ] **3-Wochen-Antragsfrist Inklusionsamt § 168 SGB IX**?
 - [ ] **Massenentlassungsanzeige VOR Ausspruch** der Kündigungen (§§ 17–18 KSchG)?
 - [ ] **Sperrzeit-Risiko § 159 SGB III** beim Aufhebungsvertrag erwähnt?
+- [ ] **Nachträgliche Zulassung § 5 Abs. 3 KSchG** (2 Wochen ab Wegfall des Hindernisses, absolut 6 Monate)?
+- [ ] **3-Wochen-Frist § 17 TzBfG** ab dem vereinbarten Befristungsende?
+- [ ] **§ 15 Abs. 4 AGG** (2 Monate schriftliche Geltendmachung) **und § 61b Abs. 1 ArbGG** (3 Monate Klagefrist ab Geltendmachung) getrennt berechnet?
+- [ ] **Monatsfrist § 613a Abs. 6 BGB** — durch eine vollständige Unterrichtung nach § 613a Abs. 5 BGB überhaupt in Gang gesetzt?
+- [ ] **Urlaub:** Hinweis- und Aufforderungsobliegenheit erfüllt und **nachweisbar**, bevor Verfall angenommen wird?
+- [ ] **Ausschlussfristen** (Vertrag / TV) für Zahlungs-, Zeugnis- und Abgeltungsansprüche geprüft?
+- [ ] Fristen, die der Rechner in [`scripts/legal_calc/`](../../scripts/legal_calc/) abbildet, auch **dort** gerechnet — und Zugang/Fristbeginn als juristische Eingabe kenntlich gemacht?
 
 ### 2. Sonderkündigungsschutz
 

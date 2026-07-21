@@ -163,6 +163,7 @@ VI. Quellenverzeichnis
 - **Sektorale Harmonisierung übersehen.** Bei Maschinen, Spielzeug, NSpRG, EMV, RED, Bauprodukten gilt zuerst der spezielle Akt; GPSR nur ergänzend.
 - **GPSR-Anwendungsdatum.** Die Verordnung gilt ab **13.12.2024** unmittelbar; nationales Umsetzungsgesetz für Sanktionen separat — Stand prüfen.
 - **Importeur-Pflichten unterschätzt.** Der EU-Importeur ist gegenüber der Marktaufsicht erste Adresse, wenn der Hersteller außerhalb der EU sitzt; auch ohne Quasi-Hersteller-Status haftet er nach Art. 11 GPSR und § 4 II ProdHaftG.
+- **Produkthaftungsrechtliche Folgeebene nach altem Stand beurteilt.** Für Produkte, die **ab dem 09.12.2026** in Verkehr gebracht werden, tritt an die Stelle des ProdHaftG 1989 das Umsetzungsrecht zur **RL (EU) 2024/2853**: Software, SaaS und KI sind Produkte, die 85-Mio.-EUR-Höchstgrenze entfällt, der Kreis der Haftungsadressaten ist erweitert. Der Verweis auf § 4 II ProdHaftG trägt nur für Altprodukte. Einzelheiten und Stichtagsprüfung im Skill `prodhaftg-herstellerhaftung`. `[unverifiziert - prüfen]`
 - **„Safety Gate" vs. „Safety Business Gateway" verwechselt.** Safety Gate = Behörden-/Verbraucherportal (vormals RAPEX); Safety Business Gateway = Meldekanal für Wirtschaftsakteure.
 - **Vorfallsmeldung Art. 20 verzögert.** „Unverzüglich" iSv § 121 BGB-Wertung; Zögern kann Bußgeld und § 823 BGB-Haftung auslösen.
 - **Cybersicherheit als Sicherheitsfaktor übersehen.** Art. 6 lit. h GPSR erfasst auch IT-Risiken bei vernetzten Produkten.

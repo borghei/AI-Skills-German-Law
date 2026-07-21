@@ -54,14 +54,14 @@ Researcher liefert §§ 31–43 UrhG, §§ 88–94 UrhG (Filmrecht), VerlG sowie
 
 ### 3. Zweckübertragungsregel § 31 V UrhG
 
-**Auslegungsregel zugunsten des Urhebers**: Im Zweifel werden nur die Nutzungsrechte eingeräumt, die der Vertragszweck erfordert. Pauschale Klauseln („sämtliche Rechte umfassend") sind im Lichte des Vertragszwecks restriktiv auszulegen (BGH „Talking to Addison" I ZR 145/11 `[unverifiziert]`).
+**Auslegungsregel zugunsten des Urhebers**: Im Zweifel werden nur die Nutzungsrechte eingeräumt, die der Vertragszweck erfordert. Pauschale Klauseln („sämtliche Rechte umfassend") sind im Lichte des Vertragszwecks restriktiv auszulegen (BGH „Talking to Addison", Urt. v. 07.10.2009 – I ZR 38/07, BGHZ 182, 337, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2009-10-07&Aktenzeichen=I%20ZR%2038/07) – die Entscheidung wendet die Zweckübertragungslehre im Rahmen des § 32 UrhG an).
 
 Konsequenz für die Vertragsgestaltung: Nutzungsarten **enumerativ** auflisten, nicht generisch.
 
 ### 4. Angemessene Vergütung §§ 32, 32a, 32d UrhG
 
-- **§ 32 UrhG**: Anspruch auf **angemessene** Vergütung. Maßstab: Branchenüblichkeit, individuelle Verhandlung, ggf. gemeinsame Vergütungsregeln (§ 36 UrhG, z. B. „GVR Tageszeitungen" `[unverifiziert]`). Verzicht im Voraus unwirksam (§ 32 III 1 UrhG). Klage auf Anpassung zulässig.
-- **§ 32a UrhG (Bestseller-Vergütung / „Fairnessparagraph")**: Bei auffälligem Missverhältnis zwischen vereinbarter Gegenleistung und Erträgen aus der Werknutzung Anpassungsanspruch auch ohne Vorhersehbarkeit. **Zwingendes Recht**, Verzicht unwirksam (§ 32a III UrhG). Maßstab idR „auffälliges Missverhältnis" ab dem 2-fachen der angemessenen Vergütung (BGH „Das Boot II" I ZR 145/11 `[unverifiziert]`).
+- **§ 32 UrhG**: Anspruch auf **angemessene** Vergütung. Maßstab: Branchenüblichkeit, individuelle Verhandlung, ggf. gemeinsame Vergütungsregeln (§ 36 UrhG, z. B. „GVR Tageszeitungen II", BGH, Urt. v. 21.05.2015 – I ZR 39/14, GRUR 2016, 67, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-05-21&Aktenzeichen=I%20ZR%2039/14)). Verzicht im Voraus unwirksam (§ 32 III 1 UrhG). Klage auf Anpassung zulässig.
+- **§ 32a UrhG (Bestseller-Vergütung / „Fairnessparagraph")**: Bei auffälligem Missverhältnis zwischen vereinbarter Gegenleistung und Erträgen aus der Werknutzung Anpassungsanspruch auch ohne Vorhersehbarkeit. **Zwingendes Recht**, Verzicht unwirksam (§ 32a III UrhG). Maßstab idR „auffälliges Missverhältnis" ab dem 2-fachen der angemessenen Vergütung (BGH „Das Boot II", Urt. v. 20.02.2020 – I ZR 176/18, GRUR 2020, 611, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2020-02-20&Aktenzeichen=I%20ZR%20176/18)).
 - **§ 32d UrhG (Auskunftspflicht)**: Urheber hat jährlich Anspruch auf Auskunft über Umfang der Werknutzung und daraus erzielte Erträge — auch ggü. Sublizenznehmern (§ 32e UrhG). Ausnahmen § 32d II.
 
 ### 5. AGB-Kontrolle bei Total-Buy-Out
@@ -132,13 +132,17 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Schricker, in: Schricker/Loewenheim, Urheberrecht, 6. Aufl. 2020, vor §§ 31 ff. UrhG `[unverifiziert]`
 - BeckOK UrhG/Soppe, Stand 2024, § 31 Rn. 1 ff., § 32 Rn. 1 ff.
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/Beck-Online]`)
+### Rechtsprechung
 
-1. BGH, Urt. v. 22.09.2011 – I ZR 127/10, GRUR 2012, 496 – „Das Boot II" (§ 32a auffälliges Missverhältnis) `[unverifiziert – Aktenzeichen prüfen]`
-2. BGH, Urt. v. 21.05.2015 – I ZR 39/14 – „GVR Tageszeitungen" (gemeinsame Vergütungsregeln) `[unverifiziert]`
-3. BGH, Urt. v. 17.10.2013 – I ZR 41/12 – „Honorarbedingungen freie Journalisten" `[unverifiziert]`
-4. BGH, „Talking to Addison" zur Zweckübertragung `[unverifiziert – Aktenzeichen prüfen]`
-5. EuGH zur Vergütungsangemessenheit unter Art. 18 DSM-RL — Spruchpraxis im Aufbau `[unverifiziert]`
+1. BGH, Urt. v. 22.09.2011 – I ZR 127/10, GRUR 2012, 496 – „Das Boot" (§ 32a UrhG, Anspruch des Miturhebers), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2011-09-22&Aktenzeichen=I%20ZR%20127/10)
+2. BGH, Urt. v. 20.02.2020 – I ZR 176/18, GRUR 2020, 611 – „Das Boot II" (auffälliges Missverhältnis, § 32a UrhG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2020-02-20&Aktenzeichen=I%20ZR%20176/18)
+3. BGH, Urt. v. 21.05.2015 – I ZR 39/14, GRUR 2016, 67 – „GVR Tageszeitungen II" (gemeinsame Vergütungsregeln), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-05-21&Aktenzeichen=I%20ZR%2039/14)
+4. BGH, Urt. v. 31.05.2012 – I ZR 73/10, BGHZ 193, 268 = GRUR 2012, 1031 – „Honorarbedingungen Freie Journalisten", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2012-05-31&Aktenzeichen=I%20ZR%2073/10)
+5. BGH, Urt. v. 17.10.2013 – I ZR 41/12, GRUR 2014, 556 – „Rechteeinräumung Synchronsprecher" (§§ 88, 89, 92 UrhG als Auslegungsregeln, kein AGB-Maßstab), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2013-10-17&Aktenzeichen=I%20ZR%2041/12)
+6. BGH, Urt. v. 07.10.2009 – I ZR 38/07, BGHZ 182, 337 = GRUR 2009, 1148 – „Talking to Addison" (§ 32 UrhG, Übersetzervergütung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2009-10-07&Aktenzeichen=I%20ZR%2038/07)
+7. BGH, Urt. v. 20.01.2011 – I ZR 19/09, GRUR 2011, 328 – „Destructive Emotions" (§ 32 UrhG, Übersetzervergütung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2011-01-20&Aktenzeichen=I%20ZR%2019/09)
+8. BGH, Urt. v. 10.05.2012 – I ZR 145/11 – „Fluch der Karibik" (Nachvergütung ausführender Künstler), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2012-05-10&Aktenzeichen=I%20ZR%20145/11)
+9. EuGH zur Vergütungsangemessenheit unter Art. 18 DSM-RL — Spruchpraxis im Aufbau `[unverifiziert]`
 
 ## Ausgabeformat
 

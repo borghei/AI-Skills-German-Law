@@ -19,6 +19,16 @@ test: ./test.md
 
 Vergabeunterlagen müssen den Grundsätzen Wettbewerb, Transparenz und Gleichbehandlung (§ 97 Abs. 1, 2 GWB) genügen. Bieter, denen aus Bekanntmachung oder Vergabeunterlagen ein Verstoß **erkennbar** ist, müssen ihn spätestens bis Ablauf der Angebots-/Teilnahmefrist rügen — sonst Präklusion (§ 160 Abs. 3 S. 1 Nr. 2, 3 GWB). Dieser Skill prüft systematisch die Vergaberechtskonformität der Vergabeunterlagen und identifiziert Rügepunkte.
 
+> **⚠️ Aktualität (Stand 2026-07):** Zwei neue Bundesgesetze verändern die Prüfung der Vergabeunterlagen.
+>
+> **1. Bundestariftreuegesetz (BTTG)** — vom Bundestag am **26.02.2026** beschlossen, verkündet in **BGBl. 2026 I Nr. 119 vom 30.04.2026**, **in Kraft seit 01.05.2026**. Es gilt für **Aufträge des Bundes ab einem Auftragsvolumen von 50.000 EUR netto**. **Ausgenommen sind Lieferaufträge und Aufträge der Bundeswehr.** Bei einschlägigen Bundesausschreibungen gehört die **Tariftreueerklärung** künftig zu den Angebotsunterlagen; ihr Fehlen ist ein Angebotsmangel, eine unzutreffende Bestimmung des einschlägigen Tarifvertrags durch den Auftraggeber ist ein Rügepunkt (siehe Schritt 5a).
+>
+> **2. Vergabebeschleunigungsgesetz** — Referentenentwurf 24.07.2025, Bundesrat **08.05.2026**, Verkündung **18.05.2026**, **in Kraft seit 01.07.2026**. Es verschiebt Direktauftragsgrenzen und Wertgrenzen, lockert bzw. verlagert Dokumentationspflichten zur Losaufteilung und verlangt angepasste Vergabevermerk-Vorlagen (siehe Schritt 5b).
+>
+> **Namensfalle:** Das Gesetz heißt **Vergabebeschleunigungsgesetz**. Der ältere Arbeitstitel aus der Ampel-Legislatur — „Vergaberechtstransformationsgesetz" — ist **nicht** die Bezeichnung des geltenden Gesetzes und darf nicht zitiert werden.
+>
+> Die konkreten Paragrafenzuordnungen beider Gesetze sind vor mandantengerichteter Verwendung am verkündeten Text zu verifizieren. `[unverifiziert - prüfen]`
+
 ## Eingaben
 
 - Bekanntmachung (TED-Nummer, Auftraggeber, Verfahrensart, Auftragsgegenstand)
@@ -29,7 +39,7 @@ Vergabeunterlagen müssen den Grundsätzen Wettbewerb, Transparenz und Gleichbeh
 
 ## Sub-Agent-Architektur
 
-Researcher liefert Statute (§§ 97, 122–124, 127 GWB; §§ 29, 31, 58 VgV), EuGH-Rspr. zu Eignungs- und Zuschlagskriterien sowie OLG-Vergabesenate-Rspr. zur Konkretisierung. Drafter führt die Prüfung in sieben Schritten (1–7 unten) durch und liefert eine priorisierte Rügeliste. Reviewer prüft, ob die Rügefrist (Ablauf Angebotsfrist § 160 Abs. 3 S. 1 Nr. 3 GWB) im Frist-Kalender abgebildet ist und ob die einzelnen Beanstandungen substanziell genug für eine wirksame Rüge sind.
+Researcher liefert Statute (§§ 97, 122–124, 127 GWB; §§ 29, 31, 58 VgV), EuGH-Rspr. zu Eignungs- und Zuschlagskriterien sowie OLG-Vergabesenate-Rspr. zur Konkretisierung. Drafter führt die Prüfung in den unten dargestellten Schritten (1–7 nebst 5a Tariftreue/BTTG und 5b Vergabebeschleunigungsgesetz) durch und liefert eine priorisierte Rügeliste. Reviewer prüft, ob die Rügefrist (Ablauf Angebotsfrist § 160 Abs. 3 S. 1 Nr. 3 GWB) im Frist-Kalender abgebildet ist und ob die einzelnen Beanstandungen substanziell genug für eine wirksame Rüge sind.
 
 ## Ablauf
 
@@ -95,6 +105,42 @@ EuGH, Urt. v. 14.07.2016 – Rs. C-6/15, TNS Dimarso (Bekanntgabe Bewertungsmeth
 
 OLG-Rspr.: OLG Düsseldorf, Beschl. v. 11.07.2018 – Verg 1/18, NZBau 2018, 638 (strenge Begründungspflicht) `[unverifiziert – prüfen]`.
 
+### 5a. Tariftreue nach dem BTTG (Bundesaufträge ab 50.000 EUR netto)
+
+Das **Bundestariftreuegesetz (BTTG)**, BGBl. 2026 I Nr. 119 vom 30.04.2026, gilt seit dem **01.05.2026**.
+
+**Anwendungsbereich prüfen (Vorfrage):**
+
+- [ ] Ist der Auftraggeber ein **Auftraggeber des Bundes**? Das BTTG bindet den Bund; Landes- und Kommunalaufträge unterliegen weiterhin den **Landesvergabe-/Tariftreuegesetzen**, die eigene, oft niedrigere Schwellen und abweichende Tarifbezüge vorsehen. Beide Regime nebeneinander prüfen, nicht vermengen.
+- [ ] Erreicht das Auftragsvolumen **50.000 EUR netto**? Darunter greift das BTTG nicht.
+- [ ] Liegt eine **Ausnahme** vor? **Lieferaufträge** und **Aufträge der Bundeswehr** sind vom BTTG **ausgenommen**. Bei gemischten Aufträgen ist der Schwerpunkt der Leistung zu bestimmen.
+
+**Prüfpunkte in den Vergabeunterlagen:**
+
+- [ ] Ist der vom Auftraggeber als einschlägig bezeichnete **Tarifvertrag** (Branche, fachlicher und räumlicher Geltungsbereich, Entgeltgruppen, Stand) benannt — und trifft die Zuordnung für die ausgeschriebene Leistung zu? Eine sachfremde Tarifzuordnung verzerrt die Kalkulation aller Bieter und ist rügefähig.
+- [ ] Enthalten die Unterlagen ein **Formblatt zur Tariftreueerklärung**? Ist es widerspruchsfrei zu Leistungsbeschreibung und Vertragsentwurf?
+- [ ] Verlangt der Vertragsentwurf die **Weitergabe der Tarifbedingungen an Nachunternehmer und Verleiher** (Flow-down) und eine Erklärung dieser Unternehmen?
+- [ ] Sind **Kontroll-, Nachweis- und Auskunftsrechte** des Auftraggebers sowie **Sanktionen** (Vertragsstrafe, Kündigung, Ausschluss) verhältnismäßig ausgestaltet?
+
+**Bieterseitige Handlungspflichten** (auch ohne Rügepunkt abzuarbeiten):
+
+1. Einschlägigen Tarifvertrag je Bundesausschreibung ≥ 50.000 EUR netto bestimmen und die Zuordnung intern dokumentieren.
+2. **Tariftreueerklärung mit dem Angebot einreichen** — Fristversäumnis oder Fehlen ist ein Angebotsmangel.
+3. Tarifbedingungen an die gesamte Nachunternehmerkette weitergeben und die eigene **Kontrolle dokumentieren**.
+4. Auf **Kontrollen und Nachweisverlangen** des Auftraggebers fristgerecht reagieren; Nachweisunterlagen für die Vertragslaufzeit vorhalten.
+
+Die Einzelnormen des BTTG sind vor Verwendung am verkündeten Text zu verifizieren. `[unverifiziert - prüfen]`
+
+### 5b. Vergabebeschleunigungsgesetz (seit 01.07.2026)
+
+Das **Vergabebeschleunigungsgesetz** ist am **18.05.2026** verkündet worden und seit **01.07.2026 in Kraft**. Bei jeder Prüfung von Vergabeunterlagen sind daher neu abzugleichen:
+
+- [ ] **Direktauftrags- und Wertgrenzen** — bei Unterschwellenvergaben und Bagatellbeschaffungen nicht aus dem Gedächtnis, sondern gegen die geltende Fassung prüfen.
+- [ ] **Dokumentationspflichten zur Losaufteilung** (§ 97 Abs. 4 GWB) — Umfang und Verortung der Begründung wurden angepasst; ein Verzicht auf Lose bleibt begründungsbedürftig, der Begründungsmaßstab ist jedoch neu zu bestimmen.
+- [ ] **Vergabevermerk-Vorlagen** — Muster, die vor dem 01.07.2026 erstellt wurden, sind veraltet.
+
+Angesichts der jungen Rechtslage existiert zu diesem Gesetz noch **keine gefestigte Vergabesenats-Rechtsprechung**; Argumentationen sind entsprechend vorsichtig zu formulieren. `[unverifiziert - prüfen]`
+
 ### 6. Vertragsentwurf / AGB-Kontrolle
 
 Im Oberschwellenbereich wird zunehmend Vertragsbedingungen geprüft (Risikoallokation, Vertragsstrafen, Haftungsklauseln). Maßstab: §§ 305 ff. BGB ist im Vergabeverhältnis grundsätzlich anwendbar, BGH, Urt. v. 19.05.2011 – VII ZR 24/08, NZBau 2011, 615 `[unverifiziert – prüfen]`.
@@ -129,6 +175,8 @@ Verbindlich: [`../../references/zitierweise.md`](../../references/zitierweise.md
 - [Art. 18 RL 2014/24/EU](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32014L0024) (Grundsätze)
 - [Art. 58 RL 2014/24/EU](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32014L0024) (Eignungskriterien)
 - [Art. 67 RL 2014/24/EU](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32014L0024) (Zuschlagskriterien)
+- **Bundestariftreuegesetz (BTTG)**, BGBl. 2026 I Nr. 119 vom 30.04.2026, in Kraft seit 01.05.2026 — Volltext über [gesetze-im-internet.de](https://www.gesetze-im-internet.de/) bzw. das [Bundesgesetzblatt](https://www.recht.bund.de/) abrufen; Einzelnormen `[unverifiziert - prüfen]`
+- **Vergabebeschleunigungsgesetz**, verkündet 18.05.2026, in Kraft seit 01.07.2026 (Änderungen u. a. an GWB Teil 4 und VgV) — BGBl.-Fundstelle am verkündeten Text verifizieren `[unverifiziert - prüfen]`
 
 ### Kommentare
 
@@ -184,6 +232,15 @@ V. Zuschlagskriterien § 127 GWB
 
 VI. Losaufteilung § 97 Abs. 4 GWB
     Lose vorgesehen? Begründung des Verzichts?
+    Maßstab nach Vergabebeschleunigungsgesetz (seit 01.07.2026) abgeglichen? <ja/nein>
+
+VI-a. Tariftreue BTTG (seit 01.05.2026)
+    Bundesauftrag?                      <ja / nein — bei nein: Landesvergabegesetz prüfen>
+    Volumen ≥ 50.000 EUR netto?         <ja / nein>
+    Ausnahme (Lieferauftrag/Bundeswehr)? <ja / nein>
+    Einschlägiger Tarifvertrag benannt / zutreffend? <…>
+    Tariftreueerklärung im Angebot vorgesehen?       <…>
+    Nachunternehmer-Flow-down + Kontrolldokumentation? <…>
 
 VII. Vertragsentwurf
      AGB-rechtliche Risiken §§ 305 ff. BGB
@@ -223,3 +280,9 @@ X. Quellenverzeichnis
 - **Losaufteilung ohne ordnungsgemäße Begründung** im Vergabevermerk § 8 VgV i. V. m. § 97 Abs. 4 S. 3 GWB.
 - **Bewertungsmethode nachträglich verändert** — Verstoß gegen Transparenzgrundsatz § 97 Abs. 1 GWB.
 - **Rügeschreiben pauschal** ("verstößt gegen Vergaberecht") — unsubstanziiert, schadet im späteren Nachprüfungsantrag.
+- **Falscher Gesetzesname: „Vergaberechtstransformationsgesetz"** — das ist der Arbeitstitel eines Vorhabens der Ampel-Legislatur, nicht das geltende Recht. Das seit **01.07.2026** geltende Gesetz heißt **Vergabebeschleunigungsgesetz**. Die falsche Bezeichnung in einer Rüge oder einem Nachprüfungsantrag beschädigt die Glaubwürdigkeit des Vortrags.
+- **Tariftreueerklärung nach dem BTTG nicht mit dem Angebot eingereicht** — bei Bundesaufträgen ab **50.000 EUR netto** ein Angebotsmangel; die Erklärung wird regelmäßig übersehen, weil sie nicht in klassischen Eignungsformblättern steht.
+- **BTTG-Anwendungsbereich überdehnt** — **Lieferaufträge** und **Aufträge der Bundeswehr** sind ausgenommen, und das BTTG bindet den **Bund**. Wer es auf Landes- oder Kommunalaufträge anwendet, prüft am falschen Gesetz vorbei; dort gelten die Landesvergabe-/Tariftreuegesetze mit eigenen Schwellen.
+- **BTTG-Schwelle mit dem EU-Schwellenwert verwechselt** — die 50.000 EUR netto sind eine eigenständige, deutlich niedrigere Auslöseschwelle und gelten auch im Unterschwellenbereich.
+- **Tarifbedingungen nicht an Nachunternehmer weitergegeben** oder die Kontrolle nicht dokumentiert — die Flow-down- und Dokumentationspflicht trifft den Auftragnehmer während der gesamten Vertragslaufzeit, nicht nur bei Angebotsabgabe.
+- **Vergabevermerk- und Losdokumentations-Muster von vor dem 01.07.2026 weiterverwendet** — das Vergabebeschleunigungsgesetz hat die Dokumentationsanforderungen und Wertgrenzen verändert.

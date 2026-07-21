@@ -12,6 +12,25 @@ test: ./test.md
 
 **Art. 50 KI-VO** ([VO (EU) 2024/1689](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689)) auferlegt Anbietern und Betreibern bestimmter KI-Systeme **Transparenz- und Kennzeichnungspflichten**, um Täuschung, Desinformation und Manipulation im Informationsökosystem zu begrenzen. Die Pflichten gelten ab dem 2. August 2026 und treffen auch Systeme, die nicht hochrisiko-eingestuft sind. Dieser Skill ordnet einem System die einschlägige Transparenzpflicht zu und prüft die Art der Kennzeichnung.
 
+> **⚠️ Aktualität (Stand 2026-07): Art. 50 gilt ab dem 02.08.2026 — die Pflichten sind NICHT verschoben.**
+>
+> Der **Digital Omnibus on AI** (Europäisches Parlament **16.06.2026**, Rat **29.06.2026**) hat die Transparenzpflichten des Art. 50 KI-VO **ausdrücklich von der Verschiebung ausgenommen**. Sie gelten unverändert **ab dem 02.08.2026**, wie ursprünglich vorgesehen.
+>
+> **Dies ist der in der Praxis am häufigsten übersehene Punkt der KI-VO.** Verschoben wurden allein die **Hochrisiko**-Pflichten — Anhang III auf den **02.12.2027**, Anhang I auf den **02.08.2028**. Diese Verschiebung wird in der Beratung verbreitet als pauschaler Aufschub der KI-VO gelesen. Sie ist es nicht: Art. 50 trifft Chatbots, Bildgeneratoren und Deepfake-Anwendungen **unabhängig von jeder Hochrisiko-Einstufung** und **unabhängig von jeder Verschiebung**.
+>
+> | Regelungsbereich | Geltung |
+> |---|---|
+> | Verbote Art. 5, KI-Kompetenz Art. 4 | 02.02.2025 (gilt) |
+> | GPAI Art. 51–55 | 02.08.2025 (gilt) — nicht verschoben |
+> | **Transparenz Art. 50** | **02.08.2026 — bleibt, nicht verschoben** |
+> | Hochrisiko Anhang III (Art. 6 Abs. 2) | 02.12.2027 (verschoben) |
+> | Hochrisiko Anhang I (Art. 6 Abs. 1) | 02.08.2028 (verschoben) |
+> | Neue Verbote (NCII, CSAM) | 02.12.2026 |
+>
+> **Nationale Zuständigkeit in Deutschland:** Marktüberwachungsbehörde ist die **Bundesnetzagentur** (Auffangzuständigkeit nach dem KI-MIG), **nicht** die Datenschutzaufsicht oder die/der BfDI. Das **KI-MIG** hat den Bundestag am **11.06.2026** und den Bundesrat am **10.07.2026** passiert, war zum **21.07.2026 aber noch nicht im BGBl. verkündet** — eine BGBl.-Fundstelle existiert daher nicht und darf nicht zitiert werden. `[unverifiziert - prüfen]`
+>
+> Amtsblatt-Fundstelle der Änderungsverordnung `[unverifiziert - prüfen]`.
+
 ## Eingaben
 
 - Funktion des Systems (Interaktion mit Menschen, Inhaltserzeugung, Emotionserkennung)
@@ -55,7 +74,11 @@ Verstöße gegen Transparenzpflichten nach Art. 50 KI-VO können mit Geldbußen 
 - **Kennzeichnung vergessen** — synthetische Inhalte ohne maschinenlesbare Markierung verstoßen gegen Art. 50 Abs. 2 KI-VO.
 - **Deepfake nicht offengelegt** — fehlende Offenlegung nach Art. 50 Abs. 4 KI-VO; die Kunst-/Satire-Ausnahme ist eng und befreit nicht vollständig.
 - **Chatbot ohne Hinweis** — fehlende Offenlegung der KI-Interaktion nach Art. 50 Abs. 1 KI-VO.
-- **Bußgeldrisiko** — bis 15 Mio. EUR / 3 % nach Art. 99 KI-VO.
+- **Verschiebung der Hochrisiko-Pflichten als Entwarnung für Art. 50 missverstanden** — BLOCKER und der in der Praxis häufigste Fehler. Der Digital Omnibus on AI hat **nur** die Hochrisiko-Pflichten verschoben (Anhang III → 02.12.2027, Anhang I → 02.08.2028) und Art. 50 **ausdrücklich ausgenommen**. Die Transparenzpflichten gelten **ab 02.08.2026**. Mandanten, die aus der Schlagzeile „KI-VO verschoben" auf einen Aufschub schließen, laufen ohne Kennzeichnung in die Anwendbarkeit.
+- **Art. 50 an die Hochrisiko-Einstufung gekoppelt** — die Transparenzpflichten greifen **unabhängig** von Art. 6 und Anhang III. Ein Chatbot oder Bildgenerator ohne Hochrisiko-Bezug ist voll erfasst; die Prüfung „nicht hochrisiko, also nichts zu tun" ist falsch.
+- **Umsetzungsvorlauf unterschätzt** — Wasserzeichen, C2PA-/Metadaten-Pipelines, UI-Hinweise und redaktionelle Freigabeprozesse sind technische Projekte. Wer sie erst zum Stichtag beginnt, ist am 02.08.2026 nicht konform.
+- **Nationale Zuständigkeit falsch adressiert** — Marktüberwachungsbehörde ist die **Bundesnetzagentur** (Auffangzuständigkeit, KI-MIG), **nicht** die Datenschutzaufsicht oder die/der BfDI. Das KI-MIG war zum 21.07.2026 **noch nicht im BGBl. verkündet**; eine BGBl.-Fundstelle darf nicht angegeben werden. `[unverifiziert - prüfen]`
+- **Bußgeldrisiko** — bis 15 Mio. EUR / 3 % nach Art. 99 KI-VO; ab dem 02.08.2026 durchsetzbar.
 
 ## Ausgabeformat
 
@@ -82,7 +105,9 @@ Nächste Schritte: <…>
 ### Statute
 
 - [VO (EU) 2024/1689 (KI-VO / EU AI Act)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689) — Volltext
-- Art. 50 KI-VO (Transparenzpflichten), Art. 99 KI-VO (Sanktionen)
+- Art. 50 KI-VO (Transparenzpflichten), Art. 99 KI-VO (Sanktionen), Art. 113 KI-VO (Geltungsbeginn)
+- **Digital Omnibus on AI** — Änderungsverordnung zur KI-VO (EP 16.06.2026, Rat 29.06.2026); **Art. 50 von der Verschiebung ausgenommen, Geltung bleibt 02.08.2026**. Amtsblatt-Fundstelle `[unverifiziert - prüfen]`
+- **KI-MIG** (KI-Marktüberwachungs- und Innovationsförderungsgesetz) — Bundestag 11.06.2026, Bundesrat 10.07.2026, **zum 21.07.2026 nicht im BGBl. verkündet**; Marktüberwachung durch die BNetzA `[unverifiziert - prüfen]`
 
 ### Leitlinien
 

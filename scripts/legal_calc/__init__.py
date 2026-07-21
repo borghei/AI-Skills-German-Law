@@ -16,10 +16,21 @@ Design principles:
   current fee table before relying on a number in client- or court-facing work.
 
 Public API:
-    from scripts.legal_calc import feiertage, fristen, verjaehrung, rvg, gkg
+    from scripts.legal_calc import (
+        feiertage, fristen, verjaehrung, rvg, gkg,
+        kuendigungsfristen, verzugszinsen,
+    )
 """
 from __future__ import annotations
 
-__all__ = ["feiertage", "fristen", "verjaehrung", "rvg", "gkg"]
+__all__ = [
+    "feiertage",
+    "fristen",
+    "verjaehrung",
+    "rvg",
+    "gkg",
+    "kuendigungsfristen",
+    "verzugszinsen",
+]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"

@@ -18,8 +18,17 @@ import dataclasses
 import datetime as _dt
 import json
 import sys
+from decimal import Decimal
 
-from . import feiertage, fristen, gkg, rvg, verjaehrung
+from . import (
+    feiertage,
+    fristen,
+    gkg,
+    kuendigungsfristen,
+    rvg,
+    verjaehrung,
+    verzugszinsen,
+)
 
 
 def _parse_date(s: str) -> _dt.date:
@@ -92,6 +101,36 @@ def main(argv: list[str] | None = None) -> int:
     p_fei.add_argument("--jahr", type=int, required=True)
     p_fei.add_argument("--land", default="BUND")
 
+    p_kue = sub.add_parser(
+        "kuendigungsfrist", parents=[common],
+        help="Kündigungsfrist im Arbeitsverhältnis § 622 BGB")
+    p_kue.add_argument("--eintritt", type=_parse_date, required=True)
+    p_kue.add_argument("--zugang", type=_parse_date, required=True)
+    p_kue.add_argument("--kuendigender", choices=("arbeitgeber", "arbeitnehmer"),
+                       default="arbeitgeber")
+    p_kue.add_argument("--probezeit", action="store_true")
+    p_kue.add_argument("--tarifvertrag", action="store_true",
+                       help="Tarifvertrag anwendbar (§ 622 Abs. 4 BGB) - Ergebnis wird markiert")
+
+    p_zins = sub.add_parser(
+        "verzugszinsen", parents=[common],
+        help="Verzugszinsen §§ 288, 247 BGB")
+    p_zins.add_argument("--betrag", type=float, required=True, help="Hauptforderung in EUR")
+    p_zins.add_argument("--verzug-ab", type=_parse_date, required=True, dest="verzug_ab")
+    p_zins.add_argument("--bis", type=_parse_date, required=True)
+    p_zins.add_argument(
+        "--basiszins", action="append", required=True, metavar="TT.MM.JJJJ:SATZ",
+        help="Basiszinssatz § 247 BGB, mehrfach angebbar, z. B. --basiszins 01.01.2026:1.10 "
+             "(Pflichteingabe - der Satz ändert sich zum 1.1. und 1.7. und wird bewusst "
+             "nicht im Code vorgehalten)")
+    p_zins.add_argument("--entgeltforderung", action="store_true")
+    p_zins.add_argument("--kein-verbraucher-beteiligt", action="store_true",
+                        dest="kein_verbraucher",
+                        help="kein Verbraucher am Rechtsgeschäft beteiligt -> § 288 Abs. 2 BGB")
+    p_zins.add_argument("--schuldner-ist-verbraucher", action="store_true",
+                        dest="schuldner_verbraucher",
+                        help="unterdrückt die Pauschale nach § 288 Abs. 5 BGB")
+
     args = parser.parse_args(argv)
 
     # Domain validation errors (bad Land, menge < 1, unknown einheit, ...) are
@@ -137,6 +176,40 @@ def main(argv: list[str] | None = None) -> int:
                 hinweis = feiertage.gemeinde_hinweis(args.land)
                 if hinweis:
                     print(f"\n  ⚠ {hinweis}")
+
+        elif args.cmd == "kuendigungsfrist":
+            res = kuendigungsfristen.berechne(
+                args.eintritt, args.zugang,
+                kuendigender=args.kuendigender,
+                probezeit=args.probezeit,
+                tarifvertrag=args.tarifvertrag,
+            )
+            if args.json:
+                _emit(res, True)
+            else:
+                print(res.erklaerung())
+
+        elif args.cmd == "verzugszinsen":
+            saetze = []
+            for spec in args.basiszins:
+                if ":" not in spec:
+                    parser.error(
+                        f"--basiszins erwartet TT.MM.JJJJ:SATZ, erhalten: {spec!r}")
+                datum_s, satz_s = spec.rsplit(":", 1)
+                saetze.append((_parse_date(datum_s), Decimal(satz_s.replace(",", "."))))
+            res = verzugszinsen.berechne_segmente(
+                hauptforderung=Decimal(str(args.betrag)),
+                verzugsbeginn=args.verzug_ab,
+                stichtag=args.bis,
+                basiszinssaetze=saetze,
+                entgeltforderung=args.entgeltforderung,
+                verbraucher_beteiligt=not args.kein_verbraucher,
+                schuldner_ist_verbraucher=args.schuldner_verbraucher,
+            )
+            if args.json:
+                _emit(res, True)
+            else:
+                print(res.erklaerung())
     except ValueError as exc:
         parser.error(str(exc))
 

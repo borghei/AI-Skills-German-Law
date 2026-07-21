@@ -16,7 +16,17 @@ import datetime as _dt
 import unittest
 from datetime import date
 
-from . import feiertage, fristen, gkg, rvg, verjaehrung
+from decimal import Decimal
+
+from . import (
+    feiertage,
+    fristen,
+    gkg,
+    kuendigungsfristen,
+    rvg,
+    verjaehrung,
+    verzugszinsen,
+)
 
 
 class TestFeiertage(unittest.TestCase):
@@ -234,6 +244,149 @@ class TestGeshippteTabellen(unittest.TestCase):
 
     def test_gkg_tabelle(self):
         self._check(gkg._lade_tabelle())
+
+
+class TestKuendigungsfristen(unittest.TestCase):
+    """§ 622 BGB - fixtures hand-computed from the statute."""
+
+    def test_grundfrist_zum_monatsende(self):
+        # Eintritt 2025, Zugang 05.03.2026 -> < 2 Jahre -> 4 Wochen zum 15./Monatsende.
+        # 05.03. + 28 Tage = 02.04. -> naechster zulaessiger Termin ist der 15.04.
+        r = kuendigungsfristen.berechne(date(2025, 1, 10), date(2026, 3, 5))
+        self.assertEqual(r.beschaeftigungsjahre, 1)
+        self.assertIn("Abs. 1", r.grundlage)
+        self.assertEqual(r.fruehester_termin, date(2026, 4, 15))
+
+    def test_grundfrist_rollt_auf_monatsende(self):
+        # 20.03. + 28 Tage = 17.04. -> der 15.04. ist verstrichen -> 30.04.
+        r = kuendigungsfristen.berechne(date(2025, 1, 10), date(2026, 3, 20))
+        self.assertEqual(r.fruehester_termin, date(2026, 4, 30))
+
+    def test_stufe_zwei_jahre_ein_monat(self):
+        r = kuendigungsfristen.berechne(date(2024, 1, 10), date(2026, 3, 5))
+        self.assertEqual(r.beschaeftigungsjahre, 2)
+        self.assertEqual(r.frist_text, "1 Monat(e)")
+        self.assertEqual(r.termin_typ, "monatsende")
+        self.assertEqual(r.fruehester_termin, date(2026, 4, 30))
+
+    def test_stufe_zwanzig_jahre_sieben_monate(self):
+        r = kuendigungsfristen.berechne(date(2000, 1, 10), date(2026, 3, 5))
+        self.assertGreaterEqual(r.beschaeftigungsjahre, 20)
+        self.assertEqual(r.frist_text, "7 Monat(e)")
+        self.assertEqual(r.fruehester_termin, date(2026, 10, 31))
+
+    def test_alle_stufen_monoton(self):
+        """Longer service must never yield a shorter period."""
+        zugang = date(2026, 3, 5)
+        letzte = date(1900, 1, 1)
+        for jahre in (0, 1, 2, 5, 8, 10, 12, 15, 20, 30):
+            eintritt = date(2026 - jahre, 1, 1)
+            r = kuendigungsfristen.berechne(eintritt, zugang)
+            self.assertGreaterEqual(r.fruehester_termin, letzte)
+            letzte = r.fruehester_termin
+
+    def test_arbeitnehmer_ohne_verlaengerung(self):
+        """§ 622 Abs. 2 BGB applies only to employer notice."""
+        ag = kuendigungsfristen.berechne(
+            date(2000, 1, 10), date(2026, 3, 5), kuendigender="arbeitgeber")
+        an = kuendigungsfristen.berechne(
+            date(2000, 1, 10), date(2026, 3, 5), kuendigender="arbeitnehmer")
+        self.assertEqual(an.frist_text, "4 Wochen")
+        self.assertLess(an.fruehester_termin, ag.fruehester_termin)
+
+    def test_probezeit_zwei_wochen_beliebiger_tag(self):
+        r = kuendigungsfristen.berechne(
+            date(2026, 1, 10), date(2026, 3, 5), probezeit=True)
+        self.assertEqual(r.fruehester_termin, date(2026, 3, 19))
+        self.assertEqual(r.termin_typ, "beliebig")
+
+    def test_zeiten_vor_25_werden_default_mitgezaehlt(self):
+        """Kücükdeveci: the Abs. 2 S. 2 carve-out must NOT be applied by default."""
+        eintritt, geburt = date(2010, 1, 1), date(1992, 1, 1)
+        zugang = date(2026, 3, 5)
+        default = kuendigungsfristen.berechne(eintritt, zugang, geburtsdatum=geburt)
+        wortlaut = kuendigungsfristen.berechne(
+            eintritt, zugang, geburtsdatum=geburt,
+            beruecksichtige_zeiten_vor_25=False)
+        self.assertEqual(default.beschaeftigungsjahre, 16)
+        self.assertEqual(wortlaut.beschaeftigungsjahre, 9)
+        self.assertGreater(
+            default.fruehester_termin, wortlaut.fruehester_termin,
+            "Ausblenden der Zeiten vor 25 muss die Frist verkuerzen - "
+            "genau deshalb ist es unionsrechtswidrig")
+        self.assertTrue(any("unionsrechtswidrig" in h for h in wortlaut.hinweise))
+
+    def test_tarifvertrag_wird_markiert(self):
+        r = kuendigungsfristen.berechne(
+            date(2000, 1, 10), date(2026, 3, 5), tarifvertrag=True)
+        self.assertTrue(any("622 Abs. 4" in h for h in r.hinweise))
+
+    def test_zugang_vor_eintritt_faehrt_fehler(self):
+        with self.assertRaises(ValueError):
+            kuendigungsfristen.berechne(date(2026, 5, 1), date(2026, 1, 1))
+
+
+class TestVerzugszinsen(unittest.TestCase):
+    """§§ 288, 247 BGB."""
+
+    def test_fuenf_punkte_verbraucher(self):
+        r = verzugszinsen.berechne(
+            1000, date(2026, 1, 1), date(2027, 1, 1), basiszinssatz="2.00")
+        self.assertEqual(r.zuschlag_punkte, Decimal("5"))
+        self.assertIn("Abs. 1", r.grundlage)
+        # 1000 EUR * 7 % * 365/365 = 70,00
+        self.assertEqual(r.zinsen, Decimal("70.00"))
+
+    def test_neun_punkte_b2b_entgeltforderung(self):
+        r = verzugszinsen.berechne(
+            1000, date(2026, 1, 1), date(2027, 1, 1), basiszinssatz="2.00",
+            entgeltforderung=True, verbraucher_beteiligt=False,
+            schuldner_ist_verbraucher=False)
+        self.assertEqual(r.zuschlag_punkte, Decimal("9"))
+        self.assertEqual(r.zinsen, Decimal("110.00"))
+        self.assertEqual(r.pauschale, Decimal("40.00"))
+        self.assertEqual(r.gesamt, Decimal("150.00"))
+
+    def test_verbraucherbeteiligung_kippt_auf_fuenf_punkte(self):
+        r = verzugszinsen.berechne(
+            1000, date(2026, 1, 1), date(2027, 1, 1), basiszinssatz="2.00",
+            entgeltforderung=True, verbraucher_beteiligt=True)
+        self.assertEqual(r.zuschlag_punkte, Decimal("5"))
+        self.assertTrue(any("greift NICHT" in h for h in r.hinweise))
+
+    def test_pauschale_nur_gegen_nichtverbraucher(self):
+        r = verzugszinsen.berechne(
+            1000, date(2026, 1, 1), date(2026, 6, 1), basiszinssatz="2.00",
+            entgeltforderung=True, schuldner_ist_verbraucher=True)
+        self.assertEqual(r.pauschale, Decimal("0.00"))
+
+    def test_segmentierung_bei_basiszinsaenderung(self):
+        """§ 247 resets on 1.1./1.7. - the period must split."""
+        r = verzugszinsen.berechne_segmente(
+            10000, date(2025, 1, 1), date(2026, 1, 1),
+            basiszinssaetze=[
+                (date(2025, 1, 1), Decimal("1.00")),
+                (date(2025, 7, 1), Decimal("3.00")),
+            ])
+        self.assertEqual(len(r.segmente), 2)
+        self.assertEqual(r.segmente[0].zinssatz, Decimal("6.00"))
+        self.assertEqual(r.segmente[1].zinssatz, Decimal("8.00"))
+        self.assertEqual(sum(s.tage for s in r.segmente), 365)
+
+    def test_schaltjahr_tagesbasis(self):
+        r = verzugszinsen.berechne(
+            1000, date(2024, 1, 1), date(2024, 3, 1), basiszinssatz="0.00")
+        self.assertEqual(r.segmente[0].tagesbasis, 366)
+
+    def test_stichtag_vor_verzug_faehrt_fehler(self):
+        with self.assertRaises(ValueError):
+            verzugszinsen.berechne(
+                100, date(2026, 5, 1), date(2026, 1, 1), basiszinssatz="1.0")
+
+    def test_negative_forderung_faehrt_fehler(self):
+        with self.assertRaises(ValueError):
+            verzugszinsen.berechne(
+                -5, date(2026, 1, 1), date(2026, 5, 1), basiszinssatz="1.0")
 
 
 if __name__ == "__main__":

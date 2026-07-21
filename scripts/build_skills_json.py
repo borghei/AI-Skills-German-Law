@@ -37,6 +37,8 @@ DOMAINS_ORDER = [
     # Specialty & IP (expanded)
     "wettbewerbsrecht", "kartellrecht", "kapitalmarktrecht", "patentrecht",
     "berufsrecht-anwaltschaft",
+    # Cyber-Resilienz / Produkt-Cybersicherheit
+    "cyber-resilience-act",
 ]
 
 # Human-readable category labels for the site.
@@ -90,6 +92,7 @@ DOMAIN_META = {
     "kapitalmarktrecht": ("Kapitalmarktrecht", "WpHG/MAR, Prospekt-VO 2017/1129, WpÜG-Pflichtangebot"),
     "patentrecht": ("Patentrecht", "PatG/EPÜ, §§ 139 ff. Verletzung, Freedom-to-Operate, UPC"),
     "berufsrecht-anwaltschaft": ("Berufsrecht (Anwaltschaft)", "BRAO + § 203 StGB, FAO-Fortbildung § 15, RDG-Abgrenzung"),
+    "cyber-resilience-act": ("Cyber Resilience Act", "VO (EU) 2024/2847 — Anwendungsbereich, Meldepflichten ab 11.09.2026, Anhang I, CE"),
 }
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)

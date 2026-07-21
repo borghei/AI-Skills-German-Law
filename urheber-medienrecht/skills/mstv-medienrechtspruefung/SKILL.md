@@ -91,13 +91,13 @@ Kommerzielle Kommunikation muss als solche klar erkennbar sein; redaktionelle In
 - **Berichtigungsanspruch** (presserechtlich, ungeschrieben — st. BGH-Rspr. `[unverifiziert]`) bei nachweislich unwahren Tatsachenbehauptungen.
 - **Unterlassungsanspruch** §§ 823 I, 1004 BGB analog iVm Art. 1 I, 2 I GG (allgemeines Persönlichkeitsrecht).
 - **Schadensersatz** § 823 I BGB iVm aPR (materiell); Geldentschädigung („Schmerzensgeld") bei schwerwiegender Persönlichkeitsverletzung (BVerfG/BGH `[unverifiziert]`).
-- **Schnittstelle § 22, 23 KUG** bei Bildnisveröffentlichung: Einwilligungserfordernis § 22; Ausnahmen § 23 (insb. Nr. 1 „Bildnisse aus dem Bereich der Zeitgeschichte" — abgestuftes Schutzkonzept BVerfG „Caroline II" BVerfGE 120, 180 `[unverifiziert]`).
+- **Schnittstelle § 22, 23 KUG** bei Bildnisveröffentlichung: Einwilligungserfordernis § 22; Ausnahmen § 23 (insb. Nr. 1 „Bildnisse aus dem Bereich der Zeitgeschichte" — abgestuftes Schutzkonzept BVerfG „Caroline von Monaco III", Urt. v. 26.02.2008 – 1 BvR 1602/07 ua, BVerfGE 120, 180, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2008-02-26&Aktenzeichen=1%20BvR%201602/07)).
 
 ### 7. Abwägung Pressefreiheit Art. 5 I GG
 
 - Schutzbereich Presse-/Rundfunk-/Telemedienfreiheit.
 - Schranken Art. 5 II GG (allgemeine Gesetze, gesetzliche Bestimmungen zum Schutz der Jugend, Recht der persönlichen Ehre).
-- **Wechselwirkungslehre** (Lüth-Doktrin `[unverifiziert]`): Einschränkende Gesetze sind im Lichte der Pressefreiheit auszulegen.
+- **Wechselwirkungslehre** (Lüth-Doktrin, BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, BVerfGE 7, 198, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-01-15&Aktenzeichen=1%20BvR%20400/51)): Einschränkende Gesetze sind im Lichte der Pressefreiheit auszulegen.
 - Bei Berichterstattung über die Privatsphäre: BVerfG-Linie, sphärentheoretisch (Sozial-, Privat-, Intimsphäre).
 
 ### 8. Plattform- / DSA-Schnittstelle
@@ -140,15 +140,17 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 - Wandtke/Ohst, Medienrecht Praxishandbuch, 4. Aufl. 2024 `[unverifiziert]`
 - BeckOK Informations- und Medienrecht/Gersdorf/Paal, Stand 2024
 
-### Rechtsprechung (`[unverifiziert – prüfen in juris/Beck-Online]`)
+### Rechtsprechung
 
-1. BVerfG, Beschl. v. 15.01.1958 – 1 BvR 400/51, BVerfGE 7, 198 – „Lüth" (Wechselwirkungslehre) `[unverifiziert]`
-2. BVerfG, Beschl. v. 14.02.1973 – 1 BvR 112/65, BVerfGE 34, 269 – „Soraya" (richterliche Rechtsfortbildung Schmerzensgeld bei aPR) `[unverifiziert]`
-3. BVerfG, Urt. v. 26.02.2008 – 1 BvR 1602/07 ua, BVerfGE 120, 180 – „Caroline II" (abgestuftes Schutzkonzept Bildnis) `[unverifiziert]`
-4. BVerfG, Beschl. v. 14.01.1998 – 1 BvR 1861/93 ua, BVerfGE 97, 125 – „Caroline I" `[unverifiziert]`
-5. BGH, Urt. v. 15.11.1994 – VI ZR 56/94, BGHZ 128, 1 – „Caroline von Monaco I" (Geldentschädigung) `[unverifiziert]`
-6. BGH (VI ZS-Linie) zum Online-Archiv und Recht auf Vergessenwerden `[unverifiziert]`
-7. EuGH, Urt. v. 24.09.2019 – Rs. C-507/17, ECLI:EU:C:2019:772 – Google/CNIL (Recht auf Vergessenwerden) `[unverifiziert]`
+1. BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, BVerfGE 7, 198 – „Lüth" (Wechselwirkungslehre), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-01-15&Aktenzeichen=1%20BvR%20400/51)
+2. BVerfG, Beschl. v. 14.02.1973 – 1 BvR 112/65, BVerfGE 34, 269 – „Soraya" (richterliche Rechtsfortbildung Geldentschädigung bei aPR), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1973-02-14&Aktenzeichen=1%20BvR%20112/65)
+3. BVerfG, Urt. v. 26.02.2008 – 1 BvR 1602/07, 1606/07, 1626/07, BVerfGE 120, 180 – „Caroline von Monaco III" (abgestuftes Schutzkonzept Bildnis), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2008-02-26&Aktenzeichen=1%20BvR%201602/07)
+4. BVerfG, Beschl. v. 14.01.1998 – 1 BvR 1861/93 ua, BVerfGE 97, 125 – „Caroline von Monaco I" (Gegendarstellung auf der Titelseite), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1998-01-14&Aktenzeichen=1%20BvR%201861/93)
+5. BVerfG, Beschl. v. 08.02.1983 – 1 BvL 20/81, BVerfGE 63, 131 – „Gegendarstellung" (Gegendarstellungsanspruch im Rundfunk), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1983-02-08&Aktenzeichen=1%20BvL%2020/81)
+6. BVerfG, Urt. v. 15.12.1999 – 1 BvR 653/96, BVerfGE 101, 361 – „Caroline von Monaco II" (Privatsphäre, Bildberichterstattung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1999-12-15&Aktenzeichen=1%20BvR%20653/96)
+7. BGH, Urt. v. 15.11.1994 – VI ZR 56/94, BGHZ 128, 1 – „Caroline von Monaco I" (Geldentschädigung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=1994-11-15&Aktenzeichen=VI%20ZR%2056/94)
+8. BGH (VI. ZS-Linie) zum Online-Archiv und Recht auf Vergessenwerden `[unverifiziert]`
+9. EuGH, Urt. v. 24.09.2019 – Rs. C-507/17, ECLI:EU:C:2019:772 – Google (Räumliche Reichweite der Auslistung) (Recht auf Vergessenwerden), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2019-09-24&Aktenzeichen=C-507/17)
 
 ## Ausgabeformat
 

@@ -585,11 +585,37 @@ def _scan_celex(line: str, lineno: int, source: str) -> list[Finding]:
     return findings
 
 
+# Hosts that count as an authoritative decision source. Per CONVENTIONS.md the
+# verified state is "no marker, WITH a source URL" - so an Aktenzeichen carrying
+# one of these links is verified, not unmarked. Without this the checker would
+# punish verification: removing a marker and adding a source URL would turn a
+# silent INFO into a WARN, making the warning count rise as quality improves.
+VERIFICATION_HOSTS = (
+    "dejure.org",
+    "bundesgerichtshof.de",
+    "bverfg.de",
+    "bverwg.de",
+    "bsg.bund.de",
+    "bundesarbeitsgericht.de",
+    "bundesfinanzhof.de",
+    "openjur.net",
+    "curia.europa.eu",
+    "lexetius.com",
+    "rechtsprechung-im-internet.de",
+)
+
+
+def has_verification_source(line: str) -> bool:
+    """True if the line carries a link to an authoritative decision source."""
+    return any(host in line for host in VERIFICATION_HOSTS)
+
+
 def _scan_caselaw(line: str, lineno: int, source: str,
                   has_marker: bool) -> list[Finding]:
     """Aktenzeichen / EU docket numbers without ECLI — manual-verify check."""
     findings: list[Finding] = []
     seen: set[str] = set()
+    verified = has_verification_source(line)
     for rx in (AZ_RE, EU_DOCKET_RE):
         for m in rx.finditer(line):
             az = m.group(0)
@@ -601,6 +627,12 @@ def _scan_caselaw(line: str, lineno: int, source: str,
                     source, lineno, "caselaw", az, Severity.INFO,
                     "case-law citation with verification marker (needs manual "
                     "verification, marker correctly present)",
+                ))
+            elif verified:
+                findings.append(Finding(
+                    source, lineno, "caselaw", az, Severity.INFO,
+                    "case-law citation without marker but with an authoritative "
+                    "source link — verified state per CONVENTIONS.md",
                 ))
             else:
                 findings.append(Finding(

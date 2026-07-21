@@ -1,0 +1,8 @@
+{
+  "name": "cyber-resilience-act",
+  "version": "0.1.0",
+  "description": "EU Cyber Resilience Act – VO (EU) 2024/2847. Anwendungsbereich (Produkt mit digitalen Elementen, Anhang III/IV, Rollen, Open-Source-Verwalter), Meldepflichten ab 11.09.2026 (24h-Frühwarnung / 72h-Vollmeldung / 14 Tage bzw. 1 Monat Abschlussbericht über die einheitliche Meldeplattform an CSIRT und ENISA), grundlegende Produktanforderungen nach Anhang I mit SBOM, Unterstützungszeitraum, CE-Kennzeichnung und Konformitätsbewertung nach Anhang VIII sowie koordinierte Schwachstellenoffenlegung und Schwachstellenmanagement.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {"name": "Borghei", "url": "https://github.com/borghei"},
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}
