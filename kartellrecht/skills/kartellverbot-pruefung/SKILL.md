@@ -43,7 +43,7 @@ Researcher liefert § 1, § 2 GWB, Art. 101 AEUV, Vertikal-GVO 2022/720, FuE-/Sp
 1. **Unternehmensbegriff**: jede eine wirtschaftliche Tätigkeit ausübende Einheit (funktional, konzernweit — "single economic entity"; rein konzerninterne Vereinbarungen sind nicht erfasst).
 2. **Vereinbarung / Beschluss / abgestimmtes Verhalten** — Abgrenzung zu einseitigem Verhalten (Art. 102) wesentlich.
 3. **Wettbewerbsbeschränkung**:
-   - **Zweckbeschränkung** ("by object"): Erfahrungssatz wettbewerbsschädigender Wirkung; insbesondere Hardcore (Preisabsprachen, Markt-/Kundenaufteilung, Mengenkontingente, Submissionsabsprachen, absoluter Gebietsschutz). Keine Wirkungsanalyse nötig (EuGH, Cartes Bancaires, [C-67/13 P](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62013CJ0067): enge Auslegung; Generics, [C-307/18](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62018CJ0307): Pay-for-Delay als Zweck).
+   - **Zweckbeschränkung** ("by object"): Erfahrungssatz wettbewerbsschädigender Wirkung; insbesondere Hardcore (Preisabsprachen, Markt-/Kundenaufteilung, Mengenkontingente, Submissionsabsprachen, absoluter Gebietsschutz). Keine Wirkungsanalyse nötig (EuGH, Urt. v. 11.09.2014 – C-67/13 P, Groupement des cartes bancaires, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2014-09-11&Aktenzeichen=C-67/13): enge Auslegung, wirtschaftlicher Kontext ist einzubeziehen; EuGH, Urt. v. 30.01.2020 – C-307/18, Generics (UK) u.a., [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-01-30&Aktenzeichen=C-307/18): Pay-for-Delay als Zweck).
    - **Wirkungsbeschränkung** ("by effect"): Marktanalyse mit kontrafaktischem Szenario.
 4. **Spürbarkeit**: De-minimis-Bekanntmachung der KOM (ABl. 2014 C 291/1):
    - horizontal: kombinierter Marktanteil ≤ **10 %**;
@@ -60,7 +60,7 @@ Vertikalvereinbarung iSv Art. 1 lit. a Vertikal-GVO ist freigestellt, wenn:
 
 Sonderfragen:
 
-- Online-Vertriebsbeschränkungen: Pauschalverbot Drittplattformen — nur in Luxus-Selektivvertrieb möglich (EuGH, Coty, [C-230/16](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62016CJ0230));
+- Online-Vertriebsbeschränkungen: Pauschalverbot Drittplattformen — nur in Luxus-Selektivvertrieb möglich (EuGH, Urt. v. 06.12.2017 – C-230/16, Coty Germany, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2017-12-06&Aktenzeichen=C-230/16));
 - Doppelvertrieb (Hersteller verkauft selbst über eigene Kanäle): Informationsaustausch geregelt in Art. 2 IV–V;
 - Most-Favoured-Customer-/Best-Price-Klauseln: enge Paritätsklauseln zulässig, weite untersagt (Art. 5 I lit. d).
 
@@ -118,10 +118,10 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 ### Rechtsprechung (`[unverifiziert – prüfen in juris/EuGH-Datenbank]`)
 
 1. EuGH, Urt. v. 30.06.1966 – Rs. 56/65, Société Technique Minière (Zweck/Wirkung-Unterscheidung)
-2. EuGH, Urt. v. 11.09.2014 – C-67/13 P, Cartes Bancaires (enge Auslegung der Zweckbeschränkung)
-3. EuGH, Urt. v. 30.01.2020 – C-307/18, Generics u.a. (Pay-for-Delay als Zweck)
-4. EuGH, Urt. v. 14.03.2013 – C-32/11, Allianz Hungária (Kontextbezogene Würdigung)
-5. EuGH, Urt. v. 06.12.2017 – C-230/16, Coty Germany (Drittplattformen im Luxus-Selektivvertrieb)
+2. EuGH, Urt. v. 11.09.2014 – C-67/13 P, Groupement des cartes bancaires (CB) ./. Kommission (enge Auslegung der Zweckbeschränkung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2014-09-11&Aktenzeichen=C-67/13)
+3. EuGH, Urt. v. 30.01.2020 – C-307/18, Generics (UK) u.a. (Pay-for-Delay als Zweck; potenzieller Wettbewerb im Arzneimittelsektor), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-01-30&Aktenzeichen=C-307/18)
+4. EuGH, Urt. v. 14.03.2013 – C-32/11, Allianz Hungária Biztosító u.a. (kontextbezogene Würdigung; bilaterale Vereinbarungen Versicherer/Kfz-Werkstätten), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2013-03-14&Aktenzeichen=C-32/11)
+5. EuGH, Urt. v. 06.12.2017 – C-230/16, Coty Germany (Drittplattformverbot im Luxus-Selektivvertrieb zulässig), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2017-12-06&Aktenzeichen=C-230/16)
 6. BGH, Urt. v. 12.07.2016 – [KZR 25/14, Lottoblock II](https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&nr=75559&pos=0&anz=1) (vertikale Beschränkungen)
 7. BGH, Urt. v. 28.06.2011 – [KZR 75/10, ORWI](https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&nr=56712&pos=0&anz=1) (Passing-on, § 33e GWB)
 8. BKartA, Bußgeldverfahren LKW-Kartell, Zucker, Bier, Wurst (jährlich Tätigkeitsbericht)
@@ -173,7 +173,7 @@ VII. Quellenverzeichnis
 
 ## Beispiel (Auszug, Gutachtenstil)
 
-> Die Klausel "Der Händler verpflichtet sich, die unverbindlichen Preisempfehlungen des Herstellers nicht zu unterschreiten" stellt eine **Preisbindung der zweiten Hand** dar. Dabei handelt es sich um eine Kernbeschränkung iSv Art. 4 lit. a Vertikal-GVO 2022/720; sie ist als Zweckbeschränkung iSv § 1 GWB und Art. 101 I AEUV einzuordnen (vgl. EuGH, Cartes Bancaires, [C-67/13 P](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62013CJ0067)). Eine Berufung auf den Sicherheitshafen der Vertikal-GVO scheidet aus (Art. 4 a.E.). Eine Spürbarkeitsprüfung erübrigt sich, da bei Kernbeschränkungen die De-minimis-Bekanntmachung der KOM nicht greift (ABl. 2014 C 291/1 Tz. 13). Die Einzelausnahme § 2 GWB / Art. 101 III AEUV scheitert regelmäßig an der **Unerlässlichkeit**: Eine vertikale Preisbindung ist zur Erreichung von Effizienzgewinnen nicht erforderlich; mildere Mittel (UVP ohne Sanktionsmechanismus) genügen. Die Klausel ist somit gemäß § 134 BGB iVm § 1 GWB **nichtig**. ...
+> Die Klausel "Der Händler verpflichtet sich, die unverbindlichen Preisempfehlungen des Herstellers nicht zu unterschreiten" stellt eine **Preisbindung der zweiten Hand** dar. Dabei handelt es sich um eine Kernbeschränkung iSv Art. 4 lit. a Vertikal-GVO 2022/720; sie ist als Zweckbeschränkung iSv § 1 GWB und Art. 101 I AEUV einzuordnen (vgl. EuGH, Urt. v. 11.09.2014 – C-67/13 P, Groupement des cartes bancaires, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2014-09-11&Aktenzeichen=C-67/13)). Eine Berufung auf den Sicherheitshafen der Vertikal-GVO scheidet aus (Art. 4 a.E.). Eine Spürbarkeitsprüfung erübrigt sich, da bei Kernbeschränkungen die De-minimis-Bekanntmachung der KOM nicht greift (ABl. 2014 C 291/1 Tz. 13). Die Einzelausnahme § 2 GWB / Art. 101 III AEUV scheitert regelmäßig an der **Unerlässlichkeit**: Eine vertikale Preisbindung ist zur Erreichung von Effizienzgewinnen nicht erforderlich; mildere Mittel (UVP ohne Sanktionsmechanismus) genügen. Die Klausel ist somit gemäß § 134 BGB iVm § 1 GWB **nichtig**. ...
 
 ## Risiken / typische Fehler
 

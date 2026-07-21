@@ -96,7 +96,7 @@ Lieferung von Mitteln, die sich auf ein wesentliches Element der Erfindung bezie
 Wahlrecht des Verletzten:
 
 1. **Konkreter eigener Schaden / entgangener Gewinn** (§ 252 BGB; oft schwer beweisbar)
-2. **Herausgabe des Verletzergewinns** — der gesamte mit der Verletzung erzielte Gewinn; kausal auf die Verletzung zurückzuführender Anteil; Anrechnung allgemeiner Geschäftsunkosten umstritten (BGH [„Gemeinkostenanteil", I ZR 246/98](https://openjur.de/u/64231.html))
+2. **Herausgabe des Verletzergewinns** — der gesamte mit der Verletzung erzielte Gewinn; kausal auf die Verletzung zurückzuführender Anteil; Anrechnung allgemeiner Geschäftsunkosten umstritten (BGH, Urt. v. 02.11.2000 – I ZR 246/98, BGHZ 145, 366 = GRUR 2001, 329 – „Gemeinkostenanteil", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=02.11.2000&Aktenzeichen=I%20ZR%20246/98); ergangen zum Geschmacksmusterrecht, im Patentrecht entsprechend angewandt)
 3. **Lizenzanalogie** — angemessene Lizenzgebühr, die vernünftige Vertragsparteien vereinbart hätten; übliche Lizenzsätze branchen- und produkttypabhängig
 
 Wahl spätestens bis zum Schluss der mündlichen Verhandlung; **Kombination grundsätzlich unzulässig** (BGH `[unverifiziert]`), Stufenklage § 254 ZPO mit Auskunft § 140b PatG ist üblich.
@@ -124,7 +124,7 @@ Seit [01.06.2023](https://en.wikipedia.org/wiki/Unified_Patent_Court) zuständig
 
 - **3 Jahre** ab Schluss des Jahres, in dem Anspruch entstand **und** Anspruchsinhaber von Verletzung und Person des Verletzers Kenntnis hat (§§ 195, 199 BGB analog)
 - **10 Jahre** kenntnisunabhängige Höchstfrist
-- **Restschadensersatzanspruch** bis 30 Jahre über Bereicherungsrecht (§ 852 BGB analog, BGH [„Spannungsversorgungsvorrichtung", X ZR 109/16](https://preubohlig.de/erweiterung-des-restschadensersatzes-auf-die-herausgabe-des-verletzergewinns-entscheidung-des-bgh-vom-26-maerz-2019-x-zr-10916-spannungsversorgungsvorrichtung/))
+- **Restschadensersatzanspruch** bis 30 Jahre über Bereicherungsrecht (§ 852 BGB analog, BGH, Urt. v. 26.03.2019 – X ZR 109/16, BGHZ 221, 342 = GRUR 2019, 496 – „Spannungsversorgungsvorrichtung", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=26.03.2019&Aktenzeichen=X%20ZR%20109/16))
 - **Dauerverletzung**: jede einzelne Verletzungshandlung lässt eigene Verjährungsfrist laufen
 
 ## Quellen und Zitierweise
@@ -159,7 +159,7 @@ Verbindlich: [`../../../references/zitierweise.md`](../../../references/zitierwe
 3. BGH, „Schneidmesser III" `[unverifiziert – prüfen in juris/epo.org]` — Gleichwertigkeit am Patentanspruch orientiert
 4. BGH, [„Okklusionsvorrichtung", X ZR 16/09](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=10.05.2011&Aktenzeichen=X+ZR+16/09) — Auswahlentscheidung des Anmelders
 5. BGH, [„Diglycidverbindung", X ZR 69/10](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=13.09.2011&Aktenzeichen=X+ZR+69/10) — Auslegungsmethodik
-6. BGH, [„Spannungsversorgungsvorrichtung", X ZR 109/16](https://preubohlig.de/erweiterung-des-restschadensersatzes-auf-die-herausgabe-des-verletzergewinns-entscheidung-des-bgh-vom-26-maerz-2019-x-zr-10916-spannungsversorgungsvorrichtung/) — Restschadensersatz § 852 BGB analog
+6. BGH, Urt. v. 26.03.2019 – X ZR 109/16, BGHZ 221, 342 = GRUR 2019, 496 – „Spannungsversorgungsvorrichtung" — Restschadensersatz § 852 BGB analog, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=26.03.2019&Aktenzeichen=X%20ZR%20109/16)
 7. EuGH, Urt. v. 16.07.2015 – [C-170/13, Huawei/ZTE](https://curia.europa.eu/juris/document/document.jsf?docid=165911&doclang=DE) — FRAND
 8. OLG Düsseldorf-Serie zur Auskunfts- und Besichtigungspraxis `[unverifiziert – prüfen in juris/epo.org]`
 

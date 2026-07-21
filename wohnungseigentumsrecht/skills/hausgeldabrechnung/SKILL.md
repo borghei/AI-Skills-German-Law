@@ -59,7 +59,7 @@ Abrechnungsspitze = Soll laut Jahresabrechnung − beschlossene Vorschüsse (Wir
    negative Spitze → Anpassung / Guthaben
 ```
 
-Verifizierte Rechtsprechung: **BGH, Urt. v. 11.04.2025 – V ZR 96/24 [verifiziert]** — der Nachschuss-/Abrechnungsspitzen-Beschluss kann in Teilen angefochten werden; die Entscheidung bestätigt, dass post-WEMoG nur die Abrechnungsspitze Beschlussgegenstand ist, nicht die gesamte Abrechnung.
+Verifizierte Rechtsprechung: **BGH, Urt. v. 11.04.2025 – V ZR 96/24, NJW 2025, 1504 = NZM 2025, 351** ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=11.04.2025&Aktenzeichen=V%20ZR%2096/24)) — der Nachschuss-/Abrechnungsspitzen-Beschluss kann in Teilen angefochten werden; die Entscheidung bestätigt, dass post-WEMoG nur die Abrechnungsspitze Beschlussgegenstand ist, nicht die gesamte Abrechnung.
 
 **Folge für die Praxis:** Wird „die Jahresabrechnung" als Ganzes beschlossen, ist der Beschluss kompetenzwidrig und auf Anfechtung hin (teilweise) für ungültig zu erklären. Die Anfechtung kann sich gezielt auf die fehlerhaften Teile der Abrechnungsspitze beschränken.
 
@@ -93,7 +93,7 @@ Zusammenfassende Bewertung: (a) wahrt der Beschluss die Beschlusskompetenz (nur 
 
 ## Risiken / typische Fehler
 
-- **Beschluss über „die ganze Jahresabrechnung"** statt nur über die Abrechnungsspitze → Überschreitung der **Beschlusskompetenz** nach § 28 Abs. 2 WEG, anfechtbar (vgl. **V ZR 96/24 [verifiziert]**). Das ist der häufigste WEMoG-Fehler.
+- **Beschluss über „die ganze Jahresabrechnung"** statt nur über die Abrechnungsspitze → Überschreitung der **Beschlusskompetenz** nach § 28 Abs. 2 WEG, anfechtbar (vgl. **BGH, Urt. v. 11.04.2025 – V ZR 96/24**, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=11.04.2025&Aktenzeichen=V%20ZR%2096/24)). Das ist der häufigste WEMoG-Fehler.
 - **Fehlender Vermögensbericht** (§ 28 Abs. 4 WEG) → eigenständiger Mangel; Vermögensbericht nachfordern.
 - **Falscher Verteilungsschlüssel** → Abweichung von den Miteigentumsanteilen ohne wirksamen Beschluss nach § 16 Abs. 2 WEG.
 - **Anfechtungsfrist versäumt** → Monatsfrist des § 45 WEG beachten; danach wird auch der kompetenzwidrige Beschluss bestandskräftig.
@@ -107,7 +107,7 @@ PRÜFUNG JAHRESABRECHNUNG / HAUSGELD — WEG (post-WEMoG)
 I.   Beschlusskompetenz (§ 28 Abs. 2 WEG)
      - Beschlossen wurde: <Wortlaut>
      - Nur Abrechnungsspitze oder ganze Abrechnung? → <Bewertung>
-     - Maßstab: BGH, Urt. v. 11.04.2025 – V ZR 96/24 [verifiziert]
+     - Maßstab: BGH, Urt. v. 11.04.2025 – V ZR 96/24 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-04-11&Aktenzeichen=V%20ZR%2096/24))
 
 II.  Wirtschaftsplan & Vorschüsse (§ 28 Abs. 1 WEG)
      - Vorschuss-Soll: <…>  |  Wirtschaftsplan vorhanden: <ja/nein>

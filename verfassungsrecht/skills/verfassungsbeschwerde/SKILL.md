@@ -37,7 +37,7 @@ Researcher liefert Statute und BVerfG-Rechtsprechung zu Zulässigkeit und einsch
 
 | Stufe | Maßstab |
 |---|---|
-| **Beschwerdefähigkeit** | „Jedermann", Art. 19 Abs. 3 GG bei juristischen Personen des Privatrechts; juristische Personen des öffentlichen Rechts grundsätzlich nicht (Ausnahmen: Rundfunkanstalten, Universitäten, Religionsgemeinschaften — vgl. [BVerfGE 21, 362](https://www.servat.unibe.ch/dfr/bv021362.html)) |
+| **Beschwerdefähigkeit** | „Jedermann", Art. 19 Abs. 3 GG bei juristischen Personen des Privatrechts; juristische Personen des öffentlichen Rechts grundsätzlich nicht (Ausnahmen: Rundfunkanstalten, Universitäten, Religionsgemeinschaften — vgl. BVerfG, Beschl. v. 02.05.1967 – 1 BvR 578/63, BVerfGE 21, 362, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1967-05-02&Aktenzeichen=1%20BvR%20578/63)) |
 | **Beschwerdegegenstand** | Akt der öffentlichen Gewalt (Legislative, Exekutive, Judikative) |
 | **Beschwerdebefugnis** | Selbst, gegenwärtig, unmittelbar betroffen + substantiierte Möglichkeit einer Grundrechtsverletzung (§§ 23 Abs. 1, 92 BVerfGG) |
 | **Rechtswegerschöpfung** | § 90 Abs. 2 S. 1 BVerfGG: fachgerichtlicher Rechtsweg vollständig durchschritten |
@@ -51,7 +51,7 @@ Annahmeverfahren: **§ 93a Abs. 2 BVerfGG** — grundsätzliche verfassungsrecht
 
 Die Verfassungsbeschwerde ist begründet, wenn der angegriffene Hoheitsakt den Beschwerdeführer in einem Grundrecht oder grundrechtsgleichen Recht verletzt. Prüfung nach dem 3-Stufen-Schema (siehe `/verfassungsrecht:grundrechtspruefung`): Schutzbereich → Eingriff → Verfassungsrechtliche Rechtfertigung.
 
-Besonderheit Urteilsverfassungsbeschwerde: BVerfG prüft nicht jeden einfachgesetzlichen Fehler, sondern nur die Verletzung **spezifischen Verfassungsrechts** (sog. Heck'sche Formel — [BVerfGE 18, 85](https://www.servat.unibe.ch/dfr/bv018085.html)).
+Besonderheit Urteilsverfassungsbeschwerde: BVerfG prüft nicht jeden einfachgesetzlichen Fehler, sondern nur die Verletzung **spezifischen Verfassungsrechts** (sog. Heck'sche Formel — BVerfG, Beschl. v. 10.06.1964 – 1 BvR 37/63, BVerfGE 18, 85, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1964-06-10&Aktenzeichen=1%20BvR%2037/63)).
 
 ### 3. Einstweilige Anordnung (§ 32 BVerfGG)
 
@@ -90,10 +90,10 @@ Verbindlich: [`../../references/zitierweise.md`](../../references/zitierweise.md
 
 ### Rechtsprechung
 
-1. BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, [BVerfGE 7, 198](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/1958/01/rs19580115_1bvr040051.html) („Lüth", mittelbare Drittwirkung, Wechselwirkungslehre)
-2. BVerfG, Beschl. v. 10.06.1964 – 1 BvR 37/63, [BVerfGE 18, 85](https://www.servat.unibe.ch/dfr/bv018085.html) („Heck'sche Formel", Prüfungsumfang Urteilsverfassungsbeschwerde)
-3. BVerfG, [BVerfGE 90, 22](https://www.servat.unibe.ch/dfr/bv090022.html) (Annahmeverfahren § 93a BVerfGG) `[Datum/Aktenzeichen unverifiziert – prüfen]`
-4. BVerfG, [BVerfGE 26, 246](https://www.servat.unibe.ch/dfr/bv026246.html) (Subsidiarität / Ingenieurgesetz) `[Datum/Aktenzeichen unverifiziert – prüfen]`
+1. BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, BVerfGE 7, 198 („Lüth", mittelbare Drittwirkung, Wechselwirkungslehre), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-01-15&Aktenzeichen=1%20BvR%20400/51)
+2. BVerfG, Beschl. v. 10.06.1964 – 1 BvR 37/63, BVerfGE 18, 85 („Heck'sche Formel", Prüfungsumfang der Urteilsverfassungsbeschwerde; Ausgangsverfahren: Einsicht in Patentunterlagen), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1964-06-10&Aktenzeichen=1%20BvR%2037/63)
+3. BVerfG, Beschl. v. 08.02.1994 – 1 BvR 1693/92, BVerfGE 90, 22 (Voraussetzungen der Annahme einer Verfassungsbeschwerde nach § 93a II BVerfGG; Ausgangsverfahren: Mietpreisüberhöhung nach dem Wirtschaftsstrafgesetz), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1994-02-08&Aktenzeichen=1%20BvR%201693/92)
+4. BVerfG, Beschl. v. 25.06.1969 – 2 BvR 128/66, [BVerfGE 26, 246](https://www.servat.unibe.ch/dfr/bv026246.html) („Ingenieurgesetz"; Nichtigkeit mangels Bundesgesetzgebungskompetenz, Art. 2 I GG) `[unverifiziert – Einschlägigkeit für die Subsidiarität prüfen: die Leitsätze der Entscheidung betreffen Gesetzgebungskompetenz und Art. 2 I GG, nicht den Subsidiaritätsgrundsatz der Rechtssatzverfassungsbeschwerde]`
 
 ## Ausgabeformat
 

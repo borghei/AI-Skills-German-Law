@@ -68,7 +68,7 @@ Wer Inkassodienstleistungen (§ 2 Abs. 2 RDG) erbringt, muss sich im **Rechtsdie
 
 **BGH-Linie Legal-Tech** (`[unverifiziert – prüfen in juris]`):
 
-- **BGH, Urt. v. 27.11.2019 – VIII ZR 285/18, NJW 2020, 208** (wenigermiete.de / LexFox): Geschäftsmodell der Forderungsabtretung und gerichtsexterner Geltendmachung von Mietsenkungs- bzw. Mietpreisbremse-Ansprüchen ist als Inkassodienstleistung iSv § 10 RDG zulässig — weite Auslegung des Inkasso-Begriffs.
+- **BGH, Urt. v. 27.11.2019 – VIII ZR 285/18, BGHZ 224, 89 = NJW 2020, 208** ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=27.11.2019&Aktenzeichen=VIII%20ZR%20285/18)) (wenigermiete.de / LexFox): Geschäftsmodell der Forderungsabtretung und gerichtsexterner Geltendmachung von Mietsenkungs- bzw. Mietpreisbremse-Ansprüchen ist als Inkassodienstleistung iSv § 10 RDG zulässig — weite Auslegung des Inkasso-Begriffs.
 - **BGH, Urt. v. 13.06.2022 – VIa ZR 418/21** u. ä. (financialright / sammelinkasso `[unverifiziert]`): Ausdehnung auch auf gebündelte Schadensersatzforderungen unter engen Voraussetzungen.
 - Grenze: vollständige Übernahme einer typisch anwaltlichen Tätigkeit (insb. Klageerhebung im eigenen Namen) bleibt RDG-widrig.
 

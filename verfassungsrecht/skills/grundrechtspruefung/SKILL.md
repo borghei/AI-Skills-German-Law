@@ -47,9 +47,9 @@ Klassischer Eingriffsbegriff (final, unmittelbar, rechtsförmig, mit Befehl und 
 
 Sonderkonstellationen:
 
-- **Mittelbare Drittwirkung** (BVerfG, Lüth, [BVerfGE 7, 198](https://de.wikipedia.org/wiki/L%C3%BCth-Urteil)): Grundrechte als objektive Wertordnung wirken durch zivilrechtliche Generalklauseln (§§ 138, 242 BGB).
+- **Mittelbare Drittwirkung** (BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, BVerfGE 7, 198 – „Lüth", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-01-15&Aktenzeichen=1%20BvR%20400/51)): Grundrechte als objektive Wertordnung wirken durch zivilrechtliche Generalklauseln (§§ 138, 242 BGB).
 - **Schutzpflichten**: Grundrechte als Schutzauftrag ([BVerfGE 39, 1](https://www.servat.unibe.ch/dfr/bv039001.html)); Untermaßverbot.
-- **Leistungsrechte**: nur ausnahmsweise originäre Teilhabeansprüche (Existenzminimum, [BVerfGE 125, 175](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2010/02/ls20100209_1bvl000109.html)).
+- **Leistungsrechte**: nur ausnahmsweise originäre Teilhabeansprüche (Existenzminimum, BVerfG, Urt. v. 09.02.2010 – 1 BvL 1/09 u.a., BVerfGE 125, 175, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2010-02-09&Aktenzeichen=1%20BvL%201/09)).
 
 ### 3. Verfassungsrechtliche Rechtfertigung
 
@@ -65,7 +65,7 @@ Sonderkonstellationen:
 - **Einzelfallgesetz-Verbot** Art. 19 Abs. 1 S. 1 GG
 - **Wesensgehaltsgarantie** Art. 19 Abs. 2 GG
 - **Verhältnismäßigkeit** (siehe 3.3)
-- bei Art. 5 GG: **Wechselwirkungslehre** (BVerfGE 7, 198 — „Lüth")
+- bei Art. 5 GG: **Wechselwirkungslehre** (BVerfGE 7, 198 — „Lüth", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-01-15&Aktenzeichen=1%20BvR%20400/51))
 
 #### 3.3 Verhältnismäßigkeit
 
@@ -76,14 +76,14 @@ Sonderkonstellationen:
 | **Erforderlichkeit** | Kein gleich wirksames, milderes Mittel verfügbar |
 | **Angemessenheit (i.e.S.)** | Abwägung Schwere des Eingriffs ↔ Gewicht des Zwecks |
 
-Bei Art. 12 GG: **Drei-Stufen-Theorie** ([BVerfGE 7, 377](https://de.wikipedia.org/wiki/Apotheken-Urteil) — „Apotheken-Urteil") — Berufsausübungs-, subjektive Berufswahl-, objektive Berufswahlregelung.
+Bei Art. 12 GG: **Drei-Stufen-Theorie** (BVerfG, Urt. v. 11.06.1958 – 1 BvR 596/56, BVerfGE 7, 377 — „Apotheken-Urteil", [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-06-11&Aktenzeichen=1%20BvR%20596/56)) — Berufsausübungs-, subjektive Berufswahl-, objektive Berufswahlregelung.
 
 ### 4. Gleichheitsrechte (Art. 3 GG) — neue Formel
 
 | Test | Maßstab |
 |---|---|
 | **Ungleichbehandlung von wesentlich Gleichem (oder umgekehrt)** | tatsächlich vergleichbare Sachverhalte |
-| **Rechtfertigung** | Je nach Differenzierungsgrund: vom bloßen Willkürverbot bis zur strengen Verhältnismäßigkeit (insbes. personenbezogene Differenzierung) — [BVerfGE 55, 72](https://www.servat.unibe.ch/dfr/bv055072.html) (neue Formel) |
+| **Rechtfertigung** | Je nach Differenzierungsgrund: vom bloßen Willkürverbot bis zur strengen Verhältnismäßigkeit (insbes. personenbezogene Differenzierung) — BVerfG, Beschl. v. 07.10.1980 – 1 BvL 50/79 u.a., BVerfGE 55, 72 (neue Formel), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1980-10-07&Aktenzeichen=1%20BvL%2050/79) |
 
 Spezielle Gleichheitssätze: Art. 3 Abs. 2, 3, Art. 6 Abs. 5, Art. 33 Abs. 1–3, Art. 38 Abs. 1, Art. 6 Abs. 1 GG.
 
@@ -118,13 +118,13 @@ Verbindlich: [`../../references/zitierweise.md`](../../references/zitierweise.md
 
 ### Rechtsprechung
 
-1. BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, [BVerfGE 7, 198](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/1958/01/rs19580115_1bvr040051.html) („Lüth")
-2. BVerfG, Urt. v. 11.06.1958 – 1 BvR 596/56, [BVerfGE 7, 377](https://de.wikipedia.org/wiki/Apotheken-Urteil) („Apotheken-Urteil", Drei-Stufen-Theorie)
-3. BVerfG, Urt. v. 16.01.1957 – 1 BvR 253/56, [BVerfGE 6, 32](https://de.wikipedia.org/wiki/Elfes-Urteil) („Elfes", allgemeine Handlungsfreiheit)
-4. BVerfG, Urt. v. 15.12.1983 – 1 BvR 209/83 u.a., [BVerfGE 65, 1](https://de.wikipedia.org/wiki/Volksz%C3%A4hlungsurteil) („Volkszählung", informationelle Selbstbestimmung)
-5. BVerfG, Beschl. v. 07.10.1980 – 1 BvL 50/79 u.a., [BVerfGE 55, 72](https://www.servat.unibe.ch/dfr/bv055072.html) (neue Formel zu Art. 3 GG)
-6. BVerfG, Beschl. v. 16.05.1995 – 1 BvR 1087/91, [BVerfGE 93, 1](https://de.wikipedia.org/wiki/Kruzifix-Beschluss) („Kruzifix")
-7. BVerfG, Urt. v. 09.02.2010 – 1 BvL 1/09 u.a., [BVerfGE 125, 175](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2010/02/ls20100209_1bvl000109.html) (Existenzminimum)
+1. BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, BVerfGE 7, 198 („Lüth"; Grundrechte als objektive Wertordnung, Ausstrahlung auf § 826 BGB), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-01-15&Aktenzeichen=1%20BvR%20400/51)
+2. BVerfG, Urt. v. 11.06.1958 – 1 BvR 596/56, BVerfGE 7, 377 („Apotheken-Urteil", Drei-Stufen-Theorie zu Art. 12 GG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-06-11&Aktenzeichen=1%20BvR%20596/56)
+3. BVerfG, Urt. v. 16.01.1957 – 1 BvR 253/56, BVerfGE 6, 32 („Elfes"; Ausreiseverbot, weites Verständnis der verfassungsmäßigen Ordnung, Art. 2 I GG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1957-01-16&Aktenzeichen=1%20BvR%20253/56)
+4. BVerfG, Urt. v. 15.12.1983 – 1 BvR 209/83 u.a., BVerfGE 65, 1 („Volkszählung", informationelle Selbstbestimmung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1983-12-15&Aktenzeichen=1%20BvR%20209/83)
+5. BVerfG, Beschl. v. 07.10.1980 – 1 BvL 50/79 u.a., BVerfGE 55, 72 (neue Formel zu Art. 3 GG; Verfahrensgegenstand ist die zivilprozessuale Präklusion nach § 528 III ZPO a.F.), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1980-10-07&Aktenzeichen=1%20BvL%2050/79)
+6. BVerfG, Beschl. v. 16.05.1995 – 1 BvR 1087/91, BVerfGE 93, 1 („Kruzifix"; Art. 4 I, 6 II, 7 I GG, praktische Konkordanz), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1995-05-16&Aktenzeichen=1%20BvR%201087/91)
+7. BVerfG, Urt. v. 09.02.2010 – 1 BvL 1/09 u.a., BVerfGE 125, 175 („Hartz IV-Regelleistungen"; menschenwürdiges Existenzminimum, Art. 1 I iVm Art. 20 I GG), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2010-02-09&Aktenzeichen=1%20BvL%201/09)
 
 ## Ausgabeformat
 
@@ -181,7 +181,7 @@ H. Quellenverzeichnis
 
 ## Beispiel (Auszug, Gutachtenstil)
 
-> **B. Frage** Verletzt § X LandesHeilprG den Beschwerdeführer in seiner Berufsfreiheit aus Art. 12 Abs. 1 GG? **D.I.** Der Schutzbereich des Art. 12 Abs. 1 GG erfasst jede auf Dauer angelegte und erlaubte Tätigkeit zum Zweck der Schaffung und Erhaltung einer Lebensgrundlage; der Beschwerdeführer übt eine solche Tätigkeit als Heilpraktiker aus. **D.II.** In dieser Tätigkeit ist er durch den Erlaubnisvorbehalt unmittelbar und final betroffen — Eingriff bejaht. **D.III.1.** Schranke ist Art. 12 Abs. 1 S. 2 GG. **D.III.2.c)** Verhältnismäßigkeit ist nach der Drei-Stufen-Theorie zu prüfen ([BVerfGE 7, 377](https://de.wikipedia.org/wiki/Apotheken-Urteil)): Es handelt sich um eine subjektive Berufswahlregelung; legitimer Zweck ist der Patientenschutz; geeignet; erforderlich, da ein milderes Mittel (Anzeigepflicht) den Zweck nicht gleich wirksam erreicht; angemessen, soweit die Erlaubnisvoraussetzungen die Tätigkeit nicht überproportional erschweren.
+> **B. Frage** Verletzt § X LandesHeilprG den Beschwerdeführer in seiner Berufsfreiheit aus Art. 12 Abs. 1 GG? **D.I.** Der Schutzbereich des Art. 12 Abs. 1 GG erfasst jede auf Dauer angelegte und erlaubte Tätigkeit zum Zweck der Schaffung und Erhaltung einer Lebensgrundlage; der Beschwerdeführer übt eine solche Tätigkeit als Heilpraktiker aus. **D.II.** In dieser Tätigkeit ist er durch den Erlaubnisvorbehalt unmittelbar und final betroffen — Eingriff bejaht. **D.III.1.** Schranke ist Art. 12 Abs. 1 S. 2 GG. **D.III.2.c)** Verhältnismäßigkeit ist nach der Drei-Stufen-Theorie zu prüfen (BVerfGE 7, 377, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-06-11&Aktenzeichen=1%20BvR%20596/56)): Es handelt sich um eine subjektive Berufswahlregelung; legitimer Zweck ist der Patientenschutz; geeignet; erforderlich, da ein milderes Mittel (Anzeigepflicht) den Zweck nicht gleich wirksam erreicht; angemessen, soweit die Erlaubnisvoraussetzungen die Tätigkeit nicht überproportional erschweren.
 
 ## Risiken / typische Fehler
 

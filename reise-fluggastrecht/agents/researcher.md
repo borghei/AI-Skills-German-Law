@@ -67,15 +67,17 @@ Leitgericht ist der **EuGH**; national der **X. Zivilsenat des BGH** (Reisesenat
 
 Verifizierte Leitentscheidungen dieses Plugins (Papierfundstellen gegen dejure.org geprüft):
 
-- **Große Verspätung, Ausgleich ab 3 Stunden:** EuGH, Urt. v. 19.11.2009 – C-402/07 (Sturgeon), NJW 2010, 43; bestätigt durch EuGH, Urt. v. 23.10.2012 – C-581/10 (Nelson), NJW 2013, 671
-- **Technischer Defekt kein außergewöhnlicher Umstand:** EuGH, Urt. v. 22.12.2008 – C-549/07 (Wallentin-Hermann), NJW 2009, 347; EuGH, Urt. v. 17.09.2015 – C-257/14 (van der Lans), NJW 2015, 3427
-- **Wilder Streik der eigenen Belegschaft:** EuGH, Urt. v. 17.04.2018 – C-195/17 (Krüsemann), NJW 2018, 1592
-- **Störender Fluggast:** EuGH, Urt. v. 11.06.2020 – C-74/19, NJW-RR 2020, 871
-- **Anschlussflug und Endziel:** EuGH, Urt. v. 26.02.2013 – C-11/11 (Folkerts), NJW 2013, 1291
-- **Gerichtsstand bei Flugbeförderung:** EuGH, Urt. v. 09.07.2009 – C-204/08 (Rehder), EuZW 2009, 569
-- **Entgangene Urlaubsfreude:** EuGH, Urt. v. 12.03.2002 – C-168/00 (Leitner), NJW 2002, 1255
-- **Rückerstattung statt Gutschein / Pauschalreise:** EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709; EuGH, Urt. v. 08.06.2023 – C-49/22, NJW 2023, 2629
-- **Anschlussflug, einheitliche Buchung:** BGH, Urt. v. 09.12.2014 – X ZR 147/13, NJW-RR 2015, 618
+- **Große Verspätung, Ausgleich ab 3 Stunden (richterrechtlich, nicht im Verordnungstext):** EuGH, Urt. v. 19.11.2009 – verb. Rs. C-402/07 und C-432/07, Sturgeon u.a., NJW 2010, 43, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-11-19&Aktenzeichen=C-402/07); bestätigt durch EuGH, Urt. v. 23.10.2012 – verb. Rs. C-581/10 und C-629/10, Nelson u.a., NJW 2013, 671, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2012-10-23&Aktenzeichen=C-581/10)
+- **Technischer Defekt kein außergewöhnlicher Umstand:** EuGH, Urt. v. 22.12.2008 – Rs. C-549/07, Wallentin-Hermann, NJW 2009, 347, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2008-12-22&Aktenzeichen=C-549/07); EuGH, Urt. v. 17.09.2015 – Rs. C-257/14, van der Lans, NJW 2015, 3427, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2015-09-17&Aktenzeichen=C-257/14)
+- **Wilder Streik der eigenen Belegschaft:** EuGH, Urt. v. 17.04.2018 – verb. Rs. C-195/17 u.a., Krüsemann u.a., NJW 2018, 1592, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2018-04-17&Aktenzeichen=C-195/17)
+- **Störender Fluggast:** EuGH, Urt. v. 11.06.2020 – Rs. C-74/19, Transportes Aéreos Portugueses, NJW-RR 2020, 871, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-06-11&Aktenzeichen=C-74/19)
+- **Anschlussflug und Endziel:** EuGH, Urt. v. 26.02.2013 – Rs. C-11/11, Air France/Folkerts, NJW 2013, 1291, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2013-02-26&Aktenzeichen=C-11/11)
+- **Ankunftszeit = Öffnen mindestens einer Flugzeugtür:** EuGH, Urt. v. 04.09.2014 – Rs. C-452/13, Germanwings, NJW 2015, 221, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2014-09-04&Aktenzeichen=C-452/13)
+- **Gerichtsstand bei Flugbeförderung:** EuGH, Urt. v. 09.07.2009 – Rs. C-204/08, Rehder, EuZW 2009, 569, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-07-09&Aktenzeichen=C-204/08)
+- **Entgangene Urlaubsfreude:** EuGH, Urt. v. 12.03.2002 – Rs. C-168/00, Leitner, NJW 2002, 1255, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2002-03-12&Aktenzeichen=C-168/00)
+- **Rückerstattung statt Gutschein / Pauschalreise:** EuGH, Urt. v. 08.06.2023 – Rs. C-407/21, UFC-Que choisir und CLCV, EuZW 2023, 709, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-407/21)
+- **Reichweite des Art. 8 VO 261/2004 in Krisenlagen (Repatriierungsflug ist keine anderweitige Beförderung):** EuGH, Urt. v. 08.06.2023 – Rs. C-49/22, Austrian Airlines (Rückholflug), NJW 2023, 2629, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-49/22)
+- **Anzahlungsklausel im Reisevertrag (Anzahlung bis 20 % in AGB wirksam):** BGH, Urt. v. 09.12.2014 – X ZR 147/13, NJW-RR 2015, 618 = MDR 2015, 447, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2014-12-09&Aktenzeichen=X%20ZR%20147/13) — diese Entscheidung war hier zuvor als Beleg für die **einheitliche Buchung von Anschlussflügen** geführt; das trifft nicht zu. Für die einheitliche Buchung ist Folkerts einschlägig; eine BGH-Leitentscheidung dazu ist gesondert zu recherchieren `[unverifiziert - prüfen]`
 
 Die Fundstellen sind verifiziert; die **Kernaussage** ist vor Verwendung im Volltext gegenzulesen.
 

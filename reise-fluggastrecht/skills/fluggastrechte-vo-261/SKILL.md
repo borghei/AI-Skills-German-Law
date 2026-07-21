@@ -58,12 +58,12 @@ Ist der Anwendungsbereich nicht eröffnet, bleiben nur vertragliche Ansprüche u
 
 ### 3. Große Verspätung ab drei Stunden ([Art. 7 VO (EG) 261/2004](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32004R0261))
 
-Der Verordnungstext sieht für die Verspätung selbst **keinen** Ausgleichsanspruch vor. Der Anspruch ist **richterrechtlich** entwickelt: Fluggäste, die ihr **Endziel** mit einer Verspätung von **drei Stunden oder mehr** erreichen, werden annullierten Fluggästen gleichgestellt (EuGH, Urt. v. 19.11.2009 – C-402/07 und C-432/07 „Sturgeon", NJW 2010, 43; bestätigt durch EuGH, Urt. v. 23.10.2012 – C-581/10 und C-629/10 „Nelson", NJW 2013, 671) — Fundstellen verifiziert, Kernaussage und Fortentwicklung im Volltext gegenzulesen `[unverifiziert - prüfen]`.
+Der Verordnungstext sieht für die Verspätung selbst **keinen** Ausgleichsanspruch vor. Der Anspruch ist **richterrechtlich** entwickelt: Fluggäste, die ihr **Endziel** mit einer Verspätung von **drei Stunden oder mehr** erreichen, werden annullierten Fluggästen gleichgestellt (EuGH, Urt. v. 19.11.2009 – verb. Rs. C-402/07 und C-432/07 „Sturgeon u.a.", NJW 2010, 43 = EuZW 2009, 890 = Slg. 2009, I-10923, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-11-19&Aktenzeichen=C-402/07); bestätigt durch EuGH, Urt. v. 23.10.2012 – verb. Rs. C-581/10 und C-629/10 „Nelson u.a.", NJW 2013, 671 = EuZW 2012, 906, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2012-10-23&Aktenzeichen=C-581/10)). Diese Gleichstellung steht **nicht** im Verordnungstext; sie ist Auslegungsergebnis des EuGH und als solches zu kennzeichnen, wenn sie gegenüber Gericht oder Gegenseite verwendet wird.
 
 Zwei praktische Folgerungen:
 
-- Maßgeblich ist die **Ankunft am Endziel**, nicht der Abflug und nicht der Zubringer. Bei einheitlicher Buchung mit Anschlussflug zählt die Gesamtverspätung (EuGH, Urt. v. 26.02.2013 – C-11/11 „Folkerts", NJW 2013, 1291).
-- Ankunftszeit ist der Zeitpunkt, zu dem mindestens eine Flugzeugtür geöffnet wird — nicht das Aufsetzen und nicht das Erreichen der Parkposition `[unverifiziert - prüfen]`.
+- Maßgeblich ist die **Ankunft am Endziel**, nicht der Abflug und nicht der Zubringer. Bei einheitlicher Buchung mit Anschlussflug zählt die Gesamtverspätung (EuGH, Urt. v. 26.02.2013 – Rs. C-11/11 „Air France/Folkerts", NJW 2013, 1291 = EuZW 2013, 434, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2013-02-26&Aktenzeichen=C-11/11)).
+- Ankunftszeit ist der Zeitpunkt, zu dem mindestens eine Flugzeugtür geöffnet wird und den Fluggästen das Verlassen des Flugzeugs gestattet ist — nicht das Aufsetzen und nicht das Erreichen der Parkposition (EuGH, Urt. v. 04.09.2014 – Rs. C-452/13 „Germanwings", NJW 2015, 221 = EuZW 2014, 873, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2014-09-04&Aktenzeichen=C-452/13)).
 
 ### 4. Höhe der Ausgleichszahlung ([Art. 7 VO (EG) 261/2004](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32004R0261))
 
@@ -79,12 +79,12 @@ Die Entfernung wird nach der **Großkreismethode** zwischen Abflugort und **Endz
 
 Der Ausgleichsanspruch entfällt, wenn die Störung auf außergewöhnliche Umstände zurückgeht, die sich **auch dann nicht hätten vermeiden lassen, wenn alle zumutbaren Maßnahmen ergriffen worden wären**. Der Einwand hat damit **zwei** Stufen — Ereignis **und** zumutbare Maßnahmen. Darlegungs- und Beweislast liegen vollständig beim Luftfahrtunternehmen.
 
-Die Kasuistik ist streitig und in Bewegung; die folgenden Linien sind vor Verwendung im Einzelfall zu prüfen `[unverifiziert - prüfen]`:
+Die Kasuistik ist streitig und in Bewegung. Die mit Fundstelle und Primärquelle belegten Linien sind verifiziert; die Punkte **Wetter** und **Vorfeldfolgen** beruhen auf instanzgerichtlicher Praxis ohne belegte Leitentscheidung und sind vor Verwendung im Einzelfall zu recherchieren `[unverifiziert - prüfen]`:
 
-- **Technischer Defekt**: grundsätzlich **kein** außergewöhnlicher Umstand, weil der Wartungs- und Betriebsbereich zur normalen Tätigkeit gehört (EuGH, Urt. v. 22.12.2008 – C-549/07 „Wallentin-Hermann", NJW 2009, 347; EuGH, Urt. v. 17.09.2015 – C-257/14 „van der Lans", NJW 2015, 3427). Anders bei verstecktem Fabrikationsfehler oder Sabotage.
-- **Wilder Streik der eigenen Belegschaft**: **kein** außergewöhnlicher Umstand (EuGH, Urt. v. 17.04.2018 – C-195/17 „Krüsemann", NJW 2018, 1592). Streiks Dritter (Fluglotsen, Flughafenbetreiber) werden anders beurteilt.
+- **Technischer Defekt**: grundsätzlich **kein** außergewöhnlicher Umstand, weil der Wartungs- und Betriebsbereich zur normalen Tätigkeit gehört (EuGH, Urt. v. 22.12.2008 – Rs. C-549/07 „Wallentin-Hermann", NJW 2009, 347 = EuZW 2009, 111, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2008-12-22&Aktenzeichen=C-549/07); EuGH, Urt. v. 17.09.2015 – Rs. C-257/14 „van der Lans", NJW 2015, 3427, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2015-09-17&Aktenzeichen=C-257/14)). Anders bei verstecktem Fabrikationsfehler oder Sabotage.
+- **Wilder Streik der eigenen Belegschaft**: **kein** außergewöhnlicher Umstand (EuGH, Urt. v. 17.04.2018 – verb. Rs. C-195/17 u.a. „Krüsemann u.a.", NJW 2018, 1592 = EuZW 2018, 457, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2018-04-17&Aktenzeichen=C-195/17)). Streiks Dritter (Fluglotsen, Flughafenbetreiber) werden anders beurteilt.
 - **Wetter**: nur, wenn es den konkreten Flug tatsächlich hinderte; der pauschale Verweis auf „Unwetter" genügt nicht. Auch die Frage der zumutbaren Umplanung ist zu prüfen.
-- **Störender Fluggast**: kann außergewöhnlicher Umstand sein (EuGH, Urt. v. 11.06.2020 – C-74/19, NJW-RR 2020, 871).
+- **Störender Fluggast**: kann außergewöhnlicher Umstand sein, sofern das Luftfahrtunternehmen darlegt, alle zumutbaren Maßnahmen ergriffen zu haben (EuGH, Urt. v. 11.06.2020 – Rs. C-74/19 „Transportes Aéreos Portugueses", NJW-RR 2020, 871 = EuZW 2020, 617, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-06-11&Aktenzeichen=C-74/19)).
 - **Vorfeldfolgen**: Beruht die Verspätung auf einem früheren Umlauf, muss die Ursachenkette bis zum konkreten Flug durchgehalten werden.
 
 Fundstellen verifiziert; die jeweilige Kernaussage ist im Volltext gegenzulesen.
@@ -94,7 +94,8 @@ Fundstellen verifiziert; die jeweilige Kernaussage ist im Volltext gegenzulesen.
 **Diese Ansprüche bestehen auch bei außergewöhnlichen Umständen.** Sie sind vom Ausgleichsanspruch strikt zu trennen:
 
 - **Art. 9**: Mahlzeiten und Erfrischungen in angemessenem Verhältnis zur Wartezeit, Hotelunterbringung und Transfer bei erforderlicher Übernachtung, zwei Telefonate oder gleichwertige Kommunikation. Hat der Fluggast selbst gebucht, ist der Aufwand zu erstatten, soweit er angemessen war.
-- **Art. 8**: Wahlrecht zwischen vollständiger Erstattung des Flugpreises (binnen sieben Tagen) nebst gegebenenfalls Rückflug zum ersten Abflugort und anderweitiger Beförderung zum Endziel — zum frühestmöglichen Zeitpunkt oder zu einem späteren Termin nach Wahl des Fluggastes (EuGH, Urt. v. 08.06.2023 – C-49/22, NJW 2023, 2629).
+- **Art. 8**: Wahlrecht zwischen vollständiger Erstattung des Flugpreises (binnen sieben Tagen) nebst gegebenenfalls Rückflug zum ersten Abflugort und anderweitiger Beförderung zum Endziel — zum frühestmöglichen Zeitpunkt oder zu einem späteren Termin nach Wahl des Fluggastes. Das ergibt sich unmittelbar aus Art. 8 Abs. 1 lit. a bis c.
+- **Grenzen und Reichweite des Art. 8 in Krisenlagen**: Ein im Rahmen einer konsularischen Unterstützungsmaßnahme organisierter **Repatriierungsflug ist keine anderweitige Beförderung** iSd Art. 8 Abs. 1 lit. b; die Kosten eines solchen Fluges sind vom Luftfahrtunternehmen nach der Verordnung nicht zu erstatten. Zugleich kennt die Verordnung **keine** Kategorie „besonders außergewöhnlicher" Umstände, die von den Unterstützungsleistungen des Art. 8 vollständig befreien würde; verletzt das Unternehmen diese Pflicht, kann der Fluggast Erstattung der Beträge verlangen, die sich im Einzelfall als notwendig, angemessen und zumutbar erweisen (EuGH, Urt. v. 08.06.2023 – Rs. C-49/22 „Austrian Airlines (Rückholflug)", NJW 2023, 2629 = EuZW 2023, 815, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-49/22)).
 
 ### 7. Weitergehender Schadensersatz und Anrechnung ([Art. 12 VO (EG) 261/2004](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32004R0261))
 
@@ -102,7 +103,7 @@ Die Verordnung lässt weitergehende Schadensersatzansprüche unberührt; die Aus
 
 ### 8. Zuständigkeit und Durchsetzung ([Art. 7 Nr. 1 EuGVVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32012R1215))
 
-- **International**: Bei Luftbeförderung kann am Ort des **Abflugs** oder am Ort der **Ankunft** geklagt werden — beides sind Erfüllungsorte iSd Art. 7 Nr. 1 lit. b EuGVVO (EuGH, Urt. v. 09.07.2009 – C-204/08 „Rehder", EuZW 2009, 569). Der Verbrauchergerichtsstand der Art. 17 ff. EuGVVO greift bei reinen Beförderungsverträgen regelmäßig **nicht**.
+- **International**: Bei Luftbeförderung kann am Ort des **Abflugs** oder am Ort der **Ankunft** geklagt werden — beides sind Erfüllungsorte iSd Art. 7 Nr. 1 lit. b EuGVVO (EuGH, Urt. v. 09.07.2009 – Rs. C-204/08 „Rehder", EuZW 2009, 569 = NJW 2009, 487 (Ls.), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-07-09&Aktenzeichen=C-204/08)). Der Verbrauchergerichtsstand der Art. 17 ff. EuGVVO greift bei reinen Beförderungsverträgen regelmäßig **nicht**.
 - **National**: § 29 ZPO; sachliche Zuständigkeit nach Streitwert, bei den typischen Beträgen das Amtsgericht.
 - **Außergerichtlich**: Schlichtung bei der söp und Durchsetzungsstelle nach Art. 16 (in Deutschland das Luftfahrt-Bundesamt) — die Durchsetzungsstelle setzt den individuellen Anspruch allerdings nicht titelfähig durch.
 
@@ -143,15 +144,17 @@ python -m scripts.legal_calc.cli frist --ereignis 21.07.2026 --menge 14 --einhei
 
 ### Rechtsprechung
 
-1. EuGH, Urt. v. 19.11.2009 – C-402/07 und C-432/07 (Sturgeon), NJW 2010, 43 (Gleichstellung großer Verspätung) — Fundstelle verifiziert
-2. EuGH, Urt. v. 23.10.2012 – C-581/10 und C-629/10 (Nelson), NJW 2013, 671 (Bestätigung) — Fundstelle verifiziert
-3. EuGH, Urt. v. 22.12.2008 – C-549/07 (Wallentin-Hermann), NJW 2009, 347 (technischer Defekt) — Fundstelle verifiziert
-4. EuGH, Urt. v. 17.09.2015 – C-257/14 (van der Lans), NJW 2015, 3427 — Fundstelle verifiziert
-5. EuGH, Urt. v. 17.04.2018 – C-195/17 (Krüsemann), NJW 2018, 1592 (wilder Streik) — Fundstelle verifiziert
-6. EuGH, Urt. v. 11.06.2020 – C-74/19, NJW-RR 2020, 871 (störender Fluggast) — Fundstelle verifiziert
-7. EuGH, Urt. v. 26.02.2013 – C-11/11 (Folkerts), NJW 2013, 1291 (Endziel bei Anschlussflug) — Fundstelle verifiziert
-8. EuGH, Urt. v. 09.07.2009 – C-204/08 (Rehder), EuZW 2009, 569 (Gerichtsstand) — Fundstelle verifiziert
-9. BGH, Urt. v. 09.12.2014 – X ZR 147/13, NJW-RR 2015, 618 (einheitliche Buchung) — Fundstelle verifiziert
+1. EuGH, Urt. v. 19.11.2009 – verb. Rs. C-402/07 und C-432/07, Sturgeon u.a., NJW 2010, 43 = EuZW 2009, 890 = Slg. 2009, I-10923 (Gleichstellung großer Verspätung ab drei Stunden), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-11-19&Aktenzeichen=C-402/07)
+2. EuGH, Urt. v. 23.10.2012 – verb. Rs. C-581/10 und C-629/10, Nelson u.a., NJW 2013, 671 = EuZW 2012, 906 (Bestätigung der Sturgeon-Linie), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2012-10-23&Aktenzeichen=C-581/10)
+3. EuGH, Urt. v. 22.12.2008 – Rs. C-549/07, Wallentin-Hermann, NJW 2009, 347 = EuZW 2009, 111 (technischer Defekt grundsätzlich kein außergewöhnlicher Umstand), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2008-12-22&Aktenzeichen=C-549/07)
+4. EuGH, Urt. v. 17.09.2015 – Rs. C-257/14, van der Lans, NJW 2015, 3427 (Bestätigung und Fortführung für unerwartete technische Defekte), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2015-09-17&Aktenzeichen=C-257/14)
+5. EuGH, Urt. v. 17.04.2018 – verb. Rs. C-195/17 u.a., Krüsemann u.a., NJW 2018, 1592 = EuZW 2018, 457 (wilder Streik der eigenen Belegschaft), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2018-04-17&Aktenzeichen=C-195/17)
+6. EuGH, Urt. v. 11.06.2020 – Rs. C-74/19, Transportes Aéreos Portugueses, NJW-RR 2020, 871 = EuZW 2020, 617 (störender Fluggast; zumutbare Maßnahmen), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2020-06-11&Aktenzeichen=C-74/19)
+7. EuGH, Urt. v. 26.02.2013 – Rs. C-11/11, Air France/Folkerts, NJW 2013, 1291 = EuZW 2013, 434 (Endziel bei Anschlussflug), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2013-02-26&Aktenzeichen=C-11/11)
+8. EuGH, Urt. v. 04.09.2014 – Rs. C-452/13, Germanwings, NJW 2015, 221 = EuZW 2014, 873 (Ankunftszeit = Öffnen mindestens einer Flugzeugtür), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2014-09-04&Aktenzeichen=C-452/13)
+9. EuGH, Urt. v. 09.07.2009 – Rs. C-204/08, Rehder, EuZW 2009, 569 = NJW 2009, 487 (Ls.) (Gerichtsstand Abflug- oder Ankunftsort), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2009-07-09&Aktenzeichen=C-204/08)
+10. EuGH, Urt. v. 08.06.2023 – Rs. C-49/22, Austrian Airlines (Rückholflug), NJW 2023, 2629 = EuZW 2023, 815 (Repatriierungsflug ist keine anderweitige Beförderung; Reichweite des Art. 8), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-49/22)
+11. BGH, Urt. v. 09.12.2014 – X ZR 147/13, NJW-RR 2015, 618 = MDR 2015, 447 — **Achtung, Themen-Mismatch:** Datum, Aktenzeichen und Fundstelle sind bestätigt, die Entscheidung betrifft jedoch die **Anzahlungsklausel im Reisevertrag** (Anzahlung von nicht mehr als 20 % des Reisepreises in AGB ist wirksam), **nicht** die einheitliche Buchung von Anschlussflügen, als die sie hier ursprünglich geführt wurde, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2014-12-09&Aktenzeichen=X%20ZR%20147/13). Für die einheitliche Buchung mit Anschlussflug ist die belegte Grundlage Folkerts (Nr. 7); eine BGH-Entscheidung hierzu ist gesondert zu recherchieren `[unverifiziert - prüfen]`
 
 ## Ausgabeformat
 

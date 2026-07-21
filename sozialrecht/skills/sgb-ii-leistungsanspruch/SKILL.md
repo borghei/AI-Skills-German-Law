@@ -88,7 +88,7 @@ Gesamtbedarf der BG ([§ 19 SGB II](https://www.gesetze-im-internet.de/sgb_2/__1
 
 ### 6. Leistungsminderung / Sanktionen ([§§ 31, 31a, 31b SGB II](https://www.gesetze-im-internet.de/sgb_2/__31.html))
 
-Nach BVerfG, Urt. v. 05.11.2019 – 1 BvL 7/16, BVerfGE 152, 68 (Sanktionsurteil) und Bürgergeld-Reform:
+Nach BVerfG, Urt. v. 05.11.2019 – 1 BvL 7/16, BVerfGE 152, 68 = NJW 2019, 3703 (Sanktionsurteil, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=05.11.2019&Aktenzeichen=1%20BvL%207/16)) und Bürgergeld-Reform:
 
 - Pflichtverletzungen § 31 SGB II: Verweigerung zumutbarer Arbeit / Maßnahme, Pflichtverstoß gegen Kooperationsplan
 - Leistungsminderung gestaffelt: 10 % / 20 % / 30 % (§ 31a SGB II), maximal 30 % bei mehrfacher Pflichtverletzung

@@ -58,7 +58,7 @@ Prüfungsschritte:
 3. **Erhebliche Beeinträchtigung**: erforderlich ist eine konkrete, ins Gewicht fallende Betroffenheit der gebuchten Leistungen oder der Anreise.
 4. **Behördliche Reisewarnungen** sind ein starkes Indiz, aber nicht mehr — sie ersetzen die Einzelfallprüfung nicht `[unverifiziert - prüfen]`.
 
-Die **Pandemie-Kasuistik** ist einschlägig und in wesentlichen Punkten streitig geblieben: Reichweite von Reisewarnungen, Behandlung von Quarantäne- und Testpflichten, Zeitpunkt der Prognose, Zulässigkeit von Gutscheinlösungen. Der EuGH hat für den Pauschalreisebereich klargestellt, dass die Erstattung in Geld geschuldet ist und die nationale Gutscheinpraxis daran zu messen war (EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709) — Fundstelle verifiziert, Reichweite im Einzelfall zu prüfen `[unverifiziert - prüfen]`.
+Die **Pandemie-Kasuistik** ist einschlägig und in wesentlichen Punkten streitig geblieben: Reichweite von Reisewarnungen, Behandlung von Quarantäne- und Testpflichten, Zeitpunkt der Prognose, Zulässigkeit von Gutscheinlösungen. Der EuGH hat für den Pauschalreisebereich klargestellt, dass die Erstattung in Geld geschuldet ist und die nationale Gutscheinpraxis daran zu messen war (EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-407/21)), Reichweite im Einzelfall zu prüfen `[unverifiziert - prüfen]`.
 
 Nach Abs. 3 S. 2 hat der Veranstalter die geleisteten Zahlungen unverzüglich, spätestens innerhalb von 14 Tagen nach dem Rücktritt, zu erstatten.
 
@@ -105,8 +105,8 @@ Der Veranstalter muss sicherstellen, dass dem Reisenden der gezahlte Reisepreis 
 
 ### Rechtsprechung
 
-1. EuGH, Urt. v. 08.06.2023 – C-407/21, EuZW 2023, 709 (Pauschalreise, Erstattung statt Gutschein) — Fundstelle verifiziert
-2. EuGH, Urt. v. 08.06.2023 – C-49/22, NJW 2023, 2629 (Erstattung und Rückbeförderung) — Fundstelle verifiziert
+1. EuGH, Urt. v. 08.06.2023 – Rs. C-407/21, UFC-Que choisir und CLCV, EuZW 2023, 709 = MDR 2023, 964 (Rücktritt wegen unvermeidbarer außergewöhnlicher Umstände in der COVID-19-Pandemie; Erstattung statt Gutschein, RL (EU) 2015/2302), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-407/21)
+2. EuGH, Urt. v. 08.06.2023 – Rs. C-49/22, Austrian Airlines (Rückholflug), NJW 2023, 2629 = EuZW 2023, 815 — die Entscheidung ergeht zur **Fluggastrechte-VO (EG) 261/2004**, nicht zum Pauschalreiserecht: ein konsularisch organisierter Repatriierungsflug ist keine anderweitige Beförderung iSd Art. 8 Abs. 1 lit. b, die Unterstützungspflichten des Art. 8 entfallen aber auch in Krisenlagen nicht. Für die Rücktritts- und Erstattungsfragen des § 651h BGB nur mittelbar heranzuziehen, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=2023-06-08&Aktenzeichen=C-49/22)
 3. Zur Auslegung des § 651h Abs. 3 BGB in Pandemie- und Krisenlagen ist die instanzgerichtliche und höchstrichterliche Praxis einzelfallbezogen zu recherchieren `[unverifiziert - prüfen]`
 
 ## Ausgabeformat

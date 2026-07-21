@@ -151,8 +151,8 @@ python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 7 --einheit
 
 ### Rechtsprechung
 
-1. BVerwG, Urt. v. 20.10.2005 – 2 C 12.04, BVerwGE 124, 252 = NVwZ 2006, 469 (Bemessung nach § 13 BDG, Vertrauensverlust) — Fundstelle verifiziert, Kernaussage im Volltext gegenzulesen
-2. BVerwG, Urt. v. 05.06.2014 – 2 C 22.13, BVerwGE 150, 1 = NVwZ 2014, 1319 (Statusrecht, amtsärztliche Feststellungen) — Fundstelle verifiziert
+1. BVerwG, Urt. v. 20.10.2005 – 2 C 12.04, BVerwGE 124, 252 = NVwZ 2006, 469 (Bemessung nach § 13 BDG, Vertrauensverlust) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2005-10-20&Aktenzeichen=2%20C%2012.04)), Kernaussage im Volltext gegenzulesen
+2. BVerwG, Urt. v. 05.06.2014 – 2 C 22.13, BVerwGE 150, 1 = NVwZ 2014, 1319 (Statusrecht, amtsärztliche Feststellungen) ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerwG&Datum=2014-06-05&Aktenzeichen=2%20C%2022.13))
 3. Zur Kasuistik der Milderungsgründe und zur Bemessung bei Zugriffsdelikten ist die einschlägige Senatsrechtsprechung im Einzelfall zu recherchieren `[unverifiziert - prüfen]`
 
 ## Ausgabeformat

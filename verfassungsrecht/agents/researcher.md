@@ -60,7 +60,16 @@ Pro Statut **bis zu drei** einschlägige Entscheidungen aus dem Modellwissen, vo
 | `[unverifiziert – prüfen in juris/BVerfG-Datenbank]` | Aus dem Modellwissen erinnert, nicht extern bestätigt |
 | `[generiert]` | **Verboten.** Bei Unsicherheit immer `[unverifiziert]` |
 
-Standardrepertoire (öffentlich verifiziert): Lüth ([BVerfGE 7, 198](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/1958/01/rs19580115_1bvr040051.html)); Apotheken-Urteil ([BVerfGE 7, 377](https://de.wikipedia.org/wiki/Apotheken-Urteil)); Elfes ([BVerfGE 6, 32](https://de.wikipedia.org/wiki/Elfes-Urteil)); Volkszählung ([BVerfGE 65, 1](https://de.wikipedia.org/wiki/Volksz%C3%A4hlungsurteil)); Kruzifix ([BVerfGE 93, 1](https://de.wikipedia.org/wiki/Kruzifix-Beschluss)); Hartz IV / Existenzminimum ([BVerfGE 125, 175](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2010/02/ls20100209_1bvl000109.html)).
+Standardrepertoire (öffentlich verifiziert, je mit Datum und Aktenzeichen zu zitieren):
+
+- Lüth — BVerfG, Urt. v. 15.01.1958 – 1 BvR 400/51, BVerfGE 7, 198, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-01-15&Aktenzeichen=1%20BvR%20400/51)
+- Apotheken-Urteil — BVerfG, Urt. v. 11.06.1958 – 1 BvR 596/56, BVerfGE 7, 377, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1958-06-11&Aktenzeichen=1%20BvR%20596/56)
+- Elfes — BVerfG, Urt. v. 16.01.1957 – 1 BvR 253/56, BVerfGE 6, 32, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1957-01-16&Aktenzeichen=1%20BvR%20253/56)
+- Volkszählung — BVerfG, Urt. v. 15.12.1983 – 1 BvR 209/83 u.a., BVerfGE 65, 1, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1983-12-15&Aktenzeichen=1%20BvR%20209/83)
+- Kruzifix — BVerfG, Beschl. v. 16.05.1995 – 1 BvR 1087/91, BVerfGE 93, 1, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=1995-05-16&Aktenzeichen=1%20BvR%201087/91)
+- Hartz IV / Existenzminimum — BVerfG, Urt. v. 09.02.2010 – 1 BvL 1/09 u.a., BVerfGE 125, 175, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=2010-02-09&Aktenzeichen=1%20BvL%201/09)
+
+**Keine Wikipedia-Links als Fundstellenbeleg.** Beleg ist die amtliche Sammlung plus dejure.org, bverfg.de oder servat.unibe.ch (DFR).
 
 ### 4. Strittige Fragen markieren
 
