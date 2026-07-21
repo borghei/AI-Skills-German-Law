@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grundbuchverfahren - AI Skills German Law</title>
+  <meta name="description" content="Grundbuchverfahren nach der GBO – Eintragungsantrag § 13 GBO, formelles Konsensprinzip und Eintragungsbewilligung § 19 GBO, Nachweisform § 29 GBO, Voreintragungsgrundsatz § 39 GBO und die MoPeG-Falle ">
+  <link rel="canonical" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/grundbuchverfahren.html">
+  <link rel="alternate" hreflang="en" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/grundbuchverfahren.html">
+  <link rel="alternate" hreflang="de" href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/immobilien-grundbuchrecht/grundbuchverfahren.html">
+  <link rel="alternate" hreflang="x-default" href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/grundbuchverfahren.html">
+  <meta property="og:title" content="Grundbuchverfahren - AI Skills German Law">
+  <meta property="og:description" content="Grundbuchverfahren nach der GBO – Eintragungsantrag § 13 GBO, formelles Konsensprinzip und Eintragungsbewilligung § 19 GBO, Nachweisform § 29 GBO, Voreintragungsgrundsatz § 39 GBO und die MoPeG-Falle ">
+  <meta property="og:url" content="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/grundbuchverfahren.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Grundbuchverfahren", "description": "Grundbuchverfahren nach der GBO – Eintragungsantrag § 13 GBO, formelles Konsensprinzip und Eintragungsbewilligung § 19 GBO, Nachweisform § 29 GBO, Voreintragungsgrundsatz § 39 GBO und die MoPeG-Falle des § 47 Abs. 2 GBO für die eingetragene GbR, Rangverhältnisse §§ 879–881 BGB einschließlich Rangvorbehalt und Rangänderung, Eintragungsfähigkeit, Grundbuchberichtigung § 22 GBO, Amtswiderspruch § 53 GBO und Widerspruch § 899 BGB, Zwischenverfügung § 18 GBO sowie Beschwerde § 71 GBO. Use when ein Grundbuchantrag vorbereitet, eine Zwischenverfügung oder Zurückweisung des Grundbuchamts beantwortet oder eine unrichtige Eintragung berichtigt werden soll.", "applicationCategory": "Immobilien- und Grundbuchrecht", "operatingSystem": "Any", "url": "https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/grundbuchverfahren.html", "author": {"@type": "Person", "name": "Borghei"}, "inLanguage": "de"}</script>
+  <style>
+:root {
+  --bg: #faf9f5;
+  --bg-secondary: #f0eee6;
+  --text: #141413;
+  --text-muted: #5e5d59;
+  --accent: #d97757;
+  --accent-deep: #c6613f;
+  --border: rgba(20,20,19,0.1);
+  --border-strong: rgba(20,20,19,0.18);
+  --white: #ffffff;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'Cascadia Code', Menlo, monospace;
+  --max-width: 1200px;
+  --shadow-sm: 0 1px 2px rgba(20,20,19,0.04);
+  --shadow: 0 1px 3px rgba(20,20,19,0.06), 0 1px 2px rgba(20,20,19,0.04);
+  --shadow-md: 0 4px 12px rgba(20,20,19,0.08), 0 1px 3px rgba(20,20,19,0.06);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--accent-deep); }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+code { font-family: var(--font-mono); font-size: 0.875em; }
+
+/* Navbar */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(250,249,245,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo {
+  font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem;
+  color: var(--text); letter-spacing: -0.01em;
+}
+.nav-logo:hover { color: var(--text); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  color: var(--text-muted); font-size: 0.9rem; font-weight: 500;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.gh-link { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Language switcher */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border: 1px solid var(--border-strong);
+  border-radius: 20px; background: var(--white);
+  font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.4;
+}
+.lang-switch .lang-opt { font-weight: 600; letter-spacing: 0.02em; }
+.lang-switch a.lang-opt { color: var(--text-muted); }
+.lang-switch a.lang-opt:hover { color: var(--accent); }
+.lang-switch .lang-opt.active { color: var(--accent); cursor: default; }
+.lang-switch .lang-sep { color: var(--border-strong); }
+
+/* Breadcrumbs */
+.breadcrumbs { padding: 20px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs a:hover { color: var(--accent); }
+.breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+/* Page header */
+.page-header { padding: 48px 0 32px; }
+.page-title {
+  font-family: var(--font-serif); font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;
+  color: var(--text);
+}
+.page-subtitle { color: var(--text-muted); max-width: 760px; font-size: 1.05rem; line-height: 1.6; }
+
+.count-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--accent); background: rgba(217,119,87,0.08);
+  padding: 2px 10px; border-radius: 20px; margin-left: 8px;
+  vertical-align: middle; font-weight: 500;
+}
+
+/* Search + Filter */
+.filter-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.search-input {
+  flex: 1; min-width: 200px; padding: 10px 14px 10px 38px;
+  background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+.search-input::placeholder { color: var(--text-muted); }
+.search-wrap { position: relative; flex: 1; min-width: 200px; }
+.search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+.filter-select {
+  padding: 10px 14px; background: var(--white); border: 1px solid var(--border-strong);
+  border-radius: var(--radius); color: var(--text); font-family: var(--font-sans);
+  font-size: 0.9rem; outline: none; cursor: pointer;
+}
+.filter-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(217,119,87,0.1); }
+
+/* Card grid */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 60px; }
+.skill-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px 22px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex; flex-direction: column;
+}
+.skill-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.skill-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+.skill-card h3 a { color: var(--text); }
+.skill-card h3 a:hover { color: var(--accent); }
+.skill-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; flex: 1; }
+
+/* Badges */
+.badge-bar { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-mono); font-size: 0.7rem; padding: 3px 9px;
+  border-radius: 5px; font-weight: 500; white-space: nowrap;
+}
+.badge-domain { background: rgba(217,119,87,0.1); border: 1px solid rgba(217,119,87,0.2); color: var(--accent-deep); }
+.badge-subdomain { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-version { background: rgba(20,20,19,0.03); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-tools { background: rgba(20,20,19,0.04); border: 1px solid var(--border); color: var(--text-muted); }
+.badge-refs { background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.15); color: var(--accent); }
+
+/* Tags */
+.skill-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.tag {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 8px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+.example-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.example-pill {
+  font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 7px;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: 4px; color: var(--text-muted);
+}
+
+/* Skill detail page */
+.skill-detail { padding-bottom: 80px; }
+.skill-detail h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 40px 0 16px; padding-top: 16px;
+  border-top: 1px solid var(--border); color: var(--text);
+}
+.skill-detail h3 { font-size: 1.05rem; font-weight: 600; margin: 20px 0 10px; color: var(--text); }
+.skill-detail h4 { font-size: 0.95rem; font-weight: 600; margin: 16px 0 8px; color: var(--text); }
+.skill-detail p, .skill-detail li { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
+.skill-detail ul, .skill-detail ol { margin-left: 22px; margin-bottom: 16px; }
+.skill-detail li { margin-bottom: 6px; }
+.skill-detail blockquote {
+  border-left: 3px solid var(--accent); padding: 6px 16px; margin: 12px 0;
+  background: var(--bg-secondary); border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-muted);
+}
+.skill-detail table {
+  width: 100%; border-collapse: collapse; margin: 14px 0 22px;
+  font-size: 0.9rem; background: var(--white);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.skill-detail th, .skill-detail td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.skill-detail th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+.skill-detail tr:last-child td { border-bottom: none; }
+.skill-detail pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  color: var(--text); margin: 12px 0 20px;
+}
+.skill-detail code {
+  font-family: var(--font-mono); font-size: 0.85rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.skill-detail pre code { background: none; padding: 0; }
+
+/* Hero (used on landing) */
+.hero { padding: 80px 0 60px; }
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; margin-bottom: 18px; letter-spacing: -0.02em;
+  line-height: 1.15; color: var(--text);
+}
+.hero-subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; line-height: 1.6; margin-bottom: 28px; }
+.stat-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; color: var(--text-muted); font-size: 0.95rem; }
+.stat-row .stat { display: inline-flex; align-items: center; gap: 6px; }
+.stat-row .stat strong { color: var(--text); font-family: var(--font-mono); font-size: 1rem; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.disclaimer {
+  background: rgba(217,119,87,0.06); border: 1px solid rgba(217,119,87,0.18);
+  border-left: 4px solid var(--accent); border-radius: var(--radius);
+  padding: 16px 20px; font-size: 0.9rem; color: var(--text-muted);
+  margin: 24px 0 40px;
+}
+.disclaimer strong { color: var(--text); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 18px; border-radius: var(--radius); font-size: 0.9rem;
+  font-weight: 500; font-family: var(--font-sans);
+  border: 1px solid transparent; cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+.btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.btn-primary:hover { background: #2a2a28; color: var(--bg); box-shadow: var(--shadow); }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--border-strong); }
+.btn-secondary:hover { background: var(--bg-secondary); color: var(--text); box-shadow: var(--shadow-sm); }
+
+.section-heading {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 30px 0 20px; color: var(--text);
+}
+
+/* Content pages (getting-started / guides / reference) */
+.content-page { padding-bottom: 80px; max-width: 760px; }
+.content-page h2 {
+  font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700;
+  margin: 36px 0 14px; color: var(--text);
+}
+.content-page h3 { font-size: 1.1rem; font-weight: 600; margin: 22px 0 10px; color: var(--text); }
+.content-page p, .content-page li { font-size: 0.98rem; color: var(--text-muted); line-height: 1.7; }
+.content-page ul, .content-page ol { margin: 8px 0 18px 22px; }
+.content-page li { margin-bottom: 6px; }
+.content-page pre {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 18px; overflow-x: auto;
+  font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.7;
+  margin: 12px 0 22px;
+}
+.content-page code {
+  font-family: var(--font-mono); font-size: 0.88rem;
+  background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px;
+}
+.content-page pre code { background: none; padding: 0; }
+.content-page table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.content-page th, .content-page td {
+  padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border);
+}
+.content-page th { background: var(--bg-secondary); font-weight: 600; color: var(--text); }
+
+.cards-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0 28px; }
+.mini-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 18px 20px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.mini-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.mini-card h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 6px; color: var(--text); }
+.mini-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+.mini-card a.view-link { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8rem; margin-top: 10px; color: var(--accent); }
+
+/* Footer */
+.footer {
+  padding: 36px 0; border-top: 1px solid var(--border); margin-top: 40px;
+  background: var(--bg);
+}
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-links { display: flex; align-items: center; gap: 12px; font-size: 0.85rem; color: var(--text-muted); }
+.footer-links a { color: var(--text-muted); }
+.footer-links a:hover { color: var(--accent); }
+.footer-sep { color: var(--border-strong); }
+.footer-credit { font-size: 0.85rem; color: var(--text-muted); }
+.footer-credit a { color: var(--text); font-weight: 600; }
+
+/* Related skills */
+.related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .skills-grid, .related-grid { grid-template-columns: repeat(2, 1fr); }
+  .cards-row { grid-template-columns: 1fr; }
+  .nav-links { gap: 14px; }
+}
+@media (max-width: 480px) {
+  .skills-grid, .related-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; }
+  .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a href="https://borghei.github.io/AI-Skills-German-Law/" class="nav-logo">AI Skills German Law</a>
+    <div class="nav-links">
+      <a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/" class="active">Skills</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/getting-started/">Getting Started</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/guides/authoring/">Guides</a>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/reference/">Reference</a>
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener" class="gh-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+      <div class="lang-switch" role="group" aria-label="Language"><span class="lang-opt active" aria-current="true" title="English">EN</span><span class="lang-sep">/</span><a class="lang-opt" href="https://borghei.github.io/AI-Skills-German-Law/de/SKILLS/immobilien-grundbuchrecht/grundbuchverfahren.html" hreflang="de" lang="de" title="Deutsch">DE</a></div>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumbs container"><a href="https://borghei.github.io/AI-Skills-German-Law/">Home</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/">Skills</a><span class=sep>/</span><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/">Immobilien- und Grundbuchrecht</a><span class=sep>/</span><span>Grundbuchverfahren</span></div>
+<main class="container">
+
+<article class="skill-detail">
+  <div class="page-header">
+    <h1 class="page-title">Grundbuchverfahren</h1>
+    <p class="page-subtitle">Grundbuchverfahren nach der GBO – Eintragungsantrag § 13 GBO, formelles Konsensprinzip und Eintragungsbewilligung § 19 GBO, Nachweisform § 29 GBO, Voreintragungsgrundsatz § 39 GBO und die MoPeG-Falle des § 47 Abs. 2 GBO für die eingetragene GbR, Rangverhältnisse §§ 879–881 BGB einschließlich Rangvorbehalt und Rangänderung, Eintragungsfähigkeit, Grundbuchberichtigung § 22 GBO, Amtswiderspruch § 53 GBO und Widerspruch § 899 BGB, Zwischenverfügung § 18 GBO sowie Beschwerde § 71 GBO. Use when ein Grundbuchantrag vorbereitet, eine Zwischenverfügung oder Zurückweisung des Grundbuchamts beantwortet oder eine unrichtige Eintragung berichtigt werden soll.</p>
+    <div class="badge-bar"><span class="badge badge-domain">Immobilien- und Grundbuchrecht</span> <span class="badge badge-version">v0.1.0</span></div>
+    <div class="skill-meta" style="margin-bottom:24px"><span class="tag">grundbuchverfahren</span><span class="tag">§13</span><span class="tag">§19</span><span class="tag">§29</span><span class="tag">§39</span><span class="tag">§47</span><span class="tag">§§879</span><span class="tag">§22</span></div>
+  </div>
+  <section><h2>Purpose</h2><p>Das Grundbuchamt prüft nicht, ob die Beteiligten materiell recht haben — es prüft, ob ihm die <strong>formellen</strong> Voraussetzungen in der gesetzlich vorgeschriebenen Form nachgewiesen sind. Wer diesen Unterschied nicht sauber trennt, produziert Zwischenverfügungen, verliert Rang und blockiert die Kaufpreisfälligkeit. Dieser Skill stellt den eintragungsfähigen Antrag zusammen, prüft ihn gegen die Formalprüfung des Grundbuchamts und ordnet die Rechtsbehelfe gegen Zwischenverfügung und Zurückweisung ein.</p></section>
+<section><h2>Inputs</h2><ul><li><strong>Beantragte Eintragung</strong>: Eigentumswechsel, Vormerkung, Grundschuld, Dienstbarkeit, Nießbrauch, Löschung, Berichtigung, Widerspruch</li><li><strong>Grundbuchblatt</strong>: Amtsgericht, Grundbuchbezirk, Blattnummer, Bestandsverzeichnis und Abteilungen I–III im aktuellen Auszug</li><li><strong>Beteiligte</strong> und ihre Rechtsform: natürliche Person, GmbH/AG (Handelsregisterauszug), <strong>eGbR (Gesellschaftsregister)</strong>, Erbengemeinschaft, Betreuter, Minderjähriger</li><li>Vorliegende <strong>Erklärungen</strong>: Bewilligung, Auflassung, Löschungsbewilligung, Rangrücktritt — jeweils in welcher Form</li><li>Nachweise: Erbschein / Europäisches Nachlasszeugnis / notarielles Testament mit Eröffnungsprotokoll, Vollmachten, Genehmigungen</li><li>Bereits ergangene <strong>Zwischenverfügung</strong> oder Zurückweisung mit Datum des Zugangs</li><li>Gewünschter <strong>Rang</strong> und bereits eingetragene Rechte</li></ul></section>
+<section><h2>Sub-Agent Architecture</h2><ol><li><strong>Researcher</strong> (<a href="../../agents/researcher.md"><code>../../agents/researcher.md</code></a>) beschafft GBO, GBV, BGB-Sachenrecht und MoPeG-Folgeregelungen mit URL sowie die Kommentarstellen (Demharter, Schöner/Stöber, Bauer/Schaub).</li><li><strong>Drafter</strong> (<a href="../../agents/drafter.md"><code>../../agents/drafter.md</code></a>) formuliert Antrag, Bewilligung und gegebenenfalls Beschwerdeschrift.</li><li><strong>Reviewer</strong> (<a href="../../agents/reviewer.md"><code>../../agents/reviewer.md</code></a>) prüft Form § 29 GBO, Voreintragung, Rangangaben und Beschwerdefristen.</li></ol></section>
+<section><h2>Process</h2><h3>1. Eintragungsantrag (<a href="https://www.gesetze-im-internet.de/gbo/__13.html">§ 13 GBO</a>)</h3>
+<p>Eine Eintragung erfolgt grundsätzlich nur <strong>auf Antrag</strong>. Antragsberechtigt ist, wessen Recht von der Eintragung betroffen wird, und derjenige, zu dessen Gunsten die Eintragung erfolgen soll; der Notar gilt bei beurkundeten Erklärungen als ermächtigt (§ 15 GBV). Maßgeblich für den <strong>Rang</strong> ist der Zeitpunkt des Eingangs beim Grundbuchamt — der Antrag ist deshalb mit Uhrzeit zu registrieren. Der Antrag kann bedingt gestellt werden, soweit die Bedingung im Grundbuchverfahren selbst liegt (etwa: Eintragung nur bei bestimmtem Rang); im Übrigen ist er bedingungsfeindlich.</p>
+<h3>2. Formelles Konsensprinzip (<a href="https://www.gesetze-im-internet.de/gbo/__19.html">§ 19 GBO</a>)</h3>
+<p>Eine Eintragung erfolgt, wenn derjenige sie <strong>bewilligt</strong>, dessen Recht von ihr betroffen wird. Das Grundbuchamt prüft <strong>nicht</strong> die materielle Einigung, sondern allein die Bewilligung des Betroffenen — das ist das <strong>formelle Konsensprinzip</strong>. Ausnahme ist der Eigentumswechsel: Hier verlangt <a href="https://www.gesetze-im-internet.de/gbo/__20.html">§ 20 GBO</a> zusätzlich den Nachweis der <strong>Auflassung</strong>, also der materiellen Einigung (materielles Konsensprinzip). Die Bewilligung ist eine einseitige, dem Grundbuchamt gegenüber abzugebende Verfahrenserklärung; sie ist <strong>bedingungsfeindlich</strong> und grundsätzlich unwiderruflich, sobald sie beim Grundbuchamt eingegangen ist.</p>
+<h3>3. Form der Nachweise (<a href="https://www.gesetze-im-internet.de/gbo/__29.html">§ 29 GBO</a>)</h3>
+<p>Eintragungen erfolgen nur, wenn die erforderlichen Erklärungen durch <strong>öffentliche oder öffentlich beglaubigte Urkunden</strong> nachgewiesen sind; andere Voraussetzungen sind, soweit sie nicht offenkundig sind, ebenfalls in dieser Form zu belegen. Praktisch heißt das: Beglaubigung der Unterschrift genügt für die Bewilligung, für die Auflassung ist Beurkundung erforderlich. Vertretungsmacht wird durch beglaubigte Vollmacht, Handelsregisterauszug oder — bei der GbR — durch den Gesellschaftsregisterauszug nachgewiesen. Eine privatschriftliche Erklärung ist im Grundbuchverfahren <strong>wertlos</strong>, so eindeutig sie inhaltlich sein mag.</p>
+<h3>4. Voreintragungsgrundsatz und die MoPeG-Falle (<a href="https://www.gesetze-im-internet.de/gbo/<strong>39.html">§ 39 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>47.html">§ 47 Abs. 2 GBO</a>)</h3>
+<p>Eine Eintragung soll nur erfolgen, wenn der <strong>Betroffene selbst als Berechtigter eingetragen ist</strong> (§ 39 Abs. 1 GBO). Wer verfügen will, muss also zuvor im Grundbuch stehen; Ausnahmen gelten für die Erbfolge nach <a href="https://www.gesetze-im-internet.de/gbo/__40.html">§ 40 GBO</a>, wenn der Erbe das Recht überträgt oder aufhebt.</p>
+<p><strong>Seit dem 01.01.2024 (MoPeG) gilt für die Gesellschaft bürgerlichen Rechts eine zweite, eigenständige Hürde:</strong> Nach § 47 Abs. 2 GBO soll für eine Gesellschaft bürgerlichen Rechts ein Recht nur eingetragen werden, wenn sie <strong>im Gesellschaftsregister eingetragen</strong> ist. Das ist die zentrale Transaktionsfalle der Gegenwart:</p>
+<ul><li>Eine GbR, die vor 2024 als Eigentümerin mit ihren Gesellschaftern im Grundbuch steht, kann <strong>nicht wirksam verfügen</strong>, ohne sich zuvor als <strong>eGbR</strong> im Gesellschaftsregister eintragen und im Grundbuch entsprechend berichtigen zu lassen.</li><li>Betroffen sind auch der <strong>Erwerb</strong> durch eine GbR, die Bestellung einer Grundschuld, die Bewilligung einer Vormerkung und jede Löschung.</li><li>Zeitplanung: Die Registeranmeldung ist notariell zu beglaubigen und braucht Vorlauf. Wird sie erst beim Beurkundungstermin bemerkt, verzögert sich die gesamte Abwicklung um Wochen.</li><li>Prüfroutine: Steht auf einer Seite des Geschäfts eine GbR, ist <strong>vor Terminierung</strong> zu klären, ob sie bereits eGbR mit Registernummer ist.</li></ul>
+<h3>5. Eintragungsfähigkeit und Bestimmtheit</h3>
+<p>Eingetragen werden können nur <strong>dingliche Rechte und gesetzlich zugelassene Vermerke</strong> — nicht schuldrechtliche Abreden. Eintragungsfähig sind insbesondere Eigentum, Erbbaurecht, Dienstbarkeiten, Nießbrauch, Reallast, Vorkaufsrecht, Hypothek, Grund- und Rentenschuld, Vormerkung, Widerspruch, Verfügungsbeschränkungen. Nicht eintragungsfähig sind etwa Mietverträge, Nutzungsabreden ohne dinglichen Gehalt oder Zahlungspflichten. Der Inhalt muss <strong>bestimmt</strong> sein; zur Ergänzung darf auf die Eintragungsbewilligung Bezug genommen werden (<a href="https://www.gesetze-im-internet.de/bgb/__874.html">§ 874 BGB</a>), der wesentliche Rechtsinhalt muss aber aus dem Grundbuch selbst hervorgehen.</p>
+<h3>6. Rangverhältnisse (<a href="https://www.gesetze-im-internet.de/bgb/<strong>879.html">§ 879 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/</strong>880.html">§ 880 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/__881.html">§ 881 BGB</a>)</h3>
+<p>Das Rangverhältnis mehrerer Rechte in <strong>derselben Abteilung</strong> bestimmt sich nach der Reihenfolge der Eintragungen, bei Eintragungen in <strong>verschiedenen Abteilungen</strong> nach dem Datum; bei gleichem Datum haben die Rechte gleichen Rang (§ 879 Abs. 1 BGB). Abweichende Rangbestimmungen sind zulässig, müssen aber eingetragen werden (§ 879 Abs. 3 BGB).</p>
+<ul><li><strong>Rangänderung</strong> (§ 880 BGB): Einigung der beteiligten Berechtigten und Eintragung; steht ein Zwischenrecht entgegen, bleibt dessen Rang unberührt. Ist das zurücktretende Recht eine Hypothek oder Grundschuld, ist die Zustimmung des Eigentümers erforderlich.</li><li><strong>Rangvorbehalt</strong> (§ 881 BGB): Der Eigentümer behält sich bei der Belastung vor, ein anderes, dem Umfang nach bestimmtes Recht mit dem Rang vor dem eingetragenen Recht einzutragen. Ohne Eintragung des Vorbehalts wirkt er nicht.</li></ul>
+<h3>7. Grundbuchberichtigung (<a href="https://www.gesetze-im-internet.de/gbo/<strong>22.html">§ 22 GBO</a>) und Widerspruch (<a href="https://www.gesetze-im-internet.de/bgb/</strong>899.html">§ 899 BGB</a>)</h3>
+<p>Ist das Grundbuch <strong>unrichtig</strong> — die Buchlage weicht von der materiellen Rechtslage ab —, wird es entweder mit Bewilligung des Betroffenen oder durch <strong>Unrichtigkeitsnachweis</strong> in der Form des § 29 GBO berichtigt (§ 22 Abs. 1 GBO). Typischer Fall ist die Erbfolge: Nachweis durch Erbschein oder durch notarielles Testament nebst Eröffnungsniederschrift.</p>
+<p>Solange die Berichtigung nicht erfolgt ist, sichert der <strong>Widerspruch</strong> nach § 899 BGB: Er zerstört den <strong>öffentlichen Glauben</strong> des Grundbuchs (<a href="https://www.gesetze-im-internet.de/bgb/<strong>892.html">§ 892 BGB</a>) und verhindert damit den gutgläubigen Erwerb durch Dritte. Er wird auf Bewilligung des Betroffenen oder aufgrund <strong>einstweiliger Verfügung</strong> eingetragen — ein Verfügungsgrund muss dafür nicht glaubhaft gemacht werden. Erkennt das Grundbuchamt, dass es unter Verletzung gesetzlicher Vorschriften eine unrichtige Eintragung vorgenommen hat, trägt es von Amts wegen einen <strong>Amtswiderspruch</strong> nach <a href="https://www.gesetze-im-internet.de/gbo/</strong>53.html">§ 53 GBO</a> ein.</p>
+<h3>8. Zwischenverfügung und Beschwerde (<a href="https://www.gesetze-im-internet.de/gbo/<strong>18.html">§ 18 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>71.html">§ 71 GBO</a>)</h3>
+<p>Steht dem Antrag ein <strong>behebbares Hindernis</strong> entgegen, weist das Grundbuchamt den Antrag nicht sofort zurück, sondern erlässt eine <strong>Zwischenverfügung</strong> mit Fristsetzung; wird das Hindernis fristgerecht behoben, bleibt der <strong>ursprüngliche Rang</strong> erhalten (§ 18 Abs. 1 GBO). Das ist der Grund, weshalb eine Zwischenverfügung ernst zu nehmen und die Frist zu notieren ist. Unzulässig ist eine Zwischenverfügung, mit der ein von Anfang an fehlendes materielles Erfordernis nachgeschoben werden soll — dann ist zurückzuweisen.</p>
+<p>Gegen Entscheidungen des Grundbuchamts findet die <strong>Beschwerde</strong> zum Oberlandesgericht statt (§ 71 Abs. 1 GBO); sie ist <strong>nicht fristgebunden</strong>, gegen erfolgte Eintragungen aber nur mit dem Ziel eines Amtswiderspruchs oder einer Amtslöschung zulässig (§ 71 Abs. 2 GBO). Das Grundbuchamt kann abhelfen (<a href="https://www.gesetze-im-internet.de/gbo/__75.html">§ 75 GBO</a>). Gegen die Zwischenverfügung ist die Beschwerde statthaft; parallel sollte das Hindernis vorsorglich behoben werden, um den Rang nicht zu gefährden.</p></section>
+<section><h2>Deterministische Berechnung</h2><p>Die vom Grundbuchamt gesetzten Fristen der Zwischenverfügung sind <strong>Ereignisfristen</strong> nach <a href="https://www.gesetze-im-internet.de/bgb/<strong>187.html">§ 187 Abs. 1 BGB</a>; das Fristende verschiebt sich nach <a href="https://www.gesetze-im-internet.de/bgb/</strong>193.html">§ 193 BGB</a> auf den nächsten Werktag. Der Rechner in <a href="../../../scripts/legal_calc/"><code>../../../scripts/legal_calc/</code></a> macht <strong>nur die Arithmetik</strong> — der Zugang der Zwischenverfügung ist juristische Eingabe und gesondert nachzuweisen.</p>
+<pre><code># Frist einer Zwischenverfügung § 18 GBO: Zugang 15.01.2026, vier Wochen
+python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 4 --einheit wochen --land BY
+
+# Vorlauf für die Anmeldung zum Gesellschaftsregister vor dem Beurkundungstermin
+python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 2 --einheit wochen --land BY</code></pre>
+<p><code>--json</code> liefert die Rechenschritte samt Normzitat. <strong>Grundbuchkosten</strong> richten sich nach dem GNotKG; ein GNotKG-Modul ist <strong>nicht implementiert</strong> — die Gebühren sind gegen KV GNotKG von Hand zu ermitteln.</p></section>
+<section><h2>Sources</h2><h3>Statute</h3>
+<ul><li><a href="https://www.gesetze-im-internet.de/gbo/<strong>13.html">§ 13 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>18.html">§ 18 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/<strong>19.html">§ 19 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>20.html">§ 20 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/<strong>22.html">§ 22 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>29.html">§ 29 GBO</a></li><li><a href="https://www.gesetze-im-internet.de/gbo/<strong>39.html">§ 39 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>40.html">§ 40 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/<strong>47.html">§ 47 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>53.html">§ 53 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/<strong>71.html">§ 71 GBO</a>, <a href="https://www.gesetze-im-internet.de/gbo/</strong>75.html">§ 75 GBO</a></li><li><a href="https://www.gesetze-im-internet.de/bgb/<strong>874.html">§ 874 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/</strong>879.html">§ 879 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/<strong>880.html">§ 880 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/</strong>881.html">§ 881 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/<strong>892.html">§ 892 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/</strong>899.html">§ 899 BGB</a></li><li><a href="https://www.gesetze-im-internet.de/bgb/__707.html">§ 707 BGB</a> (Gesellschaftsregister der eGbR, MoPeG)</li></ul>
+<h3>Kommentare</h3>
+<ul><li>Demharter, GBO, 33. Aufl. 2023, § 19 Rn. 1 ff.; § 29 Rn. 1 ff.; § 39 Rn. 1 ff.</li><li>Schöner/Stöber, Grundbuchrecht, 16. Aufl. 2020, Rn. 1 ff. (Antrag, Bewilligung, Rang)</li><li>Bauer/Schaub, GBO, 5. Aufl. 2023, § 47 Rn. 1 ff. (GbR nach MoPeG)</li><li>Kohler, in: MüKoBGB, 9. Aufl. 2023, § 879 Rn. 1 ff.; § 899 Rn. 1 ff.</li></ul>
+<h3>Rechtsprechung</h3>
+<ul><li>Zur Reichweite des Voreintragungsgrundsatzes und zur Behandlung der GbR im Grundbuch nach dem MoPeG bildet sich die obergerichtliche Rechtsprechung erst seit dem 01.01.2024 heraus; einschlägige OLG-Beschlüsse sind vor Verwendung in juris zu recherchieren <code>[unverifiziert - prüfen]</code>.</li><li>Zur Unzulässigkeit einer Zwischenverfügung, die ein von Anfang an fehlendes materielles Erfordernis nachschieben soll, ist die einschlägige BGH- und OLG-Rechtsprechung heranzuziehen <code>[unverifiziert - prüfen]</code>. Kein Aktenzeichen ohne eigene Verifikation in juris / Beck-Online übernehmen.</li></ul></section>
+<section><h2>Formulierungshilfe — Grundbuchantrag und Widerspruchsantrag</h2><pre><code>An das Amtsgericht &lt;Ort&gt; — Grundbuchamt —
+Grundbuch von &lt;Gemarkung&gt;, Blatt &lt;Nr.&gt;
+
+Namens und in Vollmacht der Beteiligten beantrage ich:
+
+1. In Abteilung II einzutragen: Auflassungsvormerkung gemäß § 883 BGB
+   für &lt;Käufer, Name, Geburtsdatum&gt;, im Rang nach &lt;…&gt; und im Übrigen an
+   erster Rangstelle.
+
+2. In Abteilung III einzutragen: Grundschuld ohne Brief über
+   &lt;Betrag&gt; EUR nebst &lt;…&gt; % Jahreszinsen für &lt;Gläubigerin&gt;.
+
+3. In Abteilung I den Eigentumswechsel auf &lt;Käufer&gt; einzutragen.
+
+Die Eintragungsbewilligungen der Betroffenen sowie die Auflassung sind in
+der beigefügten notariellen Urkunde vom &lt;Datum&gt;, UR-Nr. &lt;…&gt;, enthalten
+(§§ 19, 20 GBO). Die Form des § 29 GBO ist gewahrt.
+
+Der Voreintragungsgrundsatz des § 39 GBO ist gewahrt; die veräußernde
+Gesellschaft ist seit dem &lt;Datum&gt; unter &lt;Registergericht, GsR &lt;Nr.&gt;&gt; im
+Gesellschaftsregister eingetragen (§ 47 Abs. 2 GBO). Ein aktueller
+Registerausdruck liegt bei.
+
+Die Anträge zu 1. bis 3. werden in dieser Reihenfolge und nur gemeinsam
+gestellt; Teilvollzug wird ausdrücklich nicht beantragt.</code></pre>
+<pre><code>Antrag auf Eintragung eines Widerspruchs (§ 899 BGB)
+
+Das Grundbuch ist unrichtig, weil &lt;Darstellung der materiellen Rechtslage&gt;.
+Zur Erhaltung des Rechts der Antragstellerin und zur Verhinderung eines
+gutgläubigen Erwerbs Dritter (§ 892 BGB) wird beantragt, gegen die
+Richtigkeit der Eintragung in Abteilung &lt;…&gt; lfd. Nr. &lt;…&gt; einen Widerspruch
+zugunsten der Antragstellerin einzutragen. Die Bewilligung des Betroffenen
+liegt vor / wird durch einstweilige Verfügung des Landgerichts &lt;Ort&gt; vom
+&lt;Datum&gt;, Az. &lt;…&gt;, ersetzt.</code></pre></section>
+<section><h2>Output Format</h2><pre><code>GRUNDBUCHVERFAHREN — &lt;Antrag / Zwischenverfügung / Berichtigung&gt; — &lt;Datum&gt;
+
+I.    Grundbuch / Beteiligte      &lt;AG, Gemarkung, Blatt&gt;
+II.   Beantragte Eintragung       &lt;Art, Abteilung, Inhalt&gt;
+III.  Antrag § 13 GBO             [✅]  Eingang / Rangzeitpunkt: &lt;Datum, Uhrzeit&gt;
+IV.   Bewilligung § 19 GBO        [✅ / ❌]   Auflassung § 20 GBO [✅ / N/A]
+V.    Form § 29 GBO               [öffentlich / beglaubigt / 🔴 privatschriftlich]
+      - Vertretungsnachweis       [HR-Auszug / GsR-Auszug / Vollmacht]
+VI.   Voreintragung § 39 GBO      [✅ / ❌]
+      eGbR § 47 Abs. 2 GBO        [nicht einschlägig / eingetragen GsR &lt;Nr.&gt;
+                                   / 🔴 GbR nicht registriert — Termin schieben]
+VII.  Eintragungsfähigkeit        [✅ / ❌ schuldrechtlich]  Bestimmtheit [✅ / ⚠️]
+VIII. Rang §§ 879–881 BGB         Gewünscht: &lt;…&gt;  Zwischenrechte: &lt;…&gt;
+      Rangvorbehalt / Rangänderung [N/A / eingetragen]
+IX.   Berichtigung § 22 GBO       [N/A / Bewilligung / Unrichtigkeitsnachweis]
+      Widerspruch § 899 BGB       [N/A / beantragt / Amtswiderspruch § 53 GBO]
+X.    Zwischenverfügung § 18 GBO  Zugang &lt;Datum&gt;  Frist bis &lt;Datum&gt;
+      Beschwerde § 71 GBO         [nicht erforderlich / eingelegt am &lt;Datum&gt;]
+
+Ergebnis: &lt;eintragungsreif / Hindernis behebbar / nicht eintragungsfähig&gt;
+Rangrisiko: [🟢 / 🟡 / 🔴]</code></pre></section>
+<section><h2>Risks and Common Mistakes</h2><ul><li><strong>GbR ohne Eintragung im Gesellschaftsregister</strong> — seit dem 01.01.2024 sperrt § 47 Abs. 2 GBO jede Eintragung; wird das erst im Beurkundungstermin bemerkt, kippt der gesamte Zeitplan.</li><li><strong>Voreintragungsgrundsatz übersehen</strong> — der Verfügende steht noch nicht im Grundbuch; ohne den Ausnahmefall des § 40 GBO ist zuerst zu berichtigen.</li><li><strong>Form des § 29 GBO verfehlt</strong> — privatschriftliche Bewilligung, unbeglaubigte Vollmacht oder veralteter Registerauszug; inhaltlich richtig, verfahrensrechtlich wertlos.</li><li><strong>Formelles und materielles Konsensprinzip verwechselt</strong> — das Grundbuchamt prüft die Bewilligung, beim Eigentumswechsel zusätzlich die Auflassung, aber nie den Kaufvertrag.</li><li><strong>Rang nicht ausdrücklich bestimmt</strong> — ohne Rangangabe entscheidet die Eingangsreihenfolge; ein Rangvorbehalt wirkt nur, wenn er eingetragen ist.</li><li><strong>Frist der Zwischenverfügung versäumt</strong> — mit der Zurückweisung geht der ursprüngliche Rangzeitpunkt verloren; die Beschwerde nach § 71 GBO heilt das nicht rückwirkend.</li><li><strong>Widerspruch zu spät</strong> — bis zur Eintragung des Widerspruchs bleibt der gutgläubige Erwerb nach § 892 BGB möglich; der Berichtigungsantrag allein sperrt ihn nicht.</li></ul></section>
+  <h2>Related Skills in Immobilien- und Grundbuchrecht</h2><div class="related-grid"><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/grundschuld-sicherungsrecht.html" class="skill-card" style="text-decoration:none"><h3>Grundschuld Sicherungsrecht</h3><p>Grundschuld als Kreditsicherheit – Bestellung und Inhalt §§ 1191 ff. BGB, Sicherungsabrede als...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/grundstueckskaufvertrag.html" class="skill-card" style="text-decoration:none"><h3>Grundstueckskaufvertrag</h3><p>Gestaltung und Prüfung des Grundstückskaufvertrags – Beurkundungszwang § 311b Abs. 1 BGB und...</p></a><a href="https://borghei.github.io/AI-Skills-German-Law/SKILLS/immobilien-grundbuchrecht/wohnungseigentum-teilungserklaerung.html" class="skill-card" style="text-decoration:none"><h3>Wohnungseigentum Teilungserklaerung</h3><p>Begründung von Wohnungseigentum und Gestaltung der Teilungserklärung – vertragliche Einräumung § 3 WEG...</p></a></div>
+  <p style="margin-top:32px"><a href="https://github.com/borghei/AI-Skills-German-Law/tree/main/immobilien-grundbuchrecht/skills/grundbuchverfahren/SKILL.md" target="_blank" rel="noopener" class="btn btn-secondary">View SKILL.md on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></p>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/borghei/AI-Skills-German-Law" target="_blank" rel="noopener">GitHub</a>
+      <span class="footer-sep">&middot;</span>
+      <span>Apache-2.0 OR MIT</span>
+      <span class="footer-sep">&middot;</span>
+      <a href="https://borghei.github.io/AI-Skills-German-Law/llms.txt">llms.txt</a>
+    </div>
+    <div class="footer-credit">Built by <a href="https://github.com/borghei" target="_blank" rel="noopener">Borghei</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

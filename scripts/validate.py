@@ -111,6 +111,14 @@ AREAS = [
     "kapitalmarktrecht",
     "kartellrecht",
     "cyber-resilience-act",
+    "immobilien-grundbuchrecht",
+    "zwangsvollstreckung",
+    "kostenrecht-rvg",
+    "wirtschafts-steuerstrafrecht",
+    "m-a-transaktionsrecht",
+    "vereins-stiftungs-gemeinnuetzigkeitsrecht",
+    "beamten-disziplinarrecht",
+    "reise-fluggastrecht",
 ]
 
 

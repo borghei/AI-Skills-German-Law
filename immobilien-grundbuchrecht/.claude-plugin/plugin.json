@@ -1,0 +1,11 @@
+{
+  "name": "immobilien-grundbuchrecht",
+  "version": "0.2.0",
+  "description": "Immobilientransaktion und Grundbuchrecht aus notarieller und anwaltlicher Praxisperspektive – Grundstückskaufvertrag mit Beurkundungszwang § 311b Abs. 1 BGB und Belehrungspflicht § 17 BeurkG, Auflassung § 925 BGB und Auflassungsvormerkung §§ 883, 885 BGB, Grundbuchverfahren nach GBO (Antrag § 13, Bewilligung § 19, Form § 29, Voreintragung §§ 39, 47 Abs. 2 GBO mit MoPeG-Falle der eGbR), Grundschuld und Sicherungsabrede §§ 1191 ff. BGB mit Unterwerfung § 794 Abs. 1 Nr. 5 ZPO, Wohnungseigentum und Teilungserklärung §§ 3, 5, 7, 8 WEG. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "reise-fluggastrecht",
+  "version": "0.2.0",
+  "description": "Reise- und Fluggastrecht als Massenanspruchsgeschäft – Ausgleichszahlung Art. 7 VO (EG) 261/2004 bei Annullierung Art. 5, großer Verspätung und Nichtbeförderung Art. 4, außergewöhnliche Umstände Art. 5 Abs. 3, Betreuung Art. 9, Erstattung Art. 8, Gerichtsstand Art. 7 Nr. 1 EuGVVO, Verjährung §§ 195, 199 BGB; Pauschalreiserecht §§ 651a ff. BGB mit Reisemangel § 651i, Minderung § 651m, Schadensersatz und entgangener Urlaubsfreude § 651n, Verjährung § 651j; Rücktritt § 651h BGB und Insolvenzabsicherung § 651r BGB; Abgrenzung Veranstalter/Vermittler § 651w BGB und Informationspflichten Art. 250 EGBGB. Researcher/Drafter/Reviewer-Subagenten.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Borghei",
+    "url": "https://github.com/borghei"
+  },
+  "homepage": "https://github.com/borghei/AI-Skills-German-Law"
+}

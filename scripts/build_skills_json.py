@@ -39,6 +39,8 @@ DOMAINS_ORDER = [
     "berufsrecht-anwaltschaft",
     # Cyber-Resilienz / Produkt-Cybersicherheit
     "cyber-resilience-act",
+
+    "immobilien-grundbuchrecht", "zwangsvollstreckung", "kostenrecht-rvg", "wirtschafts-steuerstrafrecht", "m-a-transaktionsrecht", "vereins-stiftungs-gemeinnuetzigkeitsrecht", "beamten-disziplinarrecht", "reise-fluggastrecht",
 ]
 
 # Human-readable category labels for the site.
@@ -93,6 +95,14 @@ DOMAIN_META = {
     "patentrecht": ("Patentrecht", "PatG/EPÜ, §§ 139 ff. Verletzung, Freedom-to-Operate, UPC"),
     "berufsrecht-anwaltschaft": ("Berufsrecht (Anwaltschaft)", "BRAO + § 203 StGB, FAO-Fortbildung § 15, RDG-Abgrenzung"),
     "cyber-resilience-act": ("Cyber Resilience Act", "VO (EU) 2024/2847 — Anwendungsbereich, Meldepflichten ab 11.09.2026, Anhang I, CE"),
+    "immobilien-grundbuchrecht": ('Immobilien- und Grundbuchrecht', 'Grundstückskaufvertrag § 311b BGB, Auflassung § 925, GBO §§ 13/19/29/39, Grundschuld §§ 1191 ff., Teilungserklärung § 8 WEG'),
+    "zwangsvollstreckung": ('Zwangsvollstreckung / ZVG', 'Titel-Klausel-Zustellung §§ 704 ff. ZPO, PfÜB §§ 829/835, P-Konto § 850k, Vermögensauskunft § 802c, ZVG §§ 15/44/81/180'),
+    "kostenrecht-rvg": ('Kostenrecht (RVG / GKG / PKH)', 'Gegenstandswert §§ 22 f. RVG, VV 2300/3100/3104, Kostenfestsetzung §§ 103 ff. ZPO, Vergütungsvereinbarung § 3a RVG, PKH §§ 114 ff. ZPO'),
+    "wirtschafts-steuerstrafrecht": ('Wirtschafts- und Steuerstrafrecht', '§ 370 AO, §§ 263/266/266a/299 StGB, Verbandsgeldbuße §§ 30/130 OWiG, Einziehung §§ 73 ff. StGB, Internal Investigations'),
+    "m-a-transaktionsrecht": ('M&A / Transaktionsrecht', 'Share Deal § 15 III/IV GmbHG, Garantien § 311 I BGB, Due Diligence, Asset Deal mit § 613a BGB und § 25 HGB'),
+    "vereins-stiftungs-gemeinnuetzigkeitsrecht": ('Vereins-, Stiftungs- und Gemeinnützigkeitsrecht', 'Verein §§ 21 ff. BGB, Stiftungsrecht §§ 80–88 BGB (Reform 2023), Gemeinnützigkeit §§ 51–68 AO, Spendenrecht § 10b EStG'),
+    "beamten-disziplinarrecht": ('Beamten- und Disziplinarrecht', 'Dienstvergehen § 47 BeamtStG, Disziplinarmaßnahmen §§ 5/13 BDG, Konkurrentenstreit Art. 33 II GG + § 123 VwGO, dienstliche Beurteilung'),
+    "reise-fluggastrecht": ('Reise- und Fluggastrecht', 'VO (EG) 261/2004 Art. 5/7/8/9, Pauschalreise §§ 651a ff. BGB, Rücktritt § 651h, Insolvenzabsicherung § 651r'),
 }
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
