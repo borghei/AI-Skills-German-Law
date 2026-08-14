@@ -21,6 +21,7 @@ Run:
 """
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -138,6 +139,28 @@ class TestCatalogConsistency(unittest.TestCase):
         self.assertEqual(
             set(build_mod.DOMAINS_ORDER), on_disk, "build_skills_json.py DOMAINS_ORDER drifted from disk"
         )
+
+    def test_skill_version_tracks_the_plugin_not_a_frozen_literal(self):
+        from scripts import build_skills_json as build_mod
+
+        # Was hardcoded "0.1.0" for all 275 skills, so every skill page on the
+        # site showed a version chip frozen at the first release.
+        for domain in build_mod.DOMAINS_ORDER:
+            with self.subTest(domain=domain):
+                declared = json.loads(
+                    (REPO_ROOT / domain / ".claude-plugin" / "plugin.json").read_text(encoding="utf-8")
+                )["version"]
+                self.assertEqual(build_mod.plugin_version(domain), declared)
+
+    def test_all_plugin_versions_agree_with_the_catalog(self):
+        catalog = json.loads((REPO_ROOT / "skills.json").read_text(encoding="utf-8"))
+        versions = {
+            json.loads((REPO_ROOT / d / ".claude-plugin" / "plugin.json").read_text(encoding="utf-8"))["version"]
+            for d in (p.name for p in REPO_ROOT.iterdir()
+                      if p.is_dir() and (p / ".claude-plugin" / "plugin.json").exists())
+        }
+        self.assertEqual(len(versions), 1, f"plugin.json versions disagree: {sorted(versions)}")
+        self.assertEqual(catalog["version"], versions.pop())
 
     def test_every_domain_has_display_metadata(self):
         from scripts import build_skills_json as build_mod
