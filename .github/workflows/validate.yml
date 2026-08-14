@@ -24,6 +24,12 @@ jobs:
         run: python scripts/eval.py
       - name: Legal-calculator unit tests
         run: python -m unittest scripts.legal_calc.tests
+      - name: Toolchain unit tests
+        # The checkers themselves. Three defects shipped unnoticed because
+        # nothing tested validate/eval/verify_citations - a wrong statute slug,
+        # a quote-stripping gap that silently dropped a skill from the eval
+        # config, and area lists drifting apart from the tree.
+        run: python -m unittest scripts.tests_toolchain
       - name: Citation verification (offline, informational)
         run: python scripts/verify_citations.py
       - name: Generated artefacts are up to date

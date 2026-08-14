@@ -5,6 +5,91 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+_Nothing yet._
+
+## [0.3.0] - 2026-08-14
+
+Everything below this heading was on `main` but never tagged. `0.3.0` is the
+first annotated release; it carries the four new practice areas of 2026-08-14
+together with the previously untagged 2026-07-21 corrections.
+
+### Added — four new practice areas (2026-08-14)
+
+The library grows from **58 areas / 258 skills** to **62 areas / 275 skills**.
+Each new area was drafted against the primary sources, not from model memory:
+the statute texts were pulled from gesetze-im-internet.de and EUR-Lex during
+authoring, and every derived statute URL resolves in `--online` mode.
+
+- **`datenwirtschaftsrecht` (5 skills)** — EU-Datenverordnung (Data Act,
+  VO (EU) 2023/2854) und ihre deutsche Durchführung im **DADG**. Betroffenheit
+  und Rollen je Datenstrom, Zugangsanspruch Art. 4/5 mit dem prozeduralen
+  Geschäftsgeheimnisschutz des Art. 4 Abs. 6–8, Gegenleistung Art. 9 mit dem
+  KMU-Kostendeckel des Abs. 4, Missbrauchskontrolle Art. 13 gegenüber
+  §§ 305 ff. BGB, Cloud-Wechsel Art. 23–31 und B2G-Zugang Art. 14–22.
+  Zuständige Behörde ist die **Bundesnetzagentur** (§ 2 Abs. 1 DADG), für
+  personenbezogene Daten die BfDI (§ 16 DADG); Bußgeldrahmen aus § 15 DADG.
+  Der gestaffelte Geltungsbeginn des Art. 50 (12.09.2025 / 12.09.2026 /
+  12.01.2027 / 12.09.2027) ist in jeder Skill ein eigener Prüfungsschritt.
+- **`barrierefreiheit-bfsg` (4 skills)** — BFSG und BFSGV, anwendbar seit dem
+  **28.06.2025**. Abschließende Produkt- und Dienstleistungskataloge des § 1,
+  Kleinstunternehmensausnahme des § 3 Abs. 3 **nur für Dienstleistungen**,
+  Konformitätsnachweis §§ 6/18/19 mit Anlage 2, Dienstleisterpflichten § 14 mit
+  den vier Pflichtbestandteilen der Anlage 3, Ausnahmen §§ 16/17 mit Anlage 4
+  und der Sperre des § 17 Abs. 4, Marktüberwachung mit der Zehn-Tage-Untergrenze
+  des § 22 Abs. 2 S. 2 und Bußgeld bis 100.000 EUR. Eine vierte Skill deckt das
+  getrennte Regime der öffentlichen Stellen ab (BGG §§ 12a/12b, BITV 2.0,
+  Gebärdensprache und Leichte Sprache nach § 4 BITV 2.0 — ohne Bußgeldtatbestand).
+- **`schiedsverfahren-adr` (4 skills)** — Zehntes Buch der ZPO §§ 1025–1066.
+  Schiedsvereinbarung mit der Verbraucherform des § 1031 Abs. 5, Verfahrensführung
+  §§ 1034–1058, Aufhebung § 1059 mit der **Dreimonatsfrist ab Empfang** und der
+  Präklusion des § 1060 Abs. 2 S. 3, Vollstreckbarerklärung §§ 1060/1061 mit
+  Art. V und VII des New Yorker Übereinkommens. Alle Skills weisen aus, dass die
+  Änderungen des **G v. 20.05.2026 (BGBl. 2026 I Nr. 152)** auf
+  gesetze-im-internet.de textlich nachgewiesen, dokumentarisch aber noch nicht
+  abschließend eingearbeitet sind, und markieren das mit `[unverifiziert – prüfen]`.
+- **`gewerberecht` (4 skills)** — GewO und HwO. Untersagung § 35 einschließlich
+  der **Sperrwirkung des Abs. 8**, erlaubnispflichtige Gewerbe §§ 34a/34c/34d/34f/34i
+  nebst MaBV mit den widerlegbaren Regelvermutungen des § 34c Abs. 2, Anzeige § 14
+  und Betrieb ohne Zulassung § 15 Abs. 2, Reisegewerbe §§ 55 ff. und Marktprivileg
+  §§ 69/69a, Handwerksrolle §§ 1/7/7b/8 und Untersagung § 16 Abs. 3 HwO mit der
+  gemeinsamen Erklärung von Handwerkskammer und IHK als Zulässigkeitsvoraussetzung.
+
+Coverage note: keine der vier Areas hat bislang einen Verifikationslauf nach
+`VERIFICATION_STATUS.md`. Zu Data Act, DGA und BFSG existiert praktisch **keine
+Rechtsprechung**; die Skills arbeiten deshalb bewusst mit Normtext,
+Erwägungsgründen und Behördenverlautbarungen und markieren jede erinnerte
+Entscheidung als `[unverifiziert – prüfen]`.
+
+### Fixed — toolchain defects found while adding the areas (2026-08-14)
+
+- **`scripts/verify_citations.py` — UWG-Slug.** Die Abkürzung war auf `uwg`
+  gemappt; gesetze-im-internet.de serviert das UWG unter `uwg_2004`. Im
+  `--online`-Lauf schlugen dadurch **alle 144 UWG-Zitate** des Repos mit HTTP 404
+  fehl, obwohl die Zitate korrekt waren.
+- **`scripts/verify_citations.py` — EGBGB.** gesetze-im-internet.de veröffentlicht
+  für das EGBGB **keine** Einzelartikel-Seiten (`art_1`, `art_229`, `art_246`,
+  `art_247` sind sämtlich 404). Der abgeleitete Link wurde als Fehler gewertet;
+  betroffen waren alle 44 EGBGB-Zitate. Solche Normen werden jetzt informativ auf
+  den konsolidierten Volltext verwiesen statt als Fehlschlag gemeldet.
+- **`scripts/verify_citations.py` — fehlende Abkürzungen und Nicht-Normen.**
+  Ergänzt: DADG, DGG, DNG, BFSG, BFSGV, BGG, BITV 2.0, HwO, GastG, MaBV
+  (`gewo_34cdv`), MediationsG, BBiG, WpIG, UKlaG, RDGEG sowie die CELEX-Nummern
+  für RL (EU) 2019/882 und 2016/2102. `UAbs.`, `Unterabs.` und `CE` werden nicht
+  mehr als Gesetzesabkürzung gelesen.
+- **`produktrecht/skills/prodhaftg-herstellerhaftung/test.md` — kaputtes YAML.**
+  Ein deutsches Schlusszeichen innerhalb eines doppelt gequoteten Scalars beendete
+  den String vorzeitig; die Frontmatter war nicht parsebar und die Skill fiel
+  **still aus der Eval-Konfiguration heraus**. `build_eval_config.py` erfasst
+  jetzt wieder alle Skills (275 statt 274).
+- **`scripts/eval.py` — Frontmatter-Parser.** Der Tiny-Parser entfernte nur
+  **doppelte** Anführungszeichen um einen Scalar. Ein einfach gequoteter Eintrag —
+  die korrekte YAML-Form, sobald der Wert selbst ein doppeltes Anführungszeichen
+  enthält — behielt seine Delimiter und konnte nie gegen den SKILL.md-Body
+  matchen. Jetzt werden beide Quote-Arten entfernt.
+- **`scripts/build_skills_json.py` — Plugin-Zahl.** Die Beschreibung in
+  `skills.json` nannte hartkodiert „48 plugins" und war damit 14 Areas hinter dem
+  Katalog, den sie beschreibt. Sie wird jetzt wie die Skill-Zahl abgeleitet.
+
 ### Fixed — superseded law (2026-07-21)
 
 Four areas taught law that had been repealed, replaced or deferred. Corrections

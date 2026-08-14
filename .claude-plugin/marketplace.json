@@ -297,6 +297,26 @@
       "name": "reise-fluggastrecht",
       "source": "./reise-fluggastrecht",
       "description": "Reise- und Fluggastrecht. VO (EG) 261/2004 Art. 5/7/8/9, Pauschalreise §§ 651a ff. BGB, Rücktritt § 651h, Insolvenzabsicherung § 651r."
+    },
+    {
+      "name": "datenwirtschaftsrecht",
+      "source": "./datenwirtschaftsrecht",
+      "description": "Datenwirtschaftsrecht – EU-Datenverordnung (Data Act, VO (EU) 2023/2854) und ihre deutsche Durchführung im DADG. Anwendungsbereich und Rollen Art. 1, 2, 7, Geltungsbeginn 12.09.2025 / 12.09.2026 / 12.01.2027 Art. 50; Zugangsanspruch des Nutzers Art. 3, 4, 5, 6 mit Geschäftsgeheimnisschutz Art. 4 Abs. 6–8; B2B-Bereitstellung und angemessene Gegenleistung Art. 8, 9; Missbrauchskontrolle einseitig auferlegter Klauseln Art. 13 im Verhältnis zu §§ 305 ff. BGB; Anbieterwechsel bei Datenverarbeitungsdiensten Art. 23–31 mit Wegfall der Wechselentgelte ab 12.01.2027; Durchsetzung durch die Bundesnetzagentur §§ 2, 6–14 DADG und Bußgelder § 15 DADG. Abgrenzung zu DSGVO, GeschGehG und Datenbankschutz. Researcher/Drafter/Reviewer-Subagenten."
+    },
+    {
+      "name": "barrierefreiheit-bfsg",
+      "source": "./barrierefreiheit-bfsg",
+      "description": "Barrierefreiheitsrecht – Barrierefreiheitsstärkungsgesetz (BFSG) und BFSGV in Umsetzung der RL (EU) 2019/882, anwendbar seit dem 28.06.2025. Anwendungsbereich für Produkte § 1 Abs. 2 und Dienstleistungen § 1 Abs. 3, Kleinstunternehmensausnahme § 3 Abs. 3 iVm § 2 Nr. 17, Übergangsbestimmungen § 38; Pflichten von Hersteller, Einführer und Händler §§ 6–13 mit EU-Konformitätserklärung § 18 und CE-Kennzeichnung § 19; Pflichten des Dienstleistungserbringers § 14 mit Barrierefreiheitsinformationen nach Anlage 3 und den Anforderungen der §§ 12, 13, 19 BFSGV; Ausnahmen wegen grundlegender Veränderung § 16 und unverhältnismäßiger Belastung § 17 nebst Anlage 4; Marktüberwachung §§ 20–31, Verbraucher- und Verbandsrechte §§ 32–34, Bußgelder § 37. Abgrenzung zum Recht öffentlicher Stellen: BGG §§ 12a, 12b, 16 und BITV 2.0. Researcher/Drafter/Reviewer-Subagenten."
+    },
+    {
+      "name": "schiedsverfahren-adr",
+      "source": "./schiedsverfahren-adr",
+      "description": "Schiedsverfahrensrecht und alternative Streitbeilegung – Zehntes Buch der ZPO §§ 1025–1066. Schiedsvereinbarung §§ 1029, 1030, 1031 mit Verbraucherform § 1031 Abs. 5, Einrede und Feststellungsantrag § 1032, Kompetenz-Kompetenz § 1040; Bildung und Ablehnung des Schiedsgerichts §§ 1034–1039, Verfahren §§ 1042–1050, einstweiliger Rechtsschutz §§ 1033, 1041, Kosten § 1057, Schiedsspruch §§ 1054, 1055; Aufhebungsantrag § 1059 mit Dreimonatsfrist und OLG-Zuständigkeit § 1062, Verfahren § 1063, Rechtsbeschwerde § 1065; Vollstreckbarerklärung inländischer § 1060 und ausländischer Schiedssprüche § 1061 iVm dem New Yorker Übereinkommen von 1958. Institutionelle Verfahren nach der DIS-Schiedsgerichtsordnung 2018 und Mediation nach dem MediationsG / § 278a ZPO. Researcher/Drafter/Reviewer-Subagenten."
+    },
+    {
+      "name": "gewerberecht",
+      "source": "./gewerberecht",
+      "description": "Gewerbe- und Handwerksrecht – Gewerbeordnung und Handwerksordnung in der Verwaltungspraxis. Gewerbeuntersagung wegen Unzuverlässigkeit § 35 GewO mit erweiterter Untersagung Abs. 1 S. 2, Sperrwirkung Abs. 8, Wiedergestattung Abs. 6 und Anhörung der Kammern Abs. 4; erlaubnispflichtige Gewerbe §§ 34a, 34c, 34d, 34f, 34i GewO nebst MaBV; Anzeigepflicht § 14 GewO und Verhinderung des Betriebs ohne Zulassung § 15 Abs. 2 GewO; Reisegewerbekarte §§ 55 ff. GewO, Anwendungsausnahmen § 6 GewO; Handwerksrolle §§ 1, 6–10 HwO, Meistervorbehalt Anlage A, Ausübungsberechtigung § 7b HwO, Ausnahmebewilligung § 8 HwO, EU/EWR § 9 HwO, Untersagung § 16 Abs. 3 HwO. Verfahren nach VwVfG und VwGO einschließlich Sofortvollzug § 80 Abs. 2 S. 1 Nr. 4 VwGO. Researcher/Drafter/Reviewer-Subagenten."
     }
   ]
 }
