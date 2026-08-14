@@ -247,7 +247,7 @@ STATUTE_SLUGS: dict[str, str] = {
     "GebrMG": "gebrmg",
     "DesignG": "geschmmg",
     "GeschGehG": "geschgehg",
-    "UWG": "uwg",
+    "UWG": "uwg_2004",
     "GWB": "gwb",
     "VgV": "vgv",
     # Umwelt / Energie
@@ -286,6 +286,25 @@ STATUTE_SLUGS: dict[str, str] = {
     "LkSG": "lksg",
     "HinSchG": "hinschg",
     "WpPG": "wppg",
+    # Datenwirtschafts-, Barrierefreiheits- und Gewerberecht. Ohne diese Einträge
+    # meldet der Parser jede "§ 14 BFSG"- oder "§ 7b HwO"-Fundstelle als
+    # unmarkiertes Rechtsprechungszitat.
+    "DADG": "dadg",
+    "DGG": "dgg",
+    "DNG": "dng",
+    "BFSG": "bfsg",
+    "BFSGV": "bfsgv",
+    "BGG": "bgg",
+    "BITV": "bitv_2_0",
+    "BITV 2.0": "bitv_2_0",
+    "HwO": "hwo",
+    "GastG": "gastg",
+    "MaBV": "gewo_34cdv",
+    "MediationsG": "mediationsg",
+    "BBiG": "bbig_2005",
+    "WpIG": "wpig",
+    "UKlaG": "uklag",
+    "RDGEG": "rdgeg",
     "EDL-G": "edl-g",
 }
 
@@ -307,6 +326,14 @@ KNOWN_NON_GII: dict[str, str] = {
     "MStV": "Medienstaatsvertrag (Landesrecht der Länder)",
     "RStV": "Rundfunkstaatsvertrag (Landesrecht)",
     "JuSchG": "Jugendschutz (teils Landesrecht/Staatsvertrag)",
+}
+
+# Laws whose individual articles gesetze-im-internet.de does not publish as
+# separate pages. The EGBGB is served only as one consolidated document, so a
+# derived art_<num>.html always 404s — reporting that as a failure is a false
+# negative, not a citation error.
+NO_PER_ARTICLE_PAGE: dict[str, str] = {
+    "EGBGB": "https://www.gesetze-im-internet.de/bgbeg/BJNR006049896.html",
 }
 
 # Abbreviations cited Art.-style on gesetze-im-internet.de (art_<num>.html).
@@ -367,6 +394,12 @@ EU_CELEX: dict[str, str] = {
     "Taxonomie-VO": "32020R0852",
     "UZK-DA": "32015R2446",
     "Vertikal-GVO": "32022R0720",
+    # Barrierefreiheit und Datenwirtschaft
+    "EAA": "32019L0882",
+    "Barrierefreiheitsrichtlinie": "32019L0882",
+    "Web-BarrierefreiheitsRL": "32016L2102",
+    "Datenverordnung": "32023R2854",
+    "DGA-VO": "32022R0868",
 }
 
 # ---------------------------------------------------------------------------
@@ -430,6 +463,10 @@ HEADING_RE = re.compile(r"^\s{0,3}#{1,6}\s")
 NON_STATUTE_TOKENS = {
     "Rn", "Rz", "Randnummer", "Randziffer", "S", "Seite",
     "Abs", "Nr", "Halbs", "Halbsatz", "Alt", "Var", "Buchst", "lit",
+    # Subdivision markers and stray words that follow a paragraph number but are
+    # not law abbreviations. "UAbs." (Unterabsatz) occurs in every EU-regulation
+    # citation; "CE" only ever appears via "§ 18 und CE-Kennzeichnung".
+    "UAbs", "Unterabs", "Unterabsatz", "CE",
 }
 
 
@@ -564,6 +601,17 @@ def _scan_statutes(line: str, lineno: int, source: str, online: bool,
                 f"EU instrument ({abbr}, CELEX {EU_CELEX[abbr]}); "
                 "article-level deep link not resolvable deterministically",
                 url,
+            ))
+            continue
+
+        # Laws served only as one consolidated document — no derivable
+        # per-article URL, so verify the law, not the article.
+        if abbr in NO_PER_ARTICLE_PAGE:
+            findings.append(Finding(
+                source, lineno, "statute", citation, Severity.INFO,
+                f"{abbr}: gesetze-im-internet.de veröffentlicht keine "
+                "Einzelartikel-Seiten — Artikel im Volltext prüfen",
+                NO_PER_ARTICLE_PAGE[abbr],
             ))
             continue
 

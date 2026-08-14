@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import date
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +41,8 @@ DOMAINS_ORDER = [
     "cyber-resilience-act",
 
     "immobilien-grundbuchrecht", "zwangsvollstreckung", "kostenrecht-rvg", "wirtschafts-steuerstrafrecht", "m-a-transaktionsrecht", "vereins-stiftungs-gemeinnuetzigkeitsrecht", "beamten-disziplinarrecht", "reise-fluggastrecht",
+    # Datenwirtschaft, Barrierefreiheit, Schiedsverfahren, Gewerbe
+    "datenwirtschaftsrecht", "barrierefreiheit-bfsg", "schiedsverfahren-adr", "gewerberecht",
 ]
 
 # Human-readable category labels for the site.
@@ -103,6 +105,10 @@ DOMAIN_META = {
     "vereins-stiftungs-gemeinnuetzigkeitsrecht": ('Vereins-, Stiftungs- und Gemeinnützigkeitsrecht', 'Verein §§ 21 ff. BGB, Stiftungsrecht §§ 80–88 BGB (Reform 2023), Gemeinnützigkeit §§ 51–68 AO, Spendenrecht § 10b EStG'),
     "beamten-disziplinarrecht": ('Beamten- und Disziplinarrecht', 'Dienstvergehen § 47 BeamtStG, Disziplinarmaßnahmen §§ 5/13 BDG, Konkurrentenstreit Art. 33 II GG + § 123 VwGO, dienstliche Beurteilung'),
     "reise-fluggastrecht": ('Reise- und Fluggastrecht', 'VO (EG) 261/2004 Art. 5/7/8/9, Pauschalreise §§ 651a ff. BGB, Rücktritt § 651h, Insolvenzabsicherung § 651r'),
+    "datenwirtschaftsrecht": ('Datenwirtschaftsrecht (Data Act)', 'VO (EU) 2023/2854 + DADG — Zugang Art. 4/5, Gegenleistung Art. 9, Klauselkontrolle Art. 13, Cloud-Wechsel Art. 23–31, B2G Art. 14–22'),
+    "barrierefreiheit-bfsg": ('Barrierefreiheit (BFSG / BITV)', 'BFSG + BFSGV seit 28.06.2025 — Kataloge § 1, Konformität §§ 6/18/19, Dienstleistung § 14 + Anlage 3, Ausnahmen §§ 16/17; BGG §§ 12a/12b + BITV 2.0'),
+    "schiedsverfahren-adr": ('Schiedsverfahren und ADR', '§§ 1025–1066 ZPO — Schiedsvereinbarung § 1031, Verfahren §§ 1034–1058, Aufhebung § 1059, Vollstreckbarerklärung §§ 1060/1061 + New Yorker Übereinkommen'),
+    "gewerberecht": ('Gewerbe- und Handwerksrecht', 'GewO — Untersagung § 35, Erlaubnisse §§ 34a/34c/34d/34f/34i + MaBV, Anzeige § 14, Reisegewerbe §§ 55 ff.; HwO — Handwerksrolle §§ 1/7/7b/8/16'),
 }
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
@@ -221,17 +227,23 @@ def main() -> None:
     catalog = {
         "name": "ai-skills-german-law",
         "description": (
-            "AI skills for German legal practice and EU compliance — 48 plugins, "
+            # The plugin count was hardcoded at 48 and had drifted 14 areas behind
+            # the catalog it describes. Derive it, like the skill count.
+            f"AI skills for German legal practice and EU compliance — {len(DOMAINS_ORDER)} plugins, "
             f"{len(skills_out)} skills, multi-provider (Claude, Gemini, GPT), "
             "primary-source citations to gesetze-im-internet.de and EUR-Lex."
         ),
-        "version": "0.2.0",
+        "version": "0.3.0",
         "repository": "https://github.com/borghei/AI-Skills-German-Law",
         "website": "https://borghei.github.io/AI-Skills-German-Law",
         "author": "borghei",
         "license": "Apache-2.0 OR MIT",
         "total_skills": len(skills_out),
-        "updated": str(date.today()),
+        # UTC, not local: generate_site.py stamps the sitemap from
+        # datetime.now(timezone.utc), and CI's "generated artefacts are up to
+        # date" gate diffs both against the committed tree. A local/UTC skew
+        # made that gate fail on a date field alone.
+        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "domains": {
             d: {
                 "count": domain_counts.get(d, {}).get("count", 0),

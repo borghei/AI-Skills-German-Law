@@ -86,6 +86,10 @@ AREAS = [
     "vereins-stiftungs-gemeinnuetzigkeitsrecht",
     "beamten-disziplinarrecht",
     "reise-fluggastrecht",
+    "datenwirtschaftsrecht",
+    "barrierefreiheit-bfsg",
+    "schiedsverfahren-adr",
+    "gewerberecht",
 ]
 
 
@@ -104,6 +108,18 @@ class EvalResult:
         return (
             f"[{status}] {self.skill}: {len(self.passes)} ok, {len(self.failures)} failed"
         )
+
+
+def _unquote(value: str) -> str:
+    """Strip a surrounding YAML scalar quote — double **or single**.
+
+    Only double quotes were handled, so a single-quoted entry (the correct YAML
+    form whenever the value itself contains a double quote) kept its delimiters
+    and could never match the SKILL.md body.
+    """
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+        return value[1:-1]
+    return value
 
 
 def parse_test(test_path: Path) -> dict:
@@ -139,8 +155,7 @@ def parse_test(test_path: Path) -> dict:
             continue
         if re.match(r"^\s+-\s+", line) and current_key:
             value = line.strip()[2:].strip()
-            if value.startswith('"') and value.endswith('"'):
-                value = value[1:-1]
+            value = _unquote(value)
             meta.setdefault(current_key, [])
             if isinstance(meta[current_key], list):
                 meta[current_key].append(value)
@@ -155,9 +170,7 @@ def parse_test(test_path: Path) -> dict:
             elif value == "|":
                 meta[key] = ""
             else:
-                if value.startswith('"') and value.endswith('"'):
-                    value = value[1:-1]
-                meta[key] = value
+                meta[key] = _unquote(value)
     return meta
 
 

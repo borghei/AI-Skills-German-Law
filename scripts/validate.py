@@ -119,6 +119,10 @@ AREAS = [
     "vereins-stiftungs-gemeinnuetzigkeitsrecht",
     "beamten-disziplinarrecht",
     "reise-fluggastrecht",
+    "datenwirtschaftsrecht",
+    "barrierefreiheit-bfsg",
+    "schiedsverfahren-adr",
+    "gewerberecht",
 ]
 
 

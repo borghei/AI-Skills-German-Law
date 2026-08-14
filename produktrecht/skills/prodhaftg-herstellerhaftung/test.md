@@ -39,7 +39,7 @@ must_flag:
   - "Produktbeobachtungspflicht"
   - "Stichtag 08.12.2026 nicht geprüft"
   - "85-Mio.-EUR-Höchstgrenze auf Neuprodukte angewandt"
-  - "Software als „kein Produkt" abgetan"
+  - 'Software als „kein Produkt" abgetan'
 ---
 
 # Test — prodhaftg-herstellerhaftung

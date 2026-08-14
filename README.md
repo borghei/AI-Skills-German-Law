@@ -7,11 +7,11 @@
 
 <p align="center">
   <a href="https://github.com/borghei/AI-Skills-German-Law/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/borghei/AI-Skills-German-Law/validate.yml?branch=main&label=CI&logo=github" alt="CI Status"></a>
-  <img src="https://img.shields.io/badge/Areas-58-brightgreen.svg" alt="58 Areas">
-  <img src="https://img.shields.io/badge/Skills-258-success.svg" alt="258 Skills">
+  <img src="https://img.shields.io/badge/Areas-62-brightgreen.svg" alt="62 Areas">
+  <img src="https://img.shields.io/badge/Skills-275-success.svg" alt="275 Skills">
   <img src="https://img.shields.io/badge/Providers-Claude_%7C_Gemini_%7C_GPT-purple.svg" alt="Providers">
   <img src="https://img.shields.io/badge/Last_verified-2026--07--21-blue.svg" alt="Last verified">
-  <img src="https://img.shields.io/badge/Compliance-DSGVO_%7C_KI--VO_%7C_NIS2_%7C_CRA_%7C_HinSchG_%7C_LkSG_%7C_DORA_%7C_DSA_%7C_CSRD-red.svg" alt="Compliance">
+  <img src="https://img.shields.io/badge/Compliance-DSGVO_%7C_KI--VO_%7C_NIS2_%7C_CRA_%7C_HinSchG_%7C_LkSG_%7C_DORA_%7C_DSA_%7C_CSRD_%7C_Data--Act_%7C_BFSG-red.svg" alt="Compliance">
   <img src="https://img.shields.io/github/stars/borghei/AI-Skills-German-Law?style=social" alt="GitHub Stars">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0_OR_MIT-yellow.svg" alt="License"></a>
 </p>
@@ -40,7 +40,7 @@ A `[Modellwissen]`-Halluzination in einem Kündigungsschreiben ist kein Bug. Sie
 
 ## The fix
 
-A focused, **provider-agnostic** library: 58 areas, 258 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
+A focused, **provider-agnostic** library: 62 areas, 275 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
 
 It is **not legal advice**, **not a Beck-Online substitute**, and **not for Mandatsdaten without a § 203 StGB-compliant gateway**. It is a tested drafting aid with an honest paper trail.
 
@@ -86,7 +86,7 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 
 ## What's inside
 
-**58 areas: 24 substantive areas of German law (general practice and constitutional/public law), 5 Fachanwaltschaften, 8 EU/cross-cutting compliance frameworks, 8 high-volume practice areas, and 13 additional specialty plugins (regulated industries, IP, professional, finance/antitrust)** — together covering the breadth of German legal practice. Each area ships as its own installable plugin.
+**62 areas: 24 substantive areas of German law (general practice and constitutional/public law), 5 Fachanwaltschaften, 9 EU/cross-cutting compliance frameworks, 8 high-volume practice areas, 4 newly added areas (data economy, accessibility, arbitration, trade and crafts regulation), and 13 additional specialty plugins (regulated industries, IP, professional, finance/antitrust)** — together covering the breadth of German legal practice. Each area ships as its own installable plugin.
 
 ### German legal practice
 
@@ -158,6 +158,15 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 | **Beamten- und Disziplinarrecht** | [`beamten-disziplinarrecht/`](./beamten-disziplinarrecht/) | Dienstvergehen § 47 BeamtStG, Disziplinarbefugnisse §§ 33 f. BDG **(Bund: Verfügung statt Klage seit 2024)**, Konkurrentenstreit Art. 33 Abs. 2 GG + § 123 VwGO, dienstliche Beurteilung |
 | **Reise- und Fluggastrecht** | [`reise-fluggastrecht/`](./reise-fluggastrecht/) | VO (EG) 261/2004 Art. 5/7/8/9, Pauschalreise §§ 651a ff. BGB, Rücktritt § 651h, Insolvenzabsicherung § 651r |
 
+### Data economy, accessibility, dispute resolution & trade regulation
+
+| Area | Plugin | Coverage |
+|---|---|---|
+| **Datenwirtschaftsrecht (Data Act)** | [`datenwirtschaftsrecht/`](./datenwirtschaftsrecht/) | VO (EU) 2023/2854 + DADG — Zugang Art. 4/5 mit Geschäftsgeheimnisverfahren, Gegenleistung Art. 9, Klauselkontrolle Art. 13, **Cloud-Wechsel Art. 23–31 (entgeltfrei ab 12.01.2027)**, B2G Art. 14–22; Bundesnetzagentur als Datenkoordinator |
+| **Barrierefreiheit (BFSG / BITV)** | [`barrierefreiheit-bfsg/`](./barrierefreiheit-bfsg/) | BFSG + BFSGV **anwendbar seit 28.06.2025** — abschließende Kataloge § 1, Konformität §§ 6/18/19, Dienstleistung § 14 + Anlage 3, Ausnahmen §§ 16/17 + Anlage 4, Bußgeld bis 100.000 EUR; dazu BGG §§ 12a/12b + BITV 2.0 für öffentliche Stellen |
+| **Schiedsverfahren und ADR** | [`schiedsverfahren-adr/`](./schiedsverfahren-adr/) | §§ 1025–1066 ZPO — Schiedsvereinbarung § 1031 (Verbraucherform Abs. 5), Verfahren §§ 1034–1058, **Aufhebung § 1059 mit Dreimonatsfrist ab Empfang**, Vollstreckbarerklärung §§ 1060/1061 + New Yorker Übereinkommen Art. V/VII |
+| **Gewerbe- und Handwerksrecht** | [`gewerberecht/`](./gewerberecht/) | GewO — Untersagung § 35 **mit Sperrwirkung des Abs. 8**, Erlaubnisse §§ 34a/34c/34d/34f/34i + MaBV, Anzeige § 14, Reisegewerbe §§ 55 ff., Marktprivileg §§ 69/69a; HwO — Handwerksrolle §§ 1/7/7b/8, Untersagung § 16 Abs. 3 |
+
 ### Regulated industries & cross-cutting (expanded)
 
 | Area | Plugin | Triggers when |
@@ -215,7 +224,7 @@ We are unsentimental about trust. Here is what is verified today, what is in act
 
 - **Case-law verification.** Every BAG / BGH / EuGH citation the model could not independently confirm carries `[unverifiziert, prüfen]`. The verification path is one PR per citation with a Beck-Online / juris / openjur URL. **Highest-leverage contribution — and we mean that literally.**
 
-  Coverage today: **12 of 58 areas** have a verification record. Where a pass has run, the measured error rate is roughly **10 %**, and the errors are not obvious junk — in `urheber-medienrecht`, 30 decisions were confirmed and **12 errors caught**, including two competing citations for the same case where *neither* was correct, and one Aktenzeichen that resolves to a real decision of the cited date but a different case with a different Fundstelle. That is the failure mode that survives casual review because it looks checkable.
+  Coverage today: **12 of 62 areas** have a verification record. Where a pass has run, the measured error rate is roughly **10 %**, and the errors are not obvious junk — in `urheber-medienrecht`, 30 decisions were confirmed and **12 errors caught**, including two competing citations for the same case where *neither* was correct, and one Aktenzeichen that resolves to a real decision of the cited date but a different case with a different Fundstelle. That is the failure mode that survives casual review because it looks checkable.
 
   A practical method that does not need a paywalled database: `https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=YYYY-MM-DD&Aktenzeichen=<AZ>` resolves whenever the decision date is known. Caveat: dejure's text search does **not** index Entscheidungsnamen, so a name-only citation can be confirmed but never excluded — record such cases as "not retrievable", not "non-existent".
 - **Legal-accuracy eval.** Structural eval ships in CI (does the workflow mention § 1 KSchG). A behavioural layer now generates a [promptfoo](https://www.promptfoo.dev) config from the `test.md` files ([`scripts/build_eval_config.py`](./scripts/build_eval_config.py), see [`evals/README.md`](./evals/README.md)): deterministic assertions plus LLM-graded `expected_behavior` rubrics, judged by a different model family. Growing the per-skill rubric coverage and gold answers is open work.
@@ -246,7 +255,7 @@ The full audit trail lives in [`VERIFICATION_LOG.md`](./VERIFICATION_LOG.md) and
 ```bash
 # Validate the repo structure
 python scripts/validate.py
-# OK, 58 areas validated.
+# OK, 62 areas validated.
 
 # Run the eval suite (structural smoke check)
 python scripts/eval.py
@@ -354,7 +363,7 @@ Dual-licensed: **Apache-2.0** ([LICENSE-APACHE](./LICENSE-APACHE)) **OR** **MIT*
 ---
 
 <p align="center">
-  <strong>58 areas · 258 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
+  <strong>62 areas · 275 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
   Verified <strong>2026-05-21</strong> · <a href="https://borghei.me">borghei.me</a>
 </p>
 

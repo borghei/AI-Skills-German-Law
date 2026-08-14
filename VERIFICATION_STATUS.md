@@ -535,3 +535,20 @@ Beide Bereiche haben damit **null unmarkierte Fallzitate**. Die drei verbleibend
 Eine im Zuge der Korrektur neu entstandene Warnung (`§ 5 WiStG` — Abkürzung fehlt in der Statute-Map) wurde durch Ausschreiben als „Wirtschaftsstrafgesetz" beseitigt; reine Schreibweise, keine Inhaltsänderung.
 
 `validate.py` läuft für beide Bereiche sauber, `eval.py` besteht (kartellrecht 60 Checks, verfassungsrecht 59; 0 Fehler). **Keine `test.md` musste geändert werden** — keines der korrigierten Zitate wurde in einer Testdatei behauptet.
+
+---
+
+## Vier neue Bereiche (2026-08-14) — kein Verifikationslauf, mit Begründung
+
+Am 2026-08-14 kamen `datenwirtschaftsrecht` (5 Skills), `barrierefreiheit-bfsg` (4), `schiedsverfahren-adr` (4) und `gewerberecht` (4) hinzu — 17 Skills. Für keinen dieser Bereiche wurde ein Rechtsprechungs-Verifikationslauf im Sinne der obigen Tabellen durchgeführt. Der Grund ist unterschiedlich und für die Verlässlichkeit unterschiedlich bedeutsam:
+
+| Bereich | Rechtsprechungslage | Folge für die Skills |
+|---|---|---|
+| `datenwirtschaftsrecht` | Zur VO (EU) 2023/2854 (Data Act), zum DADG und zum DGA existiert **keine gefestigte Judikatur**. | Die Skills stützen sich auf Normtext, Erwägungsgründe, Kommissionsleitlinien und Verlautbarungen der Bundesnetzagentur. Sie enthalten **keine** benannten Entscheidungen. |
+| `barrierefreiheit-bfsg` | Das BFSG ist erst seit dem 28.06.2025 anwendbar; zu §§ 12a ff. BGG gibt es nur vereinzelte VG-Entscheidungen. | Ebenfalls keine benannten Entscheidungen. Die offene Frage, ob § 14 BFSG Marktverhaltensregel iSd § 3a UWG ist, wird ausdrücklich als **ungeklärt** gekennzeichnet. |
+| `schiedsverfahren-adr` | Zu §§ 1025 ff. ZPO **besteht** gefestigte Rechtsprechung von BGH und OLGen. | Die Skills benennen die Streitfelder (Formstrenge § 1031 Abs. 5, ordre public, Präklusion), aber **kein einziges Aktenzeichen** — statt unverifizierte Fundstellen zu setzen, verweisen sie auf die Recherche in juris/Beck-Online. Ein späterer Verifikationslauf kann hier echte Fundstellen ergänzen. |
+| `gewerberecht` | Zu § 35 GewO, § 34c GewO und § 1 Abs. 2 HwO **besteht** gefestigte Rechtsprechung von BVerwG und OVGen. | Ebenso: Streitfelder benannt, keine Aktenzeichen behauptet. |
+
+Konsequenz für die Metrik: Diese vier Bereiche tragen **null verifizierte** und **null falsch behauptete** Fallzitate bei. Sie erhöhen die Zahl der Bereiche ohne Verifikationsrecord von 46 auf 50 (von 62), verschlechtern die Fehlerquote der geprüften Bereiche aber nicht, weil sie keine Fallzitate enthalten.
+
+Was in diesen Bereichen **statt** Rechtsprechung verifiziert wurde: Sämtliche Normzitate wurden beim Verfassen gegen die Volltexte auf gesetze-im-internet.de und EUR-Lex gezogen, und `scripts/verify_citations.py --online` löst für alle vier Bereiche jeden abgeleiteten Statut-Link ohne Fehlschlag auf (0 warnings, 0 failures). Landesrechtliche Aussagen — Zuständigkeit, Fortbestand des Vorverfahrens, Landesdisziplinar- und Landesgaststättenrecht — tragen durchgehend `[unverifiziert – prüfen]`, ebenso der Bearbeitungsstand des Zehnten Buchs der ZPO nach dem G v. 20.05.2026 (BGBl. 2026 I Nr. 152).
