@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Versaeumnisurteil</h1>
     <p class="page-subtitle">Versäumnisurteil und Einspruch im Zivilprozess nach §§ 330 ff. ZPO. VU gegen Kläger (§ 330 ZPO) und Beklagten (§ 331 ZPO), Schlüssigkeitsprüfung, Einspruch (§ 338 ZPO), zweiwöchige Einspruchsfrist als Notfrist (§ 339 ZPO), Form des Einspruchs (§ 340 ZPO), zweites Versäumnisurteil. Use when bei Säumnis in der mündlichen Verhandlung ein Versäumnisurteil beantragt, abgewehrt oder per Einspruch angegriffen wird.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Prozessrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Prozessrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">versaeumnisurteil</span><span class="tag">§§330</span><span class="tag">§330</span><span class="tag">§331</span><span class="tag">§338</span><span class="tag">§339</span><span class="tag">§340</span><span class="tag">zpo</span></div>
   </div>
   <section><h2>Purpose</h2><p>Erscheint eine Partei in der mündlichen Verhandlung nicht oder verhandelt sie nicht, kann gegen sie ein Versäumnisurteil ergehen. Der Skill prüft die Voraussetzungen für ein Versäumnisurteil gegen Kläger oder Beklagten, die Schlüssigkeit des Klägervortrags und die fristgerechte Einlegung des Einspruchs. Fehler — vor allem das Versäumen der zweiwöchigen Notfrist — führen zur Rechtskraft des Versäumnisurteils und zum endgültigen Prozessverlust ohne Sachprüfung.</p></section>

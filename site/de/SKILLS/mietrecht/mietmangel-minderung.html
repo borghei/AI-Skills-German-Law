@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Mietmangel Minderung</h1>
     <p class="page-subtitle">Mietmangel und Mietminderung im Wohnraummietrecht – Mangelbegriff und kraft Gesetzes eintretende Minderung § 536 BGB, Ausschluss bei Kenntnis § 536b BGB, Schadensersatz und Selbstvornahme mit Aufwendungsersatz § 536a BGB, Mängelanzeige und Anzeigeobliegenheit § 536c BGB, Zurückbehaltungsrecht § 320 BGB, Symptomtheorie und Darlegungslast, Minderungsquote und Bezugsgröße Bruttomiete. Use when ein Mieter wegen eines Mangels mindern, Mängelbeseitigung verlangen oder Schadensersatz geltend machen will oder ein Vermieter eine Minderung prüft.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Mietrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Mietrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">mietmangel</span><span class="tag">minderung</span><span class="tag">§536</span><span class="tag">§536b</span><span class="tag">§536a</span><span class="tag">§536c</span><span class="tag">§320</span><span class="tag">bgb</span></div>
   </div>
   <section><h2>Zweck</h2><p>Die Minderung tritt <strong>kraft Gesetzes</strong> ein — sie muss nicht erklärt werden. Genau das erzeugt die typische Fehlkonstellation: Der Mieter mindert zu hoch oder ohne Anzeige, gerät in Zahlungsrückstand und verliert die Wohnung. Diese Skill bestimmt den Mangel, die Bezugsgröße, die Quote und die Grenzen der Minderung, ordnet Zurückbehaltungsrecht und Selbstvornahme ein und formuliert die Mängelanzeige, an der in der Praxis fast alles hängt.</p></section>

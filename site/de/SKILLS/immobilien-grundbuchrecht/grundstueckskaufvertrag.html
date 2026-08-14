@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Grundstueckskaufvertrag</h1>
     <p class="page-subtitle">Gestaltung und Prüfung des Grundstückskaufvertrags – Beurkundungszwang § 311b Abs. 1 BGB und Vollständigkeitsgrundsatz, Belehrungs- und Vorlesepflicht § 17 BeurkG nebst Zwei-Wochen-Frist § 17 Abs. 2a BeurkG, Auflassung § 925 BGB und Auflassungsvormerkung §§ 883, 885 BGB, Fälligkeitsvoraussetzungen der Kaufpreiszahlung, Lastenfreistellung und Belastungsvollmacht, Gefahr-, Nutzen- und Lastenwechsel §§ 446, 103 BGB, Sachmängelhaftung §§ 434, 442, 444 BGB und die Grenzen des Ausschlusses &#x27;gekauft wie besichtigt&#x27;. Use when ein Grundstücks- oder Wohnungskaufvertrag entworfen, ein Notarentwurf für Käufer oder Verkäufer geprüft oder eine gescheiterte Abwicklung aufgearbeitet wird.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Immobilien- und Grundbuchrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Immobilien- und Grundbuchrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">grundstueckskaufvertrag</span><span class="tag">§311b</span><span class="tag">§17</span><span class="tag">§925</span><span class="tag">§§883</span><span class="tag">§§446</span><span class="tag">§§434</span><span class="tag">bgb</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Grundstückskaufvertrag ist die formstrengste Alltagsurkunde des deutschen Zivilrechts: Ohne notarielle Beurkundung ist er nichtig, und jede nicht mitbeurkundete Nebenabrede zieht den gesamten Vertrag in die Nichtigkeit. Zugleich ist er ein Zahlungs- und Sicherungsmechanismus — der Käufer soll erst zahlen, wenn er das Eigentum sicher erhält, der Verkäufer soll erst übereignen, wenn er das Geld sicher hat. Dieser Skill entwirft und prüft den Vertrag entlang beider Achsen: Wirksamkeit (Form, Belehrung, Bestimmtheit) und Abwicklungssicherheit (Vormerkung, Fälligkeit, Lastenfreistellung).</p></section>

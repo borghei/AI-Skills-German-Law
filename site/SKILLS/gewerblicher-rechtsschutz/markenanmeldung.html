@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Markenanmeldung</h1>
     <p class="page-subtitle">Prüfung der Eintragungsfähigkeit und Anmeldestrategie einer Marke nach §§ 3, 8, 9, 32, 47 MarkenG – markenfähige Zeichen, absolute und relative Schutzhindernisse, Anmeldung beim DPMA, Waren- und Dienstleistungsverzeichnis (Nizza), Schutzdauer. Use when ein Mandant ein Zeichen als Marke anmelden will und Eintragungsfähigkeit, Klassifizierung und Anmeldestrategie zu klären sind.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Gewerblicher Rechtsschutz</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Gewerblicher Rechtsschutz</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">markenanmeldung</span><span class="tag">§§3</span><span class="tag">gewerblicher-rechtsschutz</span></div>
   </div>
   <section><h2>Purpose</h2><p>Vor jeder Markenanmeldung steht die Doppelprüfung: Ist das Zeichen überhaupt <strong>markenfähig</strong> und frei von <strong>absoluten Schutzhindernissen</strong>, und kollidiert es mit <strong>älteren Rechten</strong> (relative Schutzhindernisse)? Eine Anmeldung ohne diese Prüfung verbrennt Gebühren, erzeugt löschungsreife Marken und provoziert Widersprüche oder Abmahnungen Dritter. Dieses Skill strukturiert die Eintragungsprüfung und die Anmeldestrategie beim DPMA.</p></section>

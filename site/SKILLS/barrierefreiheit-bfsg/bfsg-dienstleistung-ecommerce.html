@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Bfsg Dienstleistung Ecommerce</h1>
     <p class="page-subtitle">Barrierefreiheit von Dienstleistungen im elektronischen Geschäftsverkehr – Pflichten des Dienstleistungserbringers § 14 BFSG, Barrierefreiheitsinformationen nach Anlage 3 Nr. 1 mit Beschreibung, Erläuterung, Konformitätsdarlegung und Angabe der Marktüberwachungsbehörde, materielle Anforderungen der §§ 12, 13 und 19 BFSGV, Stand der Technik § 3 BFSGV und Konformitätsvermutung §§ 4, 5 BFSG über harmonisierte Normen, Ausnahmen §§ 16, 17 BFSG mit Kriterienkatalog der Anlage 4 und fünfjährigem Wiederholungsrhythmus § 17 Abs. 3, Marktüberwachung von Dienstleistungen §§ 28–31, Verbraucher- und Verbandsrechte §§ 32, 33, Schlichtung § 34 sowie Bußgeld § 37 Abs. 1 Nr. 8. Use when ein Online-Shop, eine App, ein Bankangebot oder ein Personenbeförderungsdienst auf BFSG-Konformität zu bringen oder eine Beanstandung abzuwehren ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Barrierefreiheit (BFSG / BITV)</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Barrierefreiheit (BFSG / BITV)</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">bfsg</span><span class="tag">dienstleistung</span><span class="tag">ecommerce</span><span class="tag">§14</span><span class="tag">§§12</span><span class="tag">§3</span><span class="tag">§§4</span><span class="tag">§§16</span></div>
   </div>
   <section><h2>Purpose</h2><p>Der Skill bringt eine erfasste Dienstleistung — typischerweise einen Online-Shop, eine App oder ein Bankangebot für Verbraucher — auf BFSG-Konformität. Er trennt die drei Ebenen, die in der Praxis regelmäßig vermengt werden: die <strong>materiellen</strong> Anforderungen der BFSGV, die <strong>Informationspflicht</strong> nach § 14 Abs. 1 Nr. 2 iVm Anlage 3 und die <strong>Dokumentationspflicht</strong> bei Berufung auf eine Ausnahme. Er entwirft die Barrierefreiheitsinformationen und die Reaktion auf Verbraucher-, Verbands- und Behördenanträge.</p></section>

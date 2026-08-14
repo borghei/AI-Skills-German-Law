@@ -8,7 +8,7 @@ Get from zero to a working German legal AI skill in 60 seconds.
 # Add the marketplace
 /plugin marketplace add borghei/AI-Skills-German-Law
 
-# Install the area you need (replace with any of the 62 areas)
+# Install the area you need (replace with any of the 66 areas)
 /plugin install arbeitsrecht
 
 # Use it
@@ -55,7 +55,7 @@ Open any `SKILL.md` in the repo, copy the body (everything below the frontmatter
 
 ## Pick an area
 
-62 areas grouped by buyer persona (full catalog: [borghei.github.io/AI-Skills-German-Law/SKILLS](https://borghei.github.io/AI-Skills-German-Law/SKILLS/)):
+66 areas grouped by buyer persona (full catalog: [borghei.github.io/AI-Skills-German-Law/SKILLS](https://borghei.github.io/AI-Skills-German-Law/SKILLS/)):
 
 **German legal practice** (everyday Kanzlei work):
 `arbeitsrecht` · `datenschutzrecht` · `vertragsrecht` · `mietrecht` · `wohnungseigentumsrecht` · `gesellschaftsrecht` · `strafrecht` · `insolvenzrecht` · `prozessrecht` · `erbrecht` · `familienrecht` · `betreuungsrecht`
@@ -72,6 +72,9 @@ Open any `SKILL.md` in the repo, copy the body (everything below the frontmatter
 **Data economy, accessibility, dispute resolution & trade regulation** (added 2026-08-14):
 `datenwirtschaftsrecht` · `barrierefreiheit-bfsg` · `schiedsverfahren-adr` · `gewerberecht`
 
+**2026 regulatory wave** (added 2026-08-14):
+`verbandsklage-vdug` · `kritis-resilienz` · `entgelttransparenz-eu` · `krypto-mikar`
+
 **Substantive general law (expanded)**:
 `europarecht` · `verfassungsrecht` · `sozialrecht` · `handelsrecht` · `medizinrecht` · `versicherungsrecht` · `baurecht` · `verkehrsrecht` · `urheber-medienrecht` · `sportrecht` · `migrationsrecht` · `agrarrecht`
 
@@ -85,7 +88,7 @@ Open any `SKILL.md` in the repo, copy the body (everything below the frontmatter
 
 Three things, in order:
 
-1. **Read [VERIFICATION_LOG.md](./VERIFICATION_LOG.md) and [VERIFICATION_STATUS.md](./VERIFICATION_STATUS.md)**, last verified 2026-07-21. Note: 50 of 62 areas have no verification record yet; in the areas checked so far the measured citation error rate is roughly 10 %
+1. **Read [VERIFICATION_LOG.md](./VERIFICATION_LOG.md) and [VERIFICATION_STATUS.md](./VERIFICATION_STATUS.md)**, last verified 2026-07-21. Note: 54 of 66 areas have no verification record yet; in the areas checked so far the measured citation error rate is roughly 10 %
 2. **Verify the case-law citations** in the SKILL.md you plan to use; replace `[unverifiziert, prüfen]` markers with sourced URLs (one PR per citation helps every user)
 3. **Wire a § 203-compliant gateway** ([`references/gateway-setup.md`](./references/gateway-setup.md)) before sending any Mandatsdaten
 

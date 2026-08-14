@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Agg Entschaedigung</h1>
     <p class="page-subtitle">Entschädigung und Schadensersatz wegen Benachteiligung nach § 15 AGG – Benachteiligungsverbot §§ 1, 3, 7 AGG, Rechtfertigung §§ 8–10 AGG, Indizienbeweis und Beweislastumkehr § 22 AGG, zweistufiges Fristenregime (§ 15 Abs. 4 AGG: 2 Monate schriftliche Geltendmachung; § 61b Abs. 1 ArbGG: 3 Monate Klagefrist), Bewerberfälle und Deckelung § 15 Abs. 2 S. 2 AGG, kein Einstellungsanspruch § 15 Abs. 6 AGG, AGG-Hopping als Rechtsmissbrauchseinwand. Use when ein abgelehnter Bewerber oder ein Beschäftigter Entschädigung geltend macht oder ein Arbeitgeber eine AGG-Forderung abwehrt.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Arbeitsrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Arbeitsrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">agg</span><span class="tag">entschaedigung</span><span class="tag">§15</span><span class="tag">§§1</span><span class="tag">§§8</span><span class="tag">§22</span><span class="tag">§61b</span><span class="tag">arbeitsrecht</span></div>
   </div>
   <section><h2>Zweck</h2><p>AGG-Verfahren werden fast nie über die Diskriminierung entschieden, sondern über zwei Vorfragen: Ist die <strong>2-Monats-Frist</strong> des § 15 Abs. 4 AGG gewahrt, und reichen die vorgetragenen <strong>Indizien</strong> für die Vermutungswirkung des § 22 AGG? Dieser Skill arbeitet beide Fragen zuerst ab und bewertet erst danach Höhe und Rechtfertigung.</p></section>

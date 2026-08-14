@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Softwarelizenz Agb</h1>
     <p class="page-subtitle">Prüfung von Software-Lizenz- und Nutzungs-AGB: Einräumung von Nutzungsrechten (§ 31 UrhG), zustimmungsbedürftige Handlungen und Erschöpfungsgrundsatz bei Gebrauchtsoftware (§ 69c UrhG, UsedSoft), AGB-Inhaltskontrolle von Weitergabe- und Audit-Klauseln (§§ 305, 307 BGB). Use when Lizenzbedingungen für Software gestaltet oder auf Wirksamkeit geprüft werden.</p>
-    <div class="badge-bar"><span class="badge badge-domain">IT-Recht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">IT-Recht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">softwarelizenz</span><span class="tag">agb</span><span class="tag">§31</span><span class="tag">§69c</span><span class="tag">§§305</span><span class="tag">urhg</span><span class="tag">bgb</span><span class="tag">it-recht</span></div>
   </div>
   <section><h2>Purpose</h2><p>Software-Lizenzbedingungen verbinden Urheberrecht und AGB-Recht: Sie räumen Nutzungsrechte ein und beschränken sie zugleich durch vorformulierte Klauseln. Dieser Skill prüft die wirksame Einräumung der Nutzungsrechte, die Grenzen des Erschöpfungsgrundsatzes beim Weiterverkauf von Gebrauchtsoftware und die AGB-Festigkeit von Weitergabe-, Audit- und Bindungsklauseln.</p></section>

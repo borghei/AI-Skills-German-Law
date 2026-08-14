@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Opportunitaetseinstellung</h1>
     <p class="page-subtitle">Prüfung der Opportunitätseinstellung im Ermittlungs- und Hauptverfahren – Einstellung wegen Geringfügigkeit § 153 StPO, Einstellung gegen Auflagen und Weisungen § 153a StPO, Teileinstellung §§ 154, 154a StPO; Zustimmungserfordernisse, Auflagenkatalog, Rechtsfolgen. Use when eine Einstellung des Verfahrens aus Opportunitätsgründen zu prüfen, anzuregen oder zu verhandeln ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Strafrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Strafrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">opportunitaetseinstellung</span><span class="tag">§153</span><span class="tag">§153a</span><span class="tag">§§154</span><span class="tag">stpo</span><span class="tag">strafrecht</span></div>
   </div>
   <section><h2>Purpose</h2><p>Nicht jedes Verfahren muss mit Urteil oder Strafbefehl enden. Das Opportunitätsprinzip durchbricht den Legalitätsgrundsatz (§ 152 Abs. 2 StPO) und erlaubt bei geringer Schuld eine sanktionslose oder auflagengebundene Erledigung — <strong>ohne Eintragung im Führungszeugnis, ohne Schuldspruch</strong>. Dieser Skill prüft, welche der Einstellungsnormen einschlägig ist, welche <strong>Zustimmungen</strong> (Gericht, Staatsanwaltschaft, Beschuldigter) erforderlich sind, welche Auflagen verhandelbar sind und welche Rechtsfolgen — insbesondere der <strong>beschränkte Strafklageverbrauch</strong> — eintreten.</p></section>

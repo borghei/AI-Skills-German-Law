@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Prozesskostenhilfe</h1>
     <p class="page-subtitle">Prüfung und Antrag auf Prozesskostenhilfe (PKH) – die drei Voraussetzungen Bedürftigkeit, hinreichende Erfolgsaussicht und fehlende Mutwilligkeit § 114 ZPO, Einsatz von Einkommen und Vermögen mit Ratenberechnung § 115 ZPO, Beiordnung eines Rechtsanwalts § 121 ZPO. Use when eine bedürftige Partei für einen Zivilprozess Prozesskostenhilfe beantragen will oder die Erfolgsaussichten eines PKH-Antrags zu beurteilen sind.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Prozessrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Prozessrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">prozesskostenhilfe</span><span class="tag">§114</span><span class="tag">§115</span><span class="tag">§121</span><span class="tag">zpo</span><span class="tag">prozessrecht</span></div>
   </div>
   <section><h2>Purpose</h2><p>Prozesskostenhilfe (PKH) sichert den Zugang zum Recht für Parteien, die die Prozesskosten nicht aufbringen können (Art. 3, 20 GG – Rechtsschutzgleichheit). Sie hängt an <strong>drei Voraussetzungen</strong>: persönlich-wirtschaftlicher <strong>Bedürftigkeit</strong>, <strong>hinreichender Erfolgsaussicht</strong> und fehlender <strong>Mutwilligkeit</strong> (§ 114 ZPO). Liegen sie vor, übernimmt die Staatskasse die Kosten – ganz oder gegen Raten. Dieser Skill prüft die drei Voraussetzungen, berechnet einzusetzendes Einkommen und Vermögen und klärt die Anwaltsbeiordnung.</p></section>

@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Produkt Rueckruf Anordnung</h1>
     <p class="page-subtitle">Zivilrechtliche Rückrufpflicht des Herstellers aus § 823 I BGB (Produktbeobachtung, BGH „Pflegebetten&quot;) und öffentlich-rechtliche Anordnung der Marktaufsicht nach Art. 36 GPSR / sektoralen ProdSV mit Maßnahmenstufung (Warnung → Empfehlung → Reparatur → Rückruf → Vernichtung), Anhörung § 28 VwVfG, Sofortvollzug und Rechtsbehelf VwGO. Use when ein Hersteller die Rückruferforderlichkeit prüfen muss oder eine Marktaufsichtsbehörde eine Rückrufanordnung erlassen oder ihn der Adressat einer solchen Anordnung anfechten will.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Produktrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Produktrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">produkt</span><span class="tag">rueckruf</span><span class="tag">anordnung</span><span class="tag">§823</span><span class="tag">§28</span><span class="tag">art.36</span><span class="tag">bgb</span><span class="tag">vwgo</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill prüft die <strong>doppelte Rückrufdimension</strong>: einerseits die zivilrechtliche Pflicht des Herstellers zu Rückrufmaßnahmen aus seiner Produktbeobachtungs-Verkehrssicherungspflicht (§ 823 I BGB, BGH „Pflegebetten"), andererseits die öffentlich-rechtliche Anordnung der Marktaufsichtsbehörde nach Art. 36 GPSR und sektoralen Verordnungen. Er strukturiert die Maßnahmenstufung nach Verhältnismäßigkeit und unterstützt sowohl bei der Erstellung einer Rückruf-Kommunikation als auch beim Vorgehen gegen eine behördliche Anordnung.</p></section>

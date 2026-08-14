@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Marktbeherrschung Bewertung</h1>
     <p class="page-subtitle">Prüfung einer Marktbeherrschung und eines Missbrauchs nach §§ 18, 19, 19a, 20 GWB / Art. 102 AEUV – Marktabgrenzung sachlich/räumlich/zeitlich (Bedarfsmarktkonzept, SSNIP-Test), Marktanteilsvermutung § 18 IV GWB, Behinderungs- und Ausbeutungsmissbrauch, strukturmarktrelevante Plattformen § 19a GWB, relative Marktmacht § 20 GWB, objektive Rechtfertigung. Use when ein Mandant ein marktstarkes Unternehmen ist oder einem solchen ausgesetzt ist und sein Verhalten auf Missbrauch geprüft werden soll.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Kartellrecht (GWB/AEUV)</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Kartellrecht (GWB/AEUV)</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">marktbeherrschung</span><span class="tag">bewertung</span><span class="tag">§§18</span><span class="tag">§18</span><span class="tag">§19a</span><span class="tag">§20</span><span class="tag">art.102</span><span class="tag">gwb</span></div>
   </div>
   <section><h2>Purpose</h2><p>Der Skill prüft, ob ein Unternehmen marktbeherrschend iSv § 18 GWB bzw. Art. 102 AEUV ist und ob ein konkretes Verhalten einen <strong>Missbrauch</strong> darstellt — Behinderungs-, Ausbeutungs- oder Diskriminierungsmissbrauch sowie Sondertatbestände § 19 II Nr. 1–5 GWB. Er erfasst zugleich die jüngeren Verschärfungen für digitale Plattformen über § 19a GWB (überragende marktübergreifende Bedeutung) und die relative Marktmacht § 20 GWB ggü. kleinen und mittleren Unternehmen. Maßstab ist Marktabgrenzung → Marktstellung → Missbrauchstatbestand → objektive Rechtfertigung.</p></section>

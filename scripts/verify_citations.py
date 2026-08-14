@@ -177,7 +177,10 @@ STATUTE_SLUGS: dict[str, str] = {
     "BZRG": "bzrg",
     "BauNVO": "baunvo",
     "BÄO": "b_o",
-    "BörsG": "boersg_2007",
+    # gesetze-im-internet.de encodes the umlaut as an underscore: the
+    # Börsengesetz lives at /b_rsg_2007/, not /boersg_2007/. Every BörsG
+    # citation in the repo resolved to a 404 under --online.
+    "BörsG": "b_rsg_2007",
     "EStDV": "estdv_1955",
     "GAP-DZG": "gapdzg",
     "GBV": "gbo_dv",
@@ -304,6 +307,12 @@ STATUTE_SLUGS: dict[str, str] = {
     "BBiG": "bbig_2005",
     "WpIG": "wpig",
     "UKlaG": "uklag",
+    "VDuG": "vdug",
+    "KapMuG": "kapmug_2012",
+    "KRITISDachG": "kritisdachg",
+    "KRITIS": "kritisdachg",
+    "KRITIS-DachG": "kritisdachg",
+    "KMAG": "kmag",
     "RDGEG": "rdgeg",
     "EDL-G": "edl-g",
 }

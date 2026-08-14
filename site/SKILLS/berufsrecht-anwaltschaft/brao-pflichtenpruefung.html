@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Brao Pflichtenpruefung</h1>
     <p class="page-subtitle">Checkliste anwaltlicher Grundpflichten vor Mandatsannahme und im laufenden Mandat – Verschwiegenheit § 43a II BRAO + § 2 BORA + § 203 StGB, Interessenkollision § 43a IV BRAO + § 3 BORA + § 356 StGB (mit Sozietätszurechnung), Sachlichkeit § 43a III/§ 44, Werbung § 43b/§§ 6 ff. BORA, Auslagerung/KI § 43e, Vergütung § 49b, Fremdgeld § 43a V, GwG-Hinweispflichten § 50 BRAO. Use when ein Anwalt vor Mandatsannahme die berufsrechtliche Zulässigkeit prüfen muss, eine Sozietät einen Konflikt-Check braucht, ein RAK-Aufsichtsverfahren droht oder KI-/Cloud-Auslagerung berufsrechtlich abzusichern ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Berufsrecht (Anwaltschaft)</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Berufsrecht (Anwaltschaft)</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">brao</span><span class="tag">pflichtenpruefung</span><span class="tag">§43a</span><span class="tag">§2</span><span class="tag">§203</span><span class="tag">§3</span><span class="tag">§356</span><span class="tag">§44</span></div>
   </div>
   <section><h2>Purpose</h2><p>Der Skill prüft die zentralen Grundpflichten der BRAO entlang einer festen Reihenfolge — Verschwiegenheit zuerst, Interessenkollision zweitens, dann die konkreten Pflichtenkomplexe (Werbung, Auslagerung, Vergütung, Fremdgeld). Er ist sowohl Mandatsannahme-Checkliste als auch Verteidigungsraster, wenn ein Rüge- oder anwaltsgerichtliches Verfahren droht. Der Skill zeigt für jede Pflicht die strafrechtlichen Reflexe (§§ 203, 356 StGB) und die verfahrensrechtliche Folgenseite (§§ 73 ff., §§ 113 ff. BRAO).</p></section>

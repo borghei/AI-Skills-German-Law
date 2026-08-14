@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Internal Investigation</h1>
     <p class="page-subtitle">Durchführung einer unternehmensinternen Untersuchung (Internal Investigation) – Anlass und Mandatsstruktur, Arbeitnehmerbefragung im Spannungsfeld von arbeitsvertraglicher Auskunftspflicht und dem nemo-tenetur-Grundsatz, Mitbestimmung § 87 Abs. 1 Nr. 1 und Nr. 6 BetrVG, Datenschutz nach § 26 BDSG und Art. 6 DSGVO nach der EuGH-Entscheidung zu Art. 88 DSGVO, Beschlagnahmeschutz von Untersuchungsunterlagen § 97 StPO und die Kanzleidurchsuchung, Dokumentation sowie das Verhältnis zur Selbstanzeige und zur Kooperation mit der Staatsanwaltschaft. Use when ein Compliance-Verstoß intern aufzuklären, ein Interviewprogramm aufzusetzen oder das Beschlagnahmerisiko von Untersuchungsunterlagen zu bewerten ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Wirtschafts- und Steuerstrafrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Wirtschafts- und Steuerstrafrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">internal</span><span class="tag">investigation</span><span class="tag">§87</span><span class="tag">§26</span><span class="tag">§97</span><span class="tag">art.6</span><span class="tag">art.88</span><span class="tag">betrvg</span></div>
   </div>
   <section><h2>Purpose</h2><p>Eine Internal Investigation erzeugt genau das, was die Ermittlungsbehörde sonst mühsam beschaffen müsste: geordnete, ausgewertete, belastende Unterlagen. Ihr rechtlicher Kern ist deshalb nicht die Aufklärung, sondern die Frage, <strong>wem die Ergebnisse am Ende zur Verfügung stehen</strong>. Dieser Skill strukturiert Mandat, Befragung, Datenverarbeitung und Dokumentation so, dass Aufklärungsinteresse, Arbeitnehmerrechte und der Beschlagnahmeschutz nach § 97 StPO bewusst gegeneinander abgewogen werden — statt sich nachträglich als Fehlentscheidung zu erweisen.</p></section>

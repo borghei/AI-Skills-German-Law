@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Urheberrechtsverletzung Abmahnung</h1>
     <p class="page-subtitle">Prüfung einer Urheberrechtsverletzung und Entwurf einer § 97a UrhG-konformen Abmahnung mit dreifacher Schadensberechnung, Auskunftsanspruch § 101 UrhG (insb. Provider-Auskunft § 101 IX) und Reaktionsoptionen (modifizierte Unterlassungserklärung, negative Feststellungsklage). Use when der Mandant eine eigene Urheberrechtsverletzung geltend machen will oder eine Abmahnung erhalten hat, einschließlich Filesharing- und Plattform-Konstellationen (UrhDaG).</p>
-    <div class="badge-bar"><span class="badge badge-domain">Urheber- und Medienrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Urheber- und Medienrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">urheberrechtsverletzung</span><span class="tag">abmahnung</span><span class="tag">§97a</span><span class="tag">§101</span><span class="tag">urhg</span><span class="tag">urheber-medienrecht</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill prüft systematisch eine behauptete Urheberrechtsverletzung (Werkqualität, Aktivlegitimation, Verletzungshandlung, Schranken) und entwirft eine <strong>§ 97a UrhG-konforme Abmahnung</strong> mit Unterlassungsforderung, Schadensersatzberechnung (dreifache Methode), Auskunftsanspruch und Frist. Er adressiert zugleich Filesharing-Besonderheiten und Plattformkonstellationen (UrhDaG, DSA) sowie die Reaktionsseite (modifizierte Unterlassungserklärung, negative Feststellungsklage).</p></section>

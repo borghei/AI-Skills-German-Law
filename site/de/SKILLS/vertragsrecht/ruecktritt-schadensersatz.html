@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Ruecktritt Schadensersatz</h1>
     <p class="page-subtitle">Prüfung von Rücktritt und Schadensersatz wegen Leistungsstörung – Schadensersatz statt der Leistung §§ 280, 281 BGB, Unmöglichkeit §§ 275, 283, 326 BGB, Rücktritt nach Fristsetzung § 323 BGB und Entbehrlichkeit § 323 Abs. 2 BGB, Nebeneinander von Rücktritt und Schadensersatz § 325 BGB sowie Rückabwicklung mit Nutzungs- und Wertersatz §§ 346, 347 BGB. Use when eine Vertragspartei nicht, zu spät oder schlecht leistet und geklärt werden soll, ob eine Nachfrist zu setzen ist und welche Sekundärrechte in welcher Kombination bestehen.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Vertragsrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Vertragsrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">ruecktritt</span><span class="tag">schadensersatz</span><span class="tag">§§280</span><span class="tag">§§275</span><span class="tag">§323</span><span class="tag">§325</span><span class="tag">§§346</span><span class="tag">bgb</span></div>
   </div>
   <section><h2>Zweck</h2><p>Das Leistungsstörungsrecht der §§ 280 ff. BGB ist ein Weichensystem: Fast jeder Sekundäranspruch hängt davon ab, ob eine <strong>Nachfrist</strong> gesetzt wurde oder entbehrlich war. Dieser Skill bestimmt zuerst die Störungsart (Unmöglichkeit, Verzögerung, Schlechtleistung, Nebenpflichtverletzung), setzt dann die richtige Weiche und liefert die Formulierungshilfen für Nachfristschreiben und Rücktrittserklärung samt Rückabwicklungsbilanz.</p></section>

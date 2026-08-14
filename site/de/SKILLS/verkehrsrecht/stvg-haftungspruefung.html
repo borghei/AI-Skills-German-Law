@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Stvg Haftungspruefung</h1>
     <p class="page-subtitle">Haftungsprüfung nach Verkehrsunfall – Halterhaftung § 7 StVG, Fahrerhaftung § 18 StVG, Quotelung § 17 StVG bei beidseitiger Betriebsgefahr, Mitverschulden § 9 StVG iVm § 254 BGB, Schadensbezifferung mit 130%-Grenze, Nutzungsausfall, Mietwagen, Schmerzensgeld. Use when nach einem Verkehrsunfall die Haftungsquote und der ersatzfähige Schaden gegen Halter, Fahrer und Pflichtversicherer (§ 115 VVG) zu prüfen sind.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Verkehrsrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Verkehrsrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">stvg</span><span class="tag">haftungspruefung</span><span class="tag">§7</span><span class="tag">§18</span><span class="tag">§17</span><span class="tag">§9</span><span class="tag">§254</span><span class="tag">§115</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill prüft Ansprüche des Unfallgeschädigten gegen Halter (§ 7 StVG), Fahrer (§ 18 StVG) und Pflichtversicherer (§ 115 VVG) sowie die Quote nach § 17 StVG bei Beteiligung mehrerer Kraftfahrzeuge. Er beziffert den ersatzfähigen Schaden (Reparatur vs. Totalschaden, 130%-Grenze, Nutzungsausfall, Mietwagen, Schmerzensgeld) und liefert eine prozessfähige Quotenargumentation für die typischen Konstellationen (Auffahrunfall, Spurwechsel, Vorfahrtverletzung).</p></section>

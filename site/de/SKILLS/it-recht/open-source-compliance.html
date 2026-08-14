@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Open Source Compliance</h1>
     <p class="page-subtitle">Prüfung der Open-Source-Compliance in Produkten: urheberrechtliche Nutzungsrechte (§ 31 UrhG), Schutz von Computerprogrammen und zustimmungsbedürftige Verwertung (§ 69a, § 69c UrhG), Copyleft (GPL), Lizenzkette/Software Bill of Materials und Folgen der Lizenzverletzung (Unterlassung, Rückruf, § 97 UrhG). Use when die Verwendung von Open-Source-Komponenten in einem Produkt rechtlich abgesichert wird.</p>
-    <div class="badge-bar"><span class="badge badge-domain">IT-Recht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">IT-Recht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">open</span><span class="tag">source</span><span class="tag">compliance</span><span class="tag">§31</span><span class="tag">§69a</span><span class="tag">§69c</span><span class="tag">§97</span><span class="tag">urhg</span></div>
   </div>
   <section><h2>Zweck</h2><p>Open-Source-Software ist nicht „rechtefrei": Sie wird unter Lizenzen mit verbindlichen Bedingungen genutzt. Wer eine Bedingung verletzt, verliert die Lizenz und nutzt das Werk dann ohne Erlaubnis — mit urheberrechtlichen Folgen. Dieser Skill inventarisiert die eingesetzten Komponenten, bewertet ihre Lizenzpflichten (insbesondere Copyleft), prüft die Verträglichkeit innerhalb der Lizenzkette und bestimmt die Folgen einer Lizenzverletzung.</p></section>

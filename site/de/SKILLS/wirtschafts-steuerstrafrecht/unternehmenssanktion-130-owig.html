@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Unternehmenssanktion 130 Owig</h1>
     <p class="page-subtitle">Sanktionierung von Unternehmen nach dem OWiG – Aufsichtspflichtverletzung § 130 OWiG mit Anknüpfungspflicht, erforderlichen Aufsichtsmaßnahmen und Kausalitätserfordernis, Verbandsgeldbuße § 30 OWiG mit Anknüpfungstat, Adressatenkreis, Bußgeldrahmen von bis zu zehn Millionen Euro bei vorsätzlicher Straftat und fünf Millionen Euro bei Fahrlässigkeit, Zumessung § 17 OWiG mit Compliance als Zumessungsfaktor, Abschöpfung des wirtschaftlichen Vorteils und Einziehung sowie Rechtsnachfolge § 30 Abs. 2a OWiG. Use when ein Bußgeldrisiko des Unternehmens nach einer Mitarbeitertat zu bewerten, eine Compliance-Organisation als Entlastung darzustellen oder eine Verbandsgeldbuße abzuwehren ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Wirtschafts- und Steuerstrafrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Wirtschafts- und Steuerstrafrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">unternehmenssanktion</span><span class="tag">130</span><span class="tag">owig</span><span class="tag">§130</span><span class="tag">§30</span><span class="tag">§17</span><span class="tag">wirtschafts-steuerstrafrecht</span></div>
   </div>
   <section><h2>Zweck</h2><p>Das deutsche Recht kennt keine Unternehmensstrafe. Es kennt aber mit §§ 30, 130 OWiG ein Sanktionsinstrument, das über Bußgeld, Abschöpfung und Einziehung wirtschaftlich erheblich zuschlagen kann — und dessen Anwendung fast immer an derselben Frage hängt: War die Aufsicht so organisiert, dass die Zuwiderhandlung wesentlich erschwert war? Dieser Skill bewertet das Bußgeldrisiko nach einer Mitarbeitertat, arbeitet die Entlastung durch eine funktionierende Compliance-Organisation heraus und beziffert das Abschöpfungsrisiko.</p>

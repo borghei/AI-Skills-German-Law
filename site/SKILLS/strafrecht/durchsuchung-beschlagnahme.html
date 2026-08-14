@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Durchsuchung Beschlagnahme</h1>
     <p class="page-subtitle">Prüfung von Durchsuchung und Beschlagnahme – Durchsuchung beim Beschuldigten § 102 StPO und bei Dritten § 103 StPO, Richtervorbehalt und Gefahr im Verzug § 105 StPO, Sicherstellung/Beschlagnahme § 94 StPO und Verfahren § 98 StPO, Beschlagnahmeverbote § 97 StPO. Use when eine Durchsuchungs- oder Beschlagnahmemaßnahme auf Rechtmäßigkeit und Verwertbarkeit zu prüfen ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Strafrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Strafrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">durchsuchung</span><span class="tag">beschlagnahme</span><span class="tag">§102</span><span class="tag">§103</span><span class="tag">§105</span><span class="tag">§94</span><span class="tag">§98</span><span class="tag">§97</span></div>
   </div>
   <section><h2>Purpose</h2><p>Durchsuchung und Beschlagnahme sind grundrechtsintensive Zwangsmaßnahmen (Art. 13 GG, Art. 14 GG). Dieser Skill prüft die <strong>Rechtmäßigkeit</strong> der Anordnung — insbesondere den <strong>Richtervorbehalt</strong> —, die <strong>Verhältnismäßigkeit</strong> und die Folgen für die <strong>Verwertung</strong> sichergestellter Beweismittel. Er unterscheidet die Durchsuchung beim Beschuldigten von der beim unverdächtigen Dritten und prüft die Beschlagnahmeverbote.</p></section>

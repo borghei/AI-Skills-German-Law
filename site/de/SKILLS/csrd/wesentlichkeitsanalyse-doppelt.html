@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Wesentlichkeitsanalyse Doppelt</h1>
     <p class="page-subtitle">Durchführung der doppelten Wesentlichkeitsanalyse nach ESRS 1 §§ 25–53 – Impact Materiality (Auswirkungen des Unternehmens auf Mensch und Umwelt) und Financial Materiality (Risiken/Chancen aus Nachhaltigkeitsthemen für das Unternehmen). Use when ein Unternehmen erstmals CSRD-pflichtig ist oder die jährliche Wesentlichkeitsanalyse aufgesetzt wird.</p>
-    <div class="badge-bar"><span class="badge badge-domain">CSRD / ESRS</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">CSRD / ESRS</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">wesentlichkeitsanalyse</span><span class="tag">doppelt</span><span class="tag">§§25</span><span class="tag">esrs</span><span class="tag">csrd</span></div>
   </div>
   <section><h2>Zweck</h2><p>Die doppelte Wesentlichkeit ist der Anker jedes CSRD-Berichts. Themen, die als wesentlich identifiziert werden, lösen die ausführliche Berichtspflicht nach den themenbezogenen ESRS aus (E1–E5, S1–S4, G1). Eine fehlerhafte Wesentlichkeitsanalyse macht den gesamten Bericht angreifbar — und führt zu Prüfungseinschränkungen.</p>

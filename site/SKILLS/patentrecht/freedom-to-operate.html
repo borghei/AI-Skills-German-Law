@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Freedom To Operate</h1>
     <p class="page-subtitle">Freedom-to-Operate-Analyse vor Markteintritt – Recherche relevanter Patente / Gebrauchsmuster (DEPATISnet, esp@cenet, Patentscope), Schutzbereichsbestimmung nach § 14 PatG / Art. 69 EPÜ mit Wortlaut- und Äquivalenzprüfung, Lebensphasen-Analyse (anhängig / erteilt / abgelaufen / nichtig), Handlungsoptionen bei Treffer (Designaround, Lizenz, Nichtigkeitsantrag § 81 PatG, Verzicht, Risiko-Akzeptanz). Use when ein Unternehmen vor Markteintritt klären muss, ob sein Produkt fremde Schutzrechte verletzt.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Patentrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Patentrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">freedom</span><span class="tag">operate</span><span class="tag">§14</span><span class="tag">§81</span><span class="tag">art.69</span><span class="tag">patg</span><span class="tag">patentrecht</span></div>
   </div>
   <section><h2>Purpose</h2><p>Eine Freedom-to-Operate-Analyse (FTO, „Handlungsfreiheit") prüft, ob ein geplantes Produkt oder Verfahren fremde gewerbliche Schutzrechte verletzt. Sie ist Vorstufe der Verletzungsklage aus Sicht des potenziell Beklagten und Grundlage strategischer Entscheidungen (Designaround, Lizenznahme, Nichtigkeitsangriff). Der Skill liefert die Methodik zur Recherche, Schutzbereichsbestimmung und Handlungsempfehlung — mit klarer Begrenzung („zum Recherchestand X").</p></section>

@@ -123,6 +123,10 @@ AREAS = [
     "barrierefreiheit-bfsg",
     "schiedsverfahren-adr",
     "gewerberecht",
+    "verbandsklage-vdug",
+    "kritis-resilienz",
+    "entgelttransparenz-eu",
+    "krypto-mikar",
 ]
 
 
