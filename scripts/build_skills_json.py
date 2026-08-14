@@ -43,6 +43,8 @@ DOMAINS_ORDER = [
     "immobilien-grundbuchrecht", "zwangsvollstreckung", "kostenrecht-rvg", "wirtschafts-steuerstrafrecht", "m-a-transaktionsrecht", "vereins-stiftungs-gemeinnuetzigkeitsrecht", "beamten-disziplinarrecht", "reise-fluggastrecht",
     # Datenwirtschaft, Barrierefreiheit, Schiedsverfahren, Gewerbe
     "datenwirtschaftsrecht", "barrierefreiheit-bfsg", "schiedsverfahren-adr", "gewerberecht",
+    # Kollektiver Rechtsschutz, Resilienz, Entgelttransparenz, Kryptoaufsicht
+    "verbandsklage-vdug", "kritis-resilienz", "entgelttransparenz-eu", "krypto-mikar",
 ]
 
 # Human-readable category labels for the site.
@@ -109,6 +111,10 @@ DOMAIN_META = {
     "barrierefreiheit-bfsg": ('Barrierefreiheit (BFSG / BITV)', 'BFSG + BFSGV seit 28.06.2025 — Kataloge § 1, Konformität §§ 6/18/19, Dienstleistung § 14 + Anlage 3, Ausnahmen §§ 16/17; BGG §§ 12a/12b + BITV 2.0'),
     "schiedsverfahren-adr": ('Schiedsverfahren und ADR', '§§ 1025–1066 ZPO — Schiedsvereinbarung § 1031, Verfahren §§ 1034–1058, Aufhebung § 1059, Vollstreckbarerklärung §§ 1060/1061 + New Yorker Übereinkommen'),
     "gewerberecht": ('Gewerbe- und Handwerksrecht', 'GewO — Untersagung § 35, Erlaubnisse §§ 34a/34c/34d/34f/34i + MaBV, Anzeige § 14, Reisegewerbe §§ 55 ff.; HwO — Handwerksrolle §§ 1/7/7b/8/16'),
+    "verbandsklage-vdug": ('Verbandsklagerecht (VDuG)', 'Abhilfeklage §§ 14–21, Musterfeststellungsklage § 41, Quorum und Drittfinanzierung § 4, Anmeldung § 46 (3 Wochen, ohne § 193 BGB), Umsetzungsverfahren §§ 22–40'),
+    "kritis-resilienz": ('KRITIS-Resilienz (KRITIS-DachG)', 'Physische Resilienz nach RL (EU) 2022/2557 — Sektoren § 4, Registrierung § 8 (3 Monate, BBK), Resilienzplan § 13, Vorfallmeldung § 18 (24 h), Geschäftsleitung § 20'),
+    "entgelttransparenz-eu": ('Entgelttransparenz (RL 2023/970)', 'Umsetzungsfrist 07.06.2026 versäumt — Auskunft Art. 7, Berichterstattung Art. 9 ab 07.06.2027, gemeinsame Entgeltbewertung Art. 10, Beweislastumkehr Art. 18'),
+    "krypto-mikar": ('Kryptowerteaufsicht (MiCAR / KMAG)', 'Tokenklassen Art. 3, Whitepaper Art. 6/15, CASP-Zulassung Art. 59 ff., Marktmissbrauch Art. 86–92; deutsches Übergangsrecht § 50 KMAG endete 31.12.2025'),
 }
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
@@ -248,7 +254,7 @@ def main() -> None:
             f"{len(skills_out)} skills, multi-provider (Claude, Gemini, GPT), "
             "primary-source citations to gesetze-im-internet.de and EUR-Lex."
         ),
-        "version": "0.3.0",
+        "version": "0.4.0",
         "repository": "https://github.com/borghei/AI-Skills-German-Law",
         "website": "https://borghei.github.io/AI-Skills-German-Law",
         "author": "borghei",

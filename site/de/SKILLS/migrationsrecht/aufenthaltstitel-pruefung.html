@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Aufenthaltstitel Pruefung</h1>
     <p class="page-subtitle">Prüfung der einschlägigen Aufenthaltstitel-Art nach AufenthG (Visum § 6, Aufenthaltserlaubnis § 7, Niederlassungserlaubnis § 9, Daueraufenthalt-EU § 9a, Blaue Karte EU § 18b, Chancenkarte § 20a) und der allgemeinen Erteilungsvoraussetzungen § 5 AufenthG, Entwurf von Antrag und Begründung an die Ausländerbehörde. Use when ein Drittstaatsangehöriger erstmalig oder zum Zweckwechsel einen Aufenthaltstitel benötigt oder die Verlängerung beantragt.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Migrationsrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Migrationsrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">aufenthaltstitel</span><span class="tag">pruefung</span><span class="tag">§6</span><span class="tag">§7</span><span class="tag">§9</span><span class="tag">§9a</span><span class="tag">§18b</span><span class="tag">§20a</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill ordnet ein Aufenthaltsanliegen einem konkreten Titel des AufenthG zu, prüft die <strong>speziellen Erteilungsvoraussetzungen</strong> des Titelzwecks (§§ 16 ff. Studium, §§ 18 ff. Erwerb, §§ 25 ff. humanitär, §§ 27 ff. Familie) und die <strong>allgemeinen Erteilungsvoraussetzungen § 5 AufenthG</strong> und entwirft einen begründeten Antrag an die Ausländerbehörde. Er adressiert typische Versagungsgründe (Ausweisungsinteresse, fehlende Identitätsklärung) frühzeitig.</p></section>

@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Ict Risikomanagement</h1>
     <p class="page-subtitle">Aufbau eines DORA-konformen IKT-Risikomanagement-Rahmens für Finanzunternehmen – Governance Art. 5, Risikomanagement-Rahmen Art. 6, IKT-Systeme Art. 7, Identifikation Art. 8, Schutz Art. 9, Erkennung Art. 10, Reaktion und Wiederherstellung Art. 11, Lernen Art. 13. Use when ein Finanzunternehmen die DORA-Governance aufsetzt oder eine Gap-Analyse zum bestehenden BAIT/MaRisk-Rahmen durchführt.</p>
-    <div class="badge-bar"><span class="badge badge-domain">DORA</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">DORA</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">ict</span><span class="tag">risikomanagement</span><span class="tag">art.5</span><span class="tag">art.6</span><span class="tag">art.7</span><span class="tag">art.8</span><span class="tag">art.9</span><span class="tag">art.10</span></div>
   </div>
   <section><h2>Zweck</h2><p>DORA ist die zentrale EU-Cyber-Resilienzverordnung für den Finanzsektor. Bestehende BAIT/MaRisk-Strukturen sind <strong>nicht</strong> automatisch DORA-konform — die Pflichten reichen tiefer (insb. Drittparteien-Register, TLPT, Incident Reporting). Dieser Skill liefert die Gap-Analyse + Roadmap.</p></section>

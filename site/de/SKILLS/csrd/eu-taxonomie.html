@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Eu Taxonomie</h1>
     <p class="page-subtitle">Einordnung von Wirtschaftstätigkeiten nach der Taxonomie-VO (EU) 2020/852 – Taxonomiefähigkeit und Taxonomiekonformität (Art. 3, sechs Umweltziele Art. 9, „Do no significant harm“) sowie Offenlegung der KPI Umsatz/CapEx/OpEx nach Art. 8. Use when ein Unternehmen seine taxonomiefähigen und -konformen Anteile bestimmen oder die Art.-8-Offenlegung vorbereiten muss.</p>
-    <div class="badge-bar"><span class="badge badge-domain">CSRD / ESRS</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">CSRD / ESRS</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">taxonomie</span><span class="tag">art.3</span><span class="tag">art.9</span><span class="tag">art.8</span><span class="tag">csrd</span></div>
   </div>
   <section><h2>Zweck</h2><p>Die <strong>Taxonomie-VO (EU) 2020/852</strong> ist das Klassifikationssystem der EU für ökologisch nachhaltige Wirtschaftstätigkeit. Berichtspflichtige Unternehmen müssen offenlegen, welcher Anteil ihres <strong>Umsatzes</strong>, ihrer Investitionsausgaben (<strong>CapEx</strong>) und Betriebsausgaben (<strong>OpEx</strong>) auf taxonomiefähige bzw. taxonomiekonforme Tätigkeiten entfällt. Die Taxonomie verzahnt sich eng mit der CSRD/ESRS-Berichterstattung. Fehler in der Konformitätsprüfung (insbesondere bei „Do no significant harm“) führen zu Prüfungseinschränkungen und Greenwashing-Vorwürfen.</p>

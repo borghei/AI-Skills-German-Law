@@ -552,3 +552,25 @@ Am 2026-08-14 kamen `datenwirtschaftsrecht` (5 Skills), `barrierefreiheit-bfsg` 
 Konsequenz für die Metrik: Diese vier Bereiche tragen **null verifizierte** und **null falsch behauptete** Fallzitate bei. Sie erhöhen die Zahl der Bereiche ohne Verifikationsrecord von 46 auf 50 (von 62), verschlechtern die Fehlerquote der geprüften Bereiche aber nicht, weil sie keine Fallzitate enthalten.
 
 Was in diesen Bereichen **statt** Rechtsprechung verifiziert wurde: Sämtliche Normzitate wurden beim Verfassen gegen die Volltexte auf gesetze-im-internet.de und EUR-Lex gezogen, und `scripts/verify_citations.py --online` löst für alle vier Bereiche jeden abgeleiteten Statut-Link ohne Fehlschlag auf (0 warnings, 0 failures). Landesrechtliche Aussagen — Zuständigkeit, Fortbestand des Vorverfahrens, Landesdisziplinar- und Landesgaststättenrecht — tragen durchgehend `[unverifiziert – prüfen]`, ebenso der Bearbeitungsstand des Zehnten Buchs der ZPO nach dem G v. 20.05.2026 (BGBl. 2026 I Nr. 152).
+
+---
+
+## Vier weitere Bereiche (2026-08-14, v0.4.0) — kein Verifikationslauf, mit Begründung
+
+Am selben Tag kamen `verbandsklage-vdug`, `kritis-resilienz`, `entgelttransparenz-eu` und `krypto-mikar` hinzu — 16 Skills. Auch für sie wurde **kein Rechtsprechungs-Verifikationslauf** durchgeführt, und auch hier ist der Grund die Rechtslage, nicht mangelnde Sorgfalt:
+
+| Bereich | Rechtsprechungslage | Folge für die Skills |
+|---|---|---|
+| `verbandsklage-vdug` | VDuG seit **13.10.2023** in Kraft; erste obergerichtliche Entscheidungen ergehen seit 2025/2026, eine gefestigte höchstrichterliche Linie fehlt. | Keine Aktenzeichen behauptet. Ausdrücklich gewarnt wird davor, Rechtsprechung zur **alten** Musterfeststellungsklage nach §§ 606 ff. ZPO a. F. zu übertragen — die Bindungswirkung ist im VDuG neu geordnet. |
+| `kritis-resilienz` | KRITIS-Dachgesetz erst **2026** in Kraft. **Keine** Rechtsprechung. | Arbeitet mit Normtext, Erwägungsgründen der RL (EU) 2022/2557 und BBK/BSI-Verlautbarungen. Schwellenwerte stehen in Rechtsverordnungen und tragen `[unverifiziert – prüfen]`. |
+| `entgelttransparenz-eu` | Zur **RL (EU) 2023/970 keine** Judikatur. Sehr wohl gefestigt: EuGH und BAG zu Art. 157 AEUV, zur Vergleichbarkeit, zu § 22 AGG sowie EuGH zu unmittelbarer Richtlinienwirkung, weitem Staatsbegriff und Staatshaftung. | Die Skills benennen diese Linien als tragend, führen aber **keine** Aktenzeichen und verweisen auf die Recherche. |
+| `krypto-mikar` | Zu MiCAR und KMAG **keine** gefestigte Rechtsprechung. | Auslegungshilfen aus §§ 32, 37 KWG, der Prospekthaftung und der MAR werden **ausdrücklich als Auslegungshilfe gekennzeichnet**, nie als unmittelbare Quelle. |
+
+Was stattdessen verifiziert wurde: Sämtliche Normzitate wurden beim Verfassen gegen die Volltexte auf gesetze-im-internet.de und EUR-Lex gezogen — einschließlich der beiden Datumsangaben, die den praktischen Wert dieser Areas ausmachen und die aus dem Normtext selbst stammen:
+
+- **§ 46 Abs. 1 S. 2 VDuG** schließt § 193 BGB für die Anmeldefrist aus;
+- **§ 50 Abs. 2 Nr. 3 KMAG** beendet die MiCAR-Übergangserlaubnis mit Ablauf des **31.12.2025** und weicht damit von Art. 143 Abs. 3 MiCAR (01.07.2026) ab, wozu die Verordnung die Mitgliedstaaten ausdrücklich ermächtigt.
+
+`scripts/verify_citations.py --online` löst für alle vier Bereiche jeden abgeleiteten Statut-Link ohne Fehlschlag auf (0 warnings, 0 failures). Landesrechtliche Aussagen, Rechtsverordnungen und der Umsetzungsstand der RL (EU) 2023/970 tragen durchgehend `[unverifiziert – prüfen]`.
+
+Damit steigt die Zahl der Bereiche ohne Verifikationsrecord von 50 auf **54 (von 66)**; die Fehlerquote der geprüften Bereiche bleibt unberührt, weil die acht 2026er Bereiche zusammen **null** Fallzitate enthalten.

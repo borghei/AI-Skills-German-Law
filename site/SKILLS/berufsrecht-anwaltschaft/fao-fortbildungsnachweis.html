@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Fao Fortbildungsnachweis</h1>
     <p class="page-subtitle">Nachweis der Fortbildungspflicht nach § 15 FAO (15 Zeitstunden pro Jahr je Fachgebiet, kumulativ bei Mehrfach-Fachanwaltschaft) und Verteidigung gegen Widerruf der Fachanwaltsbezeichnung nach § 25 FAO. Use when die RAK einen Stichproben-Nachweis fordert, ein Fachanwalt die Vollständigkeit seiner Fortbildung prüfen will, oder ein Widerrufsbescheid wegen unterlassener Fortbildung anzufechten ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Berufsrecht (Anwaltschaft)</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Berufsrecht (Anwaltschaft)</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">fao</span><span class="tag">fortbildungsnachweis</span><span class="tag">§15</span><span class="tag">§25</span><span class="tag">berufsrecht-anwaltschaft</span></div>
   </div>
   <section><h2>Purpose</h2><p>Der Skill prüft, ob ein Fachanwalt die Fortbildungspflicht des § 15 FAO erfüllt hat, listet anerkennungsfähige und nicht anerkennungsfähige Formate auf und entwirft die Stellungnahme an die zuständige Rechtsanwaltskammer (RAK) bzw. die Klagebegründung gegen einen Widerrufsbescheid nach § 25 FAO. Er erfasst die kumulative Pflicht bei Mehrfach-Fachanwaltschaft und die Grenzen des § 15 Abs. 4 FAO zum Selbststudium.</p></section>

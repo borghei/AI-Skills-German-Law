@@ -317,6 +317,26 @@
       "name": "gewerberecht",
       "source": "./gewerberecht",
       "description": "Gewerbe- und Handwerksrecht – Gewerbeordnung und Handwerksordnung in der Verwaltungspraxis. Gewerbeuntersagung wegen Unzuverlässigkeit § 35 GewO mit erweiterter Untersagung Abs. 1 S. 2, Sperrwirkung Abs. 8, Wiedergestattung Abs. 6 und Anhörung der Kammern Abs. 4; erlaubnispflichtige Gewerbe §§ 34a, 34c, 34d, 34f, 34i GewO nebst MaBV; Anzeigepflicht § 14 GewO und Verhinderung des Betriebs ohne Zulassung § 15 Abs. 2 GewO; Reisegewerbekarte §§ 55 ff. GewO, Anwendungsausnahmen § 6 GewO; Handwerksrolle §§ 1, 6–10 HwO, Meistervorbehalt Anlage A, Ausübungsberechtigung § 7b HwO, Ausnahmebewilligung § 8 HwO, EU/EWR § 9 HwO, Untersagung § 16 Abs. 3 HwO. Verfahren nach VwVfG und VwGO einschließlich Sofortvollzug § 80 Abs. 2 S. 1 Nr. 4 VwGO. Researcher/Drafter/Reviewer-Subagenten."
+    },
+    {
+      "name": "verbandsklage-vdug",
+      "source": "./verbandsklage-vdug",
+      "description": "Verbandsklagerecht nach dem VDuG – Abhilfeklage § 14 mit Gleichartigkeitserfordernis § 15, Abhilfegrundurteil § 16, kollektivem Gesamtbetrag § 19 iVm § 287 ZPO und Abhilfeendurteil § 18 mit zulassungsfreier Revision; Musterfeststellungsklage § 41 und Bindungswirkung § 11 Abs. 3; Zulässigkeit §§ 1–8 mit klageberechtigten Stellen § 2, Verbraucherquorum von 50 Betroffenen § 4 Abs. 1, Verbot der Drittfinanzierung § 4 Abs. 2 und ausschließlicher OLG-Zuständigkeit § 3; Anmeldung zum Verbandsklageregister § 46 binnen drei Wochen nach Schluss der mündlichen Verhandlung ohne § 193 BGB, Sperrwirkungen §§ 8, 11 und Umsetzungsverfahren §§ 22–40 mit Sachwalter, Umsetzungsfonds § 25 und Widerspruchsverfahren § 28. Kleine Unternehmen gelten nach § 1 Abs. 2 als Verbraucher. Researcher/Drafter/Reviewer-Subagenten."
+    },
+    {
+      "name": "kritis-resilienz",
+      "source": "./kritis-resilienz",
+      "description": "Physische Resilienz kritischer Anlagen nach dem KRITIS-Dachgesetz in Umsetzung der RL (EU) 2022/2557 – Geltungsbereich und zehn Sektoren § 4 mit Bereichsausnahme für DORA-Finanzunternehmen § 4 Abs. 2, Erheblichkeitsschwellen § 5, Registrierung binnen drei Monaten § 8 über die gemeinsame Stelle von BSI und BBK, Risikoanalyse des Betreibers § 12, Resilienzpflichten und Resilienzplan § 13, Mindestanforderungen § 14, Nachweise und Audits § 16, Vorfallmeldung § 18 mit 24-Stunden-Erstmeldung und ausführlichem Bericht binnen eines Monats, Umsetzungs- und Überwachungspflicht der Geschäftsleitung § 20 nebst Haftung, Berichtspflichten § 21 und Bußgelder bis 1 Mio. EUR § 24. Zentrale Anlaufstelle ist das BBK, sektorspezifisch zuständig sind BNetzA, BMI, BMWE und weitere Behörden § 3. Abgrenzung zu NIS2/BSIG. Researcher/Drafter/Reviewer-Subagenten."
+    },
+    {
+      "name": "entgelttransparenz-eu",
+      "source": "./entgelttransparenz-eu",
+      "description": "Entgelttransparenz nach der RL (EU) 2023/970 und dem EntgTranspG – Umsetzungsfrist 07.06.2026 von Deutschland versäumt, daher unmittelbare Wirkung gegenüber staatlichen Arbeitgebern, Staatshaftung nach Francovich und richtlinienkonforme Auslegung des geltenden EntgTranspG; Entgelttransparenz vor der Beschäftigung Art. 5 mit Verbot der Frage nach der Entgeltentwicklung, Auskunftsrecht Art. 7 mit Zweimonatsfrist und Unwirksamkeit von Verschwiegenheitsklauseln, Berichterstattung Art. 9 mit den Schwellen 250 / 150 / 100 Beschäftigte und den Stichtagen 07.06.2027 und 07.06.2031, gemeinsame Entgeltbewertung Art. 10 ab 5 Prozent unerklärtem Entgeltgefälle, Beweislastumkehr Art. 18 mit Vollumkehr bei Transparenzpflichtverletzungen, Verjährung von mindestens drei Jahren ab Kenntnis Art. 21, Schadensersatz Art. 16 und Kosten Art. 22. Researcher/Drafter/Reviewer-Subagenten."
+    },
+    {
+      "name": "krypto-mikar",
+      "source": "./krypto-mikar",
+      "description": "Kryptowerteaufsicht nach der MiCAR (VO (EU) 2023/1114) und dem deutschen Kryptomärkteaufsichtsgesetz (KMAG) – Anwendungsbereich und Tokenklassen (vermögenswertreferenzierte Token, E-Geld-Token, sonstige Kryptowerte) mit den Ausnahmen des Art. 2 Abs. 3, 4 und der Abgrenzung zu KWG, WpIG, KAGB und ZAG; Kryptowerte-Whitepaper, öffentliches Angebot und Zulassung zum Handel nebst Haftung Art. 15 und § 19 KMAG; Zulassung und laufende Aufsicht der Anbieter von Kryptowerte-Dienstleistungen mit BaFin-Befugnissen §§ 3, 4, 9 bis 25 KMAG, digitaler operationaler Resilienz § 26 und Übergangsvorschrift § 50; Marktmissbrauchsregime Titel VI MiCAR mit Insiderhandel und Marktmanipulation, Verfolgung §§ 31 bis 36 KMAG, Straf- und Bußgeldvorschriften §§ 46, 47 KMAG. Researcher/Drafter/Reviewer-Subagenten."
     }
   ]
 }

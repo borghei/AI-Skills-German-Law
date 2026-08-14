@@ -1,12 +1,12 @@
 {
   "name": "ai-skills-german-law",
-  "description": "AI skills for German legal practice and EU compliance — 62 plugins, 275 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
-  "version": "0.3.0",
+  "description": "AI skills for German legal practice and EU compliance — 66 plugins, 291 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "version": "0.4.0",
   "repository": "https://github.com/borghei/AI-Skills-German-Law",
   "website": "https://borghei.github.io/AI-Skills-German-Law",
   "author": "borghei",
   "license": "Apache-2.0 OR MIT",
-  "total_skills": 275,
+  "total_skills": 291,
   "updated": "2026-08-14",
   "domains": {
     "arbeitsrecht": {
@@ -380,6 +380,30 @@
       "tools": 0,
       "label": "Gewerbe- und Handwerksrecht",
       "desc": "GewO — Untersagung § 35, Erlaubnisse §§ 34a/34c/34d/34f/34i + MaBV, Anzeige § 14, Reisegewerbe §§ 55 ff.; HwO — Handwerksrolle §§ 1/7/7b/8/16"
+    },
+    "verbandsklage-vdug": {
+      "count": 4,
+      "tools": 0,
+      "label": "Verbandsklagerecht (VDuG)",
+      "desc": "Abhilfeklage §§ 14–21, Musterfeststellungsklage § 41, Quorum und Drittfinanzierung § 4, Anmeldung § 46 (3 Wochen, ohne § 193 BGB), Umsetzungsverfahren §§ 22–40"
+    },
+    "kritis-resilienz": {
+      "count": 4,
+      "tools": 0,
+      "label": "KRITIS-Resilienz (KRITIS-DachG)",
+      "desc": "Physische Resilienz nach RL (EU) 2022/2557 — Sektoren § 4, Registrierung § 8 (3 Monate, BBK), Resilienzplan § 13, Vorfallmeldung § 18 (24 h), Geschäftsleitung § 20"
+    },
+    "entgelttransparenz-eu": {
+      "count": 4,
+      "tools": 0,
+      "label": "Entgelttransparenz (RL 2023/970)",
+      "desc": "Umsetzungsfrist 07.06.2026 versäumt — Auskunft Art. 7, Berichterstattung Art. 9 ab 07.06.2027, gemeinsame Entgeltbewertung Art. 10, Beweislastumkehr Art. 18"
+    },
+    "krypto-mikar": {
+      "count": 4,
+      "tools": 0,
+      "label": "Kryptowerteaufsicht (MiCAR / KMAG)",
+      "desc": "Tokenklassen Art. 3, Whitepaper Art. 6/15, CASP-Zulassung Art. 59 ff., Marktmissbrauch Art. 86–92; deutsches Übergangsrecht § 50 KMAG endete 31.12.2025"
     }
   },
   "skills": [
@@ -390,7 +414,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abmahnung",
@@ -407,7 +431,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "agg",
@@ -430,7 +454,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arbeitsvertrag",
@@ -453,7 +477,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arbeitszeugnis",
@@ -473,7 +497,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aufhebungsvertrag",
@@ -495,7 +519,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "befristungskontrolle",
@@ -515,7 +539,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betriebsratsanhoerung",
@@ -534,7 +558,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betriebsuebergang",
@@ -553,7 +577,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "entgelttransparenz",
@@ -574,7 +598,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kuendigungs",
@@ -597,7 +621,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kuendigungsschutzklage",
@@ -620,7 +644,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "massenentlassungsanzeige",
@@ -641,7 +665,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sozialauswahl",
@@ -661,7 +685,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "urlaubsanspruch",
@@ -683,7 +707,7 @@
       "domain": "datenschutzrecht",
       "category": "datenschutzrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "auskunftsersuchen",
@@ -706,7 +730,7 @@
       "domain": "datenschutzrecht",
       "category": "datenschutzrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "avv",
@@ -729,7 +753,7 @@
       "domain": "datenschutzrecht",
       "category": "datenschutzrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "datenpanne",
@@ -751,7 +775,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abtretung",
@@ -774,7 +798,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "agb",
@@ -797,7 +821,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "anfechtung",
@@ -820,7 +844,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kaufrecht",
@@ -843,7 +867,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ruecktritt",
@@ -866,7 +890,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sicherheiten",
@@ -889,7 +913,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "stoerung",
@@ -909,7 +933,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verbraucherwiderruf",
@@ -932,7 +956,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vergleich",
@@ -955,7 +979,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verjaehrung",
@@ -978,7 +1002,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertragsstrafe",
@@ -1001,7 +1025,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verzug",
@@ -1023,7 +1047,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorvertragliche",
@@ -1045,7 +1069,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "werkvertrag",
@@ -1068,7 +1092,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betriebskostenabrechnung",
@@ -1088,7 +1112,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "eigenbedarfskuendigung",
@@ -1109,7 +1133,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fristlose",
@@ -1132,7 +1156,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerberaummiete",
@@ -1155,7 +1179,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kaution",
@@ -1177,7 +1201,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mieterhoehung",
@@ -1200,7 +1224,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mietmangel",
@@ -1223,7 +1247,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mietpreisbremse",
@@ -1245,7 +1269,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "modernisierung",
@@ -1268,7 +1292,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "raeumungsklage",
@@ -1291,7 +1315,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "schoenheitsreparaturen",
@@ -1314,7 +1338,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sozialklausel",
@@ -1337,7 +1361,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "untervermietung",
@@ -1359,7 +1383,7 @@
       "domain": "wohnungseigentumsrecht",
       "category": "wohnungseigentumsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bauliche",
@@ -1379,7 +1403,7 @@
       "domain": "wohnungseigentumsrecht",
       "category": "wohnungseigentumsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beschlussanfechtung",
@@ -1400,7 +1424,7 @@
       "domain": "wohnungseigentumsrecht",
       "category": "wohnungseigentumsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hausgeldabrechnung",
@@ -1420,7 +1444,7 @@
       "domain": "gesellschaftsrecht",
       "category": "gesellschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gesellschafterbeschluss",
@@ -1443,7 +1467,7 @@
       "domain": "gesellschaftsrecht",
       "category": "gesellschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gmbh",
@@ -1466,7 +1490,7 @@
       "domain": "gesellschaftsrecht",
       "category": "gesellschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kapitalerhaltung",
@@ -1487,7 +1511,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "akteneinsicht",
@@ -1508,7 +1532,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "berufung",
@@ -1531,7 +1555,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beschuldigtenvernehmung",
@@ -1552,7 +1576,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beweisverwertungsverbot",
@@ -1573,7 +1597,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "durchsuchung",
@@ -1596,7 +1620,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "notwendige",
@@ -1619,7 +1643,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "opportunitaetseinstellung",
@@ -1640,7 +1664,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "revision",
@@ -1663,7 +1687,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "strafbefehl",
@@ -1684,7 +1708,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "untersuchungshaft",
@@ -1706,7 +1730,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wiederaufnahme",
@@ -1727,7 +1751,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "antragspflicht",
@@ -1750,7 +1774,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fortbestehensprognose",
@@ -1769,7 +1793,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "liquiditaetsplanung",
@@ -1789,7 +1813,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "starug",
@@ -1812,7 +1836,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arrest",
@@ -1835,7 +1859,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "berufung",
@@ -1858,7 +1882,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beweislast",
@@ -1881,7 +1905,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einstweilige",
@@ -1904,7 +1928,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "klageschrift",
@@ -1924,7 +1948,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mahnverfahren",
@@ -1947,7 +1971,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "prozesskostenhilfe",
@@ -1968,7 +1992,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "selbststaendiges",
@@ -1991,7 +2015,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "versaeumnisurteil",
@@ -2014,7 +2038,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vollstreckungsabwehrklage",
@@ -2035,7 +2059,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "zwangsvollstreckung",
@@ -2058,7 +2082,7 @@
       "domain": "erbrecht",
       "category": "erbrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gesetzliche",
@@ -2080,7 +2104,7 @@
       "domain": "erbrecht",
       "category": "erbrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "pflichtteil",
@@ -2103,7 +2127,7 @@
       "domain": "erbrecht",
       "category": "erbrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "testament",
@@ -2126,7 +2150,7 @@
       "domain": "familienrecht",
       "category": "familienrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ehegattenunterhalt",
@@ -2148,7 +2172,7 @@
       "domain": "familienrecht",
       "category": "familienrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kindesunterhalt",
@@ -2171,7 +2195,7 @@
       "domain": "familienrecht",
       "category": "familienrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "scheidung",
@@ -2194,7 +2218,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betreuerbestellung",
@@ -2215,7 +2239,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einwilligungsvorbehalt",
@@ -2234,7 +2258,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "jahresbericht",
@@ -2255,7 +2279,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorsorgevollmacht",
@@ -2277,7 +2301,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cloud",
@@ -2299,7 +2323,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "domainrecht",
@@ -2320,7 +2344,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "commerce",
@@ -2343,7 +2367,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sicherheit",
@@ -2362,7 +2386,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertragspruefung",
@@ -2381,7 +2405,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertraege",
@@ -2404,7 +2428,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "open",
@@ -2427,7 +2451,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "providerhaftung",
@@ -2450,7 +2474,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "saas",
@@ -2472,7 +2496,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "softwareerstellung",
@@ -2495,7 +2519,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "softwarelizenz",
@@ -2518,7 +2542,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "buergschaft",
@@ -2541,7 +2565,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kreditvertragspruefung",
@@ -2563,7 +2587,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "widerruf",
@@ -2586,7 +2610,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "zahlungsdiensthaftung",
@@ -2607,7 +2631,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "designschutz",
@@ -2625,7 +2649,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "markenanmeldung",
@@ -2643,7 +2667,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "markenrechtsverletzung",
@@ -2662,7 +2686,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patentverletzung",
@@ -2682,7 +2706,7 @@
       "domain": "steuerrecht",
       "category": "steuerrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aussenpruefung",
@@ -2704,7 +2728,7 @@
       "domain": "steuerrecht",
       "category": "steuerrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einspruch",
@@ -2727,7 +2751,7 @@
       "domain": "steuerrecht",
       "category": "steuerrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "selbstanzeige",
@@ -2747,7 +2771,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "anfechtungsklage",
@@ -2769,7 +2793,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einstweilige",
@@ -2791,7 +2815,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ermessensfehler",
@@ -2811,7 +2835,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fortsetzungsfeststellungsklage",
@@ -2830,7 +2854,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nebenbestimmungen",
@@ -2848,7 +2872,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "normenkontrolle",
@@ -2867,7 +2891,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ruecknahme",
@@ -2887,7 +2911,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verpflichtungsklage",
@@ -2909,7 +2933,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verwaltungsvollstreckung",
@@ -2931,7 +2955,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorlaeufiger",
@@ -2952,7 +2976,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "widerspruchsverfahren",
@@ -2973,7 +2997,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gpai",
@@ -2994,7 +3018,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hochrisiko",
@@ -3014,7 +3038,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "transparenzpflichten",
@@ -3034,7 +3058,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verbotene",
@@ -3055,7 +3079,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "meldepflicht",
@@ -3074,7 +3098,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nis2",
@@ -3094,7 +3118,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nis2",
@@ -3116,7 +3140,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nis2",
@@ -3136,7 +3160,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "externe",
@@ -3157,7 +3181,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "interne",
@@ -3178,7 +3202,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "meldestelle",
@@ -3201,7 +3225,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "repressalienschutz",
@@ -3221,7 +3245,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bafa",
@@ -3244,7 +3268,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beschwerdeverfahren",
@@ -3264,7 +3288,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "praeventions",
@@ -3287,7 +3311,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "risikoanalyse",
@@ -3307,7 +3331,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dora",
@@ -3326,7 +3350,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dora",
@@ -3347,7 +3371,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dora",
@@ -3367,7 +3391,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ict",
@@ -3390,7 +3414,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dma",
@@ -3413,7 +3437,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dsa",
@@ -3435,7 +3459,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dsa",
@@ -3457,7 +3481,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dsa",
@@ -3477,7 +3501,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "esrs",
@@ -3496,7 +3520,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "taxonomie",
@@ -3516,7 +3540,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nachhaltigkeitsbericht",
@@ -3537,7 +3561,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wesentlichkeitsanalyse",
@@ -3557,7 +3581,7 @@
       "domain": "europarecht",
       "category": "europarecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "richtlinien",
@@ -3577,7 +3601,7 @@
       "domain": "europarecht",
       "category": "europarecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertragsverletzungsverfahren",
@@ -3597,7 +3621,7 @@
       "domain": "europarecht",
       "category": "europarecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorabentscheidung",
@@ -3620,7 +3644,7 @@
       "domain": "verfassungsrecht",
       "category": "verfassungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundrechtspruefung",
@@ -3640,7 +3664,7 @@
       "domain": "verfassungsrecht",
       "category": "verfassungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "organstreit",
@@ -3663,7 +3687,7 @@
       "domain": "verfassungsrecht",
       "category": "verfassungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verfassungsbeschwerde",
@@ -3684,7 +3708,7 @@
       "domain": "sozialrecht",
       "category": "sozialrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sgb",
@@ -3707,7 +3731,7 @@
       "domain": "sozialrecht",
       "category": "sozialrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sgb",
@@ -3728,7 +3752,7 @@
       "domain": "sozialrecht",
       "category": "sozialrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "widerspruch",
@@ -3751,7 +3775,7 @@
       "domain": "handelsrecht",
       "category": "handelsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "handelsregister",
@@ -3772,7 +3796,7 @@
       "domain": "handelsrecht",
       "category": "handelsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "handelsvertretervertrag",
@@ -3795,7 +3819,7 @@
       "domain": "handelsrecht",
       "category": "handelsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hgb",
@@ -3818,7 +3842,7 @@
       "domain": "medizinrecht",
       "category": "medizinrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arzthaftung",
@@ -3839,7 +3863,7 @@
       "domain": "medizinrecht",
       "category": "medizinrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mbo",
@@ -3862,7 +3886,7 @@
       "domain": "medizinrecht",
       "category": "medizinrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patientenrechte",
@@ -3885,7 +3909,7 @@
       "domain": "versicherungsrecht",
       "category": "versicherungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "obliegenheitsverletzung",
@@ -3908,7 +3932,7 @@
       "domain": "versicherungsrecht",
       "category": "versicherungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "versicherungsfall",
@@ -3930,7 +3954,7 @@
       "domain": "versicherungsrecht",
       "category": "versicherungsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "versicherungsmaklerhaftung",
@@ -3953,7 +3977,7 @@
       "domain": "baurecht",
       "category": "baurecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "baugenehmigungsverfahren",
@@ -3976,7 +4000,7 @@
       "domain": "baurecht",
       "category": "baurecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nachbarrechtlicher",
@@ -3999,7 +4023,7 @@
       "domain": "baurecht",
       "category": "baurecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vob",
@@ -4022,7 +4046,7 @@
       "domain": "verkehrsrecht",
       "category": "verkehrsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mpu",
@@ -4045,7 +4069,7 @@
       "domain": "verkehrsrecht",
       "category": "verkehrsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ordnungswidrigkeit",
@@ -4068,7 +4092,7 @@
       "domain": "verkehrsrecht",
       "category": "verkehrsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "stvg",
@@ -4091,7 +4115,7 @@
       "domain": "urheber-medienrecht",
       "category": "urheber-medienrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "lizenzvertrag",
@@ -4112,7 +4136,7 @@
       "domain": "urheber-medienrecht",
       "category": "urheber-medienrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mstv",
@@ -4135,7 +4159,7 @@
       "domain": "urheber-medienrecht",
       "category": "urheber-medienrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "urheberrechtsverletzung",
@@ -4156,7 +4180,7 @@
       "domain": "sportrecht",
       "category": "sportrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "athletenvertrag",
@@ -4179,7 +4203,7 @@
       "domain": "sportrecht",
       "category": "sportrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dopingverfahren",
@@ -4202,7 +4226,7 @@
       "domain": "sportrecht",
       "category": "sportrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vereinsrechtliche",
@@ -4225,7 +4249,7 @@
       "domain": "migrationsrecht",
       "category": "migrationsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abschiebungsschutz",
@@ -4248,7 +4272,7 @@
       "domain": "migrationsrecht",
       "category": "migrationsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "asylantrag",
@@ -4271,7 +4295,7 @@
       "domain": "migrationsrecht",
       "category": "migrationsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aufenthaltstitel",
@@ -4294,7 +4318,7 @@
       "domain": "agrarrecht",
       "category": "agrarrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "agrar",
@@ -4317,7 +4341,7 @@
       "domain": "agrarrecht",
       "category": "agrarrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gap",
@@ -4335,7 +4359,7 @@
       "domain": "agrarrecht",
       "category": "agrarrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "lwanpg",
@@ -4355,7 +4379,7 @@
       "domain": "vergaberecht",
       "category": "vergaberecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ausschreibungspruefung",
@@ -4377,7 +4401,7 @@
       "domain": "vergaberecht",
       "category": "vergaberecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nachpruefungsverfahren",
@@ -4400,7 +4424,7 @@
       "domain": "vergaberecht",
       "category": "vergaberecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vergabe",
@@ -4422,7 +4446,7 @@
       "domain": "umweltrecht",
       "category": "umweltrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bimschg",
@@ -4444,7 +4468,7 @@
       "domain": "umweltrecht",
       "category": "umweltrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "krwg",
@@ -4467,7 +4491,7 @@
       "domain": "umweltrecht",
       "category": "umweltrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "uvp",
@@ -4490,7 +4514,7 @@
       "domain": "energierecht",
       "category": "energierecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "eeg",
@@ -4513,7 +4537,7 @@
       "domain": "energierecht",
       "category": "energierecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "energieeffizienzpflicht",
@@ -4533,7 +4557,7 @@
       "domain": "energierecht",
       "category": "energierecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "enwg",
@@ -4555,7 +4579,7 @@
       "domain": "aussenwirtschaft-zoll-sanktionen",
       "category": "aussenwirtschaft-zoll-sanktionen",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ausfuhr",
@@ -4577,7 +4601,7 @@
       "domain": "aussenwirtschaft-zoll-sanktionen",
       "category": "aussenwirtschaft-zoll-sanktionen",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sanktionslisten",
@@ -4598,7 +4622,7 @@
       "domain": "aussenwirtschaft-zoll-sanktionen",
       "category": "aussenwirtschaft-zoll-sanktionen",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "zolltarif",
@@ -4619,7 +4643,7 @@
       "domain": "geldwaesche-aml-kyc",
       "category": "geldwaesche-aml-kyc",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gwg",
@@ -4640,7 +4664,7 @@
       "domain": "geldwaesche-aml-kyc",
       "category": "geldwaesche-aml-kyc",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kyc",
@@ -4663,7 +4687,7 @@
       "domain": "geldwaesche-aml-kyc",
       "category": "geldwaesche-aml-kyc",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verdachtsmeldung",
@@ -4686,7 +4710,7 @@
       "domain": "transportrecht",
       "category": "transportrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cmr",
@@ -4709,7 +4733,7 @@
       "domain": "transportrecht",
       "category": "transportrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hgb",
@@ -4732,7 +4756,7 @@
       "domain": "transportrecht",
       "category": "transportrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "lieferbedingungen",
@@ -4754,7 +4778,7 @@
       "domain": "produktrecht",
       "category": "produktrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gpsr",
@@ -4772,7 +4796,7 @@
       "domain": "produktrecht",
       "category": "produktrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "prodhaftg",
@@ -4793,7 +4817,7 @@
       "domain": "produktrecht",
       "category": "produktrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "produkt",
@@ -4816,7 +4840,7 @@
       "domain": "ki-governance",
       "category": "ki-governance",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "monitoring",
@@ -4837,7 +4861,7 @@
       "domain": "ki-governance",
       "category": "ki-governance",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "richtlinie",
@@ -4860,7 +4884,7 @@
       "domain": "ki-governance",
       "category": "ki-governance",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "risikoassessment",
@@ -4878,7 +4902,7 @@
       "domain": "wettbewerbsrecht",
       "category": "wettbewerbsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einstweilige",
@@ -4901,7 +4925,7 @@
       "domain": "wettbewerbsrecht",
       "category": "wettbewerbsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "irrefuehrende",
@@ -4924,7 +4948,7 @@
       "domain": "wettbewerbsrecht",
       "category": "wettbewerbsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "uwg",
@@ -4947,7 +4971,7 @@
       "domain": "kartellrecht",
       "category": "kartellrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gwb",
@@ -4970,7 +4994,7 @@
       "domain": "kartellrecht",
       "category": "kartellrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kartellverbot",
@@ -4993,7 +5017,7 @@
       "domain": "kartellrecht",
       "category": "kartellrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "marktbeherrschung",
@@ -5016,7 +5040,7 @@
       "domain": "kapitalmarktrecht",
       "category": "kapitalmarktrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "prospektpflicht",
@@ -5039,7 +5063,7 @@
       "domain": "kapitalmarktrecht",
       "category": "kapitalmarktrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wphg",
@@ -5062,7 +5086,7 @@
       "domain": "kapitalmarktrecht",
       "category": "kapitalmarktrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wpueg",
@@ -5085,7 +5109,7 @@
       "domain": "patentrecht",
       "category": "patentrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "freedom",
@@ -5107,7 +5131,7 @@
       "domain": "patentrecht",
       "category": "patentrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patentanmeldung",
@@ -5130,7 +5154,7 @@
       "domain": "patentrecht",
       "category": "patentrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patentverletzung",
@@ -5150,7 +5174,7 @@
       "domain": "berufsrecht-anwaltschaft",
       "category": "berufsrecht-anwaltschaft",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "brao",
@@ -5173,7 +5197,7 @@
       "domain": "berufsrecht-anwaltschaft",
       "category": "berufsrecht-anwaltschaft",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fao",
@@ -5193,7 +5217,7 @@
       "domain": "berufsrecht-anwaltschaft",
       "category": "berufsrecht-anwaltschaft",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "rdg",
@@ -5216,7 +5240,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5237,7 +5261,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5258,7 +5282,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5277,7 +5301,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5297,7 +5321,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundbuchverfahren",
@@ -5320,7 +5344,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundschuld",
@@ -5343,7 +5367,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundstueckskaufvertrag",
@@ -5366,7 +5390,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wohnungseigentum",
@@ -5389,7 +5413,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "forderungspfaendung",
@@ -5412,7 +5436,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "immobiliarvollstreckung",
@@ -5435,7 +5459,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sachpfaendung",
@@ -5458,7 +5482,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vollstreckungsvoraussetzungen",
@@ -5481,7 +5505,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gkg",
@@ -5504,7 +5528,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kostenfestsetzung",
@@ -5527,7 +5551,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "rvg",
@@ -5550,7 +5574,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verguetungsvereinbarung",
@@ -5573,7 +5597,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "internal",
@@ -5596,7 +5620,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "steuerhinterziehung",
@@ -5618,7 +5642,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "unternehmenssanktion",
@@ -5640,7 +5664,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "untreue",
@@ -5663,7 +5687,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "asset",
@@ -5686,7 +5710,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "due",
@@ -5706,7 +5730,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "garantien",
@@ -5729,7 +5753,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "share",
@@ -5752,7 +5776,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gemeinnuetzigkeit",
@@ -5775,7 +5799,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "spendenrecht",
@@ -5796,7 +5820,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "stiftungsrecht",
@@ -5819,7 +5843,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vereinsgruendung",
@@ -5842,7 +5866,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beamtenstatusrecht",
@@ -5865,7 +5889,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dienstliche",
@@ -5885,7 +5909,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "disziplinarverfahren",
@@ -5908,7 +5932,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "konkurrentenstreit",
@@ -5929,7 +5953,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fluggastrechte",
@@ -5952,7 +5976,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "pauschalreise",
@@ -5975,7 +5999,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "reiseruecktritt",
@@ -5998,7 +6022,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "reisevermittlung",
@@ -6021,7 +6045,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cloud",
@@ -6044,7 +6068,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "data",
@@ -6067,7 +6091,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "data",
@@ -6090,7 +6114,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "data",
@@ -6113,7 +6137,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "datenzugang",
@@ -6136,7 +6160,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bfsg",
@@ -6158,7 +6182,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bfsg",
@@ -6181,7 +6205,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bfsg",
@@ -6204,7 +6228,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bitv",
@@ -6227,7 +6251,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aufhebungsantrag",
@@ -6250,7 +6274,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "schiedsvereinbarung",
@@ -6273,7 +6297,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "schiedsverfahren",
@@ -6296,7 +6320,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vollstreckbarerklaerung",
@@ -6319,7 +6343,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerbeanzeige",
@@ -6342,7 +6366,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerbeerlaubnis",
@@ -6365,7 +6389,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerbeuntersagung",
@@ -6387,7 +6411,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "handwerksrolle",
@@ -6398,6 +6422,373 @@
         "§8",
         "§9",
         "§3"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "abhilfeklage-vdug",
+      "description": "Abhilfeklage nach §§ 14 ff. VDuG – Leistung an die betroffenen Verbraucher oder Zahlung eines kollektiven Gesamtbetrags § 14, Gleichartigkeitserfordernis § 15 Abs. 1 (derselbe oder im Wesentlichen vergleichbarer Sachverhalt und im Wesentlichen gleiche Tatsachen- und Rechtsfragen) nebst Angaben zur Anspruchshöhe oder Berechnungsmethode § 15 Abs. 2, Abhilfegrundurteil § 16 mit Anspruchsvoraussetzungen und Berechtigungsnachweisen in der Urteilsformel, Vergleichsvorschlag § 17, Abhilfeendurteil § 18 mit Anordnung des Umsetzungsverfahrens, vorläufiger Kostenfestsetzung und zulassungsfreier Revision, Schätzung des kollektiven Gesamtbetrags § 19 iVm § 287 ZPO, Kosten § 20 und Erhöhung § 21. Use when eine Abhilfeklage zu erheben, zu verteidigen oder ein Abhilfegrundurteil umzusetzen ist.",
+      "path": "verbandsklage-vdug/skills/abhilfeklage-vdug/SKILL.md",
+      "domain": "verbandsklage-vdug",
+      "category": "verbandsklage-vdug",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "abhilfeklage",
+        "vdug",
+        "§§14",
+        "§14",
+        "§15",
+        "§16",
+        "§17",
+        "§18"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "anmeldung-umsetzungsverfahren",
+      "description": "Anmeldung zum Verbandsklageregister und Umsetzungsverfahren nach dem VDuG – Anmeldung § 46 binnen drei Wochen nach Schluss der mündlichen Verhandlung mit ausdrücklicher Nichtanwendung des § 193 BGB, Pflichtangaben und Richtigkeitsversicherung § 46 Abs. 2, Eintragung ohne inhaltliche Prüfung § 46 Abs. 3, Rücknahme § 46 Abs. 4, Register und Bekanntmachung §§ 43–45, 48, Eröffnungsbeschluss nach Zahlung § 24, Bestellung des Sachwalters § 23, Umsetzungsfonds § 25 mit Trennungspflicht und Pfändungsschutz, Teilnahme § 26, Aufgaben des Sachwalters § 27, Widerspruchsverfahren § 28 mit vier Wochen Widerspruch und zwei Wochen für den Antrag auf gerichtliche Entscheidung, Zwangsmittel §§ 29, 30, Schlussrechnung und Schlussbericht §§ 33–36 sowie nicht abgerufene Beträge § 37. Use when ein Verbraucher seinen Anspruch anmelden will oder ein Abhilfeendurteil umzusetzen ist.",
+      "path": "verbandsklage-vdug/skills/anmeldung-umsetzungsverfahren/SKILL.md",
+      "domain": "verbandsklage-vdug",
+      "category": "verbandsklage-vdug",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "anmeldung",
+        "umsetzungsverfahren",
+        "§46",
+        "§193",
+        "§§43",
+        "§24",
+        "§23",
+        "§25"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "musterfeststellungsklage-vdug",
+      "description": "Musterfeststellungsklage nach § 41 VDuG – Feststellung des Vorliegens oder Nichtvorliegens tatsächlicher und rechtlicher Voraussetzungen für das Bestehen oder Nichtbestehen von Ansprüchen oder Rechtsverhältnissen (Feststellungsziele), Wahlfreiheit gegenüber der Abhilfeklage § 41 Abs. 2, Verbraucherquorum § 4 Abs. 1 Nr. 2, Bindungswirkung rechtskräftiger Urteile für den Folgeprozess des angemeldeten Verbrauchers § 11 Abs. 3 mit der Ausnahme für Abhilfeendurteile, Aussetzung anhängiger Individualklagen § 11 Abs. 1, Klageverbot für angemeldete Verbraucher § 11 Abs. 2, Sperrwirkung § 8, Revision § 42 sowie die Abgrenzung zum KapMuG-Musterverfahren § 1 Abs. 3. Use when Feststellungsziele zu formulieren, eine Musterfeststellungsklage abzuwehren oder die Wirkung eines Musterurteils auf Individualprozesse zu bestimmen ist.",
+      "path": "verbandsklage-vdug/skills/musterfeststellungsklage-vdug/SKILL.md",
+      "domain": "verbandsklage-vdug",
+      "category": "verbandsklage-vdug",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "musterfeststellungsklage",
+        "vdug",
+        "§41",
+        "§4",
+        "§11",
+        "§8",
+        "§42",
+        "§1"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verbandsklage-zulaessigkeit",
+      "description": "Zulässigkeit der Verbandsklage nach dem VDuG – Klagearten § 1 Abs. 1 (Abhilfeklage und Musterfeststellungsklage), Gleichstellung kleiner Unternehmen mit Verbrauchern § 1 Abs. 2 (weniger als zehn Beschäftigte und höchstens 2 Mio. EUR Umsatz oder Bilanz), klageberechtigte Stellen § 2 mit der Fünf-Prozent-Grenze für Unternehmenszuwendungen und der unwiderleglichen Vermutung für überwiegend öffentlich geförderte Verbraucherzentralen, ausschließliche OLG-Zuständigkeit am allgemeinen Gerichtsstand des Unternehmers § 3, Verbraucherquorum von mindestens 50 Betroffenen § 4 Abs. 1, Verbot und Offenlegung der Drittfinanzierung § 4 Abs. 2, 3, Offenlegung von Beweismitteln § 6, Streitgenossenschaft § 7 und Sperrwirkung der Verbandsklage § 8. Use when eine Verbandsklage erhoben, abgewehrt oder auf ihre Zulässigkeit geprüft werden soll.",
+      "path": "verbandsklage-vdug/skills/verbandsklage-zulaessigkeit/SKILL.md",
+      "domain": "verbandsklage-vdug",
+      "category": "verbandsklage-vdug",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verbandsklage",
+        "zulaessigkeit",
+        "§1",
+        "§2",
+        "§3",
+        "§4",
+        "§6",
+        "§7"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kritis-anwendungsbereich-registrierung",
+      "description": "Anwendungsbereich und Registrierung nach dem KRITIS-Dachgesetz – zehn Sektoren § 4 Abs. 1 (Energie, Transport und Verkehr, Finanzwesen, Sozialversicherung, Gesundheit, Wasser, Ernährung, IT und Telekommunikation, Weltraum, Siedlungsabfallentsorgung), Bereichsausnahmen § 4 Abs. 2 insbesondere für DORA-Finanzunternehmen nach Art. 2 Abs. 2 VO (EU) 2022/2554 sowie für IT/TK und Siedlungsabfallentsorgung, Erheblichkeitsschwellen § 5 mit Verordnungsermächtigung, Registrierungspflicht § 8 binnen drei Monaten ab dem Zeitpunkt, zu dem eine Anlage als kritische Anlage gilt, über die gemeinsame Registrierungsmöglichkeit von BSI und BBK, zentrale Anlaufstelle und sektorspezifisch zuständige Behörden § 3, kritische Einrichtungen von besonderer europäischer Bedeutung § 9 und Ausnahmebescheid § 22. Use when zu klären ist, ob ein Betreiber unter das KRITIS-Dachgesetz fällt und bis wann er sich registrieren muss.",
+      "path": "kritis-resilienz/skills/kritis-anwendungsbereich-registrierung/SKILL.md",
+      "domain": "kritis-resilienz",
+      "category": "kritis-resilienz",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kritis",
+        "anwendungsbereich",
+        "registrierung",
+        "§4",
+        "§5",
+        "§8",
+        "§3",
+        "§9"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kritis-governance-haftung",
+      "description": "Geschäftsleiterpflichten und Haftung nach dem KRITIS-Dachgesetz – Umsetzungs- und Überwachungspflicht der Geschäftsleitung § 20 Abs. 1 für die Resilienzmaßnahmen nach § 13 Abs. 1 einschließlich Sicherstellung durch geeignete Organisationsmaßnahmen, Innenhaftung gegenüber der eigenen Einrichtung § 20 Abs. 2 nach den gesellschaftsrechtlichen Regeln der jeweiligen Rechtsform mit subsidiärer Haftung nach dem Dachgesetz, Berichtspflichten § 21, Bußgeldkatalog § 24 mit Rahmen von 100.000 bis 1.000.000 EUR und der Zuständigkeitsverteilung zwischen BBK und Sektorbehörde, Ausnahmebescheid § 22 sowie das Zusammenspiel mit §§ 43 GmbHG, 93 AktG, § 130 OWiG und der Verbandsgeldbuße § 30 OWiG. Use when die Geschäftsleitung ihre KRITIS-Pflichten organisieren, dokumentieren oder ein Haftungs- und Bußgeldrisiko bewerten muss.",
+      "path": "kritis-resilienz/skills/kritis-governance-haftung/SKILL.md",
+      "domain": "kritis-resilienz",
+      "category": "kritis-resilienz",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kritis",
+        "governance",
+        "haftung",
+        "§20",
+        "§13",
+        "§21",
+        "§24",
+        "§22"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kritis-resilienzpflichten",
+      "description": "Resilienzpflichten und Resilienzplan nach dem KRITIS-Dachgesetz – Risikoanalyse und Risikobewertung des Betreibers § 12 auf Grundlage der nationalen Risikoanalysen § 11, Resilienzpflichten § 13 mit den vier Zielen Verhinderung von Vorfällen, angemessener physischer Schutz von Liegenschaften und Anlagen, Reaktion und Begrenzung negativer Auswirkungen sowie zügige Wiederherstellung, Verhältnismäßigkeitsmaßstab und Stand der Technik § 13 Abs. 2, sektorenübergreifende und sektorspezifische Mindestanforderungen § 14, Vorrang von Durchführungsrechtsakten der Kommission § 15, Nachweise und behördliche Anordnungen einschließlich Audits § 16, Gleichwertigkeit von Nachweisen § 17, Unterstützung durch die Behörden § 19 und Ausnahmebescheid § 22. Use when ein Resilienzplan zu erstellen, ein Nachweis zu erbringen oder eine behördliche Anordnung abzuwehren ist.",
+      "path": "kritis-resilienz/skills/kritis-resilienzpflichten/SKILL.md",
+      "domain": "kritis-resilienz",
+      "category": "kritis-resilienz",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kritis",
+        "resilienzpflichten",
+        "§12",
+        "§11",
+        "§13",
+        "§14",
+        "§15",
+        "§16"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "kritis-vorfallmeldung",
+      "description": "Vorfallmeldung nach § 18 KRITIS-Dachgesetz – Meldepflicht des Betreibers kritischer Anlagen gegenüber dem BBK unverzüglich, spätestens 24 Stunden nach Kenntnis, über die gemeinsame Meldestelle von BSI und BBK, Aktualisierung der Erstmeldung bei andauerndem Vorfall, ausführlicher Bericht spätestens einen Monat nach Kenntnis, Pflichtinhalte nach Abs. 2 mit Zahl und Anteil der Betroffenen, bisheriger und voraussichtlicher Dauer sowie betroffenem Gebiet, Unberührtheit sonstiger gesetzlicher Meldepflichten, Abgrenzung und Parallelität zur Cybervorfallmeldung nach dem BSIG/NIS2 und zur Datenschutzmeldung nach Art. 33 DSGVO sowie Bußgeldrisiko § 24. Use when ein Vorfall an einer kritischen Anlage eingetreten ist und die Meldelage zu klären oder eine Meldung zu entwerfen ist.",
+      "path": "kritis-resilienz/skills/kritis-vorfallmeldung/SKILL.md",
+      "domain": "kritis-resilienz",
+      "category": "kritis-resilienz",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kritis",
+        "vorfallmeldung",
+        "§18",
+        "§24",
+        "art.33",
+        "nis2",
+        "dsgvo",
+        "kritis-resilienz"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "entgelt-auskunftsanspruch",
+      "description": "Auskunfts- und Transparenzrechte im Entgeltgefüge – Entgelttransparenz vor der Beschäftigung nach Art. 5 RL (EU) 2023/970 mit Anspruch auf Einstiegsentgelt oder Entgeltspanne, Verbot der Frage nach der bisherigen Entgeltentwicklung und geschlechtsneutralen Stellenausschreibungen, Auskunftsrecht der Beschäftigten nach Art. 7 auf individuelle und durchschnittliche Entgelthöhen aufgeschlüsselt nach Geschlecht und Vergleichsgruppe, Antwortfrist von zwei Monaten Art. 7 Abs. 4, jährliche Hinweispflicht Art. 7 Abs. 3, Unwirksamkeit von Entgeltverschwiegenheitsklauseln Art. 7 Abs. 5, Zugänglichkeit der Kriterien Art. 6 und Art. 8, Datenschutz Art. 12 sowie das geltende Auskunftsverfahren der §§ 10 bis 16 EntgTranspG mit der 200-Beschäftigten-Schwelle und der Sechs-Personen-Vergleichsgruppe. Use when ein Auskunftsverlangen zu beantworten, eine Stellenausschreibung zu prüfen oder eine Verschwiegenheitsklausel zu bewerten ist.",
+      "path": "entgelttransparenz-eu/skills/entgelt-auskunftsanspruch/SKILL.md",
+      "domain": "entgelttransparenz-eu",
+      "category": "entgelttransparenz-eu",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "entgelt",
+        "auskunftsanspruch",
+        "§§10",
+        "art.5",
+        "art.7",
+        "art.6",
+        "art.8",
+        "art.12"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "entgeltberichterstattung",
+      "description": "Entgeltberichterstattung und gemeinsame Entgeltbewertung – sieben Berichtsinhalte nach Art. 9 Abs. 1 RL (EU) 2023/970 einschließlich Entgeltgefälle bei ergänzenden und variablen Bestandteilen, Median-Gefälle, Anteil der Beschäftigten mit variablen Bestandteilen, Verteilung über die Entgeltquartile und Gefälle je Arbeitnehmergruppe, gestaffelte Schwellen und Stichtage nach Art. 9 Abs. 2 bis 4 (ab 250 Beschäftigten jährlich ab 07.06.2027, 150 bis 249 dreijährlich ab 07.06.2027, 100 bis 149 dreijährlich ab 07.06.2031), Unterstützung kleinerer Arbeitgeber Art. 11, gemeinsame Entgeltbewertung Art. 10 bei mindestens 5 Prozent ungerechtfertigtem Gefälle in einer Arbeitnehmergruppe ohne Korrektur binnen sechs Monaten sowie das Verhältnis zum Entgeltbericht nach §§ 21, 22 EntgTranspG und zum betrieblichen Prüfverfahren §§ 17 bis 20 EntgTranspG. Use when Berichtspflichten vorzubereiten, Datenmodelle aufzubauen oder eine gemeinsame Entgeltbewertung durchzuführen ist.",
+      "path": "entgelttransparenz-eu/skills/entgeltberichterstattung/SKILL.md",
+      "domain": "entgelttransparenz-eu",
+      "category": "entgelttransparenz-eu",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "entgeltberichterstattung",
+        "§§21",
+        "§§17",
+        "art.9",
+        "art.11",
+        "art.10",
+        "entgelttransparenz-eu"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "entgeltdiskriminierung-durchsetzung",
+      "description": "Durchsetzung des Entgeltgleichheitsanspruchs – Rechtsschutz Art. 14 und Verbandsverfahren Art. 15 RL (EU) 2023/970, Schadensersatz Art. 16 mit vollständigem Ausgleich einschließlich Nachzahlung und Boni, sonstige Abhilfemaßnahmen Art. 17, Verlagerung der Beweislast Art. 18 Abs. 1 und die verschärfte Vollumkehr nach Abs. 2 bei Verletzung der Transparenzpflichten der Art. 5, 6, 7, 9 und 10 mit dem engen Gegenbeweis offensichtlich unbeabsichtigter und geringfügiger Verstöße, Nachweis gleichwertiger Arbeit Art. 19, Zugang zu Beweismitteln Art. 20, Verjährung von mindestens drei Jahren ab Kenntnis Art. 21, Verfahrenskosten Art. 22, Sanktionen Art. 23 und Viktimisierungsschutz Art. 25 sowie das Zusammenspiel mit Art. 157 AEUV, § 3 und § 7 EntgTranspG, § 15 AGG und § 612a BGB. Use when ein Entgeltgleichheitsanspruch geltend gemacht oder abgewehrt werden soll.",
+      "path": "entgelttransparenz-eu/skills/entgeltdiskriminierung-durchsetzung/SKILL.md",
+      "domain": "entgelttransparenz-eu",
+      "category": "entgelttransparenz-eu",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "entgeltdiskriminierung",
+        "durchsetzung",
+        "§3",
+        "§7",
+        "§15",
+        "§612a",
+        "art.14",
+        "art.15"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "entgelttransparenz-umsetzungsstand",
+      "description": "Umsetzungsstand und unmittelbare Wirkung der Entgelttransparenzrichtlinie – Umsetzungsfrist des Art. 34 Abs. 1 RL (EU) 2023/970 zum 07.06.2026, von Deutschland versäumt, mit den Folgen unmittelbarer Wirkung gegenüber staatlichen Arbeitgebern bei hinreichend genauen und unbedingten Bestimmungen, fehlender horizontaler Wirkung im Privatarbeitsverhältnis, richtlinienkonformer Auslegung des geltenden EntgTranspG und Staatshaftung nach der Francovich-Rechtsprechung, Vertragsverletzungsverfahren nach Art. 258, 260 AEUV, Verhältnis zu Art. 157 AEUV und zur RL 2006/54/EG nach Art. 26 sowie Schutzniveauklausel Art. 27. Use when zu klären ist, welche Pflichten schon heute gelten, welche erst mit dem deutschen Umsetzungsgesetz kommen und welche Risiken aus der Verzögerung folgen.",
+      "path": "entgelttransparenz-eu/skills/entgelttransparenz-umsetzungsstand/SKILL.md",
+      "domain": "entgelttransparenz-eu",
+      "category": "entgelttransparenz-eu",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "entgelttransparenz",
+        "umsetzungsstand",
+        "art.34",
+        "art.258",
+        "art.157",
+        "art.26",
+        "art.27",
+        "aeuv"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "casp-zulassung-uebergang",
+      "description": "Zulassung als Anbieter von Kryptowerte-Dienstleistungen und deutsches Übergangsrecht – Zulassungserfordernis Art. 59 VO (EU) 2023/1114, Erbringung durch bestimmte Finanzunternehmen mit Anzeige nach Art. 60, Antrag Art. 62 und Prüfung Art. 63, Unternehmensführung Art. 68, sichere Aufbewahrung von Kundenwerten Art. 70, Verwahrdienstleistung Art. 75, unionsrechtliches Übergangsrecht Art. 143 Abs. 3 bis zum 01.07.2026 mit ausdrücklicher Verkürzungsbefugnis der Mitgliedstaaten und die deutsche Verkürzung in § 50 Abs. 2 Nr. 3 KMAG auf den Ablauf des 31.12.2025, vereinfachtes Verfahren § 50 Abs. 3 KMAG, Anzeigepflicht § 50 Abs. 4 KMAG, digitale operationale Resilienz § 26 KMAG sowie Einschreiten gegen unerlaubte Geschäfte § 9 KMAG. Use when eine CASP-Zulassung zu beantragen, ein Bestandsgeschäft zu überführen oder ein Vorwurf unerlaubter Geschäfte abzuwehren ist.",
+      "path": "krypto-mikar/skills/casp-zulassung-uebergang/SKILL.md",
+      "domain": "krypto-mikar",
+      "category": "krypto-mikar",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "casp",
+        "zulassung",
+        "uebergang",
+        "§50",
+        "§26",
+        "§9",
+        "art.59",
+        "art.60"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "krypto-marktmissbrauch",
+      "description": "Marktmissbrauch bei Kryptowerten – Geltungsbereich der Vorschriften über Marktmissbrauch Art. 86 VO (EU) 2023/1114, Begriff der Insiderinformation Art. 87, Pflicht zur Offenlegung von Insiderinformationen Art. 88 nebst zulässigem Aufschub, Verbot von Insidergeschäften Art. 89, Verbot der unrechtmäßigen Offenlegung Art. 90, Verbot der Marktmanipulation Art. 91 mit den Fallgruppen falscher Signale, Kursbeeinflussung und irreführender Handlungen, Pflicht zur Vorbeugung und Aufdeckung Art. 92 mit Systemen zur Erkennung und Meldung verdächtiger Aufträge, Verfolgung durch die BaFin §§ 31 bis 36 KMAG einschließlich Verschwiegenheit § 32, Anzeige straftatbegründender Tatsachen § 33, Handelsaussetzung § 34 und Übermittlung von Insiderinformationen § 36 sowie Straf- und Bußgeldvorschriften §§ 46, 47 KMAG. Use when ein Verdacht auf Insiderhandel oder Marktmanipulation besteht, ein Meldesystem aufzubauen oder eine Ad-hoc-Entscheidung zu treffen ist.",
+      "path": "krypto-mikar/skills/krypto-marktmissbrauch/SKILL.md",
+      "domain": "krypto-mikar",
+      "category": "krypto-mikar",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "krypto",
+        "marktmissbrauch",
+        "§§31",
+        "§32",
+        "§33",
+        "§34",
+        "§36",
+        "§§46"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "krypto-whitepaper-angebot",
+      "description": "Öffentliches Angebot von Kryptowerten und Kryptowerte-Whitepaper – Angebot sonstiger Kryptowerte Art. 4 und Zulassung zum Handel Art. 5 VO (EU) 2023/1114, Inhalt und Form des Whitepapers Art. 6, Marketingmitteilungen Art. 7, Übermittlung an die zuständige Behörde Art. 8, Veröffentlichung Art. 9, Aktualisierung Art. 12, Widerrufsrecht der Verbraucher Art. 13, Haftung für die Whitepaper-Informationen Art. 15 nebst § 19 KMAG, Sonderregime für vermögenswertreferenzierte Token mit Zulassung Art. 16 und Whitepaper Art. 19 sowie Vermögenswertreserve Art. 36, Sonderregime für E-Geld-Token Art. 48 mit Emittentenvorbehalt und Whitepaper Art. 51, Aussetzung und Untersagung von Angeboten § 15 KMAG, Befugnisse zu Whitepaper und Marketing §§ 16, 17 KMAG. Use when ein Token öffentlich angeboten oder zum Handel zugelassen werden soll oder eine Whitepaper-Haftung im Raum steht.",
+      "path": "krypto-mikar/skills/krypto-whitepaper-angebot/SKILL.md",
+      "domain": "krypto-mikar",
+      "category": "krypto-mikar",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "krypto",
+        "whitepaper",
+        "angebot",
+        "§19",
+        "§15",
+        "§§16",
+        "art.4",
+        "art.5"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "micar-anwendungsbereich-token",
+      "description": "Anwendungsbereich der MiCAR und Einordnung von Kryptowerten – Gegenstand und Geltungsbereich Art. 1, 2 VO (EU) 2023/1114 mit den Bereichsausnahmen des Art. 2 Abs. 3 und 4, Legaldefinition des Kryptowerts Art. 3 Abs. 1 Nr. 5 und die drei Klassen vermögenswertreferenzierte Token, E-Geld-Token und sonstige Kryptowerte, Abgrenzung zu Finanzinstrumenten nach MiFID II und zum Erlaubnisregime von KWG, WpIG, KAGB und ZAG, Durchführung durch das KMAG § 1 mit dem Ausschluss der in Art. 2 Abs. 3, 4 genannten Kryptowerte, Aufgaben und Befugnisse der BaFin §§ 3, 4 KMAG, sofortige Vollziehbarkeit § 5 KMAG sowie das Einschreiten gegen unerlaubte Geschäfte § 9 KMAG. Use when zu klären ist, ob ein Token der MiCAR unterfällt, welcher Klasse er angehört und welches Erlaubnisregime gilt.",
+      "path": "krypto-mikar/skills/micar-anwendungsbereich-token/SKILL.md",
+      "domain": "krypto-mikar",
+      "category": "krypto-mikar",
+      "subdomain": "",
+      "version": "0.4.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "micar",
+        "anwendungsbereich",
+        "token",
+        "§1",
+        "§§3",
+        "§5",
+        "§9",
+        "art.1"
       ],
       "tools": 0,
       "has_references": false,

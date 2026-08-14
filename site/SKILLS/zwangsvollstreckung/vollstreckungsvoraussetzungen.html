@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Vollstreckungsvoraussetzungen</h1>
     <p class="page-subtitle">Die allgemeinen Voraussetzungen jeder Zwangsvollstreckung – Titel §§ 704, 794 ZPO, Vollstreckungsklausel §§ 724–726 ZPO, Zustellung § 750 ZPO als Trias, vollstreckbare Ausfertigung, Rechtsnachfolgeklausel § 727 ZPO, besondere Voraussetzungen §§ 751, 756 ZPO, sowie die Zuordnung der Rechtsbehelfe: Erinnerung § 766 ZPO, Klauselerinnerung § 732 ZPO, Klauselgegenklage § 768 ZPO, Vollstreckungsschutz § 765a ZPO und sofortige Beschwerde § 793 ZPO. Use when geprüft wird, ob aus einem Titel vollstreckt werden darf, eine Klausel erteilt oder angegriffen werden soll oder ein Schuldner sich gegen eine laufende Vollstreckung wehrt.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Zwangsvollstreckung / ZVG</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Zwangsvollstreckung / ZVG</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">vollstreckungsvoraussetzungen</span><span class="tag">§§704</span><span class="tag">§§724</span><span class="tag">§750</span><span class="tag">§727</span><span class="tag">§§751</span><span class="tag">§766</span><span class="tag">§732</span></div>
   </div>
   <section><h2>Purpose</h2><p>Jede Zwangsvollstreckung steht auf drei Beinen: <strong>Titel, Klausel, Zustellung</strong>. Fehlt eines, ist die Vollstreckung fehlerhaft — und zwar unabhängig davon, ob der Anspruch materiell besteht. Diese Trennung von formeller und materieller Ebene ist zugleich die Landkarte der Rechtsbehelfe: Jeder Angriff gehört zu genau einer Ebene, und der falsch gewählte Rechtsbehelf geht als unzulässig verloren. Dieser Skill prüft die Trias vor Vollstreckungsbeginn und ordnet auf Schuldnerseite jeden Einwand dem richtigen Rechtsbehelf zu.</p></section>

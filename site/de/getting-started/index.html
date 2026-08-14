@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -348,7 +360,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 <h3>Wählen Sie Ihren Einstieg</h3>
 <ul><li><strong><a href="installation/">Installation</a></strong> — Marketplace in Claude Code einbinden, Skills in Ihr Projekt kopieren oder direkt von GitHub nutzen.</li><li><strong><a href="quick-start/">Schnelleinstieg</a></strong> — Den ersten Skill in unter 60 Sekunden ausführen.</li><li><strong><a href="platforms/">Plattformen</a></strong> — Einrichtung je Anbieter: Claude Code, Gemini CLI, ChatGPT Custom GPTs, Cursor und weitere KI-Assistenten.</li></ul>
 <h3>Was Sie erhalten</h3>
-<ul><li>275 Skills in 62 Rechtsgebieten des deutschen Rechts und der EU-Compliance.</li><li>Normzitate verlinkt auf <code>gesetze-im-internet.de</code> und <code>EUR-Lex</code>.</li><li>Rechtsprechungsnachweise sind mit <code>[unverifiziert – prüfen]</code> gekennzeichnet, solange sie nicht extern geprüft wurden. <code>[generiert]</code> (halluzinierte) Fundstellen sind unzulässig.</li><li>Anbieterneutrales Skill-Format — eine einzige <code>SKILL.md</code> läuft über Adapter in Claude, Gemini und GPT.</li><li>Prüfprotokoll (<code>VERIFICATION_STATUS.md</code>) mit dem Stand der bestätigten Rechtsprechungsnachweise.</li></ul>
+<ul><li>291 Skills in 66 Rechtsgebieten des deutschen Rechts und der EU-Compliance.</li><li>Normzitate verlinkt auf <code>gesetze-im-internet.de</code> und <code>EUR-Lex</code>.</li><li>Rechtsprechungsnachweise sind mit <code>[unverifiziert – prüfen]</code> gekennzeichnet, solange sie nicht extern geprüft wurden. <code>[generiert]</code> (halluzinierte) Fundstellen sind unzulässig.</li><li>Anbieterneutrales Skill-Format — eine einzige <code>SKILL.md</code> läuft über Adapter in Claude, Gemini und GPT.</li><li>Prüfprotokoll (<code>VERIFICATION_STATUS.md</code>) mit dem Stand der bestätigten Rechtsprechungsnachweise.</li></ul>
 <h3>Wichtig — bitte zuerst lesen</h3>
 <p>Dies ist keine Rechtsberatung. Jede Skill-Ausgabe ist ein Entwurf zur Prüfung durch eine zugelassene Rechtsanwältin oder einen zugelassenen Rechtsanwalt bzw. Syndikusrechtsanwalt nach § 43a BRAO und § 2 BORA. Prüfen Sie Rechtsprechungsnachweise stets in Beck-Online, juris oder openjur.net, bevor Sie sie gegenüber Mandantschaft oder Gericht verwenden.</p>
 </article>

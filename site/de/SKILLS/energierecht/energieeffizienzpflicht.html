@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Energieeffizienzpflicht</h1>
     <p class="page-subtitle">Überblicksprüfung der Energieeffizienzpflichten für Unternehmen – EnMS-/UMS-Pflicht nach § 8 EnEfG ab Endenergieverbrauch &gt;7,5 GWh/a, Energieaudit-Pflicht für Nicht-KMU alle 4 Jahre nach § 8 EDL-G, Veröffentlichungs- und Umsetzungspflichten wesentlicher Effizienzmaßnahmen, Schnittstellen GEG (Gebäude) und CSRD/ESRS E1 (Berichterstattung). Use when ein Unternehmen seine Pflichten nach EnEfG/EDL-G erstmals oder turnusmäßig überprüft oder ein BAFA-Nachweis vorbereitet werden muss.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Energierecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Energierecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">energieeffizienzpflicht</span><span class="tag">§8</span><span class="tag">csrd</span><span class="tag">esrs</span><span class="tag">energierecht</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill liefert eine <strong>Übersicht</strong> über die in einem Unternehmen einschlägigen Energieeffizienzpflichten und ordnet sie den richtigen Adressatenkreisen zu: Energiemanagementsystem (EnMS) bzw. Umweltmanagementsystem (UMS) nach § 8 EnEfG, Energieaudit nach § 8 EDL-G, Veröffentlichung wesentlicher Effizienzmaßnahmen, Schnittstelle GEG/CSRD. Er bereitet die Nachweisführung gegenüber dem BAFA vor.</p>

@@ -95,6 +95,10 @@ class TestStatuteSlugs(unittest.TestCase):
             "https://www.gesetze-im-internet.de/uwg_2004/__3a.html",
         )
 
+    def test_boersg_uses_the_underscore_umlaut_slug(self):
+        # gesetze-im-internet.de writes the umlaut as an underscore.
+        self.assertEqual(vc.STATUTE_SLUGS["BörsG"], "b_rsg_2007")
+
     def test_egbgb_has_no_derived_per_article_url(self):
         # gesetze-im-internet.de serves the EGBGB as one consolidated document,
         # so a derived art_<n>.html always 404s. It must be reported against the

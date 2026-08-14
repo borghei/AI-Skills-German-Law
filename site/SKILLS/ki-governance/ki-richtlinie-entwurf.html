@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Ki Richtlinie Entwurf</h1>
     <p class="page-subtitle">Entwurf einer internen KI-Richtlinie / KI-Policy für Unternehmen und Kanzleien – Geltungsbereich, Grundsätze, verbotene Einsätze, Genehmigungsprozess, Rollen, Lieferantenmanagement (AVV Art. 28 DSGVO, § 43e BRAO), Schulung Art. 4 KI-VO, Vorfallsmanagement. Use when eine Organisation erstmals eine verbindliche KI-Richtlinie einführen oder eine bestehende Policy konsolidieren will.</p>
-    <div class="badge-bar"><span class="badge badge-domain">KI-Governance</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">KI-Governance</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">richtlinie</span><span class="tag">entwurf</span><span class="tag">§43e</span><span class="tag">art.28</span><span class="tag">art.4</span><span class="tag">dsgvo</span><span class="tag">brao</span><span class="tag">ki-vo</span></div>
   </div>
   <section><h2>Purpose</h2><p>Der Skill liefert eine <strong>verbindliche interne KI-Richtlinie</strong> (Policy) und ihre Anlagen als Template – inklusive Geltungsbereich, ethischer und rechtlicher Leitplanken, Genehmigungsprozess, Rollen, Lieferantenmanagement, Schulungskonzept und Vorfallsmanagement. Die Richtlinie ist das organisatorische Dach eines KI-Management-Systems iSv <strong>ISO/IEC 42001</strong> (Kap. 5 Leadership, Kap. 6 Planning) und das Pendant zum gesetzlichen Pflichtensystem der KI-VO (Detail in <code>ki-vo-compliance</code>).</p></section>

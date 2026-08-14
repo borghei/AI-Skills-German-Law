@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Datenpanne Meldung</h1>
     <p class="page-subtitle">Meldung einer Verletzung des Schutzes personenbezogener Daten nach Art. 33 und Art. 34 DSGVO – 72-Stunden-Meldung an die Aufsichtsbehörde, Risikobewertung, Benachrichtigung der Betroffenen bei hohem Risiko, Dokumentationspflicht Art. 33 Abs. 5 DSGVO, Bußgeldrisiko Art. 83 Abs. 4 DSGVO. Use when ein Verantwortlicher nach Kenntnis von einer Datenpanne die Meldepflichten und Fristen prüfen muss.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Datenschutzrecht / GDPR</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Datenschutzrecht / GDPR</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">datenpanne</span><span class="tag">meldung</span><span class="tag">art.33</span><span class="tag">art.34</span><span class="tag">art.83</span><span class="tag">dsgvo</span><span class="tag">datenschutzrecht</span></div>
   </div>
   <section><h2>Zweck</h2><p>Nach Kenntnis einer Datenpanne läuft eine kurze, harte Meldekette: Vorliegen prüfen → Risiko bewerten → binnen <strong>72 Stunden</strong> an die Aufsichtsbehörde melden (sofern ein Risiko besteht) → bei hohem Risiko zusätzlich die Betroffenen benachrichtigen → alles lückenlos dokumentieren. Dieser Skill führt den Verantwortlichen entlang dieser Kette, hält die Fristen nach und entwirft Melde- und Benachrichtigungstexte, ohne die Meldepflicht über- oder unterzubewerten.</p></section>

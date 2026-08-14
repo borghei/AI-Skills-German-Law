@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Fluggastrechte Vo 261</h1>
     <p class="page-subtitle">Ansprüche des Fluggastes nach der VO (EG) 261/2004 – Anwendungsbereich Art. 3, Ausgleichszahlung Art. 7 (250/400/600 EUR nach Entfernung), Annullierung Art. 5, große Verspätung am Endziel, Nichtbeförderung Art. 4, außergewöhnliche Umstände Art. 5 Abs. 3, Betreuungsleistungen Art. 9, Erstattung und anderweitige Beförderung Art. 8, Anrechnung Art. 12, Gerichtsstand Art. 7 Nr. 1 EuGVVO und Verjährung §§ 195, 199 BGB. Use when ein Flug annulliert, überbucht oder erheblich verspätet war und Ausgleichs-, Betreuungs- oder Erstattungsansprüche gegen das ausführende Luftfahrtunternehmen geprüft und beziffert werden sollen.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Reise- und Fluggastrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Reise- und Fluggastrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">fluggastrechte</span><span class="tag">261</span><span class="tag">§§195</span><span class="tag">art.3</span><span class="tag">art.7</span><span class="tag">art.5</span><span class="tag">art.4</span><span class="tag">art.9</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill prüft die Ansprüche eines Fluggastes gegen das ausführende Luftfahrtunternehmen vollständig — Anwendungsbereich, Störungsart, Ausgleich, Betreuung, Erstattung, Einwand außergewöhnlicher Umstände, Zuständigkeit und Verjährung — und erzeugt die bezifferte Zahlungsaufforderung. Er ist bewusst gegen die Massenpraxis gebaut: Serienbriefe ohne Prüfung des Art. 3 und ohne Verjährungsrechnung erzeugen unbegründete Forderungen und Kostenrisiken.</p></section>

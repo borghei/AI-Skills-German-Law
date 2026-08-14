@@ -1,6 +1,6 @@
 {
   "name": "datenwirtschaftsrecht",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Datenwirtschaftsrecht – EU-Datenverordnung (Data Act, VO (EU) 2023/2854) und ihre deutsche Durchführung im DADG. Anwendungsbereich und Rollen Art. 1, 2, 7, Geltungsbeginn 12.09.2025 / 12.09.2026 / 12.01.2027 Art. 50; Zugangsanspruch des Nutzers Art. 3, 4, 5, 6 mit Geschäftsgeheimnisschutz Art. 4 Abs. 6–8; B2B-Bereitstellung und angemessene Gegenleistung Art. 8, 9; Missbrauchskontrolle einseitig auferlegter Klauseln Art. 13 im Verhältnis zu §§ 305 ff. BGB; Anbieterwechsel bei Datenverarbeitungsdiensten Art. 23–31 mit Wegfall der Wechselentgelte ab 12.01.2027; Durchsetzung durch die Bundesnetzagentur §§ 2, 6–14 DADG und Bußgelder § 15 DADG. Abgrenzung zu DSGVO, GeschGehG und Datenbankschutz. Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Domainrecht</h1>
     <p class="page-subtitle">Bewertung von Domainstreitigkeiten und Ansprüchen aus Namensrecht (§ 12 BGB), Kennzeichenrecht und geschäftlicher Bezeichnung (§§ 5, 15 MarkenG) sowie Markenrecht (§ 14 MarkenG), inklusive DENIC-Dispute-Eintrag und Domain-Grabbing. Use when ein Streit über eine Internet-Domain (Registrierung, Nutzung, Übertragung, Löschung) zu beurteilen ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">IT-Recht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">IT-Recht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">domainrecht</span><span class="tag">§12</span><span class="tag">§§5</span><span class="tag">§14</span><span class="tag">bgb</span><span class="tag">it-recht</span></div>
   </div>
   <section><h2>Purpose</h2><p>Domainstreitigkeiten betreffen die Kollision einer registrierten Internet-Domain mit Namens-, Kennzeichen- oder Markenrechten Dritter. Dieser Skill ordnet den Sachverhalt den richtigen Anspruchsgrundlagen zu — <strong>§ 12 BGB</strong> (Namensrecht), <strong>§ 5 MarkenG</strong> und <strong>§ 15 MarkenG</strong> (geschäftliche Bezeichnung), <strong>§ 14 MarkenG</strong> (eingetragene Marke) — klärt die Priorität, bestimmt Unterlassungs-, Löschungs- und Übertragungsfolgen und bewertet den sichernden DENIC-Dispute-Eintrag.</p></section>

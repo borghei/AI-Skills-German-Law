@@ -318,6 +318,18 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   .skills-grid, .related-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; }
   .nav-links a:not(.gh-link) { font-size: 0.85rem; }
+  /* On a phone the serif wordmark wrapped to four lines and the links pushed
+     the language switcher off the right edge. Stack the bar, keep the wordmark
+     on one line, and let the links scroll horizontally instead of overflowing. */
+  .navbar .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .nav-logo { white-space: nowrap; font-size: 1rem; }
+  .nav-links {
+    width: 100%; gap: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 </style>
 </head>
@@ -342,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Eigenbedarfskuendigung</h1>
     <p class="page-subtitle">Wirksamkeitsprüfung einer Eigenbedarfskündigung im Wohnraummietrecht – berechtigtes Interesse und begünstigter Personenkreis § 573 Abs. 2 Nr. 2 BGB, Begründungspflicht § 573 Abs. 3 BGB, Kündigungsfristen § 573c BGB, Widerspruch und Sozialklausel § 574 BGB, Schadensersatz bei vorgetäuschtem Eigenbedarf. Use when ein Vermieter eine Eigenbedarfskündigung gestaltet oder ein Mieter eine erhaltene Kündigung auf Wirksamkeit und Härtefall prüft.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Mietrecht</span> <span class="badge badge-version">v0.3.0</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Mietrecht</span> <span class="badge badge-version">v0.4.0</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">eigenbedarfskuendigung</span><span class="tag">§573</span><span class="tag">§573c</span><span class="tag">§574</span><span class="tag">bgb</span><span class="tag">mietrecht</span></div>
   </div>
   <section><h2>Purpose</h2><p>Die Eigenbedarfskündigung ist die praktisch häufigste ordentliche Kündigung des Vermieters — und zugleich die fehleranfälligste. Eine ordentliche Kündigung von Wohnraum setzt ein <strong>berechtigtes Interesse</strong> voraus (<a href="https://www.gesetze-im-internet.de/bgb/__573.html">§ 573 Abs. 1 BGB</a>); fehlt es oder ist die Begründung unzureichend, ist die Kündigung unwirksam und das Mietverhältnis läuft weiter. Wer Eigenbedarf nur <strong>vortäuscht</strong>, haftet dem Mieter zudem auf Schadensersatz. Diese Skill prüft die Wirksamkeit aus beiden Perspektiven und beziffert das Schadensersatzrisiko.</p></section>

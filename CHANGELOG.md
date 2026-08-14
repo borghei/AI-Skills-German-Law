@@ -7,6 +7,86 @@ All notable changes to this project are documented here. Format follows
 
 _Nothing yet._
 
+## [0.4.0] - 2026-08-14
+
+Four areas built around **live 2026 deadlines**, not general topics. Every date
+below was read out of the primary text during authoring, and
+`verify_citations.py --online` resolves every derived statute link in all four
+areas with zero failures.
+
+### Added — the 2026 regulatory wave (62 → 66 areas, 275 → 291 skills)
+
+- **`verbandsklage-vdug` (4 skills)** — Verbraucherrechtedurchsetzungsgesetz.
+  Abhilfeklage §§ 14–21 mit Gleichartigkeit § 15, Abhilfegrundurteil § 16,
+  kollektivem Gesamtbetrag § 19 iVm § 287 ZPO und **zulassungsfreier Revision**
+  § 18 Abs. 4; Musterfeststellungsklage § 41 mit den drei Wirkungen des § 11 —
+  einschließlich der übersehenen **Ausnahme des § 11 Abs. 3 S. 2 für
+  Abhilfeendurteile**; Zulässigkeit §§ 1–8 mit Quorum von 50 Betroffenen und dem
+  **Drittfinanzierungsverbot des § 4 Abs. 2** (Zehn-Prozent-Grenze); Anmeldung
+  § 46 und Umsetzungsverfahren §§ 22–40 mit Sachwalter und Umsetzungsfonds.
+  **Die schärfste Falle des Gebiets:** Die Anmeldefrist beträgt drei Wochen ab
+  Schluss der mündlichen Verhandlung, und **§ 193 BGB ist ausdrücklich
+  ausgeschlossen** — ein Fristende am Samstag verschiebt sich nicht.
+- **`kritis-resilienz` (4 skills)** — KRITIS-Dachgesetz (CER-RL (EU) 2022/2557),
+  **seit März 2026 in Kraft**. Zehn Sektoren § 4 Abs. 1, Registrierung § 8 binnen
+  drei Monaten ab **Geltungszeitpunkt** beim **BBK**, Risikoanalyse § 12,
+  Resilienzplan § 13 entlang von vier Zielen, Nachweise und Audits § 16,
+  Vorfallmeldung § 18 mit **24 Stunden ab Kenntnis** und Monatsbericht,
+  Geschäftsleiterpflicht § 20 und Bußgelder bis 1 Mio. EUR § 24. Zwei Fallen
+  sind eigens ausgewiesen: Das Dachgesetz regelt die **physische** Resilienz
+  neben NIS2/BSIG (zwei getrennte Registrierungen), und der Ausnahmekatalog des
+  **§ 4 Abs. 2 erfasst § 8 nicht**.
+- **`entgelttransparenz-eu` (4 skills)** — RL (EU) 2023/970. Die Umsetzungsfrist
+  des Art. 34 lief am **07.06.2026 ab; Deutschland hat sie versäumt**. Die Skills
+  trennen deshalb drei Ebenen: geltendes EntgTranspG in richtlinienkonformer
+  Auslegung, unmittelbar wirkendes **Art. 157 AEUV** auch zwischen Privaten, und
+  Richtlinienbestimmungen ohne Umsetzung — **keine** horizontale Wirkung,
+  gegenüber staatlichen Arbeitgebern je Bestimmung zu prüfen, dazu Staatshaftung.
+  Auskunft Art. 7 (zwei Monate) gegen §§ 10 ff. EntgTranspG (drei Monate),
+  Berichterstattung Art. 9 ab **07.06.2027 über das vorangehende Kalenderjahr**,
+  gemeinsame Entgeltbewertung Art. 10 ab **5 %** ohne Korrektur binnen sechs
+  Monaten, und die **Beweislast-Vollumkehr des Art. 18 Abs. 2** bei verletzten
+  Transparenzpflichten.
+- **`krypto-mikar` (4 skills)** — MiCAR (VO (EU) 2023/1114) und **KMAG**.
+  Vorrangprüfung gegen MiFID II, KWG, KAGB und ZAG, Tokenklassen mit dem
+  Emittentenvorbehalt des Art. 48 für E-Geld-Token, Whitepaper Art. 6 (nach
+  Art. 8 nur **übermittelt, nicht gebilligt**) mit doppelter Haftung aus Art. 15
+  MiCAR **und** § 19 KMAG, CASP-Zulassung Art. 59 ff., Marktmissbrauch
+  Art. 86–92. **Der zentrale Fund:** MiCAR lässt Bestandsanbieter nach
+  Art. 143 Abs. 3 bis zum **01.07.2026** weiterarbeiten und erlaubt den
+  Mitgliedstaaten ausdrücklich eine Verkürzung — **Deutschland hat verkürzt**:
+  Nach **§ 50 Abs. 2 Nr. 3 KMAG** erlosch die fortbestehende Erlaubnis
+  **spätestens mit Ablauf des 31.12.2025**. Wer mit dem Unionsdatum rechnet,
+  liegt sechs Monate daneben.
+
+Verifikationsstand: Für keine der vier Areas wurde ein Rechtsprechungslauf
+durchgeführt — zu VDuG, KRITIS-DachG, RL (EU) 2023/970, MiCAR und KMAG existiert
+**praktisch keine Judikatur**. Die Skills behaupten deshalb keine Aktenzeichen,
+benennen die Streitfelder und markieren jede erinnerte Entscheidung mit
+`[unverifiziert – prüfen]`.
+
+### Fixed
+
+- **`scripts/verify_citations.py` — BörsG-Slug.** Die Abkürzung war auf
+  `boersg_2007` gemappt; gesetze-im-internet.de kodiert den Umlaut als
+  Unterstrich und serviert das Börsengesetz unter **`b_rsg_2007`**. Alle
+  BörsG-Zitate des Repos schlugen im `--online`-Lauf mit HTTP 404 fehl. Durch
+  einen Regressionstest gepinnt.
+- **`scripts/verify_citations.py` — fehlende Abkürzungen.** Ergänzt: VDuG,
+  KapMuG, KRITISDachG nebst der Kurzform KRITIS (aus „§ 18 KRITIS-Dachgesetz")
+  und KMAG.
+- **`scripts/generate_site.py` — Navigationsleiste auf dem Telefon.** Bei 390 px
+  umbrach die Serifen-Wortmarke auf vier Zeilen und die Sprachumschaltung wurde
+  über den rechten Rand gedrückt. Die Leiste stapelt jetzt unterhalb von 480 px,
+  die Wortmarke bleibt einzeilig, und die Navigationslinks scrollen horizontal
+  statt überzulaufen. Gefunden bei der Live-UI-Prüfung des v0.3.0-Ships.
+
+### Changed
+
+- README, QUICKSTART, `skills.json`, die generierte Website und die
+  Eval-Konfiguration spiegeln 66 Areas und 291 Skills.
+
+
 ## [0.3.0] - 2026-08-14
 
 Everything below this heading was on `main` but never tagged. `0.3.0` is the
