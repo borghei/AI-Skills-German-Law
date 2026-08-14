@@ -182,6 +182,21 @@ def count_tools(plugin_dir: Path) -> int:
     return n
 
 
+def plugin_version(domain: str) -> str:
+    """The version the area's own plugin.json declares.
+
+    This was hardcoded to "0.1.0" for every skill, so the version chip on all
+    275 skill pages stayed frozen at the first release while the plugins moved
+    on. A skill is installed as part of its plugin, so the plugin's version is
+    the one that means anything to a user.
+    """
+    manifest = REPO_ROOT / domain / ".claude-plugin" / "plugin.json"
+    try:
+        return str(json.loads(manifest.read_text(encoding="utf-8"))["version"])
+    except (OSError, ValueError, KeyError):
+        return "0.0.0"
+
+
 def main() -> None:
     plugin_files = []  # collected (plugin, skill_dir)
     for domain in DOMAINS_ORDER:
@@ -213,7 +228,7 @@ def main() -> None:
             "domain": domain,
             "category": domain,
             "subdomain": "",
-            "version": "0.1.0",
+            "version": plugin_version(domain),
             "license": "Apache-2.0 OR MIT",
             "tags": tags,
             "tools": tools,
