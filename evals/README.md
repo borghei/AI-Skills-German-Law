@@ -29,7 +29,7 @@ coverage (see `arbeitsrecht/skills/kuendigungs-pruefung/test.md` for an example)
 ```bash
 # 1. Generate the config (all skills, or a subset)
 python scripts/build_eval_config.py \
-    --provider anthropic:messages:claude-opus-4-8 \
+    --provider anthropic:messages:claude-opus-5 \
     --judge   google:gemini-2.5-pro \
     --out evals/promptfoo.generated.yaml
 

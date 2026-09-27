@@ -1,6 +1,6 @@
 {
   "name": "schiedsverfahren-adr",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Schiedsverfahrensrecht und alternative Streitbeilegung – Zehntes Buch der ZPO §§ 1025–1066. Schiedsvereinbarung §§ 1029, 1030, 1031 mit Verbraucherform § 1031 Abs. 5, Einrede und Feststellungsantrag § 1032, Kompetenz-Kompetenz § 1040; Bildung und Ablehnung des Schiedsgerichts §§ 1034–1039, Verfahren §§ 1042–1050, einstweiliger Rechtsschutz §§ 1033, 1041, Kosten § 1057, Schiedsspruch §§ 1054, 1055; Aufhebungsantrag § 1059 mit Dreimonatsfrist und OLG-Zuständigkeit § 1062, Verfahren § 1063, Rechtsbeschwerde § 1065; Vollstreckbarerklärung inländischer § 1060 und ausländischer Schiedssprüche § 1061 iVm dem New Yorker Übereinkommen von 1958. Institutionelle Verfahren nach der DIS-Schiedsgerichtsordnung 2018 und Mediation nach dem MediationsG / § 278a ZPO. Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

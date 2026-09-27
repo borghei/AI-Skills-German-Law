@@ -299,7 +299,7 @@ python scripts/verify_citations.py                 # offline, informational
 python scripts/verify_citations.py --online --strict  # resolve URLs, fail on problems
 
 # Generate a behavioural (LLM-graded) eval config for promptfoo
-python scripts/build_eval_config.py --provider anthropic:messages:claude-opus-4-8 --judge google:gemini-2.5-pro
+python scripts/build_eval_config.py --provider anthropic:messages:claude-opus-5 --judge google:gemini-2.5-pro
 ```
 
 ---

@@ -81,7 +81,7 @@ curl -X POST "$ANTHROPIC_BASE_URL/v1/messages" \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
   -d '{
-    "model": "claude-sonnet-4-6",
+    "model": "claude-sonnet-5",
     "max_tokens": 200,
     "messages": [{"role": "user", "content": "Wer bist du? Antworte in 2 Sätzen."}]
   }'
