@@ -109,10 +109,17 @@ Zu rechnen sind die Fristen des Verfahrens und die Zehn-Prozent-Schwelle der Dri
 ```bash
 # Anmeldefrist § 46 Abs. 1 VDuG: 3 Wochen nach Schluss der mündlichen Verhandlung
 # (§ 193 BGB ist ausdrücklich NICHT anwendbar - kein Aufschub auf den nächsten Werktag)
-python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY
+python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY --kein-rollover
 
-# Streitwert- und Gerichtskostenschätzung nach dem GKG
-python -m scripts.legal_calc.cli gkg --streitwert 2500000
+# Gerichtskosten Musterfeststellungsklage: Streitwert nach § 48 Abs. 1 S. 2 GKG höchstens
+# 250.000 EUR - ein höheres Forderungsvolumen (z.B. 2,5 Mio. EUR) wird gekappt;
+# Gebührensatz 4,0 nach KV GKG Nr. 1212 (erster Rechtszug vor dem OLG)
+python -m scripts.legal_calc.cli gkg --wert 250000 --faktor 4.0
+
+# Gerichtskosten Abhilfeklage: Streitwert nach § 48 Abs. 1 S. 3 GKG höchstens
+# 300.000 EUR - ein höheres Forderungsvolumen (z.B. 2,5 Mio. EUR) wird gekappt;
+# Gebührensatz 4,0 nach KV GKG Nr. 1212
+python -m scripts.legal_calc.cli gkg --wert 300000 --faktor 4.0
 ```
 
 Ob eine Erfolgsbeteiligung „mehr als 10 Prozent" iSd § 4 Abs. 2 Nr. 3 VDuG ausmacht, ist auf die konkrete Vereinbarung zu rechnen und zu belegen.

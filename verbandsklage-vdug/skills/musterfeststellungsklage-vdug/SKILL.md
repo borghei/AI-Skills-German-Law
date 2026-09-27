@@ -89,7 +89,7 @@ Der Rechner in [`../../../scripts/legal_calc/`](../../../scripts/legal_calc/) ma
 ```bash
 # Anmeldefrist § 46 Abs. 1 VDuG: 3 Wochen nach Schluss der mündlichen Verhandlung,
 # § 193 BGB ausdrücklich nicht anwendbar
-python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY
+python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY --kein-rollover
 
 # Revisionsfrist § 548 ZPO: 1 Monat ab Zustellung
 python -m scripts.legal_calc.cli frist --ereignis 20.05.2026 --menge 1 --einheit monate --land BY

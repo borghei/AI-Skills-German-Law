@@ -354,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Krypto Whitepaper Angebot</h1>
     <p class="page-subtitle">Öffentliches Angebot von Kryptowerten und Kryptowerte-Whitepaper – Angebot sonstiger Kryptowerte Art. 4 und Zulassung zum Handel Art. 5 VO (EU) 2023/1114, Inhalt und Form des Whitepapers Art. 6, Marketingmitteilungen Art. 7, Übermittlung an die zuständige Behörde Art. 8, Veröffentlichung Art. 9, Aktualisierung Art. 12, Widerrufsrecht der Verbraucher Art. 13, Haftung für die Whitepaper-Informationen Art. 15 nebst § 19 KMAG, Sonderregime für vermögenswertreferenzierte Token mit Zulassung Art. 16 und Whitepaper Art. 19 sowie Vermögenswertreserve Art. 36, Sonderregime für E-Geld-Token Art. 48 mit Emittentenvorbehalt und Whitepaper Art. 51, Aussetzung und Untersagung von Angeboten § 15 KMAG, Befugnisse zu Whitepaper und Marketing §§ 16, 17 KMAG. Use when ein Token öffentlich angeboten oder zum Handel zugelassen werden soll oder eine Whitepaper-Haftung im Raum steht.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Kryptowerteaufsicht (MiCAR / KMAG)</span> <span class="badge badge-version">v0.4.1</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Kryptowerteaufsicht (MiCAR / KMAG)</span> <span class="badge badge-version">v0.4.2</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">krypto</span><span class="tag">whitepaper</span><span class="tag">angebot</span><span class="tag">§19</span><span class="tag">§15</span><span class="tag">§§16</span><span class="tag">art.4</span><span class="tag">art.5</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill begleitet ein öffentliches Angebot oder eine Handelszulassung von Kryptowerten: Welches Whitepaper-Regime gilt, was muss darin stehen, wer haftet wofür — und welche Befugnisse hat die BaFin, das Angebot zu stoppen. Er hält die drei Regime auseinander, die je nach Tokenklasse gelten, und behandelt die Haftungsnorm, die in der Beratung regelmäßig unterschätzt wird.</p></section>
@@ -384,8 +384,10 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 <pre><code># Widerrufsfrist nach Art. 13 MiCAR - Länge am Wortlaut prüfen, hier Beispielrechnung
 python -m scripts.legal_calc.cli frist --ereignis 03.03.2026 --menge 14 --einheit tage --land HE
 
-# Vorlauf zwischen Übermittlung nach Art. 8 und Angebotsbeginn
-python -m scripts.legal_calc.cli frist --ereignis 01.02.2026 --menge 20 --einheit arbeitstage --land HE
+# Vorlauf zwischen Übermittlung nach Art. 8 und Angebotsbeginn: 20 Arbeitstage ab 01.02.2026,
+# von Hand auszuzählen (VO 1182/71: Übermittlungstag, Sa, So und die ausgegebenen
+# Feiertage zählen nicht mit) - der Rechner hat keine Einheit Arbeitstage
+python -m scripts.legal_calc.cli feiertage --jahr 2026 --land HE
 
 # Verjährung eines Schadensersatzanspruchs aus Art. 15 MiCAR / § 19 KMAG, §§ 195, 199 BGB
 python -m scripts.legal_calc.cli verjaehrung --entstehung 03.03.2026 --kenntnis 03.03.2026</code></pre></section>

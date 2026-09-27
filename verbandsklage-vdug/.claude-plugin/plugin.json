@@ -1,6 +1,6 @@
 {
   "name": "verbandsklage-vdug",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Verbandsklagerecht nach dem VDuG – Abhilfeklage § 14 mit Gleichartigkeitserfordernis § 15, Abhilfegrundurteil § 16, kollektivem Gesamtbetrag § 19 iVm § 287 ZPO und Abhilfeendurteil § 18 mit zulassungsfreier Revision; Musterfeststellungsklage § 41 und Bindungswirkung § 11 Abs. 3; Zulässigkeit §§ 1–8 mit klageberechtigten Stellen § 2, Verbraucherquorum von 50 Betroffenen § 4 Abs. 1, Verbot der Drittfinanzierung § 4 Abs. 2 und ausschließlicher OLG-Zuständigkeit § 3; Anmeldung zum Verbandsklageregister § 46 binnen drei Wochen nach Schluss der mündlichen Verhandlung ohne § 193 BGB, Sperrwirkungen §§ 8, 11 und Umsetzungsverfahren §§ 22–40 mit Sachwalter, Umsetzungsfonds § 25 und Widerspruchsverfahren § 28. Kleine Unternehmen gelten nach § 1 Abs. 2 als Verbraucher. Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

@@ -354,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Musterfeststellungsklage Vdug</h1>
     <p class="page-subtitle">Musterfeststellungsklage nach § 41 VDuG – Feststellung des Vorliegens oder Nichtvorliegens tatsächlicher und rechtlicher Voraussetzungen für das Bestehen oder Nichtbestehen von Ansprüchen oder Rechtsverhältnissen (Feststellungsziele), Wahlfreiheit gegenüber der Abhilfeklage § 41 Abs. 2, Verbraucherquorum § 4 Abs. 1 Nr. 2, Bindungswirkung rechtskräftiger Urteile für den Folgeprozess des angemeldeten Verbrauchers § 11 Abs. 3 mit der Ausnahme für Abhilfeendurteile, Aussetzung anhängiger Individualklagen § 11 Abs. 1, Klageverbot für angemeldete Verbraucher § 11 Abs. 2, Sperrwirkung § 8, Revision § 42 sowie die Abgrenzung zum KapMuG-Musterverfahren § 1 Abs. 3. Use when Feststellungsziele zu formulieren, eine Musterfeststellungsklage abzuwehren oder die Wirkung eines Musterurteils auf Individualprozesse zu bestimmen ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Verbandsklagerecht (VDuG)</span> <span class="badge badge-version">v0.4.1</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Verbandsklagerecht (VDuG)</span> <span class="badge badge-version">v0.4.2</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">musterfeststellungsklage</span><span class="tag">vdug</span><span class="tag">§41</span><span class="tag">§4</span><span class="tag">§11</span><span class="tag">§8</span><span class="tag">§42</span><span class="tag">§1</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill formuliert und prüft Feststellungsziele und bestimmt, was ein rechtskräftiges Musterurteil im nachfolgenden Individualprozess tatsächlich bindet. Er trennt dabei die drei Wirkungsebenen des § 11 VDuG, die in der Praxis regelmäßig vermengt werden: Aussetzung, Klageverbot und Bindungswirkung.</p></section>
@@ -381,7 +381,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 <section><h2>Deterministische Berechnung</h2><p>Der Rechner in <a href="../../../scripts/legal_calc/"><code>../../../scripts/legal_calc/</code></a> macht nur die Arithmetik:</p>
 <pre><code># Anmeldefrist § 46 Abs. 1 VDuG: 3 Wochen nach Schluss der mündlichen Verhandlung,
 # § 193 BGB ausdrücklich nicht anwendbar
-python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY
+python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY --kein-rollover
 
 # Revisionsfrist § 548 ZPO: 1 Monat ab Zustellung
 python -m scripts.legal_calc.cli frist --ereignis 20.05.2026 --menge 1 --einheit monate --land BY

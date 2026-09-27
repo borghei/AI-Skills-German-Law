@@ -110,8 +110,8 @@ python -m scripts.legal_calc.cli frist --ereignis 20.11.2026 --menge 3 --einheit
 # Rechtsbeschwerdefrist § 575 Abs. 1 ZPO: 1 Monat ab Zustellung des Beschlusses
 python -m scripts.legal_calc.cli frist --ereignis 10.03.2027 --menge 1 --einheit monate --land BE
 
-# Gerichtskosten der Vollstreckbarerklärung nach dem GKG
-python -m scripts.legal_calc.cli gkg --streitwert 850000
+# Gerichtskosten der Vollstreckbarerklärung: Gebührensatz 2,0 nach KV GKG Nr. 1620
+python -m scripts.legal_calc.cli gkg --wert 850000 --faktor 2.0
 ```
 
 ## Quellen

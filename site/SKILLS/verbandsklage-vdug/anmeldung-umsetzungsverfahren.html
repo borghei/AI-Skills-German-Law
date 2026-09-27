@@ -354,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Anmeldung Umsetzungsverfahren</h1>
     <p class="page-subtitle">Anmeldung zum Verbandsklageregister und Umsetzungsverfahren nach dem VDuG – Anmeldung § 46 binnen drei Wochen nach Schluss der mündlichen Verhandlung mit ausdrücklicher Nichtanwendung des § 193 BGB, Pflichtangaben und Richtigkeitsversicherung § 46 Abs. 2, Eintragung ohne inhaltliche Prüfung § 46 Abs. 3, Rücknahme § 46 Abs. 4, Register und Bekanntmachung §§ 43–45, 48, Eröffnungsbeschluss nach Zahlung § 24, Bestellung des Sachwalters § 23, Umsetzungsfonds § 25 mit Trennungspflicht und Pfändungsschutz, Teilnahme § 26, Aufgaben des Sachwalters § 27, Widerspruchsverfahren § 28 mit vier Wochen Widerspruch und zwei Wochen für den Antrag auf gerichtliche Entscheidung, Zwangsmittel §§ 29, 30, Schlussrechnung und Schlussbericht §§ 33–36 sowie nicht abgerufene Beträge § 37. Use when ein Verbraucher seinen Anspruch anmelden will oder ein Abhilfeendurteil umzusetzen ist.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Verbandsklagerecht (VDuG)</span> <span class="badge badge-version">v0.4.1</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Verbandsklagerecht (VDuG)</span> <span class="badge badge-version">v0.4.2</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">anmeldung</span><span class="tag">umsetzungsverfahren</span><span class="tag">§46</span><span class="tag">§193</span><span class="tag">§§43</span><span class="tag">§24</span><span class="tag">§23</span><span class="tag">§25</span></div>
   </div>
   <section><h2>Purpose</h2><p>Der Skill deckt die beiden Verfahrensteile ab, in denen der einzelne Verbraucher tatsächlich zu seinem Geld kommt: die <strong>Anmeldung</strong> zum Verbandsklageregister und das <strong>Umsetzungsverfahren</strong> unter einem Sachwalter. Er behandelt die Frist, deren Versäumung den Anspruch praktisch entwertet — drei Wochen nach Schluss der mündlichen Verhandlung, <strong>ohne</strong> die Wohltat des § 193 BGB.</p></section>
@@ -389,9 +389,9 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 <section><h2>Deterministische Berechnung</h2><p>Alle Fristen dieses Skills sind kurz, und die wichtigste kennt <strong>keine</strong> Wochenend- oder Feiertagsverschiebung. Der Rechner in <a href="../../../scripts/legal_calc/"><code>../../../scripts/legal_calc/</code></a> macht nur die Arithmetik:</p>
 <pre><code># § 46 Abs. 1 VDuG: 3 Wochen ab Schluss der mündlichen Verhandlung am 14.03.2026.
 # ACHTUNG: § 193 BGB ist ausgeschlossen - das Ergebnis gilt auch, wenn es auf
-# einen Samstag, Sonntag oder Feiertag fällt. Eine vom Rechner ausgewiesene
-# Verschiebung auf den nächsten Werktag ist hier NICHT anzuwenden.
-python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY
+# einen Samstag, Sonntag oder Feiertag fällt. --kein-rollover schaltet die
+# Verschiebung nach § 193 BGB im Rechner ab.
+python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY --kein-rollover
 
 # § 28 Abs. 2 VDuG: 4 Wochen Widerspruch ab Zugang der Sachwaltermitteilung
 python -m scripts.legal_calc.cli frist --ereignis 06.07.2026 --menge 4 --einheit wochen --land BY

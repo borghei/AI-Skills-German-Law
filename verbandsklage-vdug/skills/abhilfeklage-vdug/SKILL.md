@@ -108,10 +108,12 @@ Der Rechner in [`../../../scripts/legal_calc/`](../../../scripts/legal_calc/) ma
 python -m scripts.legal_calc.cli frist --ereignis 20.05.2026 --menge 1 --einheit monate --land BY
 
 # Anmeldefrist § 46 Abs. 1 VDuG: 3 Wochen ab Schluss der mündlichen Verhandlung, ohne § 193 BGB
-python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY
+python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY --kein-rollover
 
-# Gerichtskosten nach dem Streitwert
-python -m scripts.legal_calc.cli gkg --streitwert 12000000
+# Gerichtskosten: Streitwert nach § 48 Abs. 1 S. 3 GKG auf 300.000 EUR begrenzt
+# (12 Mio. EUR Forderungsvolumen -> 300.000 EUR); Gebührensatz 4,0 nach KV GKG Nr. 1212
+# (erster Rechtszug vor dem OLG)
+python -m scripts.legal_calc.cli gkg --wert 300000 --faktor 4.0
 ```
 
 ## Quellen

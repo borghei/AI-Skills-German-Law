@@ -1,6 +1,6 @@
 {
   "name": "gewerberecht",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Gewerbe- und Handwerksrecht – Gewerbeordnung und Handwerksordnung in der Verwaltungspraxis. Gewerbeuntersagung wegen Unzuverlässigkeit § 35 GewO mit erweiterter Untersagung Abs. 1 S. 2, Sperrwirkung Abs. 8, Wiedergestattung Abs. 6 und Anhörung der Kammern Abs. 4; erlaubnispflichtige Gewerbe §§ 34a, 34c, 34d, 34f, 34i GewO nebst MaBV; Anzeigepflicht § 14 GewO und Verhinderung des Betriebs ohne Zulassung § 15 Abs. 2 GewO; Reisegewerbekarte §§ 55 ff. GewO, Anwendungsausnahmen § 6 GewO; Handwerksrolle §§ 1, 6–10 HwO, Meistervorbehalt Anlage A, Ausübungsberechtigung § 7b HwO, Ausnahmebewilligung § 8 HwO, EU/EWR § 9 HwO, Untersagung § 16 Abs. 3 HwO. Verfahren nach VwVfG und VwGO einschließlich Sofortvollzug § 80 Abs. 2 S. 1 Nr. 4 VwGO. Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {
