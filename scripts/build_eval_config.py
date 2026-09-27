@@ -26,7 +26,7 @@ Usage:
     python scripts/build_eval_config.py                       # all skills
     python scripts/build_eval_config.py --area arbeitsrecht
     python scripts/build_eval_config.py --skill arbeitsrecht/kuendigungs-pruefung
-    python scripts/build_eval_config.py --provider anthropic:messages:claude-opus-4-8 \
+    python scripts/build_eval_config.py --provider anthropic:messages:claude-opus-5 \
         --judge google:gemini-2.5-pro --out evals/promptfoo.generated.yaml
 
 Then:
@@ -75,8 +75,8 @@ def parse_test(test_path: Path) -> dict:
         return {}
     return data if isinstance(data, dict) else {}
 
-DEFAULT_PROVIDER = "anthropic:messages:claude-opus-4-8"
-DEFAULT_JUDGE = "anthropic:messages:claude-opus-4-8"
+DEFAULT_PROVIDER = "anthropic:messages:claude-opus-5"
+DEFAULT_JUDGE = "anthropic:messages:claude-opus-5"
 
 PROMPT_TEMPLATE = (
     "{{skill_body}}\n\n"
