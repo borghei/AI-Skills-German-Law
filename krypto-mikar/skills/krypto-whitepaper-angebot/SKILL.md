@@ -95,8 +95,10 @@ Der Rechner in [`../../../scripts/legal_calc/`](../../../scripts/legal_calc/) ma
 # Widerrufsfrist nach Art. 13 MiCAR - Länge am Wortlaut prüfen, hier Beispielrechnung
 python -m scripts.legal_calc.cli frist --ereignis 03.03.2026 --menge 14 --einheit tage --land HE
 
-# Vorlauf zwischen Übermittlung nach Art. 8 und Angebotsbeginn
-python -m scripts.legal_calc.cli frist --ereignis 01.02.2026 --menge 20 --einheit arbeitstage --land HE
+# Vorlauf zwischen Übermittlung nach Art. 8 und Angebotsbeginn: 20 Arbeitstage ab 01.02.2026,
+# von Hand auszuzählen (VO 1182/71: Übermittlungstag, Sa, So und die ausgegebenen
+# Feiertage zählen nicht mit) - der Rechner hat keine Einheit Arbeitstage
+python -m scripts.legal_calc.cli feiertage --jahr 2026 --land HE
 
 # Verjährung eines Schadensersatzanspruchs aus Art. 15 MiCAR / § 19 KMAG, §§ 195, 199 BGB
 python -m scripts.legal_calc.cli verjaehrung --entstehung 03.03.2026 --kenntnis 03.03.2026

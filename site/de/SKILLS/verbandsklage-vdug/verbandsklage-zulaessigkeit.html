@@ -354,7 +354,7 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
   <div class="page-header">
     <h1 class="page-title">Verbandsklage Zulaessigkeit</h1>
     <p class="page-subtitle">Zulässigkeit der Verbandsklage nach dem VDuG – Klagearten § 1 Abs. 1 (Abhilfeklage und Musterfeststellungsklage), Gleichstellung kleiner Unternehmen mit Verbrauchern § 1 Abs. 2 (weniger als zehn Beschäftigte und höchstens 2 Mio. EUR Umsatz oder Bilanz), klageberechtigte Stellen § 2 mit der Fünf-Prozent-Grenze für Unternehmenszuwendungen und der unwiderleglichen Vermutung für überwiegend öffentlich geförderte Verbraucherzentralen, ausschließliche OLG-Zuständigkeit am allgemeinen Gerichtsstand des Unternehmers § 3, Verbraucherquorum von mindestens 50 Betroffenen § 4 Abs. 1, Verbot und Offenlegung der Drittfinanzierung § 4 Abs. 2, 3, Offenlegung von Beweismitteln § 6, Streitgenossenschaft § 7 und Sperrwirkung der Verbandsklage § 8. Use when eine Verbandsklage erhoben, abgewehrt oder auf ihre Zulässigkeit geprüft werden soll.</p>
-    <div class="badge-bar"><span class="badge badge-domain">Verbandsklagerecht (VDuG)</span> <span class="badge badge-version">v0.4.1</span></div>
+    <div class="badge-bar"><span class="badge badge-domain">Verbandsklagerecht (VDuG)</span> <span class="badge badge-version">v0.4.2</span></div>
     <div class="skill-meta" style="margin-bottom:24px"><span class="tag">verbandsklage</span><span class="tag">zulaessigkeit</span><span class="tag">§1</span><span class="tag">§2</span><span class="tag">§3</span><span class="tag">§4</span><span class="tag">§6</span><span class="tag">§7</span></div>
   </div>
   <section><h2>Zweck</h2><p>Der Skill prüft die Zulässigkeit einer Verbandsklage nach dem <a href="https://www.gesetze-im-internet.de/vdug/">VDuG</a> — aus Sicht der klageberechtigten Stelle wie aus Sicht des beklagten Unternehmens. Er arbeitet die Zulässigkeitshürden in der Reihenfolge ab, in der sie die Praxis entscheiden: Klageberechtigung, Quorum, Finanzierung, Zuständigkeit, Sperrwirkung. Die Finanzierungsrüge ist dabei der schärfste Verteidigungsansatz des Gebiets.</p></section>
@@ -390,10 +390,17 @@ code { font-family: var(--font-mono); font-size: 0.875em; }
 <section><h2>Deterministische Berechnung</h2><p>Zu rechnen sind die Fristen des Verfahrens und die Zehn-Prozent-Schwelle der Drittfinanzierung. Der Rechner in <a href="../../../scripts/legal_calc/"><code>../../../scripts/legal_calc/</code></a> macht nur die Arithmetik:</p>
 <pre><code># Anmeldefrist § 46 Abs. 1 VDuG: 3 Wochen nach Schluss der mündlichen Verhandlung
 # (§ 193 BGB ist ausdrücklich NICHT anwendbar - kein Aufschub auf den nächsten Werktag)
-python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY
+python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY --kein-rollover
 
-# Streitwert- und Gerichtskostenschätzung nach dem GKG
-python -m scripts.legal_calc.cli gkg --streitwert 2500000</code></pre>
+# Gerichtskosten Musterfeststellungsklage: Streitwert nach § 48 Abs. 1 S. 2 GKG höchstens
+# 250.000 EUR - ein höheres Forderungsvolumen (z.B. 2,5 Mio. EUR) wird gekappt;
+# Gebührensatz 4,0 nach KV GKG Nr. 1212 (erster Rechtszug vor dem OLG)
+python -m scripts.legal_calc.cli gkg --wert 250000 --faktor 4.0
+
+# Gerichtskosten Abhilfeklage: Streitwert nach § 48 Abs. 1 S. 3 GKG höchstens
+# 300.000 EUR - ein höheres Forderungsvolumen (z.B. 2,5 Mio. EUR) wird gekappt;
+# Gebührensatz 4,0 nach KV GKG Nr. 1212
+python -m scripts.legal_calc.cli gkg --wert 300000 --faktor 4.0</code></pre>
 <p>Ob eine Erfolgsbeteiligung „mehr als 10 Prozent" iSd § 4 Abs. 2 Nr. 3 VDuG ausmacht, ist auf die konkrete Vereinbarung zu rechnen und zu belegen.</p></section>
 <section><h2>Quellen</h2><h3>Statute</h3>
 <ul><li><a href="https://www.gesetze-im-internet.de/vdug/<strong>1.html">§ 1</a>, <a href="https://www.gesetze-im-internet.de/vdug/</strong>2.html">§ 2</a>, <a href="https://www.gesetze-im-internet.de/vdug/<strong>3.html">§ 3</a>, <a href="https://www.gesetze-im-internet.de/vdug/</strong>4.html">§ 4 VDuG</a>, <a href="https://www.gesetze-im-internet.de/vdug/<strong>5.html">§ 5</a>, <a href="https://www.gesetze-im-internet.de/vdug/</strong>6.html">§ 6</a>, <a href="https://www.gesetze-im-internet.de/vdug/<strong>7.html">§ 7</a>, <a href="https://www.gesetze-im-internet.de/vdug/</strong>8.html">§ 8</a>, <a href="https://www.gesetze-im-internet.de/vdug/<strong>9.html">§ 9</a>, <a href="https://www.gesetze-im-internet.de/vdug/</strong>10.html">§ 10</a>, <a href="https://www.gesetze-im-internet.de/vdug/<strong>11.html">§ 11</a>, <a href="https://www.gesetze-im-internet.de/vdug/</strong>13.html">§ 13</a>, <a href="https://www.gesetze-im-internet.de/vdug/__46.html">§ 46 VDuG</a></li><li><a href="https://www.gesetze-im-internet.de/uklag/<strong>4.html">§ 4 UKlaG</a>, <a href="https://www.gesetze-im-internet.de/bgb/</strong>13.html">§ 13 BGB</a>, <a href="https://www.gesetze-im-internet.de/bgb/__193.html">§ 193 BGB</a></li><li>Richtlinie (EU) 2020/1828 über Verbandsklagen — <a href="https://eur-lex.europa.eu/eli/dir/2020/1828/oj">EUR-Lex</a></li><li><a href="https://www.gesetze-im-internet.de/kapmug_2012/">KapMuG</a>; Brüssel-Ia-VO (EU) 1215/2012</li></ul>

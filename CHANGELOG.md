@@ -7,6 +7,15 @@ All notable changes to this project are documented here. Format follows
 
 _Nothing yet._
 
+## [0.4.2] - 2026-09-27
+
+### Fixed
+
+- **Court-fee commands in the VDuG and arbitration skills run and give the right fee.** `legal_calc gkg --streitwert` was rejected by the calculator; the flag is `--wert`. The examples now also use the § 48 Abs. 1 GKG caps (250.000 EUR Musterfeststellungsklage, 300.000 EUR Abhilfeklage), the OLG rate (KV GKG Nr. 1212, 4,0) for VDuG cases, and KV GKG Nr. 1620 (2,0) for the Vollstreckbarerklärung eines Schiedsspruchs.
+- **§ 46 VDuG deadlines are no longer moved to the next working day.** The statute excludes § 193 BGB, so the four VDuG skills now pass `--kein-rollover`.
+- **Working-day deadlines are counted by hand, as the calculator has no working-day unit.** The Datenzugang and MiCAR whitepaper skills list the holidays with `feiertage` and describe the count under VO 1182/71 instead of passing the non-existent `--einheit arbeitstage`.
+- **The settlement skill computes the Einigungsgebühr it describes** (VV 1003 in court, VV 1000 out of court).
+
 ## [0.4.1] - 2026-09-27
 
 ### Changed

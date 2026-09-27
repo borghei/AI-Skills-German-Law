@@ -1,6 +1,6 @@
 {
   "name": "kritis-resilienz",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Physische Resilienz kritischer Anlagen nach dem KRITIS-Dachgesetz in Umsetzung der RL (EU) 2022/2557 – Geltungsbereich und zehn Sektoren § 4 mit Bereichsausnahme für DORA-Finanzunternehmen § 4 Abs. 2, Erheblichkeitsschwellen § 5, Registrierung binnen drei Monaten § 8 über die gemeinsame Stelle von BSI und BBK, Risikoanalyse des Betreibers § 12, Resilienzpflichten und Resilienzplan § 13, Mindestanforderungen § 14, Nachweise und Audits § 16, Vorfallmeldung § 18 mit 24-Stunden-Erstmeldung und ausführlichem Bericht binnen eines Monats, Umsetzungs- und Überwachungspflicht der Geschäftsleitung § 20 nebst Haftung, Berichtspflichten § 21 und Bußgelder bis 1 Mio. EUR § 24. Zentrale Anlaufstelle ist das BBK, sektorspezifisch zuständig sind BNetzA, BMI, BMWE und weitere Behörden § 3. Abgrenzung zu NIS2/BSIG. Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

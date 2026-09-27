@@ -1,6 +1,6 @@
 {
   "name": "csrd",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "CSRD (Corporate Sustainability Reporting Directive, RL (EU) 2022/2464) und ESRS – Doppelte Wesentlichkeitsanalyse, Berichtspflichten, Prüfungspflichten, phasierte Anwendung 2024–2028, Vorbereitung für CSDDD.",
   "license": "Apache-2.0 OR MIT",
   "author": {

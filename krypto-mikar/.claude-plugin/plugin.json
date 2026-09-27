@@ -1,6 +1,6 @@
 {
   "name": "krypto-mikar",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Kryptowerteaufsicht nach der MiCAR (VO (EU) 2023/1114) und dem deutschen Kryptomärkteaufsichtsgesetz (KMAG) – Anwendungsbereich und Tokenklassen (vermögenswertreferenzierte Token, E-Geld-Token, sonstige Kryptowerte) mit den Ausnahmen des Art. 2 Abs. 3, 4 und der Abgrenzung zu KWG, WpIG, KAGB und ZAG; Kryptowerte-Whitepaper, öffentliches Angebot und Zulassung zum Handel nebst Haftung Art. 15 und § 19 KMAG; Zulassung und laufende Aufsicht der Anbieter von Kryptowerte-Dienstleistungen mit BaFin-Befugnissen §§ 3, 4, 9 bis 25 KMAG, digitaler operationaler Resilienz § 26 und Übergangsvorschrift § 50; Marktmissbrauchsregime Titel VI MiCAR mit Insiderhandel und Marktmanipulation, Verfolgung §§ 31 bis 36 KMAG, Straf- und Bußgeldvorschriften §§ 46, 47 KMAG. Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {

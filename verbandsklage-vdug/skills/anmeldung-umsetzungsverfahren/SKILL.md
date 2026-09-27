@@ -111,9 +111,9 @@ Alle Fristen dieses Skills sind kurz, und die wichtigste kennt **keine** Wochene
 ```bash
 # § 46 Abs. 1 VDuG: 3 Wochen ab Schluss der mündlichen Verhandlung am 14.03.2026.
 # ACHTUNG: § 193 BGB ist ausgeschlossen - das Ergebnis gilt auch, wenn es auf
-# einen Samstag, Sonntag oder Feiertag fällt. Eine vom Rechner ausgewiesene
-# Verschiebung auf den nächsten Werktag ist hier NICHT anzuwenden.
-python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY
+# einen Samstag, Sonntag oder Feiertag fällt. --kein-rollover schaltet die
+# Verschiebung nach § 193 BGB im Rechner ab.
+python -m scripts.legal_calc.cli frist --ereignis 14.03.2026 --menge 3 --einheit wochen --land BY --kein-rollover
 
 # § 28 Abs. 2 VDuG: 4 Wochen Widerspruch ab Zugang der Sachwaltermitteilung
 python -m scripts.legal_calc.cli frist --ereignis 06.07.2026 --menge 4 --einheit wochen --land BY

@@ -119,17 +119,15 @@ Zuständig ist auch hier die **Bundesnetzagentur** ([§ 2 DGG](https://www.geset
 
 ## Deterministische Berechnung
 
-Die Fristen des Art. 18 Abs. 2 sind **Arbeitstagsfristen** und damit feiertagsabhängig. Der Rechner in [`../../../scripts/legal_calc/`](../../../scripts/legal_calc/) berücksichtigt die Feiertage des jeweiligen Landes:
+Die Fristen des Art. 18 Abs. 2 sind **Arbeitstagsfristen** und werden nach der VO (EWG, Euratom) Nr. 1182/71 berechnet: Der Tag des Eingangs zählt nicht mit (Art. 3 Abs. 1), Samstage, Sonntage und Feiertage sind keine Arbeitstage (Art. 2 Abs. 2). Der Rechner in [`../../../scripts/legal_calc/`](../../../scripts/legal_calc/) kennt **keine** Einheit „Arbeitstage"; er liefert die Feiertage des jeweiligen Landes, die Arbeitstage sind anhand dieser Liste von Hand auszuzählen:
 
 ```bash
-# Notstandsfall: 5 Arbeitstage ab Eingang des Verlangens am 09.03.2026 in Bayern
-python -m scripts.legal_calc.cli frist --ereignis 09.03.2026 --menge 5 --einheit arbeitstage --land BY
-
-# Regelfall: 30 Arbeitstage ab Eingang
-python -m scripts.legal_calc.cli frist --ereignis 09.03.2026 --menge 30 --einheit arbeitstage --land BY
+# Grundlage für die Auszählung von 5 (Notstand) bzw. 30 (Regelfall) Arbeitstagen
+# ab Eingang des Verlangens am 09.03.2026 in Bayern
+python -m scripts.legal_calc.cli feiertage --jahr 2026 --land BY
 ```
 
-`--json` liefert die Rechenschritte samt berücksichtigter Feiertage. Ob ein „öffentlicher Notstand" vorliegt, ist eine juristische Wertung und gesondert zu begründen.
+`--json` liefert die Feiertagsliste maschinenlesbar. Ob ein „öffentlicher Notstand" vorliegt, ist eine juristische Wertung und gesondert zu begründen.
 
 ## Quellen
 
