@@ -7,6 +7,12 @@ All notable changes to this project are documented here. Format follows
 
 _Nothing yet._
 
+## [0.4.1] - 2026-09-27
+
+### Changed
+
+- The eval harness and the gateway example default to current Claude models: the eval runs on `claude-opus-5` (was `claude-opus-4-8`) and the gateway example names `claude-sonnet-5` (was `claude-sonnet-4-6`). Eval scores from earlier runs were measured on the previous generation; re-baseline before comparing.
+
 ## [0.4.0] - 2026-08-14
 
 Four areas built around **live 2026 deadlines**, not general topics. Every date

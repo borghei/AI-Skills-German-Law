@@ -254,7 +254,7 @@ def main() -> None:
             f"{len(skills_out)} skills, multi-provider (Claude, Gemini, GPT), "
             "primary-source citations to gesetze-im-internet.de and EUR-Lex."
         ),
-        "version": "0.4.0",
+        "version": "0.4.1",
         "repository": "https://github.com/borghei/AI-Skills-German-Law",
         "website": "https://borghei.github.io/AI-Skills-German-Law",
         "author": "borghei",

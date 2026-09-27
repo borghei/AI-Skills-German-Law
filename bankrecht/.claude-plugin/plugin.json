@@ -1,6 +1,6 @@
 {
   "name": "bankrecht",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Bank- und Kapitalmarktrecht (Fachanwaltschaft). Kreditvertragsprüfung, Verbraucherdarlehen §§ 491 ff. BGB, Anlageberatung WpHG, MiFID II, Bauspar-/Hypothekenrecht.",
   "license": "Apache-2.0 OR MIT",
   "author": {
