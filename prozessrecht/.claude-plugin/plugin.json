@@ -1,6 +1,6 @@
 {
   "name": "prozessrecht",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Zivilprozessrecht. Klageschrift §§ 253 ff. ZPO, Streitgegenstand, Sachvortrag und Beweisantritt, sachliche und örtliche Zuständigkeit, Rechtsmittel, Vollstreckung.",
   "license": "Apache-2.0 OR MIT",
   "author": {

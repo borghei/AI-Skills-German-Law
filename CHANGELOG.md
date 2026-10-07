@@ -7,6 +7,13 @@ All notable changes to this project are documented here. Format follows
 
 _Nothing yet._
 
+## [0.4.3] - 2026-10-07
+
+### Fixed
+
+- **The README's area breakdown adds up to 66 again.** It listed 9 EU/cross-cutting compliance frameworks; the catalog has 8, and with 9 the categories summed to 67.
+- **Eval figures in the README match the current library.** They still described 258 skills (4,695 assertions, and "2,900+" in the comparison table). A fresh `scripts/eval.py` run gives 5,493 fact-pattern assertions across 291 skills, 291/291 passing.
+
 ## [0.4.2] - 2026-09-27
 
 ### Fixed

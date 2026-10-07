@@ -1,6 +1,6 @@
 {
   "name": "barrierefreiheit-bfsg",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Barrierefreiheitsrecht – Barrierefreiheitsstärkungsgesetz (BFSG) und BFSGV in Umsetzung der RL (EU) 2019/882, anwendbar seit dem 28.06.2025. Anwendungsbereich für Produkte § 1 Abs. 2 und Dienstleistungen § 1 Abs. 3, Kleinstunternehmensausnahme § 3 Abs. 3 iVm § 2 Nr. 17, Übergangsbestimmungen § 38; Pflichten von Hersteller, Einführer und Händler §§ 6–13 mit EU-Konformitätserklärung § 18 und CE-Kennzeichnung § 19; Pflichten des Dienstleistungserbringers § 14 mit Barrierefreiheitsinformationen nach Anlage 3 und den Anforderungen der §§ 12, 13, 19 BFSGV; Ausnahmen wegen grundlegender Veränderung § 16 und unverhältnismäßiger Belastung § 17 nebst Anlage 4; Marktüberwachung §§ 20–31, Verbraucher- und Verbandsrechte §§ 32–34, Bußgelder § 37. Abgrenzung zum Recht öffentlicher Stellen: BGG §§ 12a, 12b, 16 und BITV 2.0. Researcher/Drafter/Reviewer-Subagenten.",
   "license": "Apache-2.0 OR MIT",
   "author": {
