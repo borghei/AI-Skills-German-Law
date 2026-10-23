@@ -30,13 +30,14 @@ must_flag:
   - "Kündigung vor Abschluss des Konsultationsverfahrens"
   - "Abschrift nach § 17 Abs. 3 S. 1 KSchG vergessen"
   - "Freifrist § 18 Abs. 4 KSchG verstreichen lassen"
-  - "Auf die Rechtsprechungsänderung 2024 vertraut, ohne sie zu verifizieren"
+  - "Auf die Entlastungslinie von 2024 vertraut"
+  - "Inhaltsfehler der Anzeige ohne Prüfung der Aufgabenrelevanz"
 ---
 
 # Test — massenentlassungsanzeige
 
 Prüft die Trennung von Konsultations- und Anzeigestrang, die Schwellen-
-berechnung inklusive Aufhebungsverträgen und die Kennzeichnung der 2024
-geänderten Rechtsprechung als verifizierungsbedürftig.
+berechnung inklusive Aufhebungsverträgen und die Einordnung von Fehlern in das
+Drei-Stufen-Modell des BAG (Rechtsstand Oktober 2026).
 
 Run: `python scripts/eval.py --skill arbeitsrecht/skills/massenentlassungsanzeige`

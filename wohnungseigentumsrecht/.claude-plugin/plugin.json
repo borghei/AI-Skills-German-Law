@@ -1,7 +1,7 @@
 {
   "name": "wohnungseigentumsrecht",
-  "version": "0.4.3",
-  "description": "Wohnungseigentumsrecht (WEG) nach der WEMoG-Reform (seit 01.12.2020) – Beschlussanfechtung §§ 23, 44, 45 WEG (Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer, Monatsfrist, Nichtigkeit vs. Anfechtbarkeit), Jahresabrechnung und Hausgeld § 28 WEG (Wirtschaftsplan, Abrechnungsspitze, Vermögensbericht), bauliche Veränderung §§ 20, 21 WEG (Gestattungsbeschluss, privilegierte Maßnahmen, Kostenverteilung). Mit Researcher/Drafter/Reviewer-Subagenten und Eval-Tests.",
+  "version": "0.5.0",
+  "description": "Wohnungseigentumsrecht (WEG) nach der WEMoG-Reform, Rechtsstand Oktober 2026 – Beschlussanfechtung §§ 44, 45 WEG (Klage gegen die Gemeinschaft der Wohnungseigentümer, Monatsfrist, Zustellung, Kostenrisiko), Beschlussersetzungsklage § 44 Abs. 1 S. 2 WEG mit Vorbefassung, Eigentümerversammlung §§ 23–25 WEG (hybrid, virtuell nach § 23 Abs. 1a WEG, Umlaufbeschluss, Stimmrecht), Verwalter §§ 26, 26a, 27 WEG (jederzeitige Abberufung, zertifizierter Verwalter), Jahresabrechnung und Abrechnungsspitze § 28 WEG, Kostenverteilung § 16 Abs. 2 S. 2 WEG, Hausgeldbeitreibung mit Vorrang § 10 Abs. 1 Nr. 2 ZVG und Entziehung § 17 WEG, bauliche Veränderung §§ 20, 21 WEG (privilegierte Maßnahmen inkl. Steckersolargeräte), vermietete Eigentumswohnung (§ 556a Abs. 3, § 554 BGB, § 15 WEG). Mit Researcher/Drafter/Reviewer-Subagenten und Eval-Tests.",
   "license": "Apache-2.0 OR MIT",
   "author": {
     "name": "Borghei",

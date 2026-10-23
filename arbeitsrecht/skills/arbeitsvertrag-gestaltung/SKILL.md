@@ -16,6 +16,7 @@ test: ./test.md
 
 Arbeitsverträge sind Allgemeine Geschäftsbedingungen. Seit der Schuldrechtsreform unterliegen sie der Inhaltskontrolle der §§ 305 ff. BGB — mit der für den Verwender unangenehmsten aller Rechtsfolgen: Eine unwirksame Klausel wird **nicht** auf das zulässige Maß zurückgeführt, sondern ersatzlos gestrichen. Dieser Skill entwirft Klauseln, die diese Kontrolle überstehen, und prüft bestehende Verträge auf die Klauseln, die es typischerweise nicht tun.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: Mindestlohn 13,90 EUR (2026) / 14,60 EUR (2027), Minijob-Grenze 603 / 633 EUR, NachwG-Textform seit 01.01.2025.
 ## Eingaben
 
 - Vertragstyp: unbefristet / befristet / Teilzeit / geringfügig / leitender Angestellter
@@ -113,7 +114,9 @@ Ein Vorbehalt, der **beides** kombiniert („freiwillig und jederzeit widerrufli
 - **Überstundenabgeltungsklausel:** „Mit dem Gehalt sind alle Überstunden abgegolten" ist intransparent und unwirksam. Zulässig ist eine Abgeltung bis zu einer konkret bezifferten Stundenzahl; bei sehr hohen Vergütungen (oberhalb der Beitragsbemessungsgrenze) kann eine pauschale Abgeltung wirksam sein `[unverifiziert – prüfen]`.
 - **Vertragsstrafe:** Erforderlich sind konkrete Tatbestände (etwa Nichtantritt, vertragswidrige Beendigung) und eine der Höhe nach angemessene Sanktion — Obergrenze regelmäßig ein Bruttomonatsgehalt, bei Nichtantritt in der Probezeit das der verkürzten Kündigungsfrist entsprechende Entgelt `[unverifiziert – prüfen]`.
 - **Rückzahlungsklausel für Fortbildungskosten:** Bindungsdauer muss zur Fortbildungsdauer und zum geldwerten Vorteil in Verhältnis stehen; die Rückzahlungspflicht darf nicht an Beendigungsgründe aus der Sphäre des Arbeitgebers anknüpfen.
-- **Nachvertragliches Wettbewerbsverbot:** §§ 74 ff. HGB — ohne Karenzentschädigung von mindestens der Hälfte der zuletzt bezogenen Bezüge ist es nichtig, nicht bloß unverbindlich, wenn die Entschädigung ganz fehlt.
+- **Nachvertragliches Wettbewerbsverbot:** §§ 74 ff. HGB — fehlt die Zusage einer Karenzentschädigung **ganz**, ist das Verbot **nichtig**; ist sie zugesagt, aber **unter 50 %** der zuletzt bezogenen vertragsmäßigen Leistungen, ist es **unverbindlich** mit Wahlrecht des Arbeitnehmers. Detail: `/arbeitsrecht:wettbewerbsverbot-nachvertraglich`.
+- **Vergütungsklauseln und Mindestlohn (Rechtsstand Oktober 2026):** Mindestlohn **13,90 EUR** ab 01.01.2026, **14,60 EUR** ab 01.01.2027 (Fünfte Mindestlohnanpassungsverordnung); die Minijob-Grenze folgt automatisch (**603 EUR** / **633 EUR**, [§ 8 Abs. 1a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). Feste Monatsbeträge mit Stundenkontingent und Abrufklauseln ohne Stundenzahl ([§ 12 TzBfG](https://www.gesetze-im-internet.de/tzbfg/__12.html): Fiktion von 20 Wochenstunden) „driften" bei jeder Erhöhung aus dem Mindestlohn oder der Geringfügigkeit. Detail: `/arbeitsrecht:mindestlohn-minijob-aktivrente`.
+- **Bundesauftragnehmer:** Bei öffentlichen Aufträgen des Bundes sind seit 2026 die Tariftreuepflichten des Bundestariftreuegesetzes (BGBl. 2026 I Nr. 119; Schwelle 50.000 EUR) vertraglich weiterzugeben — Inkrafttreten und Einzelheiten vor Verwendung prüfen `[unverifiziert – prüfen]`.
 - **Schriftformklausel:** Doppelte Schriftformklauseln sind gegenüber Individualabreden wirkungslos (§ 305b BGB) und in AGB unwirksam, soweit sie den Eindruck erwecken, mündliche Abreden seien stets unbeachtlich.
 
 ### 5. Nachweispflichten ([§ 2 NachwG](https://www.gesetze-im-internet.de/nachwg/__2.html))

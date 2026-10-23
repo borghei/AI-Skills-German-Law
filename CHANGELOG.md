@@ -7,6 +7,50 @@ All notable changes to this project are documented here. Format follows
 
 _Nothing yet._
 
+## [0.5.0] - 2026-10-23
+
+Arbeitsrecht, Mietrecht, Wohnungseigentumsrecht and Steuerrecht brought to the
+legal state of **October 2026** and expanded by 28 skills (291 → 319). Every skill in the three areas now
+states its Rechtsstand. Law in force is kept apart from pending bills, which
+are named with their Drucksache and status on 23.10.2026.
+
+### Added
+
+- **`arbeitsrecht` (14 → 21):** `arbeitszeit-zeiterfassung`, `entgeltfortzahlung-bem`, `mutterschutz-elternzeit`, `mindestlohn-minijob-aktivrente` (13,90 EUR / 14,60 EUR, Minijob 603 / 633 EUR, § 3 Nr. 21 EStG, § 41 Abs. 2 SGB VI), `statusfeststellung-scheinselbstaendigkeit`, `wettbewerbsverbot-nachvertraglich`, `betriebsratswahl-anfechtung`. The ArbZG Referentenentwurf of 18.06.2026, the Plattformarbeit-RL and the Statusfeststellung draft appear as drafts only.
+- **`mietrecht` (13 → 20):** `indexmiete-staffelmiete`, `moeblierte-kurzzeitvermietung`, `kuendigung-zahlungsverzug-ordentlich`, `heizkosten-co2-fernablesung` (retrofit deadline 31.12.2026), `heizungstausch-559e-559f` (GModG in force since 29.07.2026), `tod-des-mieters`, `mietwucher-mietpreisueberhoehung`. The Regierungsentwurf BT-Drs. 21/6807 (Indexmiete cap, Möblierungszuschlag, Schonfrist for ordinary termination) is described as not yet passed.
+- **`wohnungseigentumsrecht` (3 → 9):** `eigentuemerversammlung-beschlussfassung` (virtual meeting under § 23 Abs. 1a WEG, at least one in-person meeting a year through 2028 under § 48 Abs. 6), `verwalter-bestellung-abberufung` (zertifizierter Verwalter; transition ended 01.06.2024), `kostenverteilung-16-weg`, `hausgeld-beitreibung-entziehung` (Hausgeld due in 2023 becomes time-barred at the end of 31.12.2026), `beschlussersetzungsklage`, `vermietete-eigentumswohnung`. No WEG reform is pending; the BMJV owner survey runs until 12.11.2026.
+- **`steuerrecht` (3 → 11):** `aussetzung-der-vollziehung`, `finanzgerichtsklage`, `aenderung-bescheid-korrekturvorschriften`, `stundung-erlass-vollstreckungsschutz`, `fristen-verspaetungszuschlag`, `grundsteuer-einspruch`, `e-rechnung-vorsteuer` (issuing obligation from 01.01.2027, BMF 15.10.2026), `haftungsbescheid`. JStG 2026 (BT-Drs. 21/8283) is shown as a draft.
+
+### Changed
+
+- **Mass dismissals:** errors are sorted into three tiers. A missing consultation or a missing Anzeige makes the dismissal invalid. An error in the content of the Anzeige makes it invalid only if it keeps the Agentur from doing its job (BAG 25.06.2026 – 6 AZR 7/26; 01.04.2026 – 6 AZR 152/22; 19.03.2026 – 2 AS 22/23). The old statement that "every error makes it invalid" is gone.
+- **Arbeitsrecht, other:**
+  - Proof of an Einwurf-Einschreiben (BAG 2 AZR 68/24).
+  - The Fünftelregelung applies only in the employee's tax assessment (from VZ 2025).
+  - Statutory minimum leave cannot be waived (BAG 9 AZR 104/24).
+  - The Paarvergleich in equal-pay claims (BAG 8 AZR 300/24).
+  - Fixed-term contracts beyond retirement age (§ 41 SGB VI).
+- **Außenprüfung:** rewritten to cover the 2025 reform: §§ 197, 199, 200a and 171 Abs. 4 S. 3 AO, the Teilabschlussbescheid, and the ApO in place of the BpO. Under § 147 Abs. 6 AO the authority chooses the form of data access, not the taxpayer.
+- **Einspruch:** covers notification by Datenabruf (§ 122a AO, the fourth day after the Bescheid is made available). Electronic notification without consent applies only to Bescheide notified after 31.12.2026 (Art. 97 § 28 EGAO).
+- **Selbstanzeige:** the Sperrgründe are stated precisely.
+- **Gewerberaummiete:** the § 550 requirement is now met by Textform (§ 578 Abs. 1 S. 2 BGB, transition Art. 229 § 70 EGBGB).
+- **Modernisierung:** covers § 555b Nr. 1a and §§ 559e, 559f BGB.
+- **Betriebskosten:** cable TV can no longer be passed on, plus fibre (Glasfaser), Belegeinsicht under § 556 Abs. 4, and §§ 5a, 5b CO2KostAufG.
+
+### Fixed
+
+- **`mietpreisbremse` described the law before 2019:** it required a qualified Rüge and said the Rüge works only for the future. Since 2019 a simple Rüge is enough, and for contracts from 01.04.2020 the claim reaches back 30 months.
+- **`hausgeldabrechnung` was wrong at its core:** it said a resolution on "the Jahresabrechnung" exceeds Beschlusskompetenz. Since BGH V ZR 102/23 such a resolution is read as a resolution on the Abrechnungsspitze, and only errors that change the Spitze can be challenged (V ZR 195/23). The WEG agent files were verbatim copies from Arbeitsrecht and have been rewritten.
+- **`mietmangel-minderung`:** the "three to five times the reduction" rule for withholding rent is replaced by BGH VIII ZR 19/14.
+- **`eigenbedarfskuendigung`:** two dejure links used the wrong date format, and VIII ZR 44/16 was attributed to the wrong holding.
+- **`aufhebungsvertrag`:** a non-compete without any Karenzentschädigung is nichtig, not merely unverbindlich.
+- **`verify_citations.py`:**
+  - EnWG was listed twice, so every EnWG link 404'd.
+  - GModG, CO2KostAufG, BEHG, WiStG, BewG, GrStG, UStDV and ZertVerwV are now known.
+  - EGAO is reported against its full text.
+  - Draft provisions (`BGB-E`) are reported as info instead of as unknown laws.
+  - Regression tests in `scripts/tests_toolchain.py`.
+
 ## [0.4.3] - 2026-10-07
 
 ### Fixed

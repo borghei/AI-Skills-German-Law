@@ -11,7 +11,7 @@
     {
       "name": "arbeitsrecht",
       "source": "./arbeitsrecht",
-      "description": "Arbeitsrecht – KSchG-Kündigungsprüfung (allgemeiner & besonderer Schutz), § 102 BetrVG Anhörung, Aufhebungsvertrag inkl. Sperrzeit § 159 SGB III, Abmahnung nach BAG-Standard, Sozialauswahl, Massenentlassung §§ 17–18 KSchG."
+      "description": "Arbeitsrecht – KSchG-Kündigungsprüfung (allgemeiner & besonderer Schutz), § 102 BetrVG Anhörung, Aufhebungsvertrag inkl. Sperrzeit § 159 SGB III, Abmahnung nach BAG-Standard, Sozialauswahl, Massenentlassung §§ 17–18 KSchG, Arbeitszeit/Zeiterfassung, Entgeltfortzahlung/BEM, Mutterschutz/Elternzeit, Mindestlohn/Minijob/Aktivrente, Statusfeststellung, Wettbewerbsverbot, Betriebsratswahl-Anfechtung. Rechtsstand Oktober 2026."
     },
     {
       "name": "datenschutzrecht",
@@ -26,7 +26,7 @@
     {
       "name": "mietrecht",
       "source": "./mietrecht",
-      "description": "Mietrecht – Wohnraummiete, Mieterhöhung § 558 BGB, Modernisierung § 559, Eigenbedarfs- und Verwertungskündigung §§ 573 ff. BGB, Betriebskostenabrechnung, WEG-Grundzüge."
+      "description": "Mietrecht – Wohnraummiete, Mieterhöhung § 558 BGB, Modernisierung § 559, Eigenbedarfs- und Verwertungskündigung §§ 573 ff. BGB, Betriebskosten- und Heizkostenabrechnung, Index-/Staffelmiete, möbliertes Wohnen, Heizungstausch §§ 559e/559f BGB, Tod des Mieters, Mietwucher. Rechtsstand Oktober 2026."
     },
     {
       "name": "gesellschaftsrecht",
@@ -116,7 +116,7 @@
     {
       "name": "steuerrecht",
       "source": "./steuerrecht",
-      "description": "Steuerrecht (Fachanwaltschaft). Abgabenordnung AO, Außenprüfung/Betriebsprüfung §§ 193 ff. AO, Einspruchsverfahren §§ 347 ff. AO, Finanzgerichtsverfahren FGO, Selbstanzeige § 371 AO."
+      "description": "Steuerrecht (Fachanwaltschaft). Abgabenordnung AO, Außenprüfung/Betriebsprüfung §§ 193 ff. AO, Einspruchsverfahren §§ 347 ff. AO, Finanzgerichtsverfahren FGO, Aussetzung der Vollziehung, Korrekturvorschriften §§ 172 ff. AO, Stundung/Erlass/Vollstreckung, Haftungsbescheid, Fristen/Verspätungszuschlag, Grundsteuer, E-Rechnung, Selbstanzeige § 371 AO. Rechtsstand Oktober 2026."
     },
     {
       "name": "verwaltungsrecht",
@@ -251,7 +251,7 @@
     {
       "name": "wohnungseigentumsrecht",
       "source": "./wohnungseigentumsrecht",
-      "description": "Wohnungseigentumsrecht (WEG) nach der WEMoG-Reform (seit 01.12.2020) – Beschlussanfechtung §§ 23, 44, 45 WEG (Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer, Monatsfrist, Nichtigkeit vs. Anfechtbarkeit), Jahresabrechnung und Hausgeld § 28 WEG (Wirtschaftsplan, Abrechnungsspitze, Vermögensbericht), bauliche Veränderung §§ 20, 21 WEG (Gestattungsbeschluss, privilegierte Maßnahmen inkl. E-Mobilität und Steckersolargeräte, Kostenverteilung)."
+      "description": "Wohnungseigentumsrecht (WEG) nach der WEMoG-Reform (seit 01.12.2020) – Beschlussanfechtung §§ 23, 44, 45 WEG (Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer, Monatsfrist, Nichtigkeit vs. Anfechtbarkeit), Jahresabrechnung und Hausgeld § 28 WEG (Wirtschaftsplan, Abrechnungsspitze, Vermögensbericht), bauliche Veränderung §§ 20, 21 WEG (Gestattungsbeschluss, privilegierte Maßnahmen inkl. E-Mobilität und Steckersolargeräte, Kostenverteilung), Eigentümerversammlung und virtuelle Versammlung § 23 Abs. 1a WEG, Verwalterbestellung und -abberufung §§ 26, 26a WEG, Änderung des Kostenverteilungsschlüssels § 16 Abs. 2 S. 2 WEG, Hausgeldbeitreibung und Entziehung §§ 17, 19, 28 WEG, Beschlussersetzungsklage § 44 Abs. 1 S. 2 WEG, vermietete Eigentumswohnung. Rechtsstand Oktober 2026."
     },
     {
       "name": "cyber-resilience-act",

@@ -4,7 +4,7 @@
 
 ## Skills
 
-14 Skills. Die mit **∑** markierten Skills rechnen Fristen deterministisch über [`scripts/legal_calc/`](../scripts/legal_calc/) (§§ 187–193 BGB, § 222 ZPO) — siehe [`references/rechner.md`](../references/rechner.md).
+21 Skills, **Rechtsstand Oktober 2026**. Die mit **∑** markierten Skills rechnen Fristen deterministisch über [`scripts/legal_calc/`](../scripts/legal_calc/) (§§ 187–193 BGB, § 222 ZPO) — siehe [`references/rechner.md`](../references/rechner.md).
 
 ### Beendigung und Kündigungsschutz
 
@@ -14,8 +14,8 @@
 | `kuendigungsschutzklage` **∑** | Klageerhebung und Prozessführung: Frist, Präklusion, Anträge, Gütetermin | §§ 4–7, 9, 10 KSchG; §§ 54, 12a ArbGG; § 102 Abs. 5 BetrVG |
 | `betriebsratsanhoerung` **∑** | Anhörungsschreiben, subjektive Determination, Fehlerkatalog | § 102 BetrVG; §§ 103, 26 BetrVG; § 626 Abs. 2 BGB |
 | `sozialauswahl` | Vergleichsgruppe, Punkteschema, Leistungsträger, Auskunftsanspruch | § 1 Abs. 3–5 KSchG; § 95 BetrVG; § 106 GewO; § 10 AGG |
-| `massenentlassungsanzeige` | Konsultationsverfahren und Anzeige, Sperr- und Freifrist | §§ 17, 18 KSchG; RL 98/59/EG; §§ 111 f. BetrVG |
-| `aufhebungsvertrag` | Aufhebungsvertrag-Entwurf inkl. Sperrzeitprüfung | §§ 623, 779 BGB; § 159 SGB III; § 34 EStG |
+| `massenentlassungsanzeige` | Konsultationsverfahren und Anzeige, Drei-Stufen-Fehlermodell (BAG 2026), Sperr- und Freifrist | §§ 17, 18 KSchG; RL 98/59/EG; §§ 111 f. BetrVG |
+| `aufhebungsvertrag` | Aufhebungsvertrag-Entwurf inkl. Sperrzeit, Ruhen § 158 SGB III, Fünftelregelung ab VZ 2025 | §§ 623, 779 BGB; § 159 SGB III; § 34 EStG |
 | `abmahnung` | BAG-konforme Abmahnung mit Verhaltenserwartung und Sanktionsandrohung | §§ 314 Abs. 2, 626 BGB; BAG-Rspr. |
 | `arbeitszeugnis` | Erteilung, Notenstufen, Geheimcodes, Berichtigungsklage | § 109 GewO; §§ 630, 241 Abs. 2 BGB |
 
@@ -26,14 +26,36 @@
 | `arbeitsvertrag-gestaltung` | AGB-Kontrolle, Ausschlussfristen, Vorbehalte, Nachweispflichten | §§ 305–310 BGB; §§ 2, 4 NachwG; § 3 MiLoG; § 623 BGB |
 | `befristungskontrolle` | Schriftform, Sachgrund, Vorbeschäftigungsverbot, Entfristungsklage | §§ 14, 16, 17 TzBfG; RL 1999/70/EG |
 | `betriebsuebergang` | Tatbestand, Unterrichtungskatalog, Widerspruch, Kündigungsverbot | § 613a BGB; RL 2001/23/EG |
-| `urlaubsanspruch` | Umrechnung, Verfall nach Hinweisobliegenheit, Abgeltung, 15-Monats-Frist | §§ 1, 3, 7, 9, 11 BUrlG; §§ 195, 199 BGB; RL 2003/88/EG |
+| `urlaubsanspruch` | Umrechnung, Verfall nach Hinweisobliegenheit, Abgeltung, 15-Monats-Frist, Verzichtsverbot | §§ 1, 3, 7, 9, 11 BUrlG; §§ 195, 199 BGB; RL 2003/88/EG |
+| `wettbewerbsverbot-nachvertraglich` | Nichtigkeit vs. Unverbindlichkeit, Karenzentschädigung, Anrechnung, Verzicht | §§ 74–75d HGB; § 110 GewO |
+
+### Arbeitszeit, Krankheit, Familie
+
+| Skill | Funktion | Statutory anchors |
+|---|---|---|
+| `arbeitszeit-zeiterfassung` | Höchstgrenzen, Ruhezeit, Erfassungspflicht nach BAG 2022, Mitbestimmung; ArbZG-Referentenentwurf 2026 als Entwurf | §§ 3–7, 16, 22 ArbZG; § 3 ArbSchG; § 87 BetrVG |
+| `entgeltfortzahlung-bem` | Sechs-Wochen-Zeitraum, Fortsetzungserkrankung, Beweiswert der AU, BEM, krankheitsbedingte Kündigung | §§ 3–7 EFZG; § 167 Abs. 2 SGB IX |
+| `mutterschutz-elternzeit` **∑** | Schutzfristen inkl. Fehlgeburt (seit 01.06.2025), Kündigungsverbote, Elternzeitverlangen, Teilzeit | §§ 3, 17 MuSchG; §§ 15–18 BEEG; § 5 KSchG |
+
+### Vergütung, Status, Rente
+
+| Skill | Funktion | Statutory anchors |
+|---|---|---|
+| `mindestlohn-minijob-aktivrente` | Mindestlohn 13,90 / 14,60 EUR, Minijob 603 / 633 EUR, Abrufarbeit, Aktivrente, Befristung nach Regelaltersgrenze | MiLoG; MiLoV5; §§ 8, 20 SGB IV; § 3 Nr. 21 EStG; § 41 SGB VI |
+| `statusfeststellung-scheinselbstaendigkeit` | Gesamtabwägung, § 7a-Verfahren, Beitragshaftung, verdeckte Überlassung, Plattform-RL | §§ 7, 7a, 25, 28e SGB IV; § 611a BGB; §§ 9, 10 AÜG |
+
+### Kollektivrecht
+
+| Skill | Funktion | Statutory anchors |
+|---|---|---|
+| `betriebsratswahl-anfechtung` **∑** | Anfechtung und Nichtigkeit nach den Wahlen 2026, Zwei-Wochen-Frist, Vollmachtsfalle | §§ 7–20 BetrVG; §§ 2a, 80 ff. ArbGG; § 15 KSchG |
 
 ### Gleichbehandlung und Entgelt
 
 | Skill | Funktion | Statutory anchors |
 |---|---|---|
 | `agg-entschaedigung` **∑** | Indizienbeweis, zweistufiges Fristenregime, Bewerberfälle, AGG-Hopping | §§ 1, 3, 7, 15, 22 AGG; § 61b ArbGG; § 242 BGB |
-| `entgelttransparenz` | EntgTranspG und die ab 08.06.2026 wirkende RL (EU) 2023/970 | §§ 10–15, 21 f. EntgTranspG; RL (EU) 2023/970; Art. 157 AEUV |
+| `entgelttransparenz` | EntgTranspG, die ab 08.06.2026 wirkende RL (EU) 2023/970 (dt. Umsetzung ausstehend), Paarvergleich BAG 2025 | §§ 10–15, 21 f. EntgTranspG; RL (EU) 2023/970; Art. 157 AEUV |
 
 ## Sub-Agenten
 
@@ -118,7 +140,7 @@ staatlichen Stellen prüfen und eine Roadmap bis zum Berichtsstichtag
 
 ## Deterministische Fristberechnung
 
-Drei Skills (`kuendigungsschutzklage`, `betriebsratsanhoerung`, `agg-entschaedigung`) rufen den Rechner in [`../scripts/legal_calc/`](../scripts/legal_calc/) auf, statt Fristen zu erzählen:
+Fünf Skills (`kuendigungsschutzklage`, `betriebsratsanhoerung`, `agg-entschaedigung`, `mutterschutz-elternzeit`, `betriebsratswahl-anfechtung`) rufen den Rechner in [`../scripts/legal_calc/`](../scripts/legal_calc/) auf, statt Fristen zu erzählen:
 
 ```bash
 python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 3 --einheit wochen --land BY

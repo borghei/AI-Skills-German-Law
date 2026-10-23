@@ -133,7 +133,8 @@ STRINGS = {
         ),
         "hero_title": "AI skills for German legal practice and EU compliance.",
         "hero_subtitle": (
-            "Draft a BAG-konforme Abmahnung. Run a DSGVO Art. 15 workflow. Build a KI-VO "
+            "Draft a BAG-konforme Abmahnung. Object to a tax assessment and request "
+            "Aussetzung der Vollziehung. Check a Mietpreisbremse claim. Build a KI-VO "
             "compliance plan. Tested, sourced, multi-provider. Paste into any AI chat or "
             "install via Claude Code, Gemini, or GPT."
         ),
@@ -268,8 +269,8 @@ STRINGS = {
         ),
         "hero_title": "KI-Skills für die deutsche Rechtspraxis und EU-Compliance.",
         "hero_subtitle": (
-            "BAG-konforme Abmahnung entwerfen. Auskunftsverlangen nach Art. 15 DSGVO bearbeiten. "
-            "KI-VO-Compliance-Plan aufsetzen. Getestet, mit Quellen belegt, anbieterübergreifend. "
+            "BAG-konforme Abmahnung entwerfen. Einspruch gegen den Steuerbescheid mit Antrag auf "
+            "Aussetzung der Vollziehung einlegen. Mietpreisbremse prüfen. KI-VO-Compliance-Plan aufsetzen. Getestet, mit Quellen belegt, anbieterübergreifend. "
             "In jeden KI-Chat einfügen oder über Claude Code, Gemini oder GPT installieren."
         ),
         "stat_areas": "Rechtsgebiete",

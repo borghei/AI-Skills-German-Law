@@ -49,11 +49,11 @@ DOMAINS_ORDER = [
 
 # Human-readable category labels for the site.
 DOMAIN_META = {
-    "arbeitsrecht": ("Arbeitsrecht", "KSchG, BetrVG, Aufhebungsvertrag, Abmahnung, Sozialauswahl"),
+    "arbeitsrecht": ("Arbeitsrecht", "KSchG, BetrVG, Aufhebungsvertrag, Arbeitszeit, Entgeltfortzahlung, Mutterschutz, Mindestlohn, Statusfeststellung"),
     "datenschutzrecht": ("Datenschutzrecht / GDPR", "DSGVO, BDSG, AVV, Datenpanne, DPIA, Drittlandtransfer"),
     "vertragsrecht": ("Vertragsrecht", "AGB-Kontrolle, Klauselgestaltung, Leistungsstörung, Anfechtung"),
-    "mietrecht": ("Mietrecht", "Wohnraummiete, Mieterhöhung, Kündigung, Betriebskostenabrechnung, WEG"),
-    "wohnungseigentumsrecht": ("Wohnungseigentumsrecht (WEG)", "Beschlussanfechtung §§ 44/45, Hausgeld/Jahresabrechnung § 28, bauliche Veränderung §§ 20/21 — post-WEMoG"),
+    "mietrecht": ("Mietrecht", "Wohnraummiete, Mieterhöhung, Index-/Staffelmiete, Kündigung, Betriebs- und Heizkosten, Heizungstausch § 559f"),
+    "wohnungseigentumsrecht": ("Wohnungseigentumsrecht (WEG)", "Beschlussanfechtung, Beschlussersetzung, Eigentümerversammlung, Verwalter, Hausgeld und Kostenverteilung, bauliche Veränderung"),
     "gesellschaftsrecht": ("Gesellschaftsrecht", "GmbH-Recht, Geschäftsführerhaftung, AG-Grundzüge, Umwandlungen"),
     "strafrecht": ("Strafrecht", "Strafbefehl-Verteidigung, Akteneinsicht, OWi-Verkehr, Belehrungen"),
     "insolvenzrecht": ("Insolvenzrecht", "InsO § 15a, StaRUG, Liquiditätsplanung, Fortbestehensprognose"),
@@ -64,7 +64,7 @@ DOMAIN_META = {
     "it-recht": ("IT-Recht", "SaaS-Verträge, Outsourcing, Softwarelizenz, Open Source, Cloud-AVV"),
     "bankrecht": ("Bank- und Kapitalmarktrecht", "Verbraucherdarlehen §§ 491 ff. BGB, MiFID II, Anlageberatung"),
     "gewerblicher-rechtsschutz": ("Gewerblicher Rechtsschutz", "Marken (MarkenG), Designs (DesignG), UWG-Abmahnung"),
-    "steuerrecht": ("Steuerrecht", "AO Außenprüfung, Einspruch §§ 347 ff. AO, Selbstanzeige § 371, FGO"),
+    "steuerrecht": ("Steuerrecht", "Einspruch, AdV, FG-Klage, Korrektur, Stundung/Erlass, Haftung, Außenprüfung, Grundsteuer, E-Rechnung"),
     "verwaltungsrecht": ("Verwaltungsrecht", "Widerspruch §§ 68 ff. VwGO, Anfechtungs-/Verpflichtungsklage, § 80"),
     "ki-vo-compliance": ("EU KI-VO / AI Act", "VO (EU) 2024/1689 — Hochrisiko Art. 6, Betreiber Art. 26, GPAI"),
     "nis2": ("NIS2", "RL (EU) 2022/2555 / NIS2UmsuCG — Risikomanagement, 24h-Frühwarnung"),
@@ -254,7 +254,7 @@ def main() -> None:
             f"{len(skills_out)} skills, multi-provider (Claude, Gemini, GPT), "
             "primary-source citations to gesetze-im-internet.de and EUR-Lex."
         ),
-        "version": "0.4.3",
+        "version": "0.5.0",
         "repository": "https://github.com/borghei/AI-Skills-German-Law",
         "website": "https://borghei.github.io/AI-Skills-German-Law",
         "author": "borghei",

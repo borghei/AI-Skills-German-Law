@@ -19,6 +19,7 @@ test: ./test.md
 
 Die meisten Kündigungen sind rechtlich unproblematisch. Einige sind Klagen, die noch nicht eingereicht wurden. Dieser Skill identifiziert die Hochrisikofälle, **bevor** die 3-Wochen-Frist des [§ 4 KSchG](https://www.gesetze-im-internet.de/kschg/__4.html) zu laufen beginnt: Sonderkündigungsschutz, fehlende BR-Anhörung, mangelhafte Sozialauswahl, unzureichende Dokumentation, vergessene Massenentlassungsanzeige.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: Drei-Stufen-Modell zu §§ 17, 18 KSchG (BAG 2026), Fehlgeburtsschutz § 3 Abs. 5 MuSchG (seit 01.06.2025), Fünftelregelung nur noch in der Veranlagung (seit VZ 2025).
 ## Eingaben
 
 - **Kündigungsanlass:** betriebsbedingt / verhaltensbedingt / personenbedingt
@@ -52,12 +53,16 @@ Beim Vorliegen eines der folgenden Tatbestände: **🔴 BLOCKER – sofortige Es
 
 | Schutztatbestand | Norm | Anforderung |
 |---|---|---|
-| Schwangerschaft / Mutterschutz | [§ 17 MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__17.html) | Behördliche Zustimmung (Amt für Arbeitsschutz) **vor** Ausspruch |
+| Schwangerschaft / Mutterschutz | [§ 17 MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__17.html) | Behördliche Zustimmung (Amt für Arbeitsschutz) **vor** Ausspruch; Mitteilung binnen zwei Wochen nach Zugang genügt |
+| Fehlgeburt nach der 12. SSW | § 17 Abs. 1 S. 1 Nr. 2 MuSchG | Kündigungsverbot bis vier Monate nach der Fehlgeburt; Schutzfristen nach [§ 3 Abs. 5 MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__3.html) seit 01.06.2025 — Detail: `/arbeitsrecht:mutterschutz-elternzeit` |
 | Elternzeit | [§ 18 BEEG](https://www.gesetze-im-internet.de/beeg/__18.html) | Behördliche Zustimmung; Ausnahme bei schwerwiegenden Gründen § 18 Abs. 1 S. 2 BEEG |
-| Schwerbehinderte / Gleichgestellte | [§ 168 SGB IX](https://www.gesetze-im-internet.de/sgb_9_2018/__168.html) | Zustimmung Inklusionsamt **vor** Ausspruch; 3-Wochen-Antragsfrist |
+| Schwerbehinderte / Gleichgestellte | [§ 168 SGB IX](https://www.gesetze-im-internet.de/sgb_9_2018/__168.html) | Zustimmung Inklusionsamt **vor** Ausspruch; bei außerordentlicher Kündigung Antrag binnen **zwei Wochen** ab Kenntnis ([§ 174 Abs. 2 SGB IX](https://www.gesetze-im-internet.de/sgb_9_2018/__174.html)) |
+| Schwerbehindertenvertretung | [§ 178 Abs. 2 S. 3 SGB IX](https://www.gesetze-im-internet.de/sgb_9_2018/__178.html) | Kündigung ohne vorherige Beteiligung der SBV **unwirksam** |
 | BR-Mitglied, Wahlvorstand u.a. | [§ 15 KSchG](https://www.gesetze-im-internet.de/kschg/__15.html) | Ordentliche Kündigung **ausgeschlossen**; außerordentliche nur mit BR-Zustimmung [§ 103 BetrVG](https://www.gesetze-im-internet.de/betrvg/__103.html) |
 | Datenschutzbeauftragter | [§ 38 Abs. 2 BDSG](https://www.gesetze-im-internet.de/bdsg_2018/__38.html) i.V.m. § 6 Abs. 4 BDSG | Kündigungsschutz während Amtszeit + 1 Jahr danach |
 | Pflegezeit | [§ 5 PflegeZG](https://www.gesetze-im-internet.de/pflegezg/__5.html) | Schutz wie BEEG |
+| Familienpflegezeit | [§ 2 Familienpflegezeitgesetz](https://www.gesetze-im-internet.de/fpfzg/__2.html) i. V. m. § 5 PflegeZG | Schutz entsprechend |
+| Auszubildende nach der Probezeit | [§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html) | Ordentliche Kündigung durch Ausbildenden ausgeschlossen |
 
 ### 3. BR-Anhörung ([§ 102 BetrVG](https://www.gesetze-im-internet.de/betrvg/__102.html))
 
@@ -65,12 +70,13 @@ Bei Vorhandensein eines BR: **jede** Kündigung vor Ausspruch anhören. Ohne ord
 
 Checkliste:
 
-- [ ] Schriftliche Information des BR (E-Mail genügt)
+- [ ] Information des BR — § 102 BetrVG schreibt keine Form vor; Textform mit **Empfangsnachweis** empfohlen
+- [ ] Nach den regelmäßigen Wahlen 2026: Ist der Betriebsrat konstituiert (§ 29 BetrVG), wer ist Vorsitzender (§ 26 Abs. 2 BetrVG)?
 - [ ] Inhalt vollständig: Personalien, Art der Kündigung (ord./ao.), Kündigungsfrist, Kündigungsgründe konkret (nicht bloß Schlagworte)
 - [ ] Frist abgewartet: 1 Woche bei ordentlicher, 3 Tage bei außerordentlicher Kündigung (§ 102 Abs. 2 BetrVG)
 - [ ] BR-Bedenken protokolliert (keine Vetorechte bei ordentlicher Kündigung, aber Widerspruch § 102 Abs. 3 BetrVG gibt Weiterbeschäftigungsanspruch § 102 Abs. 5 BetrVG)
 
-Detail-Skill: `/arbeitsrecht:betriebsrat-anhoerung` (geplant; aktuell als Stub).
+Detail-Skill: `/arbeitsrecht:betriebsratsanhoerung`.
 
 Belege:
 
@@ -85,7 +91,7 @@ Belege:
 2. **Wegfall des Arbeitsplatzes** konkret und dauerhaft (bloße Umsatzrückgänge genügen nicht).
 3. **Weiterbeschäftigung auf vergleichbarem Arbeitsplatz** ausgeschlossen (§ 1 Abs. 2 S. 2 KSchG).
 4. **Sozialauswahl** (siehe Ziff. 5).
-5. **Massenentlassung** ([§§ 17–18 KSchG](https://www.gesetze-im-internet.de/kschg/__17.html)): Schwellen je nach Betriebsgröße; **Anzeige an Agentur für Arbeit VOR Ausspruch** der Kündigungen. Fehler → Unwirksamkeit. Vgl. BAG, Urt. v. 22.11.2012 – 2 AZR 371/11, NZA 2013, 437 `[unverifiziert – prüfen]`.
+5. **Massenentlassung** ([§§ 17–18 KSchG](https://www.gesetze-im-internet.de/kschg/__17.html)): Schwellen je nach Betriebsgröße; Konsultationsverfahren abschließen, dann **Anzeige an Agentur für Arbeit VOR Ausspruch** der Kündigungen. Fehlerfolgen nach dem Drei-Stufen-Modell (Rechtsstand Oktober 2026): Konsultations- und Reihenfolgefehler sowie fehlende Anzeige → Unwirksamkeit; Inhaltsfehler der Anzeige nur, wenn sie die Agentur an ihrer Aufgabe hindern. Detail: `/arbeitsrecht:massenentlassungsanzeige`. Vgl. BAG, Urt. v. 22.11.2012 – 2 AZR 371/11, NZA 2013, 437 `[unverifiziert – prüfen]`.
 
 #### B — Verhaltensbedingte Kündigung
 
@@ -138,7 +144,7 @@ Prüfschema:
 
 ### 7. Abfindungsangebot ([§ 1a KSchG](https://www.gesetze-im-internet.de/kschg/__1a.html))
 
-AG kann mit der betriebsbedingten Kündigung eine Abfindung anbieten (0,5 × Monatsgehalt × Beschäftigungsjahre), sofern AN keine Klage erhebt. Steuerliche Behandlung: [§ 34 EStG](https://www.gesetze-im-internet.de/estg/__34.html) (ermäßigter Steuersatz, „Fünftelregelung").
+AG kann mit der betriebsbedingten Kündigung eine Abfindung anbieten (0,5 × Monatsgehalt × Beschäftigungsjahre), sofern AN keine Klage erhebt. Steuerliche Behandlung: [§ 34 EStG](https://www.gesetze-im-internet.de/estg/__34.html) (ermäßigter Steuersatz, „Fünftelregelung") — seit dem Veranlagungszeitraum 2025 **nicht mehr im Lohnsteuerabzug** durch den Arbeitgeber, sondern nur in der Einkommensteuerveranlagung des Arbeitnehmers.
 
 ## Quellen und Zitierweise
 
@@ -227,13 +233,13 @@ Quellen: siehe references/zitierweise.md
 
 **Bewertung (Urteilsstil).** Die beabsichtigte Kündigung ist am ehesten gegenüber C zu rechtfertigen. In der Sozialauswahl nach § 1 Abs. 3 KSchG sind alle drei AN in eine Vergleichsgruppe einzustellen (gleiche Funktion, Austauschbarkeit gegeben). B genießt Sonderkündigungsschutz nach § 168 SGB IX; eine Kündigung erfordert Zustimmung des Inklusionsamts (🔴 Blocker). A und C stehen im direkten Auswahlvergleich: Die längere Betriebszugehörigkeit von A (10 J.), das Lebensalter (45 J.) und die zwei Unterhaltsverpflichtungen überwiegen die Schutzwürdigkeit von C (8 J., 55 J., ein Kind). C ist nach Sozialpunkten am wenigsten schutzwürdig — Kündigung sozialauswahl-konform, wenn der Auswahlvorgang schriftlich dokumentiert wird.
 
-**🟠 Empfehlung.** Vor Ausspruch: (1) Sozialauswahldokumentation in der Personalakte hinterlegen, (2) Abfindungsangebot § 1a KSchG erwägen (4 BMG), (3) Massenentlassungsschwelle nicht erreicht (1/35 < 6 % bei < 60 AN), Anzeige nicht erforderlich, (4) bei Klagerisiko Vergleichsoption (etwa Aufhebungsvertrag, siehe `/arbeitsrecht:aufhebungsvertrag`) prüfen.
+**🟠 Empfehlung.** Vor Ausspruch: (1) Sozialauswahldokumentation in der Personalakte hinterlegen, (2) Abfindungsangebot § 1a KSchG erwägen (4 BMG), (3) Massenentlassungsschwelle nicht erreicht (bei 21–59 AN erst ab **mehr als 5** Entlassungen, § 17 Abs. 1 S. 1 Nr. 1 KSchG), Anzeige nicht erforderlich, (4) bei Klagerisiko Vergleichsoption (etwa Aufhebungsvertrag, siehe `/arbeitsrecht:aufhebungsvertrag`) prüfen.
 
 ## Risiken / typische Fehler
 
-- **Massenentlassungsanzeige vergessen** ([§§ 17–18 KSchG](https://www.gesetze-im-internet.de/kschg/__17.html)) — führt zur Unwirksamkeit aller Kündigungen. Schwellen ab 5 AN bei kleinen, ab 30 AN bei großen Betrieben innerhalb 30 Tagen.
+- **Massenentlassungsanzeige vergessen** ([§§ 17–18 KSchG](https://www.gesetze-im-internet.de/kschg/__17.html)) — die fehlende Anzeige führt zur Unwirksamkeit aller Kündigungen; Nachholung heilt nicht. Schwellen: mehr als 5 Entlassungen (21–59 AN), 10 % oder mehr als 25 (60–499 AN), mindestens 30 (ab 500 AN) innerhalb 30 Tagen.
 - **BR-Anhörung inhaltlich unvollständig** — fehlende Angaben zu Person oder Grund machen Anhörung unwirksam (§ 102 Abs. 1 S. 3 BetrVG).
-- **Sonderkündigungsschutz übersehen** — insbesondere bei BR-Mitgliedern, Schwangeren, Elternzeitnehmenden, Schwerbehinderten.
+- **Sonderkündigungsschutz übersehen** — insbesondere bei BR-Mitgliedern, Wahlbewerbern der Wahl 2026 (Nachwirkung sechs Monate), Schwangeren, Frauen nach Fehlgeburt, Elternzeitnehmenden, Schwerbehinderten (einschließlich SBV-Beteiligung).
 - **Sozialauswahl ohne Dokumentation** — bei Klagefrist-Ablauf nach § 4 KSchG kaum nachrüstbar.
 - **2-Wochen-Frist § 626 Abs. 2 BGB** — beginnt mit positiver Kenntnis des Kündigungsberechtigten, nicht mit vager Vermutung.
 - **BEM nicht durchgeführt** — vor krankheitsbedingter Kündigung erhöht die Darlegungslast.

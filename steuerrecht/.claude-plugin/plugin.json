@@ -1,7 +1,7 @@
 {
   "name": "steuerrecht",
-  "version": "0.4.3",
-  "description": "Steuerrecht (Fachanwaltschaft). Abgabenordnung AO, Außenprüfung/Betriebsprüfung §§ 193 ff. AO, Einspruchsverfahren §§ 347 ff. AO, Finanzgerichtsverfahren FGO, Selbstanzeige § 371 AO.",
+  "version": "0.5.0",
+  "description": "Steuerrecht (Fachanwaltschaft), Verfahren mit dem Finanzamt – Rechtsstand Oktober 2026. Einspruch §§ 347 ff. AO mit Bekanntgabe per Datenabruf § 122a AO, Aussetzung der Vollziehung § 361 AO / § 69 FGO, Finanzgerichtsklage FGO, Korrekturvorschriften §§ 129, 164, 172 ff. AO, Erklärungsfristen und Verspätungszuschlag §§ 149, 152 AO, Stundung/Erlass/Vollstreckung §§ 222, 227, 258 AO, Haftungsbescheid §§ 69, 191 AO, Außenprüfung §§ 193 ff., 200a AO, Selbstanzeige § 371 AO, Grundsteuer-Einspruch, E-Rechnung und Vorsteuer §§ 14, 15 UStG.",
   "license": "Apache-2.0 OR MIT",
   "author": {
     "name": "Borghei",

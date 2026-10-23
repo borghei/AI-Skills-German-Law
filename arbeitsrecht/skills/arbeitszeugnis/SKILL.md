@@ -16,6 +16,7 @@ test: ./test.md
 
 Das Arbeitszeugnis ist der einzige Bereich des Arbeitsrechts, in dem eine überwiegend außergesetzliche, von der Praxis entwickelte Kunstsprache über den Marktwert eines Menschen entscheidet. Der Gesetzestext ([§ 109 GewO](https://www.gesetze-im-internet.de/gewo/__109.html)) umfasst drei Absätze; der Streit dreht sich fast immer um eine Formulierung, die dort nicht steht. Dieser Skill übersetzt die Zeugnissprache in Noten, prüft auf verdeckte Abwertungen und formuliert Berichtigungsverlangen.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: elektronisches Zeugnis mit Einwilligung (§ 109 Abs. 3 GewO, seit 01.01.2025).
 ## Eingaben
 
 - Zeugnisart: **einfaches** (Art und Dauer) oder **qualifiziertes** Zeugnis (zusätzlich Leistung und Verhalten)
@@ -37,7 +38,7 @@ Das Arbeitszeugnis ist der einzige Bereich des Arbeitsrechts, in dem eine überw
 
 Bei Beendigung des Arbeitsverhältnisses besteht Anspruch auf ein **schriftliches** Zeugnis (§ 109 Abs. 1 S. 1 GewO). Es muss mindestens Art und Dauer der Tätigkeit enthalten (einfaches Zeugnis, S. 2); auf Verlangen erstreckt es sich auf **Leistung und Verhalten** (**qualifiziertes Zeugnis**, S. 3). § 630 BGB enthält die parallele Regelung für das Dienstverhältnis.
 
-**Form:** Schriftform. Die elektronische Form ist **ausgeschlossen**, es sei denn, der Arbeitnehmer willigt ein (§ 109 Abs. 3 GewO). Ein per PDF übersandtes Zeugnis ohne Einwilligung erfüllt den Anspruch nicht.
+**Form (Rechtsstand Oktober 2026):** Schriftform. Seit 01.01.2025 (BEG IV) ist die **elektronische Form** zulässig, wenn der Arbeitnehmer **einwilligt** (§ 109 Abs. 3 GewO). Elektronische Form bedeutet [§ 126a BGB](https://www.gesetze-im-internet.de/bgb/__126a.html): elektronisches Dokument mit **qualifizierter elektronischer Signatur** des Ausstellers. Ein eingescanntes oder einfach als PDF übersandtes Zeugnis erfüllt den Anspruch **nie** — weder mit noch ohne Einwilligung.
 
 Der Anspruch ist eine **Holschuld** am Betriebssitz; auf Verlangen und bei zumutbaren Umständen kommt eine Übersendung in Betracht (§ 241 Abs. 2 BGB).
 
@@ -156,7 +157,7 @@ viel Erfolg.                                    [Schlussformel]
 <Name, Funktion — ranghöher als der Beurteilte>
 ```
 
-**Schlussformel:** Auf Dank, Bedauern und Zukunftswünsche besteht **kein einklagbarer Anspruch** — sie ist Ausdruck persönlicher Empfindung des Arbeitgebers (st. Rspr. des BAG zur Schlussformel `[unverifiziert – prüfen]`). Ihr **Fehlen** wertet ein sonst gutes Zeugnis in der Lesart der Praxis jedoch ab. Konsequenz für die Verhandlung: Die Schlussformel ist nicht erzwingbar, aber ein regelmäßiger und lohnender Gegenstand des Vergleichs im Kündigungsschutzverfahren.
+**Schlussformel:** Auf Dank, Bedauern und Zukunftswünsche besteht **kein einklagbarer Anspruch** — sie ist Ausdruck persönlicher Empfindung des Arbeitgebers (BAG, Urt. v. 25.01.2022 – 9 AZR 146/21, [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/9-azr-146-21/)). Ihr **Fehlen** wertet ein sonst gutes Zeugnis in der Lesart der Praxis jedoch ab. Konsequenz für die Verhandlung: Die Schlussformel ist nicht erzwingbar, aber ein regelmäßiger und lohnender Gegenstand des Vergleichs im Kündigungsschutzverfahren.
 
 **Beendigungsgrund:** darf nur mit Zustimmung des Arbeitnehmers aufgenommen werden. Eine ungefragte Angabe („wurde betriebsbedingt gekündigt") ist zu entfernen.
 
@@ -202,7 +203,7 @@ Zuständig ist das Arbeitsgericht ([§ 2 ArbGG](https://www.gesetze-im-internet.
 ### Rechtsprechung
 
 - BAG, Urt. v. 18.11.2014 – 9 AZR 584/13, BAGE 150, 66 = NZA 2015, 435 (Darlegungslast bei der Zeugnisnote: ab Verlangen einer besseren Note als „befriedigend" trägt der Arbeitnehmer die Darlegungslast; „zur vollen Zufriedenheit" = befriedigend), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=18.11.2014&Aktenzeichen=9%20AZR%20584/13)
-- st. Rspr. des BAG zur Schlussformel (kein einklagbarer Anspruch auf Dank und Zukunftswünsche) `[unverifiziert – prüfen]`
+- BAG, Urt. v. 25.01.2022 – 9 AZR 146/21 (kein Anspruch auf Dankes- und Wunschformel), [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/9-azr-146-21/)
 - st. Rspr. des BAG zu § 109 Abs. 2 GewO (Verbot verdeckter Aussagen, Wahrheits- und Wohlwollenspflicht) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zur Bindungswirkung eines erteilten Zwischenzeugnisses für das Endzeugnis `[unverifiziert – prüfen]`
 

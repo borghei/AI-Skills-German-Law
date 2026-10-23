@@ -16,6 +16,7 @@ test: ./test.md
 
 Befristungen scheitern in der Praxis fast nie an der Sachgrundfrage, sondern an drei banalen Punkten: fehlende Schriftform **vor** Arbeitsantritt, eine unzulässige Vorbeschäftigung und eine „Verlängerung", die in Wahrheit ein Neuvertrag war. Dieser Skill prüft diese drei zuerst und geht erst dann in die Sachgrundprüfung.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: § 41 Abs. 2 SGB VI (Befristung nach der Regelaltersgrenze, seit 01.01.2026) und § 41 Abs. 3 SGB VI (Textform, seit 01.01.2025).
 ## Eingaben
 
 - Vertragskette: **alle** Verträge mit Datum des Abschlusses, Datum des Arbeitsbeginns, Laufzeit, geänderte Bedingungen
@@ -40,6 +41,7 @@ Die **Befristungsabrede** — nicht der gesamte Vertrag — bedarf der Schriftfo
 
 - Die Unterzeichnung muss **vor** der Arbeitsaufnahme erfolgen. Wird zunächst mündlich vereinbart und erst nach Arbeitsbeginn unterschrieben, ist bereits ein **unbefristetes** Arbeitsverhältnis entstanden; die spätere Unterschrift ist eine nachträgliche Befristung, für die ein eigener Sachgrund erforderlich wäre.
 - **Textform genügt nicht.** Die durch das Bürokratieentlastungsgesetz für den Nachweis nach § 2 NachwG geöffnete Textform ändert an § 14 Abs. 4 TzBfG nichts.
+- **Einzige Ausnahme:** Die Vereinbarung, dass das Arbeitsverhältnis mit Erreichen der **Regelaltersgrenze** endet, bedarf seit 01.01.2025 nur der **Textform**; § 14 Abs. 4 TzBfG gilt insoweit nicht ([§ 41 Abs. 3 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__41.html)). Das Hinausschieben des Beendigungszeitpunkts nach § 41 SGB VI bleibt während des Arbeitsverhältnisses möglich.
 - Ein Verstoß führt nach [§ 16 TzBfG](https://www.gesetze-im-internet.de/tzbfg/__16.html) zum **unbefristeten** Arbeitsverhältnis; der Arbeitgeber kann es frühestens zum vereinbarten Ende ordentlich kündigen, sofern die ordentliche Kündigung nicht vertraglich ausgeschlossen ist.
 
 ### 2. Sachgrundbefristung ([§ 14 Abs. 1 TzBfG](https://www.gesetze-im-internet.de/tzbfg/__14.html))
@@ -79,11 +81,13 @@ Wortlaut: Die sachgrundlose Befristung ist **nicht zulässig, wenn mit demselben
 
 Die Entwicklung in drei Schritten:
 
-1. Das BAG legte die Norm zeitweise dahin aus, dass nur Vorbeschäftigungen innerhalb der letzten **drei Jahre** schädlich seien `[unverifiziert – prüfen]`.
+1. Das BAG legte die Norm zeitweise dahin aus, dass nur Vorbeschäftigungen innerhalb der letzten **drei Jahre** schädlich seien (BAG, Urt. v. 06.04.2011 – 7 AZR 716/09; nach dem BVerfG aufgegeben, BAG, Urt. v. 23.01.2019 – 7 AZR 733/16 `[unverifiziert – prüfen]`).
 2. Das **BVerfG** verwarf diese Auslegung mit Beschl. v. 06.06.2018 – 1 BvL 7/14 und 1 BvR 1375/14, BVerfGE 149, 126 = NZA 2018, 774 ([dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=06.06.2018&Aktenzeichen=1%20BvL%207/14)) als Überschreitung der Grenzen richterlicher Rechtsfortbildung: Der Wortlaut sei eindeutig, ein starres Drei-Jahres-Modell mit dem erkennbaren Willen des Gesetzgebers nicht vereinbar.
 3. Zugleich verlangte das BVerfG in derselben Entscheidung eine **verfassungskonforme Einschränkung** für Fälle, in denen das Verbot unzumutbar wäre. Anerkannte Fallgruppen: die Vorbeschäftigung liegt **sehr lange** zurück, war **ganz anders geartet** oder von **sehr kurzer Dauer** — genannt werden geringfügige Nebenbeschäftigungen während Schule oder Studium, Werkstudententätigkeiten und Beschäftigungen im Rahmen der Berufsausbildung.
 
 **Praxisfolge:** „Sehr lange" ist nicht mit den früheren drei Jahren gleichzusetzen; in der nachfolgenden Instanzrechtsprechung wurden Zeiträume im Bereich von etwa zwei Jahrzehnten als ausreichend, deutlich kürzere als nicht ausreichend angesehen `[unverifiziert – prüfen]`. Für die Gestaltung heißt das: **Bei jeder sachgrundlosen Befristung ist die Personalhistorie vollständig abzufragen**, einschließlich Aushilfs-, Ferien- und Praktikantenverhältnissen. Der Arbeitgeber, der auf eine Selbstauskunft vertraut, trägt das Risiko; eine bewusst falsche Antwort des Arbeitnehmers kann allerdings den Einwand des Rechtsmissbrauchs begründen.
+
+**Ausnahme seit 01.01.2026 — Beschäftigte nach der Regelaltersgrenze** ([§ 41 Abs. 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__41.html), Gesetz v. 22.12.2025, BGBl. 2025 I Nr. 362): Für Arbeitnehmer, die die Regelaltersgrenze erreicht haben, gilt das Vorbeschäftigungsverbot **nicht**. Es bleiben die Grenzen des § 14 Abs. 2 S. 1 TzBfG (je neuem sachgrundlos befristetem Vertrag höchstens zwei Jahre mit bis zu drei Verlängerungen) und eine **Gesamthöchstgrenze von acht Jahren und zwölf befristeten Verträgen** mit demselben Arbeitgeber. Ob die Regel gerade die Rückkehr zum früheren Arbeitgeber erfassen soll, ist umstritten `[unverifiziert – prüfen]`. Schriftform nach § 14 Abs. 4 TzBfG gilt für diese Befristungen weiter. Detail: `/arbeitsrecht:mindestlohn-minijob-aktivrente`.
 
 „Derselbe Arbeitgeber" ist der **Vertragsarbeitgeber**, nicht der Konzern. Vorbeschäftigung bei einer anderen Konzerngesellschaft ist unschädlich; die Zwischenschaltung eines Verleihers zur Umgehung ist es nicht.
 
@@ -144,7 +148,7 @@ Ist die Befristung unwirksam, gilt der Vertrag als auf **unbestimmte Zeit** gesc
 - st. Rspr. des BAG zum Verlängerungsbegriff des § 14 Abs. 2 S. 1 TzBfG (nahtloser Anschluss, ausschließlich Änderung der Vertragsdauer) `[unverifiziert – prüfen]`
 - EuGH- und BAG-Rspr. zur institutionellen Rechtsmissbrauchskontrolle bei Kettenbefristungen `[unverifiziert – prüfen]`
 
-> Die BVerfG-Entscheidung von 2018 ist vor Verwendung mit Aktenzeichen und Fundstelle in der [BVerfG-Entscheidungsdatenbank](https://www.bundesverfassungsgericht.de/) zu verifizieren; Aktenzeichen werden hier bewusst nicht angegeben.
+> Die BVerfG-Entscheidung von 2018 ist über dejure.org verifiziert; die Fundstelle vor Verwendung in der [BVerfG-Entscheidungsdatenbank](https://www.bundesverfassungsgericht.de/) abgleichen. Rechtsstand dieses Skills: Oktober 2026.
 
 ## Ausgabeformat
 
@@ -192,6 +196,7 @@ Empfehlung: <…>
 - **Lücke zwischen zwei Verträgen** — auch ein einziger Tag Unterbrechung zerstört die Verlängerungskette.
 - **Vorbeschäftigung nicht vollständig ermittelt** — Ferienjobs, Werkstudententätigkeit und Aushilfen bei demselben Vertragsarbeitgeber zählen; die frühere Drei-Jahres-Grenze existiert nicht mehr.
 - **Auf die alte Drei-Jahres-Rechtsprechung vertraut** — sie ist durch die BVerfG-Entscheidung von 2018 überholt; die Ausnahme ist eng und einzelfallbezogen.
+- **§ 41 Abs. 2 SGB VI bei Rentnern übersehen oder überdehnt** — seit 01.01.2026 hindert die Vorbeschäftigung die sachgrundlose Befristung nach der Regelaltersgrenze nicht mehr, wohl aber die Grenze von acht Jahren / zwölf Verträgen und die Schriftform.
 - **Klagefrist § 17 TzBfG ab Zugang einer Mitteilung gerechnet** statt ab dem vereinbarten Ende.
 - **Präklusion nach § 17 S. 2 TzBfG i.V.m. § 7 KSchG übersehen** — nach drei Wochen ist die Befristung nicht mehr angreifbar, auch wenn sie evident formunwirksam war.
 - **Sachgrund erst im Prozess nachgeschoben** — der Sachgrund muss bei Vertragsschluss objektiv vorgelegen haben; er muss allerdings nicht im Vertrag genannt sein.

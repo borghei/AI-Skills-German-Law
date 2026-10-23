@@ -16,6 +16,7 @@ test: ./test.md
 
 § 613a BGB ist die Norm, an der Transaktionen scheitern, nachdem sie abgeschlossen wurden. Der Grund ist fast immer derselbe: ein fehlerhaftes Unterrichtungsschreiben, das die **Monatsfrist des § 613a Abs. 6 BGB nicht in Gang setzt** und den Arbeitnehmern damit ein zeitlich unbefristetes Widerspruchsrecht belässt. Dieser Skill prüft den Tatbestand, erstellt das Unterrichtungsschreiben entlang des von der Rechtsprechung entwickelten Katalogs und bewertet Widerspruchsrisiken.
 
+> **Rechtsstand: Oktober 2026.** § 613a BGB unverändert; keine neue Leitentscheidung des BAG 2025/2026 festgestellt.
 ## Eingaben
 
 - Transaktionsform: Asset Deal / Outsourcing / Insourcing / Funktionsnachfolge / Umwandlung nach UmwG / Share Deal

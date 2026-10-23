@@ -1,6 +1,6 @@
 ---
 name: betriebskostenabrechnung
-description: "Prüfung und Erstellung der Betriebskostenabrechnung im Wohnraummietrecht – Umlagevereinbarung und Abrechnungspflicht § 556 BGB, Abrechnungsfrist § 556 Abs. 3 S. 2 BGB und Einwendungsfrist § 556 Abs. 3 S. 5 BGB, Umlagemaßstab § 556a BGB, Betriebskostenkatalog der BetrKV, HeizkostenV, Belegeinsicht, Abgrenzung formeller und materieller Fehler, Wirtschaftlichkeitsgebot, CO2KostAufG mit Stufenmodell seit 2023. Use when eine Betriebskostenabrechnung erstellt, geprüft oder eine Nachforderung bzw. ein Guthaben durchgesetzt wird."
+description: "Prüfung und Erstellung der Betriebskostenabrechnung im Wohnraummietrecht – Umlagevereinbarung und Abrechnungspflicht § 556 BGB, Abrechnungsfrist § 556 Abs. 3 S. 2 BGB und Einwendungsfrist § 556 Abs. 3 S. 5 BGB, Umlagemaßstab § 556a BGB, Betriebskostenkatalog der BetrKV, HeizkostenV, Belegeinsicht, Abgrenzung formeller und materieller Fehler, Wirtschaftlichkeitsgebot, CO2KostAufG mit Stufenmodell seit 2023 und GModG-Kostenteilung ab 2028, Fernablesepflicht § 5 Abs. 3 HeizkostenV bis 31.12.2026, Belegeinsicht § 556 Abs. 4 BGB, Glasfaser-Bereitstellungsentgelt § 556 Abs. 3a BGB. Rechtsstand: Oktober 2026. Use when eine Betriebskostenabrechnung erstellt, geprüft oder eine Nachforderung bzw. ein Guthaben durchgesetzt wird."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -36,6 +36,11 @@ Betriebskosten sind nur umlagefähig, wenn die Parteien dies **vereinbart** habe
 
 Der Katalog des § 2 BetrKV ist **abschließend** für die dort benannten Arten; Nr. 17 („sonstige Betriebskosten") erfasst weitere laufende Kosten nur, wenn sie im Mietvertrag **konkret benannt** sind. Eine pauschale Klausel „und sonstige Betriebskosten" reicht dafür nicht. Prüfe jede Position einzeln: Grundsteuer, Wasser/Entwässerung, Heizung, Warmwasser, Aufzug, Straßenreinigung, Müllbeseitigung, Gebäudereinigung, Gartenpflege, Beleuchtung, Schornsteinreinigung, Sach- und Haftpflichtversicherung, Hauswart, Gemeinschaftsantenne, Wäschepflege.
 
+**Aktuelle Sonderpunkte (Rechtsstand: Oktober 2026):**
+
+- **Kabel-TV:** Die Kosten des Breitbandkabel-Grundanschlusses (Nebenkostenprivileg) sind für Abrechnungszeiträume seit **01.07.2024** nicht mehr umlagefähig ([§ 2 Nr. 15 BetrKV](https://www.gesetze-im-internet.de/betrkv/__2.html)). Neu: Nr. 15c für Glasfasernetze; das **Bereitstellungsentgelt** nach § 72 TKG ist nur umlagefähig, wenn der Vermieter die Maßnahme wirtschaftlich umgesetzt hat (bei aufwendigen Arbeiten drei Angebote, [§ 556 Abs. 3a BGB](https://www.gesetze-im-internet.de/bgb/__556.html)).
+- **Grundsteuer:** Seit 01.01.2025 wird nach den neuen Grundsteuerwerten bzw. Landesmodellen festgesetzt; Mehr- oder Minderbeträge sind über § 2 Nr. 1 BetrKV abzurechnen. Eine Erhöhung der Vorauszahlung ist nach [§ 560 BGB](https://www.gesetze-im-internet.de/bgb/__560.html) möglich.
+
 ### 3. Abrechnungsfrist ([§ 556 Abs. 3 S. 2, S. 3 BGB](https://www.gesetze-im-internet.de/bgb/__556.html))
 
 Die Abrechnung ist dem Mieter **spätestens bis zum Ablauf des zwölften Monats nach Ende des Abrechnungszeitraums** mitzuteilen. Nach Ablauf dieser Frist ist die Geltendmachung einer **Nachforderung ausgeschlossen**, es sei denn, der Vermieter hat die verspätete Geltendmachung **nicht zu vertreten** (S. 3). Es handelt sich um eine **materielle Ausschlussfrist** — sie wirkt nur gegen Nachforderungen; ein **Guthaben** bleibt auch bei verspäteter Abrechnung auszukehren, und der Anspruch des Mieters auf Erteilung der Abrechnung besteht fort. Maßgeblich ist der **Zugang** der Abrechnung, nicht die Absendung.
@@ -58,7 +63,7 @@ Der Mieter hat Einwendungen gegen die Abrechnung **spätestens bis zum Ablauf de
 
 ### 6. Umlagemaßstab ([§ 556a BGB](https://www.gesetze-im-internet.de/bgb/__556a.html))
 
-Ohne abweichende Vereinbarung sind Betriebskosten nach dem **Anteil der Wohnfläche** umzulegen. Kosten, die von einem **erfassten Verbrauch** abhängen, sind nach Verbrauch umzulegen (§ 556a Abs. 1 S. 2 BGB). Der Vermieter kann durch **Erklärung in Textform** auf einen verbrauchsabhängigen Maßstab umstellen; die Umstellung wirkt zum Beginn des folgenden Abrechnungszeitraums (Abs. 2). Für **Heizung und Warmwasser** gilt vorrangig die [HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/): mindestens 50 %, höchstens 70 % nach erfasstem Verbrauch; bei Verstoß Kürzungsrecht des Mieters von **15 %** ([§ 12 HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/__12.html)).
+Ohne abweichende Vereinbarung sind Betriebskosten nach dem **Anteil der Wohnfläche** umzulegen (§ 556a Abs. 1 S. 1 BGB). **Ausnahme vermietete Eigentumswohnung:** Ist Wohnungseigentum vermietet und nichts anderes vereinbart, gilt der **für die Verteilung zwischen den Wohnungseigentümern geltende Maßstab**; nur wenn dieser billigem Ermessen widerspricht, ist nach Abs. 1 umzulegen ([§ 556a Abs. 3 BGB](https://www.gesetze-im-internet.de/bgb/__556a.html)). Die WEG-Einzelabrechnung selbst ist keine Betriebskostenabrechnung — Vertiefung: `/wohnungseigentumsrecht:vermietete-eigentumswohnung`. Kosten, die von einem **erfassten Verbrauch** abhängen, sind nach Verbrauch umzulegen (§ 556a Abs. 1 S. 2 BGB). Der Vermieter kann durch **Erklärung in Textform** auf einen verbrauchsabhängigen Maßstab umstellen; die Umstellung wirkt zum Beginn des folgenden Abrechnungszeitraums (Abs. 2). Für **Heizung und Warmwasser** gilt vorrangig die [HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/): mindestens 50 %, höchstens 70 % nach erfasstem Verbrauch; bei Verstoß Kürzungsrecht des Mieters von **15 %** ([§ 12 HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/__12.html) S. 1). Ein **weiteres Kürzungsrecht von 3 %** besteht, wenn keine fernablesbare Ausstattung nach § 5 Abs. 2, 3 HeizkostenV installiert ist oder die monatlichen Verbrauchsinformationen nach § 6a HeizkostenV fehlen (§ 12 S. 2, 3 HeizkostenV). Nicht fernablesbare Altgeräte müssen bis **31.12.2026** nachgerüstet oder ersetzt werden ([§ 5 Abs. 3 HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/__5.html)). Vertiefung: `/mietrecht:heizkosten-co2-fernablesung`.
 
 ### 7. Wirtschaftlichkeitsgebot ([§ 556 Abs. 3 S. 1 Hs. 2 BGB](https://www.gesetze-im-internet.de/bgb/__556.html))
 
@@ -66,7 +71,7 @@ Der Vermieter hat den **Grundsatz der Wirtschaftlichkeit** zu beachten. Er darf 
 
 ### 8. Belegeinsicht und Zurückbehaltungsrecht
 
-Der Mieter kann Einsicht in die **Abrechnungsunterlagen** verlangen; der Anspruch folgt aus § 259 BGB i.V.m. § 242 BGB. Er erstreckt sich auch auf die **Zahlungsbelege** (BGH, Urt. v. 09.12.2020 – VIII ZR 118/19, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2020-12-09&Aktenzeichen=VIII%20ZR%20118/19). Einsichtsort ist regelmäßig das Büro des Vermieters; Kopien nur gegen Kostenerstattung, außer die Anreise ist unzumutbar. Bis zur Gewährung der Einsicht steht dem Mieter ein **Zurückbehaltungsrecht** nach [§ 273 BGB](https://www.gesetze-im-internet.de/bgb/__273.html) an der Nachzahlung zu.
+Der Mieter kann Einsicht in die **Abrechnungsunterlagen** verlangen; der Anspruch ist seit dem BEG IV in **§ 556 Abs. 4 BGB** ausdrücklich geregelt (zuvor aus § 259 BGB i.V.m. § 242 BGB hergeleitet). Der Vermieter darf die Belege nach § 556 Abs. 4 BGB auch **elektronisch** bereitstellen. Er erstreckt sich auch auf die **Zahlungsbelege** (BGH, Urt. v. 09.12.2020 – VIII ZR 118/19, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2020-12-09&Aktenzeichen=VIII%20ZR%20118/19). Einsichtsort ist regelmäßig das Büro des Vermieters; Kopien nur gegen Kostenerstattung, außer die Anreise ist unzumutbar. Bis zur Gewährung der Einsicht steht dem Mieter ein **Zurückbehaltungsrecht** nach [§ 273 BGB](https://www.gesetze-im-internet.de/bgb/__273.html) an der Nachzahlung zu.
 
 ### 9. CO2-Kostenaufteilung ([CO2KostAufG](https://www.gesetze-im-internet.de/co2kostaufg/), seit 01.01.2023)
 
@@ -74,7 +79,10 @@ Der auf den Brennstoff entfallende **CO2-Preis** nach dem BEHG wird nicht mehr v
 
 - Der Vermieter muss die **CO2-Kosten in der Abrechnung ausweisen** und die Aufteilung nach dem Stufenmodell **nachvollziehbar darlegen**; die erforderlichen Angaben liefert die Rechnung des Brennstofflieferanten.
 - Unterlässt er die Aufteilung, kann der Mieter den auf ihn entfallenden Anteil an den Heizkosten **um 3 %** kürzen.
-- Für **Nichtwohngebäude** gilt bis auf Weiteres eine hälftige Teilung.
+- Stufenmodell (Anlage zum CO2KostAufG): unter 12 kg CO2/m²·a trägt der Mieter 100 %, ab 52 kg CO2/m²·a der Vermieter 95 %; dazwischen acht weitere Stufen.
+- Für **Nichtwohngebäude** gilt bis auf Weiteres eine hälftige Teilung (§ 8 CO2KostAufG).
+- **Neu durch das GModG (seit 29.07.2026):** Wird eine Heizungsanlage nach § 43 GModG (neue Gas-/Ölheizung) eingebaut, sind ab Abrechnungszeiträumen **2028** Gasnetzentgelte und CO2-Kosten, ab **2029** die Mehrkosten anteilig zu nutzender Brennstoffe (bis 30 %) **hälftig** zu teilen (§§ 5a, 5b CO2KostAufG); Ausweisung nach § 7 Abs. 5 CO2KostAufG.
+- **CO2-Preis:** 2026 Preiskorridor 55–65 EUR/t (§ 10 BEHG). Für 2027 ist eine Fortgeltung des Korridors wegen Verschiebung des EU-ETS2 auf 2028 nur **Entwurf** (BEHG-Änderung, 1. Lesung 24.09.2026) `[unverifiziert – prüfen]`.
 - Bei rechtlichen Beschränkungen der energetischen Sanierung (Denkmalschutz, Milieuschutz) kann sich der Vermieteranteil ermäßigen.
 
 Die konkreten Stufengrenzen und Prozentsätze sind vor jeder Abrechnung gegen den aktuellen Gesetzestext zu prüfen.
@@ -87,12 +95,13 @@ Beide Jahresfristen des § 556 Abs. 3 BGB sind Ereignisfristen nach [§ 187 Abs.
 # Abrechnungsfrist § 556 Abs. 3 S. 2 BGB: Abrechnungszeitraum endet 31.12.2025
 python -m scripts.legal_calc.cli frist --ereignis 31.12.2025 --menge 12 --einheit monate --land BE
 
-# Einwendungsfrist § 556 Abs. 3 S. 5 BGB: Abrechnung zugegangen am 15.01.2026
-python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 12 --einheit monate --land BE
-
-# Umstellung des Umlagemaßstabs § 556a Abs. 2 BGB: Wirkung zum nächsten Zeitraum
-python -m scripts.legal_calc.cli frist --ereignis 31.12.2026 --menge 1 --einheit monate --land BE
+# Einwendungsfrist § 556 Abs. 3 S. 5 BGB: „bis zum Ablauf des zwölften Monats nach Zugang" — Monatsendregel.
+# Abrechnung zugegangen am 15.01.2026 → Ereignis = Ende des Zugangsmonats (31.01.2026) eingeben
+# → roher Ablauf 31.01.2027 (Sonntag), nach § 193 BGB 01.02.2027
+python -m scripts.legal_calc.cli frist --ereignis 31.01.2026 --menge 12 --einheit monate --land BE
 ```
+
+**Monatsendregel:** Beide Fristen des § 556 Abs. 3 BGB enden mit Ablauf eines **Kalendermonats** (zwölfter Monat nach Ende des Abrechnungszeitraums bzw. nach Zugang). Deshalb ist als Ereignis stets das **Monatsende** einzugeben, nicht der Zugangstag; sonst endet die Einwendungsfrist zu früh. Die Umstellung des Umlagemaßstabs nach § 556a Abs. 2 BGB kennt **keine** Frist: Die Erklärung in Textform ist nur **vor Beginn** eines Abrechnungszeitraums zulässig und wirkt für diesen.
 
 `--json` liefert die Rechenschritte samt Normzitat. Der Rechner sagt nichts darüber, ob der Vermieter die Verspätung zu vertreten hat (§ 556 Abs. 3 S. 3 BGB) — das bleibt Wertungsfrage.
 
@@ -103,12 +112,13 @@ python -m scripts.legal_calc.cli frist --ereignis 31.12.2026 --menge 1 --einheit
 - [§ 556 BGB](https://www.gesetze-im-internet.de/bgb/__556.html), [§ 556a BGB](https://www.gesetze-im-internet.de/bgb/__556a.html), [§ 259 BGB](https://www.gesetze-im-internet.de/bgb/__259.html), [§ 273 BGB](https://www.gesetze-im-internet.de/bgb/__273.html), [§ 242 BGB](https://www.gesetze-im-internet.de/bgb/__242.html)
 - [BetrKV](https://www.gesetze-im-internet.de/betrkv/) — [§ 1 BetrKV](https://www.gesetze-im-internet.de/betrkv/__1.html), [§ 2 BetrKV](https://www.gesetze-im-internet.de/betrkv/__2.html)
 - [HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/) — [§ 7 HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/__7.html), [§ 12 HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/__12.html)
-- [CO2KostAufG](https://www.gesetze-im-internet.de/co2kostaufg/) (Kohlendioxidkostenaufteilungsgesetz, seit 01.01.2023)
+- [CO2KostAufG](https://www.gesetze-im-internet.de/co2kostaufg/) (Kohlendioxidkostenaufteilungsgesetz, seit 01.01.2023; §§ 5a, 5b eingefügt durch Gesetz v. 23.07.2026, BGBl. 2026 I Nr. 226)
+- [§ 5 HeizkostenV](https://www.gesetze-im-internet.de/heizkostenv/__5.html) (Fernablesbarkeit), [§ 2 BetrKV](https://www.gesetze-im-internet.de/betrkv/__2.html), [§ 560 BGB](https://www.gesetze-im-internet.de/bgb/__560.html)
 - [§ 187 BGB](https://www.gesetze-im-internet.de/bgb/__187.html), [§ 188 BGB](https://www.gesetze-im-internet.de/bgb/__188.html), [§ 193 BGB](https://www.gesetze-im-internet.de/bgb/__193.html)
 
 ### Kommentare
 
-- Langenberg, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 556 BGB Rn. 1 ff.
+- Langenberg, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 556 BGB Rn. 1 ff.
 - Zehelein, in: MüKoBGB, 9. Aufl. 2023, § 556 Rn. 1 ff.; § 556a Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 556 Rn. 1 ff.
 - Wall, Betriebskosten- und Heizkostenabrechnung, aktuelle Auflage (Praxishandbuch)
@@ -117,7 +127,7 @@ python -m scripts.legal_calc.cli frist --ereignis 31.12.2026 --menge 1 --einheit
 
 - BGH, Urt. v. 20.01.2016 – VIII ZR 93/15 (formelle Anforderungen an die Betriebskostenabrechnung; kein Ausweis der Rechenschritte bei Vorwegabzug) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2016-01-20&Aktenzeichen=VIII%20ZR%2093/15
 - BGH, Urt. v. 09.12.2020 – VIII ZR 118/19 (Einsichtsrecht des Mieters in Zahlungsbelege) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2020-12-09&Aktenzeichen=VIII%20ZR%20118/19
-- Zur Reichweite des Wirtschaftlichkeitsgebots und zur Darlegungslast beim Betriebskostenspiegel ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
+- Zur Reichweite des Wirtschaftlichkeitsgebots und zur Darlegungslast beim Betriebskostenspiegel ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Einwendungsschreiben des Mieters
 
@@ -189,6 +199,8 @@ Risiko: [🟢 / 🟡 / 🔴]
 - **Zugang statt Absendung** — für beide Fristen zählt der Zugang; ohne Zugangsnachweis ist die Frist nicht belegt.
 - **Nicht umlagefähige Positionen** — Verwaltungs- und Instandsetzungskosten (§ 1 Abs. 2 BetrKV) sowie nicht konkret benannte „sonstige Betriebskosten" (§ 2 Nr. 17 BetrKV).
 - **Heizkostenverteilung unter 50 % Verbrauch** — löst das Kürzungsrecht von 15 % nach § 12 HeizkostenV aus.
+- **Kabel-TV-Grundgebühr weiter umgelegt** — seit 01.07.2024 nicht mehr umlagefähig.
+- **Fernablesbarkeit ignoriert** — ab 2027 drohen für nicht nachgerüstete Altgeräte 3 % Kürzung nach § 12 HeizkostenV zusätzlich zu anderen Kürzungen.
 - **CO2-Kosten nicht nach dem Stufenmodell aufgeteilt** — Kürzungsrecht des Mieters von 3 %; die Stufengrenzen sind vor jeder Abrechnung am aktuellen CO2KostAufG zu prüfen.
 - **Belegeinsicht verweigert** — der Mieter kann die Nachzahlung nach § 273 BGB zurückhalten; die Nachforderung wird faktisch nicht durchsetzbar.
 - **Leerstandskosten auf Mieter umgelegt** — der Vermieter trägt den Leerstandsanteil selbst.

@@ -16,6 +16,7 @@ test: ./test.md
 
 Dies ist ein Mandat, das man nicht abwarten kann. Deutschland hat die Umsetzungsfrist der Richtlinie (EU) 2023/970 zum **07.06.2026 versäumt**; die Pflichten der Richtlinie greifen gleichwohl ab dem **08.06.2026**. Für öffentliche Arbeitgeber bedeutet das unmittelbare Anwendbarkeit, für private Arbeitgeber richtlinienkonforme Auslegung des EntgTranspG und erheblichen Druck aus Betriebsrat und Öffentlichkeit — und für **alle** Arbeitgeber ab 150 Beschäftigten, dass die Datenerhebung für den ersten Bericht **jetzt** laufen muss, weil dieser bereits das Kalenderjahr 2026 abbildet.
 
+> **Rechtsstand: Oktober 2026.** Deutsches Umsetzungsgesetz zur RL (EU) 2023/970 nicht verabschiedet; berücksichtigt: BAG 23.10.2025 zum Paarvergleich.
 ## Eingaben
 
 - Beschäftigtenzahl (Schwellen 100 / 150 / 250) und Rechtsform: **privater** oder **öffentlicher** Arbeitgeber / sonstige staatliche Stelle
@@ -55,7 +56,7 @@ Ergänzend: [§ 13 EntgTranspG](https://www.gesetze-im-internet.de/entgtranspg/_
 | 08.06.2026 | Pflichten der Richtlinie greifen unionsrechtlich, unabhängig vom Stand der deutschen Umsetzung |
 | 07.06.2027 | **Erster Gender-Pay-Gap-Bericht für Arbeitgeber ab 150 Beschäftigten — berichtet wird das Kalenderjahr 2026** |
 
-**Stand des deutschen Verfahrens** `[unverifiziert – prüfen]`: Der für Januar 2026 angekündigte Referentenentwurf des BMBFSFJ ist bis heute (Stand dieses Skills: 21.07.2026) **nicht veröffentlicht**. Das Ministerium peilt ein Inkrafttreten nunmehr **Anfang 2027** an; Berichtspflichten und die neuen Auskunftsansprüche sollen danach erst **ab Juni 2028** anwendbar sein. Diese Zeitplanung ist politisch und nicht rechtsverbindlich — sie ist vor jeder Beratung gegen den aktuellen Stand auf den Seiten des BMBFSFJ und des Bundestages zu verifizieren.
+**Stand des deutschen Verfahrens (Rechtsstand Oktober 2026):** Nach der Antwort der Bundesregierung in [BT-Drs. 21/7026](https://dserver.bundestag.de/btd/21/070/2107026.pdf) vom 08.07.2026 hat das BMBFSFJ Vorbereitungen getroffen und klärt „derzeit noch einzelne … Fragen"; ein **Gesetzgebungsverfahren ist nicht eingeleitet**, ein Referentenentwurf ist nicht veröffentlicht. Der Abschlussbericht der Kommission „Bürokratiearme Umsetzung" liegt seit 07.11.2025 vor. Berichtete Ziele (Kabinett Ende 2026, Inkrafttreten Anfang 2027, Berichtspflichten erst ab 2028) sind politisch und nicht belegt `[unverifiziert – prüfen]`. Vor jeder Beratung gegen den aktuellen Stand auf den Seiten des BMBFSFJ und des Bundestages verifizieren.
 
 ### 3. Die entscheidende Weichenstellung: öffentlicher oder privater Arbeitgeber
 
@@ -66,7 +67,7 @@ Ergänzend: [§ 13 EntgTranspG](https://www.gesetze-im-internet.de/entgtranspg/_
 **Private Arbeitgeber** unterliegen **keiner** unmittelbaren Wirkung — eine horizontale Direktwirkung zwischen Privaten gibt es nicht. Sie sind gleichwohl nicht unbetroffen:
 
 - **Richtlinienkonforme Auslegung** des bestehenden EntgTranspG und des § 3 Abs. 1 AGG im Rahmen der Auslegungsspielräume;
-- Art. 157 AEUV (Entgeltgleichheit) gilt unmittelbar auch zwischen Privaten und trägt den materiellen Gleichbehandlungsanspruch bereits heute;
+- Art. 157 AEUV (Entgeltgleichheit) gilt unmittelbar auch zwischen Privaten und trägt den materiellen Gleichbehandlungsanspruch bereits heute; nach **BAG vom 23.10.2025** (siehe Rechtsprechung) genügt für die Vermutung nach § 22 AGG schon der **Paarvergleich** mit einer einzigen besser bezahlten Person des anderen Geschlechts bei gleicher oder gleichwertiger Arbeit — das ist derzeit der stärkste Hebel gegenüber privaten Arbeitgebern;
 - **Staatshaftung** nach den *Francovich*-Grundsätzen gegen die Bundesrepublik bei Schäden aus der verspäteten Umsetzung `[unverifiziert – prüfen]`;
 - betriebsverfassungsrechtlicher und reputationeller Druck ab dem 08.06.2026.
 
@@ -143,6 +144,7 @@ laufend       Umsetzungsgesetz verfolgen; Fristen nachziehen
 
 - st. Rspr. des EuGH zur unmittelbaren Wirkung nicht umgesetzter Richtlinien gegenüber staatlichen Stellen (Rechtssachen *Marshall* und *Foster*) `[unverifiziert – prüfen]`
 - st. Rspr. des EuGH zur Staatshaftung bei verspäteter Richtlinienumsetzung (Rechtssache *Francovich*) `[unverifiziert – prüfen]`
+- BAG, Urt. v. 23.10.2025 – 8 AZR 300/24 (Paarvergleich: ein einziger besser vergüteter Kollege des anderen Geschlechts genügt, unabhängig von der Gruppengröße; keine „überwiegende Wahrscheinlichkeit" i. S. d. § 22 AGG erforderlich; Median nicht maßgeblich), [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/8-azr-300-24/)
 - st. Rspr. des BAG zu §§ 10 ff. EntgTranspG (Auskunft über den Median als Indiz im Sinne des § 22 AGG) `[unverifiziert – prüfen]`
 - EuGH-Rspr. zu Art. 157 AEUV und zur unmittelbaren Anwendbarkeit des Entgeltgleichheitsgrundsatzes auch zwischen Privaten `[unverifiziert – prüfen]`
 
@@ -192,7 +194,7 @@ IX.   Risiko                         [🟢 / 🟡 / 🔴]
       Beweislastumkehr, Nachzahlungs- und Entschädigungsrisiko
 
 Offene Verifizierungen:
-  - Stand des Referentenentwurfs BMBFSFJ prüfen
+  - Stand des Gesetzgebungsverfahrens prüfen (BT-Drs. 21/7026 v. 08.07.2026: noch nicht eingeleitet)
 Empfehlung / Roadmap: <…>
 ```
 
