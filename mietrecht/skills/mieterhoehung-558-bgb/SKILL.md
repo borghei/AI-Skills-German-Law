@@ -1,6 +1,6 @@
 ---
 name: mieterhoehung-558-bgb
-description: "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – aus beiden Perspektiven: Vermieter-Entwurf und Mieter-Wirksamkeitsprüfung. Wartezeit und Jahressperre § 558 Abs. 1 BGB, ortsübliche Vergleichsmiete § 558 Abs. 2 BGB, Kappungsgrenze § 558 Abs. 3 BGB, Begründungsmittel § 558a BGB (Mietspiegel, Sachverständigengutachten, drei Vergleichswohnungen, Mietdatenbank), qualifizierter Mietspiegel §§ 558c–558e BGB, Zustimmungs- und Klagefrist § 558b BGB, Abgrenzung zur Modernisierungsmieterhöhung § 559 BGB, Mietpreisbremse §§ 556d ff. BGB. Use when ein Vermieter ein Mieterhöhungsverlangen gestaltet oder ein Mieter ein empfangenes Verlangen auf Wirksamkeit, Höhe und Fristen prüft."
+description: "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – aus beiden Perspektiven: Vermieter-Entwurf und Mieter-Wirksamkeitsprüfung. Wartezeit und Jahressperre § 558 Abs. 1 BGB, ortsübliche Vergleichsmiete § 558 Abs. 2 BGB, Kappungsgrenze § 558 Abs. 3 BGB, Begründungsmittel § 558a BGB (Mietspiegel, Sachverständigengutachten, drei Vergleichswohnungen, Mietdatenbank), qualifizierter Mietspiegel §§ 558c–558e BGB, Zustimmungs- und Klagefrist § 558b BGB, Abgrenzung zur Modernisierungsmieterhöhung § 559 BGB, Mietpreisbremse §§ 556d ff. BGB, Mitteilungspflicht § 558a Abs. 3 BGB. Rechtsstand: Oktober 2026. Use when ein Vermieter ein Mieterhöhungsverlangen gestaltet oder ein Mieter ein empfangenes Verlangen auf Wirksamkeit, Höhe und Fristen prüft."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -11,6 +11,8 @@ test: ./test.md
 ## Zweck
 
 Die Mieterhöhung auf die ortsübliche Vergleichsmiete ist formstreng und zweiseitig: Dasselbe Prüfprogramm entscheidet darüber, ob der Vermieter ein durchsetzbares Verlangen in der Hand hält und ob der Mieter zustimmen muss. Ein formfehlerhaftes Verlangen ist **unwirksam** — die Zustimmungspflicht entsteht nicht, die Überlegungsfrist läuft nicht an, und der Vermieter verliert im Ergebnis mindestens ein Jahr. Diese Skill führt beide Perspektiven durch dieselbe Prüfkaskade und beziffert am Ende den tatsächlich zulässigen Erhöhungsbetrag.
+
+**Rechtsstand: Oktober 2026.** Die Kappungsgrenze (20 % / 15 %) und die Mietspiegelregeln sind durch den anhängigen Regierungsentwurf BT-Drs. 21/6807 nicht berührt; der Entwurf erlaubt lediglich, für die Mietspiegelerstellung Daten der Grundsteuerbehörden zu nutzen (Art. 238 EGBGB-E).
 
 ## Eingaben
 
@@ -48,7 +50,7 @@ Unabhängig von der ortsüblichen Vergleichsmiete darf sich die Miete **innerhal
 
 Das Verlangen ist zu **begründen**; eines der vier gesetzlichen Mittel genügt, es muss aber **bestimmt** sein:
 
-1. **Mietspiegel** der Gemeinde — einfach oder qualifiziert ([§ 558d BGB](https://www.gesetze-im-internet.de/bgb/__558d.html)). Bei Bezugnahme müssen das einschlägige Feld und die Spanne benannt und die Wohnung konkret eingeordnet werden; ein pauschaler Verweis auf „den Mietspiegel" genügt **nicht**. Beim qualifizierten Mietspiegel greift die Vermutung des § 558d Abs. 3 BGB; sie entfällt, wenn der Mietspiegel nicht nach zwei Jahren angepasst wurde (§ 558d Abs. 2 BGB).
+1. **Mietspiegel** der Gemeinde — einfach oder qualifiziert ([§ 558d BGB](https://www.gesetze-im-internet.de/bgb/__558d.html)). Bei Bezugnahme müssen das einschlägige Feld und die Spanne benannt und die Wohnung konkret eingeordnet werden; ein pauschaler Verweis auf „den Mietspiegel" genügt **nicht**. Beim qualifizierten Mietspiegel greift die Vermutung des § 558d Abs. 3 BGB; sie entfällt, wenn der Mietspiegel nicht nach zwei Jahren angepasst wurde (§ 558d Abs. 2 BGB). **Achtung § 558a Abs. 3 BGB:** Existiert für die Wohnung ein **qualifizierter Mietspiegel** mit einschlägigen Angaben, muss der Vermieter diese Angaben **auch dann mitteilen**, wenn er sich auf ein anderes Begründungsmittel stützt. Seit dem Mietspiegelreformgesetz (MsRG 2022) sind Gemeinden mit mehr als 50.000 Einwohnern verpflichtet, einen Mietspiegel zu erstellen (§ 558c Abs. 4 BGB); das Fehlen eines Mietspiegels ist in größeren Städten daher selbst prüfungsbedürftig.
 2. **Sachverständigengutachten** eines öffentlich bestellten oder anerkannt qualifizierten Sachverständigen — mit nachvollziehbarer Herleitung, nicht nur Ergebnis.
 3. **Drei Vergleichswohnungen** mit Lage, Größe, Ausstattung und konkreter Vergleichsmiete — so bestimmt, dass der Mieter sie auffinden und nachprüfen kann.
 4. **Mietdatenbank** ([§ 558e BGB](https://www.gesetze-im-internet.de/bgb/__558e.html)).
@@ -87,8 +89,9 @@ python -m scripts.legal_calc.cli frist --ereignis 01.01.2025 --menge 15 --einhei
 # Jahressperrfrist § 558 Abs. 1 S. 2 BGB: frühester Zugang eines neuen Verlangens
 python -m scripts.legal_calc.cli frist --ereignis 01.01.2025 --menge 12 --einheit monate --land BY
 
-# Überlegungsfrist § 558b Abs. 2 BGB: Zugang 15.01.2026, Ende zweiter Kalendermonat
-python -m scripts.legal_calc.cli frist --ereignis 15.01.2026 --menge 3 --einheit monate --land BY
+# Überlegungsfrist § 558b Abs. 2 BGB: Ablauf des zweiten Kalendermonats nach Zugang.
+# Zugang 15.01.2026 → Ereignis = Monatsende 31.01.2026 → Fristende 31.03.2026
+python -m scripts.legal_calc.cli frist --ereignis 31.01.2026 --menge 2 --einheit monate --land BY
 
 # Klagefrist des Vermieters: 3 Monate ab Ablauf der Überlegungsfrist
 python -m scripts.legal_calc.cli frist --ereignis 31.03.2026 --menge 3 --einheit monate --land BY
@@ -107,8 +110,8 @@ python -m scripts.legal_calc.cli frist --ereignis 31.03.2026 --menge 3 --einheit
 
 ### Kommentare
 
-- Börstinghaus, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 558 BGB Rn. 1 ff.
-- Eisenschmid, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 558a BGB Rn. 1 ff.
+- Börstinghaus, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 558 BGB Rn. 1 ff.
+- Eisenschmid, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 558a BGB Rn. 1 ff.
 - Artz, in: MüKoBGB, 9. Aufl. 2023, § 558 Rn. 1 ff.; § 558a Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 558 Rn. 1 ff.
 
@@ -116,7 +119,8 @@ python -m scripts.legal_calc.cli frist --ereignis 31.03.2026 --menge 3 --einheit
 
 - BGH, Urt. v. 18.11.2015 – VIII ZR 266/14 (Mieterhöhung bei Wohnflächenabweichung; tatsächliche Fläche maßgeblich, Kappungsgrenze bleibt) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-11-18&Aktenzeichen=VIII%20ZR%20266/14
 - BGH, Urt. v. 23.06.2010 – VIII ZR 256/09 (konkludente Wohnflächenvereinbarung) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2010-06-23&Aktenzeichen=VIII%20ZR%20256/09
-- Zur Begründungstiefe und Bestimmtheit der drei Vergleichswohnungen ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`. Kein Aktenzeichen ohne eigene Verifikation in juris / Beck-Online übernehmen.
+- BGH, Beschl. v. 15.07.2025 – VIII ZB 69/24 (kein gesondertes selbständiges Beweisverfahren zur ortsüblichen Vergleichsmiete) `[unverifiziert – prüfen]`
+- Zur Begründungstiefe und Bestimmtheit der drei Vergleichswohnungen ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`. Kein Aktenzeichen ohne eigene Verifikation in juris / Beck-Online übernehmen.
 
 ## Formulierungshilfe — Mieterhöhungsverlangen (§§ 558, 558a BGB)
 
@@ -184,6 +188,7 @@ Risiko Zustimmungsklage: [🟢 / 🟡 / 🔴]
 - **Jahressperre und 15-Monats-Frist vermengt** — die eine betrifft den Zugang, die andere die Wirksamkeit; ein verfrühtes Verlangen ist unwirksam und kostet eine volle neue Wartezeit.
 - **Begründungsmittel zu unbestimmt** — pauschaler Verweis auf „den Mietspiegel" ohne Einordnung der Wohnung oder Vergleichswohnungen ohne auffindbare Adresse genügen nicht.
 - **Kappungsgrenze falsch berechnet** — Drei-Jahres-Zeitraum falsch angesetzt, kumulierte Vorerhöhungen vergessen oder die abgesenkte 15-%-Grenze übersehen.
+- **§ 558a Abs. 3 BGB übersehen** — bei qualifiziertem Mietspiegel sind dessen Werte mitzuteilen, auch wenn das Verlangen auf Vergleichswohnungen oder ein Gutachten gestützt wird.
 - **Mietspiegel nicht aktuell** — ohne Anpassung nach zwei Jahren (§ 558d Abs. 2 BGB) entfällt die Vermutungswirkung des qualifizierten Mietspiegels.
 - **Verlangen an nur einen von mehreren Mietern** oder ohne Vollmachtsvorlage (§ 174 BGB) → unwirksam bzw. zurückweisbar.
 - **Modernisierung als Vergleichsmieterhöhung getarnt** — § 559 BGB folgt eigenen Regeln; Vermischung ist zu rügen.

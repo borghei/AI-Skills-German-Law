@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/borghei/AI-Skills-German-Law/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/borghei/AI-Skills-German-Law/validate.yml?branch=main&label=CI&logo=github" alt="CI Status"></a>
   <img src="https://img.shields.io/badge/Areas-66-brightgreen.svg" alt="66 Areas">
-  <img src="https://img.shields.io/badge/Skills-291-success.svg" alt="291 Skills">
+  <img src="https://img.shields.io/badge/Skills-319-success.svg" alt="319 Skills">
   <img src="https://img.shields.io/badge/Providers-Claude_%7C_Gemini_%7C_GPT-purple.svg" alt="Providers">
   <img src="https://img.shields.io/badge/Last_verified-2026--07--21-blue.svg" alt="Last verified">
   <img src="https://img.shields.io/badge/Compliance-DSGVO_%7C_KI--VO_%7C_NIS2_%7C_CRA_%7C_KRITIS_%7C_HinSchG_%7C_LkSG_%7C_DORA_%7C_DSA_%7C_CSRD_%7C_Data--Act_%7C_BFSG_%7C_MiCAR-red.svg" alt="Compliance">
@@ -40,7 +40,7 @@ A `[Modellwissen]`-Halluzination in einem Kündigungsschreiben ist kein Bug. Sie
 
 ## The fix
 
-A focused, **provider-agnostic** library: 66 areas, 291 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
+A focused, **provider-agnostic** library: 66 areas, 319 skills, every statute citation linked to its authoritative source, every case-law citation explicitly marked verified or `[unverifiziert, prüfen]`. A built-in evaluation harness checks every skill against fact patterns. A dated [verification log](VERIFICATION_LOG.md) plus the [per-plugin verification status](VERIFICATION_STATUS.md) show exactly what was checked, when, against which source.
 
 It is **not legal advice**, **not a Beck-Online substitute**, and **not for Mandatsdaten without a § 203 StGB-compliant gateway**. It is a tested drafting aid with an honest paper trail.
 
@@ -92,11 +92,11 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 
 | Area | Plugin | Coverage |
 |---|---|---|
-| **Arbeitsrecht** (14) | [`arbeitsrecht/`](./arbeitsrecht/) | Kündigungsschutzklage § 4 KSchG, Betriebsratsanhörung § 102 BetrVG, Massenentlassung §§ 17 f., Sozialauswahl, Zeugnis § 109 GewO, Befristung § 14 TzBfG, AGG § 15, § 613a, Urlaub, **Entgelttransparenz** |
+| **Arbeitsrecht** (21) | [`arbeitsrecht/`](./arbeitsrecht/) | Kündigungsschutzklage § 4 KSchG, Betriebsratsanhörung § 102 BetrVG, Massenentlassung §§ 17 f., Sozialauswahl, Zeugnis § 109 GewO, Befristung § 14 TzBfG, AGG § 15, § 613a, Urlaub, **Entgelttransparenz**, Arbeitszeit/Zeiterfassung, Entgeltfortzahlung/BEM, Mutterschutz/Elternzeit, Mindestlohn/Minijob/Aktivrente, Statusfeststellung § 7a SGB IV, Wettbewerbsverbot §§ 74 ff. HGB, BR-Wahlanfechtung — Rechtsstand Oktober 2026 |
 | **Datenschutzrecht / GDPR** | [`datenschutzrecht/`](./datenschutzrecht/) | DSGVO/BDSG, AVV-Review, Art. 15 Auskunft, Art. 33/34 Datenpanne, DPIA, Drittlandtransfer |
 | **Vertragsrecht** (14) | [`vertragsrecht/`](./vertragsrecht/) | AGB-Kontrolle §§ 305 ff., Kaufmängel §§ 434 ff., Werkvertrag §§ 631 ff., Rücktritt/Schadensersatz, Verbraucherwiderruf, Verjährung, Sicherheiten, Vertragsstrafe, § 313, Anfechtung, Vergleich, c.i.c. |
-| **Mietrecht** (13) | [`mietrecht/`](./mietrecht/) | Mieterhöhung § 558, Modernisierung § 559, fristlose Kündigung § 543, Betriebskosten § 556, Mietmangel § 536, Räumung, Mietpreisbremse, Kaution § 551, Schönheitsreparaturen, Gewerberaummiete |
-| **Wohnungseigentumsrecht (WEG)** | [`wohnungseigentumsrecht/`](./wohnungseigentumsrecht/) | Beschlussanfechtung §§ 44, 45 WEG, Jahresabrechnung/Hausgeld § 28 WEG, bauliche Veränderung §§ 20, 21 WEG — post-WEMoG |
+| **Mietrecht** (20) | [`mietrecht/`](./mietrecht/) | Mieterhöhung § 558, Index-/Staffelmiete, Modernisierung § 559 und **Heizungstausch §§ 559e, 559f**, fristlose und ordentliche Kündigung wegen Zahlungsverzugs, Betriebs- und Heizkosten (CO2, Fernablesung 31.12.2026), Mietmangel § 536, Räumung, Mietpreisbremse bis 2029, möbliertes Wohnen, Mietwucher, Tod des Mieters, Kaution § 551, Schönheitsreparaturen, Gewerberaummiete (Textform § 578) — Rechtsstand Oktober 2026 |
+| **Wohnungseigentumsrecht (WEG)** (9) | [`wohnungseigentumsrecht/`](./wohnungseigentumsrecht/) | Beschlussanfechtung §§ 44, 45 WEG, Beschlussersetzungsklage, Eigentümerversammlung (auch virtuell, § 23 Abs. 1a), Verwalter §§ 26, 26a, Jahresabrechnung/Abrechnungsspitze § 28, Hausgeldbeitreibung und Entziehung, Kostenverteilung § 16 Abs. 2 S. 2, bauliche Veränderung §§ 20, 21, vermietete Eigentumswohnung — Rechtsstand Oktober 2026 |
 | **Gesellschaftsrecht** | [`gesellschaftsrecht/`](./gesellschaftsrecht/) | GmbH-Recht (GmbHG), Geschäftsführerhaftung, Gesellschafterbeschlüsse, AG-Grundzüge |
 | **Strafrecht** | [`strafrecht/`](./strafrecht/) | Strafbefehl-Verteidigung, Akteneinsicht, OWi-Verkehrsrecht, Beschuldigtenbelehrung |
 | **Insolvenzrecht** | [`insolvenzrecht/`](./insolvenzrecht/) | Antragspflicht § 15a InsO, StaRUG, 13-Wochen-Liquiditätsplanung, Fortbestehensprognose |
@@ -112,7 +112,7 @@ python scripts/route_provider.py --provider openai --skill arbeitsrecht/kuendigu
 | **IT-Recht** | [`it-recht/`](./it-recht/) | SaaS-Verträge, Outsourcing, Softwarelizenz, Open Source Compliance, Cloud-AVV |
 | **Bank- und Kapitalmarktrecht** | [`bankrecht/`](./bankrecht/) | Verbraucherdarlehen §§ 491 ff. BGB, MiFID II, Wertpapierprospekt, Anlageberatung |
 | **Gewerblicher Rechtsschutz** | [`gewerblicher-rechtsschutz/`](./gewerblicher-rechtsschutz/) | Marken (MarkenG), Patente (PatG), Designs (DesignG), UWG, Abmahnungswesen |
-| **Steuerrecht** | [`steuerrecht/`](./steuerrecht/) | Außenprüfung, Einspruchsverfahren §§ 347 ff. AO, Selbstanzeige § 371 AO, FGO |
+| **Steuerrecht** (11) | [`steuerrecht/`](./steuerrecht/) | Einspruch §§ 347 ff. AO (Datenabruf § 122a), Aussetzung der Vollziehung, Finanzgerichtsklage, Korrekturvorschriften §§ 172 ff. AO, Fristen/Verspätungszuschlag, Stundung/Erlass/Vollstreckung, Haftungsbescheid, Außenprüfung nach der Reform 2025 (§ 200a AO), Grundsteuer, E-Rechnung, Selbstanzeige § 371 AO — Rechtsstand Oktober 2026 |
 | **Verwaltungsrecht** | [`verwaltungsrecht/`](./verwaltungsrecht/) | Widerspruchsverfahren §§ 68 ff. VwGO, Anfechtungs-/Verpflichtungsklage, § 80 VwGO |
 
 ### EU / cross-cutting compliance
@@ -211,7 +211,7 @@ Each area includes a researcher sub-agent (Quellensuche), drafter sub-agent (Ent
 |---|---|---|
 | **Source citations** | Free-form, often hallucinated | Statutes link to [gesetze-im-internet.de](https://www.gesetze-im-internet.de); case law explicitly marked verified or `[unverifiziert]` |
 | **Architecture** | One monolithic prompt | Researcher then drafter then reviewer split per skill |
-| **Testing** | A README disclaimer | Fact-pattern eval harness with 5,400+ structural assertions, runs on every CI build |
+| **Testing** | A README disclaimer | Fact-pattern eval harness with 6,100+ structural assertions, runs on every CI build |
 | **Compliance** | A warning paragraph | PII redaction script, gateway-routing walkthrough, dated [verification log](VERIFICATION_LOG.md), DSGVO/§203/KI-VO checklist |
 | **Provider lock-in** | Claude only | Provider-agnostic canonical SKILL.md plus Claude Code / Gemini Gems / OpenAI adapters generated by `scripts/route_provider.py` |
 
@@ -223,7 +223,7 @@ We are unsentimental about trust. Here is what is verified today, what is in act
 
 ### Production-grade today
 
-- **Repo structure plus CI.** Every plugin manifest validates. CI runs `validate.py` on every push to catch structural drift. Locally, `python scripts/eval.py` runs 5,493 fact-pattern assertions across 291 skills (291/291 passing).
+- **Repo structure plus CI.** Every plugin manifest validates. CI runs `validate.py` on every push to catch structural drift. Locally, `python scripts/eval.py` runs 6,103 fact-pattern assertions across 319 skills (319/319 passing).
 - **Statute citations.** Every `§ X` links to the **authoritative public source**, [gesetze-im-internet.de](https://www.gesetze-im-internet.de) and [EUR-Lex](https://eur-lex.europa.eu). One click, verifiable.
 - **Methodology.** Gutachtenstil, Anspruchsgrundlagen-Reihenfolge, BGH/Beck-Zitierweise, no Präjudizienbindungs-Argumente, textbook-correct conventions, documented in [`CONVENTIONS.md`](./CONVENTIONS.md) and enforced by the reviewer sub-agent.
 - **Compliance scaffolding.** PII redaction ([`scripts/pii_redact.py`](./scripts/pii_redact.py)), gateway setup guide ([`references/gateway-setup.md`](./references/gateway-setup.md)), § 203 / DSGVO / KI-VO checklist ([`references/compliance-checklist.md`](./references/compliance-checklist.md)).
@@ -374,7 +374,7 @@ Dual-licensed: **Apache-2.0** ([LICENSE-APACHE](./LICENSE-APACHE)) **OR** **MIT*
 ---
 
 <p align="center">
-  <strong>66 areas · 291 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
+  <strong>66 areas · 319 skills · 3 LLM providers · Researcher then Drafter then Reviewer · DSGVO / KI-VO / NIS2 / HinSchG / LkSG / DORA / DSA / CSRD scaffolding</strong><br>
   Verified <strong>2026-05-21</strong> · <a href="https://borghei.me">borghei.me</a>
 </p>
 

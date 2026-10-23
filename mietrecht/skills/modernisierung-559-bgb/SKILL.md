@@ -1,6 +1,6 @@
 ---
 name: modernisierung-559-bgb
-description: "Modernisierung und Modernisierungsmieterhöhung im Wohnraummietrecht – Begriff der Modernisierungsmaßnahme § 555b BGB, Modernisierungsankündigung § 555c BGB, Duldungspflicht und Härteeinwand § 555d BGB, Aufwendungsersatz § 555a Abs. 3 BGB, Sonderkündigungsrecht § 555e BGB, Mieterhöhung nach § 559 BGB mit 8-%-Umlage, Kappung § 559 Abs. 3a BGB und Härteeinwand § 559 Abs. 4 BGB, Abgrenzung Erhaltung / Modernisierung, Verhältnis zu § 558 BGB. Use when ein Vermieter eine Modernisierung ankündigt oder umlegt oder ein Mieter Ankündigung, Duldungspflicht und Modernisierungsmieterhöhung prüft."
+description: "Modernisierung und Modernisierungsmieterhöhung im Wohnraummietrecht – Begriff der Modernisierungsmaßnahme § 555b BGB, Modernisierungsankündigung § 555c BGB, Duldungspflicht und Härteeinwand § 555d BGB, Aufwendungsersatz § 555a Abs. 3 BGB, Sonderkündigungsrecht § 555e BGB, Mieterhöhung nach § 559 BGB mit 8-%-Umlage, Heizungsanlage § 555b Nr. 1a BGB mit 10-%-Umlage § 559e BGB und Wärmepumpen-Nachweis § 559f BGB (GModG, seit 29.07.2026), vereinfachtes Verfahren § 559c BGB, Kappung § 559 Abs. 3a BGB und Härteeinwand § 559 Abs. 4 BGB, Abgrenzung Erhaltung / Modernisierung, Verhältnis zu § 558 BGB. Use when ein Vermieter eine Modernisierung ankündigt oder umlegt oder ein Mieter Ankündigung, Duldungspflicht und Modernisierungsmieterhöhung prüft."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -10,7 +10,9 @@ test: ./test.md
 
 ## Zweck
 
-Die Modernisierungsmieterhöhung ist das dauerhafteste Instrument des Vermieters — sie ist nicht an die ortsübliche Vergleichsmiete gebunden und wirkt einseitig ohne Zustimmung des Mieters. Genau deshalb ist sie an ein dichtes Verfahren gebunden: Ankündigung, Duldung, Härteprüfung, Umlage. Diese Skill führt durch die gesamte Kette von §§ 555a–555f BGB bis § 559b BGB und trennt scharf zwischen **Erhaltungsaufwand** (nicht umlagefähig) und **Modernisierung** (umlagefähig). Sie ist das Gegenstück zu `/mietrecht:mieterhoehung-558-bgb`: Dieselbe Wohnung, zwei völlig verschiedene Erhöhungsregime.
+Die Modernisierungsmieterhöhung ist das dauerhafteste Instrument des Vermieters — sie ist nicht an die ortsübliche Vergleichsmiete gebunden und wirkt einseitig ohne Zustimmung des Mieters. Genau deshalb ist sie an ein dichtes Verfahren gebunden: Ankündigung, Duldung, Härteprüfung, Umlage. Diese Skill führt durch die gesamte Kette von §§ 555a–555f BGB bis § 559b BGB und trennt scharf zwischen **Erhaltungsaufwand** (nicht umlagefähig) und **Modernisierung** (umlagefähig). Sie ist das Gegenstück zu `/mietrecht:mieterhoehung-558-bgb`: Dieselbe Wohnung, zwei völlig verschiedene Erhöhungsregime. Für den Heizungstausch (§§ 555b Nr. 1a, 559e, 559f BGB) gibt es die Vertiefung `/mietrecht:heizungstausch-559e-559f`.
+
+**Rechtsstand: Oktober 2026.** Das Gebäudeenergiegesetz heißt seit dem Gesetz v. 23.07.2026 (BGBl. 2026 I Nr. 226, in Kraft 29.07.2026) **Gebäudemodernisierungsgesetz (GModG)**; § 555b Nr. 1a BGB verweist auf die Heizungsanlage i.S.d. § 42 GModG, und der neue **§ 559f BGB** knüpft die volle Umlage nach dem Einbau einer Wärmepumpe an eine Jahresarbeitszahl von mindestens 2,5. Anhängig, **nicht** geltend: BT-Drs. 21/6807 (Anhebung der Schwelle des § 559c BGB von 10.000 auf 20.000 EUR; Folgeänderungen zu § 559e BGB).
 
 ## Eingaben
 
@@ -34,12 +36,15 @@ Die Prüfung wird in Prosa von spezialisierten Schritten getragen; einen `agents
 Modernisierungsmaßnahmen sind bauliche Veränderungen, durch die
 
 1. **Endenergie nachhaltig eingespart** wird (energetische Modernisierung, Nr. 1),
+1a. eine **Heizungsanlage i.S.d. § 42 GModG eingebaut oder aufgestellt** wird (Nr. 1a; Umlage grundsätzlich nur nach § 559e BGB — § 559 Abs. 1 BGB nennt Nr. 1a nicht; § 559 BGB nur, wenn trotz Förderfähigkeit keine Förderung erfolgt (§ 559e Abs. 1 S. 2 BGB) oder die Maßnahme zugleich Nr. 1 erfüllt. Ob der Vermieter durch bewussten Verzicht auf Fördermittel den Weg über § 559 BGB eröffnen kann, ist streitig `[unverifiziert – prüfen]`),
 2. nicht erneuerbare Primärenergie eingespart oder das Klima nachhaltig geschützt wird (Nr. 2),
 3. der **Wasserverbrauch** nachhaltig reduziert wird (Nr. 3),
 4. der **Gebrauchswert der Mietsache nachhaltig erhöht** wird (Nr. 4),
 5. die **allgemeinen Wohnverhältnisse** dauerhaft verbessert werden (Nr. 5),
 6. sie aufgrund von Umständen durchgeführt werden, die der Vermieter nicht zu vertreten hat (Nr. 6),
 7. **neuer Wohnraum geschaffen** wird (Nr. 7).
+
+Für die energetische Modernisierung genügt eine zu erwartende, messbare und dauerhafte Einsparung von Endenergie; auf den tatsächlichen späteren Verbrauch kommt es nicht an (BGH, Urt. v. 26.03.2025 – VIII ZR 283/23, NJW 2025, 2023, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-26&Aktenzeichen=VIII%20ZR%20283/23).
 
 ### 2. Abgrenzung Erhaltung / Modernisierung ([§ 555a BGB](https://www.gesetze-im-internet.de/bgb/__555a.html))
 
@@ -73,13 +78,21 @@ Der Vermieter kann die jährliche Miete um **8 % der für die Wohnung aufgewende
 4. Auf die einzelne Wohnung **umlegen** (regelmäßig nach Wohnfläche).
 5. × 8 % = jährlicher Erhöhungsbetrag; ÷ 12 = monatlicher Erhöhungsbetrag.
 
+### 6a. Sonderregime Heizungsanlage und vereinfachtes Verfahren ([§ 559e BGB](https://www.gesetze-im-internet.de/bgb/__559e.html), [§ 559f BGB](https://www.gesetze-im-internet.de/bgb/__559f.html), [§ 559c BGB](https://www.gesetze-im-internet.de/bgb/__559c.html))
+
+- **§ 559e BGB:** Bei einer Maßnahme nach § 555b Nr. 1a BGB, die dem Grunde nach förderfähig ist, kann der Vermieter die Jahresmiete um **10 %** der Kosten **abzüglich in Anspruch genommener Drittmittel** erhöhen. Der Erhaltungsanteil wird **pauschal mit 15 %** abgezogen; die Erhöhung ist auf **0,50 EUR/m² monatlich in sechs Jahren** gedeckelt, und die Gesamtgrenzen des § 559 Abs. 3a BGB bleiben daneben bestehen. Wird trotz Förderfähigkeit keine Förderung gewährt, gilt § 559 BGB.
+- **§ 559f BGB (seit 29.07.2026):** Beim Einbau einer **Wärmepumpe** setzt die volle Erhöhung nach § 559 Abs. 1 oder § 559e Abs. 1 BGB den Nachweis einer **Jahresarbeitszahl ≥ 2,5** durch einen Fachunternehmer voraus (Berechnung regelmäßig nach VDI 4650 Blatt 1 vor Inbetriebnahme). Ausnahmen (§ 559f Abs. 1 S. 2 Nr. 1–4 BGB): Gebäude, die nach 1996 errichtet wurden; Wärmeschutzverordnung 1994; Sanierung mindestens auf den Standard des § 38 GModG; Vorlauftemperatur ≤ 55 °C. **Ohne Nachweis:** Umlage nur auf Grundlage der **Hälfte** der Kosten (Abs. 2).
+- **§ 559c BGB:** Bei Kosten bis **10.000 EUR** je Wohnung kann vereinfacht mit einem pauschalen Erhaltungsabzug von **30 %** gerechnet werden; die Erklärung muss das Verfahren benennen. Danach sind fünf Jahre lang weitere Erhöhungen nach § 559 oder § 559e BGB grundsätzlich ausgeschlossen (Abs. 4).
+
+Vertiefung mit Rechenbeispielen: `/mietrecht:heizungstausch-559e-559f`.
+
 ### 7. Kappung ([§ 559 Abs. 3a BGB](https://www.gesetze-im-internet.de/bgb/__559.html))
 
 Die monatliche Miete darf sich innerhalb von **sechs Jahren** — Erhöhungen nach §§ 558, 560 BGB nicht eingerechnet — um **nicht mehr als 3 EUR je Quadratmeter Wohnfläche** erhöhen. Liegt die monatliche Ausgangsmiete unter **7 EUR/m²**, beträgt die Grenze **2 EUR je Quadratmeter**. Diese Kappung wirkt unabhängig von der 8-%-Rechnung und ist der praktisch wichtigste Deckel.
 
 ### 8. Wirtschaftlicher Härteeinwand ([§ 559 Abs. 4 BGB](https://www.gesetze-im-internet.de/bgb/__559.html))
 
-Die Erhöhung ist ausgeschlossen, soweit sie auch unter Würdigung der berechtigten Interessen des Vermieters für den Mieter eine **wirtschaftliche Härte** bedeuten würde. Der Einwand ist **bis zum Ablauf des Monats nach Zugang der Erhöhungserklärung in Textform** zu erheben (§ 559b Abs. 4 i.V.m. § 555d Abs. 3–5 BGB). Er greift nicht, wenn die Mietsache lediglich in einen allgemein üblichen Zustand versetzt wurde oder die Maßnahme auf Umständen beruht, die der Vermieter nicht zu vertreten hat (Abs. 5).
+Die Erhöhung ist ausgeschlossen, soweit sie auch unter Würdigung der berechtigten Interessen des Vermieters für den Mieter eine **wirtschaftliche Härte** bedeuten würde. Die Härtegründe sind **bis zum Ablauf des Monats nach Zugang der Modernisierungsankündigung in Textform** mitzuteilen (§ 559 Abs. 5 S. 1 i.V.m. § 555d Abs. 3 S. 1 BGB); verspätete Gründe nur unter den Voraussetzungen des § 555d Abs. 4 BGB. Die Ausschlussfrist gilt nicht, wenn die tatsächliche Erhöhung die angekündigte um mehr als 10 % übersteigt (§ 559 Abs. 5 S. 2 BGB). Eine Abwägung findet nicht statt, wenn die Mietsache lediglich in einen allgemein üblichen Zustand versetzt wurde (§ 559 Abs. 4 S. 2 Nr. 1 BGB) oder die Maßnahme auf Umständen beruht, die der Vermieter nicht zu vertreten hat (Nr. 2) — **es sei denn**, die Maßnahme erfüllt auch § 555b Nr. 1 oder Nr. 1a BGB und wurde mittels Einbaus oder Aufstellung einer Heizungsanlage zum Zwecke der Inbetriebnahme in einem Gebäude durchgeführt. Beim Heizungstausch bleibt der Härteeinwand also erhalten (für § 559e BGB über dessen Abs. 4, für das vereinfachte Verfahren über § 559c Abs. 1 S. 3 BGB).
 
 ### 9. Erhöhungserklärung ([§ 559b BGB](https://www.gesetze-im-internet.de/bgb/__559b.html))
 
@@ -94,21 +107,23 @@ Die Erklärung ist in **Textform** abzugeben und die Erhöhung aufgrund der ents
 ### Statute
 
 - [§ 555a BGB](https://www.gesetze-im-internet.de/bgb/__555a.html), [§ 555b BGB](https://www.gesetze-im-internet.de/bgb/__555b.html), [§ 555c BGB](https://www.gesetze-im-internet.de/bgb/__555c.html), [§ 555d BGB](https://www.gesetze-im-internet.de/bgb/__555d.html), [§ 555e BGB](https://www.gesetze-im-internet.de/bgb/__555e.html), [§ 555f BGB](https://www.gesetze-im-internet.de/bgb/__555f.html)
-- [§ 559 BGB](https://www.gesetze-im-internet.de/bgb/__559.html), [§ 559a BGB](https://www.gesetze-im-internet.de/bgb/__559a.html), [§ 559b BGB](https://www.gesetze-im-internet.de/bgb/__559b.html)
+- [§ 559 BGB](https://www.gesetze-im-internet.de/bgb/__559.html), [§ 559a BGB](https://www.gesetze-im-internet.de/bgb/__559a.html), [§ 559b BGB](https://www.gesetze-im-internet.de/bgb/__559b.html), [§ 559c BGB](https://www.gesetze-im-internet.de/bgb/__559c.html), [§ 559e BGB](https://www.gesetze-im-internet.de/bgb/__559e.html), [§ 559f BGB](https://www.gesetze-im-internet.de/bgb/__559f.html)
+- Gebäudemodernisierungsgesetz (GModG, vormals GEG; amtliche URL weiter unter `geg`): [§ 42 GModG](https://www.gesetze-im-internet.de/geg/__42.html), [§ 43 GModG](https://www.gesetze-im-internet.de/geg/__43.html)
 - [§ 535 BGB](https://www.gesetze-im-internet.de/bgb/__535.html), [§ 558 BGB](https://www.gesetze-im-internet.de/bgb/__558.html), [§ 536 BGB](https://www.gesetze-im-internet.de/bgb/__536.html) (Minderung während der Bauphase)
 
 ### Kommentare
 
-- Eisenschmid, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 555b BGB Rn. 1 ff.
-- Börstinghaus, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 559 BGB Rn. 1 ff.
+- Eisenschmid, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 555b BGB Rn. 1 ff.
+- Börstinghaus, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 559 BGB Rn. 1 ff.
 - Artz, in: MüKoBGB, 9. Aufl. 2023, § 555c Rn. 1 ff.; § 559 Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 559 Rn. 1 ff.
 
 ### Rechtsprechung
 
 - BGH, Urt. v. 18.11.2015 – VIII ZR 266/14 (maßgeblich ist die tatsächliche Wohnfläche — auch für die flächenbezogene Umlage) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-11-18&Aktenzeichen=VIII%20ZR%20266/14
-- Zur Abgrenzung von Erhaltungsaufwand und Modernisierung sowie zur Schätzung des Instandsetzungsanteils ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
-- Zu den Anforderungen an die Erläuterung der Kostenberechnung nach § 559b Abs. 1 S. 2 BGB ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`. Kein Aktenzeichen ohne eigene Verifikation übernehmen.
+- BGH, Urt. v. 26.03.2025 – VIII ZR 283/23, NJW 2025, 2023 (energetische Modernisierung: zu erwartende, messbare und dauerhafte Endenergieeinsparung genügt) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-26&Aktenzeichen=VIII%20ZR%20283/23
+- Zur Abgrenzung von Erhaltungsaufwand und Modernisierung sowie zur Schätzung des Instandsetzungsanteils ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
+- Zu den Anforderungen an die Erläuterung der Kostenberechnung nach § 559b Abs. 1 S. 2 BGB ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`. Kein Aktenzeichen ohne eigene Verifikation übernehmen.
 
 ## Formulierungshilfe — Modernisierungsankündigung (§ 555c BGB)
 
@@ -173,7 +188,8 @@ Risiko: [🟢 / 🟡 / 🔴]
 - **Ankündigung unvollständig oder zu spät** — ohne wirksame Ankündigung keine Duldungspflicht und Verschiebung der Mieterhöhung um sechs Monate (§ 559b Abs. 2 S. 2 BGB).
 - **Kappung § 559 Abs. 3a BGB übersehen** — die 3-EUR- bzw. 2-EUR-Grenze wirkt unabhängig von der 8-%-Rechnung und wird bei niedrigen Ausgangsmieten regelmäßig zuerst erreicht.
 - **Härteeinwände verwechselt** — der baubezogene Einwand des § 555d Abs. 2 BGB berücksichtigt die Mieterhöhung ausdrücklich nicht; der wirtschaftliche Einwand des § 559 Abs. 4 BGB ist gesondert und fristgebunden zu erheben.
-- **Härteeinwand-Frist versäumt** — Präklusion nach § 555d Abs. 3 BGB bzw. § 559b Abs. 4 BGB.
+- **Härteeinwand-Frist versäumt** — Präklusion nach § 555d Abs. 3 BGB bzw. § 559 Abs. 5 S. 1 BGB; beide Fristen laufen ab Zugang der Modernisierungsankündigung.
 - **Fördermittel nicht angerechnet** (§ 559a BGB) — Erhöhung überhöht.
 - **§ 558 und § 559 vermischt** — in einem Schreiben kombiniert oder Modernisierungskosten in ein Vergleichsmietenverlangen eingerechnet.
-- **Minderung während der Bauphase übersehen** — erhebliche Beeinträchtigungen können nach § 536 BGB die Miete mindern; nur bei energetischer Modernisierung greift die dreimonatige Sperre des § 536 Abs. 1a BGB.
+- **Minderung während der Bauphase übersehen** — erhebliche Beeinträchtigungen können nach § 536 BGB die Miete mindern; nur bei energetischer Modernisierung nach § 555b Nr. 1 BGB greift die dreimonatige Sperre des § 536 Abs. 1a BGB (die Erstreckung auf Nr. 1a ist bisher nur Entwurf).
+- **Wärmepumpe ohne JAZ-Nachweis voll umgelegt** — seit 29.07.2026 halbiert § 559f Abs. 2 BGB die umlagefähigen Kosten, wenn der Fachunternehmer-Nachweis fehlt und keine Ausnahme greift.

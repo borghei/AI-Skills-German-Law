@@ -19,6 +19,7 @@ test: ./test.md
 
 Die Abmahnung ist Voraussetzung jeder verhaltensbedingten Kündigung (außer bei schwerwiegenden Pflichtverletzungen). Wirksam ist sie nur, wenn sie **drei Funktionen** erfüllt: konkrete Schilderung (Rügefunktion), eindeutige Verhaltenserwartung (Hinweisfunktion), Sanktionsandrohung (Warnfunktion). Dieser Skill stellt das sicher.
 
+> **Rechtsstand: Oktober 2026.** Keine Gesetzesänderung und keine neue Leitentscheidung des BAG seit 2024 festgestellt.
 ## Eingaben
 
 - konkretes Verhalten (Datum, Ort, Zeugen)

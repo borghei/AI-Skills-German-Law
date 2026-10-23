@@ -1,19 +1,19 @@
 {
   "name": "ai-skills-german-law",
-  "description": "AI skills for German legal practice and EU compliance — 66 plugins, 291 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
-  "version": "0.4.3",
+  "description": "AI skills for German legal practice and EU compliance — 66 plugins, 319 skills, multi-provider (Claude, Gemini, GPT), primary-source citations to gesetze-im-internet.de and EUR-Lex.",
+  "version": "0.5.0",
   "repository": "https://github.com/borghei/AI-Skills-German-Law",
   "website": "https://borghei.github.io/AI-Skills-German-Law",
   "author": "borghei",
   "license": "Apache-2.0 OR MIT",
-  "total_skills": 291,
-  "updated": "2026-10-07",
+  "total_skills": 319,
+  "updated": "2026-10-23",
   "domains": {
     "arbeitsrecht": {
-      "count": 14,
+      "count": 21,
       "tools": 0,
       "label": "Arbeitsrecht",
-      "desc": "KSchG, BetrVG, Aufhebungsvertrag, Abmahnung, Sozialauswahl"
+      "desc": "KSchG, BetrVG, Aufhebungsvertrag, Arbeitszeit, Entgeltfortzahlung, Mutterschutz, Mindestlohn, Statusfeststellung"
     },
     "datenschutzrecht": {
       "count": 3,
@@ -28,16 +28,16 @@
       "desc": "AGB-Kontrolle, Klauselgestaltung, Leistungsstörung, Anfechtung"
     },
     "mietrecht": {
-      "count": 13,
+      "count": 20,
       "tools": 0,
       "label": "Mietrecht",
-      "desc": "Wohnraummiete, Mieterhöhung, Kündigung, Betriebskostenabrechnung, WEG"
+      "desc": "Wohnraummiete, Mieterhöhung, Index-/Staffelmiete, Kündigung, Betriebs- und Heizkosten, Heizungstausch § 559f"
     },
     "wohnungseigentumsrecht": {
-      "count": 3,
+      "count": 9,
       "tools": 0,
       "label": "Wohnungseigentumsrecht (WEG)",
-      "desc": "Beschlussanfechtung §§ 44/45, Hausgeld/Jahresabrechnung § 28, bauliche Veränderung §§ 20/21 — post-WEMoG"
+      "desc": "Beschlussanfechtung, Beschlussersetzung, Eigentümerversammlung, Verwalter, Hausgeld und Kostenverteilung, bauliche Veränderung"
     },
     "gesellschaftsrecht": {
       "count": 3,
@@ -100,10 +100,10 @@
       "desc": "Marken (MarkenG), Designs (DesignG), UWG-Abmahnung"
     },
     "steuerrecht": {
-      "count": 3,
+      "count": 11,
       "tools": 0,
       "label": "Steuerrecht",
-      "desc": "AO Außenprüfung, Einspruch §§ 347 ff. AO, Selbstanzeige § 371, FGO"
+      "desc": "Einspruch, AdV, FG-Klage, Korrektur, Stundung/Erlass, Haftung, Außenprüfung, Grundsteuer, E-Rechnung"
     },
     "verwaltungsrecht": {
       "count": 11,
@@ -414,7 +414,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abmahnung",
@@ -431,7 +431,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "agg",
@@ -454,7 +454,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arbeitsvertrag",
@@ -471,13 +471,36 @@
       "has_assets": false
     },
     {
+      "name": "arbeitszeit-zeiterfassung",
+      "description": "Arbeitszeitrecht und Pflicht zur Arbeitszeiterfassung – Höchstarbeitszeit und Ausgleichszeitraum § 3 ArbZG, Ruhepausen § 4 ArbZG, Ruhezeit § 5 ArbZG, Nachtarbeit § 6 ArbZG, tarifliche Abweichungen § 7 ArbZG, Sonn- und Feiertagsruhe §§ 9–11 ArbZG, Aufzeichnungspflicht § 16 Abs. 2 ArbZG, unionsrechtlich begründete Pflicht zur Erfassung der gesamten Arbeitszeit aus § 3 Abs. 2 Nr. 1 ArbSchG nach BAG 2022 und EuGH 2019, Mitbestimmung § 87 Abs. 1 Nr. 2, 3, 6 BetrVG, Überstundenprozess und Bußgelder § 22 ArbZG; Abgrenzung zum Referentenentwurf BMAS vom 18.06.2026. Use when ein Arbeitszeitmodell oder ein Zeiterfassungssystem geprüft, eingeführt oder ein Überstundenanspruch bewertet wird.",
+      "path": "arbeitsrecht/skills/arbeitszeit-zeiterfassung/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "arbeitszeit",
+        "zeiterfassung",
+        "§3",
+        "§4",
+        "§5",
+        "§6",
+        "§7",
+        "§§9"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "arbeitszeugnis",
       "description": "Erteilung, Prüfung und Berichtigung des Arbeitszeugnisses – Anspruch auf einfaches und qualifiziertes Zeugnis § 109 GewO, § 630 BGB, Gebot der Zeugnisklarheit und Verbot verdeckter Aussagen § 109 Abs. 2 GewO, Notenstufen der Zeugnissprache und Geheimcodes, Verteilung der Darlegungslast (ab der Note 'befriedigend' trägt der Arbeitnehmer die Darlegungslast für eine bessere Beurteilung), Zwischenzeugnis, Berichtigungs- und Erfüllungsklage, Form und Ausstellungsdatum. Use when ein Arbeitnehmer ein Zeugnis verlangt oder ein erteiltes Zeugnis auf verdeckte Abwertungen prüfen lässt, oder wenn ein Arbeitgeber ein rechtssicheres Zeugnis formulieren will.",
       "path": "arbeitsrecht/skills/arbeitszeugnis/SKILL.md",
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arbeitszeugnis",
@@ -497,7 +520,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aufhebungsvertrag",
@@ -519,7 +542,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "befristungskontrolle",
@@ -539,7 +562,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betriebsratsanhoerung",
@@ -552,13 +575,36 @@
       "has_assets": false
     },
     {
+      "name": "betriebsratswahl-anfechtung",
+      "description": "Anfechtung und Nichtigkeit der Betriebsratswahl nach den regelmäßigen Wahlen 2026 – Wahlzeitraum § 13 BetrVG, Wahlberechtigung und Wählbarkeit §§ 7, 8 BetrVG, Betriebsratsgröße § 9 BetrVG, Wahlgrundsätze und vereinfachtes Verfahren §§ 14, 14a BetrVG, Geschlechterquote § 15 Abs. 2 BetrVG, Wahlvorstand §§ 16–18 BetrVG, Anfechtung § 19 BetrVG mit Zwei-Wochen-Frist ab Bekanntgabe des Wahlergebnisses und Einspruchserfordernis gegen die Wählerliste § 19 Abs. 3 BetrVG, Nichtigkeit bei grobem und offensichtlichem Verstoß, Beschlussverfahren §§ 2a, 80 ff. ArbGG, Vollmacht bei Anfechtung durch Vertreter (BAG 28.01.2026), Wahlschutz § 20 BetrVG und Sonderkündigungsschutz § 15 Abs. 3–3b KSchG. Use when eine Betriebsratswahl angefochten, verteidigt oder auf Nichtigkeit geprüft wird.",
+      "path": "arbeitsrecht/skills/betriebsratswahl-anfechtung/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "betriebsratswahl",
+        "anfechtung",
+        "§13",
+        "§§7",
+        "§9",
+        "§§14",
+        "§15",
+        "§§16"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "betriebsuebergang",
       "description": "Betriebsübergang nach § 613a BGB – Tatbestand des Übergangs einer wirtschaftlichen Einheit durch Rechtsgeschäft, Eintritt in die Rechte und Pflichten § 613a Abs. 1 S. 1 BGB, Transformation und einjährige Veränderungssperre § 613a Abs. 1 S. 2–4 BGB, gesamtschuldnerische Nachhaftung des Veräußerers § 613a Abs. 2 BGB, Kündigungsverbot wegen des Übergangs § 613a Abs. 4 BGB, Unterrichtung in Textform § 613a Abs. 5 BGB und der von der Rechtsprechung entwickelte Katalog, Widerspruchsrecht binnen eines Monats § 613a Abs. 6 BGB, Richtlinie 2001/23/EG. Use when ein Asset Deal, Outsourcing, Betriebsteilübergang oder Rückübertragung ansteht oder wenn ein Unterrichtungsschreiben auf Fehler geprüft wird.",
       "path": "arbeitsrecht/skills/betriebsuebergang/SKILL.md",
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betriebsuebergang",
@@ -571,13 +617,36 @@
       "has_assets": false
     },
     {
+      "name": "entgeltfortzahlung-bem",
+      "description": "Entgeltfortzahlung im Krankheitsfall und Betriebliches Eingliederungsmanagement – Anspruch und Sechs-Wochen-Zeitraum § 3 EFZG mit Wartezeit, Fortsetzungserkrankung und Einheit des Verhinderungsfalls, Entgeltausfallprinzip § 4 EFZG, Anzeige- und Nachweispflicht einschließlich eAU § 5 EFZG, Leistungsverweigerungsrecht § 7 EFZG, Erschütterung des Beweiswerts der Arbeitsunfähigkeitsbescheinigung nach der BAG-Rechtsprechung, BEM § 167 Abs. 2 SGB IX und seine Bedeutung für die krankheitsbedingte Kündigung (Drei-Stufen-Prüfung). Use when Entgeltfortzahlung verweigert oder verlangt, eine AU-Bescheinigung angezweifelt, ein BEM durchgeführt oder eine krankheitsbedingte Kündigung vorbereitet wird.",
+      "path": "arbeitsrecht/skills/entgeltfortzahlung-bem/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "entgeltfortzahlung",
+        "bem",
+        "§3",
+        "§4",
+        "§5",
+        "§7",
+        "§167",
+        "sgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "entgelttransparenz",
       "description": "Entgelttransparenz und Entgeltgleichheit im Übergang von nationalem zu europäischem Recht – geltendes deutsches Recht nach dem EntgTranspG (individueller Auskunftsanspruch §§ 10 ff., Reichweite § 12, betriebliches Prüfverfahren §§ 17 ff., Berichtspflicht §§ 21 f.) und die ab dem 08.06.2026 wirkende Richtlinie (EU) 2023/970 (Entgelttransparenz vor der Einstellung, Verbot der Frage nach der Entgelthistorie, Auskunftsanspruch ohne Schwellenwert, Gender-Pay-Gap-Berichterstattung ab 100/150/250 Beschäftigten, gemeinsame Entgeltbewertung bei einem ungeklärten Gefälle von mindestens 5 %, Beweislastumkehr), unmittelbare Wirkung gegenüber staatlichen Stellen und richtlinienkonforme Auslegung im Privatsektor. Use when ein Arbeitgeber die Umsetzung der Entgelttransparenzrichtlinie vorbereitet, ein Auskunftsverlangen beantwortet oder eine Entgeltgleichheitsklage bewertet wird.",
       "path": "arbeitsrecht/skills/entgelttransparenz/SKILL.md",
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "entgelttransparenz",
@@ -598,7 +667,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kuendigungs",
@@ -621,7 +690,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kuendigungsschutzklage",
@@ -644,7 +713,7 @@
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "massenentlassungsanzeige",
@@ -659,13 +728,59 @@
       "has_assets": false
     },
     {
+      "name": "mindestlohn-minijob-aktivrente",
+      "description": "Mindestlohn, Minijob/Midijob und Beschäftigung nach Erreichen der Regelaltersgrenze – Mindestlohn 13,90 EUR ab 01.01.2026 und 14,60 EUR ab 01.01.2027 (Fünfte Mindestlohnanpassungsverordnung), Unabdingbarkeit und Fälligkeit §§ 2, 3 MiLoG, Arbeitszeitkonto § 2 Abs. 2 MiLoG, Aufzeichnungspflicht § 17 MiLoG, Ausnahmen § 22 MiLoG, dynamische Geringfügigkeitsgrenze § 8 Abs. 1a SGB IV (603 EUR 2026 / 633 EUR 2027), Übergangsbereich § 20 Abs. 2 SGB IV, Arbeit auf Abruf § 12 TzBfG, Aktivrente § 3 Nr. 21 EStG und erleichterte Befristung nach der Regelaltersgrenze § 41 Abs. 2 SGB VI (seit 01.01.2026). Use when Vergütungsmodelle, Minijobs oder Weiterbeschäftigung von Rentnern auf die Werte 2026/2027 geprüft werden.",
+      "path": "arbeitsrecht/skills/mindestlohn-minijob-aktivrente/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mindestlohn",
+        "minijob",
+        "aktivrente",
+        "§§2",
+        "§2",
+        "§17",
+        "§22",
+        "§8"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "mutterschutz-elternzeit",
+      "description": "Mutterschutz und Elternzeit im Arbeitsverhältnis – Schutzfristen § 3 MuSchG einschließlich der seit 01.06.2025 geltenden gestaffelten Schutzfristen nach Fehlgeburt ab der 13. Schwangerschaftswoche (§ 3 Abs. 5 MuSchG), Gefährdungsbeurteilung und Beschäftigungsverbote §§ 10–16 MuSchG, Mutterschutzlohn und Zuschuss §§ 18–20 MuSchG, Kündigungsverbot § 17 MuSchG mit Zwei-Wochen-Mitteilungsfrist und Zulässigkeitserklärung, nachträgliche Klagezulassung § 5 Abs. 1 S. 2 KSchG und § 4 S. 4 KSchG (BAG 03.04.2025), Elternzeitverlangen in Textform § 16 BEEG (Schriftform nur noch für vor dem 01.05.2025 geborene Kinder, § 28 Abs. 1b BEEG), Teilzeit in Elternzeit § 15 Abs. 4–7 BEEG, Sonderkündigungsschutz § 18 BEEG, Urlaubskürzung § 17 BEEG. Use when eine Schwangerschaft, Fehlgeburt oder Elternzeit Auswirkungen auf Beschäftigung, Vergütung oder eine Kündigung hat.",
+      "path": "arbeitsrecht/skills/mutterschutz-elternzeit/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mutterschutz",
+        "elternzeit",
+        "§3",
+        "§§10",
+        "§§18",
+        "§17",
+        "§5",
+        "§4"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "sozialauswahl",
       "description": "Durchführung und Angriff der Sozialauswahl bei betriebsbedingter Kündigung nach § 1 Abs. 3 KSchG – Bildung der Vergleichsgruppe (horizontale Vergleichbarkeit, Direktionsrecht § 106 GewO), die vier gesetzlichen Kriterien und ihre Gewichtung im Punkteschema, Herausnahme von Leistungsträgern § 1 Abs. 3 S. 2 KSchG, Auskunftsanspruch des Arbeitnehmers § 1 Abs. 3 S. 1 Hs. 2 KSchG, abgestufte Darlegungs- und Beweislast § 1 Abs. 3 S. 3 KSchG, Auswahlrichtlinie und Namensliste § 1 Abs. 4, 5 KSchG. Use when ein Arbeitgeber die Auswahlentscheidung dokumentationsfest treffen muss oder ein Arbeitnehmer die Sozialauswahl im Kündigungsschutzprozess angreift.",
       "path": "arbeitsrecht/skills/sozialauswahl/SKILL.md",
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sozialauswahl",
@@ -679,13 +794,36 @@
       "has_assets": false
     },
     {
+      "name": "statusfeststellung-scheinselbstaendigkeit",
+      "description": "Abgrenzung von Beschäftigung und Selbständigkeit und Statusfeststellungsverfahren – Beschäftigungsbegriff § 7 Abs. 1 SGB IV und Arbeitsvertrag § 611a BGB, Gesamtabwägung nach Weisungsgebundenheit, Eingliederung und Unternehmerrisiko, Anfrageverfahren § 7a SGB IV mit Prognose- und Gruppenfeststellung, Haftung für den Gesamtsozialversicherungsbeitrag §§ 28e, 28g SGB IV, Verjährung § 25 SGB IV, Säumniszuschläge § 24 SGB IV, Strafbarkeit § 266a StGB, Lohnsteuerhaftung § 42d EStG, verdeckte Arbeitnehmerüberlassung §§ 9, 10 AÜG, Rentenversicherungspflicht Selbständiger § 2 SGB VI; Ausblick Plattformarbeits-RL (EU) 2024/2831 (Umsetzungsfrist 02.12.2026) und BMAS-Referentenentwurf 2026. Use when Freelancer, Honorarkräfte, Interim-Manager oder Plattformtätige eingesetzt werden oder eine Betriebsprüfung der DRV droht.",
+      "path": "arbeitsrecht/skills/statusfeststellung-scheinselbstaendigkeit/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "statusfeststellung",
+        "scheinselbstaendigkeit",
+        "§7",
+        "§611a",
+        "§7a",
+        "§§28e",
+        "§25",
+        "§24"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "urlaubsanspruch",
       "description": "Urlaubsansprüche nach dem BUrlG – Entstehung und Wartezeit §§ 1, 4 BUrlG, gesetzlicher Mindesturlaub § 3 BUrlG in Werktagen und die Umrechnung bei abweichender Verteilung der Arbeitszeit, Festlegung und Übertragung § 7 Abs. 3 BUrlG, Abgeltung bei Beendigung § 7 Abs. 4 BUrlG, Verfall nur nach Erfüllung der arbeitgeberseitigen Hinweis- und Aufforderungsobliegenheit, Verjährung des Urlaubsanspruchs, Erkrankung im Urlaub § 9 BUrlG, 15-Monats-Frist bei durchgehender Langzeiterkrankung, Teilurlaub § 5 BUrlG, Abgrenzung von gesetzlichem und vertraglichem Mehrurlaub. Use when Urlaubsansprüche zu berechnen, Verfall oder Verjährung zu prüfen oder Abgeltungsansprüche nach Beendigung geltend zu machen sind.",
       "path": "arbeitsrecht/skills/urlaubsanspruch/SKILL.md",
       "domain": "arbeitsrecht",
       "category": "arbeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "urlaubsanspruch",
@@ -701,13 +839,36 @@
       "has_assets": false
     },
     {
+      "name": "wettbewerbsverbot-nachvertraglich",
+      "description": "Nachvertragliches Wettbewerbsverbot für Arbeitnehmer – Verweisung § 110 GewO auf §§ 74–75f HGB, Form § 74 Abs. 1 HGB (Schriftform und Aushändigung der Urkunde), Karenzentschädigung mindestens 50 % § 74 Abs. 2 HGB, Nichtigkeit bei fehlender Entschädigungszusage gegenüber Unverbindlichkeit mit Wahlrecht bei zu niedriger Entschädigung, berechtigtes geschäftliches Interesse und Höchstdauer zwei Jahre § 74a HGB, Anrechnung anderweitigen Erwerbs § 74c HGB, Lossagung § 75 HGB, Verzicht des Arbeitgebers § 75a HGB, Vertragsstrafe § 75c HGB, Kundenschutzklauseln, bedingte Wettbewerbsverbote, Abgrenzung zum Organmitglied. Use when ein nachvertragliches Wettbewerbsverbot gestaltet, auf Wirksamkeit geprüft, durch Verzicht beseitigt oder Karenzentschädigung geltend gemacht wird.",
+      "path": "arbeitsrecht/skills/wettbewerbsverbot-nachvertraglich/SKILL.md",
+      "domain": "arbeitsrecht",
+      "category": "arbeitsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "wettbewerbsverbot",
+        "nachvertraglich",
+        "§110",
+        "§§74",
+        "§74",
+        "§74a",
+        "§74c",
+        "§75"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "auskunftsersuchen-art-15",
       "description": "Bearbeitung eines DSGVO-Auskunftsersuchens nach Art. 15 DSGVO – Identitätsprüfung, Umfang der Auskunft (Art. 15 Abs. 1 lit. a–h), Datenkopie (Abs. 3), Ausnahmen (Art. 15 Abs. 4; § 34 BDSG), 1-Monats-Frist (Art. 12 Abs. 3 DSGVO). Use when ein betroffener oder ehemaliger Vertragspartner Auskunft über die zu seiner Person verarbeiteten Daten verlangt.",
       "path": "datenschutzrecht/skills/auskunftsersuchen-art-15/SKILL.md",
       "domain": "datenschutzrecht",
       "category": "datenschutzrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "auskunftsersuchen",
@@ -730,7 +891,7 @@
       "domain": "datenschutzrecht",
       "category": "datenschutzrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "avv",
@@ -753,7 +914,7 @@
       "domain": "datenschutzrecht",
       "category": "datenschutzrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "datenpanne",
@@ -775,7 +936,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abtretung",
@@ -798,7 +959,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "agb",
@@ -821,7 +982,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "anfechtung",
@@ -844,7 +1005,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kaufrecht",
@@ -867,7 +1028,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ruecktritt",
@@ -890,7 +1051,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sicherheiten",
@@ -913,7 +1074,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "stoerung",
@@ -933,7 +1094,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verbraucherwiderruf",
@@ -956,7 +1117,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vergleich",
@@ -979,7 +1140,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verjaehrung",
@@ -1002,7 +1163,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertragsstrafe",
@@ -1025,7 +1186,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verzug",
@@ -1047,7 +1208,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorvertragliche",
@@ -1069,7 +1230,7 @@
       "domain": "vertragsrecht",
       "category": "vertragsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "werkvertrag",
@@ -1087,17 +1248,18 @@
     },
     {
       "name": "betriebskostenabrechnung",
-      "description": "Prüfung und Erstellung der Betriebskostenabrechnung im Wohnraummietrecht – Umlagevereinbarung und Abrechnungspflicht § 556 BGB, Abrechnungsfrist § 556 Abs. 3 S. 2 BGB und Einwendungsfrist § 556 Abs. 3 S. 5 BGB, Umlagemaßstab § 556a BGB, Betriebskostenkatalog der BetrKV, HeizkostenV, Belegeinsicht, Abgrenzung formeller und materieller Fehler, Wirtschaftlichkeitsgebot, CO2KostAufG mit Stufenmodell seit 2023. Use when eine Betriebskostenabrechnung erstellt, geprüft oder eine Nachforderung bzw. ein Guthaben durchgesetzt wird.",
+      "description": "Prüfung und Erstellung der Betriebskostenabrechnung im Wohnraummietrecht – Umlagevereinbarung und Abrechnungspflicht § 556 BGB, Abrechnungsfrist § 556 Abs. 3 S. 2 BGB und Einwendungsfrist § 556 Abs. 3 S. 5 BGB, Umlagemaßstab § 556a BGB, Betriebskostenkatalog der BetrKV, HeizkostenV, Belegeinsicht, Abgrenzung formeller und materieller Fehler, Wirtschaftlichkeitsgebot, CO2KostAufG mit Stufenmodell seit 2023 und GModG-Kostenteilung ab 2028, Fernablesepflicht § 5 Abs. 3 HeizkostenV bis 31.12.2026, Belegeinsicht § 556 Abs. 4 BGB, Glasfaser-Bereitstellungsentgelt § 556 Abs. 3a BGB. Rechtsstand: Oktober 2026. Use when eine Betriebskostenabrechnung erstellt, geprüft oder eine Nachforderung bzw. ein Guthaben durchgesetzt wird.",
       "path": "mietrecht/skills/betriebskostenabrechnung/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betriebskostenabrechnung",
         "§556",
         "§556a",
+        "§5",
         "bgb",
         "mietrecht"
       ],
@@ -1107,16 +1269,17 @@
     },
     {
       "name": "eigenbedarfskuendigung",
-      "description": "Wirksamkeitsprüfung einer Eigenbedarfskündigung im Wohnraummietrecht – berechtigtes Interesse und begünstigter Personenkreis § 573 Abs. 2 Nr. 2 BGB, Begründungspflicht § 573 Abs. 3 BGB, Kündigungsfristen § 573c BGB, Widerspruch und Sozialklausel § 574 BGB, Schadensersatz bei vorgetäuschtem Eigenbedarf. Use when ein Vermieter eine Eigenbedarfskündigung gestaltet oder ein Mieter eine erhaltene Kündigung auf Wirksamkeit und Härtefall prüft.",
+      "description": "Wirksamkeitsprüfung einer Eigenbedarfskündigung im Wohnraummietrecht – berechtigtes Interesse und begünstigter Personenkreis § 573 Abs. 2 Nr. 2 BGB, Begründungspflicht § 573 Abs. 3 BGB, Kündigungssperrfrist nach Umwandlung § 577a BGB, Kündigungsfristen § 573c BGB, Anbietpflicht, Widerspruch und Sozialklausel § 574 BGB, Schadensersatz bei vorgetäuschtem Eigenbedarf. Rechtsstand: Oktober 2026. Use when ein Vermieter eine Eigenbedarfskündigung gestaltet oder ein Mieter eine erhaltene Kündigung auf Wirksamkeit und Härtefall prüft.",
       "path": "mietrecht/skills/eigenbedarfskuendigung/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "eigenbedarfskuendigung",
         "§573",
+        "§577a",
         "§573c",
         "§574",
         "bgb",
@@ -1128,12 +1291,12 @@
     },
     {
       "name": "fristlose-kuendigung-543",
-      "description": "Außerordentliche fristlose Kündigung des Mietverhältnisses aus wichtigem Grund – wichtiger Grund und Regelbeispiele § 543 Abs. 2 BGB, Zahlungsverzug § 543 Abs. 2 S. 1 Nr. 3 BGB, Abmahnung und Fristsetzung § 543 Abs. 3 BGB, ergänzende Wohnraumtatbestände § 569 BGB, Schonfristzahlung § 569 Abs. 3 Nr. 2 BGB, Form und Begründung § 569 Abs. 4, § 568 BGB, Verhältnis zur hilfsweise erklärten ordentlichen Kündigung § 573 Abs. 2 Nr. 1 BGB. Use when ein Vermieter wegen Zahlungsverzugs oder Pflichtverletzung fristlos kündigen will oder ein Mieter eine erhaltene fristlose Kündigung prüft.",
+      "description": "Außerordentliche fristlose Kündigung des Mietverhältnisses aus wichtigem Grund – wichtiger Grund und Regelbeispiele § 543 Abs. 2 BGB, Zahlungsverzug § 543 Abs. 2 S. 1 Nr. 3 BGB, Abmahnung und Fristsetzung § 543 Abs. 3 BGB, ergänzende Wohnraumtatbestände § 569 BGB, Schonfristzahlung § 569 Abs. 3 Nr. 2 BGB, Form und Begründung § 569 Abs. 4, § 568 BGB, Verhältnis zur hilfsweise erklärten ordentlichen Kündigung § 573 Abs. 2 Nr. 1 BGB (Bestätigung durch den BGH am 30.09.2026; anhängige Erstreckung der Schonfrist, BT-Drs. 21/6807). Rechtsstand: Oktober 2026. Use when ein Vermieter wegen Zahlungsverzugs oder Pflichtverletzung fristlos kündigen will oder ein Mieter eine erhaltene fristlose Kündigung prüft.",
       "path": "mietrecht/skills/fristlose-kuendigung-543/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fristlose",
@@ -1151,22 +1314,91 @@
     },
     {
       "name": "gewerberaummiete",
-      "description": "Gewerberaummiete – gesetzliche Schriftform langfristiger Mietverträge § 550 BGB und die Unwirksamkeit von Schriftformheilungsklauseln, Index- und Staffelmiete §§ 557a, 557b BGB, vertragsimmanenter Konkurrenzschutz und Sortimentsbindung, Betriebspflicht und Offenhaltungsklausel, AGB-Kontrolle §§ 305 ff. BGB, Störung der Geschäftsgrundlage § 313 BGB und Art. 240 § 7 EGBGB, Kündigungsfristen § 580a BGB, Vermieterpfandrecht § 562 BGB. Use when ein Gewerberaummietvertrag gestaltet, geprüft, beendet oder eine Anpassung wegen veränderter Umstände verlangt wird.",
+      "description": "Gewerberaummiete – Form langfristiger Mietverträge §§ 550, 578 Abs. 1 S. 2 BGB (seit BEG IV Textform; Übergang Art. 229 § 70 EGBGB) und die Unwirksamkeit von Schriftformheilungsklauseln, Index- und Staffelmiete §§ 557a, 557b BGB, vertragsimmanenter Konkurrenzschutz und Sortimentsbindung, Betriebspflicht und Offenhaltungsklausel, AGB-Kontrolle §§ 305 ff. BGB, Störung der Geschäftsgrundlage § 313 BGB und Art. 240 § 7 EGBGB, Kündigungsfristen § 580a BGB, Vermieterpfandrecht § 562 BGB. Use when ein Gewerberaummietvertrag gestaltet, geprüft, beendet oder eine Anpassung wegen veränderter Umstände verlangt wird.",
       "path": "mietrecht/skills/gewerberaummiete/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerberaummiete",
-        "§550",
+        "§§550",
+        "§70",
         "§§557a",
         "§§305",
         "§313",
         "§7",
-        "§580a",
-        "§562"
+        "§580a"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "heizkosten-co2-fernablesung",
+      "description": "Heizkostenabrechnung, Fernablesung und CO2-Kostenaufteilung im Wohnraummietrecht – Verbrauchserfassung und Verteilung §§ 4–9 HeizkostenV (50–70 % nach Verbrauch), Nachrüstpflicht für fernablesbare Ausstattung bis 31.12.2026 § 5 Abs. 3 HeizkostenV, monatliche Verbrauchsinformation § 6a HeizkostenV, Kürzungsrechte 15 % und 3 % § 12 HeizkostenV, CO2-Stufenmodell §§ 5–7 CO2KostAufG mit 3-%-Kürzung § 7 Abs. 4, Erstattungsanspruch des selbstversorgenden Mieters § 6, hälftige Teilung von Netzentgelten, CO2- und Beimischungskosten bei neuen Gas-/Ölheizungen ab 2028/2029 §§ 5a, 5b CO2KostAufG (GModG v. 23.07.2026), CO2-Preis § 10 BEHG. Rechtsstand: Oktober 2026. Use when eine Heizkostenabrechnung erstellt oder geprüft, die Fernablese-Nachrüstung geplant oder die CO2-Aufteilung berechnet wird.",
+      "path": "mietrecht/skills/heizkosten-co2-fernablesung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "heizkosten",
+        "co2",
+        "fernablesung",
+        "§§4",
+        "§5",
+        "§6a",
+        "§12",
+        "§§5"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "heizungstausch-559e-559f",
+      "description": "Heizungstausch und Wärmepumpe im Wohnraummietrecht – Modernisierungstatbestand § 555b Nr. 1a BGB (Heizungsanlage i.S.d. § 42 GModG), Ankündigung § 555c BGB, Duldung und Härte § 555d BGB, Umlageweg: 10-%-Umlage mit Förderabzug und 15-%-Erhaltungspauschale § 559e BGB, 8-%-Umlage § 559 BGB nur ohne gewährte Förderung oder bei zugleich vorliegender Nr. 1-Maßnahme, Kappung 0,50 EUR/m² § 559 Abs. 3a S. 3, § 559e Abs. 3 BGB, Jahresarbeitszahl-Nachweis und Halbierung der umlagefähigen Kosten bei Wärmepumpen § 559f BGB (seit 29.07.2026), vereinfachtes Verfahren § 559c BGB, Folgen für CO2-Kosten §§ 5a, 5b CO2KostAufG. Rechtsstand: Oktober 2026. Use when ein Vermieter einen Heizungstausch ankündigt oder umlegt oder ein Mieter eine Mieterhöhung nach Einbau einer neuen Heizung oder Wärmepumpe prüft.",
+      "path": "mietrecht/skills/heizungstausch-559e-559f/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "heizungstausch",
+        "559e",
+        "559f",
+        "§555b",
+        "§42",
+        "§555c",
+        "§555d",
+        "§559e"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "indexmiete-staffelmiete",
+      "description": "Index- und Staffelmiete im Wohnraummietrecht – Gestaltung und Prüfung der Staffelmietvereinbarung § 557a BGB (Schriftform, betragsmäßige Staffeln, Jahresfrist, Kündigungsverzicht höchstens vier Jahre) und der Indexmietvereinbarung § 557b BGB (Schriftform, Verbraucherpreisindex, Änderungserklärung in Textform, Wirksamwerden ab dem übernächsten Monat), Sperre für §§ 558, 559 BGB (Ausnahme Heizungstausch § 555b Nr. 1a bei Indexmiete), Mietpreisbremse für jede Staffel bzw. die Ausgangsmiete §§ 557a Abs. 4, 557b Abs. 4 BGB, anhängige Indexkappung (BT-Drs. 21/6807). Rechtsstand: Oktober 2026. Use when eine Staffel- oder Indexmiete vereinbart, eine Indexanpassung erklärt oder eine erhaltene Anpassung auf Wirksamkeit und Höhe geprüft wird.",
+      "path": "mietrecht/skills/indexmiete-staffelmiete/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "indexmiete",
+        "staffelmiete",
+        "§557a",
+        "§557b",
+        "§§558",
+        "§555b",
+        "§§557a",
+        "bgb"
       ],
       "tools": 0,
       "has_references": false,
@@ -1174,12 +1406,12 @@
     },
     {
       "name": "kaution-mietsicherheit",
-      "description": "Mietsicherheit im Wohnraummietrecht – Höchstbetrag von drei Nettokaltmieten und Ratenzahlungsrecht § 551 Abs. 1, Abs. 2 BGB, insolvenzfeste Anlagepflicht getrennt vom Vermietervermögen § 551 Abs. 3 BGB, Unwirksamkeit abweichender Vereinbarungen § 551 Abs. 4 BGB, Kündigung wegen Kautionsverzugs § 569 Abs. 2a BGB, Abrechnung und Zurückbehaltung nach Rückgabe, Verwertung und Aufrechnung, Verjährung § 548 BGB. Use when eine Kaution vereinbart, angelegt, verwertet oder nach Mietende abgerechnet und zurückgefordert wird.",
+      "description": "Mietsicherheit im Wohnraummietrecht – Höchstbetrag von drei Nettokaltmieten und Ratenzahlungsrecht § 551 Abs. 1, Abs. 2 BGB, insolvenzfeste Anlagepflicht getrennt vom Vermietervermögen § 551 Abs. 3 BGB, Unwirksamkeit abweichender Vereinbarungen § 551 Abs. 4 BGB, Kündigung wegen Kautionsverzugs § 569 Abs. 2a BGB, Abrechnung und Zurückbehaltung nach Rückgabe, Verwertung und Aufrechnung, Verjährung § 548 BGB. Rechtsstand: Oktober 2026. Use when eine Kaution vereinbart, angelegt, verwertet oder nach Mietende abgerechnet und zurückgefordert wird.",
       "path": "mietrecht/skills/kaution-mietsicherheit/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kaution",
@@ -1195,13 +1427,36 @@
       "has_assets": false
     },
     {
+      "name": "kuendigung-zahlungsverzug-ordentlich",
+      "description": "Ordentliche Kündigung des Wohnraummietverhältnisses wegen Zahlungsrückstands und unpünktlicher Zahlung – schuldhafte, nicht unerhebliche Pflichtverletzung § 573 Abs. 2 Nr. 1 BGB (Rückstand über eine Monatsmiete für mehr als einen Monat), Verschulden und Geldschuld § 286 Abs. 4 BGB, Begründung § 573 Abs. 3 BGB, Schriftform § 568 BGB, Fristen § 573c BGB, Sozialklausel § 574 BGB, Verhältnis zur Schonfristzahlung § 569 Abs. 3 Nr. 2 BGB (BGH-Bestätigung v. 30.09.2026) und § 242-Kontrolle, anhängiger § 573 Abs. 4 BGB-E (BT-Drs. 21/6807). Rechtsstand: Oktober 2026. Use when ein Vermieter wegen Mietrückstands ordentlich (auch hilfsweise) kündigen will oder ein Mieter nach Schonfristzahlung prüft, ob die ordentliche Kündigung fortwirkt.",
+      "path": "mietrecht/skills/kuendigung-zahlungsverzug-ordentlich/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kuendigung",
+        "zahlungsverzug",
+        "ordentlich",
+        "§573",
+        "§286",
+        "§568",
+        "§573c",
+        "§574"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "mieterhoehung-558-bgb",
-      "description": "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – aus beiden Perspektiven: Vermieter-Entwurf und Mieter-Wirksamkeitsprüfung. Wartezeit und Jahressperre § 558 Abs. 1 BGB, ortsübliche Vergleichsmiete § 558 Abs. 2 BGB, Kappungsgrenze § 558 Abs. 3 BGB, Begründungsmittel § 558a BGB (Mietspiegel, Sachverständigengutachten, drei Vergleichswohnungen, Mietdatenbank), qualifizierter Mietspiegel §§ 558c–558e BGB, Zustimmungs- und Klagefrist § 558b BGB, Abgrenzung zur Modernisierungsmieterhöhung § 559 BGB, Mietpreisbremse §§ 556d ff. BGB. Use when ein Vermieter ein Mieterhöhungsverlangen gestaltet oder ein Mieter ein empfangenes Verlangen auf Wirksamkeit, Höhe und Fristen prüft.",
+      "description": "Mieterhöhung auf die ortsübliche Vergleichsmiete nach § 558 BGB – aus beiden Perspektiven: Vermieter-Entwurf und Mieter-Wirksamkeitsprüfung. Wartezeit und Jahressperre § 558 Abs. 1 BGB, ortsübliche Vergleichsmiete § 558 Abs. 2 BGB, Kappungsgrenze § 558 Abs. 3 BGB, Begründungsmittel § 558a BGB (Mietspiegel, Sachverständigengutachten, drei Vergleichswohnungen, Mietdatenbank), qualifizierter Mietspiegel §§ 558c–558e BGB, Zustimmungs- und Klagefrist § 558b BGB, Abgrenzung zur Modernisierungsmieterhöhung § 559 BGB, Mietpreisbremse §§ 556d ff. BGB, Mitteilungspflicht § 558a Abs. 3 BGB. Rechtsstand: Oktober 2026. Use when ein Vermieter ein Mieterhöhungsverlangen gestaltet oder ein Mieter ein empfangenes Verlangen auf Wirksamkeit, Höhe und Fristen prüft.",
       "path": "mietrecht/skills/mieterhoehung-558-bgb/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mieterhoehung",
@@ -1219,12 +1474,12 @@
     },
     {
       "name": "mietmangel-minderung",
-      "description": "Mietmangel und Mietminderung im Wohnraummietrecht – Mangelbegriff und kraft Gesetzes eintretende Minderung § 536 BGB, Ausschluss bei Kenntnis § 536b BGB, Schadensersatz und Selbstvornahme mit Aufwendungsersatz § 536a BGB, Mängelanzeige und Anzeigeobliegenheit § 536c BGB, Zurückbehaltungsrecht § 320 BGB, Symptomtheorie und Darlegungslast, Minderungsquote und Bezugsgröße Bruttomiete. Use when ein Mieter wegen eines Mangels mindern, Mängelbeseitigung verlangen oder Schadensersatz geltend machen will oder ein Vermieter eine Minderung prüft.",
+      "description": "Mietmangel und Mietminderung im Wohnraummietrecht – Mangelbegriff und kraft Gesetzes eintretende Minderung § 536 BGB, Ausschluss bei Kenntnis § 536b BGB, Schadensersatz und Selbstvornahme mit Aufwendungsersatz § 536a BGB, Mängelanzeige und Anzeigeobliegenheit § 536c BGB, Zurückbehaltungsrecht § 320 BGB, Symptomtheorie und Darlegungslast, Minderungsquote und Bezugsgröße Bruttomiete. Rechtsstand: Oktober 2026. Use when ein Mieter wegen eines Mangels mindern, Mängelbeseitigung verlangen oder Schadensersatz geltend machen will oder ein Vermieter eine Minderung prüft.",
       "path": "mietrecht/skills/mietmangel-minderung/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mietmangel",
@@ -1242,12 +1497,12 @@
     },
     {
       "name": "mietpreisbremse",
-      "description": "Mietpreisbremse bei Wiedervermietung von Wohnraum – zulässige Miethöhe § 556d BGB (ortsübliche Vergleichsmiete zzgl. 10 %) und Landesverordnung, Ausnahmen für Neubau und umfassende Modernisierung § 556f BGB, Vormiete und modernisierte Wohnung § 556e BGB, vorvertragliche Auskunftspflicht § 556g Abs. 1a BGB, qualifizierte Rüge und Rückforderung § 556g Abs. 2 BGB, Unwirksamkeit abweichender Vereinbarungen § 556g Abs. 1 BGB. Use when eine Neuvertragsmiete auf Zulässigkeit geprüft, eine Rüge erhoben oder überzahlte Miete zurückgefordert wird.",
+      "description": "Mietpreisbremse bei Wiedervermietung von Wohnraum – zulässige Miethöhe § 556d BGB (ortsübliche Vergleichsmiete zzgl. 10 %) und Landesverordnung, Ausnahmen für Neubau und umfassende Modernisierung § 556f BGB, Vormiete und modernisierte Wohnung § 556e BGB, vorvertragliche Auskunftspflicht § 556g Abs. 1a BGB, Rüge in Textform und Rückforderung § 556g Abs. 2, 4 BGB (30-Monats-Rückwirkung für Verträge ab 01.04.2020), Unwirksamkeit abweichender Vereinbarungen § 556g Abs. 1 BGB, Verordnungsermächtigung bis 31.12.2029, Rspr. des BGH 2025/2026 und anhängiger Möblierungszuschlag (BT-Drs. 21/6807). Rechtsstand: Oktober 2026. Use when eine Neuvertragsmiete auf Zulässigkeit geprüft, eine Rüge erhoben oder überzahlte Miete zurückgefordert wird.",
       "path": "mietrecht/skills/mietpreisbremse/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mietpreisbremse",
@@ -1263,13 +1518,36 @@
       "has_assets": false
     },
     {
+      "name": "mietwucher-mietpreisueberhoehung",
+      "description": "Mietpreisüberhöhung und Mietwucher – Ordnungswidrigkeit § 5 WiStG (Überschreitung der üblichen Entgelte um mehr als 20 % infolge Ausnutzung eines geringen Angebots, Bußgeld bis 50.000 EUR), Straftat Wucher § 291 Abs. 1 Nr. 1 StGB (auffälliges Missverhältnis, Ausbeutung einer Zwangslage), Teilnichtigkeit der Mietabrede § 134 BGB und Rückforderung § 812 BGB bis zur Wesentlichkeitsgrenze (BGHZ 89, 316), Darlegungslast des Mieters für das Ausnutzen, Abgrenzung zur Mietpreisbremse §§ 556d ff. BGB, anhängige Reform BT-Drs. 21/1397. Rechtsstand: Oktober 2026. Use when eine Miete außerhalb oder neben der Mietpreisbremse als überhöht angegriffen, eine Anzeige bei der Bußgeldbehörde erwogen oder ein Vermieter gegen den Vorwurf der Mietpreisüberhöhung verteidigt wird.",
+      "path": "mietrecht/skills/mietwucher-mietpreisueberhoehung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "mietwucher",
+        "mietpreisueberhoehung",
+        "§5",
+        "§291",
+        "§134",
+        "§812",
+        "§§556d",
+        "stgb"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "modernisierung-559-bgb",
-      "description": "Modernisierung und Modernisierungsmieterhöhung im Wohnraummietrecht – Begriff der Modernisierungsmaßnahme § 555b BGB, Modernisierungsankündigung § 555c BGB, Duldungspflicht und Härteeinwand § 555d BGB, Aufwendungsersatz § 555a Abs. 3 BGB, Sonderkündigungsrecht § 555e BGB, Mieterhöhung nach § 559 BGB mit 8-%-Umlage, Kappung § 559 Abs. 3a BGB und Härteeinwand § 559 Abs. 4 BGB, Abgrenzung Erhaltung / Modernisierung, Verhältnis zu § 558 BGB. Use when ein Vermieter eine Modernisierung ankündigt oder umlegt oder ein Mieter Ankündigung, Duldungspflicht und Modernisierungsmieterhöhung prüft.",
+      "description": "Modernisierung und Modernisierungsmieterhöhung im Wohnraummietrecht – Begriff der Modernisierungsmaßnahme § 555b BGB, Modernisierungsankündigung § 555c BGB, Duldungspflicht und Härteeinwand § 555d BGB, Aufwendungsersatz § 555a Abs. 3 BGB, Sonderkündigungsrecht § 555e BGB, Mieterhöhung nach § 559 BGB mit 8-%-Umlage, Heizungsanlage § 555b Nr. 1a BGB mit 10-%-Umlage § 559e BGB und Wärmepumpen-Nachweis § 559f BGB (GModG, seit 29.07.2026), vereinfachtes Verfahren § 559c BGB, Kappung § 559 Abs. 3a BGB und Härteeinwand § 559 Abs. 4 BGB, Abgrenzung Erhaltung / Modernisierung, Verhältnis zu § 558 BGB. Use when ein Vermieter eine Modernisierung ankündigt oder umlegt oder ein Mieter Ankündigung, Duldungspflicht und Modernisierungsmieterhöhung prüft.",
       "path": "mietrecht/skills/modernisierung-559-bgb/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "modernisierung",
@@ -1286,13 +1564,36 @@
       "has_assets": false
     },
     {
+      "name": "moeblierte-kurzzeitvermietung",
+      "description": "Möblierte Vermietung und Wohnen auf Zeit – Ausnahmen vom Wohnraummietrecht § 549 Abs. 2 Nr. 1 (vorübergehender Gebrauch) und Nr. 2 BGB (möblierter Wohnraum in der Vermieterwohnung), verkürzte Kündigungsfrist § 573c Abs. 3 BGB, Befristung § 575 BGB, Möblierungszuschlag und Mietpreisbremse §§ 556d, 556g BGB, Umgehungsprüfung, Zweckentfremdungsrecht der Länder; anhängige Reform BT-Drs. 21/6807 (Höchstdauer sechs bzw. acht Monate, Möblierungszuschlag-Ausweisung § 556d Abs. 1a, § 556g Abs. 1b BGB-E) mit Übergangsrecht. Rechtsstand: Oktober 2026. Use when eine möblierte oder befristete Wohnung vermietet, ein Möblierungszuschlag geprüft oder eine Kurzzeitvermietung als Umgehung der Mietpreisbremse angegriffen wird.",
+      "path": "mietrecht/skills/moeblierte-kurzzeitvermietung/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "moeblierte",
+        "kurzzeitvermietung",
+        "§549",
+        "§573c",
+        "§575",
+        "§§556d",
+        "§556d",
+        "§556g"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "raeumungsklage",
-      "description": "Räumungsklage und Zwangsräumung im Wohnraum- und Gewerberaummietrecht – Rückgabeanspruch § 546 BGB und Herausgabeanspruch § 985 BGB, Nutzungsentschädigung § 546a BGB, Verbindung mit der Zahlungsklage, Klage auf künftige Räumung § 259 ZPO, Zuständigkeit § 23 Nr. 2a GVG und § 29a ZPO, Räumungsfrist § 721 ZPO und Vollstreckungsschutz § 765a ZPO, Sicherungsanordnung § 283a ZPO, einstweilige Räumungsverfügung § 940a ZPO, Berliner Räumung § 885a ZPO. Use when eine Räumungsklage vorbereitet, erhoben oder abgewehrt wird oder eine Zwangsräumung ansteht.",
+      "description": "Räumungsklage und Zwangsräumung im Wohnraum- und Gewerberaummietrecht – Rückgabeanspruch § 546 BGB und Herausgabeanspruch § 985 BGB, Nutzungsentschädigung § 546a BGB, Verbindung mit der Zahlungsklage, Klage auf künftige Räumung § 259 ZPO, Zuständigkeit § 23 Nr. 2a GVG und § 29a ZPO, Räumungsfrist § 721 ZPO und Vollstreckungsschutz § 765a ZPO, Sicherungsanordnung § 283a ZPO, einstweilige Räumungsverfügung § 940a ZPO, Berliner Räumung § 885a ZPO. Rechtsstand: Oktober 2026. Use when eine Räumungsklage vorbereitet, erhoben oder abgewehrt wird oder eine Zwangsräumung ansteht.",
       "path": "mietrecht/skills/raeumungsklage/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "raeumungsklage",
@@ -1315,7 +1616,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "schoenheitsreparaturen",
@@ -1338,7 +1639,7 @@
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sozialklausel",
@@ -1355,13 +1656,36 @@
       "has_assets": false
     },
     {
+      "name": "tod-des-mieters",
+      "description": "Tod des Mieters im Wohnraummietrecht – Eintrittsrecht von Ehegatten, Lebenspartnern, Kindern, Familienangehörigen und Haushaltsangehörigen § 563 BGB mit Ablehnungsfrist von einem Monat, Fortsetzung mit überlebenden Mitmietern § 563a BGB, Haftung und Sicherheit § 563b BGB, Fortsetzung mit dem Erben und beiderseitiges außerordentliches Kündigungsrecht mit gesetzlicher Frist § 564 BGB, § 573d BGB ohne berechtigtes Interesse gegenüber dem Erben, Erbenhaftung als Nachlassverbindlichkeit, Gewerberaum § 580 BGB. Rechtsstand: Oktober 2026. Use when ein Mieter verstorben ist und Angehörige, Mitmieter, Erben oder der Vermieter wissen müssen, wer Vertragspartei wird, wie gekündigt werden kann und wer für Miete und Rückgabe haftet.",
+      "path": "mietrecht/skills/tod-des-mieters/SKILL.md",
+      "domain": "mietrecht",
+      "category": "mietrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "tod",
+        "des",
+        "mieters",
+        "§563",
+        "§563a",
+        "§563b",
+        "§564",
+        "§573d"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "untervermietung",
-      "description": "Untervermietung und Gebrauchsüberlassung an Dritte im Wohnraummietrecht – Erlaubnisvorbehalt § 540 BGB und Sonderkündigungsrecht des Mieters, Anspruch auf Gestattung der Teiluntervermietung bei berechtigtem Interesse § 553 Abs. 1 BGB, Untermietzuschlag § 553 Abs. 2 BGB, Abgrenzung zur Aufnahme von Angehörigen und Besuchern, Kurzzeitvermietung und Zweckentfremdung, Abmahnung und Kündigung bei unerlaubter Gebrauchsüberlassung §§ 543 Abs. 2 Nr. 2, 573 Abs. 2 Nr. 1 BGB, Rückgabeanspruch gegen den Untermieter § 546 Abs. 2 BGB. Use when eine Untermieterlaubnis beantragt, erteilt, verweigert oder eine unerlaubte Gebrauchsüberlassung sanktioniert wird.",
+      "description": "Untervermietung und Gebrauchsüberlassung an Dritte im Wohnraummietrecht – Erlaubnisvorbehalt § 540 BGB und Sonderkündigungsrecht des Mieters, Anspruch auf Gestattung der Teiluntervermietung bei berechtigtem Interesse § 553 Abs. 1 BGB, Untermietzuschlag § 553 Abs. 2 BGB, Abgrenzung zur Aufnahme von Angehörigen und Besuchern, Kurzzeitvermietung und Zweckentfremdung, Abmahnung und Kündigung bei unerlaubter Gebrauchsüberlassung §§ 543 Abs. 2 Nr. 2, 573 Abs. 2 Nr. 1 BGB, Rückgabeanspruch gegen den Untermieter § 546 Abs. 2 BGB, keine Untervermietung mit Gewinn (BGH 2026). Rechtsstand: Oktober 2026. Use when eine Untermieterlaubnis beantragt, erteilt, verweigert oder eine unerlaubte Gebrauchsüberlassung sanktioniert wird.",
       "path": "mietrecht/skills/untervermietung/SKILL.md",
       "domain": "mietrecht",
       "category": "mietrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "untervermietung",
@@ -1378,18 +1702,19 @@
     },
     {
       "name": "bauliche-veraenderung",
-      "description": "Einordnung einer baulichen Veränderung im Wohnungseigentum nach der WEMoG-Reform – Gestattungsbeschluss mit einfacher Mehrheit § 20 Abs. 1 WEG, privilegierter Anspruch auf Barrierefreiheit, E-Mobilität, Einbruchschutz, Glasfaser und Steckersolargeräte § 20 Abs. 2 WEG, Zustimmung Beeinträchtigter § 20 Abs. 3 WEG, Kostenverteilung § 21 WEG. Use when eine geplante bauliche Maßnahme eines Wohnungseigentümers auf Beschlusserfordernis, privilegierten Anspruch und Kostentragung geprüft wird.",
+      "description": "Einordnung einer baulichen Veränderung im Wohnungseigentum nach der WEMoG-Reform – Beschluss oder Gestattungsbeschluss mit einfacher Mehrheit § 20 Abs. 1 WEG (Beschlusszwang auch in der Zweiergemeinschaft), privilegierter Anspruch auf Barrierefreiheit, E-Mobilität, Einbruchsschutz, Glasfaser und Steckersolargeräte § 20 Abs. 2 WEG (Steckersolar seit 17.10.2024), Gestattungsanspruch bei Einverständnis aller Beeinträchtigten § 20 Abs. 3 WEG, Grenzen § 20 Abs. 4 WEG, Kosten und Nutzungen § 21 Abs. 1–5 WEG, Duldungspflicht von Mietern § 15 WEG. Rechtsstand: Oktober 2026. Use when eine geplante oder bereits ausgeführte bauliche Maßnahme eines Wohnungseigentümers auf Beschlusserfordernis, privilegierten Anspruch, Beseitigung und Kostentragung geprüft wird.",
       "path": "wohnungseigentumsrecht/skills/bauliche-veraenderung/SKILL.md",
       "domain": "wohnungseigentumsrecht",
       "category": "wohnungseigentumsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bauliche",
         "veraenderung",
         "§20",
         "§21",
+        "§15",
         "wohnungseigentumsrecht"
       ],
       "tools": 0,
@@ -1398,19 +1723,67 @@
     },
     {
       "name": "beschlussanfechtung",
-      "description": "Prüfung der Erfolgsaussicht einer WEG-Beschlussanfechtung nach der WEMoG-Reform – Anfechtungsklage gegen die Gemeinschaft der Wohnungseigentümer § 44 Abs. 2 WEG, Monatsfrist § 45 WEG, Nichtigkeit und Anfechtbarkeit § 23 Abs. 4 WEG, Maßstab der ordnungsmäßigen Verwaltung § 19 WEG. Use when ein Wohnungseigentümer einen Beschluss der Eigentümerversammlung anfechten will oder die Erfolgsaussicht einer Anfechtungsklage geprüft werden soll.",
+      "description": "Prüfung der Erfolgsaussicht einer WEG-Beschlussanfechtung nach der WEMoG-Reform – Anfechtungs- und Nichtigkeitsklage § 44 Abs. 1 WEG gegen die Gemeinschaft der Wohnungseigentümer § 44 Abs. 2 WEG, Klage- und Begründungsfrist § 45 S. 1 WEG mit Wiedereinsetzung § 45 S. 2 WEG, Zustellung demnächst, Nichtigkeit und Anfechtbarkeit § 23 Abs. 4 WEG, Einberufung und Ankündigung §§ 23 Abs. 2, 24 Abs. 4 WEG, ordnungsmäßige Verwaltung §§ 18 Abs. 2, 19 WEG, Teilanfechtung, Zuständigkeit § 43 Abs. 2 WEG, Streitwert § 49 GKG, Kostenlast des obsiegenden Klägers. Rechtsstand: Oktober 2026. Use when ein Wohnungseigentümer einen Beschluss der Eigentümerversammlung anfechten will oder die Erfolgsaussicht einer Anfechtungsklage geprüft werden soll.",
       "path": "wohnungseigentumsrecht/skills/beschlussanfechtung/SKILL.md",
       "domain": "wohnungseigentumsrecht",
       "category": "wohnungseigentumsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beschlussanfechtung",
         "§44",
         "§45",
         "§23",
+        "§§23",
+        "§§18",
+        "§43",
+        "§49"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "beschlussersetzungsklage",
+      "description": "Durchsetzung eines Anspruchs auf ordnungsmäßige Verwaltung durch die Beschlussersetzungsklage nach WEG – Anspruch des Eigentümers gegen die Gemeinschaft der Wohnungseigentümer § 18 Abs. 2 WEG mit Katalog § 19 Abs. 2 WEG, Beschlussersetzungsklage § 44 Abs. 1 S. 2 WEG gegen die GdWE § 44 Abs. 2 WEG, Vorbefassung der Eigentümerversammlung als Rechtsschutzbedürfnis, Verbindung mit der Anfechtung des Negativbeschlusses und Monatsfrist § 45 WEG, Ermessen des Gerichts, typische Klageziele (Erhaltung, Herstellung, zertifizierter Verwalter, Gestattung nach § 20 Abs. 2 und 3 WEG, Kostenverteilung, Jahresabrechnung), einstweiliger Rechtsschutz, Zuständigkeit § 43 Abs. 2 WEG, Streitwert § 49 GKG. Rechtsstand: Oktober 2026. Use when die Eigentümerversammlung einen notwendigen Beschluss ablehnt oder nicht fasst und ein Eigentümer ihn gerichtlich ersetzen lassen will.",
+      "path": "wohnungseigentumsrecht/skills/beschlussersetzungsklage/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "beschlussersetzungsklage",
+        "§18",
         "§19",
+        "§44",
+        "§45",
+        "§20",
+        "§43",
+        "§49"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "eigentuemerversammlung-beschlussfassung",
+      "description": "Vorbereitung, Durchführung und Kontrolle der Eigentümerversammlung nach WEG – Einberufung in Textform mit Drei-Wochen-Frist und Einberufungsverlangen von mehr als einem Viertel § 24 WEG, Ankündigung des Gegenstands § 23 Abs. 2 WEG, Online-Teilnahme (Hybridversammlung) § 23 Abs. 1 S. 2 WEG, virtuelle Eigentümerversammlung § 23 Abs. 1a WEG (Drei-Viertel-Beschluss, höchstens drei Jahre, jährliche Präsenzversammlung bis 2028 nach § 48 Abs. 6 WEG), Umlaufbeschluss § 23 Abs. 3 WEG, Mehrheit, Kopfprinzip, Vollmacht in Textform und Stimmverbot § 25 WEG, Niederschrift und Beschluss-Sammlung § 24 Abs. 6–8 WEG, Verwaltungsbeirat § 29 WEG. Rechtsstand: Oktober 2026. Use when eine Eigentümerversammlung einberufen, als hybride oder virtuelle Versammlung organisiert, ein Umlaufbeschluss vorbereitet oder die formelle Ordnungsmäßigkeit einer Beschlussfassung geprüft werden soll.",
+      "path": "wohnungseigentumsrecht/skills/eigentuemerversammlung-beschlussfassung/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "eigentuemerversammlung",
+        "beschlussfassung",
+        "§24",
+        "§23",
+        "§48",
+        "§25",
+        "§29",
         "wohnungseigentumsrecht"
       ],
       "tools": 0,
@@ -1418,13 +1791,36 @@
       "has_assets": false
     },
     {
+      "name": "hausgeld-beitreibung-entziehung",
+      "description": "Beitreibung rückständigen Hausgelds durch die Gemeinschaft der Wohnungseigentümer und Entziehung des Wohnungseigentums – Anspruchsgrundlage Vorschuss- und Nachschussbeschlüsse § 28 Abs. 1–3 WEG, Verzug und Verzugszinsen §§ 286, 288, 247 BGB, kein Zurückbehaltungsrecht gegenüber Vorschüssen, Mahnbescheid und Zahlungsklage vor dem Amtsgericht § 43 Abs. 2 Nr. 2 WEG, Vertretung durch den Verwalter § 9b WEG, Verjährung §§ 195, 199 BGB (Hausgeld 2023 verjährt mit Ablauf des 31.12.2026), Zwangsversteigerung mit Vorrang § 10 Abs. 1 Nr. 2 ZVG (Jahr der Beschlagnahme und zwei Vorjahre, höchstens 5 % des Verkehrswerts, Titel nach § 10 Abs. 3 ZVG), Sicherungshypothek § 866 ZPO, Insolvenz des Eigentümers, Entziehung § 17 WEG mit Abmahnung und Veräußerungsurteil, Stimmverbot § 25 Abs. 4 WEG. Rechtsstand: Oktober 2026. Use when ein Wohnungseigentümer Hausgeld, Nachschüsse oder Sonderumlagen nicht zahlt und die Gemeinschaft Beitreibung, Vollstreckung oder Entziehung prüft.",
+      "path": "wohnungseigentumsrecht/skills/hausgeld-beitreibung-entziehung/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "hausgeld",
+        "beitreibung",
+        "entziehung",
+        "§28",
+        "§§286",
+        "§43",
+        "§9b",
+        "§§195"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "hausgeldabrechnung",
-      "description": "Prüfung der Jahresabrechnung und der Beschlusskompetenz im Wohnungseigentumsrecht nach der WEMoG-Reform – Wirtschaftsplan und Vorschüsse § 28 Abs. 1 WEG, Nachschüsse und Abrechnungsspitze § 28 Abs. 2 WEG, Vermögensbericht § 28 Abs. 4 WEG, Verteilung nach Miteigentumsanteilen § 16 Abs. 2 WEG, Entziehung § 17 WEG als ultima ratio. Use when eine WEG-Jahresabrechnung oder ein Hausgeld-/Nachschussbeschluss auf Plausibilität und Beschlusskompetenz geprüft wird.",
+      "description": "Prüfung von Wirtschaftsplan, Jahresabrechnung und Nachschussbeschluss im Wohnungseigentumsrecht nach der WEMoG-Reform – Vorschüsse und Wirtschaftsplan § 28 Abs. 1 WEG, Nachschüsse und Abrechnungsspitze § 28 Abs. 2 WEG (Auslegung eines Beschlusses über die „Jahresabrechnung\" als Beschluss über die Abrechnungsspitzen; Anfechtbarkeit nur bei Fehlern mit Auswirkung auf die Spitze), Vermögensbericht § 28 Abs. 4 WEG, Verteilung nach Miteigentumsanteilen § 16 Abs. 2 WEG, Fälligkeit § 28 Abs. 3 WEG, kein Zurückbehaltungsrecht gegenüber Vorschüssen, Entziehung § 17 WEG als ultima ratio. Rechtsstand: Oktober 2026. Use when eine WEG-Jahresabrechnung oder ein Hausgeld-/Nachschussbeschluss auf Plausibilität, Beschlusskompetenz und Anfechtungsaussicht geprüft wird.",
       "path": "wohnungseigentumsrecht/skills/hausgeldabrechnung/SKILL.md",
       "domain": "wohnungseigentumsrecht",
       "category": "wohnungseigentumsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hausgeldabrechnung",
@@ -1438,13 +1834,81 @@
       "has_assets": false
     },
     {
+      "name": "kostenverteilung-16-weg",
+      "description": "Änderung des Kostenverteilungsschlüssels im Wohnungseigentum durch Beschluss – gesetzlicher Schlüssel nach Miteigentumsanteilen § 16 Abs. 2 S. 1 WEG, Beschlusskompetenz für einzelne Kosten oder bestimmte Arten von Kosten auch abweichend von einer Vereinbarung § 16 Abs. 2 S. 2 WEG, erstmalige Belastung und vollständige Befreiung einzelner Eigentümer, Änderung für eine einzelne Erhaltungsmaßnahme, Grenzen der ordnungsmäßigen Verwaltung bei objektbezogener Kostentrennung und beim Wechsel zum Objektprinzip bei unterschiedlich großen Einheiten, Bindung der Folgebeschlüsse, Abgrenzung zu § 21 WEG und zum Anpassungsanspruch § 10 Abs. 2 WEG, Wirkung gegenüber Sondernachfolgern § 10 Abs. 3, § 48 Abs. 1 WEG. Rechtsstand: Oktober 2026. Use when eine Gemeinschaft den Verteilerschlüssel für Erhaltungs-, Betriebs- oder Verwaltungskosten ändern will oder ein Eigentümer einen Kostenverteilungsbeschluss angreifen möchte.",
+      "path": "wohnungseigentumsrecht/skills/kostenverteilung-16-weg/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "kostenverteilung",
+        "weg",
+        "§16",
+        "§21",
+        "§10",
+        "§48",
+        "wohnungseigentumsrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "vermietete-eigentumswohnung",
+      "description": "Schnittstelle Wohnungseigentum und Mietrecht bei der vermieteten Eigentumswohnung – Betriebskostenumlage nach dem WEG-Verteilerschlüssel § 556a Abs. 3 BGB und Trennung von WEG-Jahresabrechnung und Betriebskostenabrechnung § 556 Abs. 3 BGB, Duldungspflicht des Mieters gegenüber der Gemeinschaft § 15 WEG, bauliche Veränderungen auf Wunsch des Mieters § 554 BGB und Gestattungsanspruch des Vermieters § 20 Abs. 2 WEG, Haftung des Vermieters für geduldete Veränderungen des Mieters, Mängel am Gemeinschaftseigentum mit Minderung im Mietverhältnis und Schadensersatz gegen die GdWE, Vorkaufsrecht § 577 BGB und Kündigungssperrfrist § 577a BGB nach Umwandlung. Rechtsstand: Oktober 2026. Use when eine Eigentumswohnung vermietet ist und Betriebskosten, Erhaltungsmaßnahmen, bauliche Veränderungen, Mängel oder Kündigung das Verhältnis zwischen Mieter, vermietendem Eigentümer und Gemeinschaft berühren.",
+      "path": "wohnungseigentumsrecht/skills/vermietete-eigentumswohnung/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "vermietete",
+        "eigentumswohnung",
+        "§556a",
+        "§556",
+        "§15",
+        "§554",
+        "§20",
+        "§577"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "verwalter-bestellung-abberufung",
+      "description": "Bestellung, Abberufung und Pflichten des WEG-Verwalters nach der WEMoG-Reform – Bestellung durch Beschluss mit Höchstdauer fünf Jahre (erste Bestellung drei Jahre) und Wiederbestellung frühestens ein Jahr vor Ablauf § 26 Abs. 1, 2 WEG, jederzeitige Abberufung ohne wichtigen Grund und Ende des Verwaltervertrags spätestens sechs Monate danach § 26 Abs. 3 WEG, Unabdingbarkeit § 26 Abs. 5 WEG, Anspruch auf zertifizierten Verwalter § 19 Abs. 2 Nr. 6, § 26a WEG mit ZertVerwV (seit 01.12.2023; Übergangsschutz für Altverwalter bis 01.06.2024 abgelaufen), Aufgaben und Befugnisse § 27 WEG, Vertretung der GdWE § 9b WEG, Haftung gegenüber der GdWE. Rechtsstand: Oktober 2026. Use when ein Verwalter bestellt, wiederbestellt oder abberufen werden soll, ein Eigentümer einen zertifizierten Verwalter verlangt oder Pflichtverletzungen und Haftung des Verwalters geprüft werden.",
+      "path": "wohnungseigentumsrecht/skills/verwalter-bestellung-abberufung/SKILL.md",
+      "domain": "wohnungseigentumsrecht",
+      "category": "wohnungseigentumsrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "verwalter",
+        "bestellung",
+        "abberufung",
+        "§26",
+        "§19",
+        "§26a",
+        "§27",
+        "§9b"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "gesellschafterbeschluss-anfechtung",
       "description": "Prüfung der Anfechtung und Nichtigkeit von GmbH-Gesellschafterbeschlüssen – Beschlussfassung § 47 GmbHG, Stimmverbote § 47 Abs. 4 GmbHG, Einberufung und Ankündigung § 51 GmbHG, Beschlussmängelrecht in analoger Anwendung der §§ 241, 243, 246 AktG (Nichtigkeit, Anfechtbarkeit, Anfechtungsfrist). Use when ein GmbH-Gesellschafter einen Beschluss der Gesellschafterversammlung auf Nichtigkeit oder Anfechtbarkeit prüfen oder eine Beschlussmängelklage erheben will.",
       "path": "gesellschaftsrecht/skills/gesellschafterbeschluss-anfechtung/SKILL.md",
       "domain": "gesellschaftsrecht",
       "category": "gesellschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gesellschafterbeschluss",
@@ -1467,7 +1931,7 @@
       "domain": "gesellschaftsrecht",
       "category": "gesellschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gmbh",
@@ -1490,7 +1954,7 @@
       "domain": "gesellschaftsrecht",
       "category": "gesellschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kapitalerhaltung",
@@ -1511,7 +1975,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "akteneinsicht",
@@ -1532,7 +1996,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "berufung",
@@ -1555,7 +2019,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beschuldigtenvernehmung",
@@ -1576,7 +2040,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beweisverwertungsverbot",
@@ -1597,7 +2061,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "durchsuchung",
@@ -1620,7 +2084,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "notwendige",
@@ -1643,7 +2107,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "opportunitaetseinstellung",
@@ -1664,7 +2128,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "revision",
@@ -1687,7 +2151,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "strafbefehl",
@@ -1708,7 +2172,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "untersuchungshaft",
@@ -1730,7 +2194,7 @@
       "domain": "strafrecht",
       "category": "strafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wiederaufnahme",
@@ -1751,7 +2215,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "antragspflicht",
@@ -1774,7 +2238,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fortbestehensprognose",
@@ -1793,7 +2257,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "liquiditaetsplanung",
@@ -1813,7 +2277,7 @@
       "domain": "insolvenzrecht",
       "category": "insolvenzrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "starug",
@@ -1836,7 +2300,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arrest",
@@ -1859,7 +2323,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "berufung",
@@ -1882,7 +2346,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beweislast",
@@ -1905,7 +2369,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einstweilige",
@@ -1928,7 +2392,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "klageschrift",
@@ -1948,7 +2412,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mahnverfahren",
@@ -1971,7 +2435,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "prozesskostenhilfe",
@@ -1992,7 +2456,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "selbststaendiges",
@@ -2015,7 +2479,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "versaeumnisurteil",
@@ -2038,7 +2502,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vollstreckungsabwehrklage",
@@ -2059,7 +2523,7 @@
       "domain": "prozessrecht",
       "category": "prozessrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "zwangsvollstreckung",
@@ -2082,7 +2546,7 @@
       "domain": "erbrecht",
       "category": "erbrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gesetzliche",
@@ -2104,7 +2568,7 @@
       "domain": "erbrecht",
       "category": "erbrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "pflichtteil",
@@ -2127,7 +2591,7 @@
       "domain": "erbrecht",
       "category": "erbrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "testament",
@@ -2150,7 +2614,7 @@
       "domain": "familienrecht",
       "category": "familienrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ehegattenunterhalt",
@@ -2172,7 +2636,7 @@
       "domain": "familienrecht",
       "category": "familienrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kindesunterhalt",
@@ -2195,7 +2659,7 @@
       "domain": "familienrecht",
       "category": "familienrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "scheidung",
@@ -2218,7 +2682,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "betreuerbestellung",
@@ -2239,7 +2703,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einwilligungsvorbehalt",
@@ -2258,7 +2722,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "jahresbericht",
@@ -2279,7 +2743,7 @@
       "domain": "betreuungsrecht",
       "category": "betreuungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorsorgevollmacht",
@@ -2301,7 +2765,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cloud",
@@ -2323,7 +2787,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "domainrecht",
@@ -2344,7 +2808,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "commerce",
@@ -2367,7 +2831,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sicherheit",
@@ -2386,7 +2850,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertragspruefung",
@@ -2405,7 +2869,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertraege",
@@ -2428,7 +2892,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "open",
@@ -2451,7 +2915,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "providerhaftung",
@@ -2474,7 +2938,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "saas",
@@ -2496,7 +2960,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "softwareerstellung",
@@ -2519,7 +2983,7 @@
       "domain": "it-recht",
       "category": "it-recht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "softwarelizenz",
@@ -2542,7 +3006,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "buergschaft",
@@ -2565,7 +3029,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kreditvertragspruefung",
@@ -2587,7 +3051,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "widerruf",
@@ -2610,7 +3074,7 @@
       "domain": "bankrecht",
       "category": "bankrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "zahlungsdiensthaftung",
@@ -2631,7 +3095,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "designschutz",
@@ -2649,7 +3113,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "markenanmeldung",
@@ -2667,7 +3131,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "markenrechtsverletzung",
@@ -2686,7 +3150,7 @@
       "domain": "gewerblicher-rechtsschutz",
       "category": "gewerblicher-rechtsschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patentverletzung",
@@ -2700,22 +3164,92 @@
       "has_assets": false
     },
     {
+      "name": "aenderung-bescheid-korrekturvorschriften",
+      "description": "Korrektur bestandskräftiger oder noch offener Steuerbescheide zugunsten oder zulasten des Steuerpflichtigen – offenbare Unrichtigkeit § 129 AO, Vorbehalt der Nachprüfung § 164 AO, vorläufige Festsetzung § 165 AO, schlichter Änderungsantrag § 172 Abs. 1 S. 1 Nr. 2 a AO, neue Tatsachen § 173 AO (grobes Verschulden), Schreib- und Rechenfehler § 173a AO, widerstreitende Festsetzungen § 174 AO, Grundlagenbescheid und rückwirkendes Ereignis § 175 AO, Datenübermittlung § 175b AO, Vertrauensschutz § 176 AO, Mitberichtigung § 177 AO, Festsetzungsverjährung §§ 169–171 AO. Rechtsstand Oktober 2026. Use when die Einspruchsfrist abgelaufen ist oder geprüft wird, ob und auf welcher Grundlage ein Steuerbescheid noch geändert werden kann.",
+      "path": "steuerrecht/skills/aenderung-bescheid-korrekturvorschriften/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "aenderung",
+        "bescheid",
+        "korrekturvorschriften",
+        "§129",
+        "§164",
+        "§165",
+        "§172",
+        "§173"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
       "name": "aussenpruefung-betriebspruefung",
-      "description": "Begleitung einer Außenprüfung (Betriebsprüfung) durch die Finanzbehörde nach §§ 193 ff. AO. Anordnung und Prüfungsumfang, Mitwirkungspflichten §§ 90, 200 AO, Schlussbesprechung § 201 AO, Schätzungen § 162 AO, Rechtsbehelfe gegen Prüfungshandlungen, GoBD-konforme Aufzeichnungen. Use when ein Mandant eine Prüfungsanordnung erhalten hat oder die Schlussbesprechung vorbereitet.",
+      "description": "Begleitung einer Außenprüfung (Betriebsprüfung) nach §§ 193 ff. AO im reformierten Recht seit 2025 – Prüfungsanordnung § 196, Vorlagefristen und Prüfungsschwerpunkte § 197, Zwischengespräche und Kooperationsvereinbarung § 199 Abs. 2, qualifiziertes Mitwirkungsverlangen mit Mitwirkungsverzögerungsgeld und Zuschlag § 200a, Teilabschlussbescheid § 180 Abs. 1a, Fünf-Jahres-Grenze der Ablaufhemmung § 171 Abs. 4 S. 3 AO, Datenzugriff § 147 Abs. 6 AO, Schätzung § 162 AO, Schlussbesprechung § 201 AO, Außenprüfungsordnung (ApO) 2026. Use when ein Mandant eine Prüfungsanordnung erhalten hat, ein Mitwirkungsverlangen eingeht oder die Schlussbesprechung vorbereitet wird.",
       "path": "steuerrecht/skills/aussenpruefung-betriebspruefung/SKILL.md",
       "domain": "steuerrecht",
       "category": "steuerrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aussenpruefung",
         "betriebspruefung",
         "§§193",
-        "§§90",
-        "§201",
-        "§162",
-        "steuerrecht"
+        "§196",
+        "§197",
+        "§199",
+        "§200a",
+        "§180"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "aussetzung-der-vollziehung",
+      "description": "Antrag auf Aussetzung (und Aufhebung) der Vollziehung eines Steuerbescheids bei Finanzamt und Finanzgericht – ernstliche Zweifel und unbillige Härte § 361 Abs. 2 AO, Begrenzung auf die Abschlusszahlung § 361 Abs. 2 S. 4 AO, Folgebescheide § 361 Abs. 3 AO, Sicherheitsleistung, Zugangsvoraussetzung § 69 Abs. 4 FGO, Beschwerde § 128 Abs. 3 FGO, Aussetzungszinsen § 237 AO (anhängige BFH-Vorlage an das BVerfG), Abwägung gegen Säumniszuschläge § 240 AO. Rechtsstand Oktober 2026. Use when nach Einspruch oder Klage die Zahlung einer streitigen Steuer bis zur Entscheidung abgewendet werden soll.",
+      "path": "steuerrecht/skills/aussetzung-der-vollziehung/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "aussetzung",
+        "der",
+        "vollziehung",
+        "§361",
+        "§69",
+        "§128",
+        "§237",
+        "§240"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "e-rechnung-vorsteuer",
+      "description": "E-Rechnungspflicht im inländischen B2B-Verkehr und Vorsteuerabzug – Begriffe E-Rechnung und sonstige Rechnung § 14 Abs. 1 S. 3–6 UStG (EN 16931: XRechnung, ZUGFeRD), Pflicht nach § 14 Abs. 2 S. 2 Nr. 1 UStG, Übergangsfristen § 27 Abs. 38 UStG (Ausstellungspflicht ab 01.01.2027 bei Vorjahresumsatz über 800.000 EUR, ab 01.01.2028 für alle), Empfangspflicht seit 2025, Ausnahmen (Kleinbetrag, Fahrausweis, Kleinunternehmer, steuerfreie Umsätze), Rechnungsangaben § 14 Abs. 4 UStG, Vorsteuerabzug § 15 Abs. 1 S. 1 Nr. 1 UStG und Rechnungsberichtigung, Gutschrift, Aufbewahrung acht Jahre § 14b UStG / § 147 AO und GoBD, unberechtigter Steuerausweis § 14c UStG, Gastronomie 7 % seit 2026 § 12 Abs. 2 Nr. 15 UStG. BMF-Schreiben vom 15.10.2024, 15.10.2025 und 15.10.2026. Rechtsstand Oktober 2026. Use when ein Unternehmen seine Rechnungsstellung auf 2027 umstellt, eine Eingangsrechnung auf Vorsteuerabzugsfähigkeit prüft oder in der Prüfung Vorsteuer wegen Rechnungsmängeln versagt wird.",
+      "path": "steuerrecht/skills/e-rechnung-vorsteuer/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "rechnung",
+        "vorsteuer",
+        "§14",
+        "§27",
+        "§15",
+        "§14b",
+        "§147",
+        "§14c"
       ],
       "tools": 0,
       "has_references": false,
@@ -2723,22 +3257,114 @@
     },
     {
       "name": "einspruch-finanzamt",
-      "description": "Prüfung und Einlegung des Einspruchs gegen einen Steuerbescheid – Statthaftigkeit § 347 AO, Einspruchsfrist von einem Monat § 355 AO, Form und Inhalt § 357 AO, Aussetzung der Vollziehung § 361 AO, Verböserungsgefahr § 367 Abs. 2 AO, Bekanntgabe und Fristberechnung § 122 AO. Use when gegen einen Steuerbescheid oder einen anderen Verwaltungsakt der Finanzbehörde Einspruch geprüft oder eingelegt werden soll.",
+      "description": "Prüfung und Einlegung des Einspruchs gegen einen Steuerbescheid – Statthaftigkeit § 347 AO, Einspruchsfrist von einem Monat § 355 AO, Bekanntgabe per Post (§ 122 Abs. 2 AO, vier Tage) und per Datenabruf (§ 122a Abs. 4 AO, vier Tage nach Bereitstellung), Form und Inhalt § 357 AO, Aussetzung der Vollziehung § 361 AO, Ruhen § 363 AO, Präklusion § 364b AO, Verböserungsgefahr § 367 Abs. 2 AO. Rechtsstand Oktober 2026 inkl. Hinweis auf den Entwurf des JStG 2026. Use when gegen einen Steuerbescheid oder einen anderen Verwaltungsakt der Finanzbehörde Einspruch geprüft oder eingelegt werden soll.",
       "path": "steuerrecht/skills/einspruch-finanzamt/SKILL.md",
       "domain": "steuerrecht",
       "category": "steuerrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einspruch",
         "finanzamt",
         "§347",
         "§355",
+        "§122",
+        "§122a",
         "§357",
-        "§361",
+        "§361"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "finanzgerichtsklage",
+      "description": "Klage vor dem Finanzgericht nach der FGO – Klagearten §§ 40, 41 FGO, Vorverfahren § 44, Sprungklage § 45, Untätigkeitsklage § 46, Klagefrist von einem Monat § 47 FGO (Jahresfrist nach Allgemeinverfügung § 367 Abs. 2b AO), elektronische Einreichungspflicht § 52d FGO, Muss-Inhalt § 65, Präklusion §§ 65 Abs. 2, 79b FGO und § 76 Abs. 3 FGO, Änderungsbescheid im Prozess § 68, Videoverhandlung (§ 91a a. F. der FGO seit 19.07.2024 aufgehoben), Nichtzulassungsbeschwerde und Revision §§ 115 ff. FGO, Kosten (GKG-Mindeststreitwert 1.500 EUR, KV GKG Nr. 6110). Rechtsstand Oktober 2026. Use when nach einer Einspruchsentscheidung Klage zum Finanzgericht erhoben, vorbereitet oder gegen ein FG-Urteil vorgegangen werden soll.",
+      "path": "steuerrecht/skills/finanzgerichtsklage/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "finanzgerichtsklage",
+        "§§40",
+        "§44",
+        "§45",
+        "§46",
+        "§47",
         "§367",
-        "§122"
+        "§52d"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "fristen-verspaetungszuschlag",
+      "description": "Steuererklärungsfristen und Verspätungszuschlag – Abgabefristen § 149 Abs. 2, 3 AO (VZ 2025: 31.07.2026 / beraten 01.03.2027; VZ 2026: 02.08.2027 / beraten 29.02.2028), Ende der Corona-Verlängerungen (Art. 97 § 36 EGAO) mit VZ 2024, Vorabanforderung § 149 Abs. 4 AO, Fristverlängerung § 109 AO, Ermessens- und Muss-Zuschlag § 152 Abs. 1, 2 AO (14 Monate; 19 Monate nur bei Land- und Forstwirten mit abweichendem Wirtschaftsjahr), Ausnahmen § 152 Abs. 3, Bemessung § 152 Abs. 5, 6, 10 AO (0,25 %, mind. 25 EUR je Monat, höchstens 25.000 EUR), Zwangsgeld § 329 AO, Schätzung § 162 AO. Rechtsstand Oktober 2026, mit Hinweis auf § 152 Abs. 4 AO im Entwurf JStG 2026. Use when Erklärungsfristen bestimmt, Fristverlängerung beantragt oder ein Verspätungszuschlag angegriffen werden soll.",
+      "path": "steuerrecht/skills/fristen-verspaetungszuschlag/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "fristen",
+        "verspaetungszuschlag",
+        "§149",
+        "§36",
+        "§109",
+        "§152",
+        "§329",
+        "§162"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "grundsteuer-einspruch",
+      "description": "Rechtsschutz gegen die reformierte Grundsteuer (ab 2025) – dreistufiges Verfahren Grundsteuerwertbescheid / Grundsteuermessbescheid (Finanzamt) / Grundsteuerbescheid (Gemeinde), Bindung des Folgebescheids §§ 182, 351 Abs. 2 AO, Einspruch gegen den richtigen Bescheid, Nachweis des niedrigeren gemeinen Werts (40-%-Grenze, § 220 Abs. 2 BewG), Fortschreibung und Fehlerbeseitigung, Bundesmodell §§ 252–257 BewG (BFH II R 25/24) und Landesmodelle (BW, BY, HH, HE, NI), Ruhen § 363 Abs. 2 AO wegen anhängiger Verfassungsbeschwerden, Aussetzung der Vollziehung § 361 Abs. 3 AO. Rechtsstand Oktober 2026. Use when ein Eigentümer Grundsteuerwert, Messbetrag oder Grundsteuer angreifen oder einen niedrigeren Wert nachweisen will.",
+      "path": "steuerrecht/skills/grundsteuer-einspruch/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "grundsteuer",
+        "einspruch",
+        "§§182",
+        "§220",
+        "§§252",
+        "§363",
+        "§361",
+        "steuerrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "haftungsbescheid",
+      "description": "Abwehr und Prüfung eines Haftungsbescheids des Finanzamts – Haftung der Geschäftsführer und Vertreter §§ 34, 35, 69 AO (Grundsatz anteiliger Tilgung, Sonderfall Lohnsteuer), Haftung des Steuerhinterziehers § 71 AO, Betriebsübernehmer § 75 AO, Organschaft § 73 AO, Arbeitgeberhaftung § 42d EStG, Haftungsbescheid und Ermessen § 191 AO, Festsetzungsfrist § 191 Abs. 3 AO, Akzessorietät § 191 Abs. 5 AO, Subsidiarität der Zahlungsaufforderung § 219 AO, Drittwirkung § 166 AO, Insolvenzlage und § 15b Abs. 8 InsO, Ressortaufteilung. Rechtsstand Oktober 2026. Use when ein Geschäftsführer, Vorstand, Liquidator oder Erwerber für Steuerschulden einer Gesellschaft oder eines Dritten in Anspruch genommen wird oder dies droht.",
+      "path": "steuerrecht/skills/haftungsbescheid/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "haftungsbescheid",
+        "§§34",
+        "§71",
+        "§75",
+        "§73",
+        "§42d",
+        "§191",
+        "§219"
       ],
       "tools": 0,
       "has_references": false,
@@ -2746,19 +3372,44 @@
     },
     {
       "name": "selbstanzeige",
-      "description": "Prüfung der strafbefreienden Selbstanzeige bei Steuerhinterziehung – Wirksamkeitsvoraussetzungen und Vollständigkeitsgebot § 371 AO, Sperrgründe § 371 Abs. 2 AO (Prüfungsanordnung, Tatentdeckung, Bekanntgabe der Einleitung), fristgerechte Nachzahlung nebst Hinterziehungszinsen, Zuschlag und Absehen von Verfolgung § 398a AO, Abgrenzung zur Berichtigung § 153 AO. Use when eine strafbefreiende Selbstanzeige nach § 371 AO vorbereitet oder auf Wirksamkeit geprüft wird.",
+      "description": "Prüfung der strafbefreienden Selbstanzeige bei Steuerhinterziehung – Vollständigkeitsgebot und Zehn-Jahres-Berichtigungsverbund § 371 Abs. 1 AO, Sperrgründe § 371 Abs. 2 AO (Prüfungsanordnung beschränkt auf den angekündigten Prüfungsumfang, Einleitung, Erscheinen, Nachschau, Tatentdeckung, 25.000-EUR-Grenze, besonders schwerer Fall), Teilselbstanzeige bei Voranmeldungen § 371 Abs. 2a, Nachzahlungsfrist § 371 Abs. 3, Dritte § 371 Abs. 4, Hinterziehungszinsen § 235 AO, Zuschlag und Absehen von Verfolgung § 398a AO, Abgrenzung zu § 153 AO und § 378 Abs. 3 AO. Use when eine strafbefreiende Selbstanzeige nach § 371 AO vorbereitet oder auf Wirksamkeit geprüft wird.",
       "path": "steuerrecht/skills/selbstanzeige/SKILL.md",
       "domain": "steuerrecht",
       "category": "steuerrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "selbstanzeige",
         "§371",
+        "§235",
         "§398a",
         "§153",
+        "§378",
         "steuerrecht"
+      ],
+      "tools": 0,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "stundung-erlass-vollstreckungsschutz",
+      "description": "Zahlungsschwierigkeiten gegenüber dem Finanzamt – Stundung § 222 AO mit Stundungszinsen § 234 AO, Erlass aus sachlichen oder persönlichen Billigkeitsgründen § 227 AO (Erlassbedürftigkeit, Erlasswürdigkeit), Säumniszuschläge § 240 AO (verfassungsgemäß, BFH XI R 18/23) und ihr hälftiger Erlass, Vollstreckungsvoraussetzungen §§ 249, 254 AO, Vollstreckungsaufschub § 258 AO, Kontopfändung §§ 309, 314 AO mit P-Konto-Schutz § 850k ZPO, Vermögensauskunft § 284 AO, Rechtsschutz durch Einspruch und einstweilige Anordnung § 114 FGO, Zahlungsverjährung § 228 AO. Rechtsstand Oktober 2026, mit Hinweis auf die geplante elektronische Kontopfändung (§ 309a, Entwurf JStG 2026). Use when ein Mandant Steuern nicht fristgerecht zahlen kann, Säumniszuschläge angefallen sind oder das Finanzamt vollstreckt.",
+      "path": "steuerrecht/skills/stundung-erlass-vollstreckungsschutz/SKILL.md",
+      "domain": "steuerrecht",
+      "category": "steuerrecht",
+      "subdomain": "",
+      "version": "0.5.0",
+      "license": "Apache-2.0 OR MIT",
+      "tags": [
+        "stundung",
+        "erlass",
+        "vollstreckungsschutz",
+        "§222",
+        "§234",
+        "§227",
+        "§240",
+        "§§249"
       ],
       "tools": 0,
       "has_references": false,
@@ -2771,7 +3422,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "anfechtungsklage",
@@ -2793,7 +3444,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einstweilige",
@@ -2815,7 +3466,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ermessensfehler",
@@ -2835,7 +3486,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fortsetzungsfeststellungsklage",
@@ -2854,7 +3505,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nebenbestimmungen",
@@ -2872,7 +3523,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "normenkontrolle",
@@ -2891,7 +3542,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ruecknahme",
@@ -2911,7 +3562,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verpflichtungsklage",
@@ -2933,7 +3584,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verwaltungsvollstreckung",
@@ -2955,7 +3606,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorlaeufiger",
@@ -2976,7 +3627,7 @@
       "domain": "verwaltungsrecht",
       "category": "verwaltungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "widerspruchsverfahren",
@@ -2997,7 +3648,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gpai",
@@ -3018,7 +3669,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hochrisiko",
@@ -3038,7 +3689,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "transparenzpflichten",
@@ -3058,7 +3709,7 @@
       "domain": "ki-vo-compliance",
       "category": "ki-vo-compliance",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verbotene",
@@ -3079,7 +3730,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "meldepflicht",
@@ -3098,7 +3749,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nis2",
@@ -3118,7 +3769,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nis2",
@@ -3140,7 +3791,7 @@
       "domain": "nis2",
       "category": "nis2",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nis2",
@@ -3160,7 +3811,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "externe",
@@ -3181,7 +3832,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "interne",
@@ -3202,7 +3853,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "meldestelle",
@@ -3225,7 +3876,7 @@
       "domain": "hinweisgeberschutz",
       "category": "hinweisgeberschutz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "repressalienschutz",
@@ -3245,7 +3896,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bafa",
@@ -3268,7 +3919,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beschwerdeverfahren",
@@ -3288,7 +3939,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "praeventions",
@@ -3311,7 +3962,7 @@
       "domain": "lieferkettengesetz",
       "category": "lieferkettengesetz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "risikoanalyse",
@@ -3331,7 +3982,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dora",
@@ -3350,7 +4001,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dora",
@@ -3371,7 +4022,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dora",
@@ -3391,7 +4042,7 @@
       "domain": "dora",
       "category": "dora",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ict",
@@ -3414,7 +4065,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dma",
@@ -3437,7 +4088,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dsa",
@@ -3459,7 +4110,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dsa",
@@ -3481,7 +4132,7 @@
       "domain": "dsa-dma",
       "category": "dsa-dma",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dsa",
@@ -3501,7 +4152,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "esrs",
@@ -3520,7 +4171,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "taxonomie",
@@ -3540,7 +4191,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nachhaltigkeitsbericht",
@@ -3561,7 +4212,7 @@
       "domain": "csrd",
       "category": "csrd",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wesentlichkeitsanalyse",
@@ -3581,7 +4232,7 @@
       "domain": "europarecht",
       "category": "europarecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "richtlinien",
@@ -3601,7 +4252,7 @@
       "domain": "europarecht",
       "category": "europarecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vertragsverletzungsverfahren",
@@ -3621,7 +4272,7 @@
       "domain": "europarecht",
       "category": "europarecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vorabentscheidung",
@@ -3644,7 +4295,7 @@
       "domain": "verfassungsrecht",
       "category": "verfassungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundrechtspruefung",
@@ -3664,7 +4315,7 @@
       "domain": "verfassungsrecht",
       "category": "verfassungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "organstreit",
@@ -3687,7 +4338,7 @@
       "domain": "verfassungsrecht",
       "category": "verfassungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verfassungsbeschwerde",
@@ -3708,7 +4359,7 @@
       "domain": "sozialrecht",
       "category": "sozialrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sgb",
@@ -3731,7 +4382,7 @@
       "domain": "sozialrecht",
       "category": "sozialrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sgb",
@@ -3752,7 +4403,7 @@
       "domain": "sozialrecht",
       "category": "sozialrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "widerspruch",
@@ -3775,7 +4426,7 @@
       "domain": "handelsrecht",
       "category": "handelsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "handelsregister",
@@ -3796,7 +4447,7 @@
       "domain": "handelsrecht",
       "category": "handelsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "handelsvertretervertrag",
@@ -3819,7 +4470,7 @@
       "domain": "handelsrecht",
       "category": "handelsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hgb",
@@ -3842,7 +4493,7 @@
       "domain": "medizinrecht",
       "category": "medizinrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "arzthaftung",
@@ -3863,7 +4514,7 @@
       "domain": "medizinrecht",
       "category": "medizinrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mbo",
@@ -3886,7 +4537,7 @@
       "domain": "medizinrecht",
       "category": "medizinrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patientenrechte",
@@ -3909,7 +4560,7 @@
       "domain": "versicherungsrecht",
       "category": "versicherungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "obliegenheitsverletzung",
@@ -3932,7 +4583,7 @@
       "domain": "versicherungsrecht",
       "category": "versicherungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "versicherungsfall",
@@ -3954,7 +4605,7 @@
       "domain": "versicherungsrecht",
       "category": "versicherungsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "versicherungsmaklerhaftung",
@@ -3977,7 +4628,7 @@
       "domain": "baurecht",
       "category": "baurecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "baugenehmigungsverfahren",
@@ -4000,7 +4651,7 @@
       "domain": "baurecht",
       "category": "baurecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nachbarrechtlicher",
@@ -4023,7 +4674,7 @@
       "domain": "baurecht",
       "category": "baurecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vob",
@@ -4046,7 +4697,7 @@
       "domain": "verkehrsrecht",
       "category": "verkehrsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mpu",
@@ -4069,7 +4720,7 @@
       "domain": "verkehrsrecht",
       "category": "verkehrsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ordnungswidrigkeit",
@@ -4092,7 +4743,7 @@
       "domain": "verkehrsrecht",
       "category": "verkehrsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "stvg",
@@ -4115,7 +4766,7 @@
       "domain": "urheber-medienrecht",
       "category": "urheber-medienrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "lizenzvertrag",
@@ -4136,7 +4787,7 @@
       "domain": "urheber-medienrecht",
       "category": "urheber-medienrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "mstv",
@@ -4159,7 +4810,7 @@
       "domain": "urheber-medienrecht",
       "category": "urheber-medienrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "urheberrechtsverletzung",
@@ -4180,7 +4831,7 @@
       "domain": "sportrecht",
       "category": "sportrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "athletenvertrag",
@@ -4203,7 +4854,7 @@
       "domain": "sportrecht",
       "category": "sportrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dopingverfahren",
@@ -4226,7 +4877,7 @@
       "domain": "sportrecht",
       "category": "sportrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vereinsrechtliche",
@@ -4249,7 +4900,7 @@
       "domain": "migrationsrecht",
       "category": "migrationsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abschiebungsschutz",
@@ -4272,7 +4923,7 @@
       "domain": "migrationsrecht",
       "category": "migrationsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "asylantrag",
@@ -4295,7 +4946,7 @@
       "domain": "migrationsrecht",
       "category": "migrationsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aufenthaltstitel",
@@ -4318,7 +4969,7 @@
       "domain": "agrarrecht",
       "category": "agrarrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "agrar",
@@ -4341,7 +4992,7 @@
       "domain": "agrarrecht",
       "category": "agrarrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gap",
@@ -4359,7 +5010,7 @@
       "domain": "agrarrecht",
       "category": "agrarrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "lwanpg",
@@ -4379,7 +5030,7 @@
       "domain": "vergaberecht",
       "category": "vergaberecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ausschreibungspruefung",
@@ -4401,7 +5052,7 @@
       "domain": "vergaberecht",
       "category": "vergaberecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "nachpruefungsverfahren",
@@ -4424,7 +5075,7 @@
       "domain": "vergaberecht",
       "category": "vergaberecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vergabe",
@@ -4446,7 +5097,7 @@
       "domain": "umweltrecht",
       "category": "umweltrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bimschg",
@@ -4468,7 +5119,7 @@
       "domain": "umweltrecht",
       "category": "umweltrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "krwg",
@@ -4491,7 +5142,7 @@
       "domain": "umweltrecht",
       "category": "umweltrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "uvp",
@@ -4514,7 +5165,7 @@
       "domain": "energierecht",
       "category": "energierecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "eeg",
@@ -4537,7 +5188,7 @@
       "domain": "energierecht",
       "category": "energierecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "energieeffizienzpflicht",
@@ -4557,7 +5208,7 @@
       "domain": "energierecht",
       "category": "energierecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "enwg",
@@ -4579,7 +5230,7 @@
       "domain": "aussenwirtschaft-zoll-sanktionen",
       "category": "aussenwirtschaft-zoll-sanktionen",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "ausfuhr",
@@ -4601,7 +5252,7 @@
       "domain": "aussenwirtschaft-zoll-sanktionen",
       "category": "aussenwirtschaft-zoll-sanktionen",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sanktionslisten",
@@ -4622,7 +5273,7 @@
       "domain": "aussenwirtschaft-zoll-sanktionen",
       "category": "aussenwirtschaft-zoll-sanktionen",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "zolltarif",
@@ -4643,7 +5294,7 @@
       "domain": "geldwaesche-aml-kyc",
       "category": "geldwaesche-aml-kyc",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gwg",
@@ -4664,7 +5315,7 @@
       "domain": "geldwaesche-aml-kyc",
       "category": "geldwaesche-aml-kyc",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kyc",
@@ -4687,7 +5338,7 @@
       "domain": "geldwaesche-aml-kyc",
       "category": "geldwaesche-aml-kyc",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verdachtsmeldung",
@@ -4710,7 +5361,7 @@
       "domain": "transportrecht",
       "category": "transportrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cmr",
@@ -4733,7 +5384,7 @@
       "domain": "transportrecht",
       "category": "transportrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "hgb",
@@ -4756,7 +5407,7 @@
       "domain": "transportrecht",
       "category": "transportrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "lieferbedingungen",
@@ -4778,7 +5429,7 @@
       "domain": "produktrecht",
       "category": "produktrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gpsr",
@@ -4796,7 +5447,7 @@
       "domain": "produktrecht",
       "category": "produktrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "prodhaftg",
@@ -4817,7 +5468,7 @@
       "domain": "produktrecht",
       "category": "produktrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "produkt",
@@ -4840,7 +5491,7 @@
       "domain": "ki-governance",
       "category": "ki-governance",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "monitoring",
@@ -4861,7 +5512,7 @@
       "domain": "ki-governance",
       "category": "ki-governance",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "richtlinie",
@@ -4884,7 +5535,7 @@
       "domain": "ki-governance",
       "category": "ki-governance",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "risikoassessment",
@@ -4902,7 +5553,7 @@
       "domain": "wettbewerbsrecht",
       "category": "wettbewerbsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "einstweilige",
@@ -4925,7 +5576,7 @@
       "domain": "wettbewerbsrecht",
       "category": "wettbewerbsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "irrefuehrende",
@@ -4948,7 +5599,7 @@
       "domain": "wettbewerbsrecht",
       "category": "wettbewerbsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "uwg",
@@ -4971,7 +5622,7 @@
       "domain": "kartellrecht",
       "category": "kartellrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gwb",
@@ -4994,7 +5645,7 @@
       "domain": "kartellrecht",
       "category": "kartellrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kartellverbot",
@@ -5017,7 +5668,7 @@
       "domain": "kartellrecht",
       "category": "kartellrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "marktbeherrschung",
@@ -5040,7 +5691,7 @@
       "domain": "kapitalmarktrecht",
       "category": "kapitalmarktrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "prospektpflicht",
@@ -5063,7 +5714,7 @@
       "domain": "kapitalmarktrecht",
       "category": "kapitalmarktrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wphg",
@@ -5086,7 +5737,7 @@
       "domain": "kapitalmarktrecht",
       "category": "kapitalmarktrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wpueg",
@@ -5109,7 +5760,7 @@
       "domain": "patentrecht",
       "category": "patentrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "freedom",
@@ -5131,7 +5782,7 @@
       "domain": "patentrecht",
       "category": "patentrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patentanmeldung",
@@ -5154,7 +5805,7 @@
       "domain": "patentrecht",
       "category": "patentrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "patentverletzung",
@@ -5174,7 +5825,7 @@
       "domain": "berufsrecht-anwaltschaft",
       "category": "berufsrecht-anwaltschaft",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "brao",
@@ -5197,7 +5848,7 @@
       "domain": "berufsrecht-anwaltschaft",
       "category": "berufsrecht-anwaltschaft",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fao",
@@ -5217,7 +5868,7 @@
       "domain": "berufsrecht-anwaltschaft",
       "category": "berufsrecht-anwaltschaft",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "rdg",
@@ -5240,7 +5891,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5261,7 +5912,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5282,7 +5933,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5301,7 +5952,7 @@
       "domain": "cyber-resilience-act",
       "category": "cyber-resilience-act",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cra",
@@ -5321,7 +5972,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundbuchverfahren",
@@ -5344,7 +5995,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundschuld",
@@ -5367,7 +6018,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "grundstueckskaufvertrag",
@@ -5390,7 +6041,7 @@
       "domain": "immobilien-grundbuchrecht",
       "category": "immobilien-grundbuchrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "wohnungseigentum",
@@ -5413,7 +6064,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "forderungspfaendung",
@@ -5436,7 +6087,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "immobiliarvollstreckung",
@@ -5459,7 +6110,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "sachpfaendung",
@@ -5482,7 +6133,7 @@
       "domain": "zwangsvollstreckung",
       "category": "zwangsvollstreckung",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vollstreckungsvoraussetzungen",
@@ -5505,7 +6156,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gkg",
@@ -5528,7 +6179,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kostenfestsetzung",
@@ -5551,7 +6202,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "rvg",
@@ -5574,7 +6225,7 @@
       "domain": "kostenrecht-rvg",
       "category": "kostenrecht-rvg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verguetungsvereinbarung",
@@ -5597,7 +6248,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "internal",
@@ -5620,7 +6271,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "steuerhinterziehung",
@@ -5642,7 +6293,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "unternehmenssanktion",
@@ -5664,7 +6315,7 @@
       "domain": "wirtschafts-steuerstrafrecht",
       "category": "wirtschafts-steuerstrafrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "untreue",
@@ -5687,7 +6338,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "asset",
@@ -5710,7 +6361,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "due",
@@ -5730,7 +6381,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "garantien",
@@ -5753,7 +6404,7 @@
       "domain": "m-a-transaktionsrecht",
       "category": "m-a-transaktionsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "share",
@@ -5776,7 +6427,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gemeinnuetzigkeit",
@@ -5799,7 +6450,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "spendenrecht",
@@ -5820,7 +6471,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "stiftungsrecht",
@@ -5843,7 +6494,7 @@
       "domain": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "category": "vereins-stiftungs-gemeinnuetzigkeitsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vereinsgruendung",
@@ -5866,7 +6517,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "beamtenstatusrecht",
@@ -5889,7 +6540,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "dienstliche",
@@ -5909,7 +6560,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "disziplinarverfahren",
@@ -5932,7 +6583,7 @@
       "domain": "beamten-disziplinarrecht",
       "category": "beamten-disziplinarrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "konkurrentenstreit",
@@ -5953,7 +6604,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "fluggastrechte",
@@ -5976,7 +6627,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "pauschalreise",
@@ -5999,7 +6650,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "reiseruecktritt",
@@ -6022,7 +6673,7 @@
       "domain": "reise-fluggastrecht",
       "category": "reise-fluggastrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "reisevermittlung",
@@ -6045,7 +6696,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "cloud",
@@ -6068,7 +6719,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "data",
@@ -6091,7 +6742,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "data",
@@ -6114,7 +6765,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "data",
@@ -6137,7 +6788,7 @@
       "domain": "datenwirtschaftsrecht",
       "category": "datenwirtschaftsrecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "datenzugang",
@@ -6160,7 +6811,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bfsg",
@@ -6182,7 +6833,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bfsg",
@@ -6205,7 +6856,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bfsg",
@@ -6228,7 +6879,7 @@
       "domain": "barrierefreiheit-bfsg",
       "category": "barrierefreiheit-bfsg",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "bitv",
@@ -6251,7 +6902,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "aufhebungsantrag",
@@ -6274,7 +6925,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "schiedsvereinbarung",
@@ -6297,7 +6948,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "schiedsverfahren",
@@ -6320,7 +6971,7 @@
       "domain": "schiedsverfahren-adr",
       "category": "schiedsverfahren-adr",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "vollstreckbarerklaerung",
@@ -6343,7 +6994,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerbeanzeige",
@@ -6366,7 +7017,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerbeerlaubnis",
@@ -6389,7 +7040,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "gewerbeuntersagung",
@@ -6411,7 +7062,7 @@
       "domain": "gewerberecht",
       "category": "gewerberecht",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "handwerksrolle",
@@ -6434,7 +7085,7 @@
       "domain": "verbandsklage-vdug",
       "category": "verbandsklage-vdug",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "abhilfeklage",
@@ -6457,7 +7108,7 @@
       "domain": "verbandsklage-vdug",
       "category": "verbandsklage-vdug",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "anmeldung",
@@ -6480,7 +7131,7 @@
       "domain": "verbandsklage-vdug",
       "category": "verbandsklage-vdug",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "musterfeststellungsklage",
@@ -6503,7 +7154,7 @@
       "domain": "verbandsklage-vdug",
       "category": "verbandsklage-vdug",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "verbandsklage",
@@ -6526,7 +7177,7 @@
       "domain": "kritis-resilienz",
       "category": "kritis-resilienz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kritis",
@@ -6549,7 +7200,7 @@
       "domain": "kritis-resilienz",
       "category": "kritis-resilienz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kritis",
@@ -6572,7 +7223,7 @@
       "domain": "kritis-resilienz",
       "category": "kritis-resilienz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kritis",
@@ -6595,7 +7246,7 @@
       "domain": "kritis-resilienz",
       "category": "kritis-resilienz",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "kritis",
@@ -6618,7 +7269,7 @@
       "domain": "entgelttransparenz-eu",
       "category": "entgelttransparenz-eu",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "entgelt",
@@ -6641,7 +7292,7 @@
       "domain": "entgelttransparenz-eu",
       "category": "entgelttransparenz-eu",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "entgeltberichterstattung",
@@ -6663,7 +7314,7 @@
       "domain": "entgelttransparenz-eu",
       "category": "entgelttransparenz-eu",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "entgeltdiskriminierung",
@@ -6686,7 +7337,7 @@
       "domain": "entgelttransparenz-eu",
       "category": "entgelttransparenz-eu",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "entgelttransparenz",
@@ -6709,7 +7360,7 @@
       "domain": "krypto-mikar",
       "category": "krypto-mikar",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "casp",
@@ -6732,7 +7383,7 @@
       "domain": "krypto-mikar",
       "category": "krypto-mikar",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "krypto",
@@ -6755,7 +7406,7 @@
       "domain": "krypto-mikar",
       "category": "krypto-mikar",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "krypto",
@@ -6778,7 +7429,7 @@
       "domain": "krypto-mikar",
       "category": "krypto-mikar",
       "subdomain": "",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "license": "Apache-2.0 OR MIT",
       "tags": [
         "micar",

@@ -1,6 +1,6 @@
 ---
 name: mietmangel-minderung
-description: "Mietmangel und Mietminderung im Wohnraummietrecht – Mangelbegriff und kraft Gesetzes eintretende Minderung § 536 BGB, Ausschluss bei Kenntnis § 536b BGB, Schadensersatz und Selbstvornahme mit Aufwendungsersatz § 536a BGB, Mängelanzeige und Anzeigeobliegenheit § 536c BGB, Zurückbehaltungsrecht § 320 BGB, Symptomtheorie und Darlegungslast, Minderungsquote und Bezugsgröße Bruttomiete. Use when ein Mieter wegen eines Mangels mindern, Mängelbeseitigung verlangen oder Schadensersatz geltend machen will oder ein Vermieter eine Minderung prüft."
+description: "Mietmangel und Mietminderung im Wohnraummietrecht – Mangelbegriff und kraft Gesetzes eintretende Minderung § 536 BGB, Ausschluss bei Kenntnis § 536b BGB, Schadensersatz und Selbstvornahme mit Aufwendungsersatz § 536a BGB, Mängelanzeige und Anzeigeobliegenheit § 536c BGB, Zurückbehaltungsrecht § 320 BGB, Symptomtheorie und Darlegungslast, Minderungsquote und Bezugsgröße Bruttomiete. Rechtsstand: Oktober 2026. Use when ein Mieter wegen eines Mangels mindern, Mängelbeseitigung verlangen oder Schadensersatz geltend machen will oder ein Vermieter eine Minderung prüft."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -38,7 +38,7 @@ Nach der **Symptomtheorie** genügt der Mieter seiner Darlegungslast, wenn er da
 
 ### 3. Minderung kraft Gesetzes ([§ 536 Abs. 1 BGB](https://www.gesetze-im-internet.de/bgb/__536.html))
 
-Die Miete ist für die Dauer des Mangels **kraft Gesetzes gemindert** — es bedarf keiner Erklärung und keiner Fristsetzung. Bezugsgröße ist die **Bruttomiete** einschließlich Betriebskostenvorauszahlungen. Die Minderung wirkt ab **Auftreten** des Mangels, nicht erst ab der Anzeige — verspätete Anzeige führt aber über § 536c Abs. 2 BGB zum Verlust. Rückwirkend zu viel gezahlte Miete kann nach [§ 812 BGB](https://www.gesetze-im-internet.de/bgb/__812.html) zurückgefordert werden. Bei **energetischer Modernisierung** ist die Minderung für **drei Monate ausgeschlossen** (§ 536 Abs. 1a BGB).
+Die Miete ist für die Dauer des Mangels **kraft Gesetzes gemindert** — es bedarf keiner Erklärung und keiner Fristsetzung. Bezugsgröße ist die **Bruttomiete** einschließlich Betriebskostenvorauszahlungen. Die Minderung wirkt ab **Auftreten** des Mangels, nicht erst ab der Anzeige — verspätete Anzeige führt aber über § 536c Abs. 2 BGB zum Verlust. Rückwirkend zu viel gezahlte Miete kann nach [§ 812 BGB](https://www.gesetze-im-internet.de/bgb/__812.html) zurückgefordert werden. Bei **energetischer Modernisierung** nach § 555b Nr. 1 BGB ist die Minderung für **drei Monate ausgeschlossen** (§ 536 Abs. 1a BGB). Der Einbau einer Heizungsanlage nach § 555b Nr. 1a BGB ist davon nach geltendem Recht nicht ausdrücklich erfasst; die Erstreckung ist im Regierungsentwurf BT-Drs. 21/6807 vorgesehen (Stand 23.10.2026 nicht verabschiedet).
 
 ### 4. Minderungsquote
 
@@ -72,7 +72,7 @@ Wer ohne Verzug und ohne Notlage selbst beauftragt, bleibt auf den Kosten sitzen
 
 ### 8. Zurückbehaltungsrecht ([§ 320 BGB](https://www.gesetze-im-internet.de/bgb/__320.html))
 
-Neben der Minderung kann der Mieter einen weiteren Teil der Miete **zurückbehalten**, um Druck auf die Mangelbeseitigung auszuüben. Das Zurückbehaltungsrecht ist **vorübergehend** — der zurückbehaltene Betrag ist nach Beseitigung des Mangels **nachzuzahlen**, anders als der geminderte Betrag. Die Höhe muss **verhältnismäßig** sein; als grobe Orientierung gilt das Drei- bis Fünffache des Minderungsbetrags. Das Recht entfällt, sobald der Mangel beseitigt ist, und ist nicht auf Zeiträume vor der Anzeige anwendbar.
+Neben der Minderung kann der Mieter einen weiteren Teil der Miete **zurückbehalten**, um Druck auf die Mangelbeseitigung auszuüben. Das Zurückbehaltungsrecht ist **vorübergehend** — der zurückbehaltene Betrag ist nach Beseitigung des Mangels **nachzuzahlen**, anders als der geminderte Betrag. Die Höhe muss **verhältnismäßig** sein; eine feste Obergrenze in Form eines Vielfachen des Minderungsbetrags gibt es **nicht**. Das Zurückbehaltungsrecht ist zeitlich und der Höhe nach begrenzt, nach Treu und Glauben auszuüben und dient allein dem Zweck, den Vermieter zur Mangelbeseitigung anzuhalten; der insgesamt einbehaltene Betrag muss in einem angemessenen Verhältnis zur Bedeutung des Mangels stehen (BGH, Urt. v. 17.06.2015 – VIII ZR 19/14, BGHZ 206, 1 = NJW 2015, 3087, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-06-17&Aktenzeichen=VIII%20ZR%2019/14). Das Recht entfällt, sobald der Mangel beseitigt ist oder das Mietverhältnis endet — die einbehaltenen Beträge werden dann sofort fällig — und ist nicht auf Zeiträume vor der Anzeige anwendbar.
 
 ### 9. Risiko der Überminderung ([§ 543 Abs. 2 S. 1 Nr. 3 BGB](https://www.gesetze-im-internet.de/bgb/__543.html))
 
@@ -88,16 +88,17 @@ Mindert der Mieter zu hoch, entsteht ein **Zahlungsrückstand**; erreicht er die
 
 ### Kommentare
 
-- Eisenschmid, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 536 BGB Rn. 1 ff.
+- Eisenschmid, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 536 BGB Rn. 1 ff.
 - Bieber, in: MüKoBGB, 9. Aufl. 2023, § 536 Rn. 1 ff.; § 536a Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 536 Rn. 1 ff.
 
 ### Rechtsprechung
 
+- BGH, Urt. v. 17.06.2015 – VIII ZR 19/14, BGHZ 206, 1 = NJW 2015, 3087 (Grenzen des Zurückbehaltungsrechts; kein schematisches Vielfaches) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-06-17&Aktenzeichen=VIII%20ZR%2019/14
 - BGH, Urt. v. 24.03.2004 – VIII ZR 295/03 (Minderung bei Wohnflächenunterschreitung von mehr als 10 %) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2004-03-24&Aktenzeichen=VIII%20ZR%20295/03
 - BGH, Urt. v. 23.06.2010 – VIII ZR 256/09 (konkludente Wohnflächenvereinbarung) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2010-06-23&Aktenzeichen=VIII%20ZR%20256/09
-- Zur Symptomtheorie und zu den Anforderungen an die Darlegung des Mangelsymptoms ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
-- Zur Höhe angemessener Minderungsquoten existiert keine bindende Rechtsprechung; Minderungstabellen sind unverbindlich `[unverifiziert - prüfen]`.
+- Zur Symptomtheorie und zu den Anforderungen an die Darlegung des Mangelsymptoms ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
+- Zur Höhe angemessener Minderungsquoten existiert keine bindende Rechtsprechung; Minderungstabellen sind unverbindlich `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Mängelanzeige mit Minderungsankündigung
 

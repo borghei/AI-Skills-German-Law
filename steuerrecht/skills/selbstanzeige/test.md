@@ -11,6 +11,9 @@ must_cite:
   - "§ 370 AO"
   - "§ 153 AO"
   - "§ 235 AO"
+  - "§ 371 Abs. 2a AO"
+  - "§ 371 Abs. 4 AO"
+  - "§ 378 AO"
 must_appear:
   - "Selbstanzeige"
   - "Vollständigkeitsgebot"
@@ -18,11 +21,15 @@ must_appear:
   - "Nachzahlung"
   - "Hinterziehungszinsen"
   - "Tatentdeckung"
+  - "Nachschau"
+  - "Rechtsstand: Oktober 2026"
 must_flag:
   - "Vollständigkeitsgebot"
   - "Sperrgrund"
   - "Tatentdeckung"
   - "Zuschlag"
+  - "Nachzahlungsfrist"
+  - "sachlichen und zeitlichen Umfang"
 ---
 
 # Test — selbstanzeige

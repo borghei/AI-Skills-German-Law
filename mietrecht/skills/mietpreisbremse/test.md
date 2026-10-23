@@ -29,7 +29,7 @@ must_appear:
   - "Formulierungshilfe"
 must_flag:
   - "Landesverordnung nicht geprüft"
-  - "Rüge nicht qualifiziert"
+  - "Rüge nicht auf erteilte Auskunft bezogen"
   - "Rückwirkung überschätzt"
   - "Neubauprivileg übersehen"
   - "Vormiete falsch angesetzt"

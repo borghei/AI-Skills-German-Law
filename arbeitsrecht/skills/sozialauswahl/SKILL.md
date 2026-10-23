@@ -16,6 +16,7 @@ test: ./test.md
 
 Die betriebsbedingte Kündigung scheitert im Prozess selten am Wegfall des Arbeitsplatzes und fast immer an der Sozialauswahl. Der Grund ist ein struktureller: Die unternehmerische Entscheidung ist gerichtlich nur auf Willkür überprüfbar, die Auswahlentscheidung dagegen voll. Dieser Skill bildet die Vergleichsgruppe, bewertet die vier Kriterien und erzeugt eine Auswahldokumentation, die einer Kammerverhandlung standhält.
 
+> **Rechtsstand: Oktober 2026.** § 1 Abs. 3–5 KSchG unverändert; keine neue Leitentscheidung des BAG 2025/2026 festgestellt.
 ## Eingaben
 
 - Vergleichsgruppen-Rohdaten je Arbeitnehmer: Eintrittsdatum, Geburtsdatum, Unterhaltspflichten (Lohnsteuerkarte / Zahl der Kinder, Ehegatte), GdB

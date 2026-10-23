@@ -16,6 +16,7 @@ test: ./test.md
 
 Die Kündigungsschutzklage ist ein Fristenmandat, kein Argumentationsmandat. Wer die drei Wochen des [§ 4 KSchG](https://www.gesetze-im-internet.de/kschg/__4.html) versäumt, verliert **jeden** Unwirksamkeitsgrund — auch die fehlende BR-Anhörung, auch die Formnichtigkeit nach § 623 BGB (§ 7 KSchG). Dieser Skill sichert zuerst die Frist, formuliert dann die Anträge und bewertet erst zuletzt die materielle Erfolgsaussicht.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: Zugangsbeweis beim Einwurf-Einschreiben (BAG 30.01.2025) und nachträgliche Zulassung bei Schwangerschaft (BAG 03.04.2025).
 ## Eingaben
 
 - **Zugangsdatum** der schriftlichen Kündigung (Datum, Zugangsart: Übergabe / Einwurf-Einschreiben / Bote) — der rechtlich entscheidende Wert
@@ -43,11 +44,11 @@ Praxisfälle:
 |---|---|
 | Persönliche Übergabe | Am Tag der Übergabe |
 | Einwurf in den Hausbriefkasten | Am Einwurftag, wenn vor der ortsüblichen Leerungszeit; sonst Folgetag |
-| Einwurf-Einschreiben | Mit Einlegen in den Briefkasten durch den Zusteller |
+| Einwurf-Einschreiben | Mit Einlegen in den Briefkasten durch den Zusteller — **Beweis** aber nur mit Kopie des **Auslieferungsbelegs**; Einlieferungsbeleg und Sendungsstatus begründen keinen Anscheinsbeweis (BAG, Urt. v. 30.01.2025 – 2 AZR 68/24, [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/2-azr-68-24)) |
 | Übergabe-Einschreiben (Benachrichtigungszettel) | **Nicht** mit dem Zettel — erst mit Abholung; Zugangsvereitelung nur bei Treuwidrigkeit |
 | Urlaubsabwesenheit | Ändert am Zugang nichts — begründet aber ggf. § 5 KSchG |
 
-**Behördliche Zustimmung:** Bedarf die Kündigung der Zustimmung einer Behörde, läuft die Frist erst ab Bekanntgabe der Behördenentscheidung an den Arbeitnehmer (§ 4 S. 4 KSchG). Vorsorgliche Klage dennoch empfohlen.
+**Behördliche Zustimmung:** Bedarf die Kündigung der Zustimmung einer Behörde, läuft die Frist erst ab Bekanntgabe der Behördenentscheidung an den Arbeitnehmer (§ 4 S. 4 KSchG). Das gilt nur, wenn der Arbeitgeber den zustimmungsbegründenden Umstand (z. B. Schwangerschaft) bei Zugang **kannte**; sonst bleibt es bei der Drei-Wochen-Frist. Vorsorgliche Klage dennoch empfohlen.
 
 ### 2. Präklusion ([§ 7 KSchG](https://www.gesetze-im-internet.de/kschg/__7.html))
 
@@ -67,7 +68,7 @@ Voraussetzungen kumulativ:
 2. Der Antrag ist **mit der Klageerhebung zu verbinden** (§ 5 Abs. 2 S. 1 KSchG) und enthält die begründenden Tatsachen samt Glaubhaftmachungsmitteln.
 3. Antragsfrist: **zwei Wochen nach Behebung des Hindernisses**, absolute Grenze **sechs Monate** ab Ende der versäumten Frist (§ 5 Abs. 3 KSchG).
 
-Sonderfall: Kenntnis von der Schwangerschaft erst nach Fristablauf, ohne dass die Arbeitnehmerin dies zu vertreten hat (§ 5 Abs. 1 S. 2 KSchG).
+Sonderfall: Kenntnis von der Schwangerschaft erst nach Fristablauf, ohne dass die Arbeitnehmerin dies zu vertreten hat (§ 5 Abs. 1 S. 2 KSchG). Maßgeblich ist die **ärztliche Feststellung**, nicht ein positiver Selbsttest; § 4 S. 4 KSchG hilft mangels Kenntnis des Arbeitgebers nicht (BAG, Urt. v. 03.04.2025 – 2 AZR 156/24, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=2025-04-03&Aktenzeichen=2%20AZR%20156/24)). Detail: `/arbeitsrecht:mutterschutz-elternzeit`.
 
 ### 5. Klageanträge formulieren ([§ 253 ZPO](https://www.gesetze-im-internet.de/zpo/__253.html), [§ 46 ArbGG](https://www.gesetze-im-internet.de/arbgg/__46.html))
 
@@ -100,7 +101,7 @@ Sonderfall: Kenntnis von der Schwangerschaft erst nach Fristablauf, ohne dass di
 
 ### 6. Güte- und Kammertermin ([§ 54 ArbGG](https://www.gesetze-im-internet.de/arbgg/__54.html))
 
-Die mündliche Verhandlung **beginnt** mit der Güteverhandlung vor dem Vorsitzenden allein (§ 54 Abs. 1 S. 1 ArbGG). Sie findet in Kündigungssachen typischerweise 2–4 Wochen nach Klageeingang statt; über 70 % der Kündigungsschutzverfahren enden hier durch Vergleich.
+Die mündliche Verhandlung **beginnt** mit der Güteverhandlung vor dem Vorsitzenden allein (§ 54 Abs. 1 S. 1 ArbGG). Sie findet in Kündigungssachen typischerweise 2–4 Wochen nach Klageeingang statt (§ 61a Abs. 2 ArbGG: binnen zwei Wochen soll sie stattfinden); ein erheblicher Teil der Verfahren endet hier durch Vergleich.
 
 - Bleibt die Güteverhandlung erfolglos, schließt sich die streitige Verhandlung unmittelbar an oder es wird Kammertermin bestimmt (§ 54 Abs. 4 ArbGG).
 - Erscheinen **beide** Parteien nicht, ordnet das Gericht das Ruhen an; der Antrag auf Kammertermin ist nur binnen sechs Monaten zulässig (§ 54 Abs. 5 ArbGG).
@@ -156,6 +157,8 @@ python -m scripts.legal_calc.cli frist --ereignis 05.02.2026 --menge 6 --einheit
 
 - st. Rspr. des BAG zu § 130 BGB (Zugang bei Einwurf in den Hausbriefkasten, ortsübliche Leerungszeit) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zu § 7 KSchG (Präklusion erfasst alle Unwirksamkeitsgründe) `[unverifiziert – prüfen]`
+- BAG, Urt. v. 30.01.2025 – 2 AZR 68/24 (Einwurf-Einschreiben: kein Anscheinsbeweis des Zugangs ohne Auslieferungsbeleg), [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/2-azr-68-24)
+- BAG, Urt. v. 03.04.2025 – 2 AZR 156/24 (nachträgliche Zulassung bei Schwangerschaft; ärztliche Feststellung maßgeblich), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=2025-04-03&Aktenzeichen=2%20AZR%20156/24)
 - BAG (Großer Senat) zum allgemeinen Weiterbeschäftigungsanspruch nach erstinstanzlichem Obsiegen `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zu § 9 KSchG (strenger Maßstab für den Auflösungsantrag des Arbeitgebers) `[unverifiziert – prüfen]`
 
@@ -195,6 +198,7 @@ Empfehlung: <…>
 ## Risiken / typische Fehler
 
 - **Fristbeginn falsch angesetzt** — Datum des Kündigungsschreibens statt Zugang. Häufigster Haftungsfall des Mandats.
+- **Zugang per Einwurf-Einschreiben ohne Auslieferungsbeleg unterstellt** — auf Arbeitgeberseite fehlt dann der Beweis; der Beleg ist innerhalb der Aufbewahrungsfrist bei der Post anzufordern. Auf Arbeitnehmerseite den Zugang mit Nichtwissen bestreiten, aber **vorsorglich** innerhalb der drei Wochen ab dem möglichen Zugang klagen.
 - **Übergabe-Einschreiben mit Benachrichtigungszettel** als Zugang behandelt — Zugang tritt erst mit Abholung ein; umgekehrt darf sich der Arbeitnehmer nicht auf treuwidrige Zugangsvereitelung stützen.
 - **Präklusion nach § 7 KSchG unterschätzt** — auch die evident fehlende BR-Anhörung heilt durch Fristablauf.
 - **Kein allgemeiner Feststellungsantrag** gestellt, obwohl eine Nachkündigung im Raum steht — die zweite Kündigung läuft dann in eine eigene 3-Wochen-Frist.

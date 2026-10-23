@@ -1,6 +1,6 @@
 ---
 name: fristlose-kuendigung-543
-description: "Außerordentliche fristlose Kündigung des Mietverhältnisses aus wichtigem Grund – wichtiger Grund und Regelbeispiele § 543 Abs. 2 BGB, Zahlungsverzug § 543 Abs. 2 S. 1 Nr. 3 BGB, Abmahnung und Fristsetzung § 543 Abs. 3 BGB, ergänzende Wohnraumtatbestände § 569 BGB, Schonfristzahlung § 569 Abs. 3 Nr. 2 BGB, Form und Begründung § 569 Abs. 4, § 568 BGB, Verhältnis zur hilfsweise erklärten ordentlichen Kündigung § 573 Abs. 2 Nr. 1 BGB. Use when ein Vermieter wegen Zahlungsverzugs oder Pflichtverletzung fristlos kündigen will oder ein Mieter eine erhaltene fristlose Kündigung prüft."
+description: "Außerordentliche fristlose Kündigung des Mietverhältnisses aus wichtigem Grund – wichtiger Grund und Regelbeispiele § 543 Abs. 2 BGB, Zahlungsverzug § 543 Abs. 2 S. 1 Nr. 3 BGB, Abmahnung und Fristsetzung § 543 Abs. 3 BGB, ergänzende Wohnraumtatbestände § 569 BGB, Schonfristzahlung § 569 Abs. 3 Nr. 2 BGB, Form und Begründung § 569 Abs. 4, § 568 BGB, Verhältnis zur hilfsweise erklärten ordentlichen Kündigung § 573 Abs. 2 Nr. 1 BGB (Bestätigung durch den BGH am 30.09.2026; anhängige Erstreckung der Schonfrist, BT-Drs. 21/6807). Rechtsstand: Oktober 2026. Use when ein Vermieter wegen Zahlungsverzugs oder Pflichtverletzung fristlos kündigen will oder ein Mieter eine erhaltene fristlose Kündigung prüft."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -60,9 +60,11 @@ Besteht der wichtige Grund in der **Verletzung einer Pflicht aus dem Mietvertrag
 
 ### 6. Schonfristzahlung ([§ 569 Abs. 3 Nr. 2 BGB](https://www.gesetze-im-internet.de/bgb/__569.html))
 
-Die Kündigung wegen Zahlungsverzugs wird **unwirksam**, wenn der Vermieter spätestens **bis zum Ablauf von zwei Monaten nach Eintritt der Rechtshängigkeit des Räumungsanspruchs** hinsichtlich der fälligen Miete und der fälligen Entschädigung nach § 546a Abs. 1 BGB **befriedigt** wird oder sich eine **öffentliche Stelle zur Befriedigung verpflichtet**. Die Heilung tritt **nicht** ein, wenn ihr bereits **zwei Jahre** zuvor eine Schonfristzahlung vorausgegangen ist. Ebenso wird die Kündigung unwirksam, wenn der Mieter vor Zugang **aufgerechnet** und dies unverzüglich erklärt hat (§ 543 Abs. 2 S. 3 BGB).
+Die Kündigung wegen Zahlungsverzugs wird **unwirksam**, wenn der Vermieter spätestens **bis zum Ablauf von zwei Monaten nach Eintritt der Rechtshängigkeit des Räumungsanspruchs** hinsichtlich der fälligen Miete und der fälligen Entschädigung nach § 546a Abs. 1 BGB **befriedigt** wird oder sich eine **öffentliche Stelle zur Befriedigung verpflichtet**. Die Heilung tritt **nicht** ein, wenn der Kündigung **innerhalb der letzten zwei Jahre** bereits eine nach § 569 Abs. 3 Nr. 2 S. 1 BGB unwirksam gewordene Kündigung vorausgegangen ist (S. 2). Ebenso wird die Kündigung unwirksam, wenn sich der Mieter von seiner Schuld durch **Aufrechnung befreien konnte** — die Aufrechnungslage muss also bei Zugang der Kündigung bestanden haben — und er **unverzüglich nach der Kündigung** die Aufrechnung erklärt (§ 543 Abs. 2 S. 3 BGB).
 
-**Entscheidende Reichweite:** Die Schonfristzahlung beseitigt nach der Rechtsprechung des VIII. Zivilsenats nur die **fristlose**, nicht die zugleich hilfsweise erklärte **ordentliche** Kündigung (BGH, Urt. v. 13.10.2021 – VIII ZR 91/20, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2021-10-13&Aktenzeichen=VIII%20ZR%2091/20). Das ist der Grund, weshalb in der Praxis stets beide Kündigungen erklärt werden.
+**Entscheidende Reichweite:** Die Schonfristzahlung beseitigt nach der Rechtsprechung des VIII. Zivilsenats nur die **fristlose**, nicht die zugleich hilfsweise erklärte **ordentliche** Kündigung (BGH, Urt. v. 13.10.2021 – VIII ZR 91/20, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2021-10-13&Aktenzeichen=VIII%20ZR%2091/20). Der Senat hat dies mit Urteil vom **30.09.2026** bestätigt und zugleich klargestellt, dass das Gericht nach der Schonfristzahlung die Voraussetzungen des § 573 BGB für die ordentliche Kündigung **eigenständig zu prüfen** hat; er wendet sich ausdrücklich gegen die abweichende Linie des LG Berlin (BGH, Urt. v. 30.09.2026 – VIII ZR 21/26, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-09-30&Aktenzeichen=VIII%20ZR%2021/26). Das ist der Grund, weshalb in der Praxis stets beide Kündigungen erklärt werden.
+
+> **Anhängig (Stand 23.10.2026, nicht verabschiedet):** Der Regierungsentwurf BT-Drs. 21/6807 (Anhörung im Rechtsausschuss am 14.10.2026) sieht einen neuen § 573 Abs. 4 BGB vor: Die Schonfristzahlung soll **einmal je Mietverhältnis** auch die ordentliche Kündigung wegen Zahlungsverzugs heilen, und zwar auch bei Rückstand mit der Kaution. Inkrafttreten der übrigen Änderungen am Tag nach Verkündung. Bis dahin gilt die Rechtsprechung des VIII. Zivilsenats. Vertiefung: `/mietrecht:kuendigung-zahlungsverzug-ordentlich`.
 
 ### 7. Form und Begründung ([§ 568 BGB](https://www.gesetze-im-internet.de/bgb/__568.html), § 569 Abs. 4 BGB)
 
@@ -70,7 +72,7 @@ Die Kündigung eines Wohnraummietverhältnisses bedarf der **Schriftform** (§ 5
 
 ### 8. Hilfsweise ordentliche Kündigung ([§ 573 Abs. 2 Nr. 1 BGB](https://www.gesetze-im-internet.de/bgb/__573.html))
 
-Die schuldhafte, nicht unerhebliche Vertragsverletzung ist zugleich ein **berechtigtes Interesse** für die ordentliche Kündigung. Sie ist mit derselben Erklärung **hilfsweise** auszusprechen, damit eine Schonfristzahlung nicht das gesamte Verfahren entwertet. Für sie gelten die Fristen des [§ 573c BGB](https://www.gesetze-im-internet.de/bgb/__573c.html) (3 / 6 / 9 Monate) und die **Sozialklausel** der §§ 574 ff. BGB; vgl. `/mietrecht:sozialklausel-widerspruch`. Anders als bei der fristlosen Kündigung ist hier eine **Abmahnung** regelmäßig erforderlich.
+Die schuldhafte, nicht unerhebliche Vertragsverletzung ist zugleich ein **berechtigtes Interesse** für die ordentliche Kündigung. Sie ist mit derselben Erklärung **hilfsweise** auszusprechen, damit eine Schonfristzahlung nicht das gesamte Verfahren entwertet. Für sie gelten die Fristen des [§ 573c BGB](https://www.gesetze-im-internet.de/bgb/__573c.html) (3 / 6 / 9 Monate) und die **Sozialklausel** der §§ 574 ff. BGB; vgl. `/mietrecht:sozialklausel-widerspruch`. Eine **Abmahnung** ist für die ordentliche Kündigung wegen Zahlungsrückstands nicht generell Voraussetzung, kann aber im Rahmen der Erheblichkeit und bei bloß unpünktlicher Zahlung Bedeutung gewinnen `[unverifiziert – prüfen]`.
 
 ### 9. Durchsetzung
 
@@ -107,8 +109,8 @@ python -m scripts.legal_calc.cli frist --ereignis 10.03.2026 --menge 2 --einheit
 
 ### Kommentare
 
-- Blank, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 543 BGB Rn. 1 ff.
-- Streyl, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 569 BGB Rn. 1 ff.
+- Blank, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 543 BGB Rn. 1 ff.
+- Streyl, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 569 BGB Rn. 1 ff.
 - Bieber, in: MüKoBGB, 9. Aufl. 2023, § 543 Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 543 Rn. 1 ff.
 
@@ -116,7 +118,8 @@ python -m scripts.legal_calc.cli frist --ereignis 10.03.2026 --menge 2 --einheit
 
 - BGH, Urt. v. 13.10.2021 – VIII ZR 91/20 (Schonfristzahlung wirkt nur auf die fristlose, nicht auf die hilfsweise ordentliche Kündigung) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2021-10-13&Aktenzeichen=VIII%20ZR%2091/20
 - BGH, Urt. v. 24.08.2016 – VIII ZR 261/15 (Ausschluss der fristlosen Kündigung wegen Zahlungsverzugs) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2016-08-24&Aktenzeichen=VIII%20ZR%20261/15
-- Zur Berechnung des „nicht unerheblichen Teils" und zur Wirkung berechtigter Minderung auf den Rückstand ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
+- BGH, Urt. v. 30.09.2026 – VIII ZR 21/26 (Schonfristzahlung heilt die ordentliche Kündigung nicht; § 573 BGB ist eigenständig zu prüfen) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-09-30&Aktenzeichen=VIII%20ZR%2021/26
+- Zur Berechnung des „nicht unerheblichen Teils" und zur Wirkung berechtigter Minderung auf den Rückstand ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Fristlose Kündigung wegen Zahlungsverzugs
 
@@ -185,10 +188,11 @@ Risiko Räumungsklage: [🟢 / 🟡 / 🔴]
 ## Risiken / typische Fehler
 
 - **Rückstand zu hoch angesetzt** — berechtigte Minderung, Aufrechnung oder falsche Tilgungsreihenfolge (§ 366 BGB) nicht berücksichtigt; die Kündigung wird dadurch insgesamt angreifbar.
-- **Abmahnung fehlt** — bei allen Gründen außer Zahlungsverzug regelmäßig zwingend (§ 543 Abs. 3 BGB); auch für die hilfsweise ordentliche Kündigung erforderlich.
+- **Abmahnung fehlt** — bei allen Gründen außer Zahlungsverzug regelmäßig zwingend (§ 543 Abs. 3 BGB); für die hilfsweise ordentliche Kündigung wegen Zahlungsrückstands nicht generell, bei unpünktlicher Zahlung aber regelmäßig angezeigt.
 - **Hilfsweise ordentliche Kündigung nicht erklärt** — eine Schonfristzahlung entwertet dann das gesamte Verfahren.
 - **Schriftform verfehlt** — E-Mail oder Fax genügen für die Wohnraumkündigung nicht (§ 568 Abs. 1 BGB); fehlende Unterschrift eines Mitvermieters macht die Kündigung unwirksam.
 - **Vollmacht nicht in Urschrift beigefügt** — Zurückweisung nach § 174 BGB.
 - **Zwei-Jahres-Sperre der Schonfristzahlung übersehen** — eine erneute Heilung tritt nicht ein.
+- **Künftigen § 573 Abs. 4 BGB schon angewendet** — die einmalige Heilung auch der ordentlichen Kündigung ist bisher nur Regierungsentwurf (BT-Drs. 21/6807).
 - **Kündigungsgrund im Schreiben nicht angegeben** (§ 569 Abs. 4 BGB) — Nachschieben von Gründen ist nur eingeschränkt möglich.
 - **Interessenabwägung unterlassen** — auch beim Regelbeispiel ist § 543 Abs. 1 BGB zu prüfen, insbesondere bei langjährigen Mietverhältnissen und geringem Verschulden.

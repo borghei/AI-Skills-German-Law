@@ -66,7 +66,7 @@ Wo eine gesetzlich definierte Formel existiert, wird **gerechnet und der Rechenw
 
 - **Jede** rechtliche Aussage erhält einen Beleg.
 - Reihenfolge im Text: zuerst Norm (BGB / BetrKV / HeizkostenV / CO2KostAufG / ZPO), dann BGH (VIII ZS für Wohnraum, XII ZS für Gewerberaum), dann Instanzrechtsprechung, dann Kommentar (Schmidt-Futterer / MüKoBGB / Grüneberg).
-- Verifikationsmarker `[unverifiziert - prüfen]` übernehmen, **nicht** entfernen. Verifizierte Entscheidungen mit Quell-URL zitieren.
+- Verifikationsmarker `[unverifiziert – prüfen]` übernehmen, **nicht** entfernen. Verifizierte Entscheidungen mit Quell-URL zitieren.
 - **Niemals** `[generiert]` verwenden — der Validator weist den Skill zurück.
 - Landesverordnungen stets mit Geltungszeitraum.
 

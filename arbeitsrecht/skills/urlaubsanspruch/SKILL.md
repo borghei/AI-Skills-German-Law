@@ -16,6 +16,7 @@ test: ./test.md
 
 Das BUrlG ist ein kurzes Gesetz, dessen praktisch wichtigste Regeln nicht darin stehen. Verfall, Verjährung und die 15-Monats-Frist bei Langzeiterkrankung sind Produkte des Zusammenspiels von EuGH und BAG — mit dem Ergebnis, dass Urlaub aus lange zurückliegenden Jahren in erheblichem Umfang fortbestehen kann, wenn der Arbeitgeber seine Obliegenheiten versäumt hat. Dieser Skill berechnet den Anspruch, prüft den Verfall und beziffert die Abgeltung.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: Verzichtsverbot beim Mindesturlaub (BAG 03.06.2025).
 ## Eingaben
 
 - Beschäftigungsdauer, Eintrittsdatum, ggf. Beendigungsdatum und -grund
@@ -117,7 +118,7 @@ Praxisfolge: Bei einem Arbeitgeber, der nie belehrt hat, ist der Anspruch weder 
 
 - **Erkrankung während des Urlaubs** ([§ 9 BUrlG](https://www.gesetze-im-internet.de/burlg/__9.html)): Durch ärztliches Zeugnis nachgewiesene Tage der Arbeitsunfähigkeit werden **nicht** auf den Jahresurlaub angerechnet. Die Tage sind gutzuschreiben; der Arbeitnehmer darf den Urlaub allerdings nicht eigenmächtig verlängern.
 - **Urlaub bei durchgehender Arbeitsunfähigkeit:** Der Anspruch entsteht auch während der Erkrankung; er ist nur nicht erfüllbar. Der Arbeitgeber kann seine Hinweisobliegenheit hier nicht erfüllen, weil der Urlaub tatsächlich nicht genommen werden kann.
-- **15-Monats-Frist:** Ist der Arbeitnehmer durchgehend arbeitsunfähig und deshalb an der Inanspruchnahme gehindert, verfällt der gesetzliche Urlaubsanspruch **15 Monate nach Ablauf des Urlaubsjahres** — für das Urlaubsjahr 2024 also mit Ablauf des **31.03.2026** (EuGH, Urt. v. 22.11.2011 – C-214/10, *KHS/Schulte*; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=22.11.2011&Aktenzeichen=C-214/10); umgesetzt in st. Rspr. des BAG `[unverifiziert – prüfen]`).
+- **15-Monats-Frist:** Ist der Arbeitnehmer durchgehend arbeitsunfähig und deshalb an der Inanspruchnahme gehindert, verfällt der gesetzliche Urlaubsanspruch **15 Monate nach Ablauf des Urlaubsjahres** — für das Urlaubsjahr 2025 also mit Ablauf des **31.03.2027** (EuGH, Urt. v. 22.11.2011 – C-214/10, *KHS/Schulte*; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=22.11.2011&Aktenzeichen=C-214/10); umgesetzt in st. Rspr. des BAG, zuletzt BAG, Urt. v. 20.12.2022 – 9 AZR 245/19 `[unverifiziert – prüfen]`).
 - **Wichtige Einschränkung:** Diese 15-Monats-Frist greift nur, wenn der Arbeitnehmer **durchgehend** arbeitsunfähig war. War er im Urlaubsjahr zeitweise arbeitsfähig, hätte er den Urlaub teilweise nehmen können; dann bleibt es beim Erfordernis der Hinweisobliegenheit, und ohne deren Erfüllung tritt kein Verfall ein `[unverifiziert – prüfen]`.
 
 ### 6. Abgeltung ([§ 7 Abs. 4 BUrlG](https://www.gesetze-im-internet.de/burlg/__7.html))
@@ -126,6 +127,7 @@ Kann der Urlaub wegen Beendigung des Arbeitsverhältnisses ganz oder teilweise n
 
 - Der Abgeltungsanspruch entsteht **erst mit der Beendigung** und ist ein reiner Geldanspruch.
 - Eine Abgeltung im **laufenden** Arbeitsverhältnis ist unzulässig; sie erfüllt den Urlaubsanspruch nicht.
+- **Kein Verzicht auf den Mindesturlaub vor Beendigung:** Auch in einem gerichtlichen Vergleich und auch bei bereits feststehendem Beendigungsdatum kann auf den gesetzlichen Mindesturlaub bzw. die künftige Abgeltung im bestehenden Arbeitsverhältnis nicht verzichtet werden; eine Klausel „Urlaub ist in natura gewährt" ist insoweit unwirksam, wenn sie nicht zutrifft (BAG, Urt. v. 03.06.2025 – 9 AZR 104/24, [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/9-azr-104-24/)). Rechtsstand Oktober 2026.
 - Der Anspruch ist **vererblich**: Endet das Arbeitsverhältnis durch Tod des Arbeitnehmers, steht der Abgeltungsanspruch den Erben zu (EuGH, Urt. v. 06.11.2018 – C-569/16 und C-570/16, *Bauer* und *Willmeroth*; [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-569/16)).
 - Bemessung nach [§ 11 BUrlG](https://www.gesetze-im-internet.de/burlg/__11.html): durchschnittlicher Arbeitsverdienst der letzten **13 Wochen** vor Urlaubsbeginn, ohne zusätzlich für Überstunden gezahltes Entgelt.
 
@@ -163,6 +165,7 @@ Abgeltung = Urlaubsentgelt je Tag × offene Urlaubstage
 - EuGH, Urt. v. 06.11.2018 – C-684/16, *Max-Planck-Gesellschaft/Shimizu* (Art. 7 RL 2003/88/EG i.V.m. der Grundrechtecharta; Arbeitgeber muss klar und rechtzeitig über den drohenden Verfall aufklären), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-684/16)
 - BAG, Urt. v. 19.02.2019 – 9 AZR 541/15, NZA 2019, 982 (Umsetzung der Mitwirkungsobliegenheiten zu § 7 BUrlG: individuelle Aufforderung, Angabe der Tage, Verfallhinweis), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=19.02.2019&Aktenzeichen=9%20AZR%20541/15)
 - BAG, Urt. v. 20.12.2022 – 9 AZR 266/20, NZA 2023, 683 (Verjährung des Urlaubsanspruchs; Verjährungsbeginn erst nach Erfüllung der Obliegenheiten), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BAG&Datum=20.12.2022&Aktenzeichen=9%20AZR%20266/20)
+- BAG, Urt. v. 03.06.2025 – 9 AZR 104/24 (kein Verzicht auf den gesetzlichen Mindesturlaub im bestehenden Arbeitsverhältnis, auch nicht im gerichtlichen Vergleich), [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/9-azr-104-24/)
 - EuGH, Urt. v. 22.11.2011 – C-214/10, *KHS/Schulte* (zeitliche Begrenzung der Ansammlung bei Langzeiterkrankung; Übertragungszeitraum von 15 Monaten unionsrechtlich zulässig), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=22.11.2011&Aktenzeichen=C-214/10)
 - EuGH, Urt. v. 06.11.2018 – C-569/16 und C-570/16, *Bauer* und *Willmeroth* (Vererblichkeit des Urlaubsabgeltungsanspruchs), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=06.11.2018&Aktenzeichen=C-569/16)
 - st. Rspr. des BAG zur Abgrenzung von gesetzlichem Urlaub und vertraglichem Mehrurlaub `[unverifiziert – prüfen]`
@@ -216,6 +219,7 @@ Empfehlung: <…>
 - **Mehrurlaub nicht eigenständig geregelt** — dann gilt für ihn das gesamte unionsrechtliche Regime, einschließlich Verfallschutz und Abgeltung.
 - **Widerrufliche Freistellung „unter Anrechnung des Urlaubs"** — erfüllt den Urlaubsanspruch nicht; die Tage bleiben offen und sind abzugelten.
 - **Abgeltung im laufenden Arbeitsverhältnis vereinbart** — unzulässig; der Urlaubsanspruch bleibt bestehen, die Zahlung wird zur Zusatzleistung.
+- **Urlaubsverzicht im Vergleich oder Aufhebungsvertrag** — für den gesetzlichen Mindesturlaub unwirksam (BAG 03.06.2025); Urlaub vor Beendigung gewähren oder Abgeltung nach Beendigung regeln.
 - **Elternzeitkürzung nach Beendigung erklärt** — die Kürzung nach § 17 Abs. 1 BEEG setzt ein bestehendes Arbeitsverhältnis voraus.
 - **Umrechnung bei Teilzeitwechsel rückwirkend vorgenommen** — bereits entstandener Urlaub darf nicht nachträglich gekürzt werden.
 - **Ausschlussfristen beim Abgeltungsanspruch übersehen** — der Geldanspruch unterliegt anders als der Urlaubsanspruch selbst regelmäßig den vertraglichen Verfallklauseln.

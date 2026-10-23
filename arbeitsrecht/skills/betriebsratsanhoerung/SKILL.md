@@ -16,6 +16,7 @@ test: ./test.md
 
 Die Anhörung nach [§ 102 BetrVG](https://www.gesetze-im-internet.de/betrvg/__102.html) ist der am leichtesten zu gewinnende und am häufigsten verlorene Punkt im Kündigungsschutzprozess. Sie kostet den Arbeitgeber eine Woche und ein sorgfältiges Schreiben; ihr Fehlen kostet ihn den Prozess, unabhängig davon, wie gut der Kündigungsgrund ist (§ 102 Abs. 1 S. 3 BetrVG). Dieser Skill erstellt das Anhörungsschreiben und prüft eine bereits erfolgte Anhörung gegen den Fehlerkatalog.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: Zuständigkeitsfragen nach den regelmäßigen Betriebsratswahlen 2026.
 ## Eingaben
 
 - Existiert ein Betriebsrat im **kündigungsrelevanten Betrieb**? (nicht: im Unternehmen)
@@ -24,6 +25,7 @@ Die Anhörung nach [§ 102 BetrVG](https://www.gesetze-im-internet.de/betrvg/__1
 - Kündigungsgründe **in der Fassung, in der sie den Kündigungsentschluss tatsächlich getragen haben**
 - Bei betriebsbedingter Kündigung: Auswahlkriterien und Vergleichsgruppe
 - Bereits erfolgte Anhörung? Datum, Empfänger, Zustellnachweis, Reaktion des BR
+- **Nach den regelmäßigen Betriebsratswahlen 2026 (01.03.–31.05.2026):** Ist der neue Betriebsrat konstituiert ([§ 29 BetrVG](https://www.gesetze-im-internet.de/betrvg/__29.html))? Wer ist Vorsitzender bzw. Stellvertreter ([§ 26 Abs. 2 BetrVG](https://www.gesetze-im-internet.de/betrvg/__26.html))? Bis zur konstituierenden Sitzung fehlt ein empfangszuständiger Vorsitzender; läuft gegen die Wahl ein Anfechtungsverfahren, bleibt der gewählte Betriebsrat bis zur Rechtskraft zuständig (siehe `/arbeitsrecht:betriebsratswahl-anfechtung`). Rechtsstand Oktober 2026.
 
 ## Sub-Agent-Architektur
 

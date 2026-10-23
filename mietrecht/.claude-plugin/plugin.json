@@ -1,7 +1,7 @@
 {
   "name": "mietrecht",
-  "version": "0.4.3",
-  "description": "Mietrecht – Wohnraummiete, Mieterhöhung § 558 BGB, Modernisierung § 559, Eigenbedarfs- und Verwertungskündigung §§ 573 ff. BGB, Betriebskostenabrechnung BetrKV/HeizkostenV, WEG-Grundzüge.",
+  "version": "0.5.0",
+  "description": "Mietrecht (Rechtsstand Oktober 2026) – Wohnraum- und Gewerberaummiete, Mieterhöhung § 558 BGB, Index- und Staffelmiete §§ 557a, 557b, Modernisierung und Heizungstausch §§ 559, 559e, 559f BGB (GModG), Mietpreisbremse bis 2029, Mietwucher § 5 WiStG, möblierte Vermietung § 549 BGB, Eigenbedarfs- und Zahlungsverzugskündigung §§ 543, 573 BGB, Tod des Mieters §§ 563 ff., Betriebs- und Heizkosten BetrKV/HeizkostenV/CO2KostAufG, Mietrechtsreform BT-Drs. 21/6807 als Entwurf.",
   "license": "Apache-2.0 OR MIT",
   "author": {
     "name": "Borghei",

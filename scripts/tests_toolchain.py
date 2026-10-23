@@ -104,6 +104,8 @@ class TestStatuteSlugs(unittest.TestCase):
         # so a derived art_<n>.html always 404s. It must be reported against the
         # full text instead of being resolved article-by-article.
         self.assertIn("EGBGB", vc.NO_PER_ARTICLE_PAGE)
+        # Same for EGAO, whose pages are art_97__<n>.html.
+        self.assertIn("EGAO", vc.NO_PER_ARTICLE_PAGE)
 
     def test_new_area_abbreviations_are_known(self):
         for abbr, slug in (
@@ -117,6 +119,30 @@ class TestStatuteSlugs(unittest.TestCase):
         ):
             with self.subTest(abbr=abbr):
                 self.assertEqual(vc.STATUTE_SLUGS.get(abbr), slug)
+
+    def test_enwg_is_not_shadowed_by_a_dead_slug(self):
+        # EnWG was listed twice; the later "enwg" entry won and every derived
+        # link 404'd. The site serves the law under "enwg_2005".
+        self.assertEqual(vc.STATUTE_SLUGS["EnWG"], "enwg_2005")
+
+    def test_tenancy_energy_and_tax_abbreviations_are_known(self):
+        for abbr, slug in (
+            ("GModG", "geg"),  # renamed GEG, still served under the old slug
+            ("CO2KostAufG", "co2kostaufg"),
+            ("BEHG", "behg"),
+            ("WiStG", "wistrg_1954"),
+            ("BewG", "bewg"),
+            ("GrStG", "grstg_1973"),
+            ("UStDV", "ustdv_1980"),
+            ("ZertVerwV", "zertverwv"),
+        ):
+            with self.subTest(abbr=abbr):
+                self.assertEqual(vc.STATUTE_SLUGS.get(abbr), slug)
+
+    def test_draft_provisions_are_info_not_unknown_laws(self):
+        findings = vc._scan_statutes("nach § 573 Abs. 4 BGB-E", 1, "x", False, {})
+        self.assertEqual(len(findings), 1)
+        self.assertEqual(findings[0].severity, vc.Severity.INFO)
 
     def test_subdivision_markers_are_not_read_as_statutes(self):
         # "Art. 50 UAbs. 6" and "§ 18 und CE-Kennzeichnung" used to be reported

@@ -1,6 +1,6 @@
 ---
 name: raeumungsklage
-description: "Räumungsklage und Zwangsräumung im Wohnraum- und Gewerberaummietrecht – Rückgabeanspruch § 546 BGB und Herausgabeanspruch § 985 BGB, Nutzungsentschädigung § 546a BGB, Verbindung mit der Zahlungsklage, Klage auf künftige Räumung § 259 ZPO, Zuständigkeit § 23 Nr. 2a GVG und § 29a ZPO, Räumungsfrist § 721 ZPO und Vollstreckungsschutz § 765a ZPO, Sicherungsanordnung § 283a ZPO, einstweilige Räumungsverfügung § 940a ZPO, Berliner Räumung § 885a ZPO. Use when eine Räumungsklage vorbereitet, erhoben oder abgewehrt wird oder eine Zwangsräumung ansteht."
+description: "Räumungsklage und Zwangsräumung im Wohnraum- und Gewerberaummietrecht – Rückgabeanspruch § 546 BGB und Herausgabeanspruch § 985 BGB, Nutzungsentschädigung § 546a BGB, Verbindung mit der Zahlungsklage, Klage auf künftige Räumung § 259 ZPO, Zuständigkeit § 23 Nr. 2a GVG und § 29a ZPO, Räumungsfrist § 721 ZPO und Vollstreckungsschutz § 765a ZPO, Sicherungsanordnung § 283a ZPO, einstweilige Räumungsverfügung § 940a ZPO, Berliner Räumung § 885a ZPO. Rechtsstand: Oktober 2026. Use when eine Räumungsklage vorbereitet, erhoben oder abgewehrt wird oder eine Zwangsräumung ansteht."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -33,7 +33,7 @@ Die Prüfung wird in Prosa von spezialisierten Schritten getragen; einen `agents
 
 **Dinglicher Herausgabeanspruch (§ 985 BGB):** Nur für den **Eigentümer**; er greift, wenn kein Besitzrecht nach § 986 BGB mehr besteht. In der kanonischen Reihenfolge Vertrag → dinglich wird er hilfsweise geltend gemacht, insbesondere gegen Dritte ohne Vertragsbeziehung.
 
-**Nutzungsentschädigung (§ 546a BGB):** Gibt der Mieter die Sache nicht zurück, kann der Vermieter für die Dauer der Vorenthaltung die **vereinbarte Miete oder die ortsübliche Vergleichsmiete** verlangen — je nachdem, welche höher ist. Weitergehender Schadensersatz bleibt unberührt (Abs. 2).
+**Nutzungsentschädigung (§ 546a BGB):** Gibt der Mieter die Sache nicht zurück, kann der Vermieter für die Dauer der Vorenthaltung die **vereinbarte Miete oder die ortsübliche Vergleichsmiete** verlangen — je nachdem, welche höher ist. Weitergehender Schadensersatz bleibt unberührt (Abs. 2). Ein **Vorenthalten** setzt einen Rücknahmewillen des Vermieters voraus (BGH, Urt. v. 18.06.2025 – VIII ZR 291/23 `[unverifiziert – prüfen]`).
 
 ### 2. Passivlegitimation — alle Mitbesitzer
 
@@ -84,7 +84,7 @@ Die Räumung erfolgt durch den **Gerichtsvollzieher**: Besitzeinweisung des Glä
 
 ### Kommentare
 
-- Streyl, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 546 BGB Rn. 1 ff.
+- Streyl, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 546 BGB Rn. 1 ff.
 - Bieber, in: MüKoBGB, 9. Aufl. 2023, § 546 Rn. 1 ff.; § 546a Rn. 1 ff.
 - Lackmann, in: Musielak/Voit, ZPO, aktuelle Auflage, § 885a Rn. 1 ff.
 - Herget, in: Zöller, ZPO, aktuelle Auflage, § 940a Rn. 1 ff.; § 721 Rn. 1 ff.
@@ -92,8 +92,10 @@ Die Räumung erfolgt durch den **Gerichtsvollzieher**: Besitzeinweisung des Glä
 ### Rechtsprechung
 
 - BGH, Urt. v. 13.10.2021 – VIII ZR 91/20 (Schonfristzahlung beseitigt die hilfsweise ordentliche Kündigung nicht — für die Schlüssigkeit der Räumungsklage entscheidend) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2021-10-13&Aktenzeichen=VIII%20ZR%2091/20
-- Zur Notwendigkeit eines Titels gegen den mitbesitzenden Ehegatten ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
-- Zu den Anforderungen an § 765a ZPO bei Suizidgefahr ist die einschlägige BGH- und BVerfG-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
+- BGH, Urt. v. 30.09.2026 – VIII ZR 21/26 (Bestätigung: Schonfristzahlung heilt die ordentliche Kündigung nicht; § 573 BGB eigenständig zu prüfen) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-09-30&Aktenzeichen=VIII%20ZR%2021/26
+- BGH, Urt. v. 18.06.2025 – VIII ZR 291/23 (§ 546a BGB: Vorenthalten nur bei Rücknahmewillen) `[unverifiziert – prüfen]`
+- Zur Notwendigkeit eines Titels gegen den mitbesitzenden Ehegatten ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
+- Zu den Anforderungen an § 765a ZPO bei Suizidgefahr ist die einschlägige BGH- und BVerfG-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Klageanträge
 
@@ -162,4 +164,4 @@ Risiko: [🟢 / 🟡 / 🔴]
 - **Räumungsfrist unterschätzt** — § 721 ZPO erlaubt bis zu einem Jahr; das ist in der Fristen- und Kostenplanung abzubilden.
 - **Berliner Räumung ohne Prüfung gewählt** — sie senkt den Vorschuss, verlagert aber Verwahrungs- und Verwertungspflichten samt Haftung auf den Gläubiger.
 - **Widerspruch nach §§ 574 ff. BGB übersehen** — ein durchgreifender Härtefall führt zur Fortsetzung des Mietverhältnisses trotz wirksamer Kündigung.
-- **Schonfristzahlung im laufenden Prozess** — sie erledigt nur die fristlose Kündigung; auf die hilfsweise ordentliche Kündigung ist rechtzeitig umzustellen.
+- **Schonfristzahlung im laufenden Prozess** — sie erledigt nur die fristlose Kündigung; auf die hilfsweise ordentliche Kündigung ist rechtzeitig umzustellen (BGH VIII ZR 91/20, bestätigt durch VIII ZR 21/26 v. 30.09.2026). Achtung: Nach dem anhängigen Regierungsentwurf BT-Drs. 21/6807 (§ 573 Abs. 4 BGB-E; Stand 23.10.2026 nicht verabschiedet) würde die Schonfristzahlung einmal je Mietverhältnis auch die ordentliche Kündigung heilen; bei Verkündung während des Prozesses die Übergangsregel prüfen (https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2021-10-13&Aktenzeichen=VIII%20ZR%2091/20).

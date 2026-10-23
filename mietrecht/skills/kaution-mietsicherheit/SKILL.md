@@ -1,6 +1,6 @@
 ---
 name: kaution-mietsicherheit
-description: "Mietsicherheit im Wohnraummietrecht – Höchstbetrag von drei Nettokaltmieten und Ratenzahlungsrecht § 551 Abs. 1, Abs. 2 BGB, insolvenzfeste Anlagepflicht getrennt vom Vermietervermögen § 551 Abs. 3 BGB, Unwirksamkeit abweichender Vereinbarungen § 551 Abs. 4 BGB, Kündigung wegen Kautionsverzugs § 569 Abs. 2a BGB, Abrechnung und Zurückbehaltung nach Rückgabe, Verwertung und Aufrechnung, Verjährung § 548 BGB. Use when eine Kaution vereinbart, angelegt, verwertet oder nach Mietende abgerechnet und zurückgefordert wird."
+description: "Mietsicherheit im Wohnraummietrecht – Höchstbetrag von drei Nettokaltmieten und Ratenzahlungsrecht § 551 Abs. 1, Abs. 2 BGB, insolvenzfeste Anlagepflicht getrennt vom Vermietervermögen § 551 Abs. 3 BGB, Unwirksamkeit abweichender Vereinbarungen § 551 Abs. 4 BGB, Kündigung wegen Kautionsverzugs § 569 Abs. 2a BGB, Abrechnung und Zurückbehaltung nach Rückgabe, Verwertung und Aufrechnung, Verjährung § 548 BGB. Rechtsstand: Oktober 2026. Use when eine Kaution vereinbart, angelegt, verwertet oder nach Mietende abgerechnet und zurückgefordert wird."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -49,7 +49,7 @@ Abweichende Vereinbarungen zum Nachteil des Mieters sind nach **§ 551 Abs. 4 BG
 
 ### 4. Kautionsverzug und Kündigung ([§ 569 Abs. 2a BGB](https://www.gesetze-im-internet.de/bgb/__569.html))
 
-Ein **wichtiger Grund** im Sinne des § 543 Abs. 1 BGB liegt auch vor, wenn der Mieter mit einer Sicherheitsleistung nach § 551 BGB in Höhe eines Betrages in Verzug ist, der der **zweifachen Monatsmiete** entspricht. Die Kündigung ist ausgeschlossen, wenn die Sicherheit vor Zugang der Kündigung geleistet wird. Eine Abmahnung ist nach § 569 Abs. 2a S. 2 BGB entbehrlich. Vertiefung: `/mietrecht:fristlose-kuendigung-543`.
+Ein **wichtiger Grund** im Sinne des § 543 Abs. 1 BGB liegt auch vor, wenn der Mieter mit einer Sicherheitsleistung nach § 551 BGB in Höhe eines Betrages in Verzug ist, der der **zweifachen Monatsmiete** entspricht. Die Kündigung ist ausgeschlossen, wenn der Vermieter vor Zugang befriedigt wird (§ 569 Abs. 2a S. 4 i.V.m. § 543 Abs. 2 S. 2 BGB); außerdem gilt die **Schonfristzahlung** des § 569 Abs. 3 Nr. 2 S. 1 BGB entsprechend (S. 4). Einer Abhilfefrist oder Abmahnung bedarf es nach § 569 Abs. 2a **S. 3** BGB nicht. Ist statt einer Barkaution eine **Bankbürgschaft** geschuldet und wird sie nicht beigebracht, hat der BGH die Reichweite des § 569 Abs. 2a BGB und einen Treuwidrigkeitseinwand gegen widersprüchliches Vermieterverhalten erörtert (BGH, Urt. v. 14.05.2025 – VIII ZR 256/23, NJW 2025, 2147, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-05-14&Aktenzeichen=VIII%20ZR%20256/23 — Kernaussage vor Verwendung im Volltext prüfen). Vertiefung: `/mietrecht:fristlose-kuendigung-543`.
 
 ### 5. Verwertung während des Mietverhältnisses
 
@@ -61,7 +61,7 @@ Nach Beendigung und Rückgabe der Mietsache ist die Kaution **abzurechnen und de
 
 ### 7. Aufrechnung und Verjährung ([§ 548 BGB](https://www.gesetze-im-internet.de/bgb/__548.html))
 
-Der Vermieter kann mit fälligen Gegenforderungen gegen den Rückzahlungsanspruch **aufrechnen**: Mietrückstand, Nutzungsentschädigung nach § 546a BGB, Betriebskostennachforderung, Schadensersatz wegen Verschlechterung der Mietsache. Für **Ersatzansprüche wegen Veränderungen oder Verschlechterungen** gilt die **sechsmonatige Verjährung** des § 548 Abs. 1 BGB ab **Rückerhalt** der Mietsache. Die Aufrechnung mit einer bereits verjährten Forderung ist nach § 215 BGB zulässig, wenn sich die Forderungen zu einem Zeitpunkt aufrechenbar gegenüberstanden, in dem die Forderung noch nicht verjährt war. Der Rückzahlungsanspruch des Mieters verjährt regelmäßig nach §§ 195, 199 BGB in drei Jahren. Vertiefung zur Rückgabeabwicklung: `/mietrecht:schoenheitsreparaturen-rueckgabe`.
+Der Vermieter kann mit fälligen Gegenforderungen gegen den Rückzahlungsanspruch **aufrechnen**: Mietrückstand, Nutzungsentschädigung nach § 546a BGB, Betriebskostennachforderung, Schadensersatz wegen Verschlechterung der Mietsache. Für **Ersatzansprüche wegen Veränderungen oder Verschlechterungen** gilt die **sechsmonatige Verjährung** des § 548 Abs. 1 BGB ab **Rückerhalt** der Mietsache. Die Aufrechnung mit einer bereits verjährten Forderung ist nach § 215 BGB zulässig, wenn sich die Forderungen zu einem Zeitpunkt aufrechenbar gegenüberstanden, in dem die Forderung noch nicht verjährt war. Der BGH lässt die Aufrechnung mit nach § 548 BGB verjährten Schadensersatzforderungen gegen den Kautionsrückzahlungsanspruch zu (BGH, Urt. v. 10.07.2024 – VIII ZR 184/23, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2024-07-10&Aktenzeichen=VIII%20ZR%20184/23). Der Rückzahlungsanspruch des Mieters verjährt regelmäßig nach §§ 195, 199 BGB in drei Jahren. Vertiefung zur Rückgabeabwicklung: `/mietrecht:schoenheitsreparaturen-rueckgabe`.
 
 ### 8. Vermieterwechsel ([§ 566a BGB](https://www.gesetze-im-internet.de/bgb/__566a.html))
 
@@ -77,15 +77,17 @@ Wird das vermietete Wohnraumgrundstück veräußert, tritt der **Erwerber** in d
 
 ### Kommentare
 
-- Blank, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 551 BGB Rn. 1 ff.
+- Blank, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 551 BGB Rn. 1 ff.
 - Bieber, in: MüKoBGB, 9. Aufl. 2023, § 551 Rn. 1 ff.; § 566a Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 551 Rn. 1 ff.
 
 ### Rechtsprechung
 
 - BGH, Urt. v. 09.03.2005 – VIII ZR 330/03 (Herausgabepflicht des Zwangsverwalters auch bei nicht weitergeleiteter Kaution) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2005-03-09&Aktenzeichen=VIII%20ZR%20330/03
-- Zur Länge der Abrechnungs- und Überlegungsfrist nach Rückgabe und zum zulässigen Betriebskosteneinbehalt ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
-- Zur Unzulässigkeit einer zusätzlichen Bürgschaft neben der Höchstkaution ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
+- Zur Länge der Abrechnungs- und Überlegungsfrist nach Rückgabe und zum zulässigen Betriebskosteneinbehalt ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
+- BGH, Urt. v. 10.07.2024 – VIII ZR 184/23 (Aufrechnung mit verjährten Ersatzansprüchen gegen den Kautionsrückzahlungsanspruch) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2024-07-10&Aktenzeichen=VIII%20ZR%20184/23
+- BGH, Urt. v. 14.05.2025 – VIII ZR 256/23, NJW 2025, 2147 (Kündigung wegen nicht beigebrachter Bankbürgschaft; § 569 Abs. 2a BGB, § 242 BGB) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-05-14&Aktenzeichen=VIII%20ZR%20256/23
+- Zur Unzulässigkeit einer zusätzlichen Bürgschaft neben der Höchstkaution ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Rückforderung der Kaution nach Mietende
 

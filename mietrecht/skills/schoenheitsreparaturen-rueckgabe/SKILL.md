@@ -30,7 +30,7 @@ Die Prüfung wird in Prosa von spezialisierten Schritten getragen; einen `agents
 
 ### 1. Verjährung zuerst ([§ 548 BGB](https://www.gesetze-im-internet.de/bgb/__548.html))
 
-Die **Ersatzansprüche des Vermieters wegen Veränderungen oder Verschlechterungen der Mietsache verjähren in sechs Monaten**. Die Frist beginnt mit dem **Rückerhalt** der Sache — dem Zeitpunkt, in dem der Vermieter die tatsächliche Sachherrschaft und die Möglichkeit zur Untersuchung erlangt, nicht mit dem rechtlichen Mietende. Erfasst sind auch Ansprüche auf Schadensersatz wegen **unterlassener Schönheitsreparaturen**. Die kurze Frist ist **nicht** durch AGB verlängerbar. Umgekehrt verjähren Ansprüche des **Mieters** auf Ersatz von Aufwendungen und sein Wegnahmerecht ebenfalls in sechs Monaten ab Beendigung des Mietverhältnisses (§ 548 Abs. 2 BGB). Praxis: Rückgabetermin, Untersuchungstermin und Verjährungsende gehören am Tag der Rückgabe in den Fristenkalender; eine Hemmung nach § 203 BGB durch Verhandlungen ist zu dokumentieren.
+Die **Ersatzansprüche des Vermieters wegen Veränderungen oder Verschlechterungen der Mietsache verjähren in sechs Monaten**. Die Frist beginnt mit dem **Rückerhalt** der Sache — dem Zeitpunkt, in dem der Vermieter die tatsächliche Sachherrschaft und die Möglichkeit zur Untersuchung erlangt, nicht mit dem rechtlichen Mietende. Der Rückerhalt verlangt, dass der Vermieter die **unmittelbare Sachherrschaft** erlangt; er kann vor dem Vertragsende liegen, und nach einem gescheiterten Übergabetermin kann der Einwurf der Schlüssel in den Briefkasten genügen (BGH, Urt. v. 29.01.2025 – XII ZR 96/23, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-01-29&Aktenzeichen=XII%20ZR%2096/23 — Gewerberaum, die Grundsätze zu § 548 BGB sind auf Wohnraum übertragbar). Erfasst sind auch Ansprüche auf Schadensersatz wegen **unterlassener Schönheitsreparaturen**. Die kurze Frist ist **nicht** durch AGB verlängerbar. Umgekehrt verjähren Ansprüche des **Mieters** auf Ersatz von Aufwendungen und sein Wegnahmerecht ebenfalls in sechs Monaten ab Beendigung des Mietverhältnisses (§ 548 Abs. 2 BGB). Praxis: Rückgabetermin, Untersuchungstermin und Verjährungsende gehören am Tag der Rückgabe in den Fristenkalender; eine Hemmung nach § 203 BGB durch Verhandlungen ist zu dokumentieren.
 
 ### 2. Gesetzliche Ausgangslage ([§ 535 Abs. 1 S. 2 BGB](https://www.gesetze-im-internet.de/bgb/__535.html))
 
@@ -69,7 +69,7 @@ Vom Mieter vorgenommene bauliche Veränderungen — Einbauküche, Trennwand, Par
 
 ### 7. Schadensersatz statt der Leistung ([§ 280 Abs. 1](https://www.gesetze-im-internet.de/bgb/__280.html), [§ 281 BGB](https://www.gesetze-im-internet.de/bgb/__281.html))
 
-Kommt der Mieter einer **wirksam** übernommenen Renovierungspflicht nicht nach, kann der Vermieter Schadensersatz verlangen. Voraussetzung ist grundsätzlich eine **Fristsetzung** zur Nacherfüllung (§ 281 Abs. 1 BGB); nach Rückgabe der Wohnung ist sie nach h.M. entbehrlich, wenn der Mieter die Leistung endgültig verweigert oder der Vermieter bereits anderweitig vermietet hat. Der Schaden bemisst sich nach den **erforderlichen** Renovierungskosten; ein Kostenvoranschlag genügt zur Bezifferung, ein Abzug „neu für alt" ist zu prüfen. Anstelle der Renovierung kann der Vermieter den **Mietausfall** für die Renovierungszeit geltend machen — nicht beides kumulativ.
+Kommt der Mieter einer **wirksam** übernommenen Renovierungspflicht nicht nach, kann der Vermieter Schadensersatz verlangen. Voraussetzung ist grundsätzlich eine **Fristsetzung** zur Nacherfüllung (§ 281 Abs. 1 BGB); entbehrlich ist sie bei ernsthafter und endgültiger Erfüllungsverweigerung (§ 281 Abs. 2 BGB). Ob eine bereits erfolgte Weitervermietung die Fristsetzung entbehrlich macht, ist zweifelhaft `[unverifiziert – prüfen]` — im Zweifel vor Rückgabe bzw. unmittelbar danach Frist setzen. Der Schaden bemisst sich nach den **erforderlichen** Renovierungskosten; ein Kostenvoranschlag genügt zur Bezifferung, ein Abzug „neu für alt" ist zu prüfen. Daneben kommt ein Ersatz des **Mietausfalls** für die Dauer der Renovierung als weiterer Schadensposten in Betracht, soweit er auf der unterlassenen Renovierung beruht `[unverifiziert – prüfen]`.
 
 ### 8. Abwicklung über die Kaution
 
@@ -90,7 +90,7 @@ python -m scripts.legal_calc.cli frist --ereignis 31.08.2026 --menge 6 --einheit
 python -m scripts.legal_calc.cli frist --ereignis 31.03.2026 --menge 6 --einheit monate
 ```
 
-`--json` liefert die Rechenschritte samt Normzitat. Das Ergebnis ist ein **Rechenergebnis**, kein Rechtsrat: Ob überhaupt Rückerhalt vorlag (Schlüsselübergabe an einen Boten genügt regelmäßig nicht) und ob Verhandlungen die Frist gehemmt haben, entscheidet die rechtliche Würdigung.
+`--json` liefert die Rechenschritte samt Normzitat. Das Ergebnis ist ein **Rechenergebnis**, kein Rechtsrat: Ob überhaupt Rückerhalt vorlag (maßgeblich ist die Erlangung der unmittelbaren Sachherrschaft durch den Vermieter; vgl. XII ZR 96/23) und ob Verhandlungen die Frist gehemmt haben, entscheidet die rechtliche Würdigung (https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-01-29&Aktenzeichen=XII%20ZR%2096/23).
 
 ## Quellen
 
@@ -103,15 +103,16 @@ python -m scripts.legal_calc.cli frist --ereignis 31.03.2026 --menge 6 --einheit
 
 ### Kommentare
 
-- Langenberg, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 538 BGB Rn. 1 ff. (Schönheitsreparaturen)
+- Langenberg/Zehelein, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 535 BGB (Schönheitsreparaturen; Rn. vor Zitat prüfen)
 - Bieber, in: MüKoBGB, 9. Aufl. 2023, § 535 Rn. 1 ff.; § 548 Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 535 Rn. 1 ff.; § 548 Rn. 1 ff.
 
 ### Rechtsprechung
 
+- BGH, Urt. v. 29.01.2025 – XII ZR 96/23 (Rückerhalt i.S.d. § 548 BGB) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-01-29&Aktenzeichen=XII%20ZR%2096/23
 - BGH, Urt. v. 18.03.2015 – VIII ZR 185/14 (formularmäßige Überwälzung bei unrenoviert überlassener Wohnung ohne angemessenen Ausgleich unwirksam) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-03-18&Aktenzeichen=VIII%20ZR%20185/14
 - BGH, Urt. v. 08.07.2020 – VIII ZR 163/18 und VIII ZR 270/18 (Anspruch des Mieters einer unrenoviert überlassenen Wohnung auf Durchführung von Schönheitsreparaturen; hälftige Kostenbeteiligung) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2020-07-08&Aktenzeichen=VIII%20ZR%20163/18
-- Zur Unwirksamkeit starrer Fristenpläne und von Quotenabgeltungsklauseln ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
+- Zur Unwirksamkeit starrer Fristenpläne und von Quotenabgeltungsklauseln ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Zurückweisung einer Renovierungsforderung
 

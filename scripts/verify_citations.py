@@ -148,6 +148,19 @@ STATUTE_SLUGS: dict[str, str] = {
     "NIS2UmsuCG": "bsig_2009",
     "EnWG": "enwg_2005",
     "GEG": "geg",
+    # GEG was renamed Gebäudemodernisierungsgesetz (BGBl. 2026 I Nr. 226); the
+    # consolidated text still lives under the old slug.
+    "GModG": "geg",
+    "CO2KostAufG": "co2kostaufg",
+    "BewG": "bewg",
+    "GrStG": "grstg_1973",
+    "UStDV": "ustdv_1980",
+    "ZertVerwV": "zertverwv",
+    # EGAO: only Art. 97 carries the transition rules, and its pages are
+    # art_97__<n>.html, which the derived-URL scheme cannot express.
+    "EGAO": "aoeg_1977",
+    "BEHG": "behg",
+    "WiStG": "wistrg_1954",
     "WPG": "wpg",
     "StiftRG": "stiftrg",
     "GBO": "gbo",
@@ -257,7 +270,6 @@ STATUTE_SLUGS: dict[str, str] = {
     "BImSchG": "bimschg",
     "KrWG": "krwg",
     "WHG": "whg",
-    "EnWG": "enwg",
     "BauGB": "bbaug",
     # Versicherung
     "VVG": "vvg_2008",
@@ -343,6 +355,7 @@ KNOWN_NON_GII: dict[str, str] = {
 # negative, not a citation error.
 NO_PER_ARTICLE_PAGE: dict[str, str] = {
     "EGBGB": "https://www.gesetze-im-internet.de/bgbeg/BJNR006049896.html",
+    "EGAO": "https://www.gesetze-im-internet.de/aoeg_1977/",
 }
 
 # Abbreviations cited Art.-style on gesetze-im-internet.de (art_<num>.html).
@@ -576,6 +589,14 @@ def _scan_statutes(line: str, lineno: int, source: str, online: bool,
         if " " in abbr and abbr.split(" ", 1)[0] != "SGB":
             abbr = abbr.split(" ", 1)[0]
 
+        # Draft provisions ("§ 573 Abs. 4 BGB-E") have no consolidated text yet;
+        # the skill names the Drucksache instead.
+        if abbr.endswith("-E"):
+            findings.append(Finding(
+                source, lineno, "statute", citation, Severity.INFO,
+                f"{abbr}: Entwurfsfassung — gegen die Drucksache prüfen, nicht gegen geltendes Recht",
+            ))
+            continue
         if abbr in NON_STATUTE_TOKENS:
             # Commentary pin-cite (e.g. "§ 622 Rn. 1") — not a statute anchor.
             continue

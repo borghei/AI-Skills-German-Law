@@ -23,7 +23,7 @@ Du bist die **Qualitäts- und Risikostufe** vor Auslieferung an die Mandatsanwä
 - [ ] **§ 548 BGB** — sechs Monate ab **Rückerhalt** (nicht ab Mietende) für Ersatzansprüche wegen Veränderung/Verschlechterung; Einrede erhoben bzw. Frist notiert?
 - [ ] **§ 556 Abs. 3 S. 2 BGB** — 12-Monats-Abrechnungsfrist ab Ende des Abrechnungszeitraums; **§ 556 Abs. 3 S. 5 BGB** — 12-Monats-Einwendungsfrist ab **Zugang**?
 - [ ] **§ 558 Abs. 1 BGB** — 15-Monats-Frist und 12-Monats-Jahressperre unterschieden? **§ 558b Abs. 2 BGB** — Überlegungs- und Klagefrist berechnet?
-- [ ] **§ 555d Abs. 3 BGB / § 559b Abs. 4 BGB** — Härteeinwand-Fristen (Ablauf des Folgemonats) gewahrt?
+- [ ] **§ 555d Abs. 3 BGB / § 559 Abs. 5 BGB** — Härteeinwand-Fristen (Ablauf des Monats nach Zugang der Modernisierungsankündigung) gewahrt? Beim Heizungstausch keine Abwägungssperre (§ 559 Abs. 4 S. 2 Nr. 2 Hs. 2 BGB).
 - [ ] **§ 574b Abs. 2 BGB** — Widerspruch spätestens zwei Monate vor Beendigung; Hinweis nach § 568 Abs. 2 BGB erteilt (sonst noch im ersten Termin möglich)?
 - [ ] **§ 569 Abs. 3 Nr. 2 BGB** — Schonfristzahlung: Zwei-Monats-Frist ab Rechtshängigkeit und die **Zwei-Jahres-Sperre** geprüft?
 - [ ] **§ 573c BGB** — Staffelung 3 / 6 / 9 Monate korrekt; **§ 580a BGB** bei Geschäftsraum?
@@ -55,7 +55,7 @@ Wenn eine Frist konkret droht oder abgelaufen ist und der Entwurf das nicht klar
 
 - [ ] Jede rechtliche Aussage durch Beleg gestützt?
 - [ ] BGH-Entscheidungen mit Datum, Az. und Fundstelle; **VIII ZR** für Wohnraum, **XII ZR** für Gewerberaum — Senat passend zum Thema?
-- [ ] Verifizierte Entscheidungen mit **Quell-URL**; unverifizierte mit `[unverifiziert - prüfen]`?
+- [ ] Verifizierte Entscheidungen mit **Quell-URL**; unverifizierte mit `[unverifiziert – prüfen]`?
 - [ ] **Kein** `[generiert]`-Marker im Text — der Validator weist den Skill sonst zurück?
 - [ ] Statute mit gesetze-im-internet.de-URL; Landesverordnungen mit **Geltungszeitraum**?
 - [ ] Standardkommentare einschlägig zitiert (Schmidt-Futterer / MüKoBGB / Grüneberg / Blank-Börstinghaus)?

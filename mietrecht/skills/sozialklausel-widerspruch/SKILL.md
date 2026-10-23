@@ -31,7 +31,7 @@ Die Prüfung wird in Prosa von spezialisierten Schritten getragen; einen `agents
 
 Der Mieter kann der Kündigung des Vermieters widersprechen und die Fortsetzung des Mietverhältnisses verlangen, wenn die Beendigung für ihn, seine Familie oder einen anderen Angehörigen seines Haushalts eine **Härte** bedeuten würde, die auch unter Würdigung der berechtigten Interessen des Vermieters **nicht zu rechtfertigen** ist.
 
-Der Widerspruch ist **ausgeschlossen**, wenn ein Grund vorliegt, der den Vermieter zur **außerordentlichen fristlosen Kündigung** berechtigt (Abs. 1 S. 2) — also insbesondere bei Zahlungsverzug nach § 543 Abs. 2 S. 1 Nr. 3 BGB. Er gilt ferner nicht bei Kündigungen nach § 573a BGB (erleichterte Kündigung im Zweifamilienhaus) hinsichtlich der verlängerten Frist, wohl aber der Sache nach. Abweichende Vereinbarungen zum Nachteil des Mieters sind nach **§ 574 Abs. 4 BGB unwirksam**.
+Der Widerspruch ist **ausgeschlossen**, wenn ein Grund vorliegt, der den Vermieter zur **außerordentlichen fristlosen Kündigung** berechtigt (Abs. 1 S. 2) — also insbesondere bei Zahlungsverzug nach § 543 Abs. 2 S. 1 Nr. 3 BGB. Auf die **erleichterte Kündigung nach § 573a BGB** (Zweifamilienhaus mit Vermieterwohnung) ist die Sozialklausel **anwendbar**; dass der Vermieter dort kein berechtigtes Interesse darlegen muss, ändert an der Härteabwägung nichts. Für Mietverhältnisse nach § 549 Abs. 2 BGB (vorübergehender Gebrauch, möblierter Wohnraum in der Vermieterwohnung) gilt § 574 BGB nicht. Abweichende Vereinbarungen zum Nachteil des Mieters sind nach **§ 574 Abs. 4 BGB unwirksam**.
 
 ### 2. Härtegründe ([§ 574 Abs. 1, Abs. 2 BGB](https://www.gesetze-im-internet.de/bgb/__574.html))
 
@@ -87,15 +87,15 @@ Der Widerspruch wird im **Räumungsrechtsstreit** als Einwendung geltend gemacht
 
 ### Kommentare
 
-- Blank, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 574 BGB Rn. 1 ff.
+- Blank, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 574 BGB Rn. 1 ff.
 - Häublein, in: MüKoBGB, 9. Aufl. 2023, § 574 Rn. 1 ff.; § 574a Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 574 Rn. 1 ff.
 
 ### Rechtsprechung
 
 - BGH, Urt. v. 22.05.2019 – VIII ZR 180/18 und VIII ZR 167/17 (Interessenabwägung bei Eigenbedarfskündigung eines langjährigen erkrankten Mieters; Anforderungen an die Sachaufklärung) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2019-05-22&Aktenzeichen=VIII%20ZR%20180/18
-- BGH, Urt. v. 10.06.2015 – VIII ZR 99/14 (Schadensersatz bei vorgetäuschtem Eigenbedarf — flankierend zur Härteprüfung) `[unverifiziert - prüfen]`
-- Zu den Anforderungen an die Dokumentation der Ersatzwohnraumsuche ist die einschlägige Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
+- BGH, Urt. v. 10.06.2015 – VIII ZR 99/14 (Schadensersatz bei vorgetäuschtem Eigenbedarf — flankierend zur Härteprüfung) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2015-06-10&Aktenzeichen=VIII%20ZR%2099/14
+- Zu den Anforderungen an die Dokumentation der Ersatzwohnraumsuche ist die einschlägige Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Widerspruch nach §§ 574, 574b BGB
 

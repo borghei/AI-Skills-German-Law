@@ -1,6 +1,6 @@
 ---
 name: untervermietung
-description: "Untervermietung und Gebrauchsüberlassung an Dritte im Wohnraummietrecht – Erlaubnisvorbehalt § 540 BGB und Sonderkündigungsrecht des Mieters, Anspruch auf Gestattung der Teiluntervermietung bei berechtigtem Interesse § 553 Abs. 1 BGB, Untermietzuschlag § 553 Abs. 2 BGB, Abgrenzung zur Aufnahme von Angehörigen und Besuchern, Kurzzeitvermietung und Zweckentfremdung, Abmahnung und Kündigung bei unerlaubter Gebrauchsüberlassung §§ 543 Abs. 2 Nr. 2, 573 Abs. 2 Nr. 1 BGB, Rückgabeanspruch gegen den Untermieter § 546 Abs. 2 BGB. Use when eine Untermieterlaubnis beantragt, erteilt, verweigert oder eine unerlaubte Gebrauchsüberlassung sanktioniert wird."
+description: "Untervermietung und Gebrauchsüberlassung an Dritte im Wohnraummietrecht – Erlaubnisvorbehalt § 540 BGB und Sonderkündigungsrecht des Mieters, Anspruch auf Gestattung der Teiluntervermietung bei berechtigtem Interesse § 553 Abs. 1 BGB, Untermietzuschlag § 553 Abs. 2 BGB, Abgrenzung zur Aufnahme von Angehörigen und Besuchern, Kurzzeitvermietung und Zweckentfremdung, Abmahnung und Kündigung bei unerlaubter Gebrauchsüberlassung §§ 543 Abs. 2 Nr. 2, 573 Abs. 2 Nr. 1 BGB, Rückgabeanspruch gegen den Untermieter § 546 Abs. 2 BGB, keine Untervermietung mit Gewinn (BGH 2026). Rechtsstand: Oktober 2026. Use when eine Untermieterlaubnis beantragt, erteilt, verweigert oder eine unerlaubte Gebrauchsüberlassung sanktioniert wird."
 language: de
 provider_variants: [claude, gemini, openai]
 test: ./test.md
@@ -48,6 +48,8 @@ Entsteht für den Mieter **nach Abschluss des Mietvertrags** ein **berechtigtes 
 - **Berechtigtes Interesse** — jedes vernünftige, nachvollziehbare persönliche oder wirtschaftliche Interesse: Einkommensverlust, Wunsch nach Kostenentlastung, Zuzug eines Partners, Pflegebedarf, längerer **Auslandsaufenthalt** unter Beibehaltung des Lebensmittelpunkts in der Wohnung (BGH, Urt. v. 11.06.2014 – VIII ZR 349/13, https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2014-06-11&Aktenzeichen=VIII%20ZR%20349/13).
 - **Nur ein Teil** des Wohnraums — der Mieter muss den **Gewahrsam** an der Wohnung behalten; ein Zimmer, das er weiter nutzt oder für seine Sachen behält, genügt. Die vollständige Überlassung fällt nicht unter § 553 BGB.
 
+**Keine Untervermietung mit Gewinn:** Ein berechtigtes Interesse i.S.d. § 553 Abs. 1 BGB besteht nicht, wenn die Untervermietung dem Mieter einen Ertrag verschaffen soll, der über die Deckung der eigenen Wohnkosten hinausgeht; die gleichwohl fortgesetzte Untervermietung kann eine ordentliche Kündigung nach § 573 Abs. 2 Nr. 1 BGB tragen (BGH, Urt. v. 28.01.2026 – VIII ZR 228/23, Pressemitteilung Nr. 24/2026, https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2026/2026024.html; https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-01-28&Aktenzeichen=VIII%20ZR%20228/23). Praktisch ist daher die Untermiete gegen den anteiligen Mietanteil des untervermieteten Raums (zzgl. Möblierung, Nebenkosten) zu spiegeln.
+
 **Verweigerungsgründe (Abs. 1 S. 2):** Der Anspruch besteht nicht, wenn in der Person des Dritten ein **wichtiger Grund** vorliegt (etwa vorheriges Fehlverhalten im Haus), der Wohnraum **übermäßig belegt** würde oder dem Vermieter die Überlassung aus **sonstigen Gründen** nicht zugemutet werden kann. Der Vermieter darf die Person des Untermieters erfahren; ein Anspruch auf umfassende Auskunft über dessen Vermögensverhältnisse besteht nicht.
 
 **Rechtsfolge unberechtigter Verweigerung:** Der Mieter kann die Erlaubnis einklagen und Schadensersatz nach § 280 Abs. 1 BGB verlangen — in Höhe der entgangenen Untermiete.
@@ -58,7 +60,7 @@ Ist dem Vermieter die Überlassung nur bei einer **angemessenen Erhöhung der Mi
 
 ### 4. Kurzzeitvermietung und Zweckentfremdung
 
-Die **gewerbliche Kurzzeitvermietung** über Plattformen ist regelmäßig **nicht** von einer allgemeinen Untermieterlaubnis gedeckt — sie hat eine andere Qualität als die Überlassung an einen bestimmten Untermieter und bedarf einer gesonderten, ausdrücklichen Gestattung. Hinzu treten **öffentlich-rechtliche** Schranken: Zahlreiche Länder und Gemeinden haben **Zweckentfremdungsverbote** mit Genehmigungs- und Registrierungspflichten erlassen; Verstöße sind bußgeldbewehrt und begründen zugleich eine Vertragsverletzung gegenüber dem Vermieter. Das einschlägige Landes- und Ortsrecht ist gesondert zu prüfen.
+Die **gewerbliche Kurzzeitvermietung** über Plattformen ist regelmäßig **nicht** von einer allgemeinen Untermieterlaubnis gedeckt — sie hat eine andere Qualität als die Überlassung an einen bestimmten Untermieter und bedarf einer gesonderten, ausdrücklichen Gestattung. Hinzu treten **öffentlich-rechtliche** Schranken: Zahlreiche Länder und Gemeinden haben **Zweckentfremdungsverbote** mit Genehmigungs- und Registrierungspflichten erlassen; Verstöße sind bußgeldbewehrt und begründen zugleich eine Vertragsverletzung gegenüber dem Vermieter. Das einschlägige Landes- und Ortsrecht ist gesondert zu prüfen. **Anhängig:** Der Regierungsentwurf BT-Drs. 21/6807 (Stand 23.10.2026 nicht verabschiedet) will den „vorübergehenden Gebrauch" (§ 549 Abs. 2 Nr. 1 BGB-E) auf einen besonderen vorübergehenden Bedarf von höchstens sechs, verlängerbar acht Monaten begrenzen; das betrifft auch Untermietverhältnisse auf Zeit. Vertiefung: `/mietrecht:moeblierte-kurzzeitvermietung`.
 
 ### 5. Sanktionen bei unerlaubter Gebrauchsüberlassung
 
@@ -67,6 +69,8 @@ Die **gewerbliche Kurzzeitvermietung** über Plattformen ist regelmäßig **nich
 **Fristlose Kündigung** ([§ 543 Abs. 2 S. 1 Nr. 2 BGB](https://www.gesetze-im-internet.de/bgb/__543.html)): Sie setzt eine **erhebliche** Rechtsverletzung voraus. Erforderlich ist eine Gesamtabwägung; die unerlaubte Überlassung eines einzelnen Zimmers, auf die ein Gestattungsanspruch nach § 553 BGB bestanden hätte, trägt sie regelmäßig **nicht**. Anders bei vollständiger, gewerblicher oder dauerhafter Überlassung trotz Abmahnung.
 
 **Ordentliche Kündigung** ([§ 573 Abs. 2 Nr. 1 BGB](https://www.gesetze-im-internet.de/bgb/__573.html)): schuldhafte, nicht unerhebliche Vertragsverletzung — die praktisch belastbarere Variante; hilfsweise stets mitzuerklären. Vertiefung: `/mietrecht:fristlose-kuendigung-543`.
+
+**Gewinnorientierte Untervermietung:** Erzielt der Mieter mit der Untervermietung einen Überschuss über die eigenen Wohnkosten, fehlt der Gestattungsanspruch; nach BGH VIII ZR 228/23 kann dies — auch nach Abmahnung — die ordentliche Kündigung rechtfertigen (https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2026/2026024.html).
 
 **Herausgabe der Untermiete?** Ein Anspruch des Vermieters auf Auskehr der erzielten Untermiete besteht grundsätzlich **nicht**; in Betracht kommt allenfalls Schadensersatz bei nachweisbarem Schaden.
 
@@ -84,15 +88,16 @@ Zwischen Vermieter und Untermieter besteht **kein Vertragsverhältnis**. Nach Be
 
 ### Kommentare
 
-- Blank, in: Schmidt-Futterer, Mietrecht, 15. Aufl. 2023, § 553 BGB Rn. 1 ff.
+- Blank, in: Schmidt-Futterer, Mietrecht, 16. Aufl. 2024, § 553 BGB Rn. 1 ff.
 - Bieber, in: MüKoBGB, 9. Aufl. 2023, § 540 Rn. 1 ff.; § 553 Rn. 1 ff.
 - Weidenkaff, in: Grüneberg, BGB, 84. Aufl. 2025, § 553 Rn. 1 ff.
 
 ### Rechtsprechung
 
 - BGH, Urt. v. 11.06.2014 – VIII ZR 349/13 (berechtigtes Interesse an Untervermietung bei längerem Auslandsaufenthalt; Schadensersatz bei pflichtwidriger Verweigerung der Erlaubnis) — verifiziert: https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2014-06-11&Aktenzeichen=VIII%20ZR%20349/13
-- Zur Bemessung des Untermietzuschlags nach § 553 Abs. 2 BGB ist die einschlägige Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
-- Zur Erheblichkeitsschwelle des § 543 Abs. 2 S. 1 Nr. 2 BGB bei unerlaubter Untervermietung eines einzelnen Zimmers ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert - prüfen]`.
+- BGH, Urt. v. 28.01.2026 – VIII ZR 228/23 (kein Gestattungsanspruch bei Untervermietung mit Gewinn; ordentliche Kündigung wirksam) — verifiziert: https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2026/2026024.html
+- Zur Bemessung des Untermietzuschlags nach § 553 Abs. 2 BGB ist die einschlägige Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
+- Zur Erheblichkeitsschwelle des § 543 Abs. 2 S. 1 Nr. 2 BGB bei unerlaubter Untervermietung eines einzelnen Zimmers ist die einschlägige BGH-Rechtsprechung heranzuziehen `[unverifiziert – prüfen]`.
 
 ## Formulierungshilfe — Antrag auf Untermieterlaubnis (§ 553 Abs. 1 BGB)
 
@@ -161,6 +166,7 @@ Risiko: [🟢 / 🟡 / 🔴]
 - **§ 553 BGB auf vollständige Überlassung angewendet** — der Anspruch besteht nur für einen **Teil** des Wohnraums; bei Vollüberlassung bleibt es beim Erlaubnisvorbehalt des § 540 BGB.
 - **Interesse bestand schon bei Vertragsschluss** — dann kein Anspruch nach § 553 Abs. 1 BGB.
 - **Untermietzuschlag pauschal bemessen** — der Zuschlag muss die konkrete Mehrbelastung abbilden und begründet werden; er ist keine Beteiligung an der Untermiete.
+- **Gewinn aus der Untervermietung übersehen** — eine Untermiete über die eigenen Wohnkosten hinaus schließt den Anspruch aus § 553 BGB aus und gefährdet das Hauptmietverhältnis (VIII ZR 228/23) (https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2026/2026024.html).
 - **Kurzzeitvermietung als Untervermietung behandelt** — sie ist von einer allgemeinen Erlaubnis nicht gedeckt und kann zusätzlich zweckentfremdungsrechtlich verboten sein.
 - **Fristlose Kündigung ohne Abmahnung** — bei § 543 Abs. 2 S. 1 Nr. 2 BGB ist die Abmahnung anders als beim Zahlungsverzug regelmäßig erforderlich.
 - **Erheblichkeitsschwelle überschätzt** — bestand ein Gestattungsanspruch nach § 553 BGB, trägt die unerlaubte Überlassung eines Zimmers die fristlose Kündigung regelmäßig nicht.

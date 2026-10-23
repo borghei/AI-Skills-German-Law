@@ -16,6 +16,7 @@ test: ./test.md
 
 AGG-Verfahren werden fast nie über die Diskriminierung entschieden, sondern über zwei Vorfragen: Ist die **2-Monats-Frist** des § 15 Abs. 4 AGG gewahrt, und reichen die vorgetragenen **Indizien** für die Vermutungswirkung des § 22 AGG? Dieser Skill arbeitet beide Fragen zuerst ab und bewertet erst danach Höhe und Rechtfertigung.
 
+> **Rechtsstand: Oktober 2026.** Berücksichtigt: BAG 23.10.2025 (Paarvergleich bei Entgeltgleichheit) und BAG 19.09.2024 (AGG-Hopping).
 ## Eingaben
 
 - **Rolle:** abgelehnter Bewerber / Beschäftigter / Arbeitgeber (Abwehr)
@@ -68,7 +69,7 @@ Anerkannte Indizien in der Praxis:
 - bei Bewerbung oder beruflichem Aufstieg: **Zugang der Ablehnung**,
 - in allen anderen Fällen: Kenntnis von der Benachteiligung.
 
-Schriftform bedeutet hier § 126 BGB in der Auslegung der Praxis; eine bloße E-Mail ist riskant. Die Geltendmachung muss den Anspruch nach Grund und ungefährer Höhe erkennen lassen — eine Bezifferung ist nicht zwingend, aber empfehlenswert.
+Ob „schriftlich" in § 15 Abs. 4 AGG die Schriftform des § 126 BGB meint oder — wie für tarifliche Ausschlussfristen vertreten — auch Telefax oder Textform genügen lässt, ist vor Verwendung zu prüfen `[unverifiziert – prüfen]`; die sichere Praxis ist ein **eigenhändig unterschriebenes Schreiben** mit Zugangsnachweis, eine bloße E-Mail ist riskant. Die Geltendmachung muss den Anspruch nach Grund und ungefährer Höhe erkennen lassen — eine Bezifferung ist nicht zwingend, aber empfehlenswert.
 
 **Stufe 2 — [§ 61b Abs. 1 ArbGG](https://www.gesetze-im-internet.de/arbgg/__61b.html):** Die Entschädigungsklage muss innerhalb von **drei Monaten, nachdem der Anspruch schriftlich geltend gemacht worden ist**, erhoben werden. Die Frist läuft ab der Geltendmachung, **nicht** ab der Ablehnung — beide Fristen sind getrennt zu berechnen.
 
@@ -84,7 +85,7 @@ Schriftform bedeutet hier § 126 BGB in der Auslegung der Praxis; eine bloße E-
 
 ### 5. Einwand des Rechtsmissbrauchs — „AGG-Hopping"
 
-Der Arbeitgeber kann dem Anspruch nach [§ 242 BGB](https://www.gesetze-im-internet.de/bgb/__242.html) entgegenhalten, der Bewerber habe sich nicht ernsthaft beworben, sondern gezielt die Entschädigung angestrebt (subjektives Element). Der EuGH hat den Missbrauchseinwand im Grundsatz anerkannt, verlangt aber eine Gesamtwürdigung; die bloße Vielzahl von Bewerbungen genügt nicht (EuGH-Rspr. zur Bewerbereigenschaft und zum Rechtsmissbrauch `[unverifiziert – prüfen]`).
+Der Arbeitgeber kann dem Anspruch nach [§ 242 BGB](https://www.gesetze-im-internet.de/bgb/__242.html) entgegenhalten, der Bewerber habe sich nicht ernsthaft beworben, sondern gezielt die Entschädigung angestrebt (subjektives Element). Der EuGH hat den Missbrauchseinwand im Grundsatz anerkannt, verlangt aber eine Gesamtwürdigung; die bloße Vielzahl von Bewerbungen genügt nicht (EuGH-Rspr. zur Bewerbereigenschaft und zum Rechtsmissbrauch `[unverifiziert – prüfen]`). Das BAG hat den Einwand in einem Fall planmäßiger Bewerbungen als „Geschäftsmodell" durchgreifen lassen; die Darlegungs- und Beweislast trägt der Arbeitgeber (BAG, Urt. v. 19.09.2024 – 8 AZR 21/24, NZA 2025, 104 `[unverifiziert – prüfen]`).
 
 Indizien, die der Arbeitgeber vortragen kann:
 
@@ -172,7 +173,8 @@ Der zweite Aufruf hängt vom **Zugang der Geltendmachung** ab, nicht vom Absaged
 
 ### Rechtsprechung
 
-- st. Rspr. des BAG zu § 22 AGG (Indizien müssen die Benachteiligung mit überwiegender Wahrscheinlichkeit nahelegen) `[unverifiziert – prüfen]`
+- st. Rspr. des BAG zu § 22 AGG (Indizien müssen die Benachteiligung mit überwiegender Wahrscheinlichkeit nahelegen) — **gilt nicht für Entgeltgleichheitsklagen**: Dort genügt der Paarvergleich mit einer besser vergüteten Person des anderen Geschlechts, ohne dass eine überwiegende Wahrscheinlichkeit dargelegt werden muss (BAG, Urt. v. 23.10.2025 – 8 AZR 300/24, [bundesarbeitsgericht.de](https://www.bundesarbeitsgericht.de/entscheidung/8-azr-300-24/)); für die übrigen Fälle `[unverifiziert – prüfen]`
+- BAG, Urt. v. 19.09.2024 – 8 AZR 21/24, NZA 2025, 104 (AGG-Hopping; Rechtsmissbrauch bei Bewerbungen als Geschäftsmodell) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zu § 165 S. 3 SGB IX (unterbliebene Einladung schwerbehinderter Bewerber beim öffentlichen Arbeitgeber als Indiz) `[unverifiziert – prüfen]`
 - st. Rspr. des BAG zu § 15 Abs. 4 AGG (Wahrung der Schriftform und Inhalt der Geltendmachung) `[unverifiziert – prüfen]`
 - EuGH-Rspr. zur Bewerbereigenschaft und zum Rechtsmissbrauch bei nicht ernsthaften Bewerbungen `[unverifiziert – prüfen]`

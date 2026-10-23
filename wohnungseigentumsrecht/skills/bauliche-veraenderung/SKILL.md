@@ -1,6 +1,6 @@
 ---
 name: bauliche-veraenderung
-description: "Einordnung einer baulichen Veränderung im Wohnungseigentum nach der WEMoG-Reform – Gestattungsbeschluss mit einfacher Mehrheit § 20 Abs. 1 WEG, privilegierter Anspruch auf Barrierefreiheit, E-Mobilität, Einbruchschutz, Glasfaser und Steckersolargeräte § 20 Abs. 2 WEG, Zustimmung Beeinträchtigter § 20 Abs. 3 WEG, Kostenverteilung § 21 WEG. Use when eine geplante bauliche Maßnahme eines Wohnungseigentümers auf Beschlusserfordernis, privilegierten Anspruch und Kostentragung geprüft wird."
+description: "Einordnung einer baulichen Veränderung im Wohnungseigentum nach der WEMoG-Reform – Beschluss oder Gestattungsbeschluss mit einfacher Mehrheit § 20 Abs. 1 WEG (Beschlusszwang auch in der Zweiergemeinschaft), privilegierter Anspruch auf Barrierefreiheit, E-Mobilität, Einbruchsschutz, Glasfaser und Steckersolargeräte § 20 Abs. 2 WEG (Steckersolar seit 17.10.2024), Gestattungsanspruch bei Einverständnis aller Beeinträchtigten § 20 Abs. 3 WEG, Grenzen § 20 Abs. 4 WEG, Kosten und Nutzungen § 21 Abs. 1–5 WEG, Duldungspflicht von Mietern § 15 WEG. Rechtsstand: Oktober 2026. Use when eine geplante oder bereits ausgeführte bauliche Maßnahme eines Wohnungseigentümers auf Beschlusserfordernis, privilegierten Anspruch, Beseitigung und Kostentragung geprüft wird."
 language: de
 agents:
   researcher: ../../agents/researcher.md
@@ -17,85 +17,88 @@ test: ./test.md
 
 ## Zweck
 
-Mit dem Wohnungseigentumsmodernisierungsgesetz (**WEMoG**, in Kraft seit 01.12.2020) wurde das Recht der baulichen Veränderung grundlegend umgebaut. Unter dem alten § 22 WEG bedurfte eine bauliche Veränderung im Grundsatz der Zustimmung aller beeinträchtigten Eigentümer — faktisch oft Allstimmigkeit. Seit der Reform gilt: Über **jede** bauliche Veränderung entscheidet die Gemeinschaft durch **Gestattungsbeschluss** mit **einfache Mehrheit** ([§ 20 Abs. 1 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html)).
+Mit dem Wohnungseigentumsmodernisierungsgesetz (**WEMoG**, in Kraft seit 01.12.2020) wurde das Recht der baulichen Veränderung grundlegend umgebaut. Unter dem alten § 22 WEG bedurfte eine bauliche Veränderung im Grundsatz der Zustimmung aller beeinträchtigten Eigentümer — faktisch oft Allstimmigkeit. Seit der Reform können bauliche Veränderungen **beschlossen oder einem Eigentümer durch Beschluss gestattet** werden; es genügt die **einfache Mehrheit** der abgegebenen Stimmen ([§ 20 Abs. 1 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html), [§ 25 Abs. 1 WEG](https://www.gesetze-im-internet.de/woeigg/__25.html)).
 
-Daneben hat das WEMoG **privilegierte Maßnahmen** geschaffen, auf die der einzelne Eigentümer einen Anspruch hat ([§ 20 Abs. 2 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html)). Dieser Skill ordnet eine geplante Maßnahme ein, bestimmt die nötige Mehrheit, prüft den privilegierten Anspruch sowie seine Grenzen und klärt die Kostenverteilung ([§ 21 WEG](https://www.gesetze-im-internet.de/woeigg/__21.html)).
+Daneben bestehen **privilegierte Maßnahmen**, auf die der einzelne Eigentümer einen Anspruch hat ([§ 20 Abs. 2 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html)), sowie ein Gestattungsanspruch, wenn alle Beeinträchtigten einverstanden sind (§ 20 Abs. 3 WEG). Dieser Skill ordnet eine Maßnahme ein, bestimmt den Weg zur Gestattung, prüft Grenzen und Beseitigungsrisiken und klärt Kosten und Nutzungen ([§ 21 WEG](https://www.gesetze-im-internet.de/woeigg/__21.html)).
+
+**Rechtsstand: Oktober 2026.** Letzte Änderung des § 20 WEG durch G v. 10.10.2024 (BGBl. 2024 I Nr. 306): **Steckersolargeräte** als fünfte privilegierte Maßnahme seit **17.10.2024**. Der V. Zivilsenat hat 2024–2026 den **Beschlusszwang** auch für ausgeführte Maßnahmen bekräftigt. Das GModG (seit 29.07.2026) ändert das WEG nicht; die früheren Sonderregeln für Gemeinschaften mit Etagenheizungen (§§ 71l und 71n der früheren GEG-Fassung) sind entfallen, ein Heizungstausch folgt den allgemeinen Regeln der §§ 19–21 WEG.
 
 ## Eingaben
 
-- geplante Maßnahme (genaue Beschreibung, Ort am Gemeinschafts- oder Sondereigentum)
-- Antragsteller (einzelner Eigentümer / mehrere / Verwalter)
-- fällt die Maßnahme unter eine privilegierte Kategorie (Barrierefreiheit, E-Mobilität, Einbruchschutz, Glasfaser, Steckersolar)?
-- Beeinträchtigung anderer Eigentümer (optisch, baulich, Nutzung)
+- geplante oder bereits ausgeführte Maßnahme (genaue Beschreibung, Ort am Gemeinschafts- oder Sondereigentum, Sichtbarkeit von außen)
+- Antragsteller (einzelner Eigentümer / mehrere / Verwalter / Mieter des Eigentümers)
+- privilegierte Kategorie (Barrierefreiheit, E-Mobilität, Einbruchsschutz, Glasfaser, Steckersolar)?
+- Beeinträchtigung anderer Eigentümer (optisch, baulich, Lärm, Nutzung)
 - Kosten und wer sie zu tragen bereit ist
-- bestehende Vereinbarungen / Gemeinschaftsordnung / frühere Beschlüsse
+- Gemeinschaftsordnung (Öffnungsklauseln, abweichende Kostenregeln), frühere Beschlüsse
+- Anzahl der Einheiten (Zweiergemeinschaft?)
 
 ## Sub-Agent-Architektur
 
-Researcher liefert die Normfassung der §§ 20, 21 WEG nach WEMoG und ordnet die Maßnahme den privilegierten Kategorien zu. Drafter erstellt die Einordnung samt Beschlussvorschlag und Kostenfolge. Reviewer prüft Mehrheitserfordernis, Grenzen des § 20 Abs. 4 WEG und Schlüssigkeit der Kostenverteilung.
+Researcher liefert die Normfassung der §§ 20, 21 WEG nach WEMoG und die verifizierte Rechtsprechung des V. Zivilsenats. Drafter erstellt die Einordnung samt Beschlussvorschlag und Kostenfolge. Reviewer prüft Beschlusserfordernis, Grenzen des § 20 Abs. 4 WEG, Beseitigungsrisiko und Schlüssigkeit der Kostenverteilung.
 
 ## Ablauf
 
 ### 1. Einordnung: Erhaltung oder bauliche Veränderung?
 
-Zuerst trennen: Eine **Erhaltungsmaßnahme** (Instandhaltung/Instandsetzung, § 19 Abs. 2 Nr. 2 WEG) folgt anderen Regeln und ist Gemeinschaftsaufgabe. Eine **bauliche Veränderung** ist jede auf Dauer angelegte gegenständliche Umgestaltung des Gemeinschaftseigentums, die über die ordnungsmäßige Erhaltung hinausgeht (z. B. Wallbox, Außenaufzug, Balkonkraftwerk, Markise). Nur Letztere fällt unter § 20 WEG.
+Eine **Erhaltungsmaßnahme** (Instandhaltung/Instandsetzung, [§ 19 Abs. 2 Nr. 2 WEG](https://www.gesetze-im-internet.de/woeigg/__19.html)) ist Gemeinschaftsaufgabe und folgt dem allgemeinen Kostenschlüssel. Eine **bauliche Veränderung** ist jede Maßnahme, die über die ordnungsmäßige Erhaltung des gemeinschaftlichen Eigentums hinausgeht (§ 20 Abs. 1 WEG).
 
-### 2. Gestattungsbeschluss mit einfacher Mehrheit (§ 20 Abs. 1 WEG)
+- Auch eine **von außen sichtbare Anlage ohne Substanzeingriff** — etwa ein am Balkongeländer befestigtes Solarmodul — ist eine bauliche Veränderung (BGH, Urt. v. 18.07.2025 – V ZR 29/24, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-07-18&Aktenzeichen=V%20ZR%2029/24)).
+- Die GdWE darf die Erhaltung von Bauteilen wie Balkonen beschließen, auch wenn die Teilungserklärung die Erhaltung den einzelnen Eigentümern zuweist; wird sie selbst tätig, **verbleibt es bei der vereinbarten Kostenlast** der einzelnen Eigentümer (BGH, Urt. v. 24.04.2026 – V ZR 102/24, Leitsätze a und b, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-04-24&Aktenzeichen=V%20ZR%20102/24), [Volltext](https://www.rws-verlag.de/fileadmin/Volltexte-4/V_ZR_102-24.pdf)).
 
-Bauliche Veränderungen werden **durch Beschluss gestattet**. Es genügt die **einfache Mehrheit** der abgegebenen Stimmen in der Eigentümerversammlung — die frühere Allstimmigkeit des alten § 22 WEG ist entfallen. Der Beschluss heißt **Gestattungsbeschluss**: Er erlaubt dem antragstellenden Eigentümer die Maßnahme; ohne ihn (oder ohne Zustimmung nach Abs. 3) ist die Maßnahme nicht gedeckt.
+### 2. Beschlusszwang und Gestattungsbeschluss (§ 20 Abs. 1 WEG)
+
+Bauliche Veränderungen werden **durch Beschluss** legitimiert — entweder als Maßnahme der Gemeinschaft oder als **Gestattungsbeschluss** zugunsten eines Eigentümers. Es genügt die **einfache Mehrheit** der abgegebenen Stimmen.
+
+- **Beschlusszwang:** Ohne vorherigen Beschluss darf auch der Anspruchsberechtigte nicht bauen. Das gilt auch in der **Zweiergemeinschaft**; der Beschlusszwang ist allerdings durch Vereinbarung abdingbar (BGH, Urt. v. 12.06.2026 – V ZR 68/25, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-06-12&Aktenzeichen=V%20ZR%2068/25)).
+- **Eigenmacht rächt sich:** Wer eigenmächtig baut, kann dem Beseitigungsanspruch der GdWE nicht entgegenhalten, er habe einen Anspruch auf Gestattung; ein vermietender Eigentümer haftet für Veränderungen, die sein Mieter mit seiner Erlaubnis oder Duldung vornimmt (BGH, Urt. v. 21.03.2025 – V ZR 1/24, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-21&Aktenzeichen=V%20ZR%201/24)).
+- **Bestimmtheit bei offener Gestaltung:** Beschließen die Eigentümer eine Fassadengestaltung durch eine namentlich genannte Künstlerin, ist der Beschluss hinreichend bestimmt, wenn er die zu gestaltende **Fläche**, die **Kostentragung** und die **Dauer** des Verbleibs regelt; wie das Werk konkret aussehen wird, muss er nicht beschreiben. Eine Veränderung des optischen Gesamteindrucks ist regelmäßig **keine grundlegende Umgestaltung** i. S. d. § 20 Abs. 4 Alt. 1 WEG (BGH, Urt. v. 25.09.2026 – V ZR 165/25, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-09-25&Aktenzeichen=V%20ZR%20165/25), [Volltext](https://www.rws-verlag.de/fileadmin/Volltexte-4/V_ZR_165-25.pdf)).
 
 ### 3. Privilegierter Anspruch (§ 20 Abs. 2 WEG)
 
-Unabhängig vom freien Ermessen der Mehrheit kann **jeder Eigentümer angemessene bauliche Veränderungen verlangen**, die einer der fünf **privilegierte Maßnahmen** dienen:
+Jeder Eigentümer kann **angemessene** bauliche Veränderungen verlangen, die einer der fünf **privilegierte Maßnahmen** dienen:
 
 | Nr. | Privilegierte Maßnahme | Beispiel |
 |---|---|---|
-| 1 | **Barrierefreiheit** (Gebrauch durch Menschen mit Behinderungen) | Rampe, Treppenlift, Türverbreiterung |
+| 1 | **Barrierefreiheit** (Gebrauch durch Menschen mit Behinderungen) | Rampe, Treppenlift, Außenaufzug |
 | 2 | **E-Mobilität** — Laden elektrisch betriebener Fahrzeuge | Wallbox/Ladepunkt in der Tiefgarage |
-| 3 | **Einbruchschutz** | Sicherheitstür, Zusatzschlösser, Kamera am Zugang |
-| 4 | **Glasfaseranschluss** | Glasfaser-Hausanschluss / Verkabelung |
-| 5 | **Steckersolargeräte** (Stromerzeugung) | Balkonkraftwerk |
+| 3 | **Einbruchsschutz** | Sicherheitstür, Gitter, Zusatzschlösser |
+| 4 | **Anschluss an ein Telekommunikationsnetz mit sehr hoher Kapazität** | Glasfaser-Hausanschluss |
+| 5 | **Steckersolargeräte** (seit 17.10.2024) | Balkonkraftwerk |
 
-**Steckersolargeräte** sind die 2024 ergänzte fünfte privilegierte Maßnahme — diese Kategorie nicht übersehen. Liegt eine privilegierte Maßnahme vor, besteht ein **Anspruch dem Grunde nach**; die Gemeinschaft kann das „Ob" nicht ablehnen. Über die **Art der Durchführung** (das „Wie": Ausführung, Standort, ausführende Firma, optische Gestaltung) **entscheidet die Gemeinschaft durch Beschluss** nach billigem Ermessen.
+- Es besteht ein **Anspruch dem Grunde nach**; die Gemeinschaft kann das „Ob" nicht ablehnen. Über die **Durchführung** (das „Wie") ist im Rahmen ordnungsmäßiger Verwaltung zu beschließen (§ 20 Abs. 2 S. 2 WEG).
+- **Barrierefreiheit** hat Gewicht: Barrierereduzierende Maßnahmen sind nach der Reform auch gegen die Mehrheit durchsetzbar; die Angemessenheitsgrenze ist eng auszulegen (BGH, Urt. v. 09.02.2024 – V ZR 244/22, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2024-02-09&Aktenzeichen=V%20ZR%20244/22)).
+- Der Anspruch richtet sich auf einen **Gestattungsbeschluss**; ohne ihn bleibt das Gerät beseitigungspflichtig (BGH V ZR 29/24). Bei Weigerung: Beschlussersetzungsklage (`/wohnungseigentumsrecht:beschlussersetzungsklage`). ([V ZR 29/24](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-07-18&Aktenzeichen=V%20ZR%2029/24))
 
-### 4. Zustimmung Beeinträchtigter und Grenzen (§ 20 Abs. 3 und Abs. 4 WEG)
+### 4. Gestattungsanspruch bei Einverständnis aller Beeinträchtigten (§ 20 Abs. 3 WEG)
 
-Unabhängig von Abs. 1 und Abs. 2 ist eine bauliche Veränderung zulässig, wenn **alle Eigentümer, deren Rechte über das in § 14 Abs. 1 Nr. 1 WEG bestimmte Maß hinaus beeinträchtigt werden, zustimmen** ([§ 20 Abs. 3 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html)).
+Jeder Eigentümer kann verlangen, dass ihm eine bauliche Veränderung **gestattet** wird, wenn alle Eigentümer einverstanden sind, deren Rechte durch die Maßnahme über das **bei einem geordneten Zusammenleben unvermeidliche Maß** hinaus beeinträchtigt werden ([§ 20 Abs. 3 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html); Maßstab wie [§ 14 Abs. 1 Nr. 2 WEG](https://www.gesetze-im-internet.de/woeigg/__14.html)).
 
-Grenzen nach [§ 20 Abs. 4 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html): Eine Maßnahme darf **nicht beschlossen oder verlangt** werden, wenn sie
+- Die Befürchtung späterer Störungen (Lärm) spielt bei der Gestattung grundsätzlich keine Rolle; sie ist erst bei der **Grenze des § 20 Abs. 4 Alt. 2 WEG** und dort nur zu berücksichtigen, wenn die unbillige Benachteiligung durch den späteren Gebrauch schon bei der Gestattung evident ist (unten Nr. 5). In diese Linie fügt sich die Entscheidung zum **Split-Klimagerät** auf dem Balkon: Die Gestattung kann grundsätzlich verlangt werden, gegen Lärm kann die Gemeinschaft gesondert vorgehen (BGH, Urt. v. 17.07.2026 – V ZR 162/25, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-07-17&Aktenzeichen=V%20ZR%20162/25)).
+- Eine Fassadendurchbohrung oder ein Wanddurchbruch beeinträchtigt die übrigen Eigentümer nicht ohne Weiteres; es kommt auf den Einzelfall an (BGH, Urt. v. 14.02.2025 – V ZR 86/24, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-02-14&Aktenzeichen=V%20ZR%2086/24)).
 
-- die Wohnanlage **grundlegende Umgestaltung** (grundlegend umgestaltet) — d. h. ihren Charakter wesentlich verändert, oder
-- einen Eigentümer **gegenüber anderen unbillig benachteiligt**.
+### 5. Grenzen (§ 20 Abs. 4 WEG)
 
-Diese Schranke gilt auch für privilegierte Maßnahmen nach Abs. 2: Der Anspruch endet, wo die Maßnahme die Anlage grundlegend umgestaltet oder unbillig benachteiligt.
+Bauliche Veränderungen, die die Wohnanlage **grundlegend umgestalten** oder einen Eigentümer **ohne sein Einverständnis** gegenüber anderen **unbillig benachteiligen**, dürfen nicht beschlossen und gestattet werden; sie können auch nicht verlangt werden ([§ 20 Abs. 4 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html)). Die Schranke gilt auch für privilegierte Maßnahmen. Bei der **unbilligen Benachteiligung** (Alt. 2) zählen grundsätzlich nur die **unmittelbar** mit der Maßnahme verbundenen Auswirkungen, nicht die des späteren Gebrauchs (z. B. tieffrequenter Schall einer Klimaanlage), es sei denn, die Benachteiligung durch den Gebrauch ist schon bei der Gestattung evident; die Bestandskraft der Gestattung schließt spätere Abwehransprüche wegen Immissionen nicht aus (BGH, Urt. v. 28.03.2025 – V ZR 105/24, [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-28&Aktenzeichen=V%20ZR%20105/24), [Volltext](https://www.rws-verlag.de/fileadmin/Volltexte-4/v_zr_105-24.pdf)). Ein Verstoß macht den Beschluss anfechtbar; ob er nichtig macht, ist im Einzelfall zu prüfen `[unverifiziert – prüfen]`.
 
-### 5. Kostenverteilung (§ 21 WEG)
+### 6. Kosten und Nutzungen (§ 21 WEG)
 
-Grundregel ([§ 21 WEG](https://www.gesetze-im-internet.de/woeigg/__21.html)): Wer die bauliche Veränderung **verlangt oder ihr zustimmt**, trägt die **Kosten** und ist allein **nutzungsberechtigt** (§ 21 Abs. 1 WEG). Die **Kostenverteilung** weicht damit von den Erhaltungskosten ab.
+| Fall | Kostenträger und Nutzungen | Norm |
+|---|---|---|
+| Maßnahme einem Eigentümer **gestattet** oder **auf sein Verlangen nach § 20 Abs. 2** durchgeführt | dieser Eigentümer allein; nur ihm gebühren die Nutzungen | [§ 21 Abs. 1 WEG](https://www.gesetze-im-internet.de/woeigg/__21.html) |
+| beschlossen mit **mehr als zwei Dritteln** der abgegebenen Stimmen **und** der Hälfte aller Miteigentumsanteile (außer bei unverhältnismäßigen Kosten) | **alle** nach Miteigentumsanteilen; Nutzungen nach § 16 Abs. 1 WEG | § 21 Abs. 2 S. 1 Nr. 1 WEG |
+| Kosten **amortisieren** sich in angemessenem Zeitraum | **alle** nach Miteigentumsanteilen | § 21 Abs. 2 S. 1 Nr. 2 WEG |
+| sonstige beschlossene Maßnahmen | nur die **Zustimmenden** nach ihren Anteilen; ihnen gebühren die Nutzungen | § 21 Abs. 3 WEG |
+| späterer Mitnutzer | Gestattung gegen angemessenen Ausgleich | § 21 Abs. 4 WEG |
+| abweichende Verteilung | durch Beschluss möglich, aber **keine Kosten für Eigentümer, die nach Abs. 1–4 nichts tragen** | § 21 Abs. 5 WEG |
 
-Ausnahmen (§ 21 Abs. 2 WEG): Die Kosten tragen **alle** Eigentümer, wenn
+### 7. Mieter und Nutzer
 
-- die Maßnahme mit **mehr als zwei Dritteln** der abgegebenen Stimmen **und** der Hälfte der Miteigentumsanteile beschlossen wurde (Nr. 1), es sei denn, sie ist mit unverhältnismäßigen Kosten verbunden; oder
-- sich die Kosten innerhalb eines **angemessenen Zeitraums amortisieren** (Nr. 2).
+Wer Wohnungseigentum gebraucht, ohne Eigentümer zu sein, hat Erhaltungsmaßnahmen nach rechtzeitiger Ankündigung und sonstige Maßnahmen nach Ankündigung in **Textform drei Monate vor Beginn** zu dulden ([§ 15 WEG](https://www.gesetze-im-internet.de/woeigg/__15.html)). Zur Schnittstelle mit dem Mietrecht (§ 554 BGB): `/wohnungseigentumsrecht:vermietete-eigentumswohnung`.
 
-Wer die Kosten trägt, dem gebührt der Nutzen (§ 21 Abs. 3 WEG); spätere Nutzer können nach § 21 Abs. 4 WEG gegen Ausgleich teilhaben.
+### 8. Beschlussvorschlag und Ergebnis
 
-### 6. Beschlussvorschlag
-
-Drafter formuliert einen abstimmungsreifen Beschlussantrag: Gegenstand der Maßnahme, Ausführung („Wie"), Kostenträger, Nutzungszuordnung und ggf. Unterhaltspflicht.
-
-### 7. Ergebnis
-
-Zusammenfassung: Einordnung (Erhaltung/bauliche Veränderung), erforderliche Mehrheit, privilegierter Anspruch ja/nein, Grenzen (§ 20 Abs. 4 WEG), Kostenfolge (§ 21 WEG), Beschlussvorschlag.
-
-## Risiken / typische Fehler
-
-- **Allstimmigkeit angenommen** — veraltet. Seit WEMoG genügt für die Gestattung die einfache Mehrheit (§ 20 Abs. 1 WEG).
-- **„Ob" und „Wie" verwechselt** — bei privilegierten Maßnahmen besteht ein Anspruch auf das „Ob"; nur über die Art der Durchführung beschließt die Gemeinschaft.
-- **Steckersolargeräte vergessen** — Balkonkraftwerke sind seit 2024 ausdrücklich privilegiert.
-- **Grenze § 20 Abs. 4 WEG übersehen** — auch privilegierte Maßnahmen scheitern an grundlegender Umgestaltung oder unbilliger Benachteiligung.
-- **Kosten falsch verteilt** — wer verlangt/zustimmt, zahlt grundsätzlich allein (§ 21 Abs. 1 WEG); nur die Ausnahmen des § 21 Abs. 2 WEG verlagern die Kosten auf alle.
-- **Beschluss zu unbestimmt** — Standort, Ausführung und Unterhalt müssen geregelt sein, sonst ist der Beschluss anfechtbar.
+Drafter formuliert einen abstimmungsreifen Beschlussantrag: Gegenstand, Ausführung („Wie"), Kostenträger nach § 21 WEG, Nutzungszuordnung, Erhaltungs- und Rückbaupflicht, Haftung. Ergebnis: Einordnung, erforderlicher Beschluss, privilegierter Anspruch ja/nein, Grenzen, Kostenfolge, Beseitigungsrisiko bei Eigenmacht.
 
 ## Quellen und Zitierweise
 
@@ -103,43 +106,63 @@ Verbindlich: [`../../references/zitierweise.md`](../../references/zitierweise.md
 
 ### Statute
 
-- [§ 20 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html) (bauliche Veränderungen — Gestattungsbeschluss Abs. 1, privilegierte Maßnahmen Abs. 2, Zustimmung Abs. 3, Grenzen Abs. 4)
+- [§ 20 WEG](https://www.gesetze-im-internet.de/woeigg/__20.html) (bauliche Veränderungen — Abs. 1 Beschluss/Gestattung, Abs. 2 privilegierte Maßnahmen, Abs. 3 Gestattungsanspruch, Abs. 4 Grenzen)
 - [§ 21 WEG](https://www.gesetze-im-internet.de/woeigg/__21.html) (Nutzungen und Kosten bei baulichen Veränderungen)
-- [§ 19 WEG](https://www.gesetze-im-internet.de/woeigg/__19.html) (Verwaltung und ordnungsmäßige Erhaltung — Abgrenzung)
-- [§ 14 WEG](https://www.gesetze-im-internet.de/woeigg/__14.html) (Pflichten der Eigentümer — Maßstab der Beeinträchtigung)
+- [§ 19 WEG](https://www.gesetze-im-internet.de/woeigg/__19.html) (ordnungsmäßige Erhaltung — Abgrenzung), [§ 14 WEG](https://www.gesetze-im-internet.de/woeigg/__14.html) (Maßstab der Beeinträchtigung), [§ 15 WEG](https://www.gesetze-im-internet.de/woeigg/__15.html) (Duldungspflicht von Nutzern)
+
+### Rechtsprechung (V. Zivilsenat)
+
+1. BGH, Urt. v. 25.09.2026 – V ZR 165/25 (Bestimmtheit eines Gestaltungsbeschlusses; optische Veränderung keine grundlegende Umgestaltung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-09-25&Aktenzeichen=V%20ZR%20165/25), [Volltext](https://www.rws-verlag.de/fileadmin/Volltexte-4/V_ZR_165-25.pdf)
+2. BGH, Urt. v. 17.07.2026 – V ZR 162/25 (Split-Klimagerät auf dem Balkon), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-07-17&Aktenzeichen=V%20ZR%20162/25)
+3. BGH, Urt. v. 12.06.2026 – V ZR 68/25 (Beschlusszwang in der Zweiergemeinschaft), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-06-12&Aktenzeichen=V%20ZR%2068/25)
+4. BGH, Urt. v. 24.04.2026 – V ZR 102/24 (Versäumnisurteil; Beschlusskompetenz und Pflicht der GdWE zur Balkonsanierung, Kostenlast bleibt bei den Eigentümern), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-04-24&Aktenzeichen=V%20ZR%20102/24), [Volltext](https://www.rws-verlag.de/fileadmin/Volltexte-4/V_ZR_102-24.pdf)
+5. BGH, Urt. v. 18.07.2025 – V ZR 29/24 (Balkon-Solarmodul als bauliche Veränderung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-07-18&Aktenzeichen=V%20ZR%2029/24)
+6. BGH, Urt. v. 28.03.2025 – V ZR 105/24 (Klimaanlage: für § 20 Abs. 4 Alt. 2 WEG nur unmittelbare Auswirkungen; Bestandskraft der Gestattung schließt Immissionsabwehr nicht aus), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-28&Aktenzeichen=V%20ZR%20105/24), [Volltext](https://www.rws-verlag.de/fileadmin/Volltexte-4/v_zr_105-24.pdf)
+7. BGH, Urt. v. 21.03.2025 – V ZR 1/24 (kein Gestattungseinwand gegen Beseitigung; Haftung für Mieter), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-21&Aktenzeichen=V%20ZR%201/24)
+8. BGH, Urt. v. 14.02.2025 – V ZR 86/24 (Fassadendurchbohrung; Vorbefassung), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-02-14&Aktenzeichen=V%20ZR%2086/24)
+9. BGH, Urt. v. 09.02.2024 – V ZR 244/22 (Barrierefreiheit, Außenaufzug), [dejure.org](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2024-02-09&Aktenzeichen=V%20ZR%20244/22)
 
 ### Kommentare
 
-- Hügel/Elzer, WEG, aktuelle Aufl., § 20 (bauliche Veränderungen nach WEMoG)
-- Bärmann/Dötsch, WEG, aktuelle Aufl., §§ 20, 21
-- Jennißen, WEG, aktuelle Aufl., § 21 (Kostenverteilung)
+- Hügel/Elzer, WEG, aktuelle Aufl., § 20 `[unverifiziert – prüfen: Auflage und Rn.]`
+- Bärmann/Dötsch, WEG, aktuelle Aufl., §§ 20, 21 `[unverifiziert – prüfen: Auflage und Rn.]`
 
-### Rechtsprechung (`[unverifiziert – prüfen in Beck-Online/juris]`)
+## Beispiel (Gutachtenstil, verkürzt)
 
-Zur post-WEMoG-Rechtslage liegt noch wenig gefestigte höchstrichterliche Rechtsprechung vor. Jede konkrete Entscheidung vor Verwendung verifizieren — kein Aktenzeichen ohne Prüfung zitieren `[unverifiziert – prüfen]`.
+**Sachverhalt.** Eigentümer W will auf eigene Kosten eine Wallbox an seinem Stellplatz in der Tiefgarage installieren. Die Mehrheit lehnt ab, weil die Hauszuleitung „irgendwann" verstärkt werden müsse.
+
+**Anspruch.** Die Wallbox dient dem Laden elektrisch betriebener Fahrzeuge (§ 20 Abs. 2 S. 1 Nr. 2 WEG). W hat einen Anspruch auf Gestattung dem Grunde nach; die Mehrheit kann nur über das „Wie" entscheiden (Leitungsführung, Lastmanagement, Fachbetrieb). Eine grundlegende Umgestaltung (§ 20 Abs. 4 WEG) liegt nicht vor.
+
+**Kosten.** W trägt die Kosten allein, ihm gebühren die Nutzungen (§ 21 Abs. 1 WEG). Wird später ein gemeinschaftliches Lastmanagement beschlossen, kann W sich gegen angemessenen Ausgleich anschließen (§ 21 Abs. 4 WEG).
+
+**Ergebnis.** Ablehnungsbeschluss anfechten und mit der Beschlussersetzungsklage verbinden; bis zum Gestattungsbeschluss **nicht** eigenmächtig installieren (BGH V ZR 1/24). ([V ZR 1/24](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-21&Aktenzeichen=V%20ZR%201/24))
+
+## Risiken / typische Fehler
+
+- **Allstimmigkeit angenommen** — veraltet. Seit WEMoG genügt die einfache Mehrheit (§ 20 Abs. 1 WEG).
+- **Ohne Beschluss gebaut** — auch bei privilegierter Maßnahme droht Beseitigung; der Gestattungsanspruch ist kein Einwand (BGH V ZR 1/24, V ZR 29/24). Gilt auch in der Zweiergemeinschaft (BGH V ZR 68/25). ([V ZR 1/24](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-03-21&Aktenzeichen=V%20ZR%201/24), [V ZR 29/24](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2025-07-18&Aktenzeichen=V%20ZR%2029/24), [V ZR 68/25](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-06-12&Aktenzeichen=V%20ZR%2068/25))
+- **„Ob" und „Wie" verwechselt** — bei privilegierten Maßnahmen besteht ein Anspruch auf das „Ob"; nur über die Durchführung beschließt die Gemeinschaft.
+- **Steckersolargeräte vergessen** — seit 17.10.2024 privilegiert (§ 20 Abs. 2 S. 1 Nr. 5 WEG).
+- **Grenze § 20 Abs. 4 WEG übersehen** — auch privilegierte Maßnahmen scheitern an grundlegender Umgestaltung oder unbilliger Benachteiligung.
+- **Kostenverteilung falsch** — wer gestattet bekommt, zahlt allein (§ 21 Abs. 1 WEG); sonst tragen nur die Zustimmenden (Abs. 3), alle nur bei Abs. 2. Ein abweichender Beschluss darf Nichtzahlern keine Kosten auferlegen (Abs. 5).
+- **Spätere Lärmbefürchtung als Ablehnungsgrund** — für die Gestattung zählen die unmittelbaren Auswirkungen (BGH V ZR 162/25). ([V ZR 162/25](https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=2026-07-17&Aktenzeichen=V%20ZR%20162/25))
+- **Beschluss zu unbestimmt** — Standort, Ausführung, Kostenträger und Erhaltung regeln, sonst anfechtbar.
 
 ## Ausgabeformat
 
 ```
-EINORDNUNG BAULICHE VERÄNDERUNG (§§ 20, 21 WEG, post-WEMoG)
+EINORDNUNG BAULICHE VERÄNDERUNG (§§ 20, 21 WEG, Rechtsstand Oktober 2026)
 
-1. Maßnahme: <Beschreibung>
+1. Maßnahme: <Beschreibung; bereits ausgeführt? ja/nein>
 2. Einordnung: [ ] Erhaltung  [ ] bauliche Veränderung
-3. Privilegiert (§ 20 Abs. 2 WEG)?
-   [ ] Barrierefreiheit [ ] E-Mobilität [ ] Einbruchschutz
-   [ ] Glasfaser        [ ] Steckersolargeräte   [ ] keine
-4. Erforderliche Mehrheit:
-   - Gestattungsbeschluss § 20 Abs. 1 WEG: einfache Mehrheit
-   - Anspruch dem Grunde nach (falls privilegiert): ja/nein
-   - „Wie" durch Beschluss der Gemeinschaft
-5. Grenzen (§ 20 Abs. 4 WEG):
-   - grundlegende Umgestaltung? ja/nein
-   - unbillige Benachteiligung? ja/nein
-6. Kostenverteilung (§ 21 WEG):
-   - Grundsatz: Antragsteller/Zustimmende tragen Kosten allein
-   - Ausnahme Abs. 2 (>2/3 + ½ MEA / Amortisation)? ja/nein
-7. Beschlussvorschlag:
-   <abstimmungsreifer Antrag: Gegenstand, Ausführung, Kostenträger, Nutzung>
-
-Hinweis: Rechtsprechung [unverifiziert – prüfen].
+3. Weg zur Legitimation:
+   [ ] Beschluss/Gestattung § 20 Abs. 1 (einfache Mehrheit)
+   [ ] privilegiert § 20 Abs. 2: [Barrierefreiheit] [E-Mobilität] [Einbruchsschutz]
+       [Glasfaser] [Steckersolargeräte]
+   [ ] Gestattungsanspruch § 20 Abs. 3 (alle Beeinträchtigten einverstanden)
+4. Grenzen § 20 Abs. 4: grundlegende Umgestaltung? / unbillige Benachteiligung?
+5. Kosten und Nutzungen § 21: [Abs. 1] [Abs. 2 Nr. 1] [Abs. 2 Nr. 2] [Abs. 3] [Abs. 5]
+6. Beseitigungsrisiko bei Eigenmacht: <…>
+7. Beschlussvorschlag: <Gegenstand, Ausführung, Kostenträger, Nutzung, Erhaltung>
+8. Prozessual: Anfechtung / Beschlussersetzungsklage <Frist § 45 WEG>
 ```
